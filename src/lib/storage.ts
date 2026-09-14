@@ -54,7 +54,11 @@ export function loadStreak(): StreakState {
 }
 
 export function hasPlayed(date: string): boolean {
-  return loadStats().history.some((entry) => entry.date === date);
+  return loadDayRecord(date) !== undefined;
+}
+
+export function loadDayRecord(date: string): DayRecord | undefined {
+  return loadStats().history.find((entry) => entry.date === date);
 }
 
 /**

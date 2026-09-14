@@ -1,8 +1,8 @@
-import Link from "next/link";
 import { cookies } from "next/headers";
 import { notFound } from "next/navigation";
 
 import { StatsBar } from "@/components/home/StatsBar";
+import { DailyCaseStatus } from "@/components/home/DailyCaseStatus";
 import { WelcomeTutorial } from "@/components/home/WelcomeTutorial";
 import { currentCase, toClientCase } from "@/server/caseStore";
 import { formatKey } from "@/lib/format";
@@ -56,14 +56,7 @@ export default async function HomePage() {
             {caseData.intro}
           </p>
 
-          <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
-            <Link href={`/case/${caseData.date}`} className="btn-primary text-base">
-              Commencer l&apos;enquête
-            </Link>
-            <Link href="/archives" className="btn-ghost">
-              Archives
-            </Link>
-          </div>
+          <DailyCaseStatus date={caseData.date} href={`/case/${caseData.date}`} />
         </div>
       </article>
 

@@ -70,13 +70,14 @@ describe("storage: stats et streak", () => {
   });
 
   it("ne double pas les statistiques si le joueur rejoue le même jour", async () => {
-    const { recordResult, loadStats } = await import("@/lib/storage");
+    const { recordResult, loadDayRecord, loadStats } = await import("@/lib/storage");
     recordResult({ date: "2026-09-14", caseId: "x", score: 33, who: false, why: false, how: true, seconds: 10 });
     recordResult({ date: "2026-09-14", caseId: "x", score: 100, who: true, why: true, how: true, seconds: 20 });
     const stats = loadStats();
     expect(stats.played).toBe(1);
     expect(stats.perfect).toBe(1);
     expect(stats.scoreSum).toBe(100);
+    expect(loadDayRecord("2026-09-14")?.score).toBe(100);
   });
 
   it("une archive ne fait pas progresser la série", async () => {
