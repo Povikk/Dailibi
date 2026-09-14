@@ -7,6 +7,7 @@ import { buildSolvabilityMatrix } from "@/case-engine/solvability";
 import { validateCase, validateFairPlay } from "@/case-engine/validateCase";
 import { validateSolutionTimeline } from "@/case-engine/timelineValidator";
 import { scoreAccusation } from "@/case-engine/scoring";
+import { isDailyKeyUnlocked } from "@/lib/daily";
 import type { AccuseResult } from "@/types/case";
 
 export const dynamic = "force-dynamic";
@@ -19,6 +20,10 @@ export async function POST(
 
   if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) {
     return NextResponse.json({ error: "Date invalide." }, { status: 400 });
+  }
+
+  if (!isDailyKeyUnlocked(date)) {
+    return NextResponse.json({ error: "Aucune affaire pour cette date." }, { status: 404 });
   }
 
   const file = findCaseForDate(date);
@@ -106,6 +111,9 @@ export async function GET(
   context: { params: Promise<{ date: string }> },
 ): Promise<NextResponse> {
   const { date } = await context.params;
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || !isDailyKeyUnlocked(date)) {
+    return NextResponse.json({ error: "Aucune affaire pour cette date." }, { status: 404 });
+  }
   const file = findCaseForDate(date);
   if (!file) {
     return NextResponse.json({ error: "Aucune affaire pour cette date." }, { status: 404 });

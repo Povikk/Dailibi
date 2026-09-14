@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { currentDailyKey } from "@/lib/daily";
+import { currentDailyKey, isDailyKeyUnlocked } from "@/lib/daily";
 import { formatKey } from "@/lib/format";
 import { listCasesForArchive } from "@/server/caseStore";
 
@@ -8,7 +8,9 @@ export const dynamic = "force-dynamic";
 
 export default function ArchivesPage() {
   const today = currentDailyKey();
-  const cases = listCasesForArchive().sort((a, b) => b.number - a.number);
+  const cases = listCasesForArchive()
+    .filter((item) => isDailyKeyUnlocked(item.date))
+    .sort((a, b) => b.number - a.number);
 
   return (
     <main className="mx-auto w-full max-w-3xl px-4 pb-16 pt-10 sm:px-6">

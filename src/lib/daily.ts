@@ -69,6 +69,11 @@ export function currentDayNumber(now: Date = new Date()): number {
   return dayNumber(currentDailyKey(now));
 }
 
+/** Whether a dated case is available on the current Paris game day. */
+export function isDailyKeyUnlocked(key: string, now: Date = new Date()): boolean {
+  return dayNumber(key) <= currentDayNumber(now);
+}
+
 /** Milliseconds until the next rollover (next 00:00 Europe/Paris). */
 export function msUntilNextRollover(now: Date = new Date()): number {
   const key = currentDailyKey(now);

@@ -6,6 +6,7 @@ import {
   dayNumber,
   formatDisplayDate,
   isAdjacent,
+  isDailyKeyUnlocked,
   msUntilNextRollover,
   previousKey,
 } from "@/lib/daily";
@@ -38,6 +39,13 @@ describe("daily", () => {
   it("previousKey recule d'un jour", () => {
     expect(previousKey("2026-09-14")).toBe("2026-09-13");
     expect(previousKey("2026-03-01")).toBe("2026-02-28");
+  });
+
+  it("verrouille les affaires futures selon la journée de Paris", () => {
+    const now = new Date("2026-09-14T12:00:00Z");
+    expect(isDailyKeyUnlocked("2026-09-13", now)).toBe(true);
+    expect(isDailyKeyUnlocked("2026-09-14", now)).toBe(true);
+    expect(isDailyKeyUnlocked("2026-09-15", now)).toBe(false);
   });
 
   it("le compte à rebours reste positif et sous 24h", () => {
