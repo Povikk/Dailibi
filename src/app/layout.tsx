@@ -23,8 +23,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
-      <body className="min-h-screen bg-felt bg-fixed font-sans text-paper-100 antialiased">
-        {children}
+      <body className="flex min-h-screen flex-col bg-felt bg-fixed font-sans text-paper-100 antialiased">
+        <main className="flex-1">{children}</main>
+        <footer className="px-4 py-4 text-center font-mono text-[9px] uppercase tracking-[0.18em] text-paper-100/35">
+          By Povik · All rights reserved.
+        </footer>
       </body>
     </html>
   );
