@@ -11,7 +11,7 @@
     "build:cloudflare": "vinext build",
     "preview:cloudflare": "wrangler dev --config dist/server/wrangler.json",
     "deploy:cloudflare": "vinext-cloudflare deploy --config dist/server/wrangler.json",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "next typegen && tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
     "case:new": "tsx scripts/new-case.ts",

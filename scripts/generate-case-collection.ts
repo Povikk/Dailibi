@@ -268,6 +268,7 @@ function buildCase(s: StorySeed): CaseFile {
   const firstInnocent = suspects.find((x) => x.id === innocentIds[0])!;
   const secondInnocent = suspects.find((x) => x.id === innocentIds[1])!;
   const crimeType = s.meta[0];
+  const difficulty: Difficulty = s.difficulty ?? (s.n >= 15 ? "DIFFICILE" : "NORMAL");
 
   return {
     public: {
@@ -299,13 +300,19 @@ function buildCase(s: StorySeed): CaseFile {
       accusation: { questions: [
         { id: "q_who", kind: "suspect", prompt: "Qui est responsable ?", optional: false, options: suspects.map((x) => ({ id: x.id, label: x.name, hint: x.occupation })) },
         { id: "q_why", kind: "motive", prompt: "Pourquoi cette personne a-t-elle agi ?", optional: false, options: [
-          { id: "motive_correct", label: s.motive }, { id: "motive_rivalite", label: "Écarter un rival par jalousie" }, { id: "motive_accident", label: "Cacher une erreur sans rapport avec l'incident" },
+          { id: "motive_correct", label: s.motive },
+          { id: "motive_innocent_a", label: firstInnocent.notes[0] },
+          { id: "motive_innocent_b", label: secondInnocent.notes[0] },
+          { id: "motive_accident", label: "Cacher une erreur antérieure sans rapport direct avec l'incident" },
         ] },
         { id: "q_how", kind: "method", prompt: "Comment l'incident a-t-il été provoqué ?", optional: false, options: [
-          { id: "method_correct", label: s.method }, { id: "method_force", label: "Forcer directement l'accès principal" }, { id: "method_complice", label: "Employer un complice extérieur après la fermeture" },
+          { id: "method_correct", label: s.method },
+          { id: "method_force", label: "Forcer directement l'accès principal puis dissimuler les traces" },
+          { id: "method_complice", label: "Employer un complice extérieur après la fermeture" },
+          { id: "method_failure", label: "Exploiter une défaillance existante sans intervenir sur les lieux" },
         ] },
       ] },
-      difficulty: s.difficulty ?? "NORMAL", estimatedMinutes: s.difficulty === "DIFFICILE" ? 10 : 8,
+      difficulty, estimatedMinutes: difficulty === "DIFFICILE" ? 11 : 9,
     },
     meta: { crimeType, locationType: s.meta[1], culpritGender: s.meta[2], motiveType: s.meta[3], methodType: s.meta[4], coreMechanic: s.meta[5] },
     solution: {

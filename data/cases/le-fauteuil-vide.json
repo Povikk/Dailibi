@@ -372,12 +372,16 @@
               "label": "Cacher Romain pour sauver son frère des représailles avant le témoignage"
             },
             {
-              "id": "motive_rivalite",
-              "label": "Écarter un rival par jalousie"
+              "id": "motive_innocent_a",
+              "label": "Elle avait acheté deux billets sous un faux nom."
+            },
+            {
+              "id": "motive_innocent_b",
+              "label": "Elle avait demandé une protection refusée."
             },
             {
               "id": "motive_accident",
-              "label": "Cacher une erreur sans rapport avec l'incident"
+              "label": "Cacher une erreur antérieure sans rapport direct avec l'incident"
             }
           ]
         },
@@ -393,18 +397,22 @@
             },
             {
               "id": "method_force",
-              "label": "Forcer directement l'accès principal"
+              "label": "Forcer directement l'accès principal puis dissimuler les traces"
             },
             {
               "id": "method_complice",
               "label": "Employer un complice extérieur après la fermeture"
+            },
+            {
+              "id": "method_failure",
+              "label": "Exploiter une défaillance existante sans intervenir sur les lieux"
             }
           ]
         }
       ]
     },
     "difficulty": "DIFFICILE",
-    "estimatedMinutes": 10
+    "estimatedMinutes": 11
   },
   "meta": {
     "crimeType": "disparition",

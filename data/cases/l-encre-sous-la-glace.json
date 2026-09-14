@@ -372,12 +372,16 @@
               "label": "Punir Mila de vouloir attribuer le programme à une autre chorégraphe"
             },
             {
-              "id": "motive_rivalite",
-              "label": "Écarter un rival par jalousie"
+              "id": "motive_innocent_a",
+              "label": "Son flacon d'entretien contient de l'alcool."
+            },
+            {
+              "id": "motive_innocent_b",
+              "label": "Une inspection révélerait ses économies sur les produits."
             },
             {
               "id": "motive_accident",
-              "label": "Cacher une erreur sans rapport avec l'incident"
+              "label": "Cacher une erreur antérieure sans rapport direct avec l'incident"
             }
           ]
         },
@@ -393,18 +397,22 @@
             },
             {
               "id": "method_force",
-              "label": "Forcer directement l'accès principal"
+              "label": "Forcer directement l'accès principal puis dissimuler les traces"
             },
             {
               "id": "method_complice",
               "label": "Employer un complice extérieur après la fermeture"
+            },
+            {
+              "id": "method_failure",
+              "label": "Exploiter une défaillance existante sans intervenir sur les lieux"
             }
           ]
         }
       ]
     },
-    "difficulty": "NORMAL",
-    "estimatedMinutes": 8
+    "difficulty": "DIFFICILE",
+    "estimatedMinutes": 11
   },
   "meta": {
     "crimeType": "accident_provoque",

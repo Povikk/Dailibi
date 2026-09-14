@@ -8,7 +8,7 @@ const CERTAINTY_LABEL = {
 
 const CERTAINTY_COLOR = {
   CERTAIN: "text-good border-good/40",
-  REPORTED: "text-paper-300/60 border-paper-300/20",
+  REPORTED: "bg-ink-950/5 text-ink-600 border-ink-500/45",
   ESTIMATED: "text-marker border-marker/40",
 } as const;
 
@@ -35,7 +35,7 @@ export function TimelinePanel({ caseData }: { caseData: ClientCase }) {
               <span className="font-mono text-sm font-bold tabular-nums text-stamp-deep">{entry.time}</span>
               <span
                 className={
-                  "rounded-[2px] border px-1.5 py-0.5 font-mono text-[9px] uppercase tracking-wider " +
+                  "rounded-[2px] border px-1.5 py-0.5 font-mono text-[9px] font-bold uppercase tracking-wider " +
                   CERTAINTY_COLOR[entry.certainty]
                 }
               >
