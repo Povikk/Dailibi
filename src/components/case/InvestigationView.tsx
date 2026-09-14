@@ -62,7 +62,7 @@ export function InvestigationView({ caseData }: { caseData: ClientCase }) {
 
       <nav
         aria-label="Sections du dossier"
-        className="sticky top-0 z-20 -mx-4 mt-5 flex gap-1 overflow-x-auto border-b-2 border-ink-700 bg-desk-950/95 px-4 py-2 backdrop-blur sm:mx-0 sm:px-0"
+        className="sticky top-9 z-20 -mx-4 mt-5 flex gap-1 overflow-x-auto border-b-2 border-ink-700 bg-desk-950/95 px-4 py-2 backdrop-blur sm:mx-0 sm:px-0"
       >
         {TABS.map((t) => (
           <button

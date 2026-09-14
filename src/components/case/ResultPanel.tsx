@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 
 import type { AccuseResult, ClientCase } from "@/types/case";
-import { currentDailyKey } from "@/lib/daily";
+import { currentDailyKey, msUntilNextRollover } from "@/lib/daily";
 import { buildShareText } from "@/lib/share";
 import { loadStreak, recordResult } from "@/lib/storage";
 
@@ -23,6 +23,8 @@ export function ResultPanel({
   seconds: number;
 }) {
   const [copied, setCopied] = useState(false);
+  const [nextCase, setNextCase] = useState<{ remaining: number; available: boolean } | null>(null);
+  const [isDailyResult] = useState(() => caseData.date === currentDailyKey());
   const [streak, setStreak] = useState<{ currentStreak: number; bestStreak: number }>({
     currentStreak: 0,
     bestStreak: 0,
@@ -45,6 +47,19 @@ export function ResultPanel({
     setStreak(stored.streak);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  useEffect(() => {
+    if (!isDailyResult) return;
+    const update = () => {
+      setNextCase({
+        remaining: msUntilNextRollover(),
+        available: currentDailyKey() !== caseData.date,
+      });
+    };
+    update();
+    const timer = window.setInterval(update, 1000);
+    return () => window.clearInterval(timer);
+  }, [caseData.date, isDailyResult]);
 
   function perKind(kind: string): boolean {
     const q = caseData.accusation.questions.find((x) => x.kind === kind);
@@ -127,6 +142,31 @@ export function ResultPanel({
           Série en cours : <span className="font-bold text-paper-50">{streak.currentStreak} jour{streak.currentStreak > 1 ? "s" : ""}</span>
           {" · "}meilleure série : {streak.bestStreak}
         </p>
+      ) : null}
+
+      {isDailyResult && nextCase ? (
+        <section className="card mt-5 overflow-hidden border-kraft-500/40 text-center">
+          <div className="border-b border-ink-700 bg-ink-800/55 px-4 py-2 font-mono text-[10px] uppercase tracking-[0.2em] text-kraft-400">
+            Dossier classé
+          </div>
+          <div className="px-5 py-5">
+            {nextCase.available ? (
+              <>
+                <p className="text-sm font-bold">La nouvelle enquête est disponible.</p>
+                <a href="/" className="btn-primary mt-4">
+                  Découvrir l&apos;affaire du jour
+                </a>
+              </>
+            ) : (
+              <>
+                <p className="text-sm text-paper-300/70">Revenez pour la prochaine enquête dans</p>
+                <p className="mt-2 font-mono text-3xl font-black tabular-nums text-paper-50">
+                  {formatCountdown(nextCase.remaining)}
+                </p>
+              </>
+            )}
+          </div>
+        </section>
       ) : null}
 
       <section className="card mt-6 p-5 sm:p-6">
@@ -217,4 +257,12 @@ function formatSeconds(total: number): string {
   const m = Math.floor(total / 60);
   const s = total % 60;
   return m > 0 ? `${m} min ${String(s).padStart(2, "0")} s` : `${s} s`;
+}
+
+function formatCountdown(ms: number): string {
+  const total = Math.max(0, Math.floor(ms / 1000));
+  const hours = Math.floor(total / 3600);
+  const minutes = Math.floor((total % 3600) / 60);
+  const seconds = total % 60;
+  return [hours, minutes, seconds].map((value) => String(value).padStart(2, "0")).join(":");
 }

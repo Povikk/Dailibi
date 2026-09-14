@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { DailyStatusBar } from "@/components/layout/DailyStatusBar";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -24,7 +25,8 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className="flex min-h-screen flex-col bg-felt bg-fixed font-sans text-paper-100 antialiased">
-        <div className="flex-1">{children}</div>
+        <DailyStatusBar />
+        <div className="flex-1 pt-9">{children}</div>
         <footer className="px-4 py-4 text-center font-mono text-[9px] uppercase tracking-[0.18em] text-paper-100/35">
           By Povik · All rights reserved.
         </footer>

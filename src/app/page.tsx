@@ -2,7 +2,6 @@ import Link from "next/link";
 import { cookies } from "next/headers";
 import { notFound } from "next/navigation";
 
-import { Countdown } from "@/components/home/Countdown";
 import { StatsBar } from "@/components/home/StatsBar";
 import { WelcomeTutorial } from "@/components/home/WelcomeTutorial";
 import { currentCase, toClientCase } from "@/server/caseStore";
@@ -70,7 +69,6 @@ export default async function HomePage() {
 
       <div className="mt-6 flex flex-col items-center gap-3 text-center">
         <StatsBar />
-        <Countdown />
       </div>
 
     </main>
