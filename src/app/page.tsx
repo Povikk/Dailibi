@@ -1,17 +1,20 @@
 import Link from "next/link";
+import { cookies } from "next/headers";
 import { notFound } from "next/navigation";
 
 import { Countdown } from "@/components/home/Countdown";
 import { StatsBar } from "@/components/home/StatsBar";
+import { WelcomeTutorial } from "@/components/home/WelcomeTutorial";
 import { currentCase, toClientCase } from "@/server/caseStore";
 import { formatKey } from "@/lib/format";
 
 export const dynamic = "force-dynamic";
 
-export default function HomePage() {
+export default async function HomePage() {
   const file = currentCase();
   if (!file) notFound();
   const caseData = toClientCase(file);
+  const tutorialSeen = (await cookies()).get("dailibi_tutorial")?.value === "1";
 
   return (
     <main className="mx-auto w-full max-w-3xl px-4 pb-16 pt-10 sm:px-6">
@@ -24,6 +27,10 @@ export default function HomePage() {
           Un jour. Une affaire. Un alibi de trop. La même enquête pour tous les joueurs, une seule
           accusation.
         </p>
+        <WelcomeTutorial
+          caseHref={`/case/${caseData.date}`}
+          initiallyOpen={!tutorialSeen}
+        />
       </header>
 
       <article className="card mt-8 overflow-hidden">
@@ -66,12 +73,6 @@ export default function HomePage() {
         <Countdown />
       </div>
 
-      <footer className="mt-14 border-t border-ink-800 pt-6 text-center text-xs text-paper-300/40">
-        <p>
-          Toutes les informations nécessaires sont dans le dossier. Le joueur doit pouvoir dire :
-          « J&apos;aurais pu le trouver. »
-        </p>
-      </footer>
     </main>
   );
 }
