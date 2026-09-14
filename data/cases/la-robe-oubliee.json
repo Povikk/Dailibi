@@ -1,0 +1,489 @@
+{
+  "public": {
+    "id": "la-robe-oubliee",
+    "number": 26,
+    "date": "2026-09-26",
+    "title": "LA ROBE OUBLIÉE",
+    "subtitle": "La robe originale est volée avant l'exposition; sa doublure continue pourtant de raconter qui l'a portée.",
+    "location": "Atelier de haute couture — Paris",
+    "incident": "Substitution d'une robe historique",
+    "intro": "Au déballage, la robe de 1984 semble parfaite. Iseult remarque pourtant que la doublure ne porte plus une reprise cousue la nuit du concours. La caisse et ses scellés sont intacts.",
+    "victim": {
+      "name": "Iseult Brémont",
+      "description": "Créatrice, 71 ans. Elle prêtait sa première robe primée pour une rétrospective."
+    },
+    "suspects": [
+      {
+        "id": "mona",
+        "name": "Mona Brémont",
+        "age": 42,
+        "occupation": "Directrice de l'atelier",
+        "relation": "Nièce d'Iseult, elle gère le patrimoine de la maison.",
+        "personality": "Élégante, efficace, parle de chaque pièce comme d'un actif.",
+        "claimedAlibi": "Elle assistait au dîner des mécènes.",
+        "accent": "formal",
+        "notes": [
+          "La maison manque de trésorerie."
+        ]
+      },
+      {
+        "id": "yacine",
+        "name": "Yacine Dupré",
+        "age": 33,
+        "occupation": "Costumier",
+        "relation": "Il a restauré la robe avant emballage.",
+        "personality": "Délicat, passionné par les coutures invisibles.",
+        "claimedAlibi": "Il dit avoir refermé la caisse à 18h.",
+        "accent": "nervous",
+        "notes": [
+          "Il possède les patrons complets de la robe."
+        ]
+      },
+      {
+        "id": "odette",
+        "name": "Odette Marin",
+        "age": 68,
+        "occupation": "Ancien mannequin",
+        "relation": "Elle a porté la robe au concours de 1984.",
+        "personality": "Drôle, nostalgique, refuse d'être traitée en relique.",
+        "claimedAlibi": "Elle répétait son discours avec le commissaire.",
+        "accent": "cold",
+        "notes": [
+          "Elle affirme que la robe lui avait été promise."
+        ]
+      }
+    ],
+    "clues": [
+      {
+        "id": "registre",
+        "title": "L'alibi qui se fissure",
+        "source": "JOURNAL TECHNIQUE",
+        "summary": "Le traceur censé rester dans la caisse se déplace jusqu'au coffre privé de Mona après le dîner.",
+        "evidence": {
+          "kind": "schedule",
+          "title": "JOURNAL TECHNIQUE",
+          "rows": [
+            {
+              "time": "19:40",
+              "label": "Le traceur censé rester dans la caisse se déplace jusqu'au coffre privé de Mona après le dîner."
+            }
+          ],
+          "altText": "JOURNAL TECHNIQUE à 19:40 : Le traceur censé rester dans la caisse se déplace jusqu'au coffre privé de Mona après le dîner."
+        },
+        "analysis": {
+          "category": "CONTRADICTION",
+          "implicates": [
+            "mona"
+          ],
+          "clears": [],
+          "contradicts": [
+            "mona"
+          ],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [
+            "mona"
+          ],
+          "unlocksInterviewIds": [
+            "mona_confrontation"
+          ],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "trace",
+        "title": "La trace qui ne devait pas rester",
+        "source": "ANALYSE MATÉRIELLE",
+        "summary": "La copie utilise un fil moderne commandé sur le compte personnel de Mona sous un faux projet.",
+        "evidence": {
+          "kind": "photo",
+          "caption": "La copie utilise un fil moderne commandé sur le compte personnel de Mona sous un faux projet.",
+          "meta": [
+            {
+              "label": "HEURE",
+              "value": "19:45"
+            },
+            {
+              "label": "STATUT",
+              "value": "Pièce analysée"
+            }
+          ],
+          "altText": "Photographie d'analyse : La copie utilise un fil moderne commandé sur le compte personnel de Mona sous un faux projet.",
+          "tone": "cold"
+        },
+        "analysis": {
+          "category": "TIMELINE",
+          "implicates": [
+            "mona"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [
+            "mona"
+          ],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "mobile",
+        "title": "Ce que la victime allait révéler",
+        "source": "DOCUMENT CONFIDENTIEL",
+        "summary": "Un accord de vente secret couvre exactement les salaires en retard de l'atelier.",
+        "evidence": {
+          "kind": "email",
+          "from": "Dossier de la victime",
+          "to": "Archives de l'enquête",
+          "subject": "Ce que la victime allait révéler",
+          "sentAt": "19:14",
+          "body": "Un accord de vente secret couvre exactement les salaires en retard de l'atelier.",
+          "altText": "Document confidentiel : Un accord de vente secret couvre exactement les salaires en retard de l'atelier."
+        },
+        "analysis": {
+          "category": "BEHAVIORAL",
+          "implicates": [],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [
+            "mona"
+          ],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "mona_mobile"
+          ],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "alibi_a",
+        "title": "La preuve de Yacine Dupré",
+        "source": "VÉRIFICATION D'ALIBI",
+        "summary": "La vidéo de restauration montre Yacine fermer la vraie robe et quitter les lieux avant que Mona ne reprenne la caisse.",
+        "evidence": {
+          "kind": "camera",
+          "location": "VÉRIFICATION D'ALIBI",
+          "frames": [
+            {
+              "time": "19:33",
+              "text": "La vidéo de restauration montre Yacine fermer la vraie robe et quitter les lieux avant que Mona ne reprenne la caisse."
+            }
+          ],
+          "altText": "Relevé de vérification à 19:33 : La vidéo de restauration montre Yacine fermer la vraie robe et quitter les lieux avant que Mona ne reprenne la caisse."
+        },
+        "analysis": {
+          "category": "EXONERATING",
+          "implicates": [],
+          "clears": [
+            "yacine"
+          ],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "fausse_piste",
+        "title": "Le détail contre Odette Marin",
+        "source": "PIÈCE SAISIE",
+        "summary": "Odette conserve une lettre d'Iseult disant « cette robe sera toujours à toi ».",
+        "evidence": {
+          "kind": "note",
+          "body": "Odette conserve une lettre d'Iseult disant « cette robe sera toujours à toi ».",
+          "altText": "Note saisie constituant une fausse piste : Odette conserve une lettre d'Iseult disant « cette robe sera toujours à toi »."
+        },
+        "analysis": {
+          "category": "RED_HERRING",
+          "implicates": [
+            "odette"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "odette_detail"
+          ],
+          "isRedHerring": true
+        }
+      },
+      {
+        "id": "resolution",
+        "title": "Ce que la fausse piste oublie",
+        "source": "RECOUPEMENT",
+        "summary": "La formule est affective, non un acte de propriété, et le commissaire confirme sa présence continue à la répétition.",
+        "evidence": {
+          "kind": "document",
+          "title": "RECOUPEMENT",
+          "subtitle": "Pièce enregistrée à 19:48",
+          "paragraphs": [
+            "La formule est affective, non un acte de propriété, et le commissaire confirme sa présence continue à la répétition."
+          ],
+          "altText": "RECOUPEMENT : La formule est affective, non un acte de propriété, et le commissaire confirme sa présence continue à la répétition."
+        },
+        "analysis": {
+          "category": "EXONERATING",
+          "implicates": [],
+          "clears": [
+            "odette"
+          ],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      }
+    ],
+    "interviews": [
+      {
+        "id": "mona_alibi",
+        "suspectId": "mona",
+        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "answer": "Elle assistait au dîner des mécènes. Élégante, efficace, parle de chaque pièce comme d'un actif.",
+        "beat": "La version paraît nette, peut-être trop nette."
+      },
+      {
+        "id": "mona_relation",
+        "suspectId": "mona",
+        "question": "Qu'est-ce que Iseult Brémont risquait de changer pour vous ?",
+        "answer": "Nièce d'Iseult, elle gère le patrimoine de la maison. La maison manque de trésorerie.",
+        "beat": "Le mobile apparent n'est pas encore une preuve."
+      },
+      {
+        "id": "yacine_alibi",
+        "suspectId": "yacine",
+        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "answer": "Il dit avoir refermé la caisse à 18h. Délicat, passionné par les coutures invisibles.",
+        "beat": "La réponse peut être confrontée aux pièces."
+      },
+      {
+        "id": "yacine_relation",
+        "suspectId": "yacine",
+        "question": "Qu'est-ce que Iseult Brémont risquait de changer pour vous ?",
+        "answer": "Il a restauré la robe avant emballage. Il possède les patrons complets de la robe.",
+        "beat": "Le mobile apparent n'est pas encore une preuve."
+      },
+      {
+        "id": "odette_alibi",
+        "suspectId": "odette",
+        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "answer": "Elle répétait son discours avec le commissaire. Drôle, nostalgique, refuse d'être traitée en relique.",
+        "beat": "La réponse peut être confrontée aux pièces."
+      },
+      {
+        "id": "odette_relation",
+        "suspectId": "odette",
+        "question": "Qu'est-ce que Iseult Brémont risquait de changer pour vous ?",
+        "answer": "Elle a porté la robe au concours de 1984. Elle affirme que la robe lui avait été promise.",
+        "beat": "Le mobile apparent n'est pas encore une preuve."
+      },
+      {
+        "id": "mona_confrontation",
+        "suspectId": "mona",
+        "question": "Votre heure ne correspond pas au registre. Pourquoi ?",
+        "answer": "« Le registre se trompe parfois. Cela ne prouve pas que j'ai fait ce qu'on me reproche. »",
+        "unlockedByClueId": "registre",
+        "beat": "La personne conteste l'outil, sans expliquer sa propre trace."
+      },
+      {
+        "id": "mona_mobile",
+        "suspectId": "mona",
+        "question": "Ce document vous donnait-il une raison d'agir ?",
+        "answer": "« Vous appelez cela un mobile parce que vous connaissez déjà la fin. Sur le moment, je cherchais seulement une issue. »",
+        "unlockedByClueId": "mobile",
+        "beat": "La raison d'agir est reconnue à demi-mot."
+      },
+      {
+        "id": "odette_detail",
+        "suspectId": "odette",
+        "question": "Pourquoi cette pièce vous désigne-t-elle ?",
+        "answer": "« Elle est vraie, mais votre conclusion ne l'est pas. Cherchez ce qui s'est passé après. »",
+        "unlockedByClueId": "fausse_piste",
+        "beat": "La pièce cache une chronologie plus complète."
+      }
+    ],
+    "timeline": [
+      {
+        "time": "19:02",
+        "text": "Iseult Brémont est vu pour la dernière fois avant l'incident.",
+        "source": "Témoignages concordants",
+        "certainty": "CERTAIN"
+      },
+      {
+        "time": "19:14",
+        "text": "Le document révélant le mobile est créé ou consulté.",
+        "source": "Métadonnées",
+        "certainty": "CERTAIN"
+      },
+      {
+        "time": "19:27",
+        "text": "Mona Brémont affirme ne plus pouvoir intervenir.",
+        "source": "Déclaration",
+        "certainty": "REPORTED"
+      },
+      {
+        "time": "19:40",
+        "text": "Une activité technique contredit cette version.",
+        "source": "Registre",
+        "certainty": "CERTAIN"
+      },
+      {
+        "time": "19:48",
+        "text": "L'incident devient visible ou produit ses effets.",
+        "source": "Constat",
+        "certainty": "ESTIMATED"
+      }
+    ],
+    "accusation": {
+      "questions": [
+        {
+          "id": "q_who",
+          "kind": "suspect",
+          "prompt": "Qui est responsable ?",
+          "optional": false,
+          "options": [
+            {
+              "id": "mona",
+              "label": "Mona Brémont",
+              "hint": "Directrice de l'atelier"
+            },
+            {
+              "id": "yacine",
+              "label": "Yacine Dupré",
+              "hint": "Costumier"
+            },
+            {
+              "id": "odette",
+              "label": "Odette Marin",
+              "hint": "Ancien mannequin"
+            }
+          ]
+        },
+        {
+          "id": "q_why",
+          "kind": "motive",
+          "prompt": "Pourquoi cette personne a-t-elle agi ?",
+          "optional": false,
+          "options": [
+            {
+              "id": "motive_correct",
+              "label": "Vendre l'original pour sauver financièrement la maison"
+            },
+            {
+              "id": "motive_rivalite",
+              "label": "Écarter un rival par jalousie"
+            },
+            {
+              "id": "motive_accident",
+              "label": "Cacher une erreur sans rapport avec l'incident"
+            }
+          ]
+        },
+        {
+          "id": "q_how",
+          "kind": "method",
+          "prompt": "Comment l'incident a-t-il été provoqué ?",
+          "optional": false,
+          "options": [
+            {
+              "id": "method_correct",
+              "label": "Faire sceller une copie puis échanger l'étiquette électronique de suivi"
+            },
+            {
+              "id": "method_force",
+              "label": "Forcer directement l'accès principal"
+            },
+            {
+              "id": "method_complice",
+              "label": "Employer un complice extérieur après la fermeture"
+            }
+          ]
+        }
+      ]
+    },
+    "difficulty": "NORMAL",
+    "estimatedMinutes": 8
+  },
+  "meta": {
+    "crimeType": "objet_remplace",
+    "locationType": "atelier couture",
+    "culpritGender": "F",
+    "motiveType": "sauver une entreprise",
+    "methodType": "copie et traceur échangé",
+    "coreMechanic": "crime moralement ambivalent"
+  },
+  "solution": {
+    "culpritId": "mona",
+    "correctMotive": "motive_correct",
+    "correctMethod": "method_correct",
+    "validationAnswers": {
+      "q_who": "mona",
+      "q_why": "motive_correct",
+      "q_how": "method_correct"
+    },
+    "optionalAnswers": {},
+    "correctTimeline": [
+      {
+        "time": "19:02",
+        "place": "Atelier de haute couture — Paris",
+        "personIds": [
+          "mona"
+        ],
+        "text": "Mona Brémont comprend que la situation menace directement ses intérêts."
+      },
+      {
+        "time": "19:14",
+        "place": "Atelier de haute couture — Paris",
+        "personIds": [
+          "mona"
+        ],
+        "text": "Le mobile se cristallise : vendre l'original pour sauver financièrement la maison."
+      },
+      {
+        "time": "19:40",
+        "endTime": "19:45",
+        "place": "Atelier de haute couture — Paris",
+        "personIds": [
+          "mona"
+        ],
+        "text": "Mona avait commandé une copie exacte et déplacé le traceur pour faire croire au trajet normal de la caisse. Elle a sacrifié l'objet fondateur de la maison afin de sauver les personnes qui y travaillent, convaincue qu'Iseult choisirait les salaires plutôt que la mémoire."
+      },
+      {
+        "time": "19:48",
+        "place": "Atelier de haute couture — Paris",
+        "personIds": [
+          "mona"
+        ],
+        "text": "La personne remet les lieux en ordre et s'appuie sur son alibi préparé."
+      }
+    ],
+    "reasoning": [
+      "Le registre contredit l'heure donnée par Mona Brémont : Le traceur censé rester dans la caisse se déplace jusqu'au coffre privé de Mona après le dîner.",
+      "La trace matérielle ne prouve pas seulement une présence; elle décrit la méthode : La copie utilise un fil moderne commandé sur le compte personnel de Mona sous un faux projet.",
+      "Le document confidentiel fournit un mobile précis : Un accord de vente secret couvre exactement les salaires en retard de l'atelier.",
+      "Yacine Dupré est écarté par une preuve indépendante, tandis que l'élément visant Odette Marin est expliqué par le recoupement final.",
+      "La seule personne réunissant présence, moyen et mobile est Mona Brémont."
+    ],
+    "explanation": "Mona avait commandé une copie exacte et déplacé le traceur pour faire croire au trajet normal de la caisse. Elle a sacrifié l'objet fondateur de la maison afin de sauver les personnes qui y travaillent, convaincue qu'Iseult choisirait les salaires plutôt que la mémoire. Le mobile était de vendre l'original pour sauver financièrement la maison. La méthode consistait à faire sceller une copie puis échanger l'étiquette électronique de suivi. La fausse piste contre Odette Marin paraît forte isolément, mais la formule est affective, non un acte de propriété, et le commissaire confirme sa présence continue à la répétition. Ainsi, les preuves convergent sans supposer d'information extérieure au dossier.",
+    "proofChains": [
+      {
+        "title": "La chaîne du geste",
+        "steps": [
+          "Le traceur censé rester dans la caisse se déplace jusqu'au coffre privé de Mona après le dîner.",
+          "La copie utilise un fil moderne commandé sur le compte personnel de Mona sous un faux projet.",
+          "Ces deux pièces relient matériellement Mona Brémont à l'action."
+        ]
+      },
+      {
+        "title": "La chaîne de l'intention",
+        "steps": [
+          "Un accord de vente secret couvre exactement les salaires en retard de l'atelier.",
+          "La vidéo de restauration montre Yacine fermer la vraie robe et quitter les lieux avant que Mona ne reprenne la caisse.",
+          "Le mobile devient exclusif une fois les alibis recoupés."
+        ]
+      }
+    ]
+  }
+}

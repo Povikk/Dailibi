@@ -1,0 +1,489 @@
+{
+  "public": {
+    "id": "minuit-sur-les-ondes",
+    "number": 8,
+    "date": "2026-09-08",
+    "title": "MINUIT SUR LES ONDES",
+    "subtitle": "L'animatrice s'effondre en direct après avoir bu dans une tasse que personne n'a touchée.",
+    "location": "Radio Nébuleuse — Toulouse",
+    "incident": "Tentative d'empoisonnement pendant une émission",
+    "intro": "À 00h07, Sonia boit son infusion et perd connaissance au micro. La tasse était dans le studio verrouillé depuis 23h30. L'analyse révèle un puissant sédatif, absent de la théière commune.",
+    "victim": {
+      "name": "Sonia Kermadec",
+      "description": "Animatrice, 40 ans. Elle présentait sa dernière émission avant de révéler un dossier interne."
+    },
+    "suspects": [
+      {
+        "id": "gaspard",
+        "name": "Gaspard Lin",
+        "age": 34,
+        "occupation": "Réalisateur sonore",
+        "relation": "Il pilote l'émission derrière la vitre.",
+        "personality": "Vif, sarcastique, ne supporte pas les silences.",
+        "claimedAlibi": "Il assure n'avoir jamais quitté la régie.",
+        "accent": "formal",
+        "notes": [
+          "Sonia allait dénoncer ses faux relevés d'heures."
+        ]
+      },
+      {
+        "id": "mina",
+        "name": "Mina Ferhat",
+        "age": 26,
+        "occupation": "Stagiaire",
+        "relation": "Elle prépare habituellement l'infusion de Sonia.",
+        "personality": "Appliquée, inquiète de mal faire.",
+        "claimedAlibi": "Elle dit avoir posé une tasse propre avant 23h puis être partie.",
+        "accent": "nervous",
+        "notes": [
+          "Un flacon de somnifères porte son nom."
+        ]
+      },
+      {
+        "id": "alban",
+        "name": "Alban Reyes",
+        "age": 49,
+        "occupation": "Directeur d'antenne",
+        "relation": "Il avait interdit à Sonia d'évoquer le dossier.",
+        "personality": "Poli, autoritaire, parle de la radio comme d'une famille.",
+        "claimedAlibi": "Il assistait à un gala retransmis sur les réseaux.",
+        "accent": "cold",
+        "notes": [
+          "Le scandale pouvait lui coûter sa fréquence."
+        ]
+      }
+    ],
+    "clues": [
+      {
+        "id": "registre",
+        "title": "L'alibi qui se fissure",
+        "source": "JOURNAL TECHNIQUE",
+        "summary": "Une automation publicitaire de quatre minutes a tourné seule pendant que le siège de Gaspard cessait d'émettre son capteur de présence.",
+        "evidence": {
+          "kind": "schedule",
+          "title": "JOURNAL TECHNIQUE",
+          "rows": [
+            {
+              "time": "20:34",
+              "label": "Une automation publicitaire de quatre minutes a tourné seule pendant que le siège de Gaspard cessait d'émettre son capteur de présence."
+            }
+          ],
+          "altText": "JOURNAL TECHNIQUE à 20:34 : Une automation publicitaire de quatre minutes a tourné seule pendant que le siège de Gaspard cessait d'émettre son capteur de présence."
+        },
+        "analysis": {
+          "category": "CONTRADICTION",
+          "implicates": [
+            "gaspard"
+          ],
+          "clears": [],
+          "contradicts": [
+            "gaspard"
+          ],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [
+            "gaspard"
+          ],
+          "unlocksInterviewIds": [
+            "gaspard_confrontation"
+          ],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "trace",
+        "title": "La trace qui ne devait pas rester",
+        "source": "ANALYSE MATÉRIELLE",
+        "summary": "Le gel fluorescent est retrouvé sur la molette gauche de sa console et sous son ongle.",
+        "evidence": {
+          "kind": "photo",
+          "caption": "Le gel fluorescent est retrouvé sur la molette gauche de sa console et sous son ongle.",
+          "meta": [
+            {
+              "label": "HEURE",
+              "value": "20:39"
+            },
+            {
+              "label": "STATUT",
+              "value": "Pièce analysée"
+            }
+          ],
+          "altText": "Photographie d'analyse : Le gel fluorescent est retrouvé sur la molette gauche de sa console et sous son ongle.",
+          "tone": "cold"
+        },
+        "analysis": {
+          "category": "TIMELINE",
+          "implicates": [
+            "gaspard"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [
+            "gaspard"
+          ],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "mobile",
+        "title": "Ce que la victime allait révéler",
+        "source": "DOCUMENT CONFIDENTIEL",
+        "summary": "Le dossier de Sonia relie le compte bénéficiaire des faux cachets à la microentreprise de Gaspard.",
+        "evidence": {
+          "kind": "email",
+          "from": "Dossier de la victime",
+          "to": "Archives de l'enquête",
+          "subject": "Ce que la victime allait révéler",
+          "sentAt": "20:08",
+          "body": "Le dossier de Sonia relie le compte bénéficiaire des faux cachets à la microentreprise de Gaspard.",
+          "altText": "Document confidentiel : Le dossier de Sonia relie le compte bénéficiaire des faux cachets à la microentreprise de Gaspard."
+        },
+        "analysis": {
+          "category": "BEHAVIORAL",
+          "implicates": [],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [
+            "gaspard"
+          ],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "gaspard_mobile"
+          ],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "alibi_a",
+        "title": "La preuve de Mina Ferhat",
+        "source": "VÉRIFICATION D'ALIBI",
+        "summary": "Le badge de Mina enregistre sa sortie du bâtiment quarante minutes avant que la tasse ne soit placée.",
+        "evidence": {
+          "kind": "camera",
+          "location": "VÉRIFICATION D'ALIBI",
+          "frames": [
+            {
+              "time": "20:27",
+              "text": "Le badge de Mina enregistre sa sortie du bâtiment quarante minutes avant que la tasse ne soit placée."
+            }
+          ],
+          "altText": "Relevé de vérification à 20:27 : Le badge de Mina enregistre sa sortie du bâtiment quarante minutes avant que la tasse ne soit placée."
+        },
+        "analysis": {
+          "category": "EXONERATING",
+          "implicates": [],
+          "clears": [
+            "mina"
+          ],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "fausse_piste",
+        "title": "Le détail contre Alban Reyes",
+        "source": "PIÈCE SAISIE",
+        "summary": "Les somnifères de Mina sont de la même famille chimique que le produit détecté.",
+        "evidence": {
+          "kind": "note",
+          "body": "Les somnifères de Mina sont de la même famille chimique que le produit détecté.",
+          "altText": "Note saisie constituant une fausse piste : Les somnifères de Mina sont de la même famille chimique que le produit détecté."
+        },
+        "analysis": {
+          "category": "RED_HERRING",
+          "implicates": [
+            "alban"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "alban_detail"
+          ],
+          "isRedHerring": true
+        }
+      },
+      {
+        "id": "resolution",
+        "title": "Ce que la fausse piste oublie",
+        "source": "RECOUPEMENT",
+        "summary": "Son ordonnance concerne des comprimés bleus; le produit de la tasse est un gel vétérinaire acheté avec la carte de production.",
+        "evidence": {
+          "kind": "document",
+          "title": "RECOUPEMENT",
+          "subtitle": "Pièce enregistrée à 20:42",
+          "paragraphs": [
+            "Son ordonnance concerne des comprimés bleus; le produit de la tasse est un gel vétérinaire acheté avec la carte de production."
+          ],
+          "altText": "RECOUPEMENT : Son ordonnance concerne des comprimés bleus; le produit de la tasse est un gel vétérinaire acheté avec la carte de production."
+        },
+        "analysis": {
+          "category": "EXONERATING",
+          "implicates": [],
+          "clears": [
+            "alban"
+          ],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      }
+    ],
+    "interviews": [
+      {
+        "id": "gaspard_alibi",
+        "suspectId": "gaspard",
+        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "answer": "Il assure n'avoir jamais quitté la régie. Vif, sarcastique, ne supporte pas les silences.",
+        "beat": "La version paraît nette, peut-être trop nette."
+      },
+      {
+        "id": "gaspard_relation",
+        "suspectId": "gaspard",
+        "question": "Qu'est-ce que Sonia Kermadec risquait de changer pour vous ?",
+        "answer": "Il pilote l'émission derrière la vitre. Sonia allait dénoncer ses faux relevés d'heures.",
+        "beat": "Le mobile apparent n'est pas encore une preuve."
+      },
+      {
+        "id": "mina_alibi",
+        "suspectId": "mina",
+        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "answer": "Elle dit avoir posé une tasse propre avant 23h puis être partie. Appliquée, inquiète de mal faire.",
+        "beat": "La réponse peut être confrontée aux pièces."
+      },
+      {
+        "id": "mina_relation",
+        "suspectId": "mina",
+        "question": "Qu'est-ce que Sonia Kermadec risquait de changer pour vous ?",
+        "answer": "Elle prépare habituellement l'infusion de Sonia. Un flacon de somnifères porte son nom.",
+        "beat": "Le mobile apparent n'est pas encore une preuve."
+      },
+      {
+        "id": "alban_alibi",
+        "suspectId": "alban",
+        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "answer": "Il assistait à un gala retransmis sur les réseaux. Poli, autoritaire, parle de la radio comme d'une famille.",
+        "beat": "La réponse peut être confrontée aux pièces."
+      },
+      {
+        "id": "alban_relation",
+        "suspectId": "alban",
+        "question": "Qu'est-ce que Sonia Kermadec risquait de changer pour vous ?",
+        "answer": "Il avait interdit à Sonia d'évoquer le dossier. Le scandale pouvait lui coûter sa fréquence.",
+        "beat": "Le mobile apparent n'est pas encore une preuve."
+      },
+      {
+        "id": "gaspard_confrontation",
+        "suspectId": "gaspard",
+        "question": "Votre heure ne correspond pas au registre. Pourquoi ?",
+        "answer": "« Le registre se trompe parfois. Cela ne prouve pas que j'ai fait ce qu'on me reproche. »",
+        "unlockedByClueId": "registre",
+        "beat": "La personne conteste l'outil, sans expliquer sa propre trace."
+      },
+      {
+        "id": "gaspard_mobile",
+        "suspectId": "gaspard",
+        "question": "Ce document vous donnait-il une raison d'agir ?",
+        "answer": "« Vous appelez cela un mobile parce que vous connaissez déjà la fin. Sur le moment, je cherchais seulement une issue. »",
+        "unlockedByClueId": "mobile",
+        "beat": "La raison d'agir est reconnue à demi-mot."
+      },
+      {
+        "id": "alban_detail",
+        "suspectId": "alban",
+        "question": "Pourquoi cette pièce vous désigne-t-elle ?",
+        "answer": "« Elle est vraie, mais votre conclusion ne l'est pas. Cherchez ce qui s'est passé après. »",
+        "unlockedByClueId": "fausse_piste",
+        "beat": "La pièce cache une chronologie plus complète."
+      }
+    ],
+    "timeline": [
+      {
+        "time": "19:56",
+        "text": "Sonia Kermadec est vu pour la dernière fois avant l'incident.",
+        "source": "Témoignages concordants",
+        "certainty": "CERTAIN"
+      },
+      {
+        "time": "20:08",
+        "text": "Le document révélant le mobile est créé ou consulté.",
+        "source": "Métadonnées",
+        "certainty": "CERTAIN"
+      },
+      {
+        "time": "20:21",
+        "text": "Gaspard Lin affirme ne plus pouvoir intervenir.",
+        "source": "Déclaration",
+        "certainty": "REPORTED"
+      },
+      {
+        "time": "20:34",
+        "text": "Une activité technique contredit cette version.",
+        "source": "Registre",
+        "certainty": "CERTAIN"
+      },
+      {
+        "time": "20:42",
+        "text": "L'incident devient visible ou produit ses effets.",
+        "source": "Constat",
+        "certainty": "ESTIMATED"
+      }
+    ],
+    "accusation": {
+      "questions": [
+        {
+          "id": "q_who",
+          "kind": "suspect",
+          "prompt": "Qui est responsable ?",
+          "optional": false,
+          "options": [
+            {
+              "id": "gaspard",
+              "label": "Gaspard Lin",
+              "hint": "Réalisateur sonore"
+            },
+            {
+              "id": "mina",
+              "label": "Mina Ferhat",
+              "hint": "Stagiaire"
+            },
+            {
+              "id": "alban",
+              "label": "Alban Reyes",
+              "hint": "Directeur d'antenne"
+            }
+          ]
+        },
+        {
+          "id": "q_why",
+          "kind": "motive",
+          "prompt": "Pourquoi cette personne a-t-elle agi ?",
+          "optional": false,
+          "options": [
+            {
+              "id": "motive_correct",
+              "label": "Empêcher la révélation de ses détournements de cachets"
+            },
+            {
+              "id": "motive_rivalite",
+              "label": "Écarter un rival par jalousie"
+            },
+            {
+              "id": "motive_accident",
+              "label": "Cacher une erreur sans rapport avec l'incident"
+            }
+          ]
+        },
+        {
+          "id": "q_how",
+          "kind": "method",
+          "prompt": "Comment l'incident a-t-il été provoqué ?",
+          "optional": false,
+          "options": [
+            {
+              "id": "method_correct",
+              "label": "Enduire le bord précis de la tasse avec un gel sédatif avant de la pousser dans le studio"
+            },
+            {
+              "id": "method_force",
+              "label": "Forcer directement l'accès principal"
+            },
+            {
+              "id": "method_complice",
+              "label": "Employer un complice extérieur après la fermeture"
+            }
+          ]
+        }
+      ]
+    },
+    "difficulty": "DIFFICILE",
+    "estimatedMinutes": 10
+  },
+  "meta": {
+    "crimeType": "tentative_meurtre",
+    "locationType": "studio radio",
+    "culpritGender": "M",
+    "motiveType": "cacher une fraude",
+    "methodType": "gel sur le bord d'une tasse",
+    "coreMechanic": "habitude gestuelle de la victime"
+  },
+  "solution": {
+    "culpritId": "gaspard",
+    "correctMotive": "motive_correct",
+    "correctMethod": "method_correct",
+    "validationAnswers": {
+      "q_who": "gaspard",
+      "q_why": "motive_correct",
+      "q_how": "method_correct"
+    },
+    "optionalAnswers": {},
+    "correctTimeline": [
+      {
+        "time": "19:56",
+        "place": "Radio Nébuleuse — Toulouse",
+        "personIds": [
+          "gaspard"
+        ],
+        "text": "Gaspard Lin comprend que la situation menace directement ses intérêts."
+      },
+      {
+        "time": "20:08",
+        "place": "Radio Nébuleuse — Toulouse",
+        "personIds": [
+          "gaspard"
+        ],
+        "text": "Le mobile se cristallise : empêcher la révélation de ses détournements de cachets."
+      },
+      {
+        "time": "20:34",
+        "endTime": "20:39",
+        "place": "Radio Nébuleuse — Toulouse",
+        "personIds": [
+          "gaspard"
+        ],
+        "text": "Gaspard a profité d'une plage automatisée pour quitter la régie, enduire le côté de la tasse où Sonia posait toujours les lèvres, puis la glisser par le passe-plat. La théière devait rester innocente et faire croire à une erreur de Mina."
+      },
+      {
+        "time": "20:42",
+        "place": "Radio Nébuleuse — Toulouse",
+        "personIds": [
+          "gaspard"
+        ],
+        "text": "La personne remet les lieux en ordre et s'appuie sur son alibi préparé."
+      }
+    ],
+    "reasoning": [
+      "Le registre contredit l'heure donnée par Gaspard Lin : Une automation publicitaire de quatre minutes a tourné seule pendant que le siège de Gaspard cessait d'émettre son capteur de présence.",
+      "La trace matérielle ne prouve pas seulement une présence; elle décrit la méthode : Le gel fluorescent est retrouvé sur la molette gauche de sa console et sous son ongle.",
+      "Le document confidentiel fournit un mobile précis : Le dossier de Sonia relie le compte bénéficiaire des faux cachets à la microentreprise de Gaspard.",
+      "Mina Ferhat est écarté par une preuve indépendante, tandis que l'élément visant Alban Reyes est expliqué par le recoupement final.",
+      "La seule personne réunissant présence, moyen et mobile est Gaspard Lin."
+    ],
+    "explanation": "Gaspard a profité d'une plage automatisée pour quitter la régie, enduire le côté de la tasse où Sonia posait toujours les lèvres, puis la glisser par le passe-plat. La théière devait rester innocente et faire croire à une erreur de Mina. Le mobile était de empêcher la révélation de ses détournements de cachets. La méthode consistait à enduire le bord précis de la tasse avec un gel sédatif avant de la pousser dans le studio. La fausse piste contre Alban Reyes paraît forte isolément, mais son ordonnance concerne des comprimés bleus; le produit de la tasse est un gel vétérinaire acheté avec la carte de production. Ainsi, les preuves convergent sans supposer d'information extérieure au dossier.",
+    "proofChains": [
+      {
+        "title": "La chaîne du geste",
+        "steps": [
+          "Une automation publicitaire de quatre minutes a tourné seule pendant que le siège de Gaspard cessait d'émettre son capteur de présence.",
+          "Le gel fluorescent est retrouvé sur la molette gauche de sa console et sous son ongle.",
+          "Ces deux pièces relient matériellement Gaspard Lin à l'action."
+        ]
+      },
+      {
+        "title": "La chaîne de l'intention",
+        "steps": [
+          "Le dossier de Sonia relie le compte bénéficiaire des faux cachets à la microentreprise de Gaspard.",
+          "Le badge de Mina enregistre sa sortie du bâtiment quarante minutes avant que la tasse ne soit placée.",
+          "Le mobile devient exclusif une fois les alibis recoupés."
+        ]
+      }
+    ]
+  }
+}

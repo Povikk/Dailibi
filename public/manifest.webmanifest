@@ -1,0 +1,11 @@
+{
+  "name": "DAILIBI",
+  "short_name": "Dailibi",
+  "description": "Une affaire. Chaque jour.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0c0d0e",
+  "theme_color": "#141618",
+  "lang": "fr",
+  "icons": []
+}

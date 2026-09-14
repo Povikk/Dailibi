@@ -1,0 +1,189 @@
+{
+  "_comment": "DAILIBI - MODELE D'AFFAIRE. Etape 1 : definir la VERITE dans solution. Etape 2 : suspects et fausses versions. Etape 3 : indices construits A PARTIR de la verite. Ne jamais ecrire l'histoire avant la solution.",
+  "public": {
+    "id": "__ID__",
+    "number": __NUMBER__,
+    "date": "__DATE__",
+    "title": "__TITLE__",
+    "subtitle": "Sous-titre en une phrase.",
+    "location": "Lieu precis - ville",
+    "incident": "Nature de l'incident (vol, disparition, sabotage, fraude...)",
+    "intro": "3 a 5 phrases. Les faits observes, sans interpreter. Qui constate, quand, ou, quoi.",
+    "victim": {
+      "name": "Nom de la victime ou du plaignant",
+      "description": "Age, role, ce qu'il faisait au moment des faits."
+    },
+    "suspects": [
+      {
+        "id": "suspect_a",
+        "name": "Prenom Nom",
+        "age": 40,
+        "occupation": "Metier",
+        "relation": "Relation avec la victime, en une phrase.",
+        "personality": "Traits concrets, facon de repondre.",
+        "claimedAlibi": "Ce qu'il declare, peut etre faux.",
+        "accent": "formal",
+        "notes": ["Fait public utile au raisonnement."]
+      },
+      {
+        "id": "suspect_b",
+        "name": "Prenom Nom",
+        "age": 30,
+        "occupation": "Metier",
+        "relation": "Relation avec la victime.",
+        "personality": "Traits concrets.",
+        "claimedAlibi": "Version declaree.",
+        "accent": "nervous",
+        "notes": ["Un suspect qui ment sans etre coupable."]
+      },
+      {
+        "id": "suspect_c",
+        "name": "Prenom Nom",
+        "age": 55,
+        "occupation": "Metier",
+        "relation": "Relation avec la victime.",
+        "personality": "Traits concrets.",
+        "claimedAlibi": "Version declaree.",
+        "accent": "cold",
+        "notes": []
+      }
+    ],
+    "clues": [
+      {
+        "id": "clue_01",
+        "title": "Intitule de la piece",
+        "source": "D'ou vient la piece (camera, ticket, badge...)",
+        "summary": "Ce que la piece montre en une phrase, factuelle.",
+        "evidence": {
+          "kind": "document",
+          "title": "TITRE DU DOCUMENT",
+          "paragraphs": ["Contenu visible."],
+          "altText": "Description accessible de la piece pour les lecteurs d'ecran."
+        },
+        "analysis": {
+          "category": "CONTRADICTION",
+          "implicates": ["suspect_a"],
+          "clears": [],
+          "contradicts": ["suspect_a"],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      }
+    ],
+    "interviews": [
+      {
+        "id": "suspect_a_q1",
+        "suspectId": "suspect_a",
+        "question": "Ou etiez-vous au moment des faits ?",
+        "answer": "Reponse dans une voix propre au personnage."
+      },
+      {
+        "id": "suspect_a_q2",
+        "suspectId": "suspect_a",
+        "question": "Quelle etait votre relation avec la victime ?",
+        "answer": "Reponse."
+      },
+      {
+        "id": "suspect_b_q1",
+        "suspectId": "suspect_b",
+        "question": "Ou etiez-vous au moment des faits ?",
+        "answer": "Reponse."
+      },
+      {
+        "id": "suspect_c_q1",
+        "suspectId": "suspect_c",
+        "question": "Ou etiez-vous au moment des faits ?",
+        "answer": "Reponse."
+      }
+    ],
+    "timeline": [
+      {
+        "time": "22:00",
+        "text": "Evenement etabli par une source.",
+        "source": "Camera, temoignage, registre...",
+        "certainty": "CERTAIN"
+      }
+    ],
+    "accusation": {
+      "questions": [
+        {
+          "id": "q_who",
+          "kind": "suspect",
+          "prompt": "Qui est responsable ?",
+          "options": [
+            { "id": "suspect_a", "label": "Prenom Nom" },
+            { "id": "suspect_b", "label": "Prenom Nom" },
+            { "id": "suspect_c", "label": "Prenom Nom" }
+          ]
+        },
+        {
+          "id": "q_why",
+          "kind": "motive",
+          "prompt": "Pourquoi ?",
+          "options": [
+            { "id": "motive_1", "label": "Mobile plausible 1" },
+            { "id": "motive_2", "label": "Mobile plausible 2" },
+            { "id": "motive_3", "label": "Mobile plausible 3" }
+          ]
+        },
+        {
+          "id": "q_how",
+          "kind": "method",
+          "prompt": "Comment ?",
+          "options": [
+            { "id": "method_1", "label": "Methode plausible 1" },
+            { "id": "method_2", "label": "Methode plausible 2" },
+            { "id": "method_3", "label": "Methode plausible 3" }
+          ]
+        }
+      ]
+    },
+    "difficulty": "NORMAL",
+    "estimatedMinutes": 7
+  },
+  "meta": {
+    "crimeType": "vol",
+    "locationType": "bureau",
+    "culpritGender": "F",
+    "motiveType": "a definir",
+    "methodType": "a definir",
+    "coreMechanic": "contradiction temporelle"
+  },
+  "solution": {
+    "culpritId": "suspect_a",
+    "correctMotive": "motive_1",
+    "correctMethod": "method_1",
+    "validationAnswers": {
+      "q_who": "suspect_a",
+      "q_why": "motive_1",
+      "q_how": "method_1"
+    },
+    "optionalAnswers": {},
+    "correctTimeline": [
+      {
+        "time": "22:00",
+        "place": "Lieu",
+        "personIds": ["suspect_a"],
+        "text": "Ce qui s'est reellement passe."
+      }
+    ],
+    "reasoning": [
+      "Etape de raisonnement 1, fondee sur un indice public.",
+      "Etape de raisonnement 2.",
+      "Conclusion."
+    ],
+    "explanation": "Explication concise reliant mensonge, mobile, methode et incident.",
+    "proofChains": [
+      {
+        "title": "Chaine A - titre",
+        "steps": ["Indice", "Deduction", "Conclusion"]
+      },
+      {
+        "title": "Chaine B - titre",
+        "steps": ["Indice", "Deduction", "Conclusion"]
+      }
+    ]
+  }
+}

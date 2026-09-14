@@ -1,0 +1,489 @@
+{
+  "public": {
+    "id": "l-anatomie-d-un-parfum",
+    "number": 17,
+    "date": "2026-09-17",
+    "title": "L'ANATOMIE D'UN PARFUM",
+    "subtitle": "La formule volée laisse dans l'air une note que son auteur avait volontairement supprimée.",
+    "location": "Maison de parfums Orbe — Grasse",
+    "incident": "Vol d'une formule confidentielle",
+    "intro": "Le coffre numérique contenant la formule est consulté à 3h12. Rien n'est copié selon le serveur, mais un concurrent dépose dès l'aube une composition presque identique. Une seule ancienne note, le narcisse, diffère.",
+    "victim": {
+      "name": "Maître Alba Rey",
+      "description": "Nez, 56 ans. Elle devait présenter son dernier parfum après dix ans de travail."
+    },
+    "suspects": [
+      {
+        "id": "emilie",
+        "name": "Émilie Rey",
+        "age": 31,
+        "occupation": "Évaluatrice",
+        "relation": "Fille d'Alba, elle teste chaque version.",
+        "personality": "Sensible, exigeante, reconnaît les matières les yeux fermés.",
+        "claimedAlibi": "Elle affirme avoir dormi chez sa mère.",
+        "accent": "formal",
+        "notes": [
+          "Elle voulait que le parfum porte aussi son nom."
+        ]
+      },
+      {
+        "id": "karim",
+        "name": "Karim Borel",
+        "age": 44,
+        "occupation": "Chimiste",
+        "relation": "Il stabilise les formules pour la production.",
+        "personality": "Sec, rationnel, méprise le vocabulaire poétique.",
+        "claimedAlibi": "Il surveillait une distillation dans le bâtiment voisin.",
+        "accent": "nervous",
+        "notes": [
+          "Le concurrent lui a proposé un poste."
+        ]
+      },
+      {
+        "id": "fanny",
+        "name": "Fanny Lauzier",
+        "age": 50,
+        "occupation": "Directrice commerciale",
+        "relation": "Elle organise le lancement mondial.",
+        "personality": "Élégante, persuasive, parle en marchés.",
+        "claimedAlibi": "Elle était dans un avion pour Londres.",
+        "accent": "cold",
+        "notes": [
+          "Un retard ferait tomber ses objectifs annuels."
+        ]
+      }
+    ],
+    "clues": [
+      {
+        "id": "registre",
+        "title": "L'alibi qui se fissure",
+        "source": "JOURNAL TECHNIQUE",
+        "summary": "Le bracelet de sommeil d'Émilie enregistre une marche jusqu'au laboratoire à 3h.",
+        "evidence": {
+          "kind": "schedule",
+          "title": "JOURNAL TECHNIQUE",
+          "rows": [
+            {
+              "time": "20:07",
+              "label": "Le bracelet de sommeil d'Émilie enregistre une marche jusqu'au laboratoire à 3h."
+            }
+          ],
+          "altText": "JOURNAL TECHNIQUE à 20:07 : Le bracelet de sommeil d'Émilie enregistre une marche jusqu'au laboratoire à 3h."
+        },
+        "analysis": {
+          "category": "CONTRADICTION",
+          "implicates": [
+            "emilie"
+          ],
+          "clears": [],
+          "contradicts": [
+            "emilie"
+          ],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [
+            "emilie"
+          ],
+          "unlocksInterviewIds": [
+            "emilie_confrontation"
+          ],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "trace",
+        "title": "La trace qui ne devait pas rester",
+        "source": "ANALYSE MATÉRIELLE",
+        "summary": "La formule concurrente contient le narcisse présent seulement dans l'essai 47 qu'Émilie avait évalué seule.",
+        "evidence": {
+          "kind": "photo",
+          "caption": "La formule concurrente contient le narcisse présent seulement dans l'essai 47 qu'Émilie avait évalué seule.",
+          "meta": [
+            {
+              "label": "HEURE",
+              "value": "20:12"
+            },
+            {
+              "label": "STATUT",
+              "value": "Pièce analysée"
+            }
+          ],
+          "altText": "Photographie d'analyse : La formule concurrente contient le narcisse présent seulement dans l'essai 47 qu'Émilie avait évalué seule.",
+          "tone": "cold"
+        },
+        "analysis": {
+          "category": "TIMELINE",
+          "implicates": [
+            "emilie"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [
+            "emilie"
+          ],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "mobile",
+        "title": "Ce que la victime allait révéler",
+        "source": "DOCUMENT CONFIDENTIEL",
+        "summary": "Son journal décrit le dépôt concurrent comme le seul moyen de rendre sa part impossible à effacer.",
+        "evidence": {
+          "kind": "email",
+          "from": "Dossier de la victime",
+          "to": "Archives de l'enquête",
+          "subject": "Ce que la victime allait révéler",
+          "sentAt": "19:41",
+          "body": "Son journal décrit le dépôt concurrent comme le seul moyen de rendre sa part impossible à effacer.",
+          "altText": "Document confidentiel : Son journal décrit le dépôt concurrent comme le seul moyen de rendre sa part impossible à effacer."
+        },
+        "analysis": {
+          "category": "BEHAVIORAL",
+          "implicates": [],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [
+            "emilie"
+          ],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "emilie_mobile"
+          ],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "alibi_a",
+        "title": "La preuve de Karim Borel",
+        "source": "VÉRIFICATION D'ALIBI",
+        "summary": "Les capteurs de distillation exigent et enregistrent l'action physique continue de Karim dans l'autre bâtiment.",
+        "evidence": {
+          "kind": "camera",
+          "location": "VÉRIFICATION D'ALIBI",
+          "frames": [
+            {
+              "time": "20:00",
+              "text": "Les capteurs de distillation exigent et enregistrent l'action physique continue de Karim dans l'autre bâtiment."
+            }
+          ],
+          "altText": "Relevé de vérification à 20:00 : Les capteurs de distillation exigent et enregistrent l'action physique continue de Karim dans l'autre bâtiment."
+        },
+        "analysis": {
+          "category": "EXONERATING",
+          "implicates": [],
+          "clears": [
+            "karim"
+          ],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "fausse_piste",
+        "title": "Le détail contre Fanny Lauzier",
+        "source": "PIÈCE SAISIE",
+        "summary": "L'offre d'emploi reçue par Karim inclut une prime liée au lancement d'un parfum rival.",
+        "evidence": {
+          "kind": "note",
+          "body": "L'offre d'emploi reçue par Karim inclut une prime liée au lancement d'un parfum rival.",
+          "altText": "Note saisie constituant une fausse piste : L'offre d'emploi reçue par Karim inclut une prime liée au lancement d'un parfum rival."
+        },
+        "analysis": {
+          "category": "RED_HERRING",
+          "implicates": [
+            "fanny"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "fanny_detail"
+          ],
+          "isRedHerring": true
+        }
+      },
+      {
+        "id": "resolution",
+        "title": "Ce que la fausse piste oublie",
+        "source": "RECOUPEMENT",
+        "summary": "L'offre est postérieure au dépôt et ses métadonnées montrent qu'elle fut envoyée après que la fuite devint publique.",
+        "evidence": {
+          "kind": "document",
+          "title": "RECOUPEMENT",
+          "subtitle": "Pièce enregistrée à 20:15",
+          "paragraphs": [
+            "L'offre est postérieure au dépôt et ses métadonnées montrent qu'elle fut envoyée après que la fuite devint publique."
+          ],
+          "altText": "RECOUPEMENT : L'offre est postérieure au dépôt et ses métadonnées montrent qu'elle fut envoyée après que la fuite devint publique."
+        },
+        "analysis": {
+          "category": "EXONERATING",
+          "implicates": [],
+          "clears": [
+            "fanny"
+          ],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      }
+    ],
+    "interviews": [
+      {
+        "id": "emilie_alibi",
+        "suspectId": "emilie",
+        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "answer": "Elle affirme avoir dormi chez sa mère. Sensible, exigeante, reconnaît les matières les yeux fermés.",
+        "beat": "La version paraît nette, peut-être trop nette."
+      },
+      {
+        "id": "emilie_relation",
+        "suspectId": "emilie",
+        "question": "Qu'est-ce que Maître Alba Rey risquait de changer pour vous ?",
+        "answer": "Fille d'Alba, elle teste chaque version. Elle voulait que le parfum porte aussi son nom.",
+        "beat": "Le mobile apparent n'est pas encore une preuve."
+      },
+      {
+        "id": "karim_alibi",
+        "suspectId": "karim",
+        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "answer": "Il surveillait une distillation dans le bâtiment voisin. Sec, rationnel, méprise le vocabulaire poétique.",
+        "beat": "La réponse peut être confrontée aux pièces."
+      },
+      {
+        "id": "karim_relation",
+        "suspectId": "karim",
+        "question": "Qu'est-ce que Maître Alba Rey risquait de changer pour vous ?",
+        "answer": "Il stabilise les formules pour la production. Le concurrent lui a proposé un poste.",
+        "beat": "Le mobile apparent n'est pas encore une preuve."
+      },
+      {
+        "id": "fanny_alibi",
+        "suspectId": "fanny",
+        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "answer": "Elle était dans un avion pour Londres. Élégante, persuasive, parle en marchés.",
+        "beat": "La réponse peut être confrontée aux pièces."
+      },
+      {
+        "id": "fanny_relation",
+        "suspectId": "fanny",
+        "question": "Qu'est-ce que Maître Alba Rey risquait de changer pour vous ?",
+        "answer": "Elle organise le lancement mondial. Un retard ferait tomber ses objectifs annuels.",
+        "beat": "Le mobile apparent n'est pas encore une preuve."
+      },
+      {
+        "id": "emilie_confrontation",
+        "suspectId": "emilie",
+        "question": "Votre heure ne correspond pas au registre. Pourquoi ?",
+        "answer": "« Le registre se trompe parfois. Cela ne prouve pas que j'ai fait ce qu'on me reproche. »",
+        "unlockedByClueId": "registre",
+        "beat": "La personne conteste l'outil, sans expliquer sa propre trace."
+      },
+      {
+        "id": "emilie_mobile",
+        "suspectId": "emilie",
+        "question": "Ce document vous donnait-il une raison d'agir ?",
+        "answer": "« Vous appelez cela un mobile parce que vous connaissez déjà la fin. Sur le moment, je cherchais seulement une issue. »",
+        "unlockedByClueId": "mobile",
+        "beat": "La raison d'agir est reconnue à demi-mot."
+      },
+      {
+        "id": "fanny_detail",
+        "suspectId": "fanny",
+        "question": "Pourquoi cette pièce vous désigne-t-elle ?",
+        "answer": "« Elle est vraie, mais votre conclusion ne l'est pas. Cherchez ce qui s'est passé après. »",
+        "unlockedByClueId": "fausse_piste",
+        "beat": "La pièce cache une chronologie plus complète."
+      }
+    ],
+    "timeline": [
+      {
+        "time": "19:29",
+        "text": "Maître Alba Rey est vu pour la dernière fois avant l'incident.",
+        "source": "Témoignages concordants",
+        "certainty": "CERTAIN"
+      },
+      {
+        "time": "19:41",
+        "text": "Le document révélant le mobile est créé ou consulté.",
+        "source": "Métadonnées",
+        "certainty": "CERTAIN"
+      },
+      {
+        "time": "19:54",
+        "text": "Émilie Rey affirme ne plus pouvoir intervenir.",
+        "source": "Déclaration",
+        "certainty": "REPORTED"
+      },
+      {
+        "time": "20:07",
+        "text": "Une activité technique contredit cette version.",
+        "source": "Registre",
+        "certainty": "CERTAIN"
+      },
+      {
+        "time": "20:15",
+        "text": "L'incident devient visible ou produit ses effets.",
+        "source": "Constat",
+        "certainty": "ESTIMATED"
+      }
+    ],
+    "accusation": {
+      "questions": [
+        {
+          "id": "q_who",
+          "kind": "suspect",
+          "prompt": "Qui est responsable ?",
+          "optional": false,
+          "options": [
+            {
+              "id": "emilie",
+              "label": "Émilie Rey",
+              "hint": "Évaluatrice"
+            },
+            {
+              "id": "karim",
+              "label": "Karim Borel",
+              "hint": "Chimiste"
+            },
+            {
+              "id": "fanny",
+              "label": "Fanny Lauzier",
+              "hint": "Directrice commerciale"
+            }
+          ]
+        },
+        {
+          "id": "q_why",
+          "kind": "motive",
+          "prompt": "Pourquoi cette personne a-t-elle agi ?",
+          "optional": false,
+          "options": [
+            {
+              "id": "motive_correct",
+              "label": "Forcer sa mère à reconnaître sa contribution créative"
+            },
+            {
+              "id": "motive_rivalite",
+              "label": "Écarter un rival par jalousie"
+            },
+            {
+              "id": "motive_accident",
+              "label": "Cacher une erreur sans rapport avec l'incident"
+            }
+          ]
+        },
+        {
+          "id": "q_how",
+          "kind": "method",
+          "prompt": "Comment l'incident a-t-il été provoqué ?",
+          "optional": false,
+          "options": [
+            {
+              "id": "method_correct",
+              "label": "Mémoriser la formule puis transmettre une version ancienne identifiable"
+            },
+            {
+              "id": "method_force",
+              "label": "Forcer directement l'accès principal"
+            },
+            {
+              "id": "method_complice",
+              "label": "Employer un complice extérieur après la fermeture"
+            }
+          ]
+        }
+      ]
+    },
+    "difficulty": "NORMAL",
+    "estimatedMinutes": 8
+  },
+  "meta": {
+    "crimeType": "vol",
+    "locationType": "laboratoire de parfumerie",
+    "culpritGender": "F",
+    "motiveType": "reconnaissance filiale",
+    "methodType": "mémorisation d'une formule",
+    "coreMechanic": "ancienne note comme filiation"
+  },
+  "solution": {
+    "culpritId": "emilie",
+    "correctMotive": "motive_correct",
+    "correctMethod": "method_correct",
+    "validationAnswers": {
+      "q_who": "emilie",
+      "q_why": "motive_correct",
+      "q_how": "method_correct"
+    },
+    "optionalAnswers": {},
+    "correctTimeline": [
+      {
+        "time": "19:29",
+        "place": "Maison de parfums Orbe — Grasse",
+        "personIds": [
+          "emilie"
+        ],
+        "text": "Émilie Rey comprend que la situation menace directement ses intérêts."
+      },
+      {
+        "time": "19:41",
+        "place": "Maison de parfums Orbe — Grasse",
+        "personIds": [
+          "emilie"
+        ],
+        "text": "Le mobile se cristallise : forcer sa mère à reconnaître sa contribution créative."
+      },
+      {
+        "time": "20:07",
+        "endTime": "20:12",
+        "place": "Maison de parfums Orbe — Grasse",
+        "personIds": [
+          "emilie"
+        ],
+        "text": "Émilie n'a rien téléchargé : entraînée depuis l'enfance, elle a mémorisé les proportions. Elle a donné l'essai 47, avec son narcisse supprimé depuis, pour signer silencieusement sa contribution et contraindre Alba à la reconnaître."
+      },
+      {
+        "time": "20:15",
+        "place": "Maison de parfums Orbe — Grasse",
+        "personIds": [
+          "emilie"
+        ],
+        "text": "La personne remet les lieux en ordre et s'appuie sur son alibi préparé."
+      }
+    ],
+    "reasoning": [
+      "Le registre contredit l'heure donnée par Émilie Rey : Le bracelet de sommeil d'Émilie enregistre une marche jusqu'au laboratoire à 3h.",
+      "La trace matérielle ne prouve pas seulement une présence; elle décrit la méthode : La formule concurrente contient le narcisse présent seulement dans l'essai 47 qu'Émilie avait évalué seule.",
+      "Le document confidentiel fournit un mobile précis : Son journal décrit le dépôt concurrent comme le seul moyen de rendre sa part impossible à effacer.",
+      "Karim Borel est écarté par une preuve indépendante, tandis que l'élément visant Fanny Lauzier est expliqué par le recoupement final.",
+      "La seule personne réunissant présence, moyen et mobile est Émilie Rey."
+    ],
+    "explanation": "Émilie n'a rien téléchargé : entraînée depuis l'enfance, elle a mémorisé les proportions. Elle a donné l'essai 47, avec son narcisse supprimé depuis, pour signer silencieusement sa contribution et contraindre Alba à la reconnaître. Le mobile était de forcer sa mère à reconnaître sa contribution créative. La méthode consistait à mémoriser la formule puis transmettre une version ancienne identifiable. La fausse piste contre Fanny Lauzier paraît forte isolément, mais l'offre est postérieure au dépôt et ses métadonnées montrent qu'elle fut envoyée après que la fuite devint publique. Ainsi, les preuves convergent sans supposer d'information extérieure au dossier.",
+    "proofChains": [
+      {
+        "title": "La chaîne du geste",
+        "steps": [
+          "Le bracelet de sommeil d'Émilie enregistre une marche jusqu'au laboratoire à 3h.",
+          "La formule concurrente contient le narcisse présent seulement dans l'essai 47 qu'Émilie avait évalué seule.",
+          "Ces deux pièces relient matériellement Émilie Rey à l'action."
+        ]
+      },
+      {
+        "title": "La chaîne de l'intention",
+        "steps": [
+          "Son journal décrit le dépôt concurrent comme le seul moyen de rendre sa part impossible à effacer.",
+          "Les capteurs de distillation exigent et enregistrent l'action physique continue de Karim dans l'autre bâtiment.",
+          "Le mobile devient exclusif une fois les alibis recoupés."
+        ]
+      }
+    ]
+  }
+}

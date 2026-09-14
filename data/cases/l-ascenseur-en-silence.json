@@ -1,0 +1,489 @@
+{
+  "public": {
+    "id": "l-ascenseur-en-silence",
+    "number": 24,
+    "date": "2026-09-24",
+    "title": "L'ASCENSEUR EN SILENCE",
+    "subtitle": "Pendant quarante secondes, l'ascenseur n'est à aucun étage — et un coffre se vide.",
+    "location": "Tour Mercure — La Défense",
+    "incident": "Vol pendant une interruption d'ascenseur",
+    "intro": "Entre le 18e et le 19e étage, la cabine s'immobilise quarante secondes et les caméras deviennent noires. À l'arrivée, la mallette de Daria paraît fermée mais la clé cryptographique a disparu.",
+    "victim": {
+      "name": "Daria Nkem",
+      "description": "Directrice financière, 47 ans. Elle transportait une clé cryptographique dans une mallette."
+    },
+    "suspects": [
+      {
+        "id": "rachid",
+        "name": "Rachid Benali",
+        "age": 41,
+        "occupation": "Technicien ascensoriste",
+        "relation": "Il intervenait dans la tour cette nuit-là.",
+        "personality": "Calme, concret, explique volontiers les sécurités.",
+        "claimedAlibi": "Il affirme être resté au local machines.",
+        "accent": "formal",
+        "notes": [
+          "Son badge peut activer le mode inspection."
+        ]
+      },
+      {
+        "id": "eva",
+        "name": "Eva Krall",
+        "age": 38,
+        "occupation": "Auditrice",
+        "relation": "Elle partageait la cabine avec Daria.",
+        "personality": "Très attentive, mémorise les gestes et les silences.",
+        "claimedAlibi": "Elle dit avoir gardé les mains visibles pendant l'arrêt.",
+        "accent": "nervous",
+        "notes": [
+          "La clé permet d'accéder aux comptes qu'elle audite."
+        ]
+      },
+      {
+        "id": "hector",
+        "name": "Hector Lu",
+        "age": 50,
+        "occupation": "Directeur général",
+        "relation": "Il attendait Daria au 19e étage.",
+        "personality": "Impassible, parle en termes de gouvernance.",
+        "claimedAlibi": "Il participait à une visioconférence enregistrée.",
+        "accent": "cold",
+        "notes": [
+          "L'audit menace sa position."
+        ]
+      }
+    ],
+    "clues": [
+      {
+        "id": "registre",
+        "title": "L'alibi qui se fissure",
+        "source": "JOURNAL TECHNIQUE",
+        "summary": "Le journal moteur montre une commande locale dans la gaine, incompatible avec sa présence au local machines.",
+        "evidence": {
+          "kind": "schedule",
+          "title": "JOURNAL TECHNIQUE",
+          "rows": [
+            {
+              "time": "20:56",
+              "label": "Le journal moteur montre une commande locale dans la gaine, incompatible avec sa présence au local machines."
+            }
+          ],
+          "altText": "JOURNAL TECHNIQUE à 20:56 : Le journal moteur montre une commande locale dans la gaine, incompatible avec sa présence au local machines."
+        },
+        "analysis": {
+          "category": "CONTRADICTION",
+          "implicates": [
+            "rachid"
+          ],
+          "clears": [],
+          "contradicts": [
+            "rachid"
+          ],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [
+            "rachid"
+          ],
+          "unlocksInterviewIds": [
+            "rachid_confrontation"
+          ],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "trace",
+        "title": "La trace qui ne devait pas rester",
+        "source": "ANALYSE MATÉRIELLE",
+        "summary": "Une limaille magnétique de la trappe est retrouvée sur la fermeture apparemment intacte de la mallette.",
+        "evidence": {
+          "kind": "photo",
+          "caption": "Une limaille magnétique de la trappe est retrouvée sur la fermeture apparemment intacte de la mallette.",
+          "meta": [
+            {
+              "label": "HEURE",
+              "value": "21:01"
+            },
+            {
+              "label": "STATUT",
+              "value": "Pièce analysée"
+            }
+          ],
+          "altText": "Photographie d'analyse : Une limaille magnétique de la trappe est retrouvée sur la fermeture apparemment intacte de la mallette.",
+          "tone": "cold"
+        },
+        "analysis": {
+          "category": "TIMELINE",
+          "implicates": [
+            "rachid"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [
+            "rachid"
+          ],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "mobile",
+        "title": "Ce que la victime allait révéler",
+        "source": "DOCUMENT CONFIDENTIEL",
+        "summary": "Les factures suspectes aboutissent à une entreprise détenue par le beau-frère de Rachid.",
+        "evidence": {
+          "kind": "email",
+          "from": "Dossier de la victime",
+          "to": "Archives de l'enquête",
+          "subject": "Ce que la victime allait révéler",
+          "sentAt": "20:30",
+          "body": "Les factures suspectes aboutissent à une entreprise détenue par le beau-frère de Rachid.",
+          "altText": "Document confidentiel : Les factures suspectes aboutissent à une entreprise détenue par le beau-frère de Rachid."
+        },
+        "analysis": {
+          "category": "BEHAVIORAL",
+          "implicates": [],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [
+            "rachid"
+          ],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "rachid_mobile"
+          ],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "alibi_a",
+        "title": "La preuve de Eva Krall",
+        "source": "VÉRIFICATION D'ALIBI",
+        "summary": "Le reflet des portes filmé avant la coupure montre les mains d'Eva levées avec son téléphone durant tout l'arrêt.",
+        "evidence": {
+          "kind": "camera",
+          "location": "VÉRIFICATION D'ALIBI",
+          "frames": [
+            {
+              "time": "20:49",
+              "text": "Le reflet des portes filmé avant la coupure montre les mains d'Eva levées avec son téléphone durant tout l'arrêt."
+            }
+          ],
+          "altText": "Relevé de vérification à 20:49 : Le reflet des portes filmé avant la coupure montre les mains d'Eva levées avec son téléphone durant tout l'arrêt."
+        },
+        "analysis": {
+          "category": "EXONERATING",
+          "implicates": [],
+          "clears": [
+            "eva"
+          ],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "fausse_piste",
+        "title": "Le détail contre Hector Lu",
+        "source": "PIÈCE SAISIE",
+        "summary": "Hector demande dans la visioconférence si Daria possède encore la clé sur elle.",
+        "evidence": {
+          "kind": "note",
+          "body": "Hector demande dans la visioconférence si Daria possède encore la clé sur elle.",
+          "altText": "Note saisie constituant une fausse piste : Hector demande dans la visioconférence si Daria possède encore la clé sur elle."
+        },
+        "analysis": {
+          "category": "RED_HERRING",
+          "implicates": [
+            "hector"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "hector_detail"
+          ],
+          "isRedHerring": true
+        }
+      },
+      {
+        "id": "resolution",
+        "title": "Ce que la fausse piste oublie",
+        "source": "RECOUPEMENT",
+        "summary": "La question suit un protocole d'audit écrit et l'enregistrement continu le maintient au 19e étage.",
+        "evidence": {
+          "kind": "document",
+          "title": "RECOUPEMENT",
+          "subtitle": "Pièce enregistrée à 21:04",
+          "paragraphs": [
+            "La question suit un protocole d'audit écrit et l'enregistrement continu le maintient au 19e étage."
+          ],
+          "altText": "RECOUPEMENT : La question suit un protocole d'audit écrit et l'enregistrement continu le maintient au 19e étage."
+        },
+        "analysis": {
+          "category": "EXONERATING",
+          "implicates": [],
+          "clears": [
+            "hector"
+          ],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      }
+    ],
+    "interviews": [
+      {
+        "id": "rachid_alibi",
+        "suspectId": "rachid",
+        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "answer": "Il affirme être resté au local machines. Calme, concret, explique volontiers les sécurités.",
+        "beat": "La version paraît nette, peut-être trop nette."
+      },
+      {
+        "id": "rachid_relation",
+        "suspectId": "rachid",
+        "question": "Qu'est-ce que Daria Nkem risquait de changer pour vous ?",
+        "answer": "Il intervenait dans la tour cette nuit-là. Son badge peut activer le mode inspection.",
+        "beat": "Le mobile apparent n'est pas encore une preuve."
+      },
+      {
+        "id": "eva_alibi",
+        "suspectId": "eva",
+        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "answer": "Elle dit avoir gardé les mains visibles pendant l'arrêt. Très attentive, mémorise les gestes et les silences.",
+        "beat": "La réponse peut être confrontée aux pièces."
+      },
+      {
+        "id": "eva_relation",
+        "suspectId": "eva",
+        "question": "Qu'est-ce que Daria Nkem risquait de changer pour vous ?",
+        "answer": "Elle partageait la cabine avec Daria. La clé permet d'accéder aux comptes qu'elle audite.",
+        "beat": "Le mobile apparent n'est pas encore une preuve."
+      },
+      {
+        "id": "hector_alibi",
+        "suspectId": "hector",
+        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "answer": "Il participait à une visioconférence enregistrée. Impassible, parle en termes de gouvernance.",
+        "beat": "La réponse peut être confrontée aux pièces."
+      },
+      {
+        "id": "hector_relation",
+        "suspectId": "hector",
+        "question": "Qu'est-ce que Daria Nkem risquait de changer pour vous ?",
+        "answer": "Il attendait Daria au 19e étage. L'audit menace sa position.",
+        "beat": "Le mobile apparent n'est pas encore une preuve."
+      },
+      {
+        "id": "rachid_confrontation",
+        "suspectId": "rachid",
+        "question": "Votre heure ne correspond pas au registre. Pourquoi ?",
+        "answer": "« Le registre se trompe parfois. Cela ne prouve pas que j'ai fait ce qu'on me reproche. »",
+        "unlockedByClueId": "registre",
+        "beat": "La personne conteste l'outil, sans expliquer sa propre trace."
+      },
+      {
+        "id": "rachid_mobile",
+        "suspectId": "rachid",
+        "question": "Ce document vous donnait-il une raison d'agir ?",
+        "answer": "« Vous appelez cela un mobile parce que vous connaissez déjà la fin. Sur le moment, je cherchais seulement une issue. »",
+        "unlockedByClueId": "mobile",
+        "beat": "La raison d'agir est reconnue à demi-mot."
+      },
+      {
+        "id": "hector_detail",
+        "suspectId": "hector",
+        "question": "Pourquoi cette pièce vous désigne-t-elle ?",
+        "answer": "« Elle est vraie, mais votre conclusion ne l'est pas. Cherchez ce qui s'est passé après. »",
+        "unlockedByClueId": "fausse_piste",
+        "beat": "La pièce cache une chronologie plus complète."
+      }
+    ],
+    "timeline": [
+      {
+        "time": "20:18",
+        "text": "Daria Nkem est vu pour la dernière fois avant l'incident.",
+        "source": "Témoignages concordants",
+        "certainty": "CERTAIN"
+      },
+      {
+        "time": "20:30",
+        "text": "Le document révélant le mobile est créé ou consulté.",
+        "source": "Métadonnées",
+        "certainty": "CERTAIN"
+      },
+      {
+        "time": "20:43",
+        "text": "Rachid Benali affirme ne plus pouvoir intervenir.",
+        "source": "Déclaration",
+        "certainty": "REPORTED"
+      },
+      {
+        "time": "20:56",
+        "text": "Une activité technique contredit cette version.",
+        "source": "Registre",
+        "certainty": "CERTAIN"
+      },
+      {
+        "time": "21:04",
+        "text": "L'incident devient visible ou produit ses effets.",
+        "source": "Constat",
+        "certainty": "ESTIMATED"
+      }
+    ],
+    "accusation": {
+      "questions": [
+        {
+          "id": "q_who",
+          "kind": "suspect",
+          "prompt": "Qui est responsable ?",
+          "optional": false,
+          "options": [
+            {
+              "id": "rachid",
+              "label": "Rachid Benali",
+              "hint": "Technicien ascensoriste"
+            },
+            {
+              "id": "eva",
+              "label": "Eva Krall",
+              "hint": "Auditrice"
+            },
+            {
+              "id": "hector",
+              "label": "Hector Lu",
+              "hint": "Directeur général"
+            }
+          ]
+        },
+        {
+          "id": "q_why",
+          "kind": "motive",
+          "prompt": "Pourquoi cette personne a-t-elle agi ?",
+          "optional": false,
+          "options": [
+            {
+              "id": "motive_correct",
+              "label": "Copier la clé pour couvrir des factures frauduleuses liées à sa société"
+            },
+            {
+              "id": "motive_rivalite",
+              "label": "Écarter un rival par jalousie"
+            },
+            {
+              "id": "motive_accident",
+              "label": "Cacher une erreur sans rapport avec l'incident"
+            }
+          ]
+        },
+        {
+          "id": "q_how",
+          "kind": "method",
+          "prompt": "Comment l'incident a-t-il été provoqué ?",
+          "optional": false,
+          "options": [
+            {
+              "id": "method_correct",
+              "label": "Arrêter la cabine au niveau technique et ouvrir la trappe latérale depuis la gaine"
+            },
+            {
+              "id": "method_force",
+              "label": "Forcer directement l'accès principal"
+            },
+            {
+              "id": "method_complice",
+              "label": "Employer un complice extérieur après la fermeture"
+            }
+          ]
+        }
+      ]
+    },
+    "difficulty": "NORMAL",
+    "estimatedMinutes": 8
+  },
+  "meta": {
+    "crimeType": "vol",
+    "locationType": "tour de bureaux",
+    "culpritGender": "M",
+    "motiveType": "cacher une fraude",
+    "methodType": "trappe de gaine et aimant",
+    "coreMechanic": "cabine entre deux étages"
+  },
+  "solution": {
+    "culpritId": "rachid",
+    "correctMotive": "motive_correct",
+    "correctMethod": "method_correct",
+    "validationAnswers": {
+      "q_who": "rachid",
+      "q_why": "motive_correct",
+      "q_how": "method_correct"
+    },
+    "optionalAnswers": {},
+    "correctTimeline": [
+      {
+        "time": "20:18",
+        "place": "Tour Mercure — La Défense",
+        "personIds": [
+          "rachid"
+        ],
+        "text": "Rachid Benali comprend que la situation menace directement ses intérêts."
+      },
+      {
+        "time": "20:30",
+        "place": "Tour Mercure — La Défense",
+        "personIds": [
+          "rachid"
+        ],
+        "text": "Le mobile se cristallise : copier la clé pour couvrir des factures frauduleuses liées à sa société."
+      },
+      {
+        "time": "20:56",
+        "endTime": "21:01",
+        "place": "Tour Mercure — La Défense",
+        "personIds": [
+          "rachid"
+        ],
+        "text": "Rachid a mis la cabine en inspection, ouvert une petite trappe depuis le palier technique et attiré la mallette contre la paroi avec un aimant. Il a extrait la clé par l'ouverture puis relancé la cabine avant que les passagères comprennent l'arrêt."
+      },
+      {
+        "time": "21:04",
+        "place": "Tour Mercure — La Défense",
+        "personIds": [
+          "rachid"
+        ],
+        "text": "La personne remet les lieux en ordre et s'appuie sur son alibi préparé."
+      }
+    ],
+    "reasoning": [
+      "Le registre contredit l'heure donnée par Rachid Benali : Le journal moteur montre une commande locale dans la gaine, incompatible avec sa présence au local machines.",
+      "La trace matérielle ne prouve pas seulement une présence; elle décrit la méthode : Une limaille magnétique de la trappe est retrouvée sur la fermeture apparemment intacte de la mallette.",
+      "Le document confidentiel fournit un mobile précis : Les factures suspectes aboutissent à une entreprise détenue par le beau-frère de Rachid.",
+      "Eva Krall est écarté par une preuve indépendante, tandis que l'élément visant Hector Lu est expliqué par le recoupement final.",
+      "La seule personne réunissant présence, moyen et mobile est Rachid Benali."
+    ],
+    "explanation": "Rachid a mis la cabine en inspection, ouvert une petite trappe depuis le palier technique et attiré la mallette contre la paroi avec un aimant. Il a extrait la clé par l'ouverture puis relancé la cabine avant que les passagères comprennent l'arrêt. Le mobile était de copier la clé pour couvrir des factures frauduleuses liées à sa société. La méthode consistait à arrêter la cabine au niveau technique et ouvrir la trappe latérale depuis la gaine. La fausse piste contre Hector Lu paraît forte isolément, mais la question suit un protocole d'audit écrit et l'enregistrement continu le maintient au 19e étage. Ainsi, les preuves convergent sans supposer d'information extérieure au dossier.",
+    "proofChains": [
+      {
+        "title": "La chaîne du geste",
+        "steps": [
+          "Le journal moteur montre une commande locale dans la gaine, incompatible avec sa présence au local machines.",
+          "Une limaille magnétique de la trappe est retrouvée sur la fermeture apparemment intacte de la mallette.",
+          "Ces deux pièces relient matériellement Rachid Benali à l'action."
+        ]
+      },
+      {
+        "title": "La chaîne de l'intention",
+        "steps": [
+          "Les factures suspectes aboutissent à une entreprise détenue par le beau-frère de Rachid.",
+          "Le reflet des portes filmé avant la coupure montre les mains d'Eva levées avec son téléphone durant tout l'arrêt.",
+          "Le mobile devient exclusif une fois les alibis recoupés."
+        ]
+      }
+    ]
+  }
+}

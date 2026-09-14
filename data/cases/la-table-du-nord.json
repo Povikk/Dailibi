@@ -1,0 +1,489 @@
+{
+  "public": {
+    "id": "la-table-du-nord",
+    "number": 27,
+    "date": "2026-09-27",
+    "title": "LA TABLE DU NORD",
+    "subtitle": "La carte des glaces change pendant la nuit; au matin, un navire croit avoir découvert un passage.",
+    "location": "Institut polaire — Brest",
+    "incident": "Falsification de données de navigation",
+    "intro": "Une bande d'eau libre apparaît dans la carte satellite transmise au navire Boréal. Les données sources sont authentiques, mais assemblées avec un décalage presque imperceptible. Le passage n'existe pas.",
+    "victim": {
+      "name": "Dr Sven Laroche",
+      "description": "Climatologue, 52 ans. Il coordonne une mission internationale en Arctique."
+    },
+    "suspects": [
+      {
+        "id": "lila",
+        "name": "Lila Charvet",
+        "age": 40,
+        "occupation": "Cartographe",
+        "relation": "Elle assemble les mosaïques satellites.",
+        "personality": "Patiente, visuelle, repère les erreurs au premier regard.",
+        "claimedAlibi": "Elle dit avoir validé la carte à 21h puis être rentrée.",
+        "accent": "formal",
+        "notes": [
+          "Elle s'opposait au trajet risqué du Boréal."
+        ]
+      },
+      {
+        "id": "owen",
+        "name": "Owen Price",
+        "age": 35,
+        "occupation": "Responsable logistique",
+        "relation": "Il doit tenir le calendrier de ravitaillement.",
+        "personality": "Pressé, cordial, ramène tout aux délais.",
+        "claimedAlibi": "Il suivait le départ depuis le quai.",
+        "accent": "nervous",
+        "notes": [
+          "Un raccourci lui évite des pénalités énormes."
+        ]
+      },
+      {
+        "id": "marta",
+        "name": "Marta Siwek",
+        "age": 48,
+        "occupation": "Océanographe",
+        "relation": "Son modèle contredit la carte finale.",
+        "personality": "Directe, sûre de ses calculs.",
+        "claimedAlibi": "Elle présentait ses travaux à Varsovie en visioconférence.",
+        "accent": "cold",
+        "notes": [
+          "Un échec de Sven renforcerait son programme rival."
+        ]
+      }
+    ],
+    "clues": [
+      {
+        "id": "registre",
+        "title": "L'alibi qui se fissure",
+        "source": "JOURNAL TECHNIQUE",
+        "summary": "L'ordinateur d'Owen ouvre l'outil cartographique à 23h08 malgré son alibi sur le quai.",
+        "evidence": {
+          "kind": "schedule",
+          "title": "JOURNAL TECHNIQUE",
+          "rows": [
+            {
+              "time": "19:47",
+              "label": "L'ordinateur d'Owen ouvre l'outil cartographique à 23h08 malgré son alibi sur le quai."
+            }
+          ],
+          "altText": "JOURNAL TECHNIQUE à 19:47 : L'ordinateur d'Owen ouvre l'outil cartographique à 23h08 malgré son alibi sur le quai."
+        },
+        "analysis": {
+          "category": "CONTRADICTION",
+          "implicates": [
+            "owen"
+          ],
+          "clears": [],
+          "contradicts": [
+            "owen"
+          ],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [
+            "owen"
+          ],
+          "unlocksInterviewIds": [
+            "owen_confrontation"
+          ],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "trace",
+        "title": "La trace qui ne devait pas rester",
+        "source": "ANALYSE MATÉRIELLE",
+        "summary": "La tuile déplacée provient d'une cache hors ligne copiée sur sa clé logistique.",
+        "evidence": {
+          "kind": "photo",
+          "caption": "La tuile déplacée provient d'une cache hors ligne copiée sur sa clé logistique.",
+          "meta": [
+            {
+              "label": "HEURE",
+              "value": "19:52"
+            },
+            {
+              "label": "STATUT",
+              "value": "Pièce analysée"
+            }
+          ],
+          "altText": "Photographie d'analyse : La tuile déplacée provient d'une cache hors ligne copiée sur sa clé logistique.",
+          "tone": "cold"
+        },
+        "analysis": {
+          "category": "TIMELINE",
+          "implicates": [
+            "owen"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [
+            "owen"
+          ],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "mobile",
+        "title": "Ce que la victime allait révéler",
+        "source": "DOCUMENT CONFIDENTIEL",
+        "summary": "Le contrat impose une pénalité quotidienne supérieure au budget restant de sa division.",
+        "evidence": {
+          "kind": "email",
+          "from": "Dossier de la victime",
+          "to": "Archives de l'enquête",
+          "subject": "Ce que la victime allait révéler",
+          "sentAt": "19:21",
+          "body": "Le contrat impose une pénalité quotidienne supérieure au budget restant de sa division.",
+          "altText": "Document confidentiel : Le contrat impose une pénalité quotidienne supérieure au budget restant de sa division."
+        },
+        "analysis": {
+          "category": "BEHAVIORAL",
+          "implicates": [],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [
+            "owen"
+          ],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "owen_mobile"
+          ],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "alibi_a",
+        "title": "La preuve de Lila Charvet",
+        "source": "VÉRIFICATION D'ALIBI",
+        "summary": "La conférence enregistrée montre Marta répondant en direct durant la falsification.",
+        "evidence": {
+          "kind": "camera",
+          "location": "VÉRIFICATION D'ALIBI",
+          "frames": [
+            {
+              "time": "19:40",
+              "text": "La conférence enregistrée montre Marta répondant en direct durant la falsification."
+            }
+          ],
+          "altText": "Relevé de vérification à 19:40 : La conférence enregistrée montre Marta répondant en direct durant la falsification."
+        },
+        "analysis": {
+          "category": "EXONERATING",
+          "implicates": [],
+          "clears": [
+            "lila"
+          ],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "fausse_piste",
+        "title": "Le détail contre Marta Siwek",
+        "source": "PIÈCE SAISIE",
+        "summary": "Lila a laissé un commentaire : « cette route ne doit pas partir ».",
+        "evidence": {
+          "kind": "note",
+          "body": "Lila a laissé un commentaire : « cette route ne doit pas partir ».",
+          "altText": "Note saisie constituant une fausse piste : Lila a laissé un commentaire : « cette route ne doit pas partir »."
+        },
+        "analysis": {
+          "category": "RED_HERRING",
+          "implicates": [
+            "marta"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "marta_detail"
+          ],
+          "isRedHerring": true
+        }
+      },
+      {
+        "id": "resolution",
+        "title": "Ce que la fausse piste oublie",
+        "source": "RECOUPEMENT",
+        "summary": "Elle signalait justement le danger et sa version sauvegardée contient la mosaïque correcte.",
+        "evidence": {
+          "kind": "document",
+          "title": "RECOUPEMENT",
+          "subtitle": "Pièce enregistrée à 19:55",
+          "paragraphs": [
+            "Elle signalait justement le danger et sa version sauvegardée contient la mosaïque correcte."
+          ],
+          "altText": "RECOUPEMENT : Elle signalait justement le danger et sa version sauvegardée contient la mosaïque correcte."
+        },
+        "analysis": {
+          "category": "EXONERATING",
+          "implicates": [],
+          "clears": [
+            "marta"
+          ],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      }
+    ],
+    "interviews": [
+      {
+        "id": "lila_alibi",
+        "suspectId": "lila",
+        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "answer": "Elle dit avoir validé la carte à 21h puis être rentrée. Patiente, visuelle, repère les erreurs au premier regard.",
+        "beat": "La réponse peut être confrontée aux pièces."
+      },
+      {
+        "id": "lila_relation",
+        "suspectId": "lila",
+        "question": "Qu'est-ce que Dr Sven Laroche risquait de changer pour vous ?",
+        "answer": "Elle assemble les mosaïques satellites. Elle s'opposait au trajet risqué du Boréal.",
+        "beat": "Le mobile apparent n'est pas encore une preuve."
+      },
+      {
+        "id": "owen_alibi",
+        "suspectId": "owen",
+        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "answer": "Il suivait le départ depuis le quai. Pressé, cordial, ramène tout aux délais.",
+        "beat": "La version paraît nette, peut-être trop nette."
+      },
+      {
+        "id": "owen_relation",
+        "suspectId": "owen",
+        "question": "Qu'est-ce que Dr Sven Laroche risquait de changer pour vous ?",
+        "answer": "Il doit tenir le calendrier de ravitaillement. Un raccourci lui évite des pénalités énormes.",
+        "beat": "Le mobile apparent n'est pas encore une preuve."
+      },
+      {
+        "id": "marta_alibi",
+        "suspectId": "marta",
+        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "answer": "Elle présentait ses travaux à Varsovie en visioconférence. Directe, sûre de ses calculs.",
+        "beat": "La réponse peut être confrontée aux pièces."
+      },
+      {
+        "id": "marta_relation",
+        "suspectId": "marta",
+        "question": "Qu'est-ce que Dr Sven Laroche risquait de changer pour vous ?",
+        "answer": "Son modèle contredit la carte finale. Un échec de Sven renforcerait son programme rival.",
+        "beat": "Le mobile apparent n'est pas encore une preuve."
+      },
+      {
+        "id": "owen_confrontation",
+        "suspectId": "owen",
+        "question": "Votre heure ne correspond pas au registre. Pourquoi ?",
+        "answer": "« Le registre se trompe parfois. Cela ne prouve pas que j'ai fait ce qu'on me reproche. »",
+        "unlockedByClueId": "registre",
+        "beat": "La personne conteste l'outil, sans expliquer sa propre trace."
+      },
+      {
+        "id": "owen_mobile",
+        "suspectId": "owen",
+        "question": "Ce document vous donnait-il une raison d'agir ?",
+        "answer": "« Vous appelez cela un mobile parce que vous connaissez déjà la fin. Sur le moment, je cherchais seulement une issue. »",
+        "unlockedByClueId": "mobile",
+        "beat": "La raison d'agir est reconnue à demi-mot."
+      },
+      {
+        "id": "marta_detail",
+        "suspectId": "marta",
+        "question": "Pourquoi cette pièce vous désigne-t-elle ?",
+        "answer": "« Elle est vraie, mais votre conclusion ne l'est pas. Cherchez ce qui s'est passé après. »",
+        "unlockedByClueId": "fausse_piste",
+        "beat": "La pièce cache une chronologie plus complète."
+      }
+    ],
+    "timeline": [
+      {
+        "time": "19:09",
+        "text": "Dr Sven Laroche est vu pour la dernière fois avant l'incident.",
+        "source": "Témoignages concordants",
+        "certainty": "CERTAIN"
+      },
+      {
+        "time": "19:21",
+        "text": "Le document révélant le mobile est créé ou consulté.",
+        "source": "Métadonnées",
+        "certainty": "CERTAIN"
+      },
+      {
+        "time": "19:34",
+        "text": "Owen Price affirme ne plus pouvoir intervenir.",
+        "source": "Déclaration",
+        "certainty": "REPORTED"
+      },
+      {
+        "time": "19:47",
+        "text": "Une activité technique contredit cette version.",
+        "source": "Registre",
+        "certainty": "CERTAIN"
+      },
+      {
+        "time": "19:55",
+        "text": "L'incident devient visible ou produit ses effets.",
+        "source": "Constat",
+        "certainty": "ESTIMATED"
+      }
+    ],
+    "accusation": {
+      "questions": [
+        {
+          "id": "q_who",
+          "kind": "suspect",
+          "prompt": "Qui est responsable ?",
+          "optional": false,
+          "options": [
+            {
+              "id": "lila",
+              "label": "Lila Charvet",
+              "hint": "Cartographe"
+            },
+            {
+              "id": "owen",
+              "label": "Owen Price",
+              "hint": "Responsable logistique"
+            },
+            {
+              "id": "marta",
+              "label": "Marta Siwek",
+              "hint": "Océanographe"
+            }
+          ]
+        },
+        {
+          "id": "q_why",
+          "kind": "motive",
+          "prompt": "Pourquoi cette personne a-t-elle agi ?",
+          "optional": false,
+          "options": [
+            {
+              "id": "motive_correct",
+              "label": "Éviter les pénalités de retard d'un contrat de ravitaillement"
+            },
+            {
+              "id": "motive_rivalite",
+              "label": "Écarter un rival par jalousie"
+            },
+            {
+              "id": "motive_accident",
+              "label": "Cacher une erreur sans rapport avec l'incident"
+            }
+          ]
+        },
+        {
+          "id": "q_how",
+          "kind": "method",
+          "prompt": "Comment l'incident a-t-il été provoqué ?",
+          "optional": false,
+          "options": [
+            {
+              "id": "method_correct",
+              "label": "Décaler une tuile satellite ancienne pour dessiner un chenal libre"
+            },
+            {
+              "id": "method_force",
+              "label": "Forcer directement l'accès principal"
+            },
+            {
+              "id": "method_complice",
+              "label": "Employer un complice extérieur après la fermeture"
+            }
+          ]
+        }
+      ]
+    },
+    "difficulty": "NORMAL",
+    "estimatedMinutes": 8
+  },
+  "meta": {
+    "crimeType": "fraude",
+    "locationType": "institut polaire",
+    "culpritGender": "M",
+    "motiveType": "éviter des pénalités",
+    "methodType": "tuile satellite décalée",
+    "coreMechanic": "vraie donnée au mauvais endroit"
+  },
+  "solution": {
+    "culpritId": "owen",
+    "correctMotive": "motive_correct",
+    "correctMethod": "method_correct",
+    "validationAnswers": {
+      "q_who": "owen",
+      "q_why": "motive_correct",
+      "q_how": "method_correct"
+    },
+    "optionalAnswers": {},
+    "correctTimeline": [
+      {
+        "time": "19:09",
+        "place": "Institut polaire — Brest",
+        "personIds": [
+          "owen"
+        ],
+        "text": "Owen Price comprend que la situation menace directement ses intérêts."
+      },
+      {
+        "time": "19:21",
+        "place": "Institut polaire — Brest",
+        "personIds": [
+          "owen"
+        ],
+        "text": "Le mobile se cristallise : éviter les pénalités de retard d'un contrat de ravitaillement."
+      },
+      {
+        "time": "19:47",
+        "endTime": "19:52",
+        "place": "Institut polaire — Brest",
+        "personIds": [
+          "owen"
+        ],
+        "text": "Owen n'a pas inventé de pixels : il a déplacé une vraie image d'eau libre prise deux semaines plus tôt. Le fichier passait ainsi les contrôles d'authenticité, mais les ombres et la date de la cache révélaient l'emprunt."
+      },
+      {
+        "time": "19:55",
+        "place": "Institut polaire — Brest",
+        "personIds": [
+          "owen"
+        ],
+        "text": "La personne remet les lieux en ordre et s'appuie sur son alibi préparé."
+      }
+    ],
+    "reasoning": [
+      "Le registre contredit l'heure donnée par Owen Price : L'ordinateur d'Owen ouvre l'outil cartographique à 23h08 malgré son alibi sur le quai.",
+      "La trace matérielle ne prouve pas seulement une présence; elle décrit la méthode : La tuile déplacée provient d'une cache hors ligne copiée sur sa clé logistique.",
+      "Le document confidentiel fournit un mobile précis : Le contrat impose une pénalité quotidienne supérieure au budget restant de sa division.",
+      "Lila Charvet est écarté par une preuve indépendante, tandis que l'élément visant Marta Siwek est expliqué par le recoupement final.",
+      "La seule personne réunissant présence, moyen et mobile est Owen Price."
+    ],
+    "explanation": "Owen n'a pas inventé de pixels : il a déplacé une vraie image d'eau libre prise deux semaines plus tôt. Le fichier passait ainsi les contrôles d'authenticité, mais les ombres et la date de la cache révélaient l'emprunt. Le mobile était de éviter les pénalités de retard d'un contrat de ravitaillement. La méthode consistait à décaler une tuile satellite ancienne pour dessiner un chenal libre. La fausse piste contre Marta Siwek paraît forte isolément, mais elle signalait justement le danger et sa version sauvegardée contient la mosaïque correcte. Ainsi, les preuves convergent sans supposer d'information extérieure au dossier.",
+    "proofChains": [
+      {
+        "title": "La chaîne du geste",
+        "steps": [
+          "L'ordinateur d'Owen ouvre l'outil cartographique à 23h08 malgré son alibi sur le quai.",
+          "La tuile déplacée provient d'une cache hors ligne copiée sur sa clé logistique.",
+          "Ces deux pièces relient matériellement Owen Price à l'action."
+        ]
+      },
+      {
+        "title": "La chaîne de l'intention",
+        "steps": [
+          "Le contrat impose une pénalité quotidienne supérieure au budget restant de sa division.",
+          "La conférence enregistrée montre Marta répondant en direct durant la falsification.",
+          "Le mobile devient exclusif une fois les alibis recoupés."
+        ]
+      }
+    ]
+  }
+}

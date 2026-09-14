@@ -1,0 +1,489 @@
+{
+  "public": {
+    "id": "la-cle-de-la-chambre-rouge",
+    "number": 20,
+    "date": "2026-09-20",
+    "title": "LA CLÉ DE LA CHAMBRE ROUGE",
+    "subtitle": "Un bureau est fouillé sans effraction; seule une plante semble avoir changé de place.",
+    "location": "Atelier partagé La Verrière — Strasbourg",
+    "incident": "Intrusion et vol de documents",
+    "intro": "Solveig trouve ses plans photographiés mais toujours rangés. Sa chambre de travail n'a ni fenêtre ni serrure forcée. Sur l'étagère, un ficus laisse un cercle humide de dix centimètres à côté de son emplacement habituel.",
+    "victim": {
+      "name": "Solveig Kern",
+      "description": "Architecte, 40 ans. Elle préparait un recours contre un grand projet urbain."
+    },
+    "suspects": [
+      {
+        "id": "marc",
+        "name": "Marc Engel",
+        "age": 53,
+        "occupation": "Promoteur",
+        "relation": "Son projet est visé par le recours.",
+        "personality": "Charmeur, minimise les conflits comme des malentendus.",
+        "claimedAlibi": "Il assistait au conseil municipal retransmis en direct.",
+        "accent": "formal",
+        "notes": [
+          "Les plans révèlent une faiblesse juridique coûteuse."
+        ]
+      },
+      {
+        "id": "lola",
+        "name": "Lola Weiss",
+        "age": 25,
+        "occupation": "Maquettiste",
+        "relation": "Elle partage le couloir avec Solveig.",
+        "personality": "Curieuse, désordonnée, photographie constamment son travail.",
+        "claimedAlibi": "Elle dit avoir quitté l'atelier à 19h.",
+        "accent": "nervous",
+        "notes": [
+          "Son téléphone contient des clichés flous de la porte."
+        ]
+      },
+      {
+        "id": "hugo",
+        "name": "Hugo Tann",
+        "age": 36,
+        "occupation": "Serrurier et résident",
+        "relation": "Il a installé toutes les serrures du bâtiment.",
+        "personality": "Prudent, concret, n'aime pas expliquer ses outils.",
+        "claimedAlibi": "Il dépannait une cliente à Kehl.",
+        "accent": "cold",
+        "notes": [
+          "Il possède une clé passe-partout non déclarée."
+        ]
+      }
+    ],
+    "clues": [
+      {
+        "id": "registre",
+        "title": "L'alibi qui se fissure",
+        "source": "JOURNAL TECHNIQUE",
+        "summary": "Une sauvegarde automatique contient une photo prise par Lola dans le bureau à 20h11.",
+        "evidence": {
+          "kind": "schedule",
+          "title": "JOURNAL TECHNIQUE",
+          "rows": [
+            {
+              "time": "20:28",
+              "label": "Une sauvegarde automatique contient une photo prise par Lola dans le bureau à 20h11."
+            }
+          ],
+          "altText": "JOURNAL TECHNIQUE à 20:28 : Une sauvegarde automatique contient une photo prise par Lola dans le bureau à 20h11."
+        },
+        "analysis": {
+          "category": "CONTRADICTION",
+          "implicates": [
+            "lola"
+          ],
+          "clears": [],
+          "contradicts": [
+            "lola"
+          ],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [
+            "lola"
+          ],
+          "unlocksInterviewIds": [
+            "lola_confrontation"
+          ],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "trace",
+        "title": "La trace qui ne devait pas rester",
+        "source": "ANALYSE MATÉRIELLE",
+        "summary": "Le cercle humide montre que le pot a été posé sur le bureau exactement le temps nécessaire pour prendre la clé collée dessous.",
+        "evidence": {
+          "kind": "photo",
+          "caption": "Le cercle humide montre que le pot a été posé sur le bureau exactement le temps nécessaire pour prendre la clé collée dessous.",
+          "meta": [
+            {
+              "label": "HEURE",
+              "value": "20:33"
+            },
+            {
+              "label": "STATUT",
+              "value": "Pièce analysée"
+            }
+          ],
+          "altText": "Photographie d'analyse : Le cercle humide montre que le pot a été posé sur le bureau exactement le temps nécessaire pour prendre la clé collée dessous.",
+          "tone": "cold"
+        },
+        "analysis": {
+          "category": "TIMELINE",
+          "implicates": [
+            "lola"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [
+            "lola"
+          ],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "mobile",
+        "title": "Ce que la victime allait révéler",
+        "source": "DOCUMENT CONFIDENTIEL",
+        "summary": "Un message au promoteur promet « la coupe qui fera tomber le recours » contre le paiement du loyer collectif.",
+        "evidence": {
+          "kind": "email",
+          "from": "Dossier de la victime",
+          "to": "Archives de l'enquête",
+          "subject": "Ce que la victime allait révéler",
+          "sentAt": "20:02",
+          "body": "Un message au promoteur promet « la coupe qui fera tomber le recours » contre le paiement du loyer collectif.",
+          "altText": "Document confidentiel : Un message au promoteur promet « la coupe qui fera tomber le recours » contre le paiement du loyer collectif."
+        },
+        "analysis": {
+          "category": "BEHAVIORAL",
+          "implicates": [],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [
+            "lola"
+          ],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "lola_mobile"
+          ],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "alibi_a",
+        "title": "La preuve de Marc Engel",
+        "source": "VÉRIFICATION D'ALIBI",
+        "summary": "La retransmission du conseil montre Marc au micro au moment précis de la photo.",
+        "evidence": {
+          "kind": "camera",
+          "location": "VÉRIFICATION D'ALIBI",
+          "frames": [
+            {
+              "time": "20:21",
+              "text": "La retransmission du conseil montre Marc au micro au moment précis de la photo."
+            }
+          ],
+          "altText": "Relevé de vérification à 20:21 : La retransmission du conseil montre Marc au micro au moment précis de la photo."
+        },
+        "analysis": {
+          "category": "EXONERATING",
+          "implicates": [],
+          "clears": [
+            "marc"
+          ],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "fausse_piste",
+        "title": "Le détail contre Hugo Tann",
+        "source": "PIÈCE SAISIE",
+        "summary": "La clé passe d'Hugo ouvre effectivement la chambre rouge.",
+        "evidence": {
+          "kind": "note",
+          "body": "La clé passe d'Hugo ouvre effectivement la chambre rouge.",
+          "altText": "Note saisie constituant une fausse piste : La clé passe d'Hugo ouvre effectivement la chambre rouge."
+        },
+        "analysis": {
+          "category": "RED_HERRING",
+          "implicates": [
+            "hugo"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "hugo_detail"
+          ],
+          "isRedHerring": true
+        }
+      },
+      {
+        "id": "resolution",
+        "title": "Ce que la fausse piste oublie",
+        "source": "RECOUPEMENT",
+        "summary": "Le ticket et la signature de la cliente à Kehl encadrent toute la période; aucune copie de sa clé n'a été utilisée.",
+        "evidence": {
+          "kind": "document",
+          "title": "RECOUPEMENT",
+          "subtitle": "Pièce enregistrée à 20:36",
+          "paragraphs": [
+            "Le ticket et la signature de la cliente à Kehl encadrent toute la période; aucune copie de sa clé n'a été utilisée."
+          ],
+          "altText": "RECOUPEMENT : Le ticket et la signature de la cliente à Kehl encadrent toute la période; aucune copie de sa clé n'a été utilisée."
+        },
+        "analysis": {
+          "category": "EXONERATING",
+          "implicates": [],
+          "clears": [
+            "hugo"
+          ],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      }
+    ],
+    "interviews": [
+      {
+        "id": "marc_alibi",
+        "suspectId": "marc",
+        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "answer": "Il assistait au conseil municipal retransmis en direct. Charmeur, minimise les conflits comme des malentendus.",
+        "beat": "La réponse peut être confrontée aux pièces."
+      },
+      {
+        "id": "marc_relation",
+        "suspectId": "marc",
+        "question": "Qu'est-ce que Solveig Kern risquait de changer pour vous ?",
+        "answer": "Son projet est visé par le recours. Les plans révèlent une faiblesse juridique coûteuse.",
+        "beat": "Le mobile apparent n'est pas encore une preuve."
+      },
+      {
+        "id": "lola_alibi",
+        "suspectId": "lola",
+        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "answer": "Elle dit avoir quitté l'atelier à 19h. Curieuse, désordonnée, photographie constamment son travail.",
+        "beat": "La version paraît nette, peut-être trop nette."
+      },
+      {
+        "id": "lola_relation",
+        "suspectId": "lola",
+        "question": "Qu'est-ce que Solveig Kern risquait de changer pour vous ?",
+        "answer": "Elle partage le couloir avec Solveig. Son téléphone contient des clichés flous de la porte.",
+        "beat": "Le mobile apparent n'est pas encore une preuve."
+      },
+      {
+        "id": "hugo_alibi",
+        "suspectId": "hugo",
+        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "answer": "Il dépannait une cliente à Kehl. Prudent, concret, n'aime pas expliquer ses outils.",
+        "beat": "La réponse peut être confrontée aux pièces."
+      },
+      {
+        "id": "hugo_relation",
+        "suspectId": "hugo",
+        "question": "Qu'est-ce que Solveig Kern risquait de changer pour vous ?",
+        "answer": "Il a installé toutes les serrures du bâtiment. Il possède une clé passe-partout non déclarée.",
+        "beat": "Le mobile apparent n'est pas encore une preuve."
+      },
+      {
+        "id": "lola_confrontation",
+        "suspectId": "lola",
+        "question": "Votre heure ne correspond pas au registre. Pourquoi ?",
+        "answer": "« Le registre se trompe parfois. Cela ne prouve pas que j'ai fait ce qu'on me reproche. »",
+        "unlockedByClueId": "registre",
+        "beat": "La personne conteste l'outil, sans expliquer sa propre trace."
+      },
+      {
+        "id": "lola_mobile",
+        "suspectId": "lola",
+        "question": "Ce document vous donnait-il une raison d'agir ?",
+        "answer": "« Vous appelez cela un mobile parce que vous connaissez déjà la fin. Sur le moment, je cherchais seulement une issue. »",
+        "unlockedByClueId": "mobile",
+        "beat": "La raison d'agir est reconnue à demi-mot."
+      },
+      {
+        "id": "hugo_detail",
+        "suspectId": "hugo",
+        "question": "Pourquoi cette pièce vous désigne-t-elle ?",
+        "answer": "« Elle est vraie, mais votre conclusion ne l'est pas. Cherchez ce qui s'est passé après. »",
+        "unlockedByClueId": "fausse_piste",
+        "beat": "La pièce cache une chronologie plus complète."
+      }
+    ],
+    "timeline": [
+      {
+        "time": "19:50",
+        "text": "Solveig Kern est vu pour la dernière fois avant l'incident.",
+        "source": "Témoignages concordants",
+        "certainty": "CERTAIN"
+      },
+      {
+        "time": "20:02",
+        "text": "Le document révélant le mobile est créé ou consulté.",
+        "source": "Métadonnées",
+        "certainty": "CERTAIN"
+      },
+      {
+        "time": "20:15",
+        "text": "Lola Weiss affirme ne plus pouvoir intervenir.",
+        "source": "Déclaration",
+        "certainty": "REPORTED"
+      },
+      {
+        "time": "20:28",
+        "text": "Une activité technique contredit cette version.",
+        "source": "Registre",
+        "certainty": "CERTAIN"
+      },
+      {
+        "time": "20:36",
+        "text": "L'incident devient visible ou produit ses effets.",
+        "source": "Constat",
+        "certainty": "ESTIMATED"
+      }
+    ],
+    "accusation": {
+      "questions": [
+        {
+          "id": "q_who",
+          "kind": "suspect",
+          "prompt": "Qui est responsable ?",
+          "optional": false,
+          "options": [
+            {
+              "id": "marc",
+              "label": "Marc Engel",
+              "hint": "Promoteur"
+            },
+            {
+              "id": "lola",
+              "label": "Lola Weiss",
+              "hint": "Maquettiste"
+            },
+            {
+              "id": "hugo",
+              "label": "Hugo Tann",
+              "hint": "Serrurier et résident"
+            }
+          ]
+        },
+        {
+          "id": "q_why",
+          "kind": "motive",
+          "prompt": "Pourquoi cette personne a-t-elle agi ?",
+          "optional": false,
+          "options": [
+            {
+              "id": "motive_correct",
+              "label": "Vendre les plans au promoteur pour couvrir une dette de l'atelier"
+            },
+            {
+              "id": "motive_rivalite",
+              "label": "Écarter un rival par jalousie"
+            },
+            {
+              "id": "motive_accident",
+              "label": "Cacher une erreur sans rapport avec l'incident"
+            }
+          ]
+        },
+        {
+          "id": "q_how",
+          "kind": "method",
+          "prompt": "Comment l'incident a-t-il été provoqué ?",
+          "optional": false,
+          "options": [
+            {
+              "id": "method_correct",
+              "label": "Récupérer la clé cachée sous le pot puis photographier les documents"
+            },
+            {
+              "id": "method_force",
+              "label": "Forcer directement l'accès principal"
+            },
+            {
+              "id": "method_complice",
+              "label": "Employer un complice extérieur après la fermeture"
+            }
+          ]
+        }
+      ]
+    },
+    "difficulty": "NORMAL",
+    "estimatedMinutes": 8
+  },
+  "meta": {
+    "crimeType": "intrusion",
+    "locationType": "atelier partagé",
+    "culpritGender": "F",
+    "motiveType": "dette collective",
+    "methodType": "clé cachée sous un pot",
+    "coreMechanic": "déplacement banal comme horloge"
+  },
+  "solution": {
+    "culpritId": "lola",
+    "correctMotive": "motive_correct",
+    "correctMethod": "method_correct",
+    "validationAnswers": {
+      "q_who": "lola",
+      "q_why": "motive_correct",
+      "q_how": "method_correct"
+    },
+    "optionalAnswers": {},
+    "correctTimeline": [
+      {
+        "time": "19:50",
+        "place": "Atelier partagé La Verrière — Strasbourg",
+        "personIds": [
+          "lola"
+        ],
+        "text": "Lola Weiss comprend que la situation menace directement ses intérêts."
+      },
+      {
+        "time": "20:02",
+        "place": "Atelier partagé La Verrière — Strasbourg",
+        "personIds": [
+          "lola"
+        ],
+        "text": "Le mobile se cristallise : vendre les plans au promoteur pour couvrir une dette de l'atelier."
+      },
+      {
+        "time": "20:28",
+        "endTime": "20:33",
+        "place": "Atelier partagé La Verrière — Strasbourg",
+        "personIds": [
+          "lola"
+        ],
+        "text": "Lola avait aperçu Solveig remettre sa clé sous le ficus. Elle a déplacé le pot, photographié la coupe juridique puis tout remis en place, oubliant seulement que la terre humide dessinait le temps de l'intrusion."
+      },
+      {
+        "time": "20:36",
+        "place": "Atelier partagé La Verrière — Strasbourg",
+        "personIds": [
+          "lola"
+        ],
+        "text": "La personne remet les lieux en ordre et s'appuie sur son alibi préparé."
+      }
+    ],
+    "reasoning": [
+      "Le registre contredit l'heure donnée par Lola Weiss : Une sauvegarde automatique contient une photo prise par Lola dans le bureau à 20h11.",
+      "La trace matérielle ne prouve pas seulement une présence; elle décrit la méthode : Le cercle humide montre que le pot a été posé sur le bureau exactement le temps nécessaire pour prendre la clé collée dessous.",
+      "Le document confidentiel fournit un mobile précis : Un message au promoteur promet « la coupe qui fera tomber le recours » contre le paiement du loyer collectif.",
+      "Marc Engel est écarté par une preuve indépendante, tandis que l'élément visant Hugo Tann est expliqué par le recoupement final.",
+      "La seule personne réunissant présence, moyen et mobile est Lola Weiss."
+    ],
+    "explanation": "Lola avait aperçu Solveig remettre sa clé sous le ficus. Elle a déplacé le pot, photographié la coupe juridique puis tout remis en place, oubliant seulement que la terre humide dessinait le temps de l'intrusion. Le mobile était de vendre les plans au promoteur pour couvrir une dette de l'atelier. La méthode consistait à récupérer la clé cachée sous le pot puis photographier les documents. La fausse piste contre Hugo Tann paraît forte isolément, mais le ticket et la signature de la cliente à Kehl encadrent toute la période; aucune copie de sa clé n'a été utilisée. Ainsi, les preuves convergent sans supposer d'information extérieure au dossier.",
+    "proofChains": [
+      {
+        "title": "La chaîne du geste",
+        "steps": [
+          "Une sauvegarde automatique contient une photo prise par Lola dans le bureau à 20h11.",
+          "Le cercle humide montre que le pot a été posé sur le bureau exactement le temps nécessaire pour prendre la clé collée dessous.",
+          "Ces deux pièces relient matériellement Lola Weiss à l'action."
+        ]
+      },
+      {
+        "title": "La chaîne de l'intention",
+        "steps": [
+          "Un message au promoteur promet « la coupe qui fera tomber le recours » contre le paiement du loyer collectif.",
+          "La retransmission du conseil montre Marc au micro au moment précis de la photo.",
+          "Le mobile devient exclusif une fois les alibis recoupés."
+        ]
+      }
+    ]
+  }
+}

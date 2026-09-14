@@ -1,0 +1,489 @@
+{
+  "public": {
+    "id": "la-septieme-maree",
+    "number": 11,
+    "date": "2026-09-11",
+    "title": "LA SEPTIÈME MARÉE",
+    "subtitle": "Les huîtres meurent dans un bassin fermé, au rythme exact d'une marée qui n'y entre jamais.",
+    "location": "Station marine — Île de Ré",
+    "incident": "Contamination d'un élevage expérimental",
+    "intro": "À marée basse, le bassin 7 devient opaque et les huîtres s'ouvrent toutes. L'eau est recyclée en circuit fermé. La contamination apparaît par vagues de six heures, comme si elle suivait la mer extérieure.",
+    "victim": {
+      "name": "Lise Hanrot",
+      "description": "Biologiste marine, 42 ans. Son essai devait permettre la réouverture de plusieurs parcs."
+    },
+    "suspects": [
+      {
+        "id": "ewen",
+        "name": "Éwen Piat",
+        "age": 45,
+        "occupation": "Ostréiculteur",
+        "relation": "Ses concessions dépendent des résultats de Lise.",
+        "personality": "Terrien, méfiant envers les modèles scientifiques.",
+        "claimedAlibi": "Il travaillait sur son chaland, suivi par GPS.",
+        "accent": "formal",
+        "notes": [
+          "Un échec prolongerait les aides compensatoires."
+        ]
+      },
+      {
+        "id": "clara",
+        "name": "Clara Nomura",
+        "age": 33,
+        "occupation": "Technicienne de laboratoire",
+        "relation": "Elle dose les nutriments du bassin 7.",
+        "personality": "Très posée, tient un carnet d'une écriture minuscule.",
+        "claimedAlibi": "Elle assure avoir préparé tous les réservoirs à 17h.",
+        "accent": "nervous",
+        "notes": [
+          "Une erreur antérieure menaçait sa certification."
+        ]
+      },
+      {
+        "id": "marc",
+        "name": "Marc Vignal",
+        "age": 57,
+        "occupation": "Inspecteur sanitaire",
+        "relation": "Il doit signer la réouverture.",
+        "personality": "Solennel, soucieux de son autorité.",
+        "claimedAlibi": "Il dînait avec la mairie pendant la première vague.",
+        "accent": "cold",
+        "notes": [
+          "Il avait annoncé publiquement que l'essai échouerait."
+        ]
+      }
+    ],
+    "clues": [
+      {
+        "id": "registre",
+        "title": "L'alibi qui se fissure",
+        "source": "JOURNAL TECHNIQUE",
+        "summary": "Le contrôleur de pompe enregistre une programmation locale sous le code de Clara après 20h.",
+        "evidence": {
+          "kind": "schedule",
+          "title": "JOURNAL TECHNIQUE",
+          "rows": [
+            {
+              "time": "20:55",
+              "label": "Le contrôleur de pompe enregistre une programmation locale sous le code de Clara après 20h."
+            }
+          ],
+          "altText": "JOURNAL TECHNIQUE à 20:55 : Le contrôleur de pompe enregistre une programmation locale sous le code de Clara après 20h."
+        },
+        "analysis": {
+          "category": "CONTRADICTION",
+          "implicates": [
+            "clara"
+          ],
+          "clears": [],
+          "contradicts": [
+            "clara"
+          ],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [
+            "clara"
+          ],
+          "unlocksInterviewIds": [
+            "clara_confrontation"
+          ],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "trace",
+        "title": "La trace qui ne devait pas rester",
+        "source": "ANALYSE MATÉRIELLE",
+        "summary": "Le contaminant contient le colorant rose qu'elle ajoute à ses solutions de calibration personnelles.",
+        "evidence": {
+          "kind": "photo",
+          "caption": "Le contaminant contient le colorant rose qu'elle ajoute à ses solutions de calibration personnelles.",
+          "meta": [
+            {
+              "label": "HEURE",
+              "value": "21:00"
+            },
+            {
+              "label": "STATUT",
+              "value": "Pièce analysée"
+            }
+          ],
+          "altText": "Photographie d'analyse : Le contaminant contient le colorant rose qu'elle ajoute à ses solutions de calibration personnelles.",
+          "tone": "cold"
+        },
+        "analysis": {
+          "category": "TIMELINE",
+          "implicates": [
+            "clara"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [
+            "clara"
+          ],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "mobile",
+        "title": "Ce que la victime allait révéler",
+        "source": "DOCUMENT CONFIDENTIEL",
+        "summary": "Son carnet comporte une page arrachée dont l'empreinte révèle le dosage fautif du premier jour.",
+        "evidence": {
+          "kind": "email",
+          "from": "Dossier de la victime",
+          "to": "Archives de l'enquête",
+          "subject": "Ce que la victime allait révéler",
+          "sentAt": "20:29",
+          "body": "Son carnet comporte une page arrachée dont l'empreinte révèle le dosage fautif du premier jour.",
+          "altText": "Document confidentiel : Son carnet comporte une page arrachée dont l'empreinte révèle le dosage fautif du premier jour."
+        },
+        "analysis": {
+          "category": "BEHAVIORAL",
+          "implicates": [],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [
+            "clara"
+          ],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "clara_mobile"
+          ],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "alibi_a",
+        "title": "La preuve de Éwen Piat",
+        "source": "VÉRIFICATION D'ALIBI",
+        "summary": "Le GPS et une vidéo de pont placent Éwen en mer durant les deux interventions physiques possibles.",
+        "evidence": {
+          "kind": "camera",
+          "location": "VÉRIFICATION D'ALIBI",
+          "frames": [
+            {
+              "time": "20:48",
+              "text": "Le GPS et une vidéo de pont placent Éwen en mer durant les deux interventions physiques possibles."
+            }
+          ],
+          "altText": "Relevé de vérification à 20:48 : Le GPS et une vidéo de pont placent Éwen en mer durant les deux interventions physiques possibles."
+        },
+        "analysis": {
+          "category": "EXONERATING",
+          "implicates": [],
+          "clears": [
+            "ewen"
+          ],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "fausse_piste",
+        "title": "Le détail contre Marc Vignal",
+        "source": "PIÈCE SAISIE",
+        "summary": "Marc possédait un flacon du même contaminant pour ses prélèvements réglementaires.",
+        "evidence": {
+          "kind": "note",
+          "body": "Marc possédait un flacon du même contaminant pour ses prélèvements réglementaires.",
+          "altText": "Note saisie constituant une fausse piste : Marc possédait un flacon du même contaminant pour ses prélèvements réglementaires."
+        },
+        "analysis": {
+          "category": "RED_HERRING",
+          "implicates": [
+            "marc"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "marc_detail"
+          ],
+          "isRedHerring": true
+        }
+      },
+      {
+        "id": "resolution",
+        "title": "Ce que la fausse piste oublie",
+        "source": "RECOUPEMENT",
+        "summary": "Son flacon est numéroté, intact, et le registre du restaurant confirme sa présence lors de la programmation.",
+        "evidence": {
+          "kind": "document",
+          "title": "RECOUPEMENT",
+          "subtitle": "Pièce enregistrée à 21:03",
+          "paragraphs": [
+            "Son flacon est numéroté, intact, et le registre du restaurant confirme sa présence lors de la programmation."
+          ],
+          "altText": "RECOUPEMENT : Son flacon est numéroté, intact, et le registre du restaurant confirme sa présence lors de la programmation."
+        },
+        "analysis": {
+          "category": "EXONERATING",
+          "implicates": [],
+          "clears": [
+            "marc"
+          ],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      }
+    ],
+    "interviews": [
+      {
+        "id": "ewen_alibi",
+        "suspectId": "ewen",
+        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "answer": "Il travaillait sur son chaland, suivi par GPS. Terrien, méfiant envers les modèles scientifiques.",
+        "beat": "La réponse peut être confrontée aux pièces."
+      },
+      {
+        "id": "ewen_relation",
+        "suspectId": "ewen",
+        "question": "Qu'est-ce que Lise Hanrot risquait de changer pour vous ?",
+        "answer": "Ses concessions dépendent des résultats de Lise. Un échec prolongerait les aides compensatoires.",
+        "beat": "Le mobile apparent n'est pas encore une preuve."
+      },
+      {
+        "id": "clara_alibi",
+        "suspectId": "clara",
+        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "answer": "Elle assure avoir préparé tous les réservoirs à 17h. Très posée, tient un carnet d'une écriture minuscule.",
+        "beat": "La version paraît nette, peut-être trop nette."
+      },
+      {
+        "id": "clara_relation",
+        "suspectId": "clara",
+        "question": "Qu'est-ce que Lise Hanrot risquait de changer pour vous ?",
+        "answer": "Elle dose les nutriments du bassin 7. Une erreur antérieure menaçait sa certification.",
+        "beat": "Le mobile apparent n'est pas encore une preuve."
+      },
+      {
+        "id": "marc_alibi",
+        "suspectId": "marc",
+        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "answer": "Il dînait avec la mairie pendant la première vague. Solennel, soucieux de son autorité.",
+        "beat": "La réponse peut être confrontée aux pièces."
+      },
+      {
+        "id": "marc_relation",
+        "suspectId": "marc",
+        "question": "Qu'est-ce que Lise Hanrot risquait de changer pour vous ?",
+        "answer": "Il doit signer la réouverture. Il avait annoncé publiquement que l'essai échouerait.",
+        "beat": "Le mobile apparent n'est pas encore une preuve."
+      },
+      {
+        "id": "clara_confrontation",
+        "suspectId": "clara",
+        "question": "Votre heure ne correspond pas au registre. Pourquoi ?",
+        "answer": "« Le registre se trompe parfois. Cela ne prouve pas que j'ai fait ce qu'on me reproche. »",
+        "unlockedByClueId": "registre",
+        "beat": "La personne conteste l'outil, sans expliquer sa propre trace."
+      },
+      {
+        "id": "clara_mobile",
+        "suspectId": "clara",
+        "question": "Ce document vous donnait-il une raison d'agir ?",
+        "answer": "« Vous appelez cela un mobile parce que vous connaissez déjà la fin. Sur le moment, je cherchais seulement une issue. »",
+        "unlockedByClueId": "mobile",
+        "beat": "La raison d'agir est reconnue à demi-mot."
+      },
+      {
+        "id": "marc_detail",
+        "suspectId": "marc",
+        "question": "Pourquoi cette pièce vous désigne-t-elle ?",
+        "answer": "« Elle est vraie, mais votre conclusion ne l'est pas. Cherchez ce qui s'est passé après. »",
+        "unlockedByClueId": "fausse_piste",
+        "beat": "La pièce cache une chronologie plus complète."
+      }
+    ],
+    "timeline": [
+      {
+        "time": "20:17",
+        "text": "Lise Hanrot est vu pour la dernière fois avant l'incident.",
+        "source": "Témoignages concordants",
+        "certainty": "CERTAIN"
+      },
+      {
+        "time": "20:29",
+        "text": "Le document révélant le mobile est créé ou consulté.",
+        "source": "Métadonnées",
+        "certainty": "CERTAIN"
+      },
+      {
+        "time": "20:42",
+        "text": "Clara Nomura affirme ne plus pouvoir intervenir.",
+        "source": "Déclaration",
+        "certainty": "REPORTED"
+      },
+      {
+        "time": "20:55",
+        "text": "Une activité technique contredit cette version.",
+        "source": "Registre",
+        "certainty": "CERTAIN"
+      },
+      {
+        "time": "21:03",
+        "text": "L'incident devient visible ou produit ses effets.",
+        "source": "Constat",
+        "certainty": "ESTIMATED"
+      }
+    ],
+    "accusation": {
+      "questions": [
+        {
+          "id": "q_who",
+          "kind": "suspect",
+          "prompt": "Qui est responsable ?",
+          "optional": false,
+          "options": [
+            {
+              "id": "ewen",
+              "label": "Éwen Piat",
+              "hint": "Ostréiculteur"
+            },
+            {
+              "id": "clara",
+              "label": "Clara Nomura",
+              "hint": "Technicienne de laboratoire"
+            },
+            {
+              "id": "marc",
+              "label": "Marc Vignal",
+              "hint": "Inspecteur sanitaire"
+            }
+          ]
+        },
+        {
+          "id": "q_why",
+          "kind": "motive",
+          "prompt": "Pourquoi cette personne a-t-elle agi ?",
+          "optional": false,
+          "options": [
+            {
+              "id": "motive_correct",
+              "label": "Masquer une erreur de dosage antérieure qui aurait invalidé sa certification"
+            },
+            {
+              "id": "motive_rivalite",
+              "label": "Écarter un rival par jalousie"
+            },
+            {
+              "id": "motive_accident",
+              "label": "Cacher une erreur sans rapport avec l'incident"
+            }
+          ]
+        },
+        {
+          "id": "q_how",
+          "kind": "method",
+          "prompt": "Comment l'incident a-t-il été provoqué ?",
+          "optional": false,
+          "options": [
+            {
+              "id": "method_correct",
+              "label": "Programmer la pompe nutritive pour injecter le contaminant toutes les six heures"
+            },
+            {
+              "id": "method_force",
+              "label": "Forcer directement l'accès principal"
+            },
+            {
+              "id": "method_complice",
+              "label": "Employer un complice extérieur après la fermeture"
+            }
+          ]
+        }
+      ]
+    },
+    "difficulty": "NORMAL",
+    "estimatedMinutes": 8
+  },
+  "meta": {
+    "crimeType": "sabotage",
+    "locationType": "station marine",
+    "culpritGender": "F",
+    "motiveType": "cacher une faute",
+    "methodType": "pompe cyclique programmée",
+    "coreMechanic": "rythme naturel artificiellement imité"
+  },
+  "solution": {
+    "culpritId": "clara",
+    "correctMotive": "motive_correct",
+    "correctMethod": "method_correct",
+    "validationAnswers": {
+      "q_who": "clara",
+      "q_why": "motive_correct",
+      "q_how": "method_correct"
+    },
+    "optionalAnswers": {},
+    "correctTimeline": [
+      {
+        "time": "20:17",
+        "place": "Station marine — Île de Ré",
+        "personIds": [
+          "clara"
+        ],
+        "text": "Clara Nomura comprend que la situation menace directement ses intérêts."
+      },
+      {
+        "time": "20:29",
+        "place": "Station marine — Île de Ré",
+        "personIds": [
+          "clara"
+        ],
+        "text": "Le mobile se cristallise : masquer une erreur de dosage antérieure qui aurait invalidé sa certification."
+      },
+      {
+        "time": "20:55",
+        "endTime": "21:00",
+        "place": "Station marine — Île de Ré",
+        "personIds": [
+          "clara"
+        ],
+        "text": "Clara a transformé une faute ponctuelle en sabotage extérieur. Les injections cycliques imitaient la marée et devaient accuser l'eau du large plutôt que son premier dosage consigné puis arraché."
+      },
+      {
+        "time": "21:03",
+        "place": "Station marine — Île de Ré",
+        "personIds": [
+          "clara"
+        ],
+        "text": "La personne remet les lieux en ordre et s'appuie sur son alibi préparé."
+      }
+    ],
+    "reasoning": [
+      "Le registre contredit l'heure donnée par Clara Nomura : Le contrôleur de pompe enregistre une programmation locale sous le code de Clara après 20h.",
+      "La trace matérielle ne prouve pas seulement une présence; elle décrit la méthode : Le contaminant contient le colorant rose qu'elle ajoute à ses solutions de calibration personnelles.",
+      "Le document confidentiel fournit un mobile précis : Son carnet comporte une page arrachée dont l'empreinte révèle le dosage fautif du premier jour.",
+      "Éwen Piat est écarté par une preuve indépendante, tandis que l'élément visant Marc Vignal est expliqué par le recoupement final.",
+      "La seule personne réunissant présence, moyen et mobile est Clara Nomura."
+    ],
+    "explanation": "Clara a transformé une faute ponctuelle en sabotage extérieur. Les injections cycliques imitaient la marée et devaient accuser l'eau du large plutôt que son premier dosage consigné puis arraché. Le mobile était de masquer une erreur de dosage antérieure qui aurait invalidé sa certification. La méthode consistait à programmer la pompe nutritive pour injecter le contaminant toutes les six heures. La fausse piste contre Marc Vignal paraît forte isolément, mais son flacon est numéroté, intact, et le registre du restaurant confirme sa présence lors de la programmation. Ainsi, les preuves convergent sans supposer d'information extérieure au dossier.",
+    "proofChains": [
+      {
+        "title": "La chaîne du geste",
+        "steps": [
+          "Le contrôleur de pompe enregistre une programmation locale sous le code de Clara après 20h.",
+          "Le contaminant contient le colorant rose qu'elle ajoute à ses solutions de calibration personnelles.",
+          "Ces deux pièces relient matériellement Clara Nomura à l'action."
+        ]
+      },
+      {
+        "title": "La chaîne de l'intention",
+        "steps": [
+          "Son carnet comporte une page arrachée dont l'empreinte révèle le dosage fautif du premier jour.",
+          "Le GPS et une vidéo de pont placent Éwen en mer durant les deux interventions physiques possibles.",
+          "Le mobile devient exclusif une fois les alibis recoupés."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --font-heading: "Arial Narrow", "Roboto Condensed", "Segoe UI", sans-serif;
+  --font-type: "Courier New", Courier, monospace;
+  --font-mono: "Courier New", Courier, monospace;
+  --font-body: Inter, "Segoe UI", system-ui, sans-serif;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm px-5 py-3 font-heading text-sm font-semibold
+      uppercase tracking-[0.12em] transition-all focus:outline-none focus-visible:ring-2
+      focus-visible:ring-stamp-bright focus-visible:ring-offset-2 focus-visible:ring-offset-desk-950
+      disabled:cursor-not-allowed disabled:opacity-40;
+  }
+  .btn-primary {
+    @apply btn border-2 border-stamp-deep bg-stamp text-paper-50 shadow-[3px_3px_0_rgba(0,0,0,0.5)]
+      hover:bg-stamp-bright active:translate-x-[1px] active:translate-y-[1px] active:shadow-none;
+  }
+  .btn-ghost {
+    @apply btn border-2 border-ink-600 bg-ink-800/80 text-paper-100
+      hover:border-kraft-500 hover:bg-ink-700 active:translate-x-[1px] active:translate-y-[1px];
+  }
+
+  /* A manila case folder */
+  .folder {
+    @apply relative rounded-sm border border-kraft-500/40 bg-kraft-200 text-ink-950 shadow-folder;
+  }
+
+  .card {
+    @apply relative rounded-sm border border-ink-700 bg-ink-900/90 shadow-file;
+  }
+
+  /* A sheet of evidence on the desk */
+  .sheet {
+    @apply relative rounded-[2px] bg-paper-100 text-ink-950 shadow-paper ring-1 ring-black/20;
+  }
+
+  .label-meta {
+    @apply font-heading text-[11px] font-semibold uppercase tracking-[0.22em] text-kraft-500;
+  }
+
+  .label-meta-dark {
+    @apply font-heading text-[11px] font-semibold uppercase tracking-[0.22em] text-ink-600;
+  }
+
+  .type {
+    @apply font-type;
+  }
+
+  .tab {
+    @apply shrink-0 rounded-sm border-b-2 border-transparent px-3 py-2 font-heading text-xs font-semibold
+      uppercase tracking-[0.14em] transition-colors;
+  }
+}
+
+/* Rubber stamp: rotated, slightly inked, never solid */
+.stamp {
+  @apply inline-flex items-center justify-center border-[3px] border-stamp px-2 py-0.5 font-heading
+    text-[11px] font-bold uppercase tracking-[0.2em] text-stamp;
+  opacity: 0.82;
+  transform: rotate(-6deg);
+  border-style: double;
+}
+
+/* Evidence tag / exhibit label */
+.exhibit-tag {
+  @apply inline-flex items-center gap-1.5 rounded-[2px] bg-ink-950 px-2 py-1 font-mono text-[10px]
+    font-bold uppercase tracking-[0.16em] text-marker;
+}
+
+/* Perforated tear-off edge for receipts */
+.perforated {
+  background-image: radial-gradient(circle at 6px 100%, transparent 0 3px, rgba(0, 0, 0, 0.12) 3.5px);
+  background-size: 12px 8px;
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+
+/* Red string of the investigation board, used sparingly */
+.string {
+  background-image: repeating-linear-gradient(
+    90deg,
+    transparent 0 6px,
+    rgba(161, 50, 43, 0.35) 6px 8px
+  );
+}
+
+/* Subtle paper grain */
+.grain {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+}
+
+@keyframes stamp-in {
+  0% {
+    opacity: 0;
+    transform: rotate(-6deg) scale(1.6);
+  }
+  60% {
+    opacity: 0.9;
+    transform: rotate(-6deg) scale(0.96);
+  }
+  100% {
+    opacity: 0.82;
+    transform: rotate(-6deg) scale(1);
+  }
+}
+
+.animate-stamp {
+  animation: stamp-in 320ms cubic-bezier(0.2, 0.9, 0.3, 1.2) both;
+}
+
+@keyframes tick {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.animate-tick {
+  animation: tick 220ms ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-stamp,
+  .animate-tick {
+    animation: none;
+  }
+}

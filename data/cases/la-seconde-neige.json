@@ -1,0 +1,489 @@
+{
+  "public": {
+    "id": "la-seconde-neige",
+    "number": 30,
+    "date": "2026-09-30",
+    "title": "LA SECONDE NEIGE",
+    "subtitle": "Deux couches de neige couvrent le refuge; entre elles, des pas commencent au milieu de nulle part.",
+    "location": "Refuge des Aiguilles — massif du Mont-Blanc",
+    "incident": "Tentative de meurtre maquillée en accident de montagne",
+    "intro": "Après la tempête, Ariane manque à l'appel. Ses traces quittent le refuge puis s'interrompent près d'une crevasse. Une seconde neige plus fine recouvre le secteur; entre les deux couches, d'autres pas apparaissent sans chemin d'arrivée.",
+    "victim": {
+      "name": "Ariane Faber",
+      "description": "Glaciologue, 44 ans. Retrouvée hypothermique dans une crevasse balisée comme sûre."
+    },
+    "suspects": [
+      {
+        "id": "loup",
+        "name": "Loup Charrier",
+        "age": 46,
+        "occupation": "Guide",
+        "relation": "Il a posé les balises de sécurité.",
+        "personality": "Stable, peu démonstratif, écoute avant de parler.",
+        "claimedAlibi": "Il affirme n'être pas sorti après le début de la tempête.",
+        "accent": "formal",
+        "notes": [
+          "Ariane allait signaler ses sorties hors quota."
+        ]
+      },
+      {
+        "id": "mila",
+        "name": "Mila Anders",
+        "age": 35,
+        "occupation": "Climatologue",
+        "relation": "Elle partageait les données sensibles d'Ariane.",
+        "personality": "Analytique, distante, photographie chaque mesure.",
+        "claimedAlibi": "Elle travaillait dans la salle radio avec deux chercheurs.",
+        "accent": "nervous",
+        "notes": [
+          "Le rapport d'Ariane contredisait son modèle."
+        ]
+      },
+      {
+        "id": "jon",
+        "name": "Jon Ravel",
+        "age": 27,
+        "occupation": "Gardien adjoint",
+        "relation": "Il a découvert l'absence d'Ariane.",
+        "personality": "Serviable, anxieux, connaît mal le glacier.",
+        "claimedAlibi": "Il préparait le petit-déjeuner dès 4h30.",
+        "accent": "cold",
+        "notes": [
+          "Il avait emprunté le GPS d'Ariane sans permission."
+        ]
+      }
+    ],
+    "clues": [
+      {
+        "id": "registre",
+        "title": "L'alibi qui se fissure",
+        "source": "JOURNAL TECHNIQUE",
+        "summary": "Le thermomètre de ses chaussures enregistre une chute brutale à -18 °C pendant son prétendu sommeil.",
+        "evidence": {
+          "kind": "schedule",
+          "title": "JOURNAL TECHNIQUE",
+          "rows": [
+            {
+              "time": "20:08",
+              "label": "Le thermomètre de ses chaussures enregistre une chute brutale à -18 °C pendant son prétendu sommeil."
+            }
+          ],
+          "altText": "JOURNAL TECHNIQUE à 20:08 : Le thermomètre de ses chaussures enregistre une chute brutale à -18 °C pendant son prétendu sommeil."
+        },
+        "analysis": {
+          "category": "CONTRADICTION",
+          "implicates": [
+            "loup"
+          ],
+          "clears": [],
+          "contradicts": [
+            "loup"
+          ],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [
+            "loup"
+          ],
+          "unlocksInterviewIds": [
+            "loup_confrontation"
+          ],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "trace",
+        "title": "La trace qui ne devait pas rester",
+        "source": "ANALYSE MATÉRIELLE",
+        "summary": "Les pas sans arrivée commencent à la bouche enneigée du tunnel technique reliant le refuge à la pente.",
+        "evidence": {
+          "kind": "photo",
+          "caption": "Les pas sans arrivée commencent à la bouche enneigée du tunnel technique reliant le refuge à la pente.",
+          "meta": [
+            {
+              "label": "HEURE",
+              "value": "20:13"
+            },
+            {
+              "label": "STATUT",
+              "value": "Pièce analysée"
+            }
+          ],
+          "altText": "Photographie d'analyse : Les pas sans arrivée commencent à la bouche enneigée du tunnel technique reliant le refuge à la pente.",
+          "tone": "cold"
+        },
+        "analysis": {
+          "category": "TIMELINE",
+          "implicates": [
+            "loup"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [
+            "loup"
+          ],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "mobile",
+        "title": "Ce que la victime allait révéler",
+        "source": "DOCUMENT CONFIDENTIEL",
+        "summary": "Le brouillon de rapport d'Ariane relie Loup à une balise falsifiée lors de l'accident précédent.",
+        "evidence": {
+          "kind": "email",
+          "from": "Dossier de la victime",
+          "to": "Archives de l'enquête",
+          "subject": "Ce que la victime allait révéler",
+          "sentAt": "19:42",
+          "body": "Le brouillon de rapport d'Ariane relie Loup à une balise falsifiée lors de l'accident précédent.",
+          "altText": "Document confidentiel : Le brouillon de rapport d'Ariane relie Loup à une balise falsifiée lors de l'accident précédent."
+        },
+        "analysis": {
+          "category": "BEHAVIORAL",
+          "implicates": [],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [
+            "loup"
+          ],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "loup_mobile"
+          ],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "alibi_a",
+        "title": "La preuve de Mila Anders",
+        "source": "VÉRIFICATION D'ALIBI",
+        "summary": "L'enregistrement radio conserve la voix et les manipulations de Mila pendant toute la sortie.",
+        "evidence": {
+          "kind": "camera",
+          "location": "VÉRIFICATION D'ALIBI",
+          "frames": [
+            {
+              "time": "20:01",
+              "text": "L'enregistrement radio conserve la voix et les manipulations de Mila pendant toute la sortie."
+            }
+          ],
+          "altText": "Relevé de vérification à 20:01 : L'enregistrement radio conserve la voix et les manipulations de Mila pendant toute la sortie."
+        },
+        "analysis": {
+          "category": "EXONERATING",
+          "implicates": [],
+          "clears": [
+            "mila"
+          ],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "fausse_piste",
+        "title": "Le détail contre Jon Ravel",
+        "source": "PIÈCE SAISIE",
+        "summary": "Le GPS volé dans le sac de Jon contient l'itinéraire exact vers la crevasse.",
+        "evidence": {
+          "kind": "note",
+          "body": "Le GPS volé dans le sac de Jon contient l'itinéraire exact vers la crevasse.",
+          "altText": "Note saisie constituant une fausse piste : Le GPS volé dans le sac de Jon contient l'itinéraire exact vers la crevasse."
+        },
+        "analysis": {
+          "category": "RED_HERRING",
+          "implicates": [
+            "jon"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "jon_detail"
+          ],
+          "isRedHerring": true
+        }
+      },
+      {
+        "id": "resolution",
+        "title": "Ce que la fausse piste oublie",
+        "source": "RECOUPEMENT",
+        "summary": "Son historique montre qu'il l'a copié après la disparition pour chercher Ariane, et les caméras de cuisine confirment son heure de départ.",
+        "evidence": {
+          "kind": "document",
+          "title": "RECOUPEMENT",
+          "subtitle": "Pièce enregistrée à 20:16",
+          "paragraphs": [
+            "Son historique montre qu'il l'a copié après la disparition pour chercher Ariane, et les caméras de cuisine confirment son heure de départ."
+          ],
+          "altText": "RECOUPEMENT : Son historique montre qu'il l'a copié après la disparition pour chercher Ariane, et les caméras de cuisine confirment son heure de départ."
+        },
+        "analysis": {
+          "category": "EXONERATING",
+          "implicates": [],
+          "clears": [
+            "jon"
+          ],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      }
+    ],
+    "interviews": [
+      {
+        "id": "loup_alibi",
+        "suspectId": "loup",
+        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "answer": "Il affirme n'être pas sorti après le début de la tempête. Stable, peu démonstratif, écoute avant de parler.",
+        "beat": "La version paraît nette, peut-être trop nette."
+      },
+      {
+        "id": "loup_relation",
+        "suspectId": "loup",
+        "question": "Qu'est-ce que Ariane Faber risquait de changer pour vous ?",
+        "answer": "Il a posé les balises de sécurité. Ariane allait signaler ses sorties hors quota.",
+        "beat": "Le mobile apparent n'est pas encore une preuve."
+      },
+      {
+        "id": "mila_alibi",
+        "suspectId": "mila",
+        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "answer": "Elle travaillait dans la salle radio avec deux chercheurs. Analytique, distante, photographie chaque mesure.",
+        "beat": "La réponse peut être confrontée aux pièces."
+      },
+      {
+        "id": "mila_relation",
+        "suspectId": "mila",
+        "question": "Qu'est-ce que Ariane Faber risquait de changer pour vous ?",
+        "answer": "Elle partageait les données sensibles d'Ariane. Le rapport d'Ariane contredisait son modèle.",
+        "beat": "Le mobile apparent n'est pas encore une preuve."
+      },
+      {
+        "id": "jon_alibi",
+        "suspectId": "jon",
+        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "answer": "Il préparait le petit-déjeuner dès 4h30. Serviable, anxieux, connaît mal le glacier.",
+        "beat": "La réponse peut être confrontée aux pièces."
+      },
+      {
+        "id": "jon_relation",
+        "suspectId": "jon",
+        "question": "Qu'est-ce que Ariane Faber risquait de changer pour vous ?",
+        "answer": "Il a découvert l'absence d'Ariane. Il avait emprunté le GPS d'Ariane sans permission.",
+        "beat": "Le mobile apparent n'est pas encore une preuve."
+      },
+      {
+        "id": "loup_confrontation",
+        "suspectId": "loup",
+        "question": "Votre heure ne correspond pas au registre. Pourquoi ?",
+        "answer": "« Le registre se trompe parfois. Cela ne prouve pas que j'ai fait ce qu'on me reproche. »",
+        "unlockedByClueId": "registre",
+        "beat": "La personne conteste l'outil, sans expliquer sa propre trace."
+      },
+      {
+        "id": "loup_mobile",
+        "suspectId": "loup",
+        "question": "Ce document vous donnait-il une raison d'agir ?",
+        "answer": "« Vous appelez cela un mobile parce que vous connaissez déjà la fin. Sur le moment, je cherchais seulement une issue. »",
+        "unlockedByClueId": "mobile",
+        "beat": "La raison d'agir est reconnue à demi-mot."
+      },
+      {
+        "id": "jon_detail",
+        "suspectId": "jon",
+        "question": "Pourquoi cette pièce vous désigne-t-elle ?",
+        "answer": "« Elle est vraie, mais votre conclusion ne l'est pas. Cherchez ce qui s'est passé après. »",
+        "unlockedByClueId": "fausse_piste",
+        "beat": "La pièce cache une chronologie plus complète."
+      }
+    ],
+    "timeline": [
+      {
+        "time": "19:30",
+        "text": "Ariane Faber est vu pour la dernière fois avant l'incident.",
+        "source": "Témoignages concordants",
+        "certainty": "CERTAIN"
+      },
+      {
+        "time": "19:42",
+        "text": "Le document révélant le mobile est créé ou consulté.",
+        "source": "Métadonnées",
+        "certainty": "CERTAIN"
+      },
+      {
+        "time": "19:55",
+        "text": "Loup Charrier affirme ne plus pouvoir intervenir.",
+        "source": "Déclaration",
+        "certainty": "REPORTED"
+      },
+      {
+        "time": "20:08",
+        "text": "Une activité technique contredit cette version.",
+        "source": "Registre",
+        "certainty": "CERTAIN"
+      },
+      {
+        "time": "20:16",
+        "text": "L'incident devient visible ou produit ses effets.",
+        "source": "Constat",
+        "certainty": "ESTIMATED"
+      }
+    ],
+    "accusation": {
+      "questions": [
+        {
+          "id": "q_who",
+          "kind": "suspect",
+          "prompt": "Qui est responsable ?",
+          "optional": false,
+          "options": [
+            {
+              "id": "loup",
+              "label": "Loup Charrier",
+              "hint": "Guide"
+            },
+            {
+              "id": "mila",
+              "label": "Mila Anders",
+              "hint": "Climatologue"
+            },
+            {
+              "id": "jon",
+              "label": "Jon Ravel",
+              "hint": "Gardien adjoint"
+            }
+          ]
+        },
+        {
+          "id": "q_why",
+          "kind": "motive",
+          "prompt": "Pourquoi cette personne a-t-elle agi ?",
+          "optional": false,
+          "options": [
+            {
+              "id": "motive_correct",
+              "label": "Empêcher Ariane de révéler ses expéditions illégales et la mort dissimulée d'un client"
+            },
+            {
+              "id": "motive_rivalite",
+              "label": "Écarter un rival par jalousie"
+            },
+            {
+              "id": "motive_accident",
+              "label": "Cacher une erreur sans rapport avec l'incident"
+            }
+          ]
+        },
+        {
+          "id": "q_how",
+          "kind": "method",
+          "prompt": "Comment l'incident a-t-il été provoqué ?",
+          "optional": false,
+          "options": [
+            {
+              "id": "method_correct",
+              "label": "Déplacer une balise vers une crevasse puis rejoindre le lieu par le tunnel de stockage"
+            },
+            {
+              "id": "method_force",
+              "label": "Forcer directement l'accès principal"
+            },
+            {
+              "id": "method_complice",
+              "label": "Employer un complice extérieur après la fermeture"
+            }
+          ]
+        }
+      ]
+    },
+    "difficulty": "DIFFICILE",
+    "estimatedMinutes": 10
+  },
+  "meta": {
+    "crimeType": "tentative_meurtre",
+    "locationType": "refuge de montagne",
+    "culpritGender": "M",
+    "motiveType": "cacher un accident mortel",
+    "methodType": "balise déplacée et tunnel",
+    "coreMechanic": "stratigraphie de neige comme témoin"
+  },
+  "solution": {
+    "culpritId": "loup",
+    "correctMotive": "motive_correct",
+    "correctMethod": "method_correct",
+    "validationAnswers": {
+      "q_who": "loup",
+      "q_why": "motive_correct",
+      "q_how": "method_correct"
+    },
+    "optionalAnswers": {},
+    "correctTimeline": [
+      {
+        "time": "19:30",
+        "place": "Refuge des Aiguilles — massif du Mont-Blanc",
+        "personIds": [
+          "loup"
+        ],
+        "text": "Loup Charrier comprend que la situation menace directement ses intérêts."
+      },
+      {
+        "time": "19:42",
+        "place": "Refuge des Aiguilles — massif du Mont-Blanc",
+        "personIds": [
+          "loup"
+        ],
+        "text": "Le mobile se cristallise : empêcher ariane de révéler ses expéditions illégales et la mort dissimulée d'un client."
+      },
+      {
+        "time": "20:08",
+        "endTime": "20:13",
+        "place": "Refuge des Aiguilles — massif du Mont-Blanc",
+        "personIds": [
+          "loup"
+        ],
+        "text": "Loup a emprunté le tunnel afin de ne laisser aucun trajet depuis la porte, déplacé la balise puis réveillé Ariane sous prétexte d'une mesure urgente. Il comptait sur la seconde neige pour effacer leur marche; elle a au contraire conservé ses pas entre deux couches."
+      },
+      {
+        "time": "20:16",
+        "place": "Refuge des Aiguilles — massif du Mont-Blanc",
+        "personIds": [
+          "loup"
+        ],
+        "text": "La personne remet les lieux en ordre et s'appuie sur son alibi préparé."
+      }
+    ],
+    "reasoning": [
+      "Le registre contredit l'heure donnée par Loup Charrier : Le thermomètre de ses chaussures enregistre une chute brutale à -18 °C pendant son prétendu sommeil.",
+      "La trace matérielle ne prouve pas seulement une présence; elle décrit la méthode : Les pas sans arrivée commencent à la bouche enneigée du tunnel technique reliant le refuge à la pente.",
+      "Le document confidentiel fournit un mobile précis : Le brouillon de rapport d'Ariane relie Loup à une balise falsifiée lors de l'accident précédent.",
+      "Mila Anders est écarté par une preuve indépendante, tandis que l'élément visant Jon Ravel est expliqué par le recoupement final.",
+      "La seule personne réunissant présence, moyen et mobile est Loup Charrier."
+    ],
+    "explanation": "Loup a emprunté le tunnel afin de ne laisser aucun trajet depuis la porte, déplacé la balise puis réveillé Ariane sous prétexte d'une mesure urgente. Il comptait sur la seconde neige pour effacer leur marche; elle a au contraire conservé ses pas entre deux couches. Le mobile était de empêcher ariane de révéler ses expéditions illégales et la mort dissimulée d'un client. La méthode consistait à déplacer une balise vers une crevasse puis rejoindre le lieu par le tunnel de stockage. La fausse piste contre Jon Ravel paraît forte isolément, mais son historique montre qu'il l'a copié après la disparition pour chercher Ariane, et les caméras de cuisine confirment son heure de départ. Ainsi, les preuves convergent sans supposer d'information extérieure au dossier.",
+    "proofChains": [
+      {
+        "title": "La chaîne du geste",
+        "steps": [
+          "Le thermomètre de ses chaussures enregistre une chute brutale à -18 °C pendant son prétendu sommeil.",
+          "Les pas sans arrivée commencent à la bouche enneigée du tunnel technique reliant le refuge à la pente.",
+          "Ces deux pièces relient matériellement Loup Charrier à l'action."
+        ]
+      },
+      {
+        "title": "La chaîne de l'intention",
+        "steps": [
+          "Le brouillon de rapport d'Ariane relie Loup à une balise falsifiée lors de l'accident précédent.",
+          "L'enregistrement radio conserve la voix et les manipulations de Mila pendant toute la sortie.",
+          "Le mobile devient exclusif une fois les alibis recoupés."
+        ]
+      }
+    ]
+  }
+}

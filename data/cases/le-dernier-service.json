@@ -1,0 +1,393 @@
+{
+  "public": {
+    "id": "le-dernier-service",
+    "number": 14,
+    "date": "2026-09-14",
+    "title": "LE DERNIER SERVICE",
+    "subtitle": "La recette a disparu entre la fermeture et le lendemain matin.",
+    "location": "Le Comptoir des Halles, bistro - Lyon 2e",
+    "incident": "Vol de la recette du soir dans le coffre de la réserve",
+    "intro": "Mardi, 23h15. Valère Chastel range la salle quand il ouvre le coffre de la réserve par habitude. L'enveloppe de la recette, 2 340 euros déposée avant son départ, n'y est plus. Le coffre est fermé, sans trace d'effraction. La réserve a été verrouillée à clé. Le livreur de pain, qui possède un double, ne passe que le matin à 6h40 et l'alarme n'a pas sonné.",
+    "victim": {
+      "name": "Valère Chastel",
+      "description": "58 ans, propriétaire du Comptoir des Halles. Il a déposé lui-même l'enveloppe dans le coffre avant de partir à 22h30."
+    },
+    "suspects": [
+      {
+        "id": "emma",
+        "name": "Emma Roussel",
+        "age": 34,
+        "occupation": "Sous-chef",
+        "relation": "Salariée depuis six ans. Détient le trousseau et a procédé à la fermeture ce soir-là.",
+        "personality": "Directe, efficace, peu bavarde. Répond en donnant l'heure exacte de chaque chose.",
+        "claimedAlibi": "Elle a terminé l'inventaire de la chambre froide, déposé l'enveloppe au coffre et quitté l'établissement à 23h05 pour rentrer chez elle.",
+        "accent": "blunt",
+        "notes": [
+          "Connaît le code du coffre : Valère le compose régulièrement devant l'équipe.",
+          "A fermé le restaurant mardi soir."
+        ]
+      },
+      {
+        "id": "theo",
+        "name": "Théo Marchal",
+        "age": 26,
+        "occupation": "Barman",
+        "relation": "Employé à temps partiel depuis un an. A compté la caisse et préparé l'enveloppe.",
+        "personality": "Bavard, cherche à être apprécié, raconte toujours un détail de trop. Se reprend quand il se sent visé.",
+        "claimedAlibi": "Il a rangé le bar, préparé l'enveloppe de recette et est parti à 22h45 pour rejoindre des amis de l'autre côté de la ville.",
+        "accent": "nervous",
+        "notes": [
+          "A préparé l'enveloppe de recette.",
+          "A déjà vu le code du coffre."
+        ]
+      },
+      {
+        "id": "nadia",
+        "name": "Nadia Belkacem",
+        "age": 41,
+        "occupation": "Serveuse",
+        "relation": "En poste depuis quatre ans. Valère lui avait avancé de l'argent l'an dernier, jamais remboursé.",
+        "personality": "Sur la défensive dès la première question. Répond par des questions ou minimise.",
+        "claimedAlibi": "Elle a plié sa nappe, dit au revoir à Emma et pris le bus de 22h58 comme d'habitude.",
+        "accent": "cold",
+        "notes": [
+          "Doit 300 euros à Valère depuis l'automne dernier.",
+          "A demandé à plusieurs reprises à fermer seule."
+        ]
+      }
+    ],
+    "clues": [
+      {
+        "id": "parking",
+        "title": "Sortie du parking du personnel",
+        "source": "Registre automatique du parking",
+        "summary": "La barrière a enregistré la sortie de la voiture d'Emma à 00h12.",
+        "evidence": {
+          "kind": "schedule",
+          "title": "PARKING DU PERSONNEL - BARRIERE SORTIE",
+          "rows": [
+            { "time": "22:45", "label": "Badge THEO MARCHAL - vehicule declare" },
+            { "time": "22:58", "label": "Sortie pietonne - porte laterale" },
+            { "time": "00:12", "label": "Badge EMMA ROUSSEL - vehicule declare" }
+          ],
+          "altText": "Registre du parking : Théo sort à 22h45, une personne à pied à 22h58, et le véhicule d'Emma sort à 00h12."
+        },
+        "analysis": {
+          "category": "CONTRADICTION",
+          "implicates": ["emma"],
+          "clears": ["theo"],
+          "contradicts": ["emma"],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": ["emma"],
+          "unlocksInterviewIds": ["emma_parking"],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "sms_comptable",
+        "title": "Message au comptable",
+        "source": "Téléphone professionnel de Valère",
+        "summary": "Valère prévenait son comptable d'un point sur les écarts de caisse d'Emma.",
+        "evidence": {
+          "kind": "sms",
+          "contact": "Cabinet Ferrand - comptable",
+          "channel": "sms",
+          "messages": [
+            { "from": "me", "text": "Je te montrerai demain les ecarts de caisse d'Emma. Je ne veux plus fermer les yeux, elle depasse les bornes.", "time": "21:58" }
+          ],
+          "altText": "Un SMS de Valère à 21h58 indique qu'Emma dépassait les bornes avec les écarts de caisse et qu'il comptait en parler."
+        },
+        "analysis": {
+          "category": "BEHAVIORAL",
+          "implicates": [],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": ["emma"],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": ["emma_ecarts"],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "camera_ruelle",
+        "title": "Caméra de la ruelle",
+        "source": "Caméra du commerce voisin, orientée vers l'arrière du bistro",
+        "summary": "Personne n'entre après 22h52. Une silhouette quitte la porte de service à 23h49 avec un sac.",
+        "evidence": {
+          "kind": "camera",
+          "location": "Ruelle de la Poissonnerie - porte de service",
+          "frames": [
+            { "time": "22:48", "text": "Theo sort par la porte de service, sac a dos. Il part a pied vers l'avenue." },
+            { "time": "22:52", "text": "Nadia sort par la porte de service, manteau beige. Seule dans la ruelle." },
+            { "time": "23:49", "text": "Une silhouette en veste sombre et capuche sort par la porte de service avec un sac souple. Visage non visible." }
+          ],
+          "altText": "Images de la ruelle : Théo sort à 22h48, Nadia à 22h52, puis une silhouette encapuchonnée sort à 23h49 avec un sac. Aucune entrée entre-temps."
+        },
+        "analysis": {
+          "category": "TIMELINE",
+          "implicates": ["emma"],
+          "clears": ["theo", "nadia"],
+          "contradicts": ["emma"],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": ["emma"],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "recu_theo",
+        "title": "Reçu de station-service",
+        "source": "Ticket retrouvé dans la voiture de Théo",
+        "summary": "Théo a acheté de l'essence à 23h20, à vingt minutes du bistro.",
+        "evidence": {
+          "kind": "receipt",
+          "merchant": "TOTAL RELAIS - Porte Ouest",
+          "address": "A7 sortie 7, 18 km de Lyon 2e",
+          "time": "23:20",
+          "lines": [
+            { "label": "SANS PLOMB 95", "value": "31,40 EUR" },
+            { "label": "CAFETERIA", "value": "2,10 EUR" }
+          ],
+          "total": "33,50 EUR",
+          "card": "CB **** 2044",
+          "footer": "Merci et bonne route - Ticket 0441",
+          "altText": "Ticket de station-service au nom de la carte de Théo, 23h20, 18 km du restaurant : il achetait de l'essence à l'heure du vol."
+        },
+        "analysis": {
+          "category": "EXONERATING",
+          "implicates": [],
+          "clears": ["theo"],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": ["theo_recu"],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "casier_nadia",
+        "title": "Contenu du casier de Nadia",
+        "source": "Vestiaire du personnel",
+        "summary": "Une lettre d'entretien d'embauche et quarante euros prélevés dans le bocal à pourboires.",
+        "evidence": {
+          "kind": "document",
+          "title": "DEUX ELEMENTS DANS LE CASIER DE NADIA",
+          "subtitle": "Constat au moment de l'ouverture des casiers, mercredi matin",
+          "paragraphs": [
+            "1. Une lettre d'un hotel de la Croix-Rousse lui proposant un entretien jeudi. Nadia n'en a parle a personne au Comptoir.",
+            "2. Quarante euros en billets froisses, sous un gant, sans enveloppe. Le bocal a pourboires de la semaine etait plus leger que la normale.",
+            "Nadia a d'abord dit ne pas savoir d'ou venait cet argent, puis a reconnu l'avoir pris pour payer un medicament, en promettant de le remettre."
+          ],
+          "altText": "Dans le casier de Nadia : une lettre d'entretien pour un autre emploi et quarante euros pris dans le bocal à pourboires, ce qu'elle a fini par reconnaître."
+        },
+        "analysis": {
+          "category": "RED_HERRING",
+          "implicates": ["nadia"],
+          "clears": [],
+          "contradicts": ["nadia"],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": ["nadia_casier"],
+          "isRedHerring": true
+        }
+      }
+    ],
+    "interviews": [
+      {
+        "id": "emma_base1",
+        "suspectId": "emma",
+        "question": "Où étiez-vous au moment de la fermeture ?",
+        "answer": "En cuisine puis en réserve. Inventaire de la chambre froide, vérification des plats du lendemain, dépôt de l'enveloppe au coffre. J'ai tout bouclé et je suis partie à 23h05."
+      },
+      {
+        "id": "emma_base2",
+        "suspectId": "emma",
+        "question": "Quelle était votre relation avec Valère ?",
+        "answer": "Professionnelle. Il est exigeant, moi aussi. On ne se tutoie pas, on se comprend. Je ne vois pas quoi ajouter."
+      },
+      {
+        "id": "emma_base3",
+        "suspectId": "emma",
+        "question": "Avez-vous remarqué quelque chose d'habituel ce soir-là ?",
+        "answer": "Non. Tout était normal. La seule chose inhabituelle, c'est que le coffre était vide quand Valère l'a ouvert. Je l'ai fermé comme d'habitude.",
+        "beat": "Elle emploie « comme d'habitude » sans qu'on lui ait demandé de décrire ses gestes."
+      },
+      {
+        "id": "emma_parking",
+        "suspectId": "emma",
+        "question": "Pourquoi votre voiture est-elle sortie du parking à 00h12 ?",
+        "unlockedByClueId": "parking",
+        "answer": "J'étais partie à 23h05. La barrière doit avoir un retard. Je n'ai pas regardé l'heure exactement, j'étais fatiguée.",
+        "beat": "Sa première version donnait une heure précise. Elle en fait maintenant une approximation."
+      },
+      {
+        "id": "emma_ecarts",
+        "suspectId": "emma",
+        "question": "Valère s'apprêtait-il à vous parler des écarts de caisse ?",
+        "unlockedByClueId": "sms_comptable",
+        "answer": "Des écarts, il y en a tous les mois, c'est la caisse qui est mal tenue. Ce n'est pas moi. Et il ne m'a rien dit.",
+        "beat": "Elle répond sur la caisse avant de nier toute conversation."
+      },
+      {
+        "id": "theo_base1",
+        "suspectId": "theo",
+        "question": "Où étiez-vous au moment de la fermeture ?",
+        "answer": "Parti à 22h45, enfin je crois, j'ai rangé le bar, j'ai compté, j'ai mis l'enveloppe de côté, Emma l'a prise. Après j'ai filé, j'avais promis à des copains de passer."
+      },
+      {
+        "id": "theo_base2",
+        "suspectId": "theo",
+        "question": "Quelle était votre relation avec Valère ?",
+        "answer": "Bonne. Enfin, il râle, mais il râle avec tout le monde. Il m'a gardé l'an dernier quand j'ai eu des soucis de planning, je ne vais pas me plaindre."
+      },
+      {
+        "id": "theo_base3",
+        "suspectId": "theo",
+        "question": "Avez-vous remarqué quelque chose d'habituel ce soir-là ?",
+        "answer": "Non... enfin, Nadia est partie un peu vite. Enfin non, elle a pris son bus. Et Emma était dans la chambre froide, je l'entendais. Rien de spécial, quoi.",
+        "beat": "Il se ravise deux fois sur Nadia sans que personne ne l'interroge là-dessus."
+      },
+      {
+        "id": "theo_recu",
+        "suspectId": "theo",
+        "question": "Votre carte a été utilisée à une station-service à 23h20. Vous n'étiez donc pas à Lyon ?",
+        "unlockedByClueId": "recu_theo",
+        "answer": "Si, si, j'étais sur l'avenue, je suis parti par l'A7 pour rejoindre les copains et j'ai pris de l'essence en route. C'est bien ce que j'ai dit : je suis parti vers 22h45."
+      },
+      {
+        "id": "nadia_base1",
+        "suspectId": "nadia",
+        "question": "Où étiez-vous au moment de la fermeture ?",
+        "answer": "Pourquoi vous me demandez ça à moi ? J'ai fini ma salle, j'ai pris mon bus, je fais ça tous les soirs. Je ne suis pas retournée là-bas, si c'est la question."
+      },
+      {
+        "id": "nadia_base2",
+        "suspectId": "nadia",
+        "question": "Quelle était votre relation avec Valère ?",
+        "answer": "Correcte. Il m'a avancé de l'argent quand ma fille a eu son accident. Je n'ai pas encore tout remboursé, mais il le sait."
+      },
+      {
+        "id": "nadia_base3",
+        "suspectId": "nadia",
+        "question": "Avez-vous remarqué quelque chose d'habituel ce soir-là ?",
+        "answer": "Non. Rien. Enfin, Emma avait l'air pressée de nous voir partir, mais elle est toujours pressée.",
+        "beat": "Elle-même ajoute une information avant d'en minimiser la portée."
+      },
+      {
+        "id": "nadia_casier",
+        "suspectId": "nadia",
+        "question": "Que faisaient ces quarante euros dans votre casier ?",
+        "unlockedByClueId": "casier_nadia",
+        "answer": "Je les ai pris. J'allais les remettre. J'avais honte, voilà. Mais je n'ai pas touché à la recette, ça n'a rien à voir.",
+        "beat": "Elle reconnaît le petit vol avec lassitude, mais se cabre aussitôt sur la recette."
+      }
+    ],
+    "timeline": [
+      { "time": "22:30", "text": "Valère dépose l'enveloppe de recette dans le coffre et quitte l'établissement.", "source": "Déclaration de Valère", "certainty": "CERTAIN" },
+      { "time": "22:45", "text": "Théo range le bar et sort par la porte de service.", "source": "Caméra de la ruelle", "certainty": "CERTAIN" },
+      { "time": "22:52", "text": "Nadia sort par la porte de service et rejoint l'arrêt de bus.", "source": "Caméra de la ruelle", "certainty": "CERTAIN" },
+      { "time": "22:58", "text": "Le bus de Nadia passe à l'arrêt de la rue Jarente.", "source": "Fiche horaire TCL", "certainty": "REPORTED" },
+      { "time": "23:05", "text": "Emma déclare avoir quitté le restaurant.", "source": "Déclaration d'Emma", "certainty": "REPORTED" },
+      { "time": "23:20", "text": "Achat d'essence de Théo à la Porte Ouest.", "source": "Reçu bancaire", "certainty": "CERTAIN" },
+      { "time": "23:49", "text": "Une silhouette quitte la porte de service avec un sac.", "source": "Caméra de la ruelle", "certainty": "CERTAIN" },
+      { "time": "00:12", "text": "Le véhicule d'Emma franchit la barrière de sortie du parking.", "source": "Registre du parking", "certainty": "CERTAIN" }
+    ],
+    "accusation": {
+      "questions": [
+        {
+          "id": "q_who",
+          "kind": "suspect",
+          "prompt": "Qui a pris la recette ?",
+          "options": [
+            { "id": "emma", "label": "Emma Roussel", "hint": "Sous-chef, a fermé le restaurant" },
+            { "id": "theo", "label": "Théo Marchal", "hint": "Barman, a préparé l'enveloppe" },
+            { "id": "nadia", "label": "Nadia Belkacem", "hint": "Serveuse, devait de l'argent à Valère" }
+          ]
+        },
+        {
+          "id": "q_why",
+          "kind": "motive",
+          "prompt": "Pourquoi le vol a-t-il eu lieu ce soir-là ?",
+          "options": [
+            { "id": "motive_ecarts", "label": "Pour couvrir les écarts de caisse avant que Valère n'en parle au comptable", "hint": "Une conversation prévue le lendemain" },
+            { "id": "motive_dette", "label": "Pour rembourser une dette envers Valère", "hint": "Une avance jamais rendue" },
+            { "id": "motive_depart", "label": "Pour financer un départ de l'établissement", "hint": "Une lettre d'entretien dans un casier" }
+          ]
+        },
+        {
+          "id": "q_how",
+          "kind": "method",
+          "prompt": "Comment le coffre a-t-il été vidé ?",
+          "options": [
+            { "id": "method_code", "label": "Avec le code du coffre, après le départ des autres, avant de sortir par la porte de service", "hint": "Le code était connu de l'équipe" },
+            { "id": "method_force", "label": "En forçant le coffre pendant la nuit", "hint": "Aucune trace d'effraction" },
+            { "id": "method_double", "label": "Avec le double des clés du livreur de pain", "hint": "Un passage le matin seulement" }
+          ]
+        }
+      ]
+    },
+    "difficulty": "NORMAL",
+    "estimatedMinutes": 7
+  },
+  "meta": {
+    "crimeType": "vol",
+    "locationType": "restaurant",
+    "culpritGender": "F",
+    "motiveType": "dissimulation de faute",
+    "methodType": "code du coffre",
+    "coreMechanic": "contradiction temporelle"
+  },
+  "solution": {
+    "culpritId": "emma",
+    "correctMotive": "motive_ecarts",
+    "correctMethod": "method_code",
+    "validationAnswers": {
+      "q_who": "emma",
+      "q_why": "motive_ecarts",
+      "q_how": "method_code"
+    },
+    "optionalAnswers": {},
+    "correctTimeline": [
+      { "time": "21:58", "place": "Le Comptoir des Halles", "personIds": ["valere"], "text": "Valère écrit à son comptable : il parlera des écarts de caisse d'Emma le lendemain." },
+      { "time": "22:30", "place": "Le Comptoir des Halles", "personIds": ["valere"], "text": "Valère dépose l'enveloppe dans le coffre et part." },
+      { "time": "22:45", "place": "Ruelle de la Poissonnerie", "personIds": ["theo"], "text": "Théo quitte le bistro." },
+      { "time": "22:52", "place": "Ruelle de la Poissonnerie", "personIds": ["nadia"], "text": "Nadia quitte le bistro." },
+      { "time": "23:05", "place": "Le Comptoir des Halles", "personIds": ["emma"], "text": "Emma termine seule la fermeture. Elle a lu le SMS de Valère en rangeant le bureau." },
+      { "time": "23:08", "place": "Réserve", "personIds": ["emma"], "text": "Emma ouvre le coffre avec le code et prend l'enveloppe de recette." },
+      { "time": "23:20", "place": "Porte Ouest, A7", "personIds": ["theo"], "text": "Théo achète de l'essence, très loin du bistro." },
+      { "time": "23:40", "place": "Bureau", "personIds": ["emma"], "text": "Emma efface les traces de son passage et glisse l'enveloppe dans un sac souple." },
+      { "time": "23:49", "place": "Ruelle de la Poissonnerie", "personIds": ["emma"], "text": "Emma sort par la porte de service, capuche sur la tête." },
+      { "time": "00:12", "place": "Parking du personnel", "personIds": ["emma"], "text": "Emma franchit la barrière et rentre chez elle." }
+    ],
+    "reasoning": [
+      "Emma affirme avoir quitté le restaurant à 23h05.",
+      "Or son véhicule franchit la barrière du parking à 00h12, plus d'une heure plus tard.",
+      "La caméra de la ruelle montre que personne n'entre dans le bistro après le départ de Nadia à 22h52. La personne qui vide le coffre était donc déjà à l'intérieur.",
+      "La silhouette qui sort à 23h49 est la dernière à quitter les lieux, et seule la voiture d'Emma reste au parking.",
+      "Théo se trouvait à 18 km du bistro à 23h20 : le reçu le place hors de la fenêtre du vol.",
+      "Le SMS de Valère à son comptable donne le mobile : Emma savait qu'on examinerait sa caisse le lendemain.",
+      "Conclusion : Emma a menti sur l'heure de son départ, seule dans le restaurant, elle a ouvert le coffre avec le code connu de toute l'équipe."
+    ],
+    "explanation": "Emma Roussel a pris la recette. À 21h58, Valère écrivait à son comptable qu'il voulait enfin parler des écarts de caisse d'Emma. En rangeant le bureau pendant la fermeture, elle a lu le message : le lendemain, sa caisse serait examinée. Elle a donc ouvert le coffre avec le code que Valère composait devant toute l'équipe, pris l'enveloppe, puis quitté les lieux par la porte de service à 23h49 en capuche. Elle a prétendu être partie à 23h05, mais la barrière du parking enregistre sa voiture à 00h12, et la caméra montre qu'aucune autre personne n'est entrée après 22h52. Le reste de l'équipe est écarté : Théo achetait de l'essence à 18 km à l'heure du vol, et Nadia avait un secret sans rapport, quarante euros pris dans le bocal à pourboires.",
+    "proofChains": [
+      {
+        "title": "Chaîne A - L'alibi impossible",
+        "steps": [
+          "Emma déclare un départ à 23h05.",
+          "Le registre du parking enregistre son véhicule à 00h12.",
+          "La caméra de la ruelle montre une sortie unique à 23h49, et aucune entrée après 22h52.",
+          "Personne n'ayant pu entrer, la dernière personne présente est celle qui quitte les lieux à 23h49 : Emma."
+        ]
+      },
+      {
+        "title": "Chaîne B - Le mobile et le moyen",
+        "steps": [
+          "Le SMS de 21h58 montre que Valère allait examiner la caisse d'Emma le lendemain.",
+          "Emma a eu le loisir de lire ce message pendant la fermeture.",
+          "Le coffre n'est pas forcé et son code était connu de l'équipe.",
+          "Le mobile (dissimuler les écarts) et le moyen (le code) convergent vers la même personne."
+        ]
+      }
+    ]
+  }
+}

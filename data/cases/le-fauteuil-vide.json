@@ -1,0 +1,489 @@
+{
+  "public": {
+    "id": "le-fauteuil-vide",
+    "number": 16,
+    "date": "2026-09-16",
+    "title": "LE FAUTEUIL VIDE",
+    "subtitle": "Au milieu d'un film complet, un spectateur disparaît sans que personne ne se lève.",
+    "location": "Cinéma Le Sémaphore — Marseille",
+    "incident": "Disparition organisée pendant une projection",
+    "intro": "À la fin de la séance, le fauteuil G12 est vide mais le manteau de Romain y repose encore. Les caméras montrent toutes les sorties et aucun spectateur ne quitte la salle. Une coupure de son de quatre-vingt-dix secondes est le seul incident.",
+    "victim": {
+      "name": "Romain Delcourt",
+      "description": "Comptable, 48 ans. Il devait témoigner le lendemain dans une affaire de marchés publics."
+    },
+    "suspects": [
+      {
+        "id": "ines",
+        "name": "Inès Delcourt",
+        "age": 45,
+        "occupation": "Épouse de Romain",
+        "relation": "Elle ignorait officiellement son rôle de témoin.",
+        "personality": "Digne, épuisée, protège leurs enfants.",
+        "claimedAlibi": "Elle était dans une autre salle avec sa fille.",
+        "accent": "formal",
+        "notes": [
+          "Elle avait acheté deux billets sous un faux nom."
+        ]
+      },
+      {
+        "id": "victor",
+        "name": "Victor Amsel",
+        "age": 39,
+        "occupation": "Projectionniste",
+        "relation": "Il connaît les passages derrière l'écran.",
+        "personality": "Cinéphile, solitaire, décrit la soirée en plans.",
+        "claimedAlibi": "Il assure être resté en cabine pendant la coupure.",
+        "accent": "nervous",
+        "notes": [
+          "Romain lui avait promis de révéler une fraude touchant son frère."
+        ]
+      },
+      {
+        "id": "meryem",
+        "name": "Meryem Solal",
+        "age": 33,
+        "occupation": "Avocate",
+        "relation": "Elle préparait le témoignage de Romain.",
+        "personality": "Calme, précise, ne répond jamais au-delà de la question.",
+        "claimedAlibi": "Elle attendait Romain dans un café voisin.",
+        "accent": "cold",
+        "notes": [
+          "Elle avait demandé une protection refusée."
+        ]
+      }
+    ],
+    "clues": [
+      {
+        "id": "registre",
+        "title": "L'alibi qui se fissure",
+        "source": "JOURNAL TECHNIQUE",
+        "summary": "Le projecteur continue automatiquement tandis que le badge de Victor ouvre la passerelle de scène.",
+        "evidence": {
+          "kind": "schedule",
+          "title": "JOURNAL TECHNIQUE",
+          "rows": [
+            {
+              "time": "20:00",
+              "label": "Le projecteur continue automatiquement tandis que le badge de Victor ouvre la passerelle de scène."
+            }
+          ],
+          "altText": "JOURNAL TECHNIQUE à 20:00 : Le projecteur continue automatiquement tandis que le badge de Victor ouvre la passerelle de scène."
+        },
+        "analysis": {
+          "category": "CONTRADICTION",
+          "implicates": [
+            "victor"
+          ],
+          "clears": [],
+          "contradicts": [
+            "victor"
+          ],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [
+            "victor"
+          ],
+          "unlocksInterviewIds": [
+            "victor_confrontation"
+          ],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "trace",
+        "title": "La trace qui ne devait pas rester",
+        "source": "ANALYSE MATÉRIELLE",
+        "summary": "La poussière rouge de la trappe est retrouvée sur le pantalon de Romain et les chaussures de Victor.",
+        "evidence": {
+          "kind": "photo",
+          "caption": "La poussière rouge de la trappe est retrouvée sur le pantalon de Romain et les chaussures de Victor.",
+          "meta": [
+            {
+              "label": "HEURE",
+              "value": "20:05"
+            },
+            {
+              "label": "STATUT",
+              "value": "Pièce analysée"
+            }
+          ],
+          "altText": "Photographie d'analyse : La poussière rouge de la trappe est retrouvée sur le pantalon de Romain et les chaussures de Victor.",
+          "tone": "cold"
+        },
+        "analysis": {
+          "category": "TIMELINE",
+          "implicates": [
+            "victor"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [
+            "victor"
+          ],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "mobile",
+        "title": "Ce que la victime allait révéler",
+        "source": "DOCUMENT CONFIDENTIEL",
+        "summary": "Un message du frère de Victor annonce que des hommes attendent Romain à la sortie du cinéma.",
+        "evidence": {
+          "kind": "email",
+          "from": "Dossier de la victime",
+          "to": "Archives de l'enquête",
+          "subject": "Ce que la victime allait révéler",
+          "sentAt": "19:34",
+          "body": "Un message du frère de Victor annonce que des hommes attendent Romain à la sortie du cinéma.",
+          "altText": "Document confidentiel : Un message du frère de Victor annonce que des hommes attendent Romain à la sortie du cinéma."
+        },
+        "analysis": {
+          "category": "BEHAVIORAL",
+          "implicates": [],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [
+            "victor"
+          ],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "victor_mobile"
+          ],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "alibi_a",
+        "title": "La preuve de Inès Delcourt",
+        "source": "VÉRIFICATION D'ALIBI",
+        "summary": "Le contrôle des billets et une vidéo familiale placent Inès dans l'autre salle pendant la disparition.",
+        "evidence": {
+          "kind": "camera",
+          "location": "VÉRIFICATION D'ALIBI",
+          "frames": [
+            {
+              "time": "19:53",
+              "text": "Le contrôle des billets et une vidéo familiale placent Inès dans l'autre salle pendant la disparition."
+            }
+          ],
+          "altText": "Relevé de vérification à 19:53 : Le contrôle des billets et une vidéo familiale placent Inès dans l'autre salle pendant la disparition."
+        },
+        "analysis": {
+          "category": "EXONERATING",
+          "implicates": [],
+          "clears": [
+            "ines"
+          ],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "fausse_piste",
+        "title": "Le détail contre Meryem Solal",
+        "source": "PIÈCE SAISIE",
+        "summary": "Meryem avait réservé une chambre au nom de Romain dans une ville voisine.",
+        "evidence": {
+          "kind": "note",
+          "body": "Meryem avait réservé une chambre au nom de Romain dans une ville voisine.",
+          "altText": "Note saisie constituant une fausse piste : Meryem avait réservé une chambre au nom de Romain dans une ville voisine."
+        },
+        "analysis": {
+          "category": "RED_HERRING",
+          "implicates": [
+            "meryem"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "meryem_detail"
+          ],
+          "isRedHerring": true
+        }
+      },
+      {
+        "id": "resolution",
+        "title": "Ce que la fausse piste oublie",
+        "source": "RECOUPEMENT",
+        "summary": "La réservation faisait partie d'un protocole officiel de mise à l'abri prévu après son témoignage.",
+        "evidence": {
+          "kind": "document",
+          "title": "RECOUPEMENT",
+          "subtitle": "Pièce enregistrée à 20:08",
+          "paragraphs": [
+            "La réservation faisait partie d'un protocole officiel de mise à l'abri prévu après son témoignage."
+          ],
+          "altText": "RECOUPEMENT : La réservation faisait partie d'un protocole officiel de mise à l'abri prévu après son témoignage."
+        },
+        "analysis": {
+          "category": "EXONERATING",
+          "implicates": [],
+          "clears": [
+            "meryem"
+          ],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      }
+    ],
+    "interviews": [
+      {
+        "id": "ines_alibi",
+        "suspectId": "ines",
+        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "answer": "Elle était dans une autre salle avec sa fille. Digne, épuisée, protège leurs enfants.",
+        "beat": "La réponse peut être confrontée aux pièces."
+      },
+      {
+        "id": "ines_relation",
+        "suspectId": "ines",
+        "question": "Qu'est-ce que Romain Delcourt risquait de changer pour vous ?",
+        "answer": "Elle ignorait officiellement son rôle de témoin. Elle avait acheté deux billets sous un faux nom.",
+        "beat": "Le mobile apparent n'est pas encore une preuve."
+      },
+      {
+        "id": "victor_alibi",
+        "suspectId": "victor",
+        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "answer": "Il assure être resté en cabine pendant la coupure. Cinéphile, solitaire, décrit la soirée en plans.",
+        "beat": "La version paraît nette, peut-être trop nette."
+      },
+      {
+        "id": "victor_relation",
+        "suspectId": "victor",
+        "question": "Qu'est-ce que Romain Delcourt risquait de changer pour vous ?",
+        "answer": "Il connaît les passages derrière l'écran. Romain lui avait promis de révéler une fraude touchant son frère.",
+        "beat": "Le mobile apparent n'est pas encore une preuve."
+      },
+      {
+        "id": "meryem_alibi",
+        "suspectId": "meryem",
+        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "answer": "Elle attendait Romain dans un café voisin. Calme, précise, ne répond jamais au-delà de la question.",
+        "beat": "La réponse peut être confrontée aux pièces."
+      },
+      {
+        "id": "meryem_relation",
+        "suspectId": "meryem",
+        "question": "Qu'est-ce que Romain Delcourt risquait de changer pour vous ?",
+        "answer": "Elle préparait le témoignage de Romain. Elle avait demandé une protection refusée.",
+        "beat": "Le mobile apparent n'est pas encore une preuve."
+      },
+      {
+        "id": "victor_confrontation",
+        "suspectId": "victor",
+        "question": "Votre heure ne correspond pas au registre. Pourquoi ?",
+        "answer": "« Le registre se trompe parfois. Cela ne prouve pas que j'ai fait ce qu'on me reproche. »",
+        "unlockedByClueId": "registre",
+        "beat": "La personne conteste l'outil, sans expliquer sa propre trace."
+      },
+      {
+        "id": "victor_mobile",
+        "suspectId": "victor",
+        "question": "Ce document vous donnait-il une raison d'agir ?",
+        "answer": "« Vous appelez cela un mobile parce que vous connaissez déjà la fin. Sur le moment, je cherchais seulement une issue. »",
+        "unlockedByClueId": "mobile",
+        "beat": "La raison d'agir est reconnue à demi-mot."
+      },
+      {
+        "id": "meryem_detail",
+        "suspectId": "meryem",
+        "question": "Pourquoi cette pièce vous désigne-t-elle ?",
+        "answer": "« Elle est vraie, mais votre conclusion ne l'est pas. Cherchez ce qui s'est passé après. »",
+        "unlockedByClueId": "fausse_piste",
+        "beat": "La pièce cache une chronologie plus complète."
+      }
+    ],
+    "timeline": [
+      {
+        "time": "19:22",
+        "text": "Romain Delcourt est vu pour la dernière fois avant l'incident.",
+        "source": "Témoignages concordants",
+        "certainty": "CERTAIN"
+      },
+      {
+        "time": "19:34",
+        "text": "Le document révélant le mobile est créé ou consulté.",
+        "source": "Métadonnées",
+        "certainty": "CERTAIN"
+      },
+      {
+        "time": "19:47",
+        "text": "Victor Amsel affirme ne plus pouvoir intervenir.",
+        "source": "Déclaration",
+        "certainty": "REPORTED"
+      },
+      {
+        "time": "20:00",
+        "text": "Une activité technique contredit cette version.",
+        "source": "Registre",
+        "certainty": "CERTAIN"
+      },
+      {
+        "time": "20:08",
+        "text": "L'incident devient visible ou produit ses effets.",
+        "source": "Constat",
+        "certainty": "ESTIMATED"
+      }
+    ],
+    "accusation": {
+      "questions": [
+        {
+          "id": "q_who",
+          "kind": "suspect",
+          "prompt": "Qui est responsable ?",
+          "optional": false,
+          "options": [
+            {
+              "id": "ines",
+              "label": "Inès Delcourt",
+              "hint": "Épouse de Romain"
+            },
+            {
+              "id": "victor",
+              "label": "Victor Amsel",
+              "hint": "Projectionniste"
+            },
+            {
+              "id": "meryem",
+              "label": "Meryem Solal",
+              "hint": "Avocate"
+            }
+          ]
+        },
+        {
+          "id": "q_why",
+          "kind": "motive",
+          "prompt": "Pourquoi cette personne a-t-elle agi ?",
+          "optional": false,
+          "options": [
+            {
+              "id": "motive_correct",
+              "label": "Cacher Romain pour sauver son frère des représailles avant le témoignage"
+            },
+            {
+              "id": "motive_rivalite",
+              "label": "Écarter un rival par jalousie"
+            },
+            {
+              "id": "motive_accident",
+              "label": "Cacher une erreur sans rapport avec l'incident"
+            }
+          ]
+        },
+        {
+          "id": "q_how",
+          "kind": "method",
+          "prompt": "Comment l'incident a-t-il été provoqué ?",
+          "optional": false,
+          "options": [
+            {
+              "id": "method_correct",
+              "label": "Créer une coupure sonore et le faire passer par une trappe derrière l'écran"
+            },
+            {
+              "id": "method_force",
+              "label": "Forcer directement l'accès principal"
+            },
+            {
+              "id": "method_complice",
+              "label": "Employer un complice extérieur après la fermeture"
+            }
+          ]
+        }
+      ]
+    },
+    "difficulty": "DIFFICILE",
+    "estimatedMinutes": 10
+  },
+  "meta": {
+    "crimeType": "disparition",
+    "locationType": "cinéma",
+    "culpritGender": "M",
+    "motiveType": "protection d'un témoin",
+    "methodType": "trappe derrière écran",
+    "coreMechanic": "absence de sortie visible"
+  },
+  "solution": {
+    "culpritId": "victor",
+    "correctMotive": "motive_correct",
+    "correctMethod": "method_correct",
+    "validationAnswers": {
+      "q_who": "victor",
+      "q_why": "motive_correct",
+      "q_how": "method_correct"
+    },
+    "optionalAnswers": {},
+    "correctTimeline": [
+      {
+        "time": "19:22",
+        "place": "Cinéma Le Sémaphore — Marseille",
+        "personIds": [
+          "victor"
+        ],
+        "text": "Victor Amsel comprend que la situation menace directement ses intérêts."
+      },
+      {
+        "time": "19:34",
+        "place": "Cinéma Le Sémaphore — Marseille",
+        "personIds": [
+          "victor"
+        ],
+        "text": "Le mobile se cristallise : cacher romain pour sauver son frère des représailles avant le témoignage."
+      },
+      {
+        "time": "20:00",
+        "endTime": "20:05",
+        "place": "Cinéma Le Sémaphore — Marseille",
+        "personIds": [
+          "victor"
+        ],
+        "text": "Victor a appris la présence d'hommes à la sortie et convaincu Romain de profiter de la coupure. Derrière l'écran, une ancienne trappe mène à la cour technique. La disparition est protectrice, mais son mensonge compromet l'enquête."
+      },
+      {
+        "time": "20:08",
+        "place": "Cinéma Le Sémaphore — Marseille",
+        "personIds": [
+          "victor"
+        ],
+        "text": "La personne remet les lieux en ordre et s'appuie sur son alibi préparé."
+      }
+    ],
+    "reasoning": [
+      "Le registre contredit l'heure donnée par Victor Amsel : Le projecteur continue automatiquement tandis que le badge de Victor ouvre la passerelle de scène.",
+      "La trace matérielle ne prouve pas seulement une présence; elle décrit la méthode : La poussière rouge de la trappe est retrouvée sur le pantalon de Romain et les chaussures de Victor.",
+      "Le document confidentiel fournit un mobile précis : Un message du frère de Victor annonce que des hommes attendent Romain à la sortie du cinéma.",
+      "Inès Delcourt est écarté par une preuve indépendante, tandis que l'élément visant Meryem Solal est expliqué par le recoupement final.",
+      "La seule personne réunissant présence, moyen et mobile est Victor Amsel."
+    ],
+    "explanation": "Victor a appris la présence d'hommes à la sortie et convaincu Romain de profiter de la coupure. Derrière l'écran, une ancienne trappe mène à la cour technique. La disparition est protectrice, mais son mensonge compromet l'enquête. Le mobile était de cacher romain pour sauver son frère des représailles avant le témoignage. La méthode consistait à créer une coupure sonore et le faire passer par une trappe derrière l'écran. La fausse piste contre Meryem Solal paraît forte isolément, mais la réservation faisait partie d'un protocole officiel de mise à l'abri prévu après son témoignage. Ainsi, les preuves convergent sans supposer d'information extérieure au dossier.",
+    "proofChains": [
+      {
+        "title": "La chaîne du geste",
+        "steps": [
+          "Le projecteur continue automatiquement tandis que le badge de Victor ouvre la passerelle de scène.",
+          "La poussière rouge de la trappe est retrouvée sur le pantalon de Romain et les chaussures de Victor.",
+          "Ces deux pièces relient matériellement Victor Amsel à l'action."
+        ]
+      },
+      {
+        "title": "La chaîne de l'intention",
+        "steps": [
+          "Un message du frère de Victor annonce que des hommes attendent Romain à la sortie du cinéma.",
+          "Le contrôle des billets et une vidéo familiale placent Inès dans l'autre salle pendant la disparition.",
+          "Le mobile devient exclusif une fois les alibis recoupés."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,489 @@
+{
+  "public": {
+    "id": "les-archives-de-sel",
+    "number": 25,
+    "date": "2026-09-25",
+    "title": "LES ARCHIVES DE SEL",
+    "subtitle": "Au fond de la mine, une boîte de documents se dissout sans qu'une goutte d'eau ait franchi la porte.",
+    "location": "Mine de sel reconvertie — Lorraine",
+    "incident": "Destruction de documents industriels",
+    "intro": "Une caisse d'archives devient une pâte humide dans une galerie réputée parfaitement sèche. Les boîtes voisines sont intactes et les capteurs n'indiquent aucune fuite. Les feuilles détruites concernaient toutes la même année.",
+    "victim": {
+      "name": "Éva Schoen",
+      "description": "Historienne, 55 ans. Elle cataloguait les preuves d'une pollution ancienne."
+    },
+    "suspects": [
+      {
+        "id": "gilles",
+        "name": "Gilles Roth",
+        "age": 60,
+        "occupation": "Ancien contremaître",
+        "relation": "Il travaillait sur le site l'année concernée.",
+        "personality": "Lent, digne, choisit ce qu'il oublie.",
+        "claimedAlibi": "Il guidait un groupe scolaire en surface.",
+        "accent": "formal",
+        "notes": [
+          "Les documents pouvaient engager sa responsabilité."
+        ]
+      },
+      {
+        "id": "mara",
+        "name": "Mara Klein",
+        "age": 37,
+        "occupation": "Conservatrice",
+        "relation": "Elle règle l'humidité des galeries.",
+        "personality": "Méthodique, protectrice envers les collections.",
+        "claimedAlibi": "Elle affirme n'avoir ouvert aucune caisse ce jour-là.",
+        "accent": "nervous",
+        "notes": [
+          "Son poste serait menacé par une défaillance climatique."
+        ]
+      },
+      {
+        "id": "sofiane",
+        "name": "Sofiane Clerc",
+        "age": 31,
+        "occupation": "Juriste associatif",
+        "relation": "Il finance la recherche d'Éva.",
+        "personality": "Combatif, impatient, photographie tous les bordereaux.",
+        "claimedAlibi": "Il travaillait au tribunal de Metz.",
+        "accent": "cold",
+        "notes": [
+          "La disparition des preuves ruine son procès."
+        ]
+      }
+    ],
+    "clues": [
+      {
+        "id": "registre",
+        "title": "L'alibi qui se fissure",
+        "source": "JOURNAL TECHNIQUE",
+        "summary": "Une photo du groupe scolaire reflète Gilles descendant seul vers la galerie pendant la pause.",
+        "evidence": {
+          "kind": "schedule",
+          "title": "JOURNAL TECHNIQUE",
+          "rows": [
+            {
+              "time": "21:03",
+              "label": "Une photo du groupe scolaire reflète Gilles descendant seul vers la galerie pendant la pause."
+            }
+          ],
+          "altText": "JOURNAL TECHNIQUE à 21:03 : Une photo du groupe scolaire reflète Gilles descendant seul vers la galerie pendant la pause."
+        },
+        "analysis": {
+          "category": "CONTRADICTION",
+          "implicates": [
+            "gilles"
+          ],
+          "clears": [],
+          "contradicts": [
+            "gilles"
+          ],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [
+            "gilles"
+          ],
+          "unlocksInterviewIds": [
+            "gilles_confrontation"
+          ],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "trace",
+        "title": "La trace qui ne devait pas rester",
+        "source": "ANALYSE MATÉRIELLE",
+        "summary": "Le sel utilisé contient un antiagglomérant réservé aux sacs de déneigement stockés dans son garage.",
+        "evidence": {
+          "kind": "photo",
+          "caption": "Le sel utilisé contient un antiagglomérant réservé aux sacs de déneigement stockés dans son garage.",
+          "meta": [
+            {
+              "label": "HEURE",
+              "value": "21:08"
+            },
+            {
+              "label": "STATUT",
+              "value": "Pièce analysée"
+            }
+          ],
+          "altText": "Photographie d'analyse : Le sel utilisé contient un antiagglomérant réservé aux sacs de déneigement stockés dans son garage.",
+          "tone": "cold"
+        },
+        "analysis": {
+          "category": "TIMELINE",
+          "implicates": [
+            "gilles"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [
+            "gilles"
+          ],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "mobile",
+        "title": "Ce que la victime allait révéler",
+        "source": "DOCUMENT CONFIDENTIEL",
+        "summary": "Une copie partielle du registre porte sa signature sous des mesures réécrites après l'accident.",
+        "evidence": {
+          "kind": "email",
+          "from": "Dossier de la victime",
+          "to": "Archives de l'enquête",
+          "subject": "Ce que la victime allait révéler",
+          "sentAt": "20:37",
+          "body": "Une copie partielle du registre porte sa signature sous des mesures réécrites après l'accident.",
+          "altText": "Document confidentiel : Une copie partielle du registre porte sa signature sous des mesures réécrites après l'accident."
+        },
+        "analysis": {
+          "category": "BEHAVIORAL",
+          "implicates": [],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [
+            "gilles"
+          ],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "gilles_mobile"
+          ],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "alibi_a",
+        "title": "La preuve de Mara Klein",
+        "source": "VÉRIFICATION D'ALIBI",
+        "summary": "Les journaux du tribunal et une audience enregistrée placent Sofiane à Metz.",
+        "evidence": {
+          "kind": "camera",
+          "location": "VÉRIFICATION D'ALIBI",
+          "frames": [
+            {
+              "time": "20:56",
+              "text": "Les journaux du tribunal et une audience enregistrée placent Sofiane à Metz."
+            }
+          ],
+          "altText": "Relevé de vérification à 20:56 : Les journaux du tribunal et une audience enregistrée placent Sofiane à Metz."
+        },
+        "analysis": {
+          "category": "EXONERATING",
+          "implicates": [],
+          "clears": [
+            "mara"
+          ],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "fausse_piste",
+        "title": "Le détail contre Sofiane Clerc",
+        "source": "PIÈCE SAISIE",
+        "summary": "Mara avait désactivé l'alarme d'humidité de la caisse la semaine précédente.",
+        "evidence": {
+          "kind": "note",
+          "body": "Mara avait désactivé l'alarme d'humidité de la caisse la semaine précédente.",
+          "altText": "Note saisie constituant une fausse piste : Mara avait désactivé l'alarme d'humidité de la caisse la semaine précédente."
+        },
+        "analysis": {
+          "category": "RED_HERRING",
+          "implicates": [
+            "sofiane"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "sofiane_detail"
+          ],
+          "isRedHerring": true
+        }
+      },
+      {
+        "id": "resolution",
+        "title": "Ce que la fausse piste oublie",
+        "source": "RECOUPEMENT",
+        "summary": "Elle avait remplacé le capteur par un modèle autonome dont les données prouvent que seule l'intérieur de la boîte s'est humidifié.",
+        "evidence": {
+          "kind": "document",
+          "title": "RECOUPEMENT",
+          "subtitle": "Pièce enregistrée à 21:11",
+          "paragraphs": [
+            "Elle avait remplacé le capteur par un modèle autonome dont les données prouvent que seule l'intérieur de la boîte s'est humidifié."
+          ],
+          "altText": "RECOUPEMENT : Elle avait remplacé le capteur par un modèle autonome dont les données prouvent que seule l'intérieur de la boîte s'est humidifié."
+        },
+        "analysis": {
+          "category": "EXONERATING",
+          "implicates": [],
+          "clears": [
+            "sofiane"
+          ],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      }
+    ],
+    "interviews": [
+      {
+        "id": "gilles_alibi",
+        "suspectId": "gilles",
+        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "answer": "Il guidait un groupe scolaire en surface. Lent, digne, choisit ce qu'il oublie.",
+        "beat": "La version paraît nette, peut-être trop nette."
+      },
+      {
+        "id": "gilles_relation",
+        "suspectId": "gilles",
+        "question": "Qu'est-ce que Éva Schoen risquait de changer pour vous ?",
+        "answer": "Il travaillait sur le site l'année concernée. Les documents pouvaient engager sa responsabilité.",
+        "beat": "Le mobile apparent n'est pas encore une preuve."
+      },
+      {
+        "id": "mara_alibi",
+        "suspectId": "mara",
+        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "answer": "Elle affirme n'avoir ouvert aucune caisse ce jour-là. Méthodique, protectrice envers les collections.",
+        "beat": "La réponse peut être confrontée aux pièces."
+      },
+      {
+        "id": "mara_relation",
+        "suspectId": "mara",
+        "question": "Qu'est-ce que Éva Schoen risquait de changer pour vous ?",
+        "answer": "Elle règle l'humidité des galeries. Son poste serait menacé par une défaillance climatique.",
+        "beat": "Le mobile apparent n'est pas encore une preuve."
+      },
+      {
+        "id": "sofiane_alibi",
+        "suspectId": "sofiane",
+        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "answer": "Il travaillait au tribunal de Metz. Combatif, impatient, photographie tous les bordereaux.",
+        "beat": "La réponse peut être confrontée aux pièces."
+      },
+      {
+        "id": "sofiane_relation",
+        "suspectId": "sofiane",
+        "question": "Qu'est-ce que Éva Schoen risquait de changer pour vous ?",
+        "answer": "Il finance la recherche d'Éva. La disparition des preuves ruine son procès.",
+        "beat": "Le mobile apparent n'est pas encore une preuve."
+      },
+      {
+        "id": "gilles_confrontation",
+        "suspectId": "gilles",
+        "question": "Votre heure ne correspond pas au registre. Pourquoi ?",
+        "answer": "« Le registre se trompe parfois. Cela ne prouve pas que j'ai fait ce qu'on me reproche. »",
+        "unlockedByClueId": "registre",
+        "beat": "La personne conteste l'outil, sans expliquer sa propre trace."
+      },
+      {
+        "id": "gilles_mobile",
+        "suspectId": "gilles",
+        "question": "Ce document vous donnait-il une raison d'agir ?",
+        "answer": "« Vous appelez cela un mobile parce que vous connaissez déjà la fin. Sur le moment, je cherchais seulement une issue. »",
+        "unlockedByClueId": "mobile",
+        "beat": "La raison d'agir est reconnue à demi-mot."
+      },
+      {
+        "id": "sofiane_detail",
+        "suspectId": "sofiane",
+        "question": "Pourquoi cette pièce vous désigne-t-elle ?",
+        "answer": "« Elle est vraie, mais votre conclusion ne l'est pas. Cherchez ce qui s'est passé après. »",
+        "unlockedByClueId": "fausse_piste",
+        "beat": "La pièce cache une chronologie plus complète."
+      }
+    ],
+    "timeline": [
+      {
+        "time": "20:25",
+        "text": "Éva Schoen est vu pour la dernière fois avant l'incident.",
+        "source": "Témoignages concordants",
+        "certainty": "CERTAIN"
+      },
+      {
+        "time": "20:37",
+        "text": "Le document révélant le mobile est créé ou consulté.",
+        "source": "Métadonnées",
+        "certainty": "CERTAIN"
+      },
+      {
+        "time": "20:50",
+        "text": "Gilles Roth affirme ne plus pouvoir intervenir.",
+        "source": "Déclaration",
+        "certainty": "REPORTED"
+      },
+      {
+        "time": "21:03",
+        "text": "Une activité technique contredit cette version.",
+        "source": "Registre",
+        "certainty": "CERTAIN"
+      },
+      {
+        "time": "21:11",
+        "text": "L'incident devient visible ou produit ses effets.",
+        "source": "Constat",
+        "certainty": "ESTIMATED"
+      }
+    ],
+    "accusation": {
+      "questions": [
+        {
+          "id": "q_who",
+          "kind": "suspect",
+          "prompt": "Qui est responsable ?",
+          "optional": false,
+          "options": [
+            {
+              "id": "gilles",
+              "label": "Gilles Roth",
+              "hint": "Ancien contremaître"
+            },
+            {
+              "id": "mara",
+              "label": "Mara Klein",
+              "hint": "Conservatrice"
+            },
+            {
+              "id": "sofiane",
+              "label": "Sofiane Clerc",
+              "hint": "Juriste associatif"
+            }
+          ]
+        },
+        {
+          "id": "q_why",
+          "kind": "motive",
+          "prompt": "Pourquoi cette personne a-t-elle agi ?",
+          "optional": false,
+          "options": [
+            {
+              "id": "motive_correct",
+              "label": "Détruire la preuve qu'il avait falsifié des mesures de pollution"
+            },
+            {
+              "id": "motive_rivalite",
+              "label": "Écarter un rival par jalousie"
+            },
+            {
+              "id": "motive_accident",
+              "label": "Cacher une erreur sans rapport avec l'incident"
+            }
+          ]
+        },
+        {
+          "id": "q_how",
+          "kind": "method",
+          "prompt": "Comment l'incident a-t-il été provoqué ?",
+          "optional": false,
+          "options": [
+            {
+              "id": "method_correct",
+              "label": "Placer un sachet de chlorure hygroscopique dans la caisse pour attirer l'humidité de l'air"
+            },
+            {
+              "id": "method_force",
+              "label": "Forcer directement l'accès principal"
+            },
+            {
+              "id": "method_complice",
+              "label": "Employer un complice extérieur après la fermeture"
+            }
+          ]
+        }
+      ]
+    },
+    "difficulty": "NORMAL",
+    "estimatedMinutes": 8
+  },
+  "meta": {
+    "crimeType": "destruction_preuve",
+    "locationType": "mine d'archives",
+    "culpritGender": "M",
+    "motiveType": "cacher une pollution",
+    "methodType": "sel hygroscopique en caisse",
+    "coreMechanic": "fuite créée de l'intérieur"
+  },
+  "solution": {
+    "culpritId": "gilles",
+    "correctMotive": "motive_correct",
+    "correctMethod": "method_correct",
+    "validationAnswers": {
+      "q_who": "gilles",
+      "q_why": "motive_correct",
+      "q_how": "method_correct"
+    },
+    "optionalAnswers": {},
+    "correctTimeline": [
+      {
+        "time": "20:25",
+        "place": "Mine de sel reconvertie — Lorraine",
+        "personIds": [
+          "gilles"
+        ],
+        "text": "Gilles Roth comprend que la situation menace directement ses intérêts."
+      },
+      {
+        "time": "20:37",
+        "place": "Mine de sel reconvertie — Lorraine",
+        "personIds": [
+          "gilles"
+        ],
+        "text": "Le mobile se cristallise : détruire la preuve qu'il avait falsifié des mesures de pollution."
+      },
+      {
+        "time": "21:03",
+        "endTime": "21:08",
+        "place": "Mine de sel reconvertie — Lorraine",
+        "personIds": [
+          "gilles"
+        ],
+        "text": "Gilles a utilisé un produit qui absorbe l'humidité ambiante jusqu'à se liquéfier. Enfermé dans la caisse, il a créé sa propre fuite et dissous l'encre des seuls registres capables de montrer sa falsification."
+      },
+      {
+        "time": "21:11",
+        "place": "Mine de sel reconvertie — Lorraine",
+        "personIds": [
+          "gilles"
+        ],
+        "text": "La personne remet les lieux en ordre et s'appuie sur son alibi préparé."
+      }
+    ],
+    "reasoning": [
+      "Le registre contredit l'heure donnée par Gilles Roth : Une photo du groupe scolaire reflète Gilles descendant seul vers la galerie pendant la pause.",
+      "La trace matérielle ne prouve pas seulement une présence; elle décrit la méthode : Le sel utilisé contient un antiagglomérant réservé aux sacs de déneigement stockés dans son garage.",
+      "Le document confidentiel fournit un mobile précis : Une copie partielle du registre porte sa signature sous des mesures réécrites après l'accident.",
+      "Mara Klein est écarté par une preuve indépendante, tandis que l'élément visant Sofiane Clerc est expliqué par le recoupement final.",
+      "La seule personne réunissant présence, moyen et mobile est Gilles Roth."
+    ],
+    "explanation": "Gilles a utilisé un produit qui absorbe l'humidité ambiante jusqu'à se liquéfier. Enfermé dans la caisse, il a créé sa propre fuite et dissous l'encre des seuls registres capables de montrer sa falsification. Le mobile était de détruire la preuve qu'il avait falsifié des mesures de pollution. La méthode consistait à placer un sachet de chlorure hygroscopique dans la caisse pour attirer l'humidité de l'air. La fausse piste contre Sofiane Clerc paraît forte isolément, mais elle avait remplacé le capteur par un modèle autonome dont les données prouvent que seule l'intérieur de la boîte s'est humidifié. Ainsi, les preuves convergent sans supposer d'information extérieure au dossier.",
+    "proofChains": [
+      {
+        "title": "La chaîne du geste",
+        "steps": [
+          "Une photo du groupe scolaire reflète Gilles descendant seul vers la galerie pendant la pause.",
+          "Le sel utilisé contient un antiagglomérant réservé aux sacs de déneigement stockés dans son garage.",
+          "Ces deux pièces relient matériellement Gilles Roth à l'action."
+        ]
+      },
+      {
+        "title": "La chaîne de l'intention",
+        "steps": [
+          "Une copie partielle du registre porte sa signature sous des mesures réécrites après l'accident.",
+          "Les journaux du tribunal et une audience enregistrée placent Sofiane à Metz.",
+          "Le mobile devient exclusif une fois les alibis recoupés."
+        ]
+      }
+    ]
+  }
+}

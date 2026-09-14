@@ -1,0 +1,489 @@
+{
+  "public": {
+    "id": "l-herbier-des-cendres",
+    "number": 5,
+    "date": "2026-09-05",
+    "title": "L'HERBIER DES CENDRES",
+    "subtitle": "Une seule armoire a brûlé dans la serre humide : celle qui contenait la preuve d'une découverte.",
+    "location": "Jardin botanique — Nancy",
+    "incident": "Destruction ciblée d'échantillons scientifiques",
+    "intro": "Le feu s'est étouffé faute d'oxygène avant d'atteindre la serre. Pourtant, trente planches d'herbier sont réduites en cendres dans une armoire métallique fermée. Le détecteur n'a enregistré ni fumée ambiante ni hausse générale de température.",
+    "victim": {
+      "name": "Pr Jeanne Artaud",
+      "description": "Botaniste, 57 ans. Elle préparait l'annonce d'une variété médicinale brevetable."
+    },
+    "suspects": [
+      {
+        "id": "samir",
+        "name": "Samir Ouali",
+        "age": 36,
+        "occupation": "Chercheur associé",
+        "relation": "Il cosigne les travaux mais pas le brevet.",
+        "personality": "Mesuré, corrige chaque terme scientifique.",
+        "claimedAlibi": "Il affirme avoir quitté le laboratoire à 18h avec Jeanne.",
+        "accent": "formal",
+        "notes": [
+          "Il contestait l'ordre des auteurs de l'article."
+        ]
+      },
+      {
+        "id": "elise",
+        "name": "Élise Martel",
+        "age": 48,
+        "occupation": "Responsable des collections",
+        "relation": "Elle seule possède la clé de l'armoire.",
+        "personality": "Rigide, attachée aux procédures anciennes.",
+        "claimedAlibi": "Elle classait des graines dans l'aile publique jusqu'à 20h.",
+        "accent": "nervous",
+        "notes": [
+          "Elle s'opposait au prélèvement destructif des spécimens."
+        ]
+      },
+      {
+        "id": "pavel",
+        "name": "Pavel Duroc",
+        "age": 28,
+        "occupation": "Doctorant",
+        "relation": "Il a découvert la variété lors de sa thèse.",
+        "personality": "Fiévreux, enthousiaste, oublie de finir ses phrases.",
+        "claimedAlibi": "Il participait à un séminaire en visioconférence.",
+        "accent": "cold",
+        "notes": [
+          "Son nom avait disparu du projet de brevet."
+        ]
+      }
+    ],
+    "clues": [
+      {
+        "id": "registre",
+        "title": "L'alibi qui se fissure",
+        "source": "JOURNAL TECHNIQUE",
+        "summary": "Le badge de Samir ressort du bâtiment à 19h43, une heure après son départ déclaré.",
+        "evidence": {
+          "kind": "schedule",
+          "title": "JOURNAL TECHNIQUE",
+          "rows": [
+            {
+              "time": "20:13",
+              "label": "Le badge de Samir ressort du bâtiment à 19h43, une heure après son départ déclaré."
+            }
+          ],
+          "altText": "JOURNAL TECHNIQUE à 20:13 : Le badge de Samir ressort du bâtiment à 19h43, une heure après son départ déclaré."
+        },
+        "analysis": {
+          "category": "CONTRADICTION",
+          "implicates": [
+            "samir"
+          ],
+          "clears": [],
+          "contradicts": [
+            "samir"
+          ],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [
+            "samir"
+          ],
+          "unlocksInterviewIds": [
+            "samir_confrontation"
+          ],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "trace",
+        "title": "La trace qui ne devait pas rester",
+        "source": "ANALYSE MATÉRIELLE",
+        "summary": "Les résidus de fer et de sel correspondent aux sachets chauffants commandés sur son budget de terrain.",
+        "evidence": {
+          "kind": "photo",
+          "caption": "Les résidus de fer et de sel correspondent aux sachets chauffants commandés sur son budget de terrain.",
+          "meta": [
+            {
+              "label": "HEURE",
+              "value": "20:18"
+            },
+            {
+              "label": "STATUT",
+              "value": "Pièce analysée"
+            }
+          ],
+          "altText": "Photographie d'analyse : Les résidus de fer et de sel correspondent aux sachets chauffants commandés sur son budget de terrain.",
+          "tone": "cold"
+        },
+        "analysis": {
+          "category": "TIMELINE",
+          "implicates": [
+            "samir"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [
+            "samir"
+          ],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "mobile",
+        "title": "Ce que la victime allait révéler",
+        "source": "DOCUMENT CONFIDENTIEL",
+        "summary": "Les statuts d'une société créée par sa sœur reprennent mot pour mot le futur usage pharmaceutique de la plante.",
+        "evidence": {
+          "kind": "email",
+          "from": "Dossier de la victime",
+          "to": "Archives de l'enquête",
+          "subject": "Ce que la victime allait révéler",
+          "sentAt": "19:47",
+          "body": "Les statuts d'une société créée par sa sœur reprennent mot pour mot le futur usage pharmaceutique de la plante.",
+          "altText": "Document confidentiel : Les statuts d'une société créée par sa sœur reprennent mot pour mot le futur usage pharmaceutique de la plante."
+        },
+        "analysis": {
+          "category": "BEHAVIORAL",
+          "implicates": [],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [
+            "samir"
+          ],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "samir_mobile"
+          ],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "alibi_a",
+        "title": "La preuve de Élise Martel",
+        "source": "VÉRIFICATION D'ALIBI",
+        "summary": "L'enregistrement du séminaire montre Pavel à l'écran sans interruption pendant la préparation du dispositif.",
+        "evidence": {
+          "kind": "camera",
+          "location": "VÉRIFICATION D'ALIBI",
+          "frames": [
+            {
+              "time": "20:06",
+              "text": "L'enregistrement du séminaire montre Pavel à l'écran sans interruption pendant la préparation du dispositif."
+            }
+          ],
+          "altText": "Relevé de vérification à 20:06 : L'enregistrement du séminaire montre Pavel à l'écran sans interruption pendant la préparation du dispositif."
+        },
+        "analysis": {
+          "category": "EXONERATING",
+          "implicates": [],
+          "clears": [
+            "elise"
+          ],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "fausse_piste",
+        "title": "Le détail contre Pavel Duroc",
+        "source": "PIÈCE SAISIE",
+        "summary": "Élise avait caché la clé de l'armoire dans un pot plutôt que dans l'armoire sécurisée.",
+        "evidence": {
+          "kind": "note",
+          "body": "Élise avait caché la clé de l'armoire dans un pot plutôt que dans l'armoire sécurisée.",
+          "altText": "Note saisie constituant une fausse piste : Élise avait caché la clé de l'armoire dans un pot plutôt que dans l'armoire sécurisée."
+        },
+        "analysis": {
+          "category": "RED_HERRING",
+          "implicates": [
+            "pavel"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "pavel_detail"
+          ],
+          "isRedHerring": true
+        }
+      },
+      {
+        "id": "resolution",
+        "title": "Ce que la fausse piste oublie",
+        "source": "RECOUPEMENT",
+        "summary": "Une photographie d'inventaire prise avant l'incendie montre que Samir avait vu cette cache lors d'un contrôle commun.",
+        "evidence": {
+          "kind": "document",
+          "title": "RECOUPEMENT",
+          "subtitle": "Pièce enregistrée à 20:21",
+          "paragraphs": [
+            "Une photographie d'inventaire prise avant l'incendie montre que Samir avait vu cette cache lors d'un contrôle commun."
+          ],
+          "altText": "RECOUPEMENT : Une photographie d'inventaire prise avant l'incendie montre que Samir avait vu cette cache lors d'un contrôle commun."
+        },
+        "analysis": {
+          "category": "EXONERATING",
+          "implicates": [],
+          "clears": [
+            "pavel"
+          ],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      }
+    ],
+    "interviews": [
+      {
+        "id": "samir_alibi",
+        "suspectId": "samir",
+        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "answer": "Il affirme avoir quitté le laboratoire à 18h avec Jeanne. Mesuré, corrige chaque terme scientifique.",
+        "beat": "La version paraît nette, peut-être trop nette."
+      },
+      {
+        "id": "samir_relation",
+        "suspectId": "samir",
+        "question": "Qu'est-ce que Pr Jeanne Artaud risquait de changer pour vous ?",
+        "answer": "Il cosigne les travaux mais pas le brevet. Il contestait l'ordre des auteurs de l'article.",
+        "beat": "Le mobile apparent n'est pas encore une preuve."
+      },
+      {
+        "id": "elise_alibi",
+        "suspectId": "elise",
+        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "answer": "Elle classait des graines dans l'aile publique jusqu'à 20h. Rigide, attachée aux procédures anciennes.",
+        "beat": "La réponse peut être confrontée aux pièces."
+      },
+      {
+        "id": "elise_relation",
+        "suspectId": "elise",
+        "question": "Qu'est-ce que Pr Jeanne Artaud risquait de changer pour vous ?",
+        "answer": "Elle seule possède la clé de l'armoire. Elle s'opposait au prélèvement destructif des spécimens.",
+        "beat": "Le mobile apparent n'est pas encore une preuve."
+      },
+      {
+        "id": "pavel_alibi",
+        "suspectId": "pavel",
+        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "answer": "Il participait à un séminaire en visioconférence. Fiévreux, enthousiaste, oublie de finir ses phrases.",
+        "beat": "La réponse peut être confrontée aux pièces."
+      },
+      {
+        "id": "pavel_relation",
+        "suspectId": "pavel",
+        "question": "Qu'est-ce que Pr Jeanne Artaud risquait de changer pour vous ?",
+        "answer": "Il a découvert la variété lors de sa thèse. Son nom avait disparu du projet de brevet.",
+        "beat": "Le mobile apparent n'est pas encore une preuve."
+      },
+      {
+        "id": "samir_confrontation",
+        "suspectId": "samir",
+        "question": "Votre heure ne correspond pas au registre. Pourquoi ?",
+        "answer": "« Le registre se trompe parfois. Cela ne prouve pas que j'ai fait ce qu'on me reproche. »",
+        "unlockedByClueId": "registre",
+        "beat": "La personne conteste l'outil, sans expliquer sa propre trace."
+      },
+      {
+        "id": "samir_mobile",
+        "suspectId": "samir",
+        "question": "Ce document vous donnait-il une raison d'agir ?",
+        "answer": "« Vous appelez cela un mobile parce que vous connaissez déjà la fin. Sur le moment, je cherchais seulement une issue. »",
+        "unlockedByClueId": "mobile",
+        "beat": "La raison d'agir est reconnue à demi-mot."
+      },
+      {
+        "id": "pavel_detail",
+        "suspectId": "pavel",
+        "question": "Pourquoi cette pièce vous désigne-t-elle ?",
+        "answer": "« Elle est vraie, mais votre conclusion ne l'est pas. Cherchez ce qui s'est passé après. »",
+        "unlockedByClueId": "fausse_piste",
+        "beat": "La pièce cache une chronologie plus complète."
+      }
+    ],
+    "timeline": [
+      {
+        "time": "19:35",
+        "text": "Pr Jeanne Artaud est vu pour la dernière fois avant l'incident.",
+        "source": "Témoignages concordants",
+        "certainty": "CERTAIN"
+      },
+      {
+        "time": "19:47",
+        "text": "Le document révélant le mobile est créé ou consulté.",
+        "source": "Métadonnées",
+        "certainty": "CERTAIN"
+      },
+      {
+        "time": "20:00",
+        "text": "Samir Ouali affirme ne plus pouvoir intervenir.",
+        "source": "Déclaration",
+        "certainty": "REPORTED"
+      },
+      {
+        "time": "20:13",
+        "text": "Une activité technique contredit cette version.",
+        "source": "Registre",
+        "certainty": "CERTAIN"
+      },
+      {
+        "time": "20:21",
+        "text": "L'incident devient visible ou produit ses effets.",
+        "source": "Constat",
+        "certainty": "ESTIMATED"
+      }
+    ],
+    "accusation": {
+      "questions": [
+        {
+          "id": "q_who",
+          "kind": "suspect",
+          "prompt": "Qui est responsable ?",
+          "optional": false,
+          "options": [
+            {
+              "id": "samir",
+              "label": "Samir Ouali",
+              "hint": "Chercheur associé"
+            },
+            {
+              "id": "elise",
+              "label": "Élise Martel",
+              "hint": "Responsable des collections"
+            },
+            {
+              "id": "pavel",
+              "label": "Pavel Duroc",
+              "hint": "Doctorant"
+            }
+          ]
+        },
+        {
+          "id": "q_why",
+          "kind": "motive",
+          "prompt": "Pourquoi cette personne a-t-elle agi ?",
+          "optional": false,
+          "options": [
+            {
+              "id": "motive_correct",
+              "label": "Retarder l'annonce pour déposer le brevet sous une société intermédiaire"
+            },
+            {
+              "id": "motive_rivalite",
+              "label": "Écarter un rival par jalousie"
+            },
+            {
+              "id": "motive_accident",
+              "label": "Cacher une erreur sans rapport avec l'incident"
+            }
+          ]
+        },
+        {
+          "id": "q_how",
+          "kind": "method",
+          "prompt": "Comment l'incident a-t-il été provoqué ?",
+          "optional": false,
+          "options": [
+            {
+              "id": "method_correct",
+              "label": "Déclencher une combustion lente à l'intérieur de l'armoire avec un sachet chauffant modifié"
+            },
+            {
+              "id": "method_force",
+              "label": "Forcer directement l'accès principal"
+            },
+            {
+              "id": "method_complice",
+              "label": "Employer un complice extérieur après la fermeture"
+            }
+          ]
+        }
+      ]
+    },
+    "difficulty": "DIFFICILE",
+    "estimatedMinutes": 10
+  },
+  "meta": {
+    "crimeType": "destruction_preuve",
+    "locationType": "jardin botanique",
+    "culpritGender": "M",
+    "motiveType": "appropriation d'une découverte",
+    "methodType": "combustion lente en espace clos",
+    "coreMechanic": "incendie sans feu ambiant"
+  },
+  "solution": {
+    "culpritId": "samir",
+    "correctMotive": "motive_correct",
+    "correctMethod": "method_correct",
+    "validationAnswers": {
+      "q_who": "samir",
+      "q_why": "motive_correct",
+      "q_how": "method_correct"
+    },
+    "optionalAnswers": {},
+    "correctTimeline": [
+      {
+        "time": "19:35",
+        "place": "Jardin botanique — Nancy",
+        "personIds": [
+          "samir"
+        ],
+        "text": "Samir Ouali comprend que la situation menace directement ses intérêts."
+      },
+      {
+        "time": "19:47",
+        "place": "Jardin botanique — Nancy",
+        "personIds": [
+          "samir"
+        ],
+        "text": "Le mobile se cristallise : retarder l'annonce pour déposer le brevet sous une société intermédiaire."
+      },
+      {
+        "time": "20:13",
+        "endTime": "20:18",
+        "place": "Jardin botanique — Nancy",
+        "personIds": [
+          "samir"
+        ],
+        "text": "Samir a profité de la cache d'Élise, ouvert l'armoire et placé un sachet chauffant enrichi en oxydant entre les planches. Le feu sans flamme a détruit les preuves matérielles assez tard pour lui laisser un alibi apparent."
+      },
+      {
+        "time": "20:21",
+        "place": "Jardin botanique — Nancy",
+        "personIds": [
+          "samir"
+        ],
+        "text": "La personne remet les lieux en ordre et s'appuie sur son alibi préparé."
+      }
+    ],
+    "reasoning": [
+      "Le registre contredit l'heure donnée par Samir Ouali : Le badge de Samir ressort du bâtiment à 19h43, une heure après son départ déclaré.",
+      "La trace matérielle ne prouve pas seulement une présence; elle décrit la méthode : Les résidus de fer et de sel correspondent aux sachets chauffants commandés sur son budget de terrain.",
+      "Le document confidentiel fournit un mobile précis : Les statuts d'une société créée par sa sœur reprennent mot pour mot le futur usage pharmaceutique de la plante.",
+      "Élise Martel est écarté par une preuve indépendante, tandis que l'élément visant Pavel Duroc est expliqué par le recoupement final.",
+      "La seule personne réunissant présence, moyen et mobile est Samir Ouali."
+    ],
+    "explanation": "Samir a profité de la cache d'Élise, ouvert l'armoire et placé un sachet chauffant enrichi en oxydant entre les planches. Le feu sans flamme a détruit les preuves matérielles assez tard pour lui laisser un alibi apparent. Le mobile était de retarder l'annonce pour déposer le brevet sous une société intermédiaire. La méthode consistait à déclencher une combustion lente à l'intérieur de l'armoire avec un sachet chauffant modifié. La fausse piste contre Pavel Duroc paraît forte isolément, mais une photographie d'inventaire prise avant l'incendie montre que Samir avait vu cette cache lors d'un contrôle commun. Ainsi, les preuves convergent sans supposer d'information extérieure au dossier.",
+    "proofChains": [
+      {
+        "title": "La chaîne du geste",
+        "steps": [
+          "Le badge de Samir ressort du bâtiment à 19h43, une heure après son départ déclaré.",
+          "Les résidus de fer et de sel correspondent aux sachets chauffants commandés sur son budget de terrain.",
+          "Ces deux pièces relient matériellement Samir Ouali à l'action."
+        ]
+      },
+      {
+        "title": "La chaîne de l'intention",
+        "steps": [
+          "Les statuts d'une société créée par sa sœur reprennent mot pour mot le futur usage pharmaceutique de la plante.",
+          "L'enregistrement du séminaire montre Pavel à l'écran sans interruption pendant la préparation du dispositif.",
+          "Le mobile devient exclusif une fois les alibis recoupés."
+        ]
+      }
+    ]
+  }
+}

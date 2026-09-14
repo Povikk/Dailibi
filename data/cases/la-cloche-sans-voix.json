@@ -1,0 +1,489 @@
+{
+  "public": {
+    "id": "la-cloche-sans-voix",
+    "number": 7,
+    "date": "2026-09-07",
+    "title": "LA CLOCHE SANS VOIX",
+    "subtitle": "La relique a disparu pendant que toute l'abbaye écoutait une cloche qui ne pouvait pas sonner.",
+    "location": "Abbaye de Valcroix — Aveyron",
+    "incident": "Vol d'une relique médiévale",
+    "intro": "À 21h, la grande cloche appelle la communauté dans la cour. Pendant ces quatre minutes, le reliquaire disparaît de la sacristie. Or le battant de la cloche avait été démonté le matin pour restauration.",
+    "victim": {
+      "name": "Sœur Madeleine",
+      "description": "Dépositaire du trésor, 69 ans. Elle a découvert le reliquaire vide après les complies."
+    },
+    "suspects": [
+      {
+        "id": "pere",
+        "name": "Père Augustin",
+        "age": 55,
+        "occupation": "Prieur",
+        "relation": "Il décide de la vente éventuelle des biens de l'abbaye.",
+        "personality": "Doux, élude les chiffres et parle au pluriel.",
+        "claimedAlibi": "Il priait au premier rang de la cour.",
+        "accent": "formal",
+        "notes": [
+          "L'abbaye doit rembourser un emprunt urgent."
+        ]
+      },
+      {
+        "id": "leonie",
+        "name": "Léonie Pujol",
+        "age": 38,
+        "occupation": "Campanologue",
+        "relation": "Elle restaurait le mécanisme de la cloche.",
+        "personality": "Franche, passionnée par les sons mécaniques.",
+        "claimedAlibi": "Elle affirme avoir quitté le clocher avant 19h.",
+        "accent": "nervous",
+        "notes": [
+          "Elle savait reproduire le timbre de la cloche."
+        ]
+      },
+      {
+        "id": "basile",
+        "name": "Basile Rémond",
+        "age": 47,
+        "occupation": "Guide bénévole",
+        "relation": "Il connaît les passages condamnés.",
+        "personality": "Volubile, collectionne les légendes locales.",
+        "claimedAlibi": "Il fermait la boutique avec deux visiteurs.",
+        "accent": "cold",
+        "notes": [
+          "Il avait photographié le reliquaire sous tous les angles."
+        ]
+      }
+    ],
+    "clues": [
+      {
+        "id": "registre",
+        "title": "L'alibi qui se fissure",
+        "source": "JOURNAL TECHNIQUE",
+        "summary": "Le téléphone de Léonie se connecte à la borne Wi-Fi du clocher à 20h56.",
+        "evidence": {
+          "kind": "schedule",
+          "title": "JOURNAL TECHNIQUE",
+          "rows": [
+            {
+              "time": "20:27",
+              "label": "Le téléphone de Léonie se connecte à la borne Wi-Fi du clocher à 20h56."
+            }
+          ],
+          "altText": "JOURNAL TECHNIQUE à 20:27 : Le téléphone de Léonie se connecte à la borne Wi-Fi du clocher à 20h56."
+        },
+        "analysis": {
+          "category": "CONTRADICTION",
+          "implicates": [
+            "leonie"
+          ],
+          "clears": [],
+          "contradicts": [
+            "leonie"
+          ],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [
+            "leonie"
+          ],
+          "unlocksInterviewIds": [
+            "leonie_confrontation"
+          ],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "trace",
+        "title": "La trace qui ne devait pas rester",
+        "source": "ANALYSE MATÉRIELLE",
+        "summary": "L'enregistrement comporte le cri d'un martinet absent en septembre mais présent lors de sa captation en juin.",
+        "evidence": {
+          "kind": "photo",
+          "caption": "L'enregistrement comporte le cri d'un martinet absent en septembre mais présent lors de sa captation en juin.",
+          "meta": [
+            {
+              "label": "HEURE",
+              "value": "20:32"
+            },
+            {
+              "label": "STATUT",
+              "value": "Pièce analysée"
+            }
+          ],
+          "altText": "Photographie d'analyse : L'enregistrement comporte le cri d'un martinet absent en septembre mais présent lors de sa captation en juin.",
+          "tone": "cold"
+        },
+        "analysis": {
+          "category": "TIMELINE",
+          "implicates": [
+            "leonie"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [
+            "leonie"
+          ],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "mobile",
+        "title": "Ce que la victime allait révéler",
+        "source": "DOCUMENT CONFIDENTIEL",
+        "summary": "Un devis hospitalier impayé et un message d'un antiquaire fixent la valeur exacte du reliquaire.",
+        "evidence": {
+          "kind": "email",
+          "from": "Dossier de la victime",
+          "to": "Archives de l'enquête",
+          "subject": "Ce que la victime allait révéler",
+          "sentAt": "20:01",
+          "body": "Un devis hospitalier impayé et un message d'un antiquaire fixent la valeur exacte du reliquaire.",
+          "altText": "Document confidentiel : Un devis hospitalier impayé et un message d'un antiquaire fixent la valeur exacte du reliquaire."
+        },
+        "analysis": {
+          "category": "BEHAVIORAL",
+          "implicates": [],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [
+            "leonie"
+          ],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "leonie_mobile"
+          ],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "alibi_a",
+        "title": "La preuve de Père Augustin",
+        "source": "VÉRIFICATION D'ALIBI",
+        "summary": "Une vidéo d'un visiteur montre Basile fermer la boutique, sans coupure, jusqu'après le retour au silence.",
+        "evidence": {
+          "kind": "camera",
+          "location": "VÉRIFICATION D'ALIBI",
+          "frames": [
+            {
+              "time": "20:20",
+              "text": "Une vidéo d'un visiteur montre Basile fermer la boutique, sans coupure, jusqu'après le retour au silence."
+            }
+          ],
+          "altText": "Relevé de vérification à 20:20 : Une vidéo d'un visiteur montre Basile fermer la boutique, sans coupure, jusqu'après le retour au silence."
+        },
+        "analysis": {
+          "category": "EXONERATING",
+          "implicates": [],
+          "clears": [
+            "pere"
+          ],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      },
+      {
+        "id": "fausse_piste",
+        "title": "Le détail contre Basile Rémond",
+        "source": "PIÈCE SAISIE",
+        "summary": "Le prieur avait fait expertiser la relique et caché l'estimation au conseil.",
+        "evidence": {
+          "kind": "note",
+          "body": "Le prieur avait fait expertiser la relique et caché l'estimation au conseil.",
+          "altText": "Note saisie constituant une fausse piste : Le prieur avait fait expertiser la relique et caché l'estimation au conseil."
+        },
+        "analysis": {
+          "category": "RED_HERRING",
+          "implicates": [
+            "basile"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "basile_detail"
+          ],
+          "isRedHerring": true
+        }
+      },
+      {
+        "id": "resolution",
+        "title": "Ce que la fausse piste oublie",
+        "source": "RECOUPEMENT",
+        "summary": "L'expertise préparait une assurance imposée par la banque et le prieur apparaît au premier rang sur trois vidéos simultanées.",
+        "evidence": {
+          "kind": "document",
+          "title": "RECOUPEMENT",
+          "subtitle": "Pièce enregistrée à 20:35",
+          "paragraphs": [
+            "L'expertise préparait une assurance imposée par la banque et le prieur apparaît au premier rang sur trois vidéos simultanées."
+          ],
+          "altText": "RECOUPEMENT : L'expertise préparait une assurance imposée par la banque et le prieur apparaît au premier rang sur trois vidéos simultanées."
+        },
+        "analysis": {
+          "category": "EXONERATING",
+          "implicates": [],
+          "clears": [
+            "basile"
+          ],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
+      }
+    ],
+    "interviews": [
+      {
+        "id": "pere_alibi",
+        "suspectId": "pere",
+        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "answer": "Il priait au premier rang de la cour. Doux, élude les chiffres et parle au pluriel.",
+        "beat": "La réponse peut être confrontée aux pièces."
+      },
+      {
+        "id": "pere_relation",
+        "suspectId": "pere",
+        "question": "Qu'est-ce que Sœur Madeleine risquait de changer pour vous ?",
+        "answer": "Il décide de la vente éventuelle des biens de l'abbaye. L'abbaye doit rembourser un emprunt urgent.",
+        "beat": "Le mobile apparent n'est pas encore une preuve."
+      },
+      {
+        "id": "leonie_alibi",
+        "suspectId": "leonie",
+        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "answer": "Elle affirme avoir quitté le clocher avant 19h. Franche, passionnée par les sons mécaniques.",
+        "beat": "La version paraît nette, peut-être trop nette."
+      },
+      {
+        "id": "leonie_relation",
+        "suspectId": "leonie",
+        "question": "Qu'est-ce que Sœur Madeleine risquait de changer pour vous ?",
+        "answer": "Elle restaurait le mécanisme de la cloche. Elle savait reproduire le timbre de la cloche.",
+        "beat": "Le mobile apparent n'est pas encore une preuve."
+      },
+      {
+        "id": "basile_alibi",
+        "suspectId": "basile",
+        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "answer": "Il fermait la boutique avec deux visiteurs. Volubile, collectionne les légendes locales.",
+        "beat": "La réponse peut être confrontée aux pièces."
+      },
+      {
+        "id": "basile_relation",
+        "suspectId": "basile",
+        "question": "Qu'est-ce que Sœur Madeleine risquait de changer pour vous ?",
+        "answer": "Il connaît les passages condamnés. Il avait photographié le reliquaire sous tous les angles.",
+        "beat": "Le mobile apparent n'est pas encore une preuve."
+      },
+      {
+        "id": "leonie_confrontation",
+        "suspectId": "leonie",
+        "question": "Votre heure ne correspond pas au registre. Pourquoi ?",
+        "answer": "« Le registre se trompe parfois. Cela ne prouve pas que j'ai fait ce qu'on me reproche. »",
+        "unlockedByClueId": "registre",
+        "beat": "La personne conteste l'outil, sans expliquer sa propre trace."
+      },
+      {
+        "id": "leonie_mobile",
+        "suspectId": "leonie",
+        "question": "Ce document vous donnait-il une raison d'agir ?",
+        "answer": "« Vous appelez cela un mobile parce que vous connaissez déjà la fin. Sur le moment, je cherchais seulement une issue. »",
+        "unlockedByClueId": "mobile",
+        "beat": "La raison d'agir est reconnue à demi-mot."
+      },
+      {
+        "id": "basile_detail",
+        "suspectId": "basile",
+        "question": "Pourquoi cette pièce vous désigne-t-elle ?",
+        "answer": "« Elle est vraie, mais votre conclusion ne l'est pas. Cherchez ce qui s'est passé après. »",
+        "unlockedByClueId": "fausse_piste",
+        "beat": "La pièce cache une chronologie plus complète."
+      }
+    ],
+    "timeline": [
+      {
+        "time": "19:49",
+        "text": "Sœur Madeleine est vu pour la dernière fois avant l'incident.",
+        "source": "Témoignages concordants",
+        "certainty": "CERTAIN"
+      },
+      {
+        "time": "20:01",
+        "text": "Le document révélant le mobile est créé ou consulté.",
+        "source": "Métadonnées",
+        "certainty": "CERTAIN"
+      },
+      {
+        "time": "20:14",
+        "text": "Léonie Pujol affirme ne plus pouvoir intervenir.",
+        "source": "Déclaration",
+        "certainty": "REPORTED"
+      },
+      {
+        "time": "20:27",
+        "text": "Une activité technique contredit cette version.",
+        "source": "Registre",
+        "certainty": "CERTAIN"
+      },
+      {
+        "time": "20:35",
+        "text": "L'incident devient visible ou produit ses effets.",
+        "source": "Constat",
+        "certainty": "ESTIMATED"
+      }
+    ],
+    "accusation": {
+      "questions": [
+        {
+          "id": "q_who",
+          "kind": "suspect",
+          "prompt": "Qui est responsable ?",
+          "optional": false,
+          "options": [
+            {
+              "id": "pere",
+              "label": "Père Augustin",
+              "hint": "Prieur"
+            },
+            {
+              "id": "leonie",
+              "label": "Léonie Pujol",
+              "hint": "Campanologue"
+            },
+            {
+              "id": "basile",
+              "label": "Basile Rémond",
+              "hint": "Guide bénévole"
+            }
+          ]
+        },
+        {
+          "id": "q_why",
+          "kind": "motive",
+          "prompt": "Pourquoi cette personne a-t-elle agi ?",
+          "optional": false,
+          "options": [
+            {
+              "id": "motive_correct",
+              "label": "Financer en secret les soins de son fils en vendant la relique"
+            },
+            {
+              "id": "motive_rivalite",
+              "label": "Écarter un rival par jalousie"
+            },
+            {
+              "id": "motive_accident",
+              "label": "Cacher une erreur sans rapport avec l'incident"
+            }
+          ]
+        },
+        {
+          "id": "q_how",
+          "kind": "method",
+          "prompt": "Comment l'incident a-t-il été provoqué ?",
+          "optional": false,
+          "options": [
+            {
+              "id": "method_correct",
+              "label": "Diffuser un enregistrement de la cloche depuis le clocher puis emprunter l'escalier intérieur"
+            },
+            {
+              "id": "method_force",
+              "label": "Forcer directement l'accès principal"
+            },
+            {
+              "id": "method_complice",
+              "label": "Employer un complice extérieur après la fermeture"
+            }
+          ]
+        }
+      ]
+    },
+    "difficulty": "NORMAL",
+    "estimatedMinutes": 8
+  },
+  "meta": {
+    "crimeType": "vol",
+    "locationType": "abbaye",
+    "culpritGender": "F",
+    "motiveType": "soins familiaux",
+    "methodType": "leurre sonore enregistré",
+    "coreMechanic": "anachronisme acoustique"
+  },
+  "solution": {
+    "culpritId": "leonie",
+    "correctMotive": "motive_correct",
+    "correctMethod": "method_correct",
+    "validationAnswers": {
+      "q_who": "leonie",
+      "q_why": "motive_correct",
+      "q_how": "method_correct"
+    },
+    "optionalAnswers": {},
+    "correctTimeline": [
+      {
+        "time": "19:49",
+        "place": "Abbaye de Valcroix — Aveyron",
+        "personIds": [
+          "leonie"
+        ],
+        "text": "Léonie Pujol comprend que la situation menace directement ses intérêts."
+      },
+      {
+        "time": "20:01",
+        "place": "Abbaye de Valcroix — Aveyron",
+        "personIds": [
+          "leonie"
+        ],
+        "text": "Le mobile se cristallise : financer en secret les soins de son fils en vendant la relique."
+      },
+      {
+        "time": "20:27",
+        "endTime": "20:32",
+        "place": "Abbaye de Valcroix — Aveyron",
+        "personIds": [
+          "leonie"
+        ],
+        "text": "Léonie avait enregistré la cloche avant le démontage. Elle a déclenché le son à distance, attiré tout le monde dehors et rejoint la sacristie par l'escalier du clocher. Le martinet enregistré hors saison trahit la fausse sonnerie."
+      },
+      {
+        "time": "20:35",
+        "place": "Abbaye de Valcroix — Aveyron",
+        "personIds": [
+          "leonie"
+        ],
+        "text": "La personne remet les lieux en ordre et s'appuie sur son alibi préparé."
+      }
+    ],
+    "reasoning": [
+      "Le registre contredit l'heure donnée par Léonie Pujol : Le téléphone de Léonie se connecte à la borne Wi-Fi du clocher à 20h56.",
+      "La trace matérielle ne prouve pas seulement une présence; elle décrit la méthode : L'enregistrement comporte le cri d'un martinet absent en septembre mais présent lors de sa captation en juin.",
+      "Le document confidentiel fournit un mobile précis : Un devis hospitalier impayé et un message d'un antiquaire fixent la valeur exacte du reliquaire.",
+      "Père Augustin est écarté par une preuve indépendante, tandis que l'élément visant Basile Rémond est expliqué par le recoupement final.",
+      "La seule personne réunissant présence, moyen et mobile est Léonie Pujol."
+    ],
+    "explanation": "Léonie avait enregistré la cloche avant le démontage. Elle a déclenché le son à distance, attiré tout le monde dehors et rejoint la sacristie par l'escalier du clocher. Le martinet enregistré hors saison trahit la fausse sonnerie. Le mobile était de financer en secret les soins de son fils en vendant la relique. La méthode consistait à diffuser un enregistrement de la cloche depuis le clocher puis emprunter l'escalier intérieur. La fausse piste contre Basile Rémond paraît forte isolément, mais l'expertise préparait une assurance imposée par la banque et le prieur apparaît au premier rang sur trois vidéos simultanées. Ainsi, les preuves convergent sans supposer d'information extérieure au dossier.",
+    "proofChains": [
+      {
+        "title": "La chaîne du geste",
+        "steps": [
+          "Le téléphone de Léonie se connecte à la borne Wi-Fi du clocher à 20h56.",
+          "L'enregistrement comporte le cri d'un martinet absent en septembre mais présent lors de sa captation en juin.",
+          "Ces deux pièces relient matériellement Léonie Pujol à l'action."
+        ]
+      },
+      {
+        "title": "La chaîne de l'intention",
+        "steps": [
+          "Un devis hospitalier impayé et un message d'un antiquaire fixent la valeur exacte du reliquaire.",
+          "Une vidéo d'un visiteur montre Basile fermer la boutique, sans coupure, jusqu'après le retour au silence.",
+          "Le mobile devient exclusif une fois les alibis recoupés."
+        ]
+      }
+    ]
+  }
+}
