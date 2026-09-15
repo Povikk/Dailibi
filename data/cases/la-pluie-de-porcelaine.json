@@ -240,11 +240,11 @@
     ],
     "interviews": [
       {
-        "id": "etienne_alibi",
+        "id": "etienne_observation",
         "suspectId": "etienne",
-        "question": "Que faisiez-vous pendant la période concernée, Étienne Bosc ?",
-        "answer": "« Je n'ai ouvert le four à aucun moment. Je ne vois pas ce que je pourrais ajouter de plus. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Qu'est-ce qui vous a le plus surpris ce soir-là, Étienne Bosc ?",
+        "answer": "« Rien qui mérite d'être signalé. La soirée s'est déroulée comme d'habitude. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "etienne_relation",
@@ -254,11 +254,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "linh_alibi",
+        "id": "linh_observation",
         "suspectId": "linh",
-        "question": "Donnez votre emploi du temps précis, Linh Durand.",
-        "answer": "« Je préparais les caisses d'expédition avec un livreur. Interrogez les autres, ils vous diront la même chose. »",
-        "beat": "La version paraît nette, peut-être trop nette."
+        "question": "Avez-vous relevé une incohérence autour de vous, Linh Durand ?",
+        "answer": "« Il y avait une tension, mais elle retombe vite ici. Rien de plus. »",
+        "beat": "La réponse élude un détail précis."
       },
       {
         "id": "linh_relation",
@@ -268,11 +268,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "oscar_alibi",
+        "id": "oscar_observation",
         "suspectId": "oscar",
-        "question": "Où étiez-vous au moment des faits, Oscar Nève ?",
-        "answer": "« J'exposais à Paris le soir de la cuisson. C'est tout ce que j'ai à dire sur ce moment-là. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Avez-vous remarqué quelque chose d'inhabituel, Oscar Nève ?",
+        "answer": "« Rien de particulier. Tout le monde est parti à son heure habituelle. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "oscar_relation",

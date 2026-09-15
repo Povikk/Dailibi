@@ -233,11 +233,11 @@
     ],
     "interviews": [
       {
-        "id": "lila_alibi",
+        "id": "lila_observation",
         "suspectId": "lila",
-        "question": "Où étiez-vous au moment des faits, Lila Charvet ?",
-        "answer": "« J'ai validé la carte à 21 h puis être rentrée. Vous pouvez vérifier : je n'ai rien à cacher sur cette heure-là. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Y a-t-il un détail que les enquêteurs devraient connaître, Lila Charvet ?",
+        "answer": "« Un détail m'a étonné sur le moment, mais je n'y ai plus repensé. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "lila_relation",
@@ -247,11 +247,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "owen_alibi",
+        "id": "owen_observation",
         "suspectId": "owen",
-        "question": "Que faisiez-vous pendant la période concernée, Owen Price ?",
-        "answer": "« Je suivais le départ depuis le quai. Personne ne peut dire le contraire, c'est la vérité. »",
-        "beat": "La version paraît nette, peut-être trop nette."
+        "question": "Qu'est-ce qui vous a le plus surpris ce soir-là, Owen Price ?",
+        "answer": "« Tout était normal. Si quelque chose clochait, je ne l'ai pas remarqué. »",
+        "beat": "La réponse élude un détail précis."
       },
       {
         "id": "owen_relation",
@@ -261,11 +261,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "marta_alibi",
+        "id": "marta_observation",
         "suspectId": "marta",
-        "question": "Donnez votre emploi du temps précis, Marta Siwek.",
-        "answer": "« Je présentais mes travaux à Varsovie en visioconférence. Je suis parti sans rien remarquer de particulier. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Avez-vous relevé une incohérence autour de vous, Marta Siwek ?",
+        "answer": "« Je ne me mêle pas des affaires des autres, je ne saurais rien vous dire. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "marta_relation",

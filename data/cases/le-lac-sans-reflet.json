@@ -235,11 +235,11 @@
     ],
     "interviews": [
       {
-        "id": "natan_alibi",
+        "id": "natan_observation",
         "suspectId": "natan",
-        "question": "Donnez votre emploi du temps précis, Natan Joly.",
-        "answer": "« Je suivais la prise au moniteur avec toute l'équipe. Interrogez les autres, ils vous diront la même chose. »",
-        "beat": "La version paraît nette, peut-être trop nette."
+        "question": "Avez-vous relevé une incohérence autour de vous, Natan Joly ?",
+        "answer": "« Il y avait une tension, mais elle retombe vite ici. Rien de plus. »",
+        "beat": "La réponse élude un détail précis."
       },
       {
         "id": "natan_relation",
@@ -249,11 +249,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "sarah_alibi",
+        "id": "sarah_observation",
         "suspectId": "sarah",
-        "question": "Où étiez-vous au moment des faits, Sarah Montel ?",
-        "answer": "« J'attendais dans le bateau de sécurité. C'est tout ce que j'ai à dire sur ce moment-là. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Avez-vous remarqué quelque chose d'inhabituel, Sarah Montel ?",
+        "answer": "« Rien de particulier. Tout le monde est parti à son heure habituelle. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "sarah_relation",
@@ -263,11 +263,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "paul_alibi",
+        "id": "paul_observation",
         "suspectId": "paul",
-        "question": "Que faisiez-vous pendant la période concernée, Paul Eden ?",
-        "answer": "« Je téléphonais depuis la régie mobile. J'ai répété cette version dès le premier interrogatoire. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Quelque chose vous a-t-il paru anormal ce soir-là, Paul Eden ?",
+        "answer": "« Les gens semblaient pressés, mais c'est le cas chaque soir. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "paul_relation",

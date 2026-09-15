@@ -233,11 +233,11 @@
     ],
     "interviews": [
       {
-        "id": "tao_alibi",
+        "id": "tao_observation",
         "suspectId": "tao",
-        "question": "Où étiez-vous au moment des faits, Tao Ménard ?",
-        "answer": "« Je surveillais les systèmes depuis chez moi. J'ai répété cette version dès le premier interrogatoire. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Y a-t-il un détail que les enquêteurs devraient connaître, Tao Ménard ?",
+        "answer": "« Les gens semblaient pressés, mais c'est le cas chaque soir. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "tao_relation",
@@ -247,11 +247,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "gaelle_alibi",
+        "id": "gaelle_observation",
         "suspectId": "gaelle",
-        "question": "Que faisiez-vous pendant la période concernée, Gaëlle Rios ?",
-        "answer": "« J'étais sur la route vers Perpignan. Rien ne m'a semblé anormal avant de partir. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Qu'est-ce qui vous a le plus surpris ce soir-là, Gaëlle Rios ?",
+        "answer": "« Je n'ai rien vu d'anormal. J'étais concentré sur ma tâche. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "gaelle_relation",
@@ -261,11 +261,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "nora_alibi",
+        "id": "nora_observation",
         "suspectId": "nora",
-        "question": "Donnez votre emploi du temps précis, Nora Saïd.",
-        "answer": "« Je travaillais dans la serre A jusqu'à 22 h. Vous pouvez vérifier : je n'ai rien à cacher sur cette heure-là. »",
-        "beat": "La version paraît nette, peut-être trop nette."
+        "question": "Avez-vous relevé une incohérence autour de vous, Nora Saïd ?",
+        "answer": "« Un détail m'a étonné sur le moment, mais je n'y ai plus repensé. »",
+        "beat": "La réponse élude un détail précis."
       },
       {
         "id": "nora_relation",

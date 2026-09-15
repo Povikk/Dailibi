@@ -233,11 +233,11 @@
     ],
     "interviews": [
       {
-        "id": "emilie_alibi",
+        "id": "emilie_observation",
         "suspectId": "emilie",
-        "question": "Donnez votre emploi du temps précis, Émilie Rey.",
-        "answer": "« J'ai dormi chez ma mère. J'ai répété cette version dès le premier interrogatoire. »",
-        "beat": "La version paraît nette, peut-être trop nette."
+        "question": "Avez-vous relevé une incohérence autour de vous, Émilie Rey ?",
+        "answer": "« Les gens semblaient pressés, mais c'est le cas chaque soir. »",
+        "beat": "La réponse élude un détail précis."
       },
       {
         "id": "emilie_relation",
@@ -247,11 +247,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "karim_alibi",
+        "id": "karim_observation",
         "suspectId": "karim",
-        "question": "Où étiez-vous au moment des faits, Karim Borel ?",
-        "answer": "« Je surveillais une distillation dans le bâtiment voisin. Rien ne m'a semblé anormal avant de partir. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Avez-vous remarqué quelque chose d'inhabituel, Karim Borel ?",
+        "answer": "« Je n'ai rien vu d'anormal. J'étais concentré sur ma tâche. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "karim_relation",
@@ -261,11 +261,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "fanny_alibi",
+        "id": "fanny_observation",
         "suspectId": "fanny",
-        "question": "Que faisiez-vous pendant la période concernée, Fanny Lauzier ?",
-        "answer": "« J'étais dans un avion pour Londres. Vous pouvez vérifier : je n'ai rien à cacher sur cette heure-là. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Quelque chose vous a-t-il paru anormal ce soir-là, Fanny Lauzier ?",
+        "answer": "« Un détail m'a étonné sur le moment, mais je n'y ai plus repensé. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "fanny_relation",

@@ -242,11 +242,11 @@
     ],
     "interviews": [
       {
-        "id": "alma_alibi",
+        "id": "alma_observation",
         "suspectId": "alma",
-        "question": "Que faisiez-vous pendant la période concernée, Alma Veyrac ?",
-        "answer": "« Je dormais dans la couchette voisine sous somnifère. Rien ne m'a semblé anormal avant de partir. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Qu'est-ce qui vous a le plus surpris ce soir-là, Alma Veyrac ?",
+        "answer": "« Je n'ai rien vu d'anormal. J'étais concentré sur ma tâche. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "alma_relation",
@@ -256,11 +256,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "felix_alibi",
+        "id": "felix_observation",
         "suspectId": "felix",
-        "question": "Donnez votre emploi du temps précis, Félix Donnadieu.",
-        "answer": "« J'effectuais la ronde en voiture 12. Vous pouvez vérifier : je n'ai rien à cacher sur cette heure-là. »",
-        "beat": "La version paraît nette, peut-être trop nette."
+        "question": "Avez-vous relevé une incohérence autour de vous, Félix Donnadieu ?",
+        "answer": "« Un détail m'a étonné sur le moment, mais je n'y ai plus repensé. »",
+        "beat": "La réponse élude un détail précis."
       },
       {
         "id": "felix_relation",
@@ -270,11 +270,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "leila_alibi",
+        "id": "leila_observation",
         "suspectId": "leila",
-        "question": "Où étiez-vous au moment des faits, Leïla Soriano ?",
-        "answer": "« Je travaillais au wagon-bar jusqu'à la fermeture. Personne ne peut dire le contraire, c'est la vérité. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Avez-vous remarqué quelque chose d'inhabituel, Leïla Soriano ?",
+        "answer": "« Tout était normal. Si quelque chose clochait, je ne l'ai pas remarqué. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "leila_relation",

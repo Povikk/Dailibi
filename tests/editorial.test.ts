@@ -27,16 +27,18 @@ describe("qualité éditoriale des affaires", () => {
     }
   });
 
-  it("ne recopie pas la déclaration spontanée dans la première réponse", () => {
+  it("ne recopie jamais la déclaration spontanée dans un interrogatoire", () => {
+    const strip = (value: string) => value.replace(/^«\s*|\s*»$/g, "").trim();
     for (const file of files) {
       for (const suspect of file.public.suspects) {
-        const first = file.public.interviews.find(
-          (interview) => interview.suspectId === suspect.id && !interview.unlockedByClueId,
-        );
-        expect(first, `${file.public.number}: ${suspect.name}`).toBeDefined();
-        expect(first!.answer, `${file.public.number}: ${suspect.name}`).not.toBe(
-          suspect.claimedAlibi,
-        );
+        const statement = strip(suspect.claimedAlibi);
+        expect(statement.length, `${file.public.number}: ${suspect.name}`).toBeGreaterThan(0);
+        for (const interview of file.public.interviews.filter((i) => i.suspectId === suspect.id)) {
+          expect(
+            strip(interview.answer).includes(statement),
+            `${file.public.number}: ${suspect.name} / ${interview.id}`,
+          ).toBe(false);
+        }
       }
     }
   });

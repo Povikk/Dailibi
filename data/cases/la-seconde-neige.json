@@ -242,11 +242,11 @@
     ],
     "interviews": [
       {
-        "id": "loup_alibi",
+        "id": "loup_observation",
         "suspectId": "loup",
-        "question": "Où étiez-vous au moment des faits, Loup Charrier ?",
-        "answer": "« Je ne suis pas sorti après le début de la tempête. Je ne vois pas ce que je pourrais ajouter de plus. »",
-        "beat": "La version paraît nette, peut-être trop nette."
+        "question": "Avez-vous remarqué quelque chose d'inhabituel, Loup Charrier ?",
+        "answer": "« Rien qui mérite d'être signalé. La soirée s'est déroulée comme d'habitude. »",
+        "beat": "La réponse élude un détail précis."
       },
       {
         "id": "loup_relation",
@@ -256,11 +256,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "mila_alibi",
+        "id": "mila_observation",
         "suspectId": "mila",
-        "question": "Que faisiez-vous pendant la période concernée, Mila Anders ?",
-        "answer": "« Je travaillais dans la salle radio avec deux chercheurs. Interrogez les autres, ils vous diront la même chose. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Quelque chose vous a-t-il paru anormal ce soir-là, Mila Anders ?",
+        "answer": "« Il y avait une tension, mais elle retombe vite ici. Rien de plus. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "mila_relation",
@@ -270,11 +270,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "jon_alibi",
+        "id": "jon_observation",
         "suspectId": "jon",
-        "question": "Donnez votre emploi du temps précis, Jon Ravel.",
-        "answer": "« Je préparais le petit-déjeuner dès 4 h 30. C'est tout ce que j'ai à dire sur ce moment-là. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Avez-vous vu ou entendu un détail qui vous a surpris, Jon Ravel ?",
+        "answer": "« Rien de particulier. Tout le monde est parti à son heure habituelle. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "jon_relation",

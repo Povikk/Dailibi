@@ -235,11 +235,11 @@
     ],
     "interviews": [
       {
-        "id": "iris_alibi",
+        "id": "iris_observation",
         "suspectId": "iris",
-        "question": "Que faisiez-vous pendant la période concernée, Iris Meunier ?",
-        "answer": "« J'ai quitté l'atelier à 19 h 10 après avoir posé les scellés. J'ai répété cette version dès le premier interrogatoire. »",
-        "beat": "La version paraît nette, peut-être trop nette."
+        "question": "Quelque chose vous a-t-il paru anormal ce soir-là, Iris Meunier ?",
+        "answer": "« Les gens semblaient pressés, mais c'est le cas chaque soir. »",
+        "beat": "La réponse élude un détail précis."
       },
       {
         "id": "iris_relation",
@@ -249,11 +249,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "mathieu_alibi",
+        "id": "mathieu_observation",
         "suspectId": "mathieu",
-        "question": "Donnez votre emploi du temps précis, Mathieu Orsini.",
-        "answer": "« J'ai inventorié les cadres au sous-sol jusqu'à 20 h. Rien ne m'a semblé anormal avant de partir. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Avez-vous vu ou entendu un détail qui vous a surpris, Mathieu Orsini ?",
+        "answer": "« Je n'ai rien vu d'anormal. J'étais concentré sur ma tâche. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "mathieu_relation",
@@ -263,11 +263,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "salome_alibi",
+        "id": "salome_observation",
         "suspectId": "salome",
-        "question": "Où étiez-vous au moment des faits, Salomé Varenne ?",
-        "answer": "« Je travaillais à la bibliothèque, visible du gardien. Vous pouvez vérifier : je n'ai rien à cacher sur cette heure-là. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Y a-t-il un détail que les enquêteurs devraient connaître, Salomé Varenne ?",
+        "answer": "« Un détail m'a étonné sur le moment, mais je n'y ai plus repensé. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "salome_relation",

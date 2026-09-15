@@ -240,11 +240,11 @@
     ],
     "interviews": [
       {
-        "id": "diane_alibi",
+        "id": "diane_observation",
         "suspectId": "diane",
-        "question": "Où étiez-vous au moment des faits, Diane Fabre ?",
-        "answer": "« Je dînais avec des mécènes jusqu'à 23 h. Je ne vois pas ce que je pourrais ajouter de plus. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Avez-vous remarqué quelque chose d'inhabituel, Diane Fabre ?",
+        "answer": "« Rien qui mérite d'être signalé. La soirée s'est déroulée comme d'habitude. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "diane_relation",
@@ -254,11 +254,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "nils_alibi",
+        "id": "nils_observation",
         "suspectId": "nils",
-        "question": "Que faisiez-vous pendant la période concernée, Nils Caron ?",
-        "answer": "« J'ai terminé le scan à 20 h 10 et rendu la clé. Interrogez les autres, ils vous diront la même chose. »",
-        "beat": "La version paraît nette, peut-être trop nette."
+        "question": "Quelque chose vous a-t-il paru anormal ce soir-là, Nils Caron ?",
+        "answer": "« Il y avait une tension, mais elle retombe vite ici. Rien de plus. »",
+        "beat": "La réponse élude un détail précis."
       },
       {
         "id": "nils_relation",
@@ -268,11 +268,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "helene_alibi",
+        "id": "helene_observation",
         "suspectId": "helene",
-        "question": "Donnez votre emploi du temps précis, Hélène Jouve.",
-        "answer": "« J'assistais au même dîner que Diane. C'est tout ce que j'ai à dire sur ce moment-là. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Avez-vous vu ou entendu un détail qui vous a surpris, Hélène Jouve ?",
+        "answer": "« Rien de particulier. Tout le monde est parti à son heure habituelle. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "helene_relation",

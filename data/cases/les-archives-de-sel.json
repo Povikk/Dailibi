@@ -233,11 +233,11 @@
     ],
     "interviews": [
       {
-        "id": "gilles_alibi",
+        "id": "gilles_observation",
         "suspectId": "gilles",
-        "question": "Que faisiez-vous pendant la période concernée, Gilles Roth ?",
-        "answer": "« Je guidais un groupe scolaire en surface. J'ai répété cette version dès le premier interrogatoire. »",
-        "beat": "La version paraît nette, peut-être trop nette."
+        "question": "Quelque chose vous a-t-il paru anormal ce soir-là, Gilles Roth ?",
+        "answer": "« Les gens semblaient pressés, mais c'est le cas chaque soir. »",
+        "beat": "La réponse élude un détail précis."
       },
       {
         "id": "gilles_relation",
@@ -247,11 +247,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "mara_alibi",
+        "id": "mara_observation",
         "suspectId": "mara",
-        "question": "Donnez votre emploi du temps précis, Mara Klein.",
-        "answer": "« Je n'ai ouvert aucune caisse ce jour-là. Rien ne m'a semblé anormal avant de partir. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Avez-vous vu ou entendu un détail qui vous a surpris, Mara Klein ?",
+        "answer": "« Je n'ai rien vu d'anormal. J'étais concentré sur ma tâche. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "mara_relation",
@@ -261,11 +261,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "sofiane_alibi",
+        "id": "sofiane_observation",
         "suspectId": "sofiane",
-        "question": "Où étiez-vous au moment des faits, Sofiane Clerc ?",
-        "answer": "« Je travaillais au tribunal de Metz. Vous pouvez vérifier : je n'ai rien à cacher sur cette heure-là. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Y a-t-il un détail que les enquêteurs devraient connaître, Sofiane Clerc ?",
+        "answer": "« Un détail m'a étonné sur le moment, mais je n'y ai plus repensé. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "sofiane_relation",

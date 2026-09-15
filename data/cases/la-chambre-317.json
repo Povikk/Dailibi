@@ -235,11 +235,11 @@
     ],
     "interviews": [
       {
-        "id": "bastien_alibi",
+        "id": "bastien_observation",
         "suspectId": "bastien",
-        "question": "Où étiez-vous au moment des faits, Bastien Cazal ?",
-        "answer": "« Je présidais un dîner caritatif filmé jusqu'à minuit. Vous pouvez vérifier : je n'ai rien à cacher sur cette heure-là. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Y a-t-il un détail que les enquêteurs devraient connaître, Bastien Cazal ?",
+        "answer": "« Un détail m'a étonné sur le moment, mais je n'y ai plus repensé. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "bastien_relation",
@@ -249,11 +249,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "yuna_alibi",
+        "id": "yuna_observation",
         "suspectId": "yuna",
-        "question": "Que faisiez-vous pendant la période concernée, Yuna Delmas ?",
-        "answer": "« Je n'ai jamais quitté la réception. Personne ne peut dire le contraire, c'est la vérité. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Qu'est-ce qui vous a le plus surpris ce soir-là, Yuna Delmas ?",
+        "answer": "« Tout était normal. Si quelque chose clochait, je ne l'ai pas remarqué. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "yuna_relation",
@@ -263,11 +263,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "clement_alibi",
+        "id": "clement_observation",
         "suspectId": "clement",
-        "question": "Donnez votre emploi du temps précis, Clément Rive.",
-        "answer": "« Je suis reparti par le dernier tram à 23 h 34. Je suis parti sans rien remarquer de particulier. »",
-        "beat": "La version paraît nette, peut-être trop nette."
+        "question": "Avez-vous relevé une incohérence autour de vous, Clément Rive ?",
+        "answer": "« Je ne me mêle pas des affaires des autres, je ne saurais rien vous dire. »",
+        "beat": "La réponse élude un détail précis."
       },
       {
         "id": "clement_relation",

@@ -235,11 +235,11 @@
     ],
     "interviews": [
       {
-        "id": "pere_alibi",
+        "id": "pere_observation",
         "suspectId": "pere",
-        "question": "Que faisiez-vous pendant la période concernée, Père Augustin ?",
-        "answer": "« Je priais au premier rang de la cour. Interrogez les autres, ils vous diront la même chose. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Quelque chose vous a-t-il paru anormal ce soir-là, Père Augustin ?",
+        "answer": "« Il y avait une tension, mais elle retombe vite ici. Rien de plus. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "pere_relation",
@@ -249,11 +249,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "leonie_alibi",
+        "id": "leonie_observation",
         "suspectId": "leonie",
-        "question": "Donnez votre emploi du temps précis, Léonie Pujol.",
-        "answer": "« J'ai quitté le clocher avant 19 h. C'est tout ce que j'ai à dire sur ce moment-là. »",
-        "beat": "La version paraît nette, peut-être trop nette."
+        "question": "Avez-vous vu ou entendu un détail qui vous a surpris, Léonie Pujol ?",
+        "answer": "« Rien de particulier. Tout le monde est parti à son heure habituelle. »",
+        "beat": "La réponse élude un détail précis."
       },
       {
         "id": "leonie_relation",
@@ -263,11 +263,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "basile_alibi",
+        "id": "basile_observation",
         "suspectId": "basile",
-        "question": "Où étiez-vous au moment des faits, Basile Rémond ?",
-        "answer": "« Je fermais la boutique avec deux visiteurs. J'ai répété cette version dès le premier interrogatoire. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Y a-t-il un détail que les enquêteurs devraient connaître, Basile Rémond ?",
+        "answer": "« Les gens semblaient pressés, mais c'est le cas chaque soir. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "basile_relation",

@@ -70,26 +70,29 @@ const accusationDistractors: Record<number, Distractors> = {
   30: { motives: ["Empêcher un rapport de contredire un modèle climatique", "Cacher l'emprunt non autorisé du GPS d'Ariane", "Faire fermer un refuge devenu trop dangereux"], methods: ["Modifier l'itinéraire enregistré dans le GPS", "Effacer les traces avec la surfaceuse du refuge", "Attirer Ariane vers la crevasse par un faux appel radio"] },
 };
 
-const alibiQuestions = [
-  (name: string) => `Où étiez-vous au moment des faits, ${name} ?`,
-  (name: string) => `Que faisiez-vous pendant la période concernée, ${name} ?`,
-  (name: string) => `Donnez votre emploi du temps précis, ${name}.`,
+/**
+ * Le premier interrogatoire ne rejoue pas l'alibi : la déclaration spontanée
+ * l'affiche déjà, mot pour mot. On demande donc autre chose (ce que la
+ * personne a observé), comme dans le dossier historique écrit à la main.
+ */
+const observationQuestions = [
+  (name: string) => `Avez-vous remarqué quelque chose d'inhabituel, ${name} ?`,
+  (name: string) => `Quelque chose vous a-t-il paru anormal ce soir-là, ${name} ?`,
+  (name: string) => `Avez-vous vu ou entendu un détail qui vous a surpris, ${name} ?`,
+  (name: string) => `Y a-t-il un détail que les enquêteurs devraient connaître, ${name} ?`,
+  (name: string) => `Qu'est-ce qui vous a le plus surpris ce soir-là, ${name} ?`,
+  (name: string) => `Avez-vous relevé une incohérence autour de vous, ${name} ?`,
 ];
 
-/**
- * La déclaration spontanée montre déjà l'alibi. La réponse au premier
- * interrogatoire doit donc apporter un ton ou une insistance en plus, jamais
- * recopier la déclaration.
- */
-const alibiAdditions = [
-  "C'est tout ce que j'ai à dire sur ce moment-là.",
-  "J'ai répété cette version dès le premier interrogatoire.",
-  "Rien ne m'a semblé anormal avant de partir.",
-  "Vous pouvez vérifier : je n'ai rien à cacher sur cette heure-là.",
-  "Personne ne peut dire le contraire, c'est la vérité.",
-  "Je suis parti sans rien remarquer de particulier.",
-  "Je ne vois pas ce que je pourrais ajouter de plus.",
-  "Interrogez les autres, ils vous diront la même chose.",
+const observationAnswers = [
+  "« Rien de particulier. Tout le monde est parti à son heure habituelle. »",
+  "« Les gens semblaient pressés, mais c'est le cas chaque soir. »",
+  "« Je n'ai rien vu d'anormal. J'étais concentré sur ma tâche. »",
+  "« Un détail m'a étonné sur le moment, mais je n'y ai plus repensé. »",
+  "« Tout était normal. Si quelque chose clochait, je ne l'ai pas remarqué. »",
+  "« Je ne me mêle pas des affaires des autres, je ne saurais rien vous dire. »",
+  "« Rien qui mérite d'être signalé. La soirée s'est déroulée comme d'habitude. »",
+  "« Il y avait une tension, mais elle retombe vite ici. Rien de plus. »",
 ];
 
 const relationQuestions = [
@@ -204,15 +207,13 @@ for (const filename of readdirSync(root).filter((name) => name.endsWith(".json")
   });
 
   p.suspects.forEach((suspect, index) => {
-    const alibi = p.interviews.find((item) => item.id === `${suspect.id}_alibi`);
+    const observation = p.interviews.find((item) => item.id === `${suspect.id}_observation`);
     const relation = p.interviews.find((item) => item.id === `${suspect.id}_relation`);
-    if (alibi) {
-      alibi.question = alibiQuestions[(p.number + index) % alibiQuestions.length](suspect.name);
-      alibi.answer = quote(
-        `${unquote(suspect.claimedAlibi)} ${
-          alibiAdditions[(p.number + index) % alibiAdditions.length]
-        }`,
-      );
+    if (observation) {
+      observation.question =
+        observationQuestions[(p.number + index) % observationQuestions.length](suspect.name);
+      observation.answer =
+        observationAnswers[(p.number + index) % observationAnswers.length];
     }
     if (relation) {
       relation.question = relationQuestions[(p.number * 2 + index) % relationQuestions.length](suspect.name);

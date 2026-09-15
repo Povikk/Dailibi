@@ -240,11 +240,11 @@
     ],
     "interviews": [
       {
-        "id": "june_alibi",
+        "id": "june_observation",
         "suspectId": "june",
-        "question": "Que faisiez-vous pendant la période concernée, June Luce ?",
-        "answer": "« Je dormais dans la chambre d'amis. Personne ne peut dire le contraire, c'est la vérité. »",
-        "beat": "La version paraît nette, peut-être trop nette."
+        "question": "Qu'est-ce qui vous a le plus surpris ce soir-là, June Luce ?",
+        "answer": "« Tout était normal. Si quelque chose clochait, je ne l'ai pas remarqué. »",
+        "beat": "La réponse élude un détail précis."
       },
       {
         "id": "june_relation",
@@ -254,11 +254,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "benoit_alibi",
+        "id": "benoit_observation",
         "suspectId": "benoit",
-        "question": "Donnez votre emploi du temps précis, Benoît Carsin.",
-        "answer": "« J'ai quitté la propriété à 20 h. Je suis parti sans rien remarquer de particulier. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Avez-vous relevé une incohérence autour de vous, Benoît Carsin ?",
+        "answer": "« Je ne me mêle pas des affaires des autres, je ne saurais rien vous dire. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "benoit_relation",
@@ -268,11 +268,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "dr_alibi",
+        "id": "dr_observation",
         "suspectId": "dr",
-        "question": "Où étiez-vous au moment des faits, Dr Selma Wong ?",
-        "answer": "« J'étais de garde à la clinique. Je ne vois pas ce que je pourrais ajouter de plus. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Avez-vous remarqué quelque chose d'inhabituel, Dr Selma Wong ?",
+        "answer": "« Rien qui mérite d'être signalé. La soirée s'est déroulée comme d'habitude. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "dr_relation",

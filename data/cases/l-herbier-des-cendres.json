@@ -235,11 +235,11 @@
     ],
     "interviews": [
       {
-        "id": "samir_alibi",
+        "id": "samir_observation",
         "suspectId": "samir",
-        "question": "Donnez votre emploi du temps précis, Samir Ouali.",
-        "answer": "« J'ai quitté le laboratoire à 18 h avec Jeanne. Je suis parti sans rien remarquer de particulier. »",
-        "beat": "La version paraît nette, peut-être trop nette."
+        "question": "Avez-vous relevé une incohérence autour de vous, Samir Ouali ?",
+        "answer": "« Je ne me mêle pas des affaires des autres, je ne saurais rien vous dire. »",
+        "beat": "La réponse élude un détail précis."
       },
       {
         "id": "samir_relation",
@@ -249,11 +249,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "elise_alibi",
+        "id": "elise_observation",
         "suspectId": "elise",
-        "question": "Où étiez-vous au moment des faits, Élise Martel ?",
-        "answer": "« Je classais des graines dans l'aile publique jusqu'à 20 h. Je ne vois pas ce que je pourrais ajouter de plus. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Avez-vous remarqué quelque chose d'inhabituel, Élise Martel ?",
+        "answer": "« Rien qui mérite d'être signalé. La soirée s'est déroulée comme d'habitude. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "elise_relation",
@@ -263,11 +263,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "pavel_alibi",
+        "id": "pavel_observation",
         "suspectId": "pavel",
-        "question": "Que faisiez-vous pendant la période concernée, Pavel Duroc ?",
-        "answer": "« Je participais à un séminaire en visioconférence. Interrogez les autres, ils vous diront la même chose. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Quelque chose vous a-t-il paru anormal ce soir-là, Pavel Duroc ?",
+        "answer": "« Il y avait une tension, mais elle retombe vite ici. Rien de plus. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "pavel_relation",

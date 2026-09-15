@@ -283,7 +283,7 @@ function buildCase(s: StorySeed): CaseFile {
         clue("resolution", "Ce que la fausse piste oublie", "RECOUPEMENT", s.redResolved, "EXONERATING", [], [secondInnocent.id], [], [], [], [], false, at(46)),
       ],
       interviews: ([...suspects.flatMap((person) => [
-        { id: `${person.id}_alibi`, suspectId: person.id, question: "Reprenez votre soirée à partir du dernier moment certain.", answer: `${person.claimedAlibi} ${person.personality}`, beat: person.id === culpritId ? "La version paraît nette, peut-être trop nette." : "La réponse peut être confrontée aux pièces." },
+        { id: `${person.id}_observation`, suspectId: person.id, question: "Avez-vous remarqué quelque chose d'inhabituel ce soir-là ?", answer: person.personality, beat: person.id === culpritId ? "La réponse élude un détail précis." : "À recouper avec les autres déclarations." },
         { id: `${person.id}_relation`, suspectId: person.id, question: `Qu'est-ce que ${s.victim[0]} risquait de changer pour vous ?`, answer: `${person.relation} ${person.notes[0]}`, beat: "Le mobile apparent n'est pas encore une preuve." },
       ]),
         { id: `${culpritId}_confrontation`, suspectId: culpritId, question: "Votre heure ne correspond pas au registre. Pourquoi ?", answer: `« Le registre se trompe parfois. Cela ne prouve pas que j'ai fait ce qu'on me reproche. »`, unlockedByClueId: "registre", beat: "La personne conteste l'outil, sans expliquer sa propre trace." },

@@ -240,11 +240,11 @@
     ],
     "interviews": [
       {
-        "id": "gaspard_alibi",
+        "id": "gaspard_observation",
         "suspectId": "gaspard",
-        "question": "Donnez votre emploi du temps précis, Gaspard Lin.",
-        "answer": "« Je n'ai jamais quitté la régie. C'est tout ce que j'ai à dire sur ce moment-là. »",
-        "beat": "La version paraît nette, peut-être trop nette."
+        "question": "Avez-vous vu ou entendu un détail qui vous a surpris, Gaspard Lin ?",
+        "answer": "« Rien de particulier. Tout le monde est parti à son heure habituelle. »",
+        "beat": "La réponse élude un détail précis."
       },
       {
         "id": "gaspard_relation",
@@ -254,11 +254,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "mina_alibi",
+        "id": "mina_observation",
         "suspectId": "mina",
-        "question": "Où étiez-vous au moment des faits, Mina Ferhat ?",
-        "answer": "« J'ai posé une tasse propre avant 23 h puis je suis partie. J'ai répété cette version dès le premier interrogatoire. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Y a-t-il un détail que les enquêteurs devraient connaître, Mina Ferhat ?",
+        "answer": "« Les gens semblaient pressés, mais c'est le cas chaque soir. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "mina_relation",
@@ -268,11 +268,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "alban_alibi",
+        "id": "alban_observation",
         "suspectId": "alban",
-        "question": "Que faisiez-vous pendant la période concernée, Alban Reyes ?",
-        "answer": "« J'assistais à un gala retransmis sur les réseaux. Rien ne m'a semblé anormal avant de partir. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Qu'est-ce qui vous a le plus surpris ce soir-là, Alban Reyes ?",
+        "answer": "« Je n'ai rien vu d'anormal. J'étais concentré sur ma tâche. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "alban_relation",

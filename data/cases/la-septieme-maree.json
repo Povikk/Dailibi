@@ -235,11 +235,11 @@
     ],
     "interviews": [
       {
-        "id": "ewen_alibi",
+        "id": "ewen_observation",
         "suspectId": "ewen",
-        "question": "Donnez votre emploi du temps précis, Éwen Piat.",
-        "answer": "« Je travaillais sur mon chaland, suivi par GPS. Vous pouvez vérifier : je n'ai rien à cacher sur cette heure-là. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Avez-vous relevé une incohérence autour de vous, Éwen Piat ?",
+        "answer": "« Un détail m'a étonné sur le moment, mais je n'y ai plus repensé. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "ewen_relation",
@@ -249,11 +249,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "clara_alibi",
+        "id": "clara_observation",
         "suspectId": "clara",
-        "question": "Où étiez-vous au moment des faits, Clara Nomura ?",
-        "answer": "« J'ai préparé tous les réservoirs à 17 h. Personne ne peut dire le contraire, c'est la vérité. »",
-        "beat": "La version paraît nette, peut-être trop nette."
+        "question": "Avez-vous remarqué quelque chose d'inhabituel, Clara Nomura ?",
+        "answer": "« Tout était normal. Si quelque chose clochait, je ne l'ai pas remarqué. »",
+        "beat": "La réponse élude un détail précis."
       },
       {
         "id": "clara_relation",
@@ -263,11 +263,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "marc_alibi",
+        "id": "marc_observation",
         "suspectId": "marc",
-        "question": "Que faisiez-vous pendant la période concernée, Marc Vignal ?",
-        "answer": "« Je dînais avec la mairie pendant la première vague. Je suis parti sans rien remarquer de particulier. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Quelque chose vous a-t-il paru anormal ce soir-là, Marc Vignal ?",
+        "answer": "« Je ne me mêle pas des affaires des autres, je ne saurais rien vous dire. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "marc_relation",

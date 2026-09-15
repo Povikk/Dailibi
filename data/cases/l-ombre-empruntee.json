@@ -233,11 +233,11 @@
     ],
     "interviews": [
       {
-        "id": "aya_alibi",
+        "id": "aya_observation",
         "suspectId": "aya",
-        "question": "Que faisiez-vous pendant la période concernée, Aya Ben Salem ?",
-        "answer": "« Je traitais les données depuis ma chambre. Vous pouvez vérifier : je n'ai rien à cacher sur cette heure-là. »",
-        "beat": "La version paraît nette, peut-être trop nette."
+        "question": "Quelque chose vous a-t-il paru anormal ce soir-là, Aya Ben Salem ?",
+        "answer": "« Un détail m'a étonné sur le moment, mais je n'y ai plus repensé. »",
+        "beat": "La réponse élude un détail précis."
       },
       {
         "id": "aya_relation",
@@ -247,11 +247,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "remi_alibi",
+        "id": "remi_observation",
         "suspectId": "remi",
-        "question": "Donnez votre emploi du temps précis, Rémi Corbel.",
-        "answer": "« Je réparais la coupole secondaire avec un collègue. Personne ne peut dire le contraire, c'est la vérité. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Avez-vous vu ou entendu un détail qui vous a surpris, Rémi Corbel ?",
+        "answer": "« Tout était normal. Si quelque chose clochait, je ne l'ai pas remarqué. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "remi_relation",
@@ -261,11 +261,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "chiara_alibi",
+        "id": "chiara_observation",
         "suspectId": "chiara",
-        "question": "Où étiez-vous au moment des faits, Chiara Moss ?",
-        "answer": "« J'observais depuis le Chili en liaison continue. Je suis parti sans rien remarquer de particulier. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Y a-t-il un détail que les enquêteurs devraient connaître, Chiara Moss ?",
+        "answer": "« Je ne me mêle pas des affaires des autres, je ne saurais rien vous dire. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "chiara_relation",

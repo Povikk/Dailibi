@@ -242,11 +242,11 @@
     ],
     "interviews": [
       {
-        "id": "ines_alibi",
+        "id": "ines_observation",
         "suspectId": "ines",
-        "question": "Que faisiez-vous pendant la période concernée, Inès Delcourt ?",
-        "answer": "« J'étais dans une autre salle avec ma fille. C'est tout ce que j'ai à dire sur ce moment-là. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Qu'est-ce qui vous a le plus surpris ce soir-là, Inès Delcourt ?",
+        "answer": "« Rien de particulier. Tout le monde est parti à son heure habituelle. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "ines_relation",
@@ -256,11 +256,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "victor_alibi",
+        "id": "victor_observation",
         "suspectId": "victor",
-        "question": "Donnez votre emploi du temps précis, Victor Amsel.",
-        "answer": "« Je suis resté en cabine pendant la coupure. J'ai répété cette version dès le premier interrogatoire. »",
-        "beat": "La version paraît nette, peut-être trop nette."
+        "question": "Avez-vous relevé une incohérence autour de vous, Victor Amsel ?",
+        "answer": "« Les gens semblaient pressés, mais c'est le cas chaque soir. »",
+        "beat": "La réponse élude un détail précis."
       },
       {
         "id": "victor_relation",
@@ -270,11 +270,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "meryem_alibi",
+        "id": "meryem_observation",
         "suspectId": "meryem",
-        "question": "Où étiez-vous au moment des faits, Meryem Solal ?",
-        "answer": "« J'attendais Romain dans un café voisin. Rien ne m'a semblé anormal avant de partir. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Avez-vous remarqué quelque chose d'inhabituel, Meryem Solal ?",
+        "answer": "« Je n'ai rien vu d'anormal. J'étais concentré sur ma tâche. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "meryem_relation",

@@ -235,11 +235,11 @@
     ],
     "interviews": [
       {
-        "id": "ana_alibi",
+        "id": "ana_observation",
         "suspectId": "ana",
-        "question": "Où étiez-vous au moment des faits, Ana Costa ?",
-        "answer": "« Je me changeais au vestiaire avec deux coéquipières. Interrogez les autres, ils vous diront la même chose. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Y a-t-il un détail que les enquêteurs devraient connaître, Ana Costa ?",
+        "answer": "« Il y avait une tension, mais elle retombe vite ici. Rien de plus. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "ana_relation",
@@ -249,11 +249,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "yves_alibi",
+        "id": "yves_observation",
         "suspectId": "yves",
-        "question": "Que faisiez-vous pendant la période concernée, Yves Molin ?",
-        "answer": "« Personne n'a touché la glace après mon dernier passage. C'est tout ce que j'ai à dire sur ce moment-là. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Qu'est-ce qui vous a le plus surpris ce soir-là, Yves Molin ?",
+        "answer": "« Rien de particulier. Tout le monde est parti à son heure habituelle. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "yves_relation",
@@ -263,11 +263,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "leon_alibi",
+        "id": "leon_observation",
         "suspectId": "leon",
-        "question": "Donnez votre emploi du temps précis, Léon Barthe.",
-        "answer": "« Je regardais la répétition depuis la tribune presse. J'ai répété cette version dès le premier interrogatoire. »",
-        "beat": "La version paraît nette, peut-être trop nette."
+        "question": "Avez-vous relevé une incohérence autour de vous, Léon Barthe ?",
+        "answer": "« Les gens semblaient pressés, mais c'est le cas chaque soir. »",
+        "beat": "La réponse élude un détail précis."
       },
       {
         "id": "leon_relation",

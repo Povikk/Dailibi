@@ -242,11 +242,11 @@
     ],
     "interviews": [
       {
-        "id": "malo_alibi",
+        "id": "malo_observation",
         "suspectId": "malo",
-        "question": "Que faisiez-vous pendant la période concernée, Malo Quéré ?",
-        "answer": "« J'ai dormi dans l'annexe depuis 1 h 30. Personne ne peut dire le contraire, c'est la vérité. »",
-        "beat": "La version paraît nette, peut-être trop nette."
+        "question": "Qu'est-ce qui vous a le plus surpris ce soir-là, Malo Quéré ?",
+        "answer": "« Tout était normal. Si quelque chose clochait, je ne l'ai pas remarqué. »",
+        "beat": "La réponse élude un détail précis."
       },
       {
         "id": "malo_relation",
@@ -256,11 +256,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "erell_alibi",
+        "id": "erell_observation",
         "suspectId": "erell",
-        "question": "Donnez votre emploi du temps précis, Erell Bihan.",
-        "answer": "« J'observais la falaise nord avec ma caméra thermique. Je suis parti sans rien remarquer de particulier. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Avez-vous relevé une incohérence autour de vous, Erell Bihan ?",
+        "answer": "« Je ne me mêle pas des affaires des autres, je ne saurais rien vous dire. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "erell_relation",
@@ -270,11 +270,11 @@
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
-        "id": "jonas_alibi",
+        "id": "jonas_observation",
         "suspectId": "jonas",
-        "question": "Où étiez-vous au moment des faits, Jonas Le Guen ?",
-        "answer": "« J'ai réparé seul un casier sur le pont. Je ne vois pas ce que je pourrais ajouter de plus. »",
-        "beat": "La réponse peut être confrontée aux pièces."
+        "question": "Avez-vous remarqué quelque chose d'inhabituel, Jonas Le Guen ?",
+        "answer": "« Rien qui mérite d'être signalé. La soirée s'est déroulée comme d'habitude. »",
+        "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "jonas_relation",
