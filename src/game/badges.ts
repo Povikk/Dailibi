@@ -1,9 +1,4 @@
-import type {
-  CaseProgress,
-  DailibiStats,
-  DayRecord,
-  StreakState,
-} from "@/lib/storage";
+import type { DailibiStats, DayRecord, StreakState } from "@/lib/storage";
 
 /**
  * Badge engine.
@@ -34,12 +29,24 @@ export const BADGE_FAMILIES: Record<BadgeFamily, { label: string; tone: string }
   methode: { label: "Méthode", tone: "border-emerald-500/40 bg-emerald-500/10 text-emerald-300" },
 };
 
+/** Per-case exploration counts. Counts, not id lists, so the server can hold them. */
+export type ProgressCount = {
+  cluesFound: number;
+  cluesTotal: number;
+  suspectsSeen: number;
+  suspectsTotal: number;
+};
+
+/**
+ * Everything the rules look at. It is plain JSON on purpose: the same shape is
+ * built in the browser and stored server-side, so both evaluate identical rules.
+ */
 export type BadgeContext = {
   stats: DailibiStats;
   streak: StreakState;
-  archives: DayRecord[];
-  progress: Record<string, CaseProgress>;
-  notes: Record<string, string>;
+  archivesCount: number;
+  progress: Record<string, ProgressCount>;
+  notesCount: number;
 };
 
 export type BadgeDefinition = {
@@ -115,25 +122,21 @@ function countFullyExplored(ctx: BadgeContext): number {
     (item) =>
       item.cluesTotal > 0 &&
       item.suspectsTotal > 0 &&
-      item.foundClues.length >= item.cluesTotal &&
-      item.inspectedSuspects.length >= item.suspectsTotal,
+      item.cluesFound >= item.cluesTotal &&
+      item.suspectsSeen >= item.suspectsTotal,
   ).length;
 }
 
 function countAllCluesRead(ctx: BadgeContext): number {
   return Object.values(ctx.progress).filter(
-    (item) => item.cluesTotal > 0 && item.foundClues.length >= item.cluesTotal,
+    (item) => item.cluesTotal > 0 && item.cluesFound >= item.cluesTotal,
   ).length;
 }
 
 function countAllSuspectsMet(ctx: BadgeContext): number {
   return Object.values(ctx.progress).filter(
-    (item) => item.suspectsTotal > 0 && item.inspectedSuspects.length >= item.suspectsTotal,
+    (item) => item.suspectsTotal > 0 && item.suspectsSeen >= item.suspectsTotal,
   ).length;
-}
-
-function countCasesWithNotes(ctx: BadgeContext): number {
-  return Object.values(ctx.notes).filter((text) => text.trim().length > 0).length;
 }
 
 /* ------------------------------------------------------------------ */
@@ -194,18 +197,18 @@ export const BADGES: BadgeDefinition[] = [
   { id: "speed_avg_600", family: "rapidite", points: 6, target: 1, label: "Enquête expéditive", description: "Moins de 10 minutes de moyenne sur au moins 5 affaires.", value: (c) => (c.stats.played >= 5 && averageSeconds(c) <= 600 ? 1 : 0) },
 
   /* --- archives ---------------------------------------------------- */
-  { id: "arch_1", family: "archives", points: 6, target: 1, label: "Coup d'œil en arrière", description: "Explorer une affaire archivée.", value: (c) => c.archives.length },
-  { id: "arch_5", family: "archives", points: 6, target: 5, label: "Cinq archives", description: "Explorer 5 affaires archivées.", value: (c) => c.archives.length },
-  { id: "arch_10", family: "archives", points: 6, target: 10, label: "Dix archives", description: "Explorer 10 affaires archivées.", value: (c) => c.archives.length },
-  { id: "arch_20", family: "archives", points: 6, target: 20, label: "Archiviste", description: "Explorer 20 affaires archivées.", title: "Archiviste", value: (c) => c.archives.length },
-  { id: "arch_30", family: "archives", points: 6, target: 30, label: "Mémoire du bureau", description: "Explorer toutes les affaires archivées.", value: (c) => c.archives.length },
+  { id: "arch_1", family: "archives", points: 6, target: 1, label: "Coup d'œil en arrière", description: "Explorer une affaire archivée.", value: (c) => c.archivesCount },
+  { id: "arch_5", family: "archives", points: 6, target: 5, label: "Cinq archives", description: "Explorer 5 affaires archivées.", value: (c) => c.archivesCount },
+  { id: "arch_10", family: "archives", points: 6, target: 10, label: "Dix archives", description: "Explorer 10 affaires archivées.", value: (c) => c.archivesCount },
+  { id: "arch_20", family: "archives", points: 6, target: 20, label: "Archiviste", description: "Explorer 20 affaires archivées.", title: "Archiviste", value: (c) => c.archivesCount },
+  { id: "arch_30", family: "archives", points: 6, target: 30, label: "Mémoire du bureau", description: "Explorer toutes les affaires archivées.", value: (c) => c.archivesCount },
 
   /* --- méthode : fouiller le dossier ------------------------------ */
   { id: "method_clues_1", family: "methode", points: 8, target: 1, label: "Pièce par pièce", description: "Ouvrir toutes les pièces d'une affaire.", value: countAllCluesRead },
   { id: "method_clues_5", family: "methode", points: 8, target: 5, label: "Lecture intégrale", description: "Ouvrir toutes les pièces de 5 affaires.", value: countAllCluesRead },
   { id: "method_suspects_1", family: "methode", points: 8, target: 1, label: "Tous les témoins", description: "Interroger tous les suspects d'une affaire.", value: countAllSuspectsMet },
   { id: "method_complete_3", family: "methode", points: 8, target: 3, label: "Fourmi", description: "Explorer entièrement 3 affaires (pièces et suspects).", title: "Fourmi", value: countFullyExplored },
-  { id: "method_notes_5", family: "methode", points: 8, target: 5, label: "Méthodique", description: "Prendre des notes sur 5 affaires.", title: "Méthodique", value: countCasesWithNotes },
+  { id: "method_notes_5", family: "methode", points: 8, target: 5, label: "Méthodique", description: "Prendre des notes sur 5 affaires.", title: "Méthodique", value: (c) => c.notesCount },
 ];
 
 /* ------------------------------------------------------------------ */
@@ -283,4 +286,89 @@ export function resolveEquipped(
   selected: string | null,
 ): string | null {
   return titleLabel(earned, selected) ? selected : null;
+}
+
+/* ------------------------------------------------------------------ */
+/* Untrusted input                                                    */
+/* ------------------------------------------------------------------ */
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === "object" && value !== null && !Array.isArray(value);
+}
+
+function num(value: unknown): number {
+  return typeof value === "number" && Number.isFinite(value) && value > 0
+    ? Math.min(Math.floor(value), 1_000_000)
+    : 0;
+}
+
+function bool(value: unknown): boolean {
+  return value === true;
+}
+
+function text(value: unknown): string {
+  return typeof value === "string" ? value.slice(0, 120) : "";
+}
+
+function sanitizeRecord(value: unknown): DayRecord {
+  const record = isRecord(value) ? value : {};
+  return {
+    date: text(record.date),
+    caseId: text(record.caseId),
+    score: num(record.score),
+    who: bool(record.who),
+    why: bool(record.why),
+    how: bool(record.how),
+    seconds: num(record.seconds),
+  };
+}
+
+function sanitizeProgress(value: unknown): Record<string, ProgressCount> {
+  if (!isRecord(value)) return {};
+  const out: Record<string, ProgressCount> = {};
+  for (const [caseId, entry] of Object.entries(value).slice(0, 200)) {
+    if (!isRecord(entry)) continue;
+    out[text(caseId)] = {
+      cluesFound: num(entry.cluesFound),
+      cluesTotal: num(entry.cluesTotal),
+      suspectsSeen: num(entry.suspectsSeen),
+      suspectsTotal: num(entry.suspectsTotal),
+    };
+  }
+  return out;
+}
+
+/**
+ * Coerces untrusted JSON — a client payload or a stored document — into a
+ * usable context. Badges are cosmetic, so anything malformed becomes zero.
+ */
+export function sanitizeSnapshot(value: unknown): BadgeContext {
+  const source = isRecord(value) ? value : {};
+  const stats = isRecord(source.stats) ? source.stats : {};
+  const streak = isRecord(source.streak) ? source.streak : {};
+
+  return {
+    stats: {
+      played: num(stats.played),
+      perfect: num(stats.perfect),
+      whoCorrect: num(stats.whoCorrect),
+      whyCorrect: num(stats.whyCorrect),
+      howCorrect: num(stats.howCorrect),
+      scoreSum: num(stats.scoreSum),
+      history: Array.isArray(stats.history)
+        ? stats.history
+            .slice(0, 400)
+            .map(sanitizeRecord)
+            .filter((record) => record.date.length > 0 && record.caseId.length > 0)
+        : [],
+    },
+    streak: {
+      currentStreak: num(streak.currentStreak),
+      bestStreak: num(streak.bestStreak),
+      lastPlayedDate: typeof streak.lastPlayedDate === "string" ? text(streak.lastPlayedDate) : null,
+    },
+    archivesCount: num(source.archivesCount),
+    progress: sanitizeProgress(source.progress),
+    notesCount: num(source.notesCount),
+  };
 }

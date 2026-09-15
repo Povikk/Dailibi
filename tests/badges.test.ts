@@ -8,11 +8,13 @@ import {
   newlyEarnedBadges,
   rankFor,
   resolveEquipped,
+  sanitizeSnapshot,
   totalPoints,
   unlockedTitles,
   type BadgeContext,
+  type ProgressCount,
 } from "@/game/badges";
-import type { CaseProgress, DailibiStats, DayRecord, StreakState } from "@/lib/storage";
+import type { DailibiStats, DayRecord, StreakState } from "@/lib/storage";
 
 function emptyContext(): BadgeContext {
   const stats: DailibiStats = {
@@ -25,7 +27,7 @@ function emptyContext(): BadgeContext {
     history: [],
   };
   const streak: StreakState = { currentStreak: 0, bestStreak: 0, lastPlayedDate: null };
-  return { stats, streak, archives: [], progress: {}, notes: {} };
+  return { stats, streak, archivesCount: 0, progress: {}, notesCount: 0 };
 }
 
 function withStats(
@@ -48,11 +50,11 @@ function record(overrides: Partial<DayRecord> = {}): DayRecord {
   };
 }
 
-function progress(overrides: Partial<CaseProgress> = {}): CaseProgress {
+function progress(overrides: Partial<ProgressCount> = {}): ProgressCount {
   return {
-    foundClues: [],
-    inspectedSuspects: [],
+    cluesFound: 0,
     cluesTotal: 5,
+    suspectsSeen: 0,
     suspectsTotal: 3,
     ...overrides,
   };
@@ -169,7 +171,7 @@ describe("badges de méthode", () => {
     const ctx = {
       ...emptyContext(),
       progress: {
-        "case-a": progress({ foundClues: ["a", "b", "c", "d", "e"], inspectedSuspects: ["x", "y", "z"] }),
+        "case-a": progress({ cluesFound: 5, suspectsSeen: 3 }),
       },
     };
     expect(evaluateAllBadges(ctx).find((s) => s.badge.id === "method_complete_3")!.value).toBe(1);
@@ -179,7 +181,7 @@ describe("badges de méthode", () => {
   it("ne récompense pas une exploration partielle", () => {
     const ctx = {
       ...emptyContext(),
-      progress: { "case-a": progress({ foundClues: ["a"], inspectedSuspects: ["x"] }) },
+      progress: { "case-a": progress({ cluesFound: 1, suspectsSeen: 1 }) },
     };
     expect(evaluateAllBadges(ctx).find((s) => s.badge.id === "method_complete_3")!.value).toBe(0);
     expect(evaluateAllBadges(ctx).find((s) => s.badge.id === "method_clues_1")!.unlocked).toBe(false);
@@ -215,5 +217,48 @@ describe("nouveaux badges et titre équipé", () => {
     expect(findBadge(titan.id)).toBeDefined();
     expect(resolveEquipped({}, titan.id)).toBeNull();
     expect(resolveEquipped({ [titan.id]: "x" }, titan.id)).toBe(titan.id);
+  });
+});
+
+describe("assainissement des entrées non fiables", () => {
+  it("remet à zéro tout ce qui est malformé", () => {
+    const context = sanitizeSnapshot({
+      stats: { played: "beaucoup", perfect: -3, history: "pas-un-tableau" },
+      streak: { bestStreak: 4.7, lastPlayedDate: 42 },
+      archivesCount: "x",
+      progress: { "case-a": { cluesFound: "x", cluesTotal: 5 } },
+      notesCount: null,
+    });
+
+    expect(context.stats.played).toBe(0);
+    expect(context.stats.perfect).toBe(0);
+    expect(context.stats.history).toEqual([]);
+    expect(context.streak.bestStreak).toBe(4);
+    expect(context.streak.lastPlayedDate).toBeNull();
+    expect(context.archivesCount).toBe(0);
+    expect(context.progress["case-a"]).toEqual({
+      cluesFound: 0,
+      cluesTotal: 5,
+      suspectsSeen: 0,
+      suspectsTotal: 0,
+    });
+    expect(context.notesCount).toBe(0);
+  });
+
+  it("filtre les entrées de chronologie inexploitables", () => {
+    const context = sanitizeSnapshot({
+      stats: {
+        played: 2,
+        history: [
+          { date: "2026-09-14", caseId: "x", score: 100, who: true, why: true, how: true, seconds: 120 },
+          { date: "", caseId: "y" },
+          null,
+        ],
+      },
+    });
+
+    expect(context.stats.played).toBe(2);
+    expect(context.stats.history).toHaveLength(1);
+    expect(context.stats.history[0].caseId).toBe("x");
   });
 });

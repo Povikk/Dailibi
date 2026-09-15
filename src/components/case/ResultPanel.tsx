@@ -7,7 +7,7 @@ import { CaseStatsPanel } from "@/components/case/CaseStatsPanel";
 import { currentDailyKey, msUntilNextRollover } from "@/lib/daily";
 import { buildShareText } from "@/lib/share";
 import { loadStreak, recordResult, saveReviewResult } from "@/lib/storage";
-import { awardBadges } from "@/game/context";
+import { awardBadges, syncPlayerProfile } from "@/game/context";
 import type { BadgeDefinition } from "@/game/badges";
 
 const KIND_LABEL: Record<string, string> = {
@@ -54,6 +54,7 @@ export function ResultPanel({
     setStreak(stored.streak);
     saveReviewResult(result);
     setUnlocked(awardBadges());
+    void syncPlayerProfile();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [reviewOnly]);
 

@@ -41,6 +41,14 @@ npm run db:migrate         # base distante (production, aussi appliquée par la 
 
 Un dossier n'affiche ses pourcentages qu'à partir de 10 accusations, et le jour même seulement après avoir soi-même accusé — sinon les stats spoileraient la réponse.
 
+## Profil anonyme et code de secours
+
+Les distinctions, le grade et le titre sont recalculés **côté serveur** à partir d'un instantané de progression (compteurs uniquement : parties jouées, meilleure série, affaires entièrement explorées…). Aucun compte n'est créé : le navigateur garde un secret aléatoire qui sert à la fois d'identifiant et de **code de secours**, et le serveur n'en stocke qu'un hachage SHA-256.
+
+Le code affiché dans *Historique → Code de secours* permet de retrouver ses distinctions sur un autre appareil. Les statistiques personnelles, elles, restent locales. Le profil ne régresse jamais : un navigateur vidé n'efface pas les badges déjà gagnés.
+
+Quand la collection est terminée, la page d'accueil affiche le bilan du joueur (affaires classées, résolues, moyenne, distinctions) au lieu d'un emplacement vide.
+
 La collection générée peut être reconstruite sans toucher à l'affaire historique nº14 :
 
 ```bash

@@ -4,7 +4,8 @@ import Link from "next/link";
 import { StatsBar } from "@/components/home/StatsBar";
 import { DailyCaseStatus } from "@/components/home/DailyCaseStatus";
 import { WelcomeTutorial } from "@/components/home/WelcomeTutorial";
-import { currentCase, nextCaseDate, toClientCase } from "@/server/caseStore";
+import { CollectionEnd } from "@/components/home/CollectionEnd";
+import { currentCase, listCasesForArchive, nextCaseDate, toClientCase } from "@/server/caseStore";
 import { formatKey } from "@/lib/format";
 
 export const dynamic = "force-dynamic";
@@ -13,7 +14,12 @@ export default async function HomePage() {
   const file = currentCase();
 
   if (!file) {
-    return <AwaitingCase nextDate={nextCaseDate()} />;
+    return (
+      <AwaitingCase
+        nextDate={nextCaseDate()}
+        totalCases={listCasesForArchive().length}
+      />
+    );
   }
 
   const caseData = toClientCase(file);
@@ -76,7 +82,13 @@ export default async function HomePage() {
  * Shown on a day without a published case: the calendar is finite, so the
  * next dossier is announced instead of replaying an old one.
  */
-function AwaitingCase({ nextDate }: { nextDate?: string }) {
+function AwaitingCase({
+  nextDate,
+  totalCases,
+}: {
+  nextDate?: string;
+  totalCases: number;
+}) {
   return (
     <main className="mx-auto w-full max-w-3xl px-4 pb-16 pt-10 sm:px-6">
       <header className="text-center">
@@ -86,26 +98,28 @@ function AwaitingCase({ nextDate }: { nextDate?: string }) {
         <h1 className="mt-2 text-5xl font-black tracking-tighter sm:text-6xl">DAILIBI</h1>
       </header>
 
-      <article className="card mt-8 p-6 text-center sm:p-8">
-        <p className="label-meta">Dossier en attente</p>
-        <h2 className="mt-2 text-2xl font-black tracking-tight sm:text-3xl">
-          AUCUNE AFFAIRE AUJOURD&apos;HUI
-        </h2>
-        <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-paper-300/70">
-          {nextDate
-            ? `La prochaine enquête ouvre le ${formatKey(nextDate)} à minuit, heure de Paris.`
-            : "La collection publiée est terminée. De nouvelles affaires arriveront bientôt."}
-        </p>
+      {nextDate ? (
+        <article className="card mt-8 p-6 text-center sm:p-8">
+          <p className="label-meta">Dossier en attente</p>
+          <h2 className="mt-2 text-2xl font-black tracking-tight sm:text-3xl">
+            AUCUNE AFFAIRE AUJOURD&apos;HUI
+          </h2>
+          <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-paper-300/70">
+            La prochaine enquête ouvre le {formatKey(nextDate)} à minuit, heure de Paris.
+          </p>
 
-        <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
-          <Link href="/archives" className="btn-primary">
-            Explorer les archives
-          </Link>
-          <Link href="/historique" className="btn-ghost">
-            Mon historique
-          </Link>
-        </div>
-      </article>
+          <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
+            <Link href="/archives" className="btn-primary">
+              Explorer les archives
+            </Link>
+            <Link href="/historique" className="btn-ghost">
+              Mon historique
+            </Link>
+          </div>
+        </article>
+      ) : (
+        <CollectionEnd totalCases={totalCases} />
+      )}
 
       <div className="mt-6 flex flex-col items-center gap-3 text-center">
         <StatsBar />

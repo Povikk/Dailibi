@@ -1,6 +1,7 @@
 import "server-only";
 
 import type { AccuseResult } from "@/types/case";
+import { getDatabase, hashSecret } from "@/server/d1";
 
 /**
  * Aggregate, cross-player statistics.
@@ -28,29 +29,12 @@ export type CaseStats = {
   questions: Record<string, QuestionStats>;
 };
 
-type EnvWithDb = { env?: { DB?: D1Database } };
-
-async function getDatabase(): Promise<D1Database | undefined> {
-  try {
-    const mod = (await import(
-      /* webpackIgnore: true */ /* @vite-ignore */ "cloudflare:workers"
-    )) as EnvWithDb;
-    return mod.env?.DB;
-  } catch {
-    return undefined;
-  }
-}
-
 /**
  * Pseudonym scoped to one case: the same device yields a different hash on
  * every dossier, so plays cannot be correlated from one day to the next.
  */
-async function hashPlayer(secret: string, caseId: string): Promise<string> {
-  const bytes = new TextEncoder().encode(`${caseId}:${secret}`);
-  const digest = await crypto.subtle.digest("SHA-256", bytes);
-  return Array.from(new Uint8Array(digest))
-    .map((byte) => byte.toString(16).padStart(2, "0"))
-    .join("");
+function hashPlayer(secret: string, caseId: string): Promise<string> {
+  return hashSecret(secret, caseId);
 }
 
 /**

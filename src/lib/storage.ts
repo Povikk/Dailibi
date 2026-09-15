@@ -192,6 +192,13 @@ export function loadPlayerSecret(): string {
   return secret;
 }
 
+/** Adopts a recovery code on another device. */
+export function savePlayerSecret(secret: string): void {
+  const clean = secret.trim();
+  if (clean.length < 16) return;
+  writeJson(PLAYER_KEY, { secret: clean });
+}
+
 function randomSecret(): string {
   const webCrypto = globalThis.crypto;
   if (webCrypto?.randomUUID) return webCrypto.randomUUID();
