@@ -243,7 +243,7 @@
         "id": "marc_alibi",
         "suspectId": "marc",
         "question": "Donnez votre emploi du temps précis, Marc Engel.",
-        "answer": "« J'assistais au conseil municipal retransmis en direct. »",
+        "answer": "« J'assistais au conseil municipal retransmis en direct. Personne ne peut dire le contraire, c'est la vérité. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
@@ -257,7 +257,7 @@
         "id": "lola_alibi",
         "suspectId": "lola",
         "question": "Où étiez-vous au moment des faits, Lola Weiss ?",
-        "answer": "« J'ai quitté l'atelier à 19 h. »",
+        "answer": "« J'ai quitté l'atelier à 19 h. Je suis parti sans rien remarquer de particulier. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
@@ -271,7 +271,7 @@
         "id": "hugo_alibi",
         "suspectId": "hugo",
         "question": "Que faisiez-vous pendant la période concernée, Hugo Tann ?",
-        "answer": "« Je dépannais une cliente à Kehl. »",
+        "answer": "« Je dépannais une cliente à Kehl. Je ne vois pas ce que je pourrais ajouter de plus. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {

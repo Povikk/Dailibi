@@ -243,7 +243,7 @@
         "id": "diane_alibi",
         "suspectId": "diane",
         "question": "Où étiez-vous au moment des faits, Diane Fabre ?",
-        "answer": "« Je dînais avec des mécènes jusqu'à 23 h. »",
+        "answer": "« Je dînais avec des mécènes jusqu'à 23 h. Je ne vois pas ce que je pourrais ajouter de plus. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
@@ -257,7 +257,7 @@
         "id": "nils_alibi",
         "suspectId": "nils",
         "question": "Que faisiez-vous pendant la période concernée, Nils Caron ?",
-        "answer": "« J'ai terminé le scan à 20 h 10 et rendu la clé. »",
+        "answer": "« J'ai terminé le scan à 20 h 10 et rendu la clé. Interrogez les autres, ils vous diront la même chose. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
@@ -271,7 +271,7 @@
         "id": "helene_alibi",
         "suspectId": "helene",
         "question": "Donnez votre emploi du temps précis, Hélène Jouve.",
-        "answer": "« J'assistais au même dîner que Diane. »",
+        "answer": "« J'assistais au même dîner que Diane. C'est tout ce que j'ai à dire sur ce moment-là. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {

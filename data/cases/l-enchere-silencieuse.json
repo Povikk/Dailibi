@@ -236,7 +236,7 @@
         "id": "vera_alibi",
         "suspectId": "vera",
         "question": "Que faisiez-vous pendant la période concernée, Véra Klein ?",
-        "answer": "« Je n'ai jamais laissé le lot hors de vue. »",
+        "answer": "« Je n'ai jamais laissé le lot hors de vue. Je suis parti sans rien remarquer de particulier. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
@@ -250,7 +250,7 @@
         "id": "nassim_alibi",
         "suspectId": "nassim",
         "question": "Donnez votre emploi du temps précis, Nassim Grégoire.",
-        "answer": "« Je travaillais aux archives nationales le soir de l'échange. »",
+        "answer": "« Je travaillais aux archives nationales le soir de l'échange. Je ne vois pas ce que je pourrais ajouter de plus. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
@@ -264,7 +264,7 @@
         "id": "colombe_alibi",
         "suspectId": "colombe",
         "question": "Où étiez-vous au moment des faits, Colombe Masson ?",
-        "answer": "« J'emballais seule les objets invendus. »",
+        "answer": "« J'emballais seule les objets invendus. Interrogez les autres, ils vous diront la même chose. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {

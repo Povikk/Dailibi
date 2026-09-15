@@ -243,7 +243,7 @@
         "id": "gaspard_alibi",
         "suspectId": "gaspard",
         "question": "Donnez votre emploi du temps précis, Gaspard Lin.",
-        "answer": "« Je n'ai jamais quitté la régie. »",
+        "answer": "« Je n'ai jamais quitté la régie. C'est tout ce que j'ai à dire sur ce moment-là. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
@@ -257,7 +257,7 @@
         "id": "mina_alibi",
         "suspectId": "mina",
         "question": "Où étiez-vous au moment des faits, Mina Ferhat ?",
-        "answer": "« J'ai posé une tasse propre avant 23 h puis je suis partie. »",
+        "answer": "« J'ai posé une tasse propre avant 23 h puis je suis partie. J'ai répété cette version dès le premier interrogatoire. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
@@ -271,7 +271,7 @@
         "id": "alban_alibi",
         "suspectId": "alban",
         "question": "Que faisiez-vous pendant la période concernée, Alban Reyes ?",
-        "answer": "« J'assistais à un gala retransmis sur les réseaux. »",
+        "answer": "« J'assistais à un gala retransmis sur les réseaux. Rien ne m'a semblé anormal avant de partir. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {

@@ -236,7 +236,7 @@
         "id": "tao_alibi",
         "suspectId": "tao",
         "question": "Où étiez-vous au moment des faits, Tao Ménard ?",
-        "answer": "« Je surveillais les systèmes depuis chez moi. »",
+        "answer": "« Je surveillais les systèmes depuis chez moi. J'ai répété cette version dès le premier interrogatoire. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
@@ -250,7 +250,7 @@
         "id": "gaelle_alibi",
         "suspectId": "gaelle",
         "question": "Que faisiez-vous pendant la période concernée, Gaëlle Rios ?",
-        "answer": "« J'étais sur la route vers Perpignan. »",
+        "answer": "« J'étais sur la route vers Perpignan. Rien ne m'a semblé anormal avant de partir. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
@@ -264,7 +264,7 @@
         "id": "nora_alibi",
         "suspectId": "nora",
         "question": "Donnez votre emploi du temps précis, Nora Saïd.",
-        "answer": "« Je travaillais dans la serre A jusqu'à 22 h. »",
+        "answer": "« Je travaillais dans la serre A jusqu'à 22 h. Vous pouvez vérifier : je n'ai rien à cacher sur cette heure-là. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {

@@ -245,7 +245,7 @@
         "id": "alma_alibi",
         "suspectId": "alma",
         "question": "Que faisiez-vous pendant la période concernée, Alma Veyrac ?",
-        "answer": "« Je dormais dans la couchette voisine sous somnifère. »",
+        "answer": "« Je dormais dans la couchette voisine sous somnifère. Rien ne m'a semblé anormal avant de partir. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
@@ -259,7 +259,7 @@
         "id": "felix_alibi",
         "suspectId": "felix",
         "question": "Donnez votre emploi du temps précis, Félix Donnadieu.",
-        "answer": "« J'effectuais la ronde en voiture 12. »",
+        "answer": "« J'effectuais la ronde en voiture 12. Vous pouvez vérifier : je n'ai rien à cacher sur cette heure-là. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
@@ -273,7 +273,7 @@
         "id": "leila_alibi",
         "suspectId": "leila",
         "question": "Où étiez-vous au moment des faits, Leïla Soriano ?",
-        "answer": "« Je travaillais au wagon-bar jusqu'à la fermeture. »",
+        "answer": "« Je travaillais au wagon-bar jusqu'à la fermeture. Personne ne peut dire le contraire, c'est la vérité. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {

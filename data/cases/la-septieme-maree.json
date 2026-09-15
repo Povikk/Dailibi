@@ -238,7 +238,7 @@
         "id": "ewen_alibi",
         "suspectId": "ewen",
         "question": "Donnez votre emploi du temps précis, Éwen Piat.",
-        "answer": "« Je travaillais sur mon chaland, suivi par GPS. »",
+        "answer": "« Je travaillais sur mon chaland, suivi par GPS. Vous pouvez vérifier : je n'ai rien à cacher sur cette heure-là. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
@@ -252,7 +252,7 @@
         "id": "clara_alibi",
         "suspectId": "clara",
         "question": "Où étiez-vous au moment des faits, Clara Nomura ?",
-        "answer": "« J'ai préparé tous les réservoirs à 17 h. »",
+        "answer": "« J'ai préparé tous les réservoirs à 17 h. Personne ne peut dire le contraire, c'est la vérité. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
@@ -266,7 +266,7 @@
         "id": "marc_alibi",
         "suspectId": "marc",
         "question": "Que faisiez-vous pendant la période concernée, Marc Vignal ?",
-        "answer": "« Je dînais avec la mairie pendant la première vague. »",
+        "answer": "« Je dînais avec la mairie pendant la première vague. Je suis parti sans rien remarquer de particulier. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {

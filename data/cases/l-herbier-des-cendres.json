@@ -238,7 +238,7 @@
         "id": "samir_alibi",
         "suspectId": "samir",
         "question": "Donnez votre emploi du temps précis, Samir Ouali.",
-        "answer": "« J'ai quitté le laboratoire à 18 h avec Jeanne. »",
+        "answer": "« J'ai quitté le laboratoire à 18 h avec Jeanne. Je suis parti sans rien remarquer de particulier. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
@@ -252,7 +252,7 @@
         "id": "elise_alibi",
         "suspectId": "elise",
         "question": "Où étiez-vous au moment des faits, Élise Martel ?",
-        "answer": "« Je classais des graines dans l'aile publique jusqu'à 20 h. »",
+        "answer": "« Je classais des graines dans l'aile publique jusqu'à 20 h. Je ne vois pas ce que je pourrais ajouter de plus. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
@@ -266,7 +266,7 @@
         "id": "pavel_alibi",
         "suspectId": "pavel",
         "question": "Que faisiez-vous pendant la période concernée, Pavel Duroc ?",
-        "answer": "« Je participais à un séminaire en visioconférence. »",
+        "answer": "« Je participais à un séminaire en visioconférence. Interrogez les autres, ils vous diront la même chose. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {

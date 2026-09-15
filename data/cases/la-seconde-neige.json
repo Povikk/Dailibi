@@ -245,7 +245,7 @@
         "id": "loup_alibi",
         "suspectId": "loup",
         "question": "Où étiez-vous au moment des faits, Loup Charrier ?",
-        "answer": "« Je ne suis pas sorti après le début de la tempête. »",
+        "answer": "« Je ne suis pas sorti après le début de la tempête. Je ne vois pas ce que je pourrais ajouter de plus. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
@@ -259,7 +259,7 @@
         "id": "mila_alibi",
         "suspectId": "mila",
         "question": "Que faisiez-vous pendant la période concernée, Mila Anders ?",
-        "answer": "« Je travaillais dans la salle radio avec deux chercheurs. »",
+        "answer": "« Je travaillais dans la salle radio avec deux chercheurs. Interrogez les autres, ils vous diront la même chose. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
@@ -273,7 +273,7 @@
         "id": "jon_alibi",
         "suspectId": "jon",
         "question": "Donnez votre emploi du temps précis, Jon Ravel.",
-        "answer": "« Je préparais le petit-déjeuner dès 4 h 30. »",
+        "answer": "« Je préparais le petit-déjeuner dès 4 h 30. C'est tout ce que j'ai à dire sur ce moment-là. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {

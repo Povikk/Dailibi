@@ -238,7 +238,7 @@
         "id": "come_alibi",
         "suspectId": "come",
         "question": "Donnez votre emploi du temps précis, Côme Vidal.",
-        "answer": "« Je réparais une autre figure dans l'atelier filmé. »",
+        "answer": "« Je réparais une autre figure dans l'atelier filmé. Je suis parti sans rien remarquer de particulier. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
@@ -252,7 +252,7 @@
         "id": "roxane_alibi",
         "suspectId": "roxane",
         "question": "Où étiez-vous au moment des faits, Roxane Perez ?",
-        "answer": "« J'étais au vestiaire pendant le discours. »",
+        "answer": "« J'étais au vestiaire pendant le discours. Je ne vois pas ce que je pourrais ajouter de plus. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
@@ -266,7 +266,7 @@
         "id": "etienne_alibi",
         "suspectId": "etienne",
         "question": "Que faisiez-vous pendant la période concernée, Étienne Valois ?",
-        "answer": "« Je prononçais le discours dans la grande salle. »",
+        "answer": "« Je prononçais le discours dans la grande salle. Interrogez les autres, ils vous diront la même chose. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {

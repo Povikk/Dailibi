@@ -238,7 +238,7 @@
         "id": "nour_alibi",
         "suspectId": "nour",
         "question": "Où étiez-vous au moment des faits, Nour Lemaire ?",
-        "answer": "« J'analysais des larves dans le laboratoire vitré. »",
+        "answer": "« J'analysais des larves dans le laboratoire vitré. Je suis parti sans rien remarquer de particulier. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
@@ -252,7 +252,7 @@
         "id": "didier_alibi",
         "suspectId": "didier",
         "question": "Que faisiez-vous pendant la période concernée, Didier Pons ?",
-        "answer": "« Je traitais un champ à trois kilomètres. »",
+        "answer": "« Je traitais un champ à trois kilomètres. Je ne vois pas ce que je pourrais ajouter de plus. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
@@ -266,7 +266,7 @@
         "id": "eloi_alibi",
         "suspectId": "eloi",
         "question": "Donnez votre emploi du temps précis, Éloi Vernet.",
-        "answer": "« J'ai donné le même sirop aux douze ruches. »",
+        "answer": "« J'ai donné le même sirop aux douze ruches. Interrogez les autres, ils vous diront la même chose. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {

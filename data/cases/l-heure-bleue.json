@@ -238,7 +238,7 @@
         "id": "iris_alibi",
         "suspectId": "iris",
         "question": "Que faisiez-vous pendant la période concernée, Iris Meunier ?",
-        "answer": "« J'ai quitté l'atelier à 19 h 10 après avoir posé les scellés. »",
+        "answer": "« J'ai quitté l'atelier à 19 h 10 après avoir posé les scellés. J'ai répété cette version dès le premier interrogatoire. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
@@ -252,7 +252,7 @@
         "id": "mathieu_alibi",
         "suspectId": "mathieu",
         "question": "Donnez votre emploi du temps précis, Mathieu Orsini.",
-        "answer": "« J'ai inventorié les cadres au sous-sol jusqu'à 20 h. »",
+        "answer": "« J'ai inventorié les cadres au sous-sol jusqu'à 20 h. Rien ne m'a semblé anormal avant de partir. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
@@ -266,7 +266,7 @@
         "id": "salome_alibi",
         "suspectId": "salome",
         "question": "Où étiez-vous au moment des faits, Salomé Varenne ?",
-        "answer": "« Je travaillais à la bibliothèque, visible du gardien. »",
+        "answer": "« Je travaillais à la bibliothèque, visible du gardien. Vous pouvez vérifier : je n'ai rien à cacher sur cette heure-là. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {

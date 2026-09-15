@@ -238,7 +238,7 @@
         "id": "pere_alibi",
         "suspectId": "pere",
         "question": "Que faisiez-vous pendant la période concernée, Père Augustin ?",
-        "answer": "« Je priais au premier rang de la cour. »",
+        "answer": "« Je priais au premier rang de la cour. Interrogez les autres, ils vous diront la même chose. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
@@ -252,7 +252,7 @@
         "id": "leonie_alibi",
         "suspectId": "leonie",
         "question": "Donnez votre emploi du temps précis, Léonie Pujol.",
-        "answer": "« J'ai quitté le clocher avant 19 h. »",
+        "answer": "« J'ai quitté le clocher avant 19 h. C'est tout ce que j'ai à dire sur ce moment-là. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
@@ -266,7 +266,7 @@
         "id": "basile_alibi",
         "suspectId": "basile",
         "question": "Où étiez-vous au moment des faits, Basile Rémond ?",
-        "answer": "« Je fermais la boutique avec deux visiteurs. »",
+        "answer": "« Je fermais la boutique avec deux visiteurs. J'ai répété cette version dès le premier interrogatoire. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {

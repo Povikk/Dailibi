@@ -27,6 +27,20 @@ describe("qualité éditoriale des affaires", () => {
     }
   });
 
+  it("ne recopie pas la déclaration spontanée dans la première réponse", () => {
+    for (const file of files) {
+      for (const suspect of file.public.suspects) {
+        const first = file.public.interviews.find(
+          (interview) => interview.suspectId === suspect.id && !interview.unlockedByClueId,
+        );
+        expect(first, `${file.public.number}: ${suspect.name}`).toBeDefined();
+        expect(first!.answer, `${file.public.number}: ${suspect.name}`).not.toBe(
+          suspect.claimedAlibi,
+        );
+      }
+    }
+  });
+
   it("utilise des choix d'accusation propres à chaque affaire", () => {
     const banned = [
       "Forcer directement l'accès principal puis dissimuler les traces",

@@ -245,7 +245,7 @@
         "id": "mona_alibi",
         "suspectId": "mona",
         "question": "Donnez votre emploi du temps précis, Mona Brémont.",
-        "answer": "« J'assistais au dîner des mécènes. »",
+        "answer": "« J'assistais au dîner des mécènes. Rien ne m'a semblé anormal avant de partir. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
@@ -259,7 +259,7 @@
         "id": "yacine_alibi",
         "suspectId": "yacine",
         "question": "Où étiez-vous au moment des faits, Yacine Dupré ?",
-        "answer": "« J'ai refermé la caisse à 18 h. »",
+        "answer": "« J'ai refermé la caisse à 18 h. Vous pouvez vérifier : je n'ai rien à cacher sur cette heure-là. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
@@ -273,7 +273,7 @@
         "id": "odette_alibi",
         "suspectId": "odette",
         "question": "Que faisiez-vous pendant la période concernée, Odette Marin ?",
-        "answer": "« Je répétais mon discours avec le commissaire. »",
+        "answer": "« Je répétais mon discours avec le commissaire. Personne ne peut dire le contraire, c'est la vérité. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {

@@ -243,7 +243,7 @@
         "id": "june_alibi",
         "suspectId": "june",
         "question": "Que faisiez-vous pendant la période concernée, June Luce ?",
-        "answer": "« Je dormais dans la chambre d'amis. »",
+        "answer": "« Je dormais dans la chambre d'amis. Personne ne peut dire le contraire, c'est la vérité. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
@@ -257,7 +257,7 @@
         "id": "benoit_alibi",
         "suspectId": "benoit",
         "question": "Donnez votre emploi du temps précis, Benoît Carsin.",
-        "answer": "« J'ai quitté la propriété à 20 h. »",
+        "answer": "« J'ai quitté la propriété à 20 h. Je suis parti sans rien remarquer de particulier. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
@@ -271,7 +271,7 @@
         "id": "dr_alibi",
         "suspectId": "dr",
         "question": "Où étiez-vous au moment des faits, Dr Selma Wong ?",
-        "answer": "« J'étais de garde à la clinique. »",
+        "answer": "« J'étais de garde à la clinique. Je ne vois pas ce que je pourrais ajouter de plus. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {

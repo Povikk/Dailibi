@@ -243,7 +243,7 @@
         "id": "zoe_alibi",
         "suspectId": "zoe",
         "question": "Où étiez-vous au moment des faits, Zoé Henin ?",
-        "answer": "« J'ai terminé le montage à 20 h et scellé la zone. »",
+        "answer": "« J'ai terminé le montage à 20 h et scellé la zone. Rien ne m'a semblé anormal avant de partir. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
@@ -257,7 +257,7 @@
         "id": "milan_alibi",
         "suspectId": "milan",
         "question": "Que faisiez-vous pendant la période concernée, Milan Roche ?",
-        "answer": "« Je récupérais en chambre d'hôtel. »",
+        "answer": "« Je récupérais en chambre d'hôtel. Vous pouvez vérifier : je n'ai rien à cacher sur cette heure-là. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
@@ -271,7 +271,7 @@
         "id": "armand_alibi",
         "suspectId": "armand",
         "question": "Donnez votre emploi du temps précis, Armand Seux.",
-        "answer": "« J'ai vérifié la prise rouge à 21 h. »",
+        "answer": "« J'ai vérifié la prise rouge à 21 h. Personne ne peut dire le contraire, c'est la vérité. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {

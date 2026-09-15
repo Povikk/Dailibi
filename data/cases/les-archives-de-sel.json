@@ -236,7 +236,7 @@
         "id": "gilles_alibi",
         "suspectId": "gilles",
         "question": "Que faisiez-vous pendant la période concernée, Gilles Roth ?",
-        "answer": "« Je guidais un groupe scolaire en surface. »",
+        "answer": "« Je guidais un groupe scolaire en surface. J'ai répété cette version dès le premier interrogatoire. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
@@ -250,7 +250,7 @@
         "id": "mara_alibi",
         "suspectId": "mara",
         "question": "Donnez votre emploi du temps précis, Mara Klein.",
-        "answer": "« Je n'ai ouvert aucune caisse ce jour-là. »",
+        "answer": "« Je n'ai ouvert aucune caisse ce jour-là. Rien ne m'a semblé anormal avant de partir. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
@@ -264,7 +264,7 @@
         "id": "sofiane_alibi",
         "suspectId": "sofiane",
         "question": "Où étiez-vous au moment des faits, Sofiane Clerc ?",
-        "answer": "« Je travaillais au tribunal de Metz. »",
+        "answer": "« Je travaillais au tribunal de Metz. Vous pouvez vérifier : je n'ai rien à cacher sur cette heure-là. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {

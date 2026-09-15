@@ -245,7 +245,7 @@
         "id": "lucien_alibi",
         "suspectId": "lucien",
         "question": "Donnez votre emploi du temps précis, Lucien Prado.",
-        "answer": "« J'ai dormi dans mon hôtel après 22 h. »",
+        "answer": "« J'ai dormi dans mon hôtel après 22 h. Rien ne m'a semblé anormal avant de partir. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
@@ -259,7 +259,7 @@
         "id": "maelle_alibi",
         "suspectId": "maelle",
         "question": "Où étiez-vous au moment des faits, Maëlle Coste ?",
-        "answer": "« J'ai lancé la synchronisation à 21 h puis fermé mon ordinateur. »",
+        "answer": "« J'ai lancé la synchronisation à 21 h puis fermé mon ordinateur. Vous pouvez vérifier : je n'ai rien à cacher sur cette heure-là. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
@@ -273,7 +273,7 @@
         "id": "ruben_alibi",
         "suspectId": "ruben",
         "question": "Que faisiez-vous pendant la période concernée, Ruben Keller ?",
-        "answer": "« Je répétais un trait chez moi en appel vidéo avec une collègue. »",
+        "answer": "« Je répétais un trait chez moi en appel vidéo avec une collègue. Personne ne peut dire le contraire, c'est la vérité. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {

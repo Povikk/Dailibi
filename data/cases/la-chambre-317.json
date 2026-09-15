@@ -238,7 +238,7 @@
         "id": "bastien_alibi",
         "suspectId": "bastien",
         "question": "Où étiez-vous au moment des faits, Bastien Cazal ?",
-        "answer": "« Je présidais un dîner caritatif filmé jusqu'à minuit. »",
+        "answer": "« Je présidais un dîner caritatif filmé jusqu'à minuit. Vous pouvez vérifier : je n'ai rien à cacher sur cette heure-là. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
@@ -252,7 +252,7 @@
         "id": "yuna_alibi",
         "suspectId": "yuna",
         "question": "Que faisiez-vous pendant la période concernée, Yuna Delmas ?",
-        "answer": "« Je n'ai jamais quitté la réception. »",
+        "answer": "« Je n'ai jamais quitté la réception. Personne ne peut dire le contraire, c'est la vérité. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
@@ -266,7 +266,7 @@
         "id": "clement_alibi",
         "suspectId": "clement",
         "question": "Donnez votre emploi du temps précis, Clément Rive.",
-        "answer": "« Je suis reparti par le dernier tram à 23 h 34. »",
+        "answer": "« Je suis reparti par le dernier tram à 23 h 34. Je suis parti sans rien remarquer de particulier. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {

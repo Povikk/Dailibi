@@ -238,7 +238,7 @@
         "id": "natan_alibi",
         "suspectId": "natan",
         "question": "Donnez votre emploi du temps précis, Natan Joly.",
-        "answer": "« Je suivais la prise au moniteur avec toute l'équipe. »",
+        "answer": "« Je suivais la prise au moniteur avec toute l'équipe. Interrogez les autres, ils vous diront la même chose. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
@@ -252,7 +252,7 @@
         "id": "sarah_alibi",
         "suspectId": "sarah",
         "question": "Où étiez-vous au moment des faits, Sarah Montel ?",
-        "answer": "« J'attendais dans le bateau de sécurité. »",
+        "answer": "« J'attendais dans le bateau de sécurité. C'est tout ce que j'ai à dire sur ce moment-là. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
@@ -266,7 +266,7 @@
         "id": "paul_alibi",
         "suspectId": "paul",
         "question": "Que faisiez-vous pendant la période concernée, Paul Eden ?",
-        "answer": "« Je téléphonais depuis la régie mobile. »",
+        "answer": "« Je téléphonais depuis la régie mobile. J'ai répété cette version dès le premier interrogatoire. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {

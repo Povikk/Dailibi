@@ -236,7 +236,7 @@
         "id": "lila_alibi",
         "suspectId": "lila",
         "question": "Où étiez-vous au moment des faits, Lila Charvet ?",
-        "answer": "« J'ai validé la carte à 21 h puis être rentrée. »",
+        "answer": "« J'ai validé la carte à 21 h puis être rentrée. Vous pouvez vérifier : je n'ai rien à cacher sur cette heure-là. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
@@ -250,7 +250,7 @@
         "id": "owen_alibi",
         "suspectId": "owen",
         "question": "Que faisiez-vous pendant la période concernée, Owen Price ?",
-        "answer": "« Je suivais le départ depuis le quai. »",
+        "answer": "« Je suivais le départ depuis le quai. Personne ne peut dire le contraire, c'est la vérité. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
@@ -264,7 +264,7 @@
         "id": "marta_alibi",
         "suspectId": "marta",
         "question": "Donnez votre emploi du temps précis, Marta Siwek.",
-        "answer": "« Je présentais mes travaux à Varsovie en visioconférence. »",
+        "answer": "« Je présentais mes travaux à Varsovie en visioconférence. Je suis parti sans rien remarquer de particulier. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {

@@ -243,7 +243,7 @@
         "id": "joel_alibi",
         "suspectId": "joel",
         "question": "Où étiez-vous au moment des faits, Joël Garnier ?",
-        "answer": "« Je supervisais les cintres opposés avec deux techniciens. »",
+        "answer": "« Je supervisais les cintres opposés avec deux techniciens. Personne ne peut dire le contraire, c'est la vérité. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
@@ -257,7 +257,7 @@
         "id": "pia_alibi",
         "suspectId": "pia",
         "question": "Que faisiez-vous pendant la période concernée, Pia Lenoir ?",
-        "answer": "« J'ai quitté le plateau avant la mise en tension. »",
+        "answer": "« J'ai quitté le plateau avant la mise en tension. Je suis parti sans rien remarquer de particulier. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
@@ -271,7 +271,7 @@
         "id": "sacha_alibi",
         "suspectId": "sacha",
         "question": "Donnez votre emploi du temps précis, Sacha Derval.",
-        "answer": "« Je recevais les coproducteurs dans le foyer vitré. »",
+        "answer": "« Je recevais les coproducteurs dans le foyer vitré. Je ne vois pas ce que je pourrais ajouter de plus. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {

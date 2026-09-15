@@ -245,7 +245,7 @@
         "id": "malo_alibi",
         "suspectId": "malo",
         "question": "Que faisiez-vous pendant la période concernée, Malo Quéré ?",
-        "answer": "« J'ai dormi dans l'annexe depuis 1 h 30. »",
+        "answer": "« J'ai dormi dans l'annexe depuis 1 h 30. Personne ne peut dire le contraire, c'est la vérité. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
@@ -259,7 +259,7 @@
         "id": "erell_alibi",
         "suspectId": "erell",
         "question": "Donnez votre emploi du temps précis, Erell Bihan.",
-        "answer": "« J'observais la falaise nord avec ma caméra thermique. »",
+        "answer": "« J'observais la falaise nord avec ma caméra thermique. Je suis parti sans rien remarquer de particulier. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
@@ -273,7 +273,7 @@
         "id": "jonas_alibi",
         "suspectId": "jonas",
         "question": "Où étiez-vous au moment des faits, Jonas Le Guen ?",
-        "answer": "« J'ai réparé seul un casier sur le pont. »",
+        "answer": "« J'ai réparé seul un casier sur le pont. Je ne vois pas ce que je pourrais ajouter de plus. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {

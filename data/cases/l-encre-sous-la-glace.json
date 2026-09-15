@@ -238,7 +238,7 @@
         "id": "ana_alibi",
         "suspectId": "ana",
         "question": "Où étiez-vous au moment des faits, Ana Costa ?",
-        "answer": "« Je me changeais au vestiaire avec deux coéquipières. »",
+        "answer": "« Je me changeais au vestiaire avec deux coéquipières. Interrogez les autres, ils vous diront la même chose. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
@@ -252,7 +252,7 @@
         "id": "yves_alibi",
         "suspectId": "yves",
         "question": "Que faisiez-vous pendant la période concernée, Yves Molin ?",
-        "answer": "« Personne n'a touché la glace après mon dernier passage. »",
+        "answer": "« Personne n'a touché la glace après mon dernier passage. C'est tout ce que j'ai à dire sur ce moment-là. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
@@ -266,7 +266,7 @@
         "id": "leon_alibi",
         "suspectId": "leon",
         "question": "Donnez votre emploi du temps précis, Léon Barthe.",
-        "answer": "« Je regardais la répétition depuis la tribune presse. »",
+        "answer": "« Je regardais la répétition depuis la tribune presse. J'ai répété cette version dès le premier interrogatoire. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {

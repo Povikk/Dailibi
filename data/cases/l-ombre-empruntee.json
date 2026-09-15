@@ -236,7 +236,7 @@
         "id": "aya_alibi",
         "suspectId": "aya",
         "question": "Que faisiez-vous pendant la période concernée, Aya Ben Salem ?",
-        "answer": "« Je traitais les données depuis ma chambre. »",
+        "answer": "« Je traitais les données depuis ma chambre. Vous pouvez vérifier : je n'ai rien à cacher sur cette heure-là. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
@@ -250,7 +250,7 @@
         "id": "remi_alibi",
         "suspectId": "remi",
         "question": "Donnez votre emploi du temps précis, Rémi Corbel.",
-        "answer": "« Je réparais la coupole secondaire avec un collègue. »",
+        "answer": "« Je réparais la coupole secondaire avec un collègue. Personne ne peut dire le contraire, c'est la vérité. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
@@ -264,7 +264,7 @@
         "id": "chiara_alibi",
         "suspectId": "chiara",
         "question": "Où étiez-vous au moment des faits, Chiara Moss ?",
-        "answer": "« J'observais depuis le Chili en liaison continue. »",
+        "answer": "« J'observais depuis le Chili en liaison continue. Je suis parti sans rien remarquer de particulier. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {

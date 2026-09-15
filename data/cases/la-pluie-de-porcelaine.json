@@ -243,7 +243,7 @@
         "id": "etienne_alibi",
         "suspectId": "etienne",
         "question": "Que faisiez-vous pendant la période concernée, Étienne Bosc ?",
-        "answer": "« Je n'ai ouvert le four à aucun moment. »",
+        "answer": "« Je n'ai ouvert le four à aucun moment. Je ne vois pas ce que je pourrais ajouter de plus. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
@@ -257,7 +257,7 @@
         "id": "linh_alibi",
         "suspectId": "linh",
         "question": "Donnez votre emploi du temps précis, Linh Durand.",
-        "answer": "« Je préparais les caisses d'expédition avec un livreur. »",
+        "answer": "« Je préparais les caisses d'expédition avec un livreur. Interrogez les autres, ils vous diront la même chose. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
@@ -271,7 +271,7 @@
         "id": "oscar_alibi",
         "suspectId": "oscar",
         "question": "Où étiez-vous au moment des faits, Oscar Nève ?",
-        "answer": "« J'exposais à Paris le soir de la cuisson. »",
+        "answer": "« J'exposais à Paris le soir de la cuisson. C'est tout ce que j'ai à dire sur ce moment-là. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {

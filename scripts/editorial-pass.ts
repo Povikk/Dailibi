@@ -76,6 +76,22 @@ const alibiQuestions = [
   (name: string) => `Donnez votre emploi du temps précis, ${name}.`,
 ];
 
+/**
+ * La déclaration spontanée montre déjà l'alibi. La réponse au premier
+ * interrogatoire doit donc apporter un ton ou une insistance en plus, jamais
+ * recopier la déclaration.
+ */
+const alibiAdditions = [
+  "C'est tout ce que j'ai à dire sur ce moment-là.",
+  "J'ai répété cette version dès le premier interrogatoire.",
+  "Rien ne m'a semblé anormal avant de partir.",
+  "Vous pouvez vérifier : je n'ai rien à cacher sur cette heure-là.",
+  "Personne ne peut dire le contraire, c'est la vérité.",
+  "Je suis parti sans rien remarquer de particulier.",
+  "Je ne vois pas ce que je pourrais ajouter de plus.",
+  "Interrogez les autres, ils vous diront la même chose.",
+];
+
 const relationQuestions = [
   (name: string) => `Cette affaire pouvait-elle vous affecter, ${name} ?`,
   (name: string) => `Aviez-vous quelque chose à perdre, ${name} ?`,
@@ -190,8 +206,14 @@ for (const filename of readdirSync(root).filter((name) => name.endsWith(".json")
   p.suspects.forEach((suspect, index) => {
     const alibi = p.interviews.find((item) => item.id === `${suspect.id}_alibi`);
     const relation = p.interviews.find((item) => item.id === `${suspect.id}_relation`);
-    if (alibi) alibi.question = alibiQuestions[(p.number + index) % alibiQuestions.length](suspect.name);
-    if (alibi) alibi.answer = suspect.claimedAlibi;
+    if (alibi) {
+      alibi.question = alibiQuestions[(p.number + index) % alibiQuestions.length](suspect.name);
+      alibi.answer = quote(
+        `${unquote(suspect.claimedAlibi)} ${
+          alibiAdditions[(p.number + index) % alibiAdditions.length]
+        }`,
+      );
+    }
     if (relation) {
       relation.question = relationQuestions[(p.number * 2 + index) % relationQuestions.length](suspect.name);
       relation.answer = relationAnswers[(p.number + index) % relationAnswers.length];
@@ -334,9 +356,12 @@ function infinitivePhrase(value: string): string {
   return cleaned;
 }
 
+function unquote(value: string): string {
+  return value.trim().replace(/^«\s*|\s*»$/g, "").trim();
+}
+
 function quote(value: string): string {
-  const clean = value.trim().replace(/^«\s*|\s*»$/g, "");
-  return `« ${clean} »`;
+  return `« ${unquote(value)} »`;
 }
 
 function toFirstPersonAlibi(value: string): string {

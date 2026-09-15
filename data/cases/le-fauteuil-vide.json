@@ -245,7 +245,7 @@
         "id": "ines_alibi",
         "suspectId": "ines",
         "question": "Que faisiez-vous pendant la période concernée, Inès Delcourt ?",
-        "answer": "« J'étais dans une autre salle avec ma fille. »",
+        "answer": "« J'étais dans une autre salle avec ma fille. C'est tout ce que j'ai à dire sur ce moment-là. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
@@ -259,7 +259,7 @@
         "id": "victor_alibi",
         "suspectId": "victor",
         "question": "Donnez votre emploi du temps précis, Victor Amsel.",
-        "answer": "« Je suis resté en cabine pendant la coupure. »",
+        "answer": "« Je suis resté en cabine pendant la coupure. J'ai répété cette version dès le premier interrogatoire. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
@@ -273,7 +273,7 @@
         "id": "meryem_alibi",
         "suspectId": "meryem",
         "question": "Où étiez-vous au moment des faits, Meryem Solal ?",
-        "answer": "« J'attendais Romain dans un café voisin. »",
+        "answer": "« J'attendais Romain dans un café voisin. Rien ne m'a semblé anormal avant de partir. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
