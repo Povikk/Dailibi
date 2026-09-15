@@ -5,6 +5,7 @@ import { useMemo, useState } from "react";
 import type { AccuseResult, ClientCase } from "@/types/case";
 import { ResultPanel } from "@/components/case/ResultPanel";
 import { currentDailyKey } from "@/lib/daily";
+import { loadPlayerSecret } from "@/lib/storage";
 
 export function AccusationPanel({
   caseData,
@@ -44,7 +45,10 @@ export function AccusationPanel({
     try {
       const response = await fetch(`/api/case/${caseData.date}/accuse`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          "x-dailibi-player": loadPlayerSecret(),
+        },
         body: JSON.stringify(answers),
       });
       if (!response.ok) {

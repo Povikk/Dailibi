@@ -12,6 +12,8 @@
     "preview:cloudflare": "wrangler dev --config dist/server/wrangler.json",
     "deploy:cloudflare": "vinext-cloudflare deploy --config dist/server/wrangler.json",
     "deploy:cloudflare:artifact": "vinext-cloudflare deploy --config dist/server/wrangler.json --skip-build",
+    "db:migrate": "wrangler d1 migrations apply DB --remote",
+    "db:migrate:local": "wrangler d1 migrations apply DB --local --config dist/server/wrangler.json",
     "verify:build": "tsx scripts/verify-build.ts",
     "typecheck": "next typegen && tsc --noEmit",
     "test": "vitest run",

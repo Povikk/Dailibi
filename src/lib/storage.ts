@@ -113,17 +113,31 @@ export function saveNotes(caseId: string, text: string): void {
 export type CaseProgress = {
   foundClues: string[];
   inspectedSuspects: string[];
+  cluesTotal: number;
+  suspectsTotal: number;
 };
+
+const emptyProgress: CaseProgress = {
+  foundClues: [],
+  inspectedSuspects: [],
+  cluesTotal: 0,
+  suspectsTotal: 0,
+};
+
+function toProgress(value: unknown): CaseProgress {
+  if (!isPlainObject(value)) return emptyProgress;
+  return {
+    foundClues: toStringArray(value.foundClues),
+    inspectedSuspects: toStringArray(value.inspectedSuspects),
+    cluesTotal: count(value.cluesTotal),
+    suspectsTotal: count(value.suspectsTotal),
+  };
+}
 
 /** Investigation state, so reopening a dossier resumes where the player left. */
 export function loadProgress(caseId: string): CaseProgress {
   const map = readJson<Record<string, unknown>>(PROGRESS_KEY, {});
-  const value = map[caseId];
-  if (!isPlainObject(value)) return { foundClues: [], inspectedSuspects: [] };
-  return {
-    foundClues: toStringArray(value.foundClues),
-    inspectedSuspects: toStringArray(value.inspectedSuspects),
-  };
+  return toProgress(map[caseId]);
 }
 
 export function saveProgress(caseId: string, progress: CaseProgress): void {
@@ -134,9 +148,84 @@ export function saveProgress(caseId: string, progress: CaseProgress): void {
     map[caseId] = {
       foundClues: progress.foundClues,
       inspectedSuspects: progress.inspectedSuspects,
+      cluesTotal: progress.cluesTotal,
+      suspectsTotal: progress.suspectsTotal,
     };
   }
   writeJson(PROGRESS_KEY, map);
+}
+
+/** Read-only aggregates used by the badge engine, never written back. */
+export function loadAllProgress(): Record<string, CaseProgress> {
+  const map = readJson<Record<string, unknown>>(PROGRESS_KEY, {});
+  const out: Record<string, CaseProgress> = {};
+  for (const [caseId, value] of Object.entries(map)) {
+    out[caseId] = toProgress(value);
+  }
+  return out;
+}
+
+export function loadAllNotes(): Record<string, string> {
+  const map = readJson<Record<string, unknown>>(NOTES_KEY, {});
+  const out: Record<string, string> = {};
+  for (const [caseId, value] of Object.entries(map)) {
+    if (typeof value === "string" && value.trim()) out[caseId] = value;
+  }
+  return out;
+}
+
+const BADGES_KEY = "dailibi.badges.v1";
+const TITLE_KEY = "dailibi.title.v1";
+const PLAYER_KEY = "dailibi.player.v1";
+
+/**
+ * Anonymous device secret, created on first use. It is never displayed and
+ * never shared across sites; the server only ever stores a per-case hash of
+ * it, so no cross-day profile can be rebuilt from the database.
+ */
+export function loadPlayerSecret(): string {
+  if (typeof window === "undefined") return "";
+  const raw = readJson<Record<string, unknown>>(PLAYER_KEY, {});
+  if (typeof raw.secret === "string" && raw.secret.length >= 16) return raw.secret;
+  const secret = randomSecret();
+  writeJson(PLAYER_KEY, { secret });
+  return secret;
+}
+
+function randomSecret(): string {
+  const webCrypto = globalThis.crypto;
+  if (webCrypto?.randomUUID) return webCrypto.randomUUID();
+  if (webCrypto?.getRandomValues) {
+    const bytes = new Uint8Array(16);
+    webCrypto.getRandomValues(bytes);
+    return Array.from(bytes)
+      .map((byte) => byte.toString(16).padStart(2, "0"))
+      .join("");
+  }
+  return `${Date.now()}-${Math.random().toString(16).slice(2)}`;
+}
+
+/** Earned badges, keyed by badge id, valued with the unlock timestamp. */
+export function loadBadges(): Record<string, string> {
+  const raw = readJson<Record<string, unknown>>(BADGES_KEY, {});
+  const out: Record<string, string> = {};
+  for (const [id, value] of Object.entries(raw)) {
+    if (typeof value === "string") out[id] = value;
+  }
+  return out;
+}
+
+export function saveBadges(badges: Record<string, string>): void {
+  writeJson(BADGES_KEY, badges);
+}
+
+export function loadEquippedTitle(): string | null {
+  const raw = readJson<Record<string, unknown>>(TITLE_KEY, {});
+  return typeof raw.id === "string" ? raw.id : null;
+}
+
+export function saveEquippedTitle(titleId: string | null): void {
+  writeJson(TITLE_KEY, titleId ? { id: titleId } : {});
 }
 
 /**

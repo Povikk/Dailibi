@@ -8,6 +8,7 @@ import { validateCase, validateFairPlay } from "@/case-engine/validateCase";
 import { validateSolutionTimeline } from "@/case-engine/timelineValidator";
 import { isDailyKeyUnlocked, isValidDayKey } from "@/lib/daily";
 import { buildAccuseResult } from "@/server/accusationResult";
+import { recordAccusation } from "@/server/stats";
 
 export const dynamic = "force-dynamic";
 
@@ -66,7 +67,16 @@ export async function POST(
     if (typeof value === "string") clean[question.id] = value;
   }
 
-  return NextResponse.json(buildAccuseResult(file, clean));
+  const result = buildAccuseResult(file, clean);
+
+  // Aggregate counters only; a failure here never affects the verdict.
+  await recordAccusation({
+    result,
+    answers: clean,
+    playerSecret: request.headers.get("x-dailibi-player") ?? undefined,
+  });
+
+  return NextResponse.json(result);
 }
 
 /**

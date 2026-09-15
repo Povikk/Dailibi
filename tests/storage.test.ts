@@ -157,19 +157,38 @@ describe("storage: notes et relecture", () => {
 
   it("reprend la progression d'une enquête", async () => {
     const { loadProgress, saveProgress } = await import("@/lib/storage");
-    expect(loadProgress("case-a")).toEqual({ foundClues: [], inspectedSuspects: [] });
+    expect(loadProgress("case-a")).toEqual({
+      foundClues: [],
+      inspectedSuspects: [],
+      cluesTotal: 0,
+      suspectsTotal: 0,
+    });
 
     saveProgress("case-a", {
       foundClues: ["clue-1", "clue-2"],
       inspectedSuspects: ["emma"],
+      cluesTotal: 6,
+      suspectsTotal: 3,
     });
     expect(loadProgress("case-a")).toEqual({
       foundClues: ["clue-1", "clue-2"],
       inspectedSuspects: ["emma"],
+      cluesTotal: 6,
+      suspectsTotal: 3,
     });
 
-    saveProgress("case-a", { foundClues: [], inspectedSuspects: [] });
-    expect(loadProgress("case-a")).toEqual({ foundClues: [], inspectedSuspects: [] });
+    saveProgress("case-a", {
+      foundClues: [],
+      inspectedSuspects: [],
+      cluesTotal: 0,
+      suspectsTotal: 0,
+    });
+    expect(loadProgress("case-a")).toEqual({
+      foundClues: [],
+      inspectedSuspects: [],
+      cluesTotal: 0,
+      suspectsTotal: 0,
+    });
   });
 });
 
@@ -202,7 +221,12 @@ describe("storage: données corrompues", () => {
     expect(loadArchiveRecords()).toEqual([]);
     expect(loadReviewResult("2026-09-14")).toBeUndefined();
     expect(loadNotes("case-a")).toBe("");
-    expect(loadProgress("case-a")).toEqual({ foundClues: [], inspectedSuspects: ["ok"] });
+    expect(loadProgress("case-a")).toEqual({
+      foundClues: [],
+      inspectedSuspects: ["ok"],
+      cluesTotal: 0,
+      suspectsTotal: 0,
+    });
     expect(loadDayRecord("2026-09-14")).toBeUndefined();
 
     // Un JSON invalide ne doit pas lever, seulement retomber sur les défauts.

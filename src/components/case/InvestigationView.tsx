@@ -47,8 +47,10 @@ export function InvestigationView({ caseData }: { caseData: ClientCase }) {
     saveProgress(caseData.id, {
       foundClues: [...foundClues],
       inspectedSuspects: [...inspectedSuspects],
+      cluesTotal: caseData.clues.length,
+      suspectsTotal: caseData.suspects.length,
     });
-  }, [progressLoaded, caseData.id, foundClues, inspectedSuspects]);
+  }, [progressLoaded, caseData.id, caseData.clues.length, caseData.suspects.length, foundClues, inspectedSuspects]);
 
   const availableInterviews = useMemo(() => {
     const bySuspect = new Map<string, Interview[]>();

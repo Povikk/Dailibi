@@ -4,6 +4,13 @@
   "compatibility_date": "2026-09-14",
   "compatibility_flags": ["nodejs_compat"],
   "main": "vinext/server/fetch-handler",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "dailibi",
+      "database_id": "a71ed80a-a55a-4e59-a985-116efdf971b0"
+    }
+  ],
   "assets": {
     "directory": "dist/client",
     "not_found_handling": "none",

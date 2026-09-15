@@ -3,9 +3,12 @@
 import { useEffect, useMemo, useState } from "react";
 
 import type { AccuseResult, ClientCase } from "@/types/case";
+import { CaseStatsPanel } from "@/components/case/CaseStatsPanel";
 import { currentDailyKey, msUntilNextRollover } from "@/lib/daily";
 import { buildShareText } from "@/lib/share";
 import { loadStreak, recordResult, saveReviewResult } from "@/lib/storage";
+import { awardBadges } from "@/game/context";
+import type { BadgeDefinition } from "@/game/badges";
 
 const KIND_LABEL: Record<string, string> = {
   suspect: "QUI",
@@ -25,6 +28,7 @@ export function ResultPanel({
   reviewOnly?: boolean;
 }) {
   const [copied, setCopied] = useState(false);
+  const [unlocked, setUnlocked] = useState<BadgeDefinition[]>([]);
   const [nextCase, setNextCase] = useState<{ remaining: number; available: boolean } | null>(null);
   const [isDailyResult] = useState(() => !reviewOnly && caseData.date === currentDailyKey());
   const [streak, setStreak] = useState<{ currentStreak: number; bestStreak: number }>({
@@ -49,6 +53,7 @@ export function ResultPanel({
     });
     setStreak(stored.streak);
     saveReviewResult(result);
+    setUnlocked(awardBadges());
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [reviewOnly]);
 
@@ -140,6 +145,35 @@ export function ResultPanel({
             })}
         </ul>
       </header>
+
+      {unlocked.length ? (
+        <section className="card mt-5 overflow-hidden border-kraft-500/50">
+          <div className="border-b border-ink-700 bg-kraft-500/10 px-4 py-2 font-mono text-[10px] uppercase tracking-[0.2em] text-kraft-300">
+            {unlocked.length > 1 ? "Distinctions débloquées" : "Distinction débloquée"}
+          </div>
+          <ul className="divide-y divide-ink-800">
+            {unlocked.map((badge) => (
+              <li key={badge.id} className="px-4 py-3">
+                <p className="text-sm font-bold">{badge.label}</p>
+                <p className="mt-0.5 text-xs text-paper-300/60">{badge.description}</p>
+                {badge.title ? (
+                  <p className="mt-1 text-[10px] uppercase tracking-wider text-kraft-300">
+                    Nouveau titre : {badge.title}
+                  </p>
+                ) : null}
+              </li>
+            ))}
+          </ul>
+          <div className="border-t border-ink-800 px-4 py-2 text-right">
+            <a
+              href="/historique"
+              className="text-[10px] font-semibold uppercase tracking-[0.15em] text-paper-300/50 transition-colors hover:text-paper-100"
+            >
+              Voir mes distinctions →
+            </a>
+          </div>
+        </section>
+      ) : null}
 
       {isDailyResult && streak.currentStreak > 0 ? (
         <p className="mt-4 text-center text-sm text-paper-300/70">
@@ -244,6 +278,8 @@ export function ResultPanel({
           {copied ? "Résultat copié !" : "Copier mon résultat"}
         </button>
       </section>
+
+      <CaseStatsPanel date={caseData.date} questions={caseData.accusation.questions} />
 
       <div className="mt-6 flex flex-col gap-3 sm:flex-row">
         <a className="btn-ghost flex-1" href="/archives">

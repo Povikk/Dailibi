@@ -26,6 +26,21 @@ npm run verify:build
 
 `verify:build` relit `dist/client` et échoue si une donnée privée (analyse d'indice, réponse de validation, texte de solution) a franchi la frontière serveur/client.
 
+## Progression du joueur
+
+Statistiques personnelles, série, **50 distinctions**, grade et titre affiché en haut de l'écran : tout est calculé dans le navigateur, sans inscription. Le titre équipé se choisit depuis la page Historique.
+
+## Statistiques entre joueurs (D1)
+
+Les « % de ce que les autres ont répondu » viennent d'une base Cloudflare D1 qui ne contient **que des compteurs** : aucun profil, aucun email, aucune adresse IP. Le secret d'appareil est haché **par affaire**, il n'est donc pas corrélable d'un jour à l'autre.
+
+```bash
+npm run db:migrate:local   # base locale utilisée par la prévisualisation Cloudflare
+npm run db:migrate         # base distante (production, aussi appliquée par la CI)
+```
+
+Un dossier n'affiche ses pourcentages qu'à partir de 10 accusations, et le jour même seulement après avoir soi-même accusé — sinon les stats spoileraient la réponse.
+
 La collection générée peut être reconstruite sans toucher à l'affaire historique nº14 :
 
 ```bash

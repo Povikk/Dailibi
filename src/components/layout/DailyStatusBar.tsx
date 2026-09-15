@@ -4,6 +4,8 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 import { msUntilNextRollover } from "@/lib/daily";
+import { loadBadges, loadEquippedTitle } from "@/lib/storage";
+import { titleLabel } from "@/game/badges";
 
 function formatRemaining(ms: number): string {
   const total = Math.max(0, Math.floor(ms / 1000));
@@ -15,6 +17,7 @@ function formatRemaining(ms: number): string {
 
 export function DailyStatusBar() {
   const [remaining, setRemaining] = useState<number | null>(null);
+  const [title, setTitle] = useState<string | null>(null);
 
   useEffect(() => {
     const update = () => setRemaining(msUntilNextRollover());
@@ -23,15 +26,32 @@ export function DailyStatusBar() {
     return () => window.clearInterval(timer);
   }, []);
 
+  useEffect(() => {
+    const refresh = () => setTitle(titleLabel(loadBadges(), loadEquippedTitle()));
+    refresh();
+    window.addEventListener("dailibi:title", refresh);
+    return () => window.removeEventListener("dailibi:title", refresh);
+  }, []);
+
   return (
     <aside className="fixed inset-x-0 top-0 z-50 h-9 border-b border-ink-700/80 bg-desk-950/95 px-3 backdrop-blur-md sm:px-5">
       <div className="mx-auto flex h-full max-w-6xl items-center justify-between gap-3">
-        <Link
-          href="/"
-          className="font-heading text-[11px] font-black tracking-[0.18em] text-paper-100 transition-colors hover:text-kraft-300"
-        >
-          DAILIBI
-        </Link>
+        <div className="flex min-w-0 items-center gap-2 sm:gap-3">
+          <Link
+            href="/"
+            className="font-heading text-[11px] font-black tracking-[0.18em] text-paper-100 transition-colors hover:text-kraft-300"
+          >
+            DAILIBI
+          </Link>
+          {title ? (
+            <span
+              title="Titre équipé, à changer depuis votre historique"
+              className="truncate rounded-sm border border-kraft-500/40 bg-kraft-500/10 px-1.5 py-0.5 font-mono text-[9px] font-bold uppercase tracking-[0.12em] text-kraft-300"
+            >
+              {title}
+            </span>
+          ) : null}
+        </div>
 
         <p className="font-mono text-[10px] uppercase tracking-[0.1em] text-paper-300/55 sm:tracking-[0.16em]">
           <span className="hidden sm:inline">Nouvelle affaire dans </span>
