@@ -3,15 +3,24 @@
 import { useEffect, useState } from "react";
 
 import { currentDailyKey } from "@/lib/daily";
-import { effectiveStreak, loadStats, loadStreak, type DailibiStats } from "@/lib/storage";
+import {
+  effectiveStreak,
+  loadBadges,
+  loadStats,
+  loadStreak,
+  type DailibiStats,
+} from "@/lib/storage";
+import { BADGES } from "@/game/badges";
 
 export function StatsBar() {
   const [stats, setStats] = useState<DailibiStats | null>(null);
   const [streak, setStreak] = useState(0);
+  const [badges, setBadges] = useState(0);
 
   useEffect(() => {
     setStats(loadStats());
     setStreak(effectiveStreak(loadStreak(), currentDailyKey()));
+    setBadges(Object.keys(loadBadges()).length);
   }, []);
 
   if (!stats || stats.played === 0) {
@@ -30,6 +39,7 @@ export function StatsBar() {
       <Stat label="Jouées" value={`${stats.played}`} />
       <Stat label="Parfaites" value={`${stats.perfect}`} />
       <Stat label="Score moyen" value={`${average}%`} />
+      <Stat label="Distinctions" value={`${badges}/${BADGES.length}`} />
     </dl>
   );
 }

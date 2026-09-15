@@ -101,6 +101,18 @@ export function WelcomeTutorial({
                     </p>
                   </div>
                 </li>
+                <li className="flex gap-4">
+                  <span className="font-mono text-xs font-bold text-stamp-bright">04</span>
+                  <div>
+                    <h3 className="text-sm font-bold uppercase tracking-wide">
+                      Débloquez des distinctions
+                    </h3>
+                    <p className="mt-1 text-xs leading-relaxed text-paper-300/60">
+                      Cinquante badges récompensent votre progression, et certains offrent un titre
+                      affiché en haut de l&apos;écran. Tout se retrouve dans votre historique.
+                    </p>
+                  </div>
+                </li>
               </ol>
 
               <div className="mt-6 border-l-2 border-kraft-500/60 bg-ink-950/35 px-4 py-3">

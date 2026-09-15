@@ -44,12 +44,13 @@ export function DailyStatusBar() {
             DAILIBI
           </Link>
           {title ? (
-            <span
-              title="Titre équipé, à changer depuis votre historique"
-              className="truncate rounded-sm border border-kraft-500/40 bg-kraft-500/10 px-1.5 py-0.5 font-mono text-[9px] font-bold uppercase tracking-[0.12em] text-kraft-300"
+            <Link
+              href="/historique#distinctions"
+              title="Titre équipé, à changer depuis vos distinctions"
+              className="truncate rounded-sm border border-kraft-500/40 bg-kraft-500/10 px-1.5 py-0.5 font-mono text-[9px] font-bold uppercase tracking-[0.12em] text-kraft-300 transition-colors hover:border-kraft-400 hover:text-kraft-200"
             >
               {title}
-            </span>
+            </Link>
           ) : null}
         </div>
 

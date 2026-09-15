@@ -202,7 +202,7 @@ export function BadgesPanel() {
         ) : null}
       </section>
 
-      <section className="mt-8">
+      <section id="distinctions" className="mt-8 scroll-mt-14">
         <div className="flex items-end justify-between gap-4">
           <div>
             <p className="label-meta">Distinctions</p>
