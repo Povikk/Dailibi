@@ -1,8 +1,8 @@
 import "server-only";
 
 import { CaseFileSchema } from "@/types/case";
-import type { CaseFile, ClientCase, PublicCase } from "@/types/case";
-import { currentDailyKey, dayNumber } from "@/lib/daily";
+import type { ArchiveSummary, CaseFile, ClientCase } from "@/types/case";
+import { currentDailyKey } from "@/lib/daily";
 import { CASE_REGISTRY } from "@/generated/caseRegistry";
 
 let cache: CaseFile[] | null = null;
@@ -36,35 +36,48 @@ export function findCaseById(id: string): CaseFile | undefined {
 }
 
 /**
- * Picks the case for a given game-day key.
+ * The only lookup allowed for routes and pages.
  *
- * The case of the day is deterministic across all players. We map the
- * absolute day number onto the ordered list of cases. A case can also be
- * pinned to an explicit date (useful for a launch schedule).
+ * It matches an explicitly dated case and never falls back to the rotation
+ * modulo: an arbitrary or aliased date must not resolve to a case that is
+ * still locked (e.g. "/api/case/2026-08-31/review" pointing at a future file).
  */
-export function findCaseForDate(key: string): CaseFile | undefined {
-  const cases = loadAllCases();
-  if (!cases.length) return undefined;
-
-  const pinned = cases.find((c) => c.public.date === key);
-  if (pinned) return pinned;
-
-  const [fy, fm, fd] = cases[0].public.date.split("-").map(Number);
-  const launch = dayNumber(`${fy}-${fm}-${fd}`);
-  const index = modulo(dayNumber(key) - launch, cases.length);
-  return cases[index];
+export function findDatedCase(key: string): CaseFile | undefined {
+  return loadAllCases().find((c) => c.public.date === key);
 }
 
+/**
+ * The case of the day, or `undefined` when no case is dated today.
+ *
+ * The collection is a finite editorial calendar: a case is only playable on
+ * its publication date. Past days move to the archives, future days wait.
+ * There is no implicit recycling of old cases onto new dates.
+ */
 export function currentCase(now: Date = new Date()): CaseFile | undefined {
-  return findCaseForDate(currentDailyKey(now));
+  return findDatedCase(currentDailyKey(now));
+}
+
+/** Earliest publication date strictly after today, if any remains. */
+export function nextCaseDate(now: Date = new Date()): string | undefined {
+  const key = currentDailyKey(now);
+  return loadAllCases()
+    .map((c) => c.public.date)
+    .filter((date) => date > key)
+    .sort()[0];
 }
 
 /**
  * Full case available today, in order, for the archive page.
- * Only public data is ever projected to the client.
+ * Only the narrow summary is ever projected to the client.
  */
-export function listCasesForArchive(): PublicCase[] {
-  return loadAllCases().map((c) => c.public);
+export function listCasesForArchive(): ArchiveSummary[] {
+  return loadAllCases().map((c) => ({
+    id: c.public.id,
+    number: c.public.number,
+    date: c.public.date,
+    title: c.public.title,
+    subtitle: c.public.subtitle,
+  }));
 }
 
 /**
@@ -85,8 +98,4 @@ export function toClientCase(file: CaseFile): ClientCase {
       return rest;
     }),
   };
-}
-
-function modulo(n: number, m: number): number {
-  return ((n % m) + m) % m;
 }

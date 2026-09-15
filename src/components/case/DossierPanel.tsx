@@ -1,17 +1,24 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 import type { ClientCase } from "@/types/case";
+import { loadNotes, saveNotes } from "@/lib/storage";
 
 export function DossierPanel({
   caseData,
   foundClues,
+  inspectedSuspects,
 }: {
   caseData: ClientCase;
   foundClues: Set<string>;
+  inspectedSuspects: number;
 }) {
   const [notes, setNotes] = useState("");
+
+  useEffect(() => {
+    setNotes(loadNotes(caseData.id));
+  }, [caseData.id]);
 
   const unlockByClue = useMemo(() => {
     const map = new Map<string, number>();
@@ -34,7 +41,7 @@ export function DossierPanel({
         <dl className="mt-3 space-y-3 text-sm">
           <Row label="Indices consultés" value={`${foundClues.size}/${caseData.clues.length}`} />
           <Row label="Questions débloquées" value={`${unlockedNow}/${totalUnlocks}`} />
-          <Row label="Suspects interrogés" value={`${caseData.suspects.length}`} />
+          <Row label="Suspects interrogés" value={`${inspectedSuspects}/${caseData.suspects.length}`} />
           <Row label="Difficulté" value={caseData.difficulty} />
         </dl>
         <p className="mt-4 text-xs leading-relaxed text-paper-300/60">
@@ -50,7 +57,10 @@ export function DossierPanel({
         <textarea
           id="notes"
           value={notes}
-          onChange={(event) => setNotes(event.target.value)}
+          onChange={(event) => {
+            setNotes(event.target.value);
+            saveNotes(caseData.id, event.target.value);
+          }}
           rows={10}
           placeholder="Heures, incohérences, hypothèses..."
           className="mt-3 w-full resize-y rounded-lg border border-ink-600 bg-ink-950 p-3 font-mono text-sm text-paper-100 placeholder:text-paper-300/30 focus:border-accent focus:outline-none"

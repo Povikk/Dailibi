@@ -10,7 +10,8 @@ import { z } from "zod";
  *               returned after an accusation has been validated.
  *
  * The client bundle must never import a raw case file. Use the server-only
- * loader in src/server/cases.ts which projects `public` and strips internals.
+ * loader in src/server/caseStore.ts which projects `public` and strips
+ * internals.
  */
 
 export const DifficultySchema = z.enum(["FACILE", "NORMAL", "DIFFICILE"]);
@@ -271,6 +272,8 @@ export const PublicCaseSchema = z.object({
   incident: z.string(),
   intro: z.string(),
   victim: z.object({
+    /** Optional, only needed when the victim appears in the real timeline. */
+    id: id.optional(),
     name: z.string(),
     description: z.string(),
   }),
@@ -363,6 +366,19 @@ export type CaseFile = z.infer<typeof CaseFileSchema>;
 
 export type ClientCase = Omit<PublicCase, "clues"> & {
   clues: PublicClue[];
+};
+
+/**
+ * Narrow, safe projection listed on the archive and history pages.
+ * Deliberately holds no clue, no timeline and no internal analysis, so the
+ * server never serializes case internals into an RSC payload.
+ */
+export type ArchiveSummary = {
+  id: string;
+  number: number;
+  date: string;
+  title: string;
+  subtitle: string;
 };
 
 export type AccusationPayload = Record<string, string>;

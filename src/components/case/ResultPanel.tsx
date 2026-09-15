@@ -5,7 +5,7 @@ import { useEffect, useMemo, useState } from "react";
 import type { AccuseResult, ClientCase } from "@/types/case";
 import { currentDailyKey, msUntilNextRollover } from "@/lib/daily";
 import { buildShareText } from "@/lib/share";
-import { loadStreak, recordResult } from "@/lib/storage";
+import { loadStreak, recordResult, saveReviewResult } from "@/lib/storage";
 
 const KIND_LABEL: Record<string, string> = {
   suspect: "QUI",
@@ -48,6 +48,7 @@ export function ResultPanel({
       optional: caseData.date !== currentDailyKey(),
     });
     setStreak(stored.streak);
+    saveReviewResult(result);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [reviewOnly]);
 

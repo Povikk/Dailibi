@@ -1,5 +1,7 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
+import type { AccuseResult } from "@/types/case";
+
 vi.mock("server-only", () => ({}));
 
 function installStorage() {
@@ -101,5 +103,110 @@ describe("storage: stats et streak", () => {
     expect(stats.perfect).toBe(1);
     expect(stats.history).toHaveLength(1);
     expect(loadDayRecord("2026-08-01")?.caseId).toBe("old");
+  });
+});
+
+describe("storage: notes et relecture", () => {
+  beforeEach(() => {
+    installStorage();
+  });
+
+  it("conserve les notes par affaire sur l'appareil", async () => {
+    const { loadNotes, saveNotes } = await import("@/lib/storage");
+    expect(loadNotes("case-a")).toBe("");
+
+    saveNotes("case-a", "L'horloge avance de dix minutes.");
+    saveNotes("case-b", "Autre dossier");
+
+    expect(loadNotes("case-a")).toBe("L'horloge avance de dix minutes.");
+    expect(loadNotes("case-b")).toBe("Autre dossier");
+
+    saveNotes("case-a", "");
+    expect(loadNotes("case-a")).toBe("");
+  });
+
+  it("mémorise le résultat canonique d'une accusation", async () => {
+    const { loadReviewResult, saveReviewResult } = await import("@/lib/storage");
+    const result: AccuseResult = {
+      caseId: "c1",
+      date: "2026-09-14",
+      correct: true,
+      partial: false,
+      score: 100,
+      perQuestion: { q_who: true, q_why: true, q_how: true },
+      culprit: { id: "emma", name: "Emma" },
+      solution: {
+        culpritId: "emma",
+        culpritName: "Emma",
+        motive: "Dette",
+        method: "Substitution",
+        reasoning: ["a", "b"],
+        explanation: "explication",
+        correctTimeline: [
+          { time: "21:00", place: "salle", personIds: ["emma"], text: "fait" },
+        ],
+        proofChains: [{ title: "chaîne", steps: ["un", "deux"] }],
+      },
+    };
+
+    expect(loadReviewResult("2026-09-14")).toBeUndefined();
+    saveReviewResult(result);
+    expect(loadReviewResult("2026-09-14")?.score).toBe(100);
+    expect(loadReviewResult("2026-09-15")).toBeUndefined();
+  });
+
+  it("reprend la progression d'une enquête", async () => {
+    const { loadProgress, saveProgress } = await import("@/lib/storage");
+    expect(loadProgress("case-a")).toEqual({ foundClues: [], inspectedSuspects: [] });
+
+    saveProgress("case-a", {
+      foundClues: ["clue-1", "clue-2"],
+      inspectedSuspects: ["emma"],
+    });
+    expect(loadProgress("case-a")).toEqual({
+      foundClues: ["clue-1", "clue-2"],
+      inspectedSuspects: ["emma"],
+    });
+
+    saveProgress("case-a", { foundClues: [], inspectedSuspects: [] });
+    expect(loadProgress("case-a")).toEqual({ foundClues: [], inspectedSuspects: [] });
+  });
+});
+
+describe("storage: données corrompues", () => {
+  it("retombe toujours sur des valeurs saines", async () => {
+    const store = installStorage();
+    store.set("dailibi.stats.v1", '{"played":"beaucoup","history":"pas-un-tableau"}');
+    store.set("dailibi.streak.v1", '{"currentStreak":-4,"lastPlayedDate":42}');
+    store.set("dailibi.archives.v1", '[{"date":"2026-09-01"},null,7]');
+    store.set("dailibi.review.v1", '{"2026-09-14":{"score":"x"}}');
+    store.set("dailibi.notes.v1", '["pas-un-objet"]');
+    store.set(
+      "dailibi.progress.v1",
+      '{"case-a":{"foundClues":"pas-un-tableau","inspectedSuspects":[1,"ok",null]}}',
+    );
+
+    const {
+      loadArchiveRecords,
+      loadDayRecord,
+      loadNotes,
+      loadProgress,
+      loadReviewResult,
+      loadStats,
+      loadStreak,
+    } = await import("@/lib/storage");
+
+    expect(loadStats().played).toBe(0);
+    expect(loadStats().history).toEqual([]);
+    expect(loadStreak()).toEqual({ currentStreak: 0, bestStreak: 0, lastPlayedDate: null });
+    expect(loadArchiveRecords()).toEqual([]);
+    expect(loadReviewResult("2026-09-14")).toBeUndefined();
+    expect(loadNotes("case-a")).toBe("");
+    expect(loadProgress("case-a")).toEqual({ foundClues: [], inspectedSuspects: ["ok"] });
+    expect(loadDayRecord("2026-09-14")).toBeUndefined();
+
+    // Un JSON invalide ne doit pas lever, seulement retomber sur les défauts.
+    store.set("dailibi.stats.v1", "{pas du json");
+    expect(loadStats().played).toBe(0);
   });
 });

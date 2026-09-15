@@ -64,6 +64,54 @@ describe("validateCase", () => {
     const report = validateCase(bad);
     expect(report.errors.some((e) => e.code === "clue.implicates")).toBe(true);
   });
+
+  it("détecte deux options d'accusation partageant le même identifiant", () => {
+    const bad = structuredClone(cases[0].data) as CaseFile;
+    const question = bad.public.accusation.questions[0];
+    question.options[1].id = question.options[0].id;
+    const report = validateCase(bad);
+    expect(report.errors.some((e) => e.code.startsWith("unique.option"))).toBe(true);
+  });
+
+  it("détecte un soutien de mobile ou de méthode visant un suspect inconnu", () => {
+    const badMotive = structuredClone(cases[0].data) as CaseFile;
+    badMotive.public.clues[0].analysis.supportsMotiveOf.push("inconnu");
+    expect(validateCase(badMotive).errors.some((e) => e.code === "clue.motiveSupport")).toBe(true);
+
+    const badMethod = structuredClone(cases[0].data) as CaseFile;
+    badMethod.public.clues[0].analysis.supportsMethodOf.push("inconnu");
+    expect(validateCase(badMethod).errors.some((e) => e.code === "clue.methodSupport")).toBe(true);
+  });
+
+  it("détecte une personne inconnue dans la chronologie réelle", () => {
+    const bad = structuredClone(cases[0].data) as CaseFile;
+    bad.solution.correctTimeline[0].personIds = ["fantome"];
+    const report = validateCase(bad);
+    expect(report.errors.some((e) => e.code === "timeline.person")).toBe(true);
+  });
+
+  it("accepte la victime identifiée dans la chronologie", () => {
+    const case14 = cases.find(({ data }) => data.public.number === 14)!;
+    expect(case14.data.public.victim.id).toBe("valere");
+    expect(validateCase(case14.data).errors).toEqual([]);
+  });
+
+  it("signale un déblocage d'interview non réciproque", () => {
+    const target = cases.find(({ data }) =>
+      data.public.interviews.some((interview) => interview.unlockedByClueId),
+    );
+    expect(target, "au moins une affaire avec interview verrouillée").toBeDefined();
+
+    const bad = structuredClone(target!.data) as CaseFile;
+    const interview = bad.public.interviews.find((item) => item.unlockedByClueId)!;
+    const clue = bad.public.clues.find((item) => item.id === interview.unlockedByClueId)!;
+    clue.analysis.unlocksInterviewIds = clue.analysis.unlocksInterviewIds.filter(
+      (id) => id !== interview.id,
+    );
+
+    const report = validateCase(bad);
+    expect(report.warnings.some((w) => w.code === "unlock.mismatch")).toBe(true);
+  });
 });
 
 describe("fair-play", () => {
@@ -118,7 +166,7 @@ describe("scoring", () => {
     expect(breakdown.allCorrect).toBe(true);
   });
 
-  it("donne un score partiel pour une bonne réponse sur trois", () => {
+  it("donne un score partiel quand deux réponses sur trois sont correctes", () => {
     const { data } = cases[0];
     const payload = { ...data.solution.validationAnswers, q_how: "faux" };
     const breakdown = scoreAccusation(data.public, data.solution, payload);

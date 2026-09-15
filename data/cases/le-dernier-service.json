@@ -9,6 +9,7 @@
     "incident": "Vol de la recette du soir dans le coffre de la réserve",
     "intro": "Mardi, 23 h 15. Valère Chastel range la salle quand il ouvre le coffre de la réserve par habitude. L'enveloppe de la recette, 2 340 euros déposée avant son départ, n'y est plus. Le coffre est fermé, sans trace d'effraction. La réserve a été verrouillée à clé. Le livreur de pain, qui possède un double, ne passe que le matin à 6 h 40 et l'alarme n'a pas sonné.",
     "victim": {
+      "id": "valere",
       "name": "Valère Chastel",
       "description": "58 ans, propriétaire du Comptoir des Halles. Il a déposé lui-même l'enveloppe dans le coffre avant de partir à 22 h 30."
     },

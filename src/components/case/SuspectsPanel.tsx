@@ -10,11 +10,13 @@ export function SuspectsPanel({
   interviews,
   lockedCount,
   onSeeClues,
+  onInspect,
 }: {
   caseData: ClientCase;
   interviews: Map<string, Interview[]>;
   lockedCount: number;
   onSeeClues: () => void;
+  onInspect: (suspectId: string) => void;
 }) {
   const [open, setOpen] = useState<string | null>(caseData.suspects[0]?.id ?? null);
   const [questionIndex, setQuestionIndex] = useState(0);
@@ -40,6 +42,7 @@ export function SuspectsPanel({
               type="button"
               className="flex w-full items-center gap-4 p-4 text-left"
               onClick={() => {
+                if (!isOpen) onInspect(suspect.id);
                 setOpen(isOpen ? null : suspect.id);
                 setQuestionIndex(0);
               }}

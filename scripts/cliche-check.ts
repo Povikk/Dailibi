@@ -50,6 +50,10 @@ for (const { file, data } of cases) {
 }
 
 console.log(`\n${cases.length} affaire(s), ${flagged} signalée(s).`);
+if (flagged > 0) {
+  console.error("Des clichés éditoriaux ont été détectés : publication bloquée.");
+  process.exitCode = 1;
+}
 console.log("Métadonnées de diversité :");
 const meta = cases.map((c) => c.data.meta);
 logDistribution(meta, "crimeType");

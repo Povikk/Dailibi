@@ -6,6 +6,8 @@ Une affaire courte et complète chaque jour : observer, confronter les alibis, p
 
 Le dépôt contient 30 affaires datées du 1er au 30 septembre 2026. Chaque fichier de `data/cases/` sépare strictement les informations publiques, les métadonnées éditoriales et la solution privée.
 
+Le calendrier est **fini** : une affaire n'est jouable que le jour de sa date de publication. Passé ce jour elle rejoint les archives, et les jours sans affaire affichent l'échéance suivante. Aucune affaire n'est recyclée sur une nouvelle date.
+
 ```bash
 npm ci
 npm run dev
@@ -18,8 +20,11 @@ npm test
 npm run typecheck
 npm run case:validate
 npm run case:cliche
-npm run build
+npm run build:cloudflare
+npm run verify:build
 ```
+
+`verify:build` relit `dist/client` et échoue si une donnée privée (analyse d'indice, réponse de validation, texte de solution) a franchi la frontière serveur/client.
 
 La collection générée peut être reconstruite sans toucher à l'affaire historique nº14 :
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { currentDailyKey, isAdjacent } from "@/lib/daily";
+import type { AccuseResult } from "@/types/case";
 
 export type DayRecord = {
   date: string;
@@ -31,27 +32,31 @@ export type StreakState = {
 const STATS_KEY = "dailibi.stats.v1";
 const STREAK_KEY = "dailibi.streak.v1";
 const ARCHIVES_KEY = "dailibi.archives.v1";
-
-const emptyStats: DailibiStats = {
-  played: 0,
-  perfect: 0,
-  whoCorrect: 0,
-  whyCorrect: 0,
-  howCorrect: 0,
-  scoreSum: 0,
-  history: [],
-};
+const REVIEW_KEY = "dailibi.review.v1";
+const NOTES_KEY = "dailibi.notes.v1";
+const PROGRESS_KEY = "dailibi.progress.v1";
 
 export function loadStats(): DailibiStats {
-  return readJson<DailibiStats>(STATS_KEY, emptyStats);
+  const raw = readJson<Record<string, unknown>>(STATS_KEY, {});
+  const history = Array.isArray(raw.history) ? raw.history.filter(isDayRecord) : [];
+  return {
+    played: count(raw.played, history.length),
+    perfect: count(raw.perfect),
+    whoCorrect: count(raw.whoCorrect),
+    whyCorrect: count(raw.whyCorrect),
+    howCorrect: count(raw.howCorrect),
+    scoreSum: count(raw.scoreSum),
+    history,
+  };
 }
 
 export function loadStreak(): StreakState {
-  return readJson<StreakState>(STREAK_KEY, {
-    currentStreak: 0,
-    bestStreak: 0,
-    lastPlayedDate: null,
-  });
+  const raw = readJson<Record<string, unknown>>(STREAK_KEY, {});
+  return {
+    currentStreak: count(raw.currentStreak),
+    bestStreak: count(raw.bestStreak),
+    lastPlayedDate: typeof raw.lastPlayedDate === "string" ? raw.lastPlayedDate : null,
+  };
 }
 
 export function hasPlayed(date: string): boolean {
@@ -66,7 +71,72 @@ export function loadDayRecord(date: string): DayRecord | undefined {
 }
 
 export function loadArchiveRecords(): DayRecord[] {
-  return readJson<DayRecord[]>(ARCHIVES_KEY, []);
+  return readJson<unknown[]>(ARCHIVES_KEY, []).filter(isDayRecord);
+}
+
+/**
+ * Canonical solution of a finished accusation, kept on the device.
+ *
+ * Storing it here (instead of fetching a public review endpoint) means the
+ * solution never leaves the server until the player has actually accused,
+ * and re-reading a dossier works offline.
+ */
+export function saveReviewResult(result: AccuseResult): void {
+  const map = readJson<Record<string, unknown>>(REVIEW_KEY, {});
+  map[result.date] = result;
+  writeJson(REVIEW_KEY, map);
+}
+
+export function loadReviewResult(date: string): AccuseResult | undefined {
+  const map = readJson<Record<string, unknown>>(REVIEW_KEY, {});
+  const value = map[date];
+  return isAccuseResult(value) ? value : undefined;
+}
+
+/** Player notes, scoped per case and kept only on the device. */
+export function loadNotes(caseId: string): string {
+  const map = readJson<Record<string, unknown>>(NOTES_KEY, {});
+  const value = map[caseId];
+  return typeof value === "string" ? value : "";
+}
+
+export function saveNotes(caseId: string, text: string): void {
+  const map = readJson<Record<string, unknown>>(NOTES_KEY, {});
+  if (text) {
+    map[caseId] = text;
+  } else {
+    delete map[caseId];
+  }
+  writeJson(NOTES_KEY, map);
+}
+
+export type CaseProgress = {
+  foundClues: string[];
+  inspectedSuspects: string[];
+};
+
+/** Investigation state, so reopening a dossier resumes where the player left. */
+export function loadProgress(caseId: string): CaseProgress {
+  const map = readJson<Record<string, unknown>>(PROGRESS_KEY, {});
+  const value = map[caseId];
+  if (!isPlainObject(value)) return { foundClues: [], inspectedSuspects: [] };
+  return {
+    foundClues: toStringArray(value.foundClues),
+    inspectedSuspects: toStringArray(value.inspectedSuspects),
+  };
+}
+
+export function saveProgress(caseId: string, progress: CaseProgress): void {
+  const map = readJson<Record<string, unknown>>(PROGRESS_KEY, {});
+  if (!progress.foundClues.length && !progress.inspectedSuspects.length) {
+    delete map[caseId];
+  } else {
+    map[caseId] = {
+      foundClues: progress.foundClues,
+      inspectedSuspects: progress.inspectedSuspects,
+    };
+  }
+  writeJson(PROGRESS_KEY, map);
 }
 
 /**
@@ -161,14 +231,52 @@ function readJson<T>(key: string, fallback: T): T {
   try {
     const raw = window.localStorage.getItem(key);
     if (!raw) return fallback;
-    const parsed = JSON.parse(raw) as T;
+    const parsed = JSON.parse(raw) as unknown;
     if (Array.isArray(fallback)) {
       return (Array.isArray(parsed) ? parsed : fallback) as T;
     }
-    return { ...fallback, ...parsed };
+    return (isPlainObject(parsed) ? parsed : fallback) as T;
   } catch {
     return fallback;
   }
+}
+
+/**
+ * Storage is user-writable, so every value read back is treated as untrusted.
+ * Corrupted or hand-edited payloads must degrade to defaults, never throw.
+ */
+function isPlainObject(value: unknown): value is Record<string, unknown> {
+  return typeof value === "object" && value !== null && !Array.isArray(value);
+}
+
+function isDayRecord(value: unknown): value is DayRecord {
+  return (
+    isPlainObject(value) &&
+    typeof value.date === "string" &&
+    typeof value.caseId === "string" &&
+    typeof value.score === "number"
+  );
+}
+
+function isAccuseResult(value: unknown): value is AccuseResult {
+  return (
+    isPlainObject(value) &&
+    typeof value.score === "number" &&
+    isPlainObject(value.perQuestion) &&
+    isPlainObject(value.solution)
+  );
+}
+
+function toStringArray(value: unknown): string[] {
+  return Array.isArray(value)
+    ? value.filter((item): item is string => typeof item === "string")
+    : [];
+}
+
+function count(value: unknown, fallback = 0): number {
+  return typeof value === "number" && Number.isFinite(value) && value >= 0
+    ? value
+    : fallback;
 }
 
 function writeJson(key: string, value: unknown): void {

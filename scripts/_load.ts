@@ -3,9 +3,6 @@ import { join } from "node:path";
 
 import { CaseFileSchema } from "../src/types/case";
 import type { CaseFile } from "../src/types/case";
-import { validateCase, validateFairPlay } from "../src/case-engine/validateCase";
-import { buildSolvabilityMatrix } from "../src/case-engine/solvability";
-import { validateSolutionTimeline } from "../src/case-engine/timelineValidator";
 
 const CASES_DIR = join(process.cwd(), "data", "cases");
 

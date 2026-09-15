@@ -5,14 +5,7 @@ import { useEffect, useState } from "react";
 
 import { formatKey } from "@/lib/format";
 import { loadArchiveRecords } from "@/lib/storage";
-
-type ArchiveSummary = {
-  id: string;
-  number: number;
-  date: string;
-  title: string;
-  subtitle: string;
-};
+import type { ArchiveSummary } from "@/types/case";
 
 export function ArchiveList({ cases }: { cases: ArchiveSummary[] }) {
   const [completedDates, setCompletedDates] = useState<Set<string> | null>(null);

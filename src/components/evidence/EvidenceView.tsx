@@ -1,7 +1,6 @@
 "use client";
 
 import type { Evidence } from "@/types/case";
-import type { Evidence as EvidenceType } from "@/types/case";
 
 /* Shared chrome: a physical piece pinned to the file */
 function Piece({
@@ -58,7 +57,7 @@ function Handwriting({
   );
 }
 
-function Receipt(props: Extract<EvidenceType, { kind: "receipt" }>) {
+function Receipt(props: Extract<Evidence, { kind: "receipt" }>) {
   const { merchant, address, time, lines, total, card, footer, altText } = props;
   return (
     <div className="perforated bg-paper-50 p-4 pb-6 font-mono text-[12px] text-ink-950 shadow-paper ring-1 ring-black/20">
@@ -90,7 +89,7 @@ function Receipt(props: Extract<EvidenceType, { kind: "receipt" }>) {
   );
 }
 
-function Sms({ contact, messages, altText }: Extract<EvidenceType, { kind: "sms" }>) {
+function Sms({ contact, messages, altText }: Extract<Evidence, { kind: "sms" }>) {
   return (
     <Piece tone="dark">
       <p className="border-b border-ink-700 pb-2 font-mono text-[11px] uppercase tracking-[0.18em] text-kraft-400">
@@ -117,7 +116,7 @@ function Sms({ contact, messages, altText }: Extract<EvidenceType, { kind: "sms"
   );
 }
 
-function Email({ from, to, subject, sentAt, body, altText }: Extract<EvidenceType, { kind: "email" }>) {
+function Email({ from, to, subject, sentAt, body, altText }: Extract<Evidence, { kind: "email" }>) {
   return (
     <Piece>
       <div role="img" aria-label={altText}>
@@ -137,7 +136,7 @@ function Email({ from, to, subject, sentAt, body, altText }: Extract<EvidenceTyp
   );
 }
 
-function Photo({ caption, meta, altText, tone }: Extract<EvidenceType, { kind: "photo" }>) {
+function Photo({ caption, meta, altText, tone }: Extract<Evidence, { kind: "photo" }>) {
   const bg = {
     warm: "bg-gradient-to-br from-amber-200/70 to-orange-900/50",
     cold: "bg-gradient-to-br from-slate-300/70 to-slate-700/70",
@@ -167,7 +166,7 @@ function Photo({ caption, meta, altText, tone }: Extract<EvidenceType, { kind: "
   );
 }
 
-function Camera({ location, frames, altText }: Extract<EvidenceType, { kind: "camera" }>) {
+function Camera({ location, frames, altText }: Extract<Evidence, { kind: "camera" }>) {
   return (
     <Piece tone="dark">
       <div className="flex items-center justify-between border-b border-ink-700 pb-2">
@@ -189,7 +188,7 @@ function Camera({ location, frames, altText }: Extract<EvidenceType, { kind: "ca
   );
 }
 
-function Badge({ holder, entries, altText }: Extract<EvidenceType, { kind: "badge" }>) {
+function Badge({ holder, entries, altText }: Extract<Evidence, { kind: "badge" }>) {
   return (
     <Piece>
       <div role="img" aria-label={altText}>
@@ -218,7 +217,7 @@ function Badge({ holder, entries, altText }: Extract<EvidenceType, { kind: "badg
   );
 }
 
-function Schedule({ title, rows, altText }: Extract<EvidenceType, { kind: "schedule" }>) {
+function Schedule({ title, rows, altText }: Extract<Evidence, { kind: "schedule" }>) {
   return (
     <Piece>
       <p className="border-b-2 border-ink-950/70 pb-2 font-heading text-[12px] font-bold uppercase tracking-[0.16em]">
@@ -236,7 +235,7 @@ function Schedule({ title, rows, altText }: Extract<EvidenceType, { kind: "sched
   );
 }
 
-function CallLog({ owner, calls, altText }: Extract<EvidenceType, { kind: "callLog" }>) {
+function CallLog({ owner, calls, altText }: Extract<Evidence, { kind: "callLog" }>) {
   return (
     <Piece>
       <p className="border-b-2 border-ink-950/70 pb-2 font-heading text-[12px] font-bold uppercase tracking-[0.16em]">
@@ -263,7 +262,7 @@ function CallLog({ owner, calls, altText }: Extract<EvidenceType, { kind: "callL
   );
 }
 
-function MapView({ title, description, distances, altText }: Extract<EvidenceType, { kind: "map" }>) {
+function MapView({ title, description, distances, altText }: Extract<Evidence, { kind: "map" }>) {
   return (
     <Piece>
       <p className="border-b-2 border-ink-950/70 pb-2 font-heading text-[12px] font-bold uppercase tracking-[0.16em]">
@@ -289,7 +288,7 @@ function DocPiece({
   subtitle,
   paragraphs,
   altText,
-}: Extract<EvidenceType, { kind: "document" }>) {
+}: Extract<Evidence, { kind: "document" }>) {
   return (
     <Piece>
       <div role="img" aria-label={altText}>

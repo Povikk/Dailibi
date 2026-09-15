@@ -45,16 +45,15 @@ export function validateCase(file: CaseFile): ValidationReport {
 
   const suspectIds = new Set(pub.suspects.map((s) => s.id));
   const clueIds = new Set(pub.clues.map((c) => c.id));
-  const questionIds = new Set(pub.accusation.questions.map((q) => q.id));
-  const optionIds = new Set(
-    pub.accusation.questions.flatMap((q) => q.options.map((o) => o.id)),
-  );
 
   /* --- unique ids ------------------------------------------------- */
   checkUnique(pub.suspects.map((s) => s.id), "suspect", err);
   checkUnique(pub.clues.map((c) => c.id), "clue", err);
   checkUnique(pub.interviews.map((i) => i.id), "interview", err);
   checkUnique(pub.accusation.questions.map((q) => q.id), "question", err);
+  for (const question of pub.accusation.questions) {
+    checkUnique(question.options.map((o) => o.id), `option.${question.id}`, err);
+  }
 
   /* --- culprit ---------------------------------------------------- */
   if (!suspectIds.has(solution.culpritId)) {
@@ -80,7 +79,6 @@ export function validateCase(file: CaseFile): ValidationReport {
     err("questions.count", "Maximum 5 questions d'accusation.");
   }
 
-  const requiredQuestions = pub.accusation.questions.filter((q) => !q.optional);
   for (const q of pub.accusation.questions) {
     if (!q.optional && !(q.id in solution.validationAnswers)) {
       err("answers.missing", `Aucune réponse de validation pour la question "${q.id}".`);
@@ -93,9 +91,6 @@ export function validateCase(file: CaseFile): ValidationReport {
         "answers.invalid",
         `La réponse "${answer}" pour "${q.id}" n'est pas une option proposée.`,
       );
-    }
-    for (const o of q.options) {
-      if (!optionIds.has(o.id)) continue;
     }
   }
 
@@ -131,6 +126,15 @@ export function validateCase(file: CaseFile): ValidationReport {
     if (itv.unlockedByClueId && !clueIds.has(itv.unlockedByClueId)) {
       err("interview.clue", `Interview "${itv.id}" débloquée par un indice inconnu.`);
     }
+    if (itv.unlockedByClueId) {
+      const clue = pub.clues.find((c) => c.id === itv.unlockedByClueId);
+      if (clue && !clue.analysis.unlocksInterviewIds.includes(itv.id)) {
+        warn(
+          "unlock.mismatch",
+          `L'interview "${itv.id}" est débloquée par "${clue.id}", qui ne la liste pas.`,
+        );
+      }
+    }
   }
   for (const s of pub.suspects) {
     const base = pub.interviews.filter((i) => i.suspectId === s.id && !i.unlockedByClueId);
@@ -159,9 +163,35 @@ export function validateCase(file: CaseFile): ValidationReport {
         err("clue.contradicts", `Indice "${clue.id}" contredit un suspect inconnu "${target}".`);
       }
     }
+    for (const target of clue.analysis.supportsMotiveOf) {
+      if (!suspectIds.has(target)) {
+        err(
+          "clue.motiveSupport",
+          `Indice "${clue.id}" soutient le mobile d'un suspect inconnu "${target}".`,
+        );
+      }
+    }
+    for (const target of clue.analysis.supportsMethodOf) {
+      if (!suspectIds.has(target)) {
+        err(
+          "clue.methodSupport",
+          `Indice "${clue.id}" soutient la méthode d'un suspect inconnu "${target}".`,
+        );
+      }
+    }
     for (const target of clue.analysis.unlocksInterviewIds) {
-      if (!pub.interviews.some((i) => i.id === target)) {
+      const unlocked = pub.interviews.find((i) => i.id === target);
+      if (!unlocked) {
         err("clue.unlocks", `Indice "${clue.id}" débloque une interview inconnue "${target}".`);
+        continue;
+      }
+      if (unlocked.unlockedByClueId !== clue.id) {
+        warn(
+          "unlock.mismatch",
+          `L'indice "${clue.id}" déclare débloquer "${target}", qui se dit débloqué par "${
+            unlocked.unlockedByClueId ?? "aucun indice"
+          }".`,
+        );
       }
     }
     if (
@@ -220,6 +250,20 @@ export function validateCase(file: CaseFile): ValidationReport {
       "solution.proofChains",
       "Prévoir au moins deux chaînes de preuves indépendantes.",
     );
+  }
+
+  /* --- real timeline only refers to known people ------------------ */
+  const knownPeople = new Set(suspectIds);
+  if (pub.victim.id) knownPeople.add(pub.victim.id);
+  for (const entry of solution.correctTimeline) {
+    for (const personId of entry.personIds) {
+      if (!knownPeople.has(personId)) {
+        err(
+          "timeline.person",
+          `Chronologie ${entry.time} : personne inconnue "${personId}".`,
+        );
+      }
+    }
   }
 
   /* --- motive / method present in options ------------------------- */
@@ -324,17 +368,12 @@ export function assertValidCase(file: CaseFile): void {
 export function validateFairPlay(file: CaseFile): ValidationIssue[] {
   const issues: ValidationIssue[] = [];
   const { public: pub, solution } = file;
-  const clueIds = new Set(pub.clues.map((c) => c.id));
 
   const corpus = [
     solution.explanation,
     ...solution.reasoning,
     ...solution.proofChains.flatMap((c) => c.steps),
   ].join(" ");
-
-  for (const id of clueIds) {
-    // nothing to do, ids referenced by text are optional
-  }
 
   // The culprit's own alibi must be contradicted by at least one public clue.
   const contradictions = pub.clues.filter((c) =>

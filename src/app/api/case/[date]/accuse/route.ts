@@ -2,11 +2,11 @@ import "server-only";
 
 import { NextResponse } from "next/server";
 
-import { findCaseForDate } from "@/server/caseStore";
+import { findDatedCase } from "@/server/caseStore";
 import { buildSolvabilityMatrix } from "@/case-engine/solvability";
 import { validateCase, validateFairPlay } from "@/case-engine/validateCase";
 import { validateSolutionTimeline } from "@/case-engine/timelineValidator";
-import { isDailyKeyUnlocked } from "@/lib/daily";
+import { isDailyKeyUnlocked, isValidDayKey } from "@/lib/daily";
 import { buildAccuseResult } from "@/server/accusationResult";
 
 export const dynamic = "force-dynamic";
@@ -17,7 +17,7 @@ export async function POST(
 ): Promise<NextResponse> {
   const { date } = await context.params;
 
-  if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) {
+  if (!isValidDayKey(date)) {
     return NextResponse.json({ error: "Date invalide." }, { status: 400 });
   }
 
@@ -25,7 +25,7 @@ export async function POST(
     return NextResponse.json({ error: "Aucune affaire pour cette date." }, { status: 404 });
   }
 
-  const file = findCaseForDate(date);
+  const file = findDatedCase(date);
   if (!file) {
     return NextResponse.json({ error: "Aucune affaire pour cette date." }, { status: 404 });
   }
@@ -70,18 +70,23 @@ export async function POST(
 }
 
 /**
- * Development-only health endpoint. It never exposes private content, only
- * aggregate validity signals, so it is safe to keep in production.
+ * Development-only health endpoint: it exposes aggregate validity signals
+ * (error codes, culprit chain count, timeline conflicts), which is useful
+ * while authoring but must not be public. It is disabled outside development.
  */
 export async function GET(
   _request: Request,
   context: { params: Promise<{ date: string }> },
 ): Promise<NextResponse> {
-  const { date } = await context.params;
-  if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || !isDailyKeyUnlocked(date)) {
+  if (process.env.NODE_ENV === "production") {
     return NextResponse.json({ error: "Aucune affaire pour cette date." }, { status: 404 });
   }
-  const file = findCaseForDate(date);
+
+  const { date } = await context.params;
+  if (!isValidDayKey(date) || !isDailyKeyUnlocked(date)) {
+    return NextResponse.json({ error: "Aucune affaire pour cette date." }, { status: 404 });
+  }
+  const file = findDatedCase(date);
   if (!file) {
     return NextResponse.json({ error: "Aucune affaire pour cette date." }, { status: 404 });
   }

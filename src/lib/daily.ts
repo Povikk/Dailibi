@@ -59,6 +59,23 @@ export function dayNumber(key: string): number {
   return Math.floor(ms / 86_400_000);
 }
 
+/**
+ * Strict game-day key validation: correct shape AND real calendar day.
+ * Rejects both "2026-9-4" and impossible dates such as "2026-02-31",
+ * which a plain regex would let through before Date.UTC silently rolls them.
+ */
+export function isValidDayKey(key: string): boolean {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(key)) return false;
+  const [y, m, d] = key.split("-").map(Number);
+  if (m < 1 || m > 12 || d < 1 || d > 31) return false;
+  const date = new Date(Date.UTC(y, m - 1, d));
+  return (
+    date.getUTCFullYear() === y &&
+    date.getUTCMonth() === m - 1 &&
+    date.getUTCDate() === d
+  );
+}
+
 /** Today's game-day key. */
 export function currentDailyKey(now: Date = new Date()): string {
   return dateKey(now);
@@ -74,12 +91,16 @@ export function isDailyKeyUnlocked(key: string, now: Date = new Date()): boolean
   return dayNumber(key) <= currentDayNumber(now);
 }
 
-/** Milliseconds until the next rollover (next 00:00 Europe/Paris). */
+/**
+ * Milliseconds until the next rollover (next 00:00 Europe/Paris).
+ *
+ * The target is the *Paris midnight of the next game day*, not "today's
+ * midnight + 24h": DST days last 23 or 25 hours, so adding a fixed 86,400,000
+ * ms drifts by one hour around the transitions.
+ */
 export function msUntilNextRollover(now: Date = new Date()): number {
   const key = currentDailyKey(now);
-  const todayStart = parisMidnightUtc(key);
-  const tomorrow = new Date(todayStart.getTime() + 86_400_000);
-  return tomorrow.getTime() - now.getTime();
+  return parisMidnightUtc(nextKey(key)).getTime() - now.getTime();
 }
 
 /**
@@ -122,6 +143,13 @@ function minutesInParis(date: Date): number {
  */
 export function previousKey(key: string): string {
   const n = dayNumber(key) - 1;
+  const date = new Date(n * 86_400_000);
+  return date.toISOString().slice(0, 10);
+}
+
+/** Neutral calendar day after `key`, independent of timezone. */
+export function nextKey(key: string): string {
+  const n = dayNumber(key) + 1;
   const date = new Date(n * 86_400_000);
   return date.toISOString().slice(0, 10);
 }

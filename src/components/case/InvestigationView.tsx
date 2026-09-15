@@ -10,7 +10,7 @@ import { SuspectsPanel } from "@/components/case/SuspectsPanel";
 import { TimelinePanel } from "@/components/case/TimelinePanel";
 import { DossierPanel } from "@/components/case/DossierPanel";
 import { CaseReview } from "@/components/case/CaseReview";
-import { loadDayRecord } from "@/lib/storage";
+import { loadDayRecord, loadProgress, saveProgress } from "@/lib/storage";
 
 type Tab = "apercu" | "suspects" | "indices" | "chronologie" | "dossier";
 
@@ -25,13 +25,30 @@ const TABS: { id: Tab; label: string; code: string }[] = [
 export function InvestigationView({ caseData }: { caseData: ClientCase }) {
   const [tab, setTab] = useState<Tab>("apercu");
   const [foundClues, setFoundClues] = useState<Set<string>>(new Set());
+  const [inspectedSuspects, setInspectedSuspects] = useState<Set<string>>(new Set());
   const [accusing, setAccusing] = useState(false);
   const [startedAt] = useState(() => Date.now());
   const [alreadyCompleted, setAlreadyCompleted] = useState<boolean | null>(null);
+  const [progressLoaded, setProgressLoaded] = useState(false);
 
   useEffect(() => {
     setAlreadyCompleted(Boolean(loadDayRecord(caseData.date)));
   }, [caseData.date]);
+
+  useEffect(() => {
+    const progress = loadProgress(caseData.id);
+    setFoundClues(new Set(progress.foundClues));
+    setInspectedSuspects(new Set(progress.inspectedSuspects));
+    setProgressLoaded(true);
+  }, [caseData.id]);
+
+  useEffect(() => {
+    if (!progressLoaded) return;
+    saveProgress(caseData.id, {
+      foundClues: [...foundClues],
+      inspectedSuspects: [...inspectedSuspects],
+    });
+  }, [progressLoaded, caseData.id, foundClues, inspectedSuspects]);
 
   const availableInterviews = useMemo(() => {
     const bySuspect = new Map<string, Interview[]>();
@@ -55,6 +72,15 @@ export function InvestigationView({ caseData }: { caseData: ClientCase }) {
       if (prev.has(clueId)) return prev;
       const next = new Set(prev);
       next.add(clueId);
+      return next;
+    });
+  }
+
+  function markInspected(suspectId: string) {
+    setInspectedSuspects((prev) => {
+      if (prev.has(suspectId)) return prev;
+      const next = new Set(prev);
+      next.add(suspectId);
       return next;
     });
   }
@@ -106,6 +132,7 @@ export function InvestigationView({ caseData }: { caseData: ClientCase }) {
             interviews={availableInterviews}
             lockedCount={lockedCount}
             onSeeClues={() => setTab("indices")}
+            onInspect={markInspected}
           />
         ) : null}
         {tab === "indices" ? (
@@ -113,7 +140,11 @@ export function InvestigationView({ caseData }: { caseData: ClientCase }) {
         ) : null}
         {tab === "chronologie" ? <TimelinePanel caseData={caseData} /> : null}
         {tab === "dossier" ? (
-          <DossierPanel caseData={caseData} foundClues={foundClues} />
+          <DossierPanel
+            caseData={caseData}
+            foundClues={foundClues}
+            inspectedSuspects={inspectedSuspects.size}
+          />
         ) : null}
       </main>
 

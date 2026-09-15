@@ -21,7 +21,7 @@ export function buildShareText(params: {
     `\u{1F3AF} ${score} %`,
   ];
   if (streak > 0) lines.push(`\u{1F525} ${streak} jour${streak > 1 ? "s" : ""}`);
-  lines.push("", "https://dailibi.app");
+  lines.push("", "https://dailibi.povik.workers.dev");
   return lines.join("\n");
 }
 

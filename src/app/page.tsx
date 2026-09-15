@@ -1,17 +1,21 @@
 import { cookies } from "next/headers";
-import { notFound } from "next/navigation";
+import Link from "next/link";
 
 import { StatsBar } from "@/components/home/StatsBar";
 import { DailyCaseStatus } from "@/components/home/DailyCaseStatus";
 import { WelcomeTutorial } from "@/components/home/WelcomeTutorial";
-import { currentCase, toClientCase } from "@/server/caseStore";
+import { currentCase, nextCaseDate, toClientCase } from "@/server/caseStore";
 import { formatKey } from "@/lib/format";
 
 export const dynamic = "force-dynamic";
 
 export default async function HomePage() {
   const file = currentCase();
-  if (!file) notFound();
+
+  if (!file) {
+    return <AwaitingCase nextDate={nextCaseDate()} />;
+  }
+
   const caseData = toClientCase(file);
   const tutorialSeen = (await cookies()).get("dailibi_tutorial")?.value === "1";
 
@@ -64,6 +68,48 @@ export default async function HomePage() {
         <StatsBar />
       </div>
 
+    </main>
+  );
+}
+
+/**
+ * Shown on a day without a published case: the calendar is finite, so the
+ * next dossier is announced instead of replaying an old one.
+ */
+function AwaitingCase({ nextDate }: { nextDate?: string }) {
+  return (
+    <main className="mx-auto w-full max-w-3xl px-4 pb-16 pt-10 sm:px-6">
+      <header className="text-center">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.4em] text-accent-soft">
+          Une affaire. Chaque jour.
+        </p>
+        <h1 className="mt-2 text-5xl font-black tracking-tighter sm:text-6xl">DAILIBI</h1>
+      </header>
+
+      <article className="card mt-8 p-6 text-center sm:p-8">
+        <p className="label-meta">Dossier en attente</p>
+        <h2 className="mt-2 text-2xl font-black tracking-tight sm:text-3xl">
+          AUCUNE AFFAIRE AUJOURD&apos;HUI
+        </h2>
+        <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-paper-300/70">
+          {nextDate
+            ? `La prochaine enquête ouvre le ${formatKey(nextDate)} à minuit, heure de Paris.`
+            : "La collection publiée est terminée. De nouvelles affaires arriveront bientôt."}
+        </p>
+
+        <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
+          <Link href="/archives" className="btn-primary">
+            Explorer les archives
+          </Link>
+          <Link href="/historique" className="btn-ghost">
+            Mon historique
+          </Link>
+        </div>
+      </article>
+
+      <div className="mt-6 flex flex-col items-center gap-3 text-center">
+        <StatsBar />
+      </div>
     </main>
   );
 }

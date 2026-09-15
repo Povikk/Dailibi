@@ -11,6 +11,8 @@
     "build:cloudflare": "vinext build",
     "preview:cloudflare": "wrangler dev --config dist/server/wrangler.json",
     "deploy:cloudflare": "vinext-cloudflare deploy --config dist/server/wrangler.json",
+    "deploy:cloudflare:artifact": "vinext-cloudflare deploy --config dist/server/wrangler.json --skip-build",
+    "verify:build": "tsx scripts/verify-build.ts",
     "typecheck": "next typegen && tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
