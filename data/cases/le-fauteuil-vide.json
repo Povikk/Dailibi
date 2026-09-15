@@ -155,6 +155,31 @@
         }
       },
       {
+        "id": "fausse_piste_b",
+        "title": "Le détail contre Inès Delcourt",
+        "source": "PIÈCE À CONFONDRE",
+        "summary": "Inès a acheté deux billets sous un faux nom la veille de la disparition.",
+        "evidence": {
+          "kind": "note",
+          "body": "Inès a acheté deux billets sous un faux nom la veille de la disparition.",
+          "altText": "Note versée au dossier. Inès a acheté deux billets sous un faux nom la veille de la disparition."
+        },
+        "analysis": {
+          "category": "RED_HERRING",
+          "implicates": [
+            "ines"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "ines_detail"
+          ],
+          "isRedHerring": true
+        }
+      },
+      {
         "id": "alibi_a",
         "title": "Deux billets sous un faux nom",
         "source": "ENREGISTREMENT VIDÉO",
@@ -189,13 +214,9 @@
         "source": "ÉLÉMENT À CHARGE",
         "summary": "Meryem avait réservé une chambre au nom de Romain dans une ville voisine.",
         "evidence": {
-          "kind": "document",
-          "title": "La chambre réservée",
-          "subtitle": "ÉLÉMENT À CHARGE",
-          "paragraphs": [
-            "Meryem avait réservé une chambre au nom de Romain dans une ville voisine."
-          ],
-          "altText": "Document intitulé La chambre réservée. Meryem avait réservé une chambre au nom de Romain dans une ville voisine."
+          "kind": "note",
+          "body": "Meryem avait réservé une chambre au nom de Romain dans une ville voisine.",
+          "altText": "Note versée au dossier. Meryem avait réservé une chambre au nom de Romain dans une ville voisine."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -303,9 +324,17 @@
         "id": "meryem_detail",
         "suspectId": "meryem",
         "question": "Pourquoi avez-vous caché ce détail aux enquêteurs ?",
-        "answer": "« Je l'ai caché parce qu'il révélait un secret personnel. Ce secret n'a aucun lien avec l'incident. »",
+        "answer": "« Je l'ai gardé pour moi : cela ne concernait pas l'enquête. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
+      },
+      {
+        "id": "ines_detail",
+        "suspectId": "ines",
+        "question": "Qui peut confirmer votre explication sur cette pièce ?",
+        "answer": "« Mon explication est vérifiable. Cherchez le second enregistrement, pas seulement celui qui m'accuse. »",
+        "unlockedByClueId": "fausse_piste_b",
+        "beat": "Le recoupement suivant peut innocenter ou condamner."
       }
     ],
     "timeline": [
@@ -490,11 +519,18 @@
         ]
       },
       {
-        "title": "Le mobile et les innocents",
+        "title": "Les deux pistes à écarter",
+        "steps": [
+          "Inès a acheté deux billets sous un faux nom la veille de la disparition.",
+          "Le contrôle des billets et une vidéo familiale placent Inès dans l'autre salle pendant la disparition.",
+          "Meryem avait réservé une chambre au nom de Romain dans une ville voisine. La réservation faisait partie d'un protocole officiel de mise à l'abri prévu après son témoignage."
+        ]
+      },
+      {
+        "title": "Le mobile",
         "steps": [
           "Un message du frère de Victor annonce que des hommes attendent Romain à la sortie du cinéma.",
-          "Le contrôle des billets et une vidéo familiale placent Inès dans l'autre salle pendant la disparition.",
-          "La réservation faisait partie d'un protocole officiel de mise à l'abri prévu après son témoignage."
+          "Le mobile ne suffit pas : il faut aussi la présence et le moyen."
         ]
       }
     ]

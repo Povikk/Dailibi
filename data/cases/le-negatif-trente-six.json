@@ -58,17 +58,17 @@
         "id": "registre",
         "title": "Une visite avant l'ouverture",
         "source": "CONTRÔLE TECHNIQUE",
-        "summary": "Le scanner a été rallumé à 22 h 48 avec le profil de Nils malgré la restitution déclarée de la clé.",
+        "summary": "Le scanner a été rallumé à 22 h 48 avec le profil de Nils.",
         "evidence": {
           "kind": "schedule",
           "title": "CONTRÔLE TECHNIQUE",
           "rows": [
             {
               "time": "20:20",
-              "label": "Le scanner a été rallumé à 22 h 48 avec le profil de Nils malgré la restitution déclarée de la clé."
+              "label": "Le scanner a été rallumé à 22 h 48 avec le profil de Nils."
             }
           ],
-          "altText": "CONTRÔLE TECHNIQUE, 20:20. Le scanner a été rallumé à 22 h 48 avec le profil de Nils malgré la restitution déclarée de la clé."
+          "altText": "CONTRÔLE TECHNIQUE, 20:20. Le scanner a été rallumé à 22 h 48 avec le profil de Nils."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -155,18 +155,43 @@
         }
       },
       {
+        "id": "fausse_piste_b",
+        "title": "Le détail contre Diane Fabre",
+        "source": "PIÈCE À CONFONDRE",
+        "summary": "Diane a demandé le retrait de la vue 36 du catalogue avant la numérisation.",
+        "evidence": {
+          "kind": "note",
+          "body": "Diane a demandé le retrait de la vue 36 du catalogue avant la numérisation.",
+          "altText": "Note versée au dossier. Diane a demandé le retrait de la vue 36 du catalogue avant la numérisation."
+        },
+        "analysis": {
+          "category": "RED_HERRING",
+          "implicates": [
+            "diane"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "diane_detail"
+          ],
+          "isRedHerring": true
+        }
+      },
+      {
         "id": "alibi_a",
         "title": "Diane aux Archives",
         "source": "ALIBI VÉRIFIÉ",
-        "summary": "Les photographies du dîner montrent Diane tenant un verre dans chaque séquence horodatée de la fenêtre du vol.",
+        "summary": "Les photographies du dîner montrent Diane attablée sur chaque cliché horodaté de la fenêtre du vol.",
         "evidence": {
           "kind": "document",
           "title": "Diane aux Archives",
           "subtitle": "ALIBI VÉRIFIÉ",
           "paragraphs": [
-            "Les photographies du dîner montrent Diane tenant un verre dans chaque séquence horodatée de la fenêtre du vol."
+            "Les photographies du dîner montrent Diane attablée sur chaque cliché horodaté de la fenêtre du vol."
           ],
-          "altText": "Document intitulé Diane aux Archives. Les photographies du dîner montrent Diane tenant un verre dans chaque séquence horodatée de la fenêtre du vol."
+          "altText": "Document intitulé Diane aux Archives. Les photographies du dîner montrent Diane attablée sur chaque cliché horodaté de la fenêtre du vol."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -187,13 +212,9 @@
         "source": "ÉLÉMENT À CHARGE",
         "summary": "Hélène a demandé par écrit que la boîte soit temporairement retirée de l'exposition.",
         "evidence": {
-          "kind": "document",
-          "title": "La boîte d'Hélène",
-          "subtitle": "ÉLÉMENT À CHARGE",
-          "paragraphs": [
-            "Hélène a demandé par écrit que la boîte soit temporairement retirée de l'exposition."
-          ],
-          "altText": "Document intitulé La boîte d'Hélène. Hélène a demandé par écrit que la boîte soit temporairement retirée de l'exposition."
+          "kind": "note",
+          "body": "Hélène a demandé par écrit que la boîte soit temporairement retirée de l'exposition.",
+          "altText": "Note versée au dossier. Hélène a demandé par écrit que la boîte soit temporairement retirée de l'exposition."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -304,6 +325,14 @@
         "answer": "« La pièce est authentique, mais votre interprétation s'arrête trop tôt. Vérifiez la suite des événements. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "La pièce doit être replacée dans sa chronologie."
+      },
+      {
+        "id": "diane_detail",
+        "suspectId": "diane",
+        "question": "Pourquoi retrouve-t-on cet objet parmi vos affaires ?",
+        "answer": "« Cet objet m'appartient. Il ne se trouvait pourtant pas là au moment que vous imaginez. »",
+        "unlockedByClueId": "fausse_piste_b",
+        "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       }
     ],
     "timeline": [
@@ -327,7 +356,7 @@
       },
       {
         "time": "20:20",
-        "text": "Le scanner a été rallumé à 22 h 48 avec le profil de Nils malgré la restitution déclarée de la clé.",
+        "text": "Le scanner a été rallumé à 22 h 48 avec le profil de Nils.",
         "source": "CONTRÔLE TECHNIQUE",
         "certainty": "CERTAIN"
       },
@@ -470,10 +499,10 @@
       }
     ],
     "reasoning": [
-      "Le scanner a été rallumé à 22 h 48 avec le profil de Nils malgré la restitution déclarée de la clé. Cette donnée fragilise directement la version de Nils Caron.",
+      "Le scanner a été rallumé à 22 h 48 avec le profil de Nils. Cette donnée fragilise directement la version de Nils Caron.",
       "L'amorce de remplacement porte le même numéro d'émulsion que les pellicules personnelles saisies chez Nils. La trace relie le geste au procédé employé.",
       "Une conversation de vente décrit « la trente-sixième vue, jamais publiée » et fixe un rendez-vous après la numérisation. Le mobile repose donc sur un fait vérifiable.",
-      "Les photographies du dîner montrent Diane tenant un verre dans chaque séquence horodatée de la fenêtre du vol. De son côté, la principale autre piste ne résiste pas au recoupement.",
+      "Les photographies du dîner montrent Diane attablée sur chaque cliché horodaté de la fenêtre du vol. De son côté, la principale autre piste ne résiste pas au recoupement.",
       "Hélène a demandé par écrit que la boîte soit temporairement retirée de l'exposition. L'élément paraît accusateur, mais il change de sens avec la dernière pièce : sa demande invoquait la présence non floutée d'un mineur sur le négatif 12, sans mentionner la vue 36.",
       "Présence, moyen et intérêt convergent vers Nils Caron."
     ],
@@ -482,17 +511,24 @@
       {
         "title": "Ce qui trahit Nils Caron",
         "steps": [
-          "Le scanner a été rallumé à 22 h 48 avec le profil de Nils malgré la restitution déclarée de la clé.",
+          "Le scanner a été rallumé à 22 h 48 avec le profil de Nils.",
           "L'amorce de remplacement porte le même numéro d'émulsion que les pellicules personnelles saisies chez Nils.",
           "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]
       },
       {
-        "title": "Le mobile et les innocents",
+        "title": "Les deux pistes à écarter",
+        "steps": [
+          "Diane a demandé le retrait de la vue 36 du catalogue avant la numérisation.",
+          "Les photographies du dîner montrent Diane attablée sur chaque cliché horodaté de la fenêtre du vol.",
+          "Hélène a demandé par écrit que la boîte soit temporairement retirée de l'exposition. Sa demande invoquait la présence non floutée d'un mineur sur le négatif 12, sans mentionner la vue 36."
+        ]
+      },
+      {
+        "title": "Le mobile",
         "steps": [
           "Une conversation de vente décrit « la trente-sixième vue, jamais publiée » et fixe un rendez-vous après la numérisation.",
-          "Les photographies du dîner montrent Diane tenant un verre dans chaque séquence horodatée de la fenêtre du vol.",
-          "Sa demande invoquait la présence non floutée d'un mineur sur le négatif 12, sans mentionner la vue 36."
+          "Le mobile ne suffit pas : il faut aussi la présence et le moyen."
         ]
       }
     ]

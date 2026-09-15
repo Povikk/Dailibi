@@ -313,6 +313,25 @@ export function validateCase(file: CaseFile): ValidationReport {
     }
   }
 
+  /* --- chaque innocent a une piste à écarter ---------------------- */
+  for (const suspect of pub.suspects) {
+    if (suspect.id === solution.culpritId) continue;
+    const accused = pub.clues.some((clue) => clue.analysis.implicates.includes(suspect.id));
+    const cleared = pub.clues.some((clue) => clue.analysis.clears.includes(suspect.id));
+    if (!accused) {
+      err(
+        "innocent.nolead",
+        `${suspect.name} n'est visé par aucune piste : il ne coûte rien de l'innocenter.`,
+      );
+    }
+    if (!cleared) {
+      err(
+        "innocent.noclear",
+        `${suspect.name} n'est écarté par aucun indice : sa piste reste ouverte.`,
+      );
+    }
+  }
+
   return {
     ok: errors.length === 0,
     errors,

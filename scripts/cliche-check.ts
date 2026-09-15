@@ -35,7 +35,12 @@ for (const { file, data } of cases) {
 
   const suspectsWithSecret = data.public.suspects.filter((s) =>
     data.public.interviews.some(
-      (i) => i.suspectId === s.id && i.unlockedByClueId && /ment|menti|cache|honte|secret/i.test(i.answer),
+      (i) =>
+        i.suspectId === s.id &&
+        i.unlockedByClueId &&
+        // Ciblé sur les mots du trope : /ment/ seul matchait "enregistrement",
+        // "directement" ou "événements".
+        /menti(?!on)|mensonge|secret|cach(?:er|é|ée)|honte/i.test(i.answer),
     ),
   );
   if (suspectsWithSecret.length === data.public.suspects.length && data.public.suspects.length >= 3) {

@@ -163,7 +163,7 @@ const detailAnswers = [
   "« Cet objet m'appartient. Il ne se trouvait pourtant pas là au moment que vous imaginez. »",
   "« Vous avez le bon élément et la mauvaise chronologie. C'est précisément ce qui vous égare. »",
   "« Pris seul, ce détail m'accuse. Comparé au reste du dossier, il raconte autre chose. »",
-  "« Je l'ai caché parce qu'il révélait un secret personnel. Ce secret n'a aucun lien avec l'incident. »",
+  "« Je l'ai gardé pour moi : cela ne concernait pas l'enquête. »",
   "« Mon explication est vérifiable. Cherchez le second enregistrement, pas seulement celui qui m'accuse. »",
 ];
 
@@ -193,12 +193,23 @@ for (const filename of readdirSync(root).filter((name) => name.endsWith(".json")
     continue;
   }
 
+  // Les titres éditoriaux sont listés par rôle, attribués par identifiant :
+  // l'ordre des indices peut évoluer sans casser la correspondance.
+  const titleById: Record<string, string | undefined> = {
+    registre: titles[0],
+    trace: titles[1],
+    mobile: titles[2],
+    alibi_a: titles[3],
+    fausse_piste: titles[4],
+    resolution: titles[5],
+  };
+
   const times = p.clues.map((clue, index) => evidenceTime(clue.evidence) ?? p.timeline[index % p.timeline.length]?.time ?? "20:00");
   p.clues.forEach((clue, index) => {
-    clue.title = titles[index];
-    clue.source = sourceFor(clue.summary, clue.analysis.category, p.number, index);
+    clue.title = titleById[clue.id] ?? clue.title;
+    clue.source = sourceFor(clue.summary, clue.analysis.category, p.number, index, clue.id);
     clue.evidence = buildEvidence(
-      evidenceKindFor(clue.summary, index, p.number),
+      evidenceKindFor(clue.summary, index, p.number, clue.id),
       clue.title,
       clue.source,
       clue.summary,
@@ -225,10 +236,15 @@ for (const filename of readdirSync(root).filter((name) => name.endsWith(".json")
   const culprit = p.suspects.find((suspect) => suspect.id === culpritId)!;
   const confrontation = p.interviews.find((item) => item.id === `${culpritId}_confrontation`);
   const motive = p.interviews.find((item) => item.id === `${culpritId}_mobile`);
-  const detail = p.interviews.find((item) => item.id.endsWith("_detail"));
+  // Deux fausses pistes, deux interrogatoires de détail à remplir.
+  const details = p.interviews.filter(
+    (item) => item.unlockedByClueId === "fausse_piste" || item.unlockedByClueId === "fausse_piste_b",
+  );
   if (confrontation) confrontation.question = confrontationQuestions[p.number % confrontationQuestions.length];
   if (motive) motive.question = motiveQuestions[p.number % motiveQuestions.length];
-  if (detail) detail.question = redHerringQuestions[p.number % redHerringQuestions.length];
+  details.forEach((detail, offset) => {
+    detail.question = redHerringQuestions[(p.number + offset) % redHerringQuestions.length];
+  });
   if (confrontation) {
     confrontation.answer = confrontationAnswers[p.number % confrontationAnswers.length];
     confrontation.beat = ["Le mensonge est admis, mais sa raison reste à établir.", "La présence devient certaine. Le geste reste à prouver.", "La réponse réduit l'alibi à une version non vérifiée."][p.number % 3];
@@ -237,12 +253,19 @@ for (const filename of readdirSync(root).filter((name) => name.endsWith(".json")
     motive.answer = motiveAnswers[p.number % motiveAnswers.length];
     motive.beat = ["L'intérêt personnel est reconnu sans que le passage à l'acte le soit.", "Le document donne un poids concret au mobile.", "La menace n'est plus abstraite pour cette personne."][p.number % 3];
   }
-  if (detail) {
-    detail.answer = detailAnswers[p.number % detailAnswers.length];
-    detail.beat = ["La pièce doit être replacée dans sa chronologie.", "Une coïncidence forte n'est pas encore une preuve complète.", "Le recoupement suivant peut innocenter ou condamner."][p.number % 3];
-  }
+  details.forEach((detail, offset) => {
+    detail.answer = detailAnswers[(p.number + offset) % detailAnswers.length];
+    detail.beat = ["La pièce doit être replacée dans sa chronologie.", "Une coïncidence forte n'est pas encore une preuve complète.", "Le recoupement suivant peut innocenter ou condamner."][(p.number + offset) % 3];
+  });
 
-  const [contradiction, trace, motiveProof, innocentProof, redHerring, redResolved] = p.clues.map((clue) => clue.summary);
+  const summaryById = new Map(p.clues.map((clue) => [clue.id, clue.summary]));
+  const contradiction = summaryById.get("registre") ?? "";
+  const trace = summaryById.get("trace") ?? "";
+  const motiveProof = summaryById.get("mobile") ?? "";
+  const innocentProof = summaryById.get("alibi_a") ?? "";
+  const redHerring = summaryById.get("fausse_piste") ?? "";
+  const redResolved = summaryById.get("resolution") ?? "";
+  const alibiSuspicion = summaryById.get("fausse_piste_b") ?? "";
   p.timeline = [
     { time: p.timeline[0].time, text: `Dernière apparition confirmée de ${p.victim.name}.`, source: "Recoupement des témoignages", certainty: "CERTAIN" },
     { time: p.timeline[1].time, text: motiveProof, source: p.clues[2].source, certainty: "CERTAIN" },
@@ -290,7 +313,8 @@ for (const filename of readdirSync(root).filter((name) => name.endsWith(".json")
   ];
   file.solution.proofChains = [
     { title: `Ce qui trahit ${culprit.name}`, steps: [contradiction, trace, `Les deux pièces décrivent le même geste sans dépendre d'un aveu.`] },
-    { title: "Le mobile et les innocents", steps: [motiveProof, innocentProof, redResolved] },
+    { title: "Les deux pistes à écarter", steps: [alibiSuspicion, innocentProof, `${redHerring} ${redResolved}`] },
+    { title: "Le mobile", steps: [motiveProof, `Le mobile ne suffit pas : il faut aussi la présence et le moyen.`] },
   ];
 
   const polished = polishStrings(file) as CaseFile;
@@ -310,25 +334,39 @@ function buildEvidence(kind: Evidence["kind"], title: string, source: string, bo
   }
 }
 
-function evidenceKindFor(summary: string, index: number, number: number): Evidence["kind"] {
-  if (index === 0) {
+function evidenceKindFor(
+  summary: string,
+  index: number,
+  number: number,
+  id: string,
+): Evidence["kind"] {
+  if (id === "registre") {
     return /caméra|vidéo|image|photo|reflet/i.test(summary) ? "camera" : "schedule";
   }
-  if (index === 1) return number % 2 === 0 ? "photo" : "document";
-  if (index === 3 && /caméra|vidéo|image|flux|enregistrement/i.test(summary)) return "camera";
+  if (id === "trace") return number % 2 === 0 ? "photo" : "document";
+  if (id === "alibi_a" && /caméra|vidéo|image|flux|enregistrement/i.test(summary)) return "camera";
+  if (id === "fausse_piste" || id === "fausse_piste_b") return "note";
+  void index;
   return "document";
 }
 
-function sourceFor(summary: string, category: string, number: number, index: number): string {
-  if (index === 1) return "ANALYSE MATÉRIELLE";
-  if (index === 2) return /message|courriel|conversation/i.test(summary) ? "CORRESPONDANCE SAISIE" : "DOCUMENT SAISI";
-  if (index === 3) {
+function sourceFor(
+  summary: string,
+  category: string,
+  number: number,
+  index: number,
+  id: string,
+): string {
+  if (id === "trace") return "ANALYSE MATÉRIELLE";
+  if (id === "mobile") return /message|courriel|conversation/i.test(summary) ? "CORRESPONDANCE SAISIE" : "DOCUMENT SAISI";
+  if (id === "alibi_a") {
     if (/caméra|vidéo|image|flux|enregistrement/i.test(summary)) return "ENREGISTREMENT VIDÉO";
     if (/gps|trajet|péage|badge|accès/i.test(summary)) return "DONNÉES DE DÉPLACEMENT";
     return "ALIBI VÉRIFIÉ";
   }
-  if (index === 4) return "ÉLÉMENT À CHARGE";
-  if (index === 5) return "RECOUPEMENT FINAL";
+  if (id === "fausse_piste") return "ÉLÉMENT À CHARGE";
+  if (id === "fausse_piste_b") return "PIÈCE À CONFONDRE";
+  if (id === "resolution") return "RECOUPEMENT FINAL";
   if (/caméra|vidéo|image|photo|reflet/i.test(summary)) return "ENREGISTREMENT VIDÉO";
   if (/badge|registre|journal|capteur|session|ordinateur/i.test(summary)) return "JOURNAL TECHNIQUE";
   const sources: Record<string, string[]> = {

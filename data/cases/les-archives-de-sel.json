@@ -93,15 +93,15 @@
         "id": "trace",
         "title": "Le sel du garage",
         "source": "ANALYSE MATÉRIELLE",
-        "summary": "Le sel utilisé contient un antiagglomérant réservé aux sacs de déneigement stockés dans son garage.",
+        "summary": "Le sel utilisé contient un antiagglomérant réservé aux sacs de déneigement stockés dans le garage de Gilles.",
         "evidence": {
           "kind": "document",
           "title": "Le sel du garage",
           "subtitle": "ANALYSE MATÉRIELLE",
           "paragraphs": [
-            "Le sel utilisé contient un antiagglomérant réservé aux sacs de déneigement stockés dans son garage."
+            "Le sel utilisé contient un antiagglomérant réservé aux sacs de déneigement stockés dans le garage de Gilles."
           ],
-          "altText": "Document intitulé Le sel du garage. Le sel utilisé contient un antiagglomérant réservé aux sacs de déneigement stockés dans son garage."
+          "altText": "Document intitulé Le sel du garage. Le sel utilisé contient un antiagglomérant réservé aux sacs de déneigement stockés dans le garage de Gilles."
         },
         "analysis": {
           "category": "TIMELINE",
@@ -148,6 +148,31 @@
         }
       },
       {
+        "id": "fausse_piste_b",
+        "title": "Le détail contre Sofiane Clerc",
+        "source": "PIÈCE À CONFONDRE",
+        "summary": "Sofiane a demandé la liste des mesures réécrites au nom de sa procédure.",
+        "evidence": {
+          "kind": "note",
+          "body": "Sofiane a demandé la liste des mesures réécrites au nom de sa procédure.",
+          "altText": "Note versée au dossier. Sofiane a demandé la liste des mesures réécrites au nom de sa procédure."
+        },
+        "analysis": {
+          "category": "RED_HERRING",
+          "implicates": [
+            "sofiane"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "sofiane_detail"
+          ],
+          "isRedHerring": true
+        }
+      },
+      {
         "id": "alibi_a",
         "title": "Mara devant les capteurs",
         "source": "ALIBI VÉRIFIÉ",
@@ -165,7 +190,7 @@
           "category": "EXONERATING",
           "implicates": [],
           "clears": [
-            "mara"
+            "sofiane"
           ],
           "contradicts": [],
           "supportsMotiveOf": [],
@@ -180,25 +205,21 @@
         "source": "ÉLÉMENT À CHARGE",
         "summary": "Mara avait désactivé l'alarme d'humidité de la caisse la semaine précédente.",
         "evidence": {
-          "kind": "document",
-          "title": "La bouteille de Sofiane",
-          "subtitle": "ÉLÉMENT À CHARGE",
-          "paragraphs": [
-            "Mara avait désactivé l'alarme d'humidité de la caisse la semaine précédente."
-          ],
-          "altText": "Document intitulé La bouteille de Sofiane. Mara avait désactivé l'alarme d'humidité de la caisse la semaine précédente."
+          "kind": "note",
+          "body": "Mara avait désactivé l'alarme d'humidité de la caisse la semaine précédente.",
+          "altText": "Note versée au dossier. Mara avait désactivé l'alarme d'humidité de la caisse la semaine précédente."
         },
         "analysis": {
           "category": "RED_HERRING",
           "implicates": [
-            "sofiane"
+            "mara"
           ],
           "clears": [],
           "contradicts": [],
           "supportsMotiveOf": [],
           "supportsMethodOf": [],
           "unlocksInterviewIds": [
-            "sofiane_detail"
+            "mara_detail"
           ],
           "isRedHerring": true
         }
@@ -221,7 +242,7 @@
           "category": "EXONERATING",
           "implicates": [],
           "clears": [
-            "sofiane"
+            "mara"
           ],
           "contradicts": [],
           "supportsMotiveOf": [],
@@ -291,12 +312,20 @@
         "beat": "Le document donne un poids concret au mobile."
       },
       {
-        "id": "sofiane_detail",
-        "suspectId": "sofiane",
+        "id": "mara_detail",
+        "suspectId": "mara",
         "question": "Pourquoi retrouve-t-on cet objet parmi vos affaires ?",
         "answer": "« Cet objet m'appartient. Il ne se trouvait pourtant pas là au moment que vous imaginez. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
+      },
+      {
+        "id": "sofiane_detail",
+        "suspectId": "sofiane",
+        "question": "À quel moment cet élément a-t-il changé de sens ?",
+        "answer": "« Vous avez le bon élément et la mauvaise chronologie. C'est précisément ce qui vous égare. »",
+        "unlockedByClueId": "fausse_piste_b",
+        "beat": "Le recoupement suivant peut innocenter ou condamner."
       }
     ],
     "timeline": [
@@ -464,7 +493,7 @@
     ],
     "reasoning": [
       "Une photo du groupe scolaire reflète Gilles descendant seul vers la galerie pendant la pause. Cette donnée fragilise directement la version de Gilles Roth.",
-      "Le sel utilisé contient un antiagglomérant réservé aux sacs de déneigement stockés dans son garage. La trace relie le geste au procédé employé.",
+      "Le sel utilisé contient un antiagglomérant réservé aux sacs de déneigement stockés dans le garage de Gilles. La trace relie le geste au procédé employé.",
       "Une copie partielle du registre porte sa signature sous des mesures réécrites après l'accident. Le mobile repose donc sur un fait vérifiable.",
       "Les journaux du tribunal et une audience enregistrée placent Sofiane à Metz. De son côté, la principale autre piste ne résiste pas au recoupement.",
       "Mara avait désactivé l'alarme d'humidité de la caisse la semaine précédente. L'élément paraît accusateur, mais il change de sens avec la dernière pièce : elle avait remplacé le capteur par un modèle autonome dont les données prouvent que seul l'intérieur de la boîte s'est humidifié.",
@@ -476,16 +505,23 @@
         "title": "Ce qui trahit Gilles Roth",
         "steps": [
           "Une photo du groupe scolaire reflète Gilles descendant seul vers la galerie pendant la pause.",
-          "Le sel utilisé contient un antiagglomérant réservé aux sacs de déneigement stockés dans son garage.",
+          "Le sel utilisé contient un antiagglomérant réservé aux sacs de déneigement stockés dans le garage de Gilles.",
           "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]
       },
       {
-        "title": "Le mobile et les innocents",
+        "title": "Les deux pistes à écarter",
+        "steps": [
+          "Sofiane a demandé la liste des mesures réécrites au nom de sa procédure.",
+          "Les journaux du tribunal et une audience enregistrée placent Sofiane à Metz.",
+          "Mara avait désactivé l'alarme d'humidité de la caisse la semaine précédente. Elle avait remplacé le capteur par un modèle autonome dont les données prouvent que seul l'intérieur de la boîte s'est humidifié."
+        ]
+      },
+      {
+        "title": "Le mobile",
         "steps": [
           "Une copie partielle du registre porte sa signature sous des mesures réécrites après l'accident.",
-          "Les journaux du tribunal et une audience enregistrée placent Sofiane à Metz.",
-          "Elle avait remplacé le capteur par un modèle autonome dont les données prouvent que seul l'intérieur de la boîte s'est humidifié."
+          "Le mobile ne suffit pas : il faut aussi la présence et le moyen."
         ]
       }
     ]

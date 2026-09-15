@@ -58,17 +58,17 @@
         "id": "registre",
         "title": "Un reflet au bord de la piste",
         "source": "ENREGISTREMENT VIDÉO",
-        "summary": "Le reflet d'une caméra de surveillance dans la baie vitrée montre Léon au bord de la piste neuf minutes avant la répétition, et non dans la tribune.",
+        "summary": "Le reflet d'une caméra de surveillance dans la baie vitrée montre Léon au bord de la piste neuf minutes avant la répétition.",
         "evidence": {
           "kind": "camera",
           "location": "ENREGISTREMENT VIDÉO",
           "frames": [
             {
               "time": "19:53",
-              "text": "Le reflet d'une caméra de surveillance dans la baie vitrée montre Léon au bord de la piste neuf minutes avant la répétition, et non dans la tribune."
+              "text": "Le reflet d'une caméra de surveillance dans la baie vitrée montre Léon au bord de la piste neuf minutes avant la répétition."
             }
           ],
-          "altText": "Image enregistrée à 19:53. Le reflet d'une caméra de surveillance dans la baie vitrée montre Léon au bord de la piste neuf minutes avant la répétition, et non dans la tribune."
+          "altText": "Image enregistrée à 19:53. Le reflet d'une caméra de surveillance dans la baie vitrée montre Léon au bord de la piste neuf minutes avant la répétition."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -148,6 +148,31 @@
         }
       },
       {
+        "id": "fausse_piste_b",
+        "title": "Le détail contre Ana Costa",
+        "source": "PIÈCE À CONFONDRE",
+        "summary": "Le flacon d'entretien d'Ana contient le même alcool que la trace relevée dans la glace.",
+        "evidence": {
+          "kind": "note",
+          "body": "Le flacon d'entretien d'Ana contient le même alcool que la trace relevée dans la glace.",
+          "altText": "Note versée au dossier. Le flacon d'entretien d'Ana contient le même alcool que la trace relevée dans la glace."
+        },
+        "analysis": {
+          "category": "RED_HERRING",
+          "implicates": [
+            "ana"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "ana_detail"
+          ],
+          "isRedHerring": true
+        }
+      },
+      {
         "id": "alibi_a",
         "title": "Le vestiaire d'Ana",
         "source": "ENREGISTREMENT VIDÉO",
@@ -182,13 +207,9 @@
         "source": "ÉLÉMENT À CHARGE",
         "summary": "Le rapport d'Yves révèle une température générale légèrement trop élevée.",
         "evidence": {
-          "kind": "document",
-          "title": "Une glace trop chaude",
-          "subtitle": "ÉLÉMENT À CHARGE",
-          "paragraphs": [
-            "Le rapport d'Yves révèle une température générale légèrement trop élevée."
-          ],
-          "altText": "Document intitulé Une glace trop chaude. Le rapport d'Yves révèle une température générale légèrement trop élevée."
+          "kind": "note",
+          "body": "Le rapport d'Yves révèle une température générale légèrement trop élevée.",
+          "altText": "Note versée au dossier. Le rapport d'Yves révèle une température générale légèrement trop élevée."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -299,6 +320,14 @@
         "answer": "« Pris seul, ce détail m'accuse. Comparé au reste du dossier, il raconte autre chose. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "La pièce doit être replacée dans sa chronologie."
+      },
+      {
+        "id": "ana_detail",
+        "suspectId": "ana",
+        "question": "Pourquoi avez-vous caché ce détail aux enquêteurs ?",
+        "answer": "« Je l'ai gardé pour moi : cela ne concernait pas l'enquête. »",
+        "unlockedByClueId": "fausse_piste_b",
+        "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       }
     ],
     "timeline": [
@@ -322,7 +351,7 @@
       },
       {
         "time": "19:53",
-        "text": "Le reflet d'une caméra de surveillance dans la baie vitrée montre Léon au bord de la piste neuf minutes avant la répétition, et non dans la tribune.",
+        "text": "Le reflet d'une caméra de surveillance dans la baie vitrée montre Léon au bord de la piste neuf minutes avant la répétition.",
         "source": "ENREGISTREMENT VIDÉO",
         "certainty": "CERTAIN"
       },
@@ -465,7 +494,7 @@
       }
     ],
     "reasoning": [
-      "Le reflet d'une caméra de surveillance dans la baie vitrée montre Léon au bord de la piste neuf minutes avant la répétition, et non dans la tribune. Cette donnée fragilise directement la version de Léon Barthe.",
+      "Le reflet d'une caméra de surveillance dans la baie vitrée montre Léon au bord de la piste neuf minutes avant la répétition. Cette donnée fragilise directement la version de Léon Barthe.",
       "Le mélange contient des particules violettes identiques à celles de l'encre fluorescente utilisée par Léon sur ses plans chorégraphiques. La trace relie le geste au procédé employé.",
       "Son message supprimé promet que Mila « ne patinera pas cette spirale sans son nom ». Le mobile repose donc sur un fait vérifiable.",
       "Les caméras du couloir des vestiaires confirment la présence continue d'Ana avec son équipe. De son côté, la principale autre piste ne résiste pas au recoupement.",
@@ -477,17 +506,24 @@
       {
         "title": "Ce qui trahit Léon Barthe",
         "steps": [
-          "Le reflet d'une caméra de surveillance dans la baie vitrée montre Léon au bord de la piste neuf minutes avant la répétition, et non dans la tribune.",
+          "Le reflet d'une caméra de surveillance dans la baie vitrée montre Léon au bord de la piste neuf minutes avant la répétition.",
           "Le mélange contient des particules violettes identiques à celles de l'encre fluorescente utilisée par Léon sur ses plans chorégraphiques.",
           "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]
       },
       {
-        "title": "Le mobile et les innocents",
+        "title": "Les deux pistes à écarter",
+        "steps": [
+          "Le flacon d'entretien d'Ana contient le même alcool que la trace relevée dans la glace.",
+          "Les caméras du couloir des vestiaires confirment la présence continue d'Ana avec son équipe.",
+          "Le rapport d'Yves révèle une température générale légèrement trop élevée. Cette température aurait assoupli toute la piste. Elle ne peut pas expliquer une unique spirale restée molle."
+        ]
+      },
+      {
+        "title": "Le mobile",
         "steps": [
           "Son message supprimé promet que Mila « ne patinera pas cette spirale sans son nom ».",
-          "Les caméras du couloir des vestiaires confirment la présence continue d'Ana avec son équipe.",
-          "Cette température aurait assoupli toute la piste. Elle ne peut pas expliquer une unique spirale restée molle."
+          "Le mobile ne suffit pas : il faut aussi la présence et le moyen."
         ]
       }
     ]

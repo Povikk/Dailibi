@@ -93,15 +93,15 @@
         "id": "trace",
         "title": "La bague dans la cire",
         "source": "ANALYSE MATÉRIELLE",
-        "summary": "La cire ramollie conserve l'empreinte inversée de sa bague carrée lorsqu'elle a appuyé son visage contre le panneau étroit.",
+        "summary": "La cire ramollie conserve l'empreinte inversée de la bague carrée de Roxane.",
         "evidence": {
           "kind": "document",
           "title": "La bague dans la cire",
           "subtitle": "ANALYSE MATÉRIELLE",
           "paragraphs": [
-            "La cire ramollie conserve l'empreinte inversée de sa bague carrée lorsqu'elle a appuyé son visage contre le panneau étroit."
+            "La cire ramollie conserve l'empreinte inversée de la bague carrée de Roxane."
           ],
-          "altText": "Document intitulé La bague dans la cire. La cire ramollie conserve l'empreinte inversée de sa bague carrée lorsqu'elle a appuyé son visage contre le panneau étroit."
+          "altText": "Document intitulé La bague dans la cire. La cire ramollie conserve l'empreinte inversée de la bague carrée de Roxane."
         },
         "analysis": {
           "category": "TIMELINE",
@@ -148,6 +148,31 @@
         }
       },
       {
+        "id": "fausse_piste_b",
+        "title": "Le détail contre Côme Vidal",
+        "source": "PIÈCE À CONFONDRE",
+        "summary": "Les outils de l'atelier de Côme portent la trace de cire relevée sur le mécanisme.",
+        "evidence": {
+          "kind": "note",
+          "body": "Les outils de l'atelier de Côme portent la trace de cire relevée sur le mécanisme.",
+          "altText": "Note versée au dossier. Les outils de l'atelier de Côme portent la trace de cire relevée sur le mécanisme."
+        },
+        "analysis": {
+          "category": "RED_HERRING",
+          "implicates": [
+            "come"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "come_detail"
+          ],
+          "isRedHerring": true
+        }
+      },
+      {
         "id": "alibi_a",
         "title": "Côme face à l'horloge",
         "source": "ENREGISTREMENT VIDÉO",
@@ -182,13 +207,9 @@
         "source": "ÉLÉMENT À CHARGE",
         "summary": "Le certificat d'Étienne surévalue nettement la pureté du diamant.",
         "evidence": {
-          "kind": "document",
-          "title": "Le certificat du joaillier",
-          "subtitle": "ÉLÉMENT À CHARGE",
-          "paragraphs": [
-            "Le certificat d'Étienne surévalue nettement la pureté du diamant."
-          ],
-          "altText": "Document intitulé Le certificat du joaillier. Le certificat d'Étienne surévalue nettement la pureté du diamant."
+          "kind": "note",
+          "body": "Le certificat d'Étienne surévalue nettement la pureté du diamant.",
+          "altText": "Note versée au dossier. Le certificat d'Étienne surévalue nettement la pureté du diamant."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -299,6 +320,14 @@
         "answer": "« Mon explication est vérifiable. Cherchez le second enregistrement, pas seulement celui qui m'accuse. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Le recoupement suivant peut innocenter ou condamner."
+      },
+      {
+        "id": "come_detail",
+        "suspectId": "come",
+        "question": "Cette pièce semble vous accuser. Que manque-t-il au dossier ?",
+        "answer": "« La pièce est authentique, mais votre interprétation s'arrête trop tôt. Vérifiez la suite des événements. »",
+        "unlockedByClueId": "fausse_piste_b",
+        "beat": "La pièce doit être replacée dans sa chronologie."
       }
     ],
     "timeline": [
@@ -466,7 +495,7 @@
     ],
     "reasoning": [
       "Le vestiaire reste vide tandis que le badge de Roxane ouvre la trappe climatique derrière la statue. Cette donnée fragilise directement la version de Roxane Perez.",
-      "La cire ramollie conserve l'empreinte inversée de sa bague carrée lorsqu'elle a appuyé son visage contre le panneau étroit. La trace relie le geste au procédé employé.",
+      "La cire ramollie conserve l'empreinte inversée de la bague carrée de Roxane. La trace relie le geste au procédé employé.",
       "Une police complémentaire souscrite par Roxane lui verse une commission si le sinistre survient pendant son événement. Le mobile repose donc sur un fait vérifiable.",
       "Le flux de l'atelier montre Côme travailler sans interruption, horloge visible. De son côté, la principale autre piste ne résiste pas au recoupement.",
       "Le certificat d'Étienne surévalue nettement la pureté du diamant. L'élément paraît accusateur, mais il change de sens avec la dernière pièce : la pierre volée est malgré tout authentique et les vidéos le gardent au pupitre pendant l'accès à la trappe.",
@@ -478,16 +507,23 @@
         "title": "Ce qui trahit Roxane Perez",
         "steps": [
           "Le vestiaire reste vide tandis que le badge de Roxane ouvre la trappe climatique derrière la statue.",
-          "La cire ramollie conserve l'empreinte inversée de sa bague carrée lorsqu'elle a appuyé son visage contre le panneau étroit.",
+          "La cire ramollie conserve l'empreinte inversée de la bague carrée de Roxane.",
           "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]
       },
       {
-        "title": "Le mobile et les innocents",
+        "title": "Les deux pistes à écarter",
+        "steps": [
+          "Les outils de l'atelier de Côme portent la trace de cire relevée sur le mécanisme.",
+          "Le flux de l'atelier montre Côme travailler sans interruption, horloge visible.",
+          "Le certificat d'Étienne surévalue nettement la pureté du diamant. La pierre volée est malgré tout authentique et les vidéos le gardent au pupitre pendant l'accès à la trappe."
+        ]
+      },
+      {
+        "title": "Le mobile",
         "steps": [
           "Une police complémentaire souscrite par Roxane lui verse une commission si le sinistre survient pendant son événement.",
-          "Le flux de l'atelier montre Côme travailler sans interruption, horloge visible.",
-          "La pierre volée est malgré tout authentique et les vidéos le gardent au pupitre pendant l'accès à la trappe."
+          "Le mobile ne suffit pas : il faut aussi la présence et le moyen."
         ]
       }
     ]

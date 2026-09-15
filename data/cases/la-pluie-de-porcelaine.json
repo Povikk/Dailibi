@@ -155,6 +155,31 @@
         }
       },
       {
+        "id": "fausse_piste_b",
+        "title": "Le détail contre Oscar Nève",
+        "source": "PIÈCE À CONFONDRE",
+        "summary": "Oscar a emprunté la clé de l'atelier la veille de la cuisson.",
+        "evidence": {
+          "kind": "note",
+          "body": "Oscar a emprunté la clé de l'atelier la veille de la cuisson.",
+          "altText": "Note versée au dossier. Oscar a emprunté la clé de l'atelier la veille de la cuisson."
+        },
+        "analysis": {
+          "category": "RED_HERRING",
+          "implicates": [
+            "oscar"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "oscar_detail"
+          ],
+          "isRedHerring": true
+        }
+      },
+      {
         "id": "alibi_a",
         "title": "Étienne à la préparation",
         "source": "ALIBI VÉRIFIÉ",
@@ -172,7 +197,7 @@
           "category": "EXONERATING",
           "implicates": [],
           "clears": [
-            "etienne"
+            "oscar"
           ],
           "contradicts": [],
           "supportsMotiveOf": [],
@@ -187,25 +212,21 @@
         "source": "ÉLÉMENT À CHARGE",
         "summary": "Étienne a désactivé l'alarme d'ouverture du four pendant douze minutes.",
         "evidence": {
-          "kind": "document",
-          "title": "La porte forcée par Oscar",
-          "subtitle": "ÉLÉMENT À CHARGE",
-          "paragraphs": [
-            "Étienne a désactivé l'alarme d'ouverture du four pendant douze minutes."
-          ],
-          "altText": "Document intitulé La porte forcée par Oscar. Étienne a désactivé l'alarme d'ouverture du four pendant douze minutes."
+          "kind": "note",
+          "body": "Étienne a désactivé l'alarme d'ouverture du four pendant douze minutes.",
+          "altText": "Note versée au dossier. Étienne a désactivé l'alarme d'ouverture du four pendant douze minutes."
         },
         "analysis": {
           "category": "RED_HERRING",
           "implicates": [
-            "oscar"
+            "etienne"
           ],
           "clears": [],
           "contradicts": [],
           "supportsMotiveOf": [],
           "supportsMethodOf": [],
           "unlocksInterviewIds": [
-            "oscar_detail"
+            "etienne_detail"
           ],
           "isRedHerring": true
         }
@@ -228,7 +249,7 @@
           "category": "EXONERATING",
           "implicates": [],
           "clears": [
-            "oscar"
+            "etienne"
           ],
           "contradicts": [],
           "supportsMotiveOf": [],
@@ -298,12 +319,20 @@
         "beat": "Le document donne un poids concret au mobile."
       },
       {
-        "id": "oscar_detail",
-        "suspectId": "oscar",
+        "id": "etienne_detail",
+        "suspectId": "etienne",
         "question": "Pourquoi avez-vous caché ce détail aux enquêteurs ?",
-        "answer": "« Je l'ai caché parce qu'il révélait un secret personnel. Ce secret n'a aucun lien avec l'incident. »",
+        "answer": "« Je l'ai gardé pour moi : cela ne concernait pas l'enquête. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
+      },
+      {
+        "id": "oscar_detail",
+        "suspectId": "oscar",
+        "question": "Qui peut confirmer votre explication sur cette pièce ?",
+        "answer": "« Mon explication est vérifiable. Cherchez le second enregistrement, pas seulement celui qui m'accuse. »",
+        "unlockedByClueId": "fausse_piste_b",
+        "beat": "Le recoupement suivant peut innocenter ou condamner."
       }
     ],
     "timeline": [
@@ -488,11 +517,18 @@
         ]
       },
       {
-        "title": "Le mobile et les innocents",
+        "title": "Les deux pistes à écarter",
+        "steps": [
+          "Oscar a emprunté la clé de l'atelier la veille de la cuisson.",
+          "Les photographies géolocalisées et le passage sur scène placent Oscar à Paris avant la fermeture du four.",
+          "Étienne a désactivé l'alarme d'ouverture du four pendant douze minutes. Il l'a fait pour remplacer un thermocouple extérieur. Les scellés mécaniques de la porte restent intacts."
+        ]
+      },
+      {
+        "title": "Le mobile",
         "steps": [
           "Un échéancier bancaire exige la somme exacte couverte par l'assurance de l'exposition.",
-          "Les photographies géolocalisées et le passage sur scène placent Oscar à Paris avant la fermeture du four.",
-          "Il l'a fait pour remplacer un thermocouple extérieur. Les scellés mécaniques de la porte restent intacts."
+          "Le mobile ne suffit pas : il faut aussi la présence et le moyen."
         ]
       }
     ]

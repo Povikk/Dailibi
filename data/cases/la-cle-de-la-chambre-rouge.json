@@ -155,6 +155,31 @@
         }
       },
       {
+        "id": "fausse_piste_b",
+        "title": "Le détail contre Marc Engel",
+        "source": "PIÈCE À CONFONDRE",
+        "summary": "Marc a réclamé la veille une copie des plans de la chambre rouge au service urbanisme.",
+        "evidence": {
+          "kind": "note",
+          "body": "Marc a réclamé la veille une copie des plans de la chambre rouge au service urbanisme.",
+          "altText": "Note versée au dossier. Marc a réclamé la veille une copie des plans de la chambre rouge au service urbanisme."
+        },
+        "analysis": {
+          "category": "RED_HERRING",
+          "implicates": [
+            "marc"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "marc_detail"
+          ],
+          "isRedHerring": true
+        }
+      },
+      {
         "id": "alibi_a",
         "title": "Marc devant témoins",
         "source": "ALIBI VÉRIFIÉ",
@@ -187,13 +212,9 @@
         "source": "ÉLÉMENT À CHARGE",
         "summary": "La clé passe d'Hugo ouvre effectivement la chambre rouge.",
         "evidence": {
-          "kind": "document",
-          "title": "La clé d'Hugo",
-          "subtitle": "ÉLÉMENT À CHARGE",
-          "paragraphs": [
-            "La clé passe d'Hugo ouvre effectivement la chambre rouge."
-          ],
-          "altText": "Document intitulé La clé d'Hugo. La clé passe d'Hugo ouvre effectivement la chambre rouge."
+          "kind": "note",
+          "body": "La clé passe d'Hugo ouvre effectivement la chambre rouge.",
+          "altText": "Note versée au dossier. La clé passe d'Hugo ouvre effectivement la chambre rouge."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -304,6 +325,14 @@
         "answer": "« Vous avez le bon élément et la mauvaise chronologie. C'est précisément ce qui vous égare. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Le recoupement suivant peut innocenter ou condamner."
+      },
+      {
+        "id": "marc_detail",
+        "suspectId": "marc",
+        "question": "Que prouve réellement cette pièce, selon vous ?",
+        "answer": "« Pris seul, ce détail m'accuse. Comparé au reste du dossier, il raconte autre chose. »",
+        "unlockedByClueId": "fausse_piste_b",
+        "beat": "La pièce doit être replacée dans sa chronologie."
       }
     ],
     "timeline": [
@@ -488,11 +517,18 @@
         ]
       },
       {
-        "title": "Le mobile et les innocents",
+        "title": "Les deux pistes à écarter",
+        "steps": [
+          "Marc a réclamé la veille une copie des plans de la chambre rouge au service urbanisme.",
+          "La retransmission du conseil montre Marc au micro au moment précis de la photo.",
+          "La clé passe d'Hugo ouvre effectivement la chambre rouge. Le ticket et la signature de la cliente à Kehl encadrent toute la période. Aucune copie de sa clé n'a été utilisée."
+        ]
+      },
+      {
+        "title": "Le mobile",
         "steps": [
           "Un message au promoteur promet « la coupe qui fera tomber le recours » contre le paiement du loyer collectif.",
-          "La retransmission du conseil montre Marc au micro au moment précis de la photo.",
-          "Le ticket et la signature de la cliente à Kehl encadrent toute la période. Aucune copie de sa clé n'a été utilisée."
+          "Le mobile ne suffit pas : il faut aussi la présence et le moyen."
         ]
       }
     ]

@@ -96,6 +96,42 @@ describe("validateCase", () => {
     expect(validateCase(case14.data).errors).toEqual([]);
   });
 
+  it("écarte chaque innocent par un indice", () => {
+    for (const { file, data } of cases) {
+      const culprit = data.solution.culpritId;
+      for (const suspect of data.public.suspects.filter((s) => s.id !== culprit)) {
+        const accused = data.public.clues.some((clue) =>
+          clue.analysis.implicates.includes(suspect.id),
+        );
+        const cleared = data.public.clues.some((clue) =>
+          clue.analysis.clears.includes(suspect.id),
+        );
+        expect(accused, `${file}: ${suspect.name} sans piste`).toBe(true);
+        expect(cleared, `${file}: ${suspect.name} sans indice qui l'écarte`).toBe(true);
+      }
+    }
+  });
+
+  it("détecte un innocent sans piste à écarter", () => {
+    const bad = structuredClone(cases[0].data) as CaseFile;
+    const culprit = bad.solution.culpritId;
+    const target = bad.public.suspects.find((suspect) => suspect.id !== culprit)!;
+    for (const clue of bad.public.clues) {
+      clue.analysis.implicates = clue.analysis.implicates.filter((id) => id !== target.id);
+    }
+    const report = validateCase(bad);
+    expect(report.errors.some((e) => e.code === "innocent.nolead")).toBe(true);
+  });
+
+  it("propose exactement deux fausses pistes par affaire", () => {
+    for (const { file, data } of cases) {
+      const herrings = data.public.clues.filter(
+        (clue) => clue.analysis.category === "RED_HERRING",
+      );
+      expect(herrings.length, file).toBe(2);
+    }
+  });
+
   it("signale un déblocage d'interview non réciproque", () => {
     const target = cases.find(({ data }) =>
       data.public.interviews.some((interview) => interview.unlockedByClueId),

@@ -58,17 +58,17 @@
         "id": "registre",
         "title": "Le badge de 6 h 42",
         "source": "JOURNAL TECHNIQUE",
-        "summary": "Le registre du coffre montre que Véra a utilisé son badge visiteur à 6 h 42, avant l'ouverture qu'elle prétend être sa première venue.",
+        "summary": "Le registre du coffre montre que Véra a utilisé son badge visiteur à 6 h 42.",
         "evidence": {
           "kind": "schedule",
           "title": "JOURNAL TECHNIQUE",
           "rows": [
             {
               "time": "19:39",
-              "label": "Le registre du coffre montre que Véra a utilisé son badge visiteur à 6 h 42, avant l'ouverture qu'elle prétend être sa première venue."
+              "label": "Le registre du coffre montre que Véra a utilisé son badge visiteur à 6 h 42."
             }
           ],
-          "altText": "JOURNAL TECHNIQUE, 19:39. Le registre du coffre montre que Véra a utilisé son badge visiteur à 6 h 42, avant l'ouverture qu'elle prétend être sa première venue."
+          "altText": "JOURNAL TECHNIQUE, 19:39. Le registre du coffre montre que Véra a utilisé son badge visiteur à 6 h 42."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -148,6 +148,31 @@
         }
       },
       {
+        "id": "fausse_piste_b",
+        "title": "Le détail contre Nassim Grégoire",
+        "source": "PIÈCE À CONFONDRE",
+        "summary": "La transcription de Nassim contient la faute que la copie reproduit.",
+        "evidence": {
+          "kind": "note",
+          "body": "La transcription de Nassim contient la faute que la copie reproduit.",
+          "altText": "Note versée au dossier. La transcription de Nassim contient la faute que la copie reproduit."
+        },
+        "analysis": {
+          "category": "RED_HERRING",
+          "implicates": [
+            "nassim"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "nassim_detail"
+          ],
+          "isRedHerring": true
+        }
+      },
+      {
         "id": "alibi_a",
         "title": "Nassim loin du coffre",
         "source": "ALIBI VÉRIFIÉ",
@@ -180,13 +205,9 @@
         "source": "ÉLÉMENT À CHARGE",
         "summary": "Colombe a effacé une séquence de caméra devant le coffre.",
         "evidence": {
-          "kind": "document",
-          "title": "La minute effacée",
-          "subtitle": "ÉLÉMENT À CHARGE",
-          "paragraphs": [
-            "Colombe a effacé une séquence de caméra devant le coffre."
-          ],
-          "altText": "Document intitulé La minute effacée. Colombe a effacé une séquence de caméra devant le coffre."
+          "kind": "note",
+          "body": "Colombe a effacé une séquence de caméra devant le coffre.",
+          "altText": "Note versée au dossier. Colombe a effacé une séquence de caméra devant le coffre."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -297,6 +318,14 @@
         "answer": "« Cet objet m'appartient. Il ne se trouvait pourtant pas là au moment que vous imaginez. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
+      },
+      {
+        "id": "nassim_detail",
+        "suspectId": "nassim",
+        "question": "À quel moment cet élément a-t-il changé de sens ?",
+        "answer": "« Vous avez le bon élément et la mauvaise chronologie. C'est précisément ce qui vous égare. »",
+        "unlockedByClueId": "fausse_piste_b",
+        "beat": "Le recoupement suivant peut innocenter ou condamner."
       }
     ],
     "timeline": [
@@ -320,7 +349,7 @@
       },
       {
         "time": "19:39",
-        "text": "Le registre du coffre montre que Véra a utilisé son badge visiteur à 6 h 42, avant l'ouverture qu'elle prétend être sa première venue.",
+        "text": "Le registre du coffre montre que Véra a utilisé son badge visiteur à 6 h 42.",
         "source": "JOURNAL TECHNIQUE",
         "certainty": "CERTAIN"
       },
@@ -463,7 +492,7 @@
       }
     ],
     "reasoning": [
-      "Le registre du coffre montre que Véra a utilisé son badge visiteur à 6 h 42, avant l'ouverture qu'elle prétend être sa première venue. Cette donnée fragilise directement la version de Véra Klein.",
+      "Le registre du coffre montre que Véra a utilisé son badge visiteur à 6 h 42. Cette donnée fragilise directement la version de Véra Klein.",
       "La copie reproduit une erreur OCR invisible dans l'original mais présente dans le fichier reçu par Véra. La trace relie le geste au procédé employé.",
       "Un virement d'un collectionneur suisse correspond à la moitié du prix convenu pour l'original hors catalogue. Le mobile repose donc sur un fait vérifiable.",
       "Le lecteur des archives et trois demandes de documents horodatées placent Nassim à distance. De son côté, la principale autre piste ne résiste pas au recoupement.",
@@ -475,17 +504,24 @@
       {
         "title": "Ce qui trahit Véra Klein",
         "steps": [
-          "Le registre du coffre montre que Véra a utilisé son badge visiteur à 6 h 42, avant l'ouverture qu'elle prétend être sa première venue.",
+          "Le registre du coffre montre que Véra a utilisé son badge visiteur à 6 h 42.",
           "La copie reproduit une erreur OCR invisible dans l'original mais présente dans le fichier reçu par Véra.",
           "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]
       },
       {
-        "title": "Le mobile et les innocents",
+        "title": "Les deux pistes à écarter",
+        "steps": [
+          "La transcription de Nassim contient la faute que la copie reproduit.",
+          "Le lecteur des archives et trois demandes de documents horodatées placent Nassim à distance.",
+          "Colombe a effacé une séquence de caméra devant le coffre. La séquence masquait une dispute familiale la veille. Une sauvegarde montre que le manuscrit était encore original après son départ."
+        ]
+      },
+      {
+        "title": "Le mobile",
         "steps": [
           "Un virement d'un collectionneur suisse correspond à la moitié du prix convenu pour l'original hors catalogue.",
-          "Le lecteur des archives et trois demandes de documents horodatées placent Nassim à distance.",
-          "La séquence masquait une dispute familiale la veille. Une sauvegarde montre que le manuscrit était encore original après son départ."
+          "Le mobile ne suffit pas : il faut aussi la présence et le moyen."
         ]
       }
     ]

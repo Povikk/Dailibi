@@ -58,17 +58,17 @@
         "id": "registre",
         "title": "Pia sur l'échelle",
         "source": "ENREGISTREMENT VIDÉO",
-        "summary": "Une photo de répétition montre Pia sur l'échelle à 19 h 12, après son départ annoncé.",
+        "summary": "Une photo de répétition montre Pia sur l'échelle à 19 h 12.",
         "evidence": {
           "kind": "camera",
           "location": "ENREGISTREMENT VIDÉO",
           "frames": [
             {
               "time": "21:02",
-              "text": "Une photo de répétition montre Pia sur l'échelle à 19 h 12, après son départ annoncé."
+              "text": "Une photo de répétition montre Pia sur l'échelle à 19 h 12."
             }
           ],
-          "altText": "Image enregistrée à 21:02. Une photo de répétition montre Pia sur l'échelle à 19 h 12, après son départ annoncé."
+          "altText": "Image enregistrée à 21:02. Une photo de répétition montre Pia sur l'échelle à 19 h 12."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -93,10 +93,10 @@
         "id": "trace",
         "title": "Les paillettes du câble",
         "source": "ANALYSE MATÉRIELLE",
-        "summary": "La peinture autour du câble contient ses paillettes expérimentales, absentes des pots communs.",
+        "summary": "La peinture appliquée autour du câble contient des paillettes expérimentales absentes des pots utilisés par l'équipe.",
         "evidence": {
           "kind": "photo",
-          "caption": "La peinture autour du câble contient ses paillettes expérimentales, absentes des pots communs.",
+          "caption": "La peinture appliquée autour du câble contient des paillettes expérimentales absentes des pots utilisés par l'équipe.",
           "meta": [
             {
               "label": "Heure",
@@ -107,7 +107,7 @@
               "value": "Les paillettes du câble"
             }
           ],
-          "altText": "Photographie. La peinture autour du câble contient ses paillettes expérimentales, absentes des pots communs.",
+          "altText": "Photographie. La peinture appliquée autour du câble contient des paillettes expérimentales absentes des pots utilisés par l'équipe.",
           "tone": "cold"
         },
         "analysis": {
@@ -155,18 +155,45 @@
         }
       },
       {
+        "id": "fausse_piste_b",
+        "title": "Le détail contre Joël Garnier",
+        "source": "PIÈCE À CONFONDRE",
+        "summary": "Joël a signé le bon de retour du câble litigieux sans procéder au contrôle.",
+        "evidence": {
+          "kind": "note",
+          "body": "Joël a signé le bon de retour du câble litigieux sans procéder au contrôle.",
+          "altText": "Note versée au dossier. Joël a signé le bon de retour du câble litigieux sans procéder au contrôle."
+        },
+        "analysis": {
+          "category": "RED_HERRING",
+          "implicates": [
+            "joel"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "joel_detail"
+          ],
+          "isRedHerring": true
+        }
+      },
+      {
         "id": "alibi_a",
         "title": "Le cintre opposé",
-        "source": "ALIBI VÉRIFIÉ",
-        "summary": "Le relevé de charge signé par Joël est filmé au cintre opposé pendant toute la retouche.",
+        "source": "ENREGISTREMENT VIDÉO",
+        "summary": "Une caméra du plateau montre Joël au cintre opposé, avec deux techniciens, pendant toute la retouche.",
         "evidence": {
-          "kind": "document",
-          "title": "Le cintre opposé",
-          "subtitle": "ALIBI VÉRIFIÉ",
-          "paragraphs": [
-            "Le relevé de charge signé par Joël est filmé au cintre opposé pendant toute la retouche."
+          "kind": "camera",
+          "location": "ENREGISTREMENT VIDÉO",
+          "frames": [
+            {
+              "time": "20:55",
+              "text": "Une caméra du plateau montre Joël au cintre opposé, avec deux techniciens, pendant toute la retouche."
+            }
           ],
-          "altText": "Document intitulé Le cintre opposé. Le relevé de charge signé par Joël est filmé au cintre opposé pendant toute la retouche."
+          "altText": "Image enregistrée à 20:55. Une caméra du plateau montre Joël au cintre opposé, avec deux techniciens, pendant toute la retouche."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -187,13 +214,9 @@
         "source": "ÉLÉMENT À CHARGE",
         "summary": "La police d'assurance de Sacha double l'indemnité en cas d'accident avant première.",
         "evidence": {
-          "kind": "document",
-          "title": "La clause d'assurance",
-          "subtitle": "ÉLÉMENT À CHARGE",
-          "paragraphs": [
-            "La police d'assurance de Sacha double l'indemnité en cas d'accident avant première."
-          ],
-          "altText": "Document intitulé La clause d'assurance. La police d'assurance de Sacha double l'indemnité en cas d'accident avant première."
+          "kind": "note",
+          "body": "La police d'assurance de Sacha double l'indemnité en cas d'accident avant première.",
+          "altText": "Note versée au dossier. La police d'assurance de Sacha double l'indemnité en cas d'accident avant première."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -214,15 +237,15 @@
         "id": "resolution",
         "title": "La réunion dans le foyer",
         "source": "RECOUPEMENT FINAL",
-        "summary": "Le foyer vitré le montre en réunion continue et la clause avait été exigée par le théâtre, non par lui.",
+        "summary": "Le foyer vitré montre Sacha en réunion continue avec les coproducteurs, et la clause d'assurance avait été exigée par le théâtre.",
         "evidence": {
           "kind": "document",
           "title": "La réunion dans le foyer",
           "subtitle": "RECOUPEMENT FINAL",
           "paragraphs": [
-            "Le foyer vitré le montre en réunion continue et la clause avait été exigée par le théâtre, non par lui."
+            "Le foyer vitré montre Sacha en réunion continue avec les coproducteurs, et la clause d'assurance avait été exigée par le théâtre."
           ],
-          "altText": "Document intitulé La réunion dans le foyer. Le foyer vitré le montre en réunion continue et la clause avait été exigée par le théâtre, non par lui."
+          "altText": "Document intitulé La réunion dans le foyer. Le foyer vitré montre Sacha en réunion continue avec les coproducteurs, et la clause d'assurance avait été exigée par le théâtre."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -304,6 +327,14 @@
         "answer": "« La pièce est authentique, mais votre interprétation s'arrête trop tôt. Vérifiez la suite des événements. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "La pièce doit être replacée dans sa chronologie."
+      },
+      {
+        "id": "joel_detail",
+        "suspectId": "joel",
+        "question": "Pourquoi retrouve-t-on cet objet parmi vos affaires ?",
+        "answer": "« Cet objet m'appartient. Il ne se trouvait pourtant pas là au moment que vous imaginez. »",
+        "unlockedByClueId": "fausse_piste_b",
+        "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       }
     ],
     "timeline": [
@@ -327,7 +358,7 @@
       },
       {
         "time": "21:02",
-        "text": "Une photo de répétition montre Pia sur l'échelle à 19 h 12, après son départ annoncé.",
+        "text": "Une photo de répétition montre Pia sur l'échelle à 19 h 12.",
         "source": "ENREGISTREMENT VIDÉO",
         "certainty": "CERTAIN"
       },
@@ -470,29 +501,36 @@
       }
     ],
     "reasoning": [
-      "Une photo de répétition montre Pia sur l'échelle à 19 h 12, après son départ annoncé. Cette donnée fragilise directement la version de Pia Lenoir.",
-      "La peinture autour du câble contient ses paillettes expérimentales, absentes des pots communs. La trace relie le geste au procédé employé.",
+      "Une photo de répétition montre Pia sur l'échelle à 19 h 12. Cette donnée fragilise directement la version de Pia Lenoir.",
+      "La peinture appliquée autour du câble contient des paillettes expérimentales absentes des pots utilisés par l'équipe. La trace relie le geste au procédé employé.",
       "Un dossier envoyé à une galerie revendique la lune sous son nom et annonce sa « libération » le soir de l'accident. Le mobile repose donc sur un fait vérifiable.",
-      "Le relevé de charge signé par Joël est filmé au cintre opposé pendant toute la retouche. De son côté, la principale autre piste ne résiste pas au recoupement.",
-      "La police d'assurance de Sacha double l'indemnité en cas d'accident avant première. L'élément paraît accusateur, mais il change de sens avec la dernière pièce : le foyer vitré le montre en réunion continue et la clause avait été exigée par le théâtre, non par lui.",
+      "Une caméra du plateau montre Joël au cintre opposé, avec deux techniciens, pendant toute la retouche. De son côté, la principale autre piste ne résiste pas au recoupement.",
+      "La police d'assurance de Sacha double l'indemnité en cas d'accident avant première. L'élément paraît accusateur, mais il change de sens avec la dernière pièce : le foyer vitré montre Sacha en réunion continue avec les coproducteurs, et la clause d'assurance avait été exigée par le théâtre.",
       "Présence, moyen et intérêt convergent vers Pia Lenoir."
     ],
-    "explanation": "Pia a entaillé le câble suffisamment pour qu'il cède sous tension puis peint la blessure comme un détail du décor. Elle voulait que la chute détruise la création attribuée à Édith sans blesser l'actrice, mais son calcul de charge était approximatif. Ce qui pousse Pia Lenoir à agir devient clair : faire annuler la première pour reprendre publiquement la paternité du décor. Concrètement, il fallait pré-entailler le câble puis camoufler les fibres sous la peinture argentée. Le foyer vitré le montre en réunion continue et la clause avait été exigée par le théâtre, non par lui. Une fois ce point vérifié, toutes les pièces s'accordent.",
+    "explanation": "Pia a entaillé le câble suffisamment pour qu'il cède sous tension puis peint la blessure comme un détail du décor. Elle voulait que la chute détruise la création attribuée à Édith sans blesser l'actrice, mais son calcul de charge était approximatif. Ce qui pousse Pia Lenoir à agir devient clair : faire annuler la première pour reprendre publiquement la paternité du décor. Concrètement, il fallait pré-entailler le câble puis camoufler les fibres sous la peinture argentée. Le foyer vitré montre Sacha en réunion continue avec les coproducteurs, et la clause d'assurance avait été exigée par le théâtre. Une fois ce point vérifié, toutes les pièces s'accordent.",
     "proofChains": [
       {
         "title": "Ce qui trahit Pia Lenoir",
         "steps": [
-          "Une photo de répétition montre Pia sur l'échelle à 19 h 12, après son départ annoncé.",
-          "La peinture autour du câble contient ses paillettes expérimentales, absentes des pots communs.",
+          "Une photo de répétition montre Pia sur l'échelle à 19 h 12.",
+          "La peinture appliquée autour du câble contient des paillettes expérimentales absentes des pots utilisés par l'équipe.",
           "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]
       },
       {
-        "title": "Le mobile et les innocents",
+        "title": "Les deux pistes à écarter",
+        "steps": [
+          "Joël a signé le bon de retour du câble litigieux sans procéder au contrôle.",
+          "Une caméra du plateau montre Joël au cintre opposé, avec deux techniciens, pendant toute la retouche.",
+          "La police d'assurance de Sacha double l'indemnité en cas d'accident avant première. Le foyer vitré montre Sacha en réunion continue avec les coproducteurs, et la clause d'assurance avait été exigée par le théâtre."
+        ]
+      },
+      {
+        "title": "Le mobile",
         "steps": [
           "Un dossier envoyé à une galerie revendique la lune sous son nom et annonce sa « libération » le soir de l'accident.",
-          "Le relevé de charge signé par Joël est filmé au cintre opposé pendant toute la retouche.",
-          "Le foyer vitré le montre en réunion continue et la clause avait été exigée par le théâtre, non par lui."
+          "Le mobile ne suffit pas : il faut aussi la présence et le moyen."
         ]
       }
     ]

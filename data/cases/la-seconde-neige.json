@@ -58,17 +58,17 @@
         "id": "registre",
         "title": "Le froid dans les chaussures",
         "source": "JOURNAL TECHNIQUE",
-        "summary": "Le thermomètre de ses chaussures enregistre une chute brutale à -18 °C pendant son prétendu sommeil.",
+        "summary": "Le thermomètre des chaussures de Loup enregistre une chute brutale à -18 °C.",
         "evidence": {
           "kind": "schedule",
           "title": "JOURNAL TECHNIQUE",
           "rows": [
             {
               "time": "20:08",
-              "label": "Le thermomètre de ses chaussures enregistre une chute brutale à -18 °C pendant son prétendu sommeil."
+              "label": "Le thermomètre des chaussures de Loup enregistre une chute brutale à -18 °C."
             }
           ],
-          "altText": "JOURNAL TECHNIQUE, 20:08. Le thermomètre de ses chaussures enregistre une chute brutale à -18 °C pendant son prétendu sommeil."
+          "altText": "JOURNAL TECHNIQUE, 20:08. Le thermomètre des chaussures de Loup enregistre une chute brutale à -18 °C."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -93,10 +93,10 @@
         "id": "trace",
         "title": "Des pas sans arrivée",
         "source": "ANALYSE MATÉRIELLE",
-        "summary": "Les pas sans arrivée commencent à la bouche enneigée du tunnel technique reliant le refuge à la pente.",
+        "summary": "Les traces de pas s'arrêtent net à la bouche enneigée du tunnel technique qui relie le refuge à la pente.",
         "evidence": {
           "kind": "photo",
-          "caption": "Les pas sans arrivée commencent à la bouche enneigée du tunnel technique reliant le refuge à la pente.",
+          "caption": "Les traces de pas s'arrêtent net à la bouche enneigée du tunnel technique qui relie le refuge à la pente.",
           "meta": [
             {
               "label": "Heure",
@@ -107,7 +107,7 @@
               "value": "Des pas sans arrivée"
             }
           ],
-          "altText": "Photographie. Les pas sans arrivée commencent à la bouche enneigée du tunnel technique reliant le refuge à la pente.",
+          "altText": "Photographie. Les traces de pas s'arrêtent net à la bouche enneigée du tunnel technique qui relie le refuge à la pente.",
           "tone": "cold"
         },
         "analysis": {
@@ -155,6 +155,31 @@
         }
       },
       {
+        "id": "fausse_piste_b",
+        "title": "Le détail contre Mila Anders",
+        "source": "PIÈCE À CONFONDRE",
+        "summary": "Le rapport d'Ariane annulait le financement du modèle de Mila.",
+        "evidence": {
+          "kind": "note",
+          "body": "Le rapport d'Ariane annulait le financement du modèle de Mila.",
+          "altText": "Note versée au dossier. Le rapport d'Ariane annulait le financement du modèle de Mila."
+        },
+        "analysis": {
+          "category": "RED_HERRING",
+          "implicates": [
+            "mila"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "mila_detail"
+          ],
+          "isRedHerring": true
+        }
+      },
+      {
         "id": "alibi_a",
         "title": "Mila à la radio",
         "source": "ENREGISTREMENT VIDÉO",
@@ -189,13 +214,9 @@
         "source": "ÉLÉMENT À CHARGE",
         "summary": "Le GPS volé dans le sac de Jon contient l'itinéraire exact vers la crevasse.",
         "evidence": {
-          "kind": "document",
-          "title": "Le GPS de Jon",
-          "subtitle": "ÉLÉMENT À CHARGE",
-          "paragraphs": [
-            "Le GPS volé dans le sac de Jon contient l'itinéraire exact vers la crevasse."
-          ],
-          "altText": "Document intitulé Le GPS de Jon. Le GPS volé dans le sac de Jon contient l'itinéraire exact vers la crevasse."
+          "kind": "note",
+          "body": "Le GPS volé dans le sac de Jon contient l'itinéraire exact vers la crevasse.",
+          "altText": "Note versée au dossier. Le GPS volé dans le sac de Jon contient l'itinéraire exact vers la crevasse."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -306,6 +327,14 @@
         "answer": "« La pièce est authentique, mais votre interprétation s'arrête trop tôt. Vérifiez la suite des événements. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "La pièce doit être replacée dans sa chronologie."
+      },
+      {
+        "id": "mila_detail",
+        "suspectId": "mila",
+        "question": "Pourquoi retrouve-t-on cet objet parmi vos affaires ?",
+        "answer": "« Cet objet m'appartient. Il ne se trouvait pourtant pas là au moment que vous imaginez. »",
+        "unlockedByClueId": "fausse_piste_b",
+        "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       }
     ],
     "timeline": [
@@ -329,7 +358,7 @@
       },
       {
         "time": "20:08",
-        "text": "Le thermomètre de ses chaussures enregistre une chute brutale à -18 °C pendant son prétendu sommeil.",
+        "text": "Le thermomètre des chaussures de Loup enregistre une chute brutale à -18 °C.",
         "source": "JOURNAL TECHNIQUE",
         "certainty": "CERTAIN"
       },
@@ -472,8 +501,8 @@
       }
     ],
     "reasoning": [
-      "Le thermomètre de ses chaussures enregistre une chute brutale à -18 °C pendant son prétendu sommeil. Cette donnée fragilise directement la version de Loup Charrier.",
-      "Les pas sans arrivée commencent à la bouche enneigée du tunnel technique reliant le refuge à la pente. La trace relie le geste au procédé employé.",
+      "Le thermomètre des chaussures de Loup enregistre une chute brutale à -18 °C. Cette donnée fragilise directement la version de Loup Charrier.",
+      "Les traces de pas s'arrêtent net à la bouche enneigée du tunnel technique qui relie le refuge à la pente. La trace relie le geste au procédé employé.",
       "Le brouillon de rapport d'Ariane relie Loup à une balise falsifiée lors de l'accident précédent. Le mobile repose donc sur un fait vérifiable.",
       "L'enregistrement radio conserve la voix et les manipulations de Mila pendant toute la sortie. De son côté, la principale autre piste ne résiste pas au recoupement.",
       "Le GPS volé dans le sac de Jon contient l'itinéraire exact vers la crevasse. L'élément paraît accusateur, mais il change de sens avec la dernière pièce : son historique montre qu'il l'a copié après la disparition pour chercher Ariane, et les caméras de cuisine confirment son heure de départ.",
@@ -484,17 +513,24 @@
       {
         "title": "Ce qui trahit Loup Charrier",
         "steps": [
-          "Le thermomètre de ses chaussures enregistre une chute brutale à -18 °C pendant son prétendu sommeil.",
-          "Les pas sans arrivée commencent à la bouche enneigée du tunnel technique reliant le refuge à la pente.",
+          "Le thermomètre des chaussures de Loup enregistre une chute brutale à -18 °C.",
+          "Les traces de pas s'arrêtent net à la bouche enneigée du tunnel technique qui relie le refuge à la pente.",
           "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]
       },
       {
-        "title": "Le mobile et les innocents",
+        "title": "Les deux pistes à écarter",
+        "steps": [
+          "Le rapport d'Ariane annulait le financement du modèle de Mila.",
+          "L'enregistrement radio conserve la voix et les manipulations de Mila pendant toute la sortie.",
+          "Le GPS volé dans le sac de Jon contient l'itinéraire exact vers la crevasse. Son historique montre qu'il l'a copié après la disparition pour chercher Ariane, et les caméras de cuisine confirment son heure de départ."
+        ]
+      },
+      {
+        "title": "Le mobile",
         "steps": [
           "Le brouillon de rapport d'Ariane relie Loup à une balise falsifiée lors de l'accident précédent.",
-          "L'enregistrement radio conserve la voix et les manipulations de Mila pendant toute la sortie.",
-          "Son historique montre qu'il l'a copié après la disparition pour chercher Ariane, et les caméras de cuisine confirment son heure de départ."
+          "Le mobile ne suffit pas : il faut aussi la présence et le moyen."
         ]
       }
     ]

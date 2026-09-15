@@ -58,17 +58,17 @@
         "id": "registre",
         "title": "Six minutes hors du rapport",
         "source": "JOURNAL TECHNIQUE",
-        "summary": "Le capteur de ronde place Félix devant le compartiment d'Octavie pendant six minutes qu'il omet de son rapport.",
+        "summary": "Le capteur de ronde place Félix devant le compartiment d'Octavie.",
         "evidence": {
           "kind": "schedule",
           "title": "JOURNAL TECHNIQUE",
           "rows": [
             {
               "time": "20:48",
-              "label": "Le capteur de ronde place Félix devant le compartiment d'Octavie pendant six minutes qu'il omet de son rapport."
+              "label": "Le capteur de ronde place Félix devant le compartiment d'Octavie."
             }
           ],
-          "altText": "JOURNAL TECHNIQUE, 20:48. Le capteur de ronde place Félix devant le compartiment d'Octavie pendant six minutes qu'il omet de son rapport."
+          "altText": "JOURNAL TECHNIQUE, 20:48. Le capteur de ronde place Félix devant le compartiment d'Octavie."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -155,6 +155,31 @@
         }
       },
       {
+        "id": "fausse_piste_b",
+        "title": "Le détail contre Leïla Soriano",
+        "source": "PIÈCE À CONFONDRE",
+        "summary": "Le contrat d'assurance sous-évalué porte la signature de Leïla.",
+        "evidence": {
+          "kind": "note",
+          "body": "Le contrat d'assurance sous-évalué porte la signature de Leïla.",
+          "altText": "Note versée au dossier. Le contrat d'assurance sous-évalué porte la signature de Leïla."
+        },
+        "analysis": {
+          "category": "RED_HERRING",
+          "implicates": [
+            "leila"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "leila_detail"
+          ],
+          "isRedHerring": true
+        }
+      },
+      {
         "id": "alibi_a",
         "title": "Le wagon-bar d'une traite",
         "source": "ENREGISTREMENT VIDÉO",
@@ -174,7 +199,7 @@
           "category": "EXONERATING",
           "implicates": [],
           "clears": [
-            "alma"
+            "leila"
           ],
           "contradicts": [],
           "supportsMotiveOf": [],
@@ -189,25 +214,21 @@
         "source": "ÉLÉMENT À CHARGE",
         "summary": "L'écriture de la lettre imite des formulations tirées du journal d'Alma.",
         "evidence": {
-          "kind": "document",
-          "title": "Les mots empruntés à Alma",
-          "subtitle": "ÉLÉMENT À CHARGE",
-          "paragraphs": [
-            "L'écriture de la lettre imite des formulations tirées du journal d'Alma."
-          ],
-          "altText": "Document intitulé Les mots empruntés à Alma. L'écriture de la lettre imite des formulations tirées du journal d'Alma."
+          "kind": "note",
+          "body": "L'écriture de la lettre imite des formulations tirées du journal d'Alma.",
+          "altText": "Note versée au dossier. L'écriture de la lettre imite des formulations tirées du journal d'Alma."
         },
         "analysis": {
           "category": "RED_HERRING",
           "implicates": [
-            "leila"
+            "alma"
           ],
           "clears": [],
           "contradicts": [],
           "supportsMotiveOf": [],
           "supportsMethodOf": [],
           "unlocksInterviewIds": [
-            "leila_detail"
+            "alma_detail"
           ],
           "isRedHerring": true
         }
@@ -230,7 +251,7 @@
           "category": "EXONERATING",
           "implicates": [],
           "clears": [
-            "leila"
+            "alma"
           ],
           "contradicts": [],
           "supportsMotiveOf": [],
@@ -300,12 +321,20 @@
         "beat": "Le document donne un poids concret au mobile."
       },
       {
-        "id": "leila_detail",
-        "suspectId": "leila",
+        "id": "alma_detail",
+        "suspectId": "alma",
         "question": "Pourquoi avez-vous caché ce détail aux enquêteurs ?",
-        "answer": "« Je l'ai caché parce qu'il révélait un secret personnel. Ce secret n'a aucun lien avec l'incident. »",
+        "answer": "« Je l'ai gardé pour moi : cela ne concernait pas l'enquête. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
+      },
+      {
+        "id": "leila_detail",
+        "suspectId": "leila",
+        "question": "Qui peut confirmer votre explication sur cette pièce ?",
+        "answer": "« Mon explication est vérifiable. Cherchez le second enregistrement, pas seulement celui qui m'accuse. »",
+        "unlockedByClueId": "fausse_piste_b",
+        "beat": "Le recoupement suivant peut innocenter ou condamner."
       }
     ],
     "timeline": [
@@ -329,7 +358,7 @@
       },
       {
         "time": "20:48",
-        "text": "Le capteur de ronde place Félix devant le compartiment d'Octavie pendant six minutes qu'il omet de son rapport.",
+        "text": "Le capteur de ronde place Félix devant le compartiment d'Octavie.",
         "source": "JOURNAL TECHNIQUE",
         "certainty": "CERTAIN"
       },
@@ -472,7 +501,7 @@
       }
     ],
     "reasoning": [
-      "Le capteur de ronde place Félix devant le compartiment d'Octavie pendant six minutes qu'il omet de son rapport. Cette donnée fragilise directement la version de Félix Donnadieu.",
+      "Le capteur de ronde place Félix devant le compartiment d'Octavie. Cette donnée fragilise directement la version de Félix Donnadieu.",
       "Une fibre du gant réglementaire du contrôleur est prise dans le velours de l'écrin. La trace relie le geste au procédé employé.",
       "Un créancier lui donne jusqu'à l'arrivée à Nice et accepte explicitement un bijou en garantie. Le mobile repose donc sur un fait vérifiable.",
       "La caméra du wagon-bar montre Leïla en conversation continue avec trois journalistes. De son côté, la principale autre piste ne résiste pas au recoupement.",
@@ -484,17 +513,24 @@
       {
         "title": "Ce qui trahit Félix Donnadieu",
         "steps": [
-          "Le capteur de ronde place Félix devant le compartiment d'Octavie pendant six minutes qu'il omet de son rapport.",
+          "Le capteur de ronde place Félix devant le compartiment d'Octavie.",
           "Une fibre du gant réglementaire du contrôleur est prise dans le velours de l'écrin.",
           "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]
       },
       {
-        "title": "Le mobile et les innocents",
+        "title": "Les deux pistes à écarter",
+        "steps": [
+          "Le contrat d'assurance sous-évalué porte la signature de Leïla.",
+          "La caméra du wagon-bar montre Leïla en conversation continue avec trois journalistes.",
+          "L'écriture de la lettre imite des formulations tirées du journal d'Alma. La feuille porte au verso l'empreinte du composteur de contrôle sur lequel Félix avait posé le carnet confisqué plus tôt."
+        ]
+      },
+      {
+        "title": "Le mobile",
         "steps": [
           "Un créancier lui donne jusqu'à l'arrivée à Nice et accepte explicitement un bijou en garantie.",
-          "La caméra du wagon-bar montre Leïla en conversation continue avec trois journalistes.",
-          "La feuille porte au verso l'empreinte du composteur de contrôle sur lequel Félix avait posé le carnet confisqué plus tôt."
+          "Le mobile ne suffit pas : il faut aussi la présence et le moyen."
         ]
       }
     ]

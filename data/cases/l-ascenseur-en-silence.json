@@ -58,17 +58,17 @@
         "id": "registre",
         "title": "Quarante secondes au palier",
         "source": "JOURNAL TECHNIQUE",
-        "summary": "Le journal moteur montre une commande locale dans la gaine, incompatible avec sa présence au local machines.",
+        "summary": "Le journal moteur montre une commande locale depuis la gaine.",
         "evidence": {
           "kind": "schedule",
           "title": "JOURNAL TECHNIQUE",
           "rows": [
             {
               "time": "20:56",
-              "label": "Le journal moteur montre une commande locale dans la gaine, incompatible avec sa présence au local machines."
+              "label": "Le journal moteur montre une commande locale depuis la gaine."
             }
           ],
-          "altText": "JOURNAL TECHNIQUE, 20:56. Le journal moteur montre une commande locale dans la gaine, incompatible avec sa présence au local machines."
+          "altText": "JOURNAL TECHNIQUE, 20:56. Le journal moteur montre une commande locale depuis la gaine."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -155,6 +155,31 @@
         }
       },
       {
+        "id": "fausse_piste_b",
+        "title": "Le détail contre Eva Krall",
+        "source": "PIÈCE À CONFONDRE",
+        "summary": "Le registre d'accès mentionne la carte d'Eva au niveau technique la semaine précédente.",
+        "evidence": {
+          "kind": "note",
+          "body": "Le registre d'accès mentionne la carte d'Eva au niveau technique la semaine précédente.",
+          "altText": "Note versée au dossier. Le registre d'accès mentionne la carte d'Eva au niveau technique la semaine précédente."
+        },
+        "analysis": {
+          "category": "RED_HERRING",
+          "implicates": [
+            "eva"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "eva_detail"
+          ],
+          "isRedHerring": true
+        }
+      },
+      {
         "id": "alibi_a",
         "title": "Eva au 18e étage",
         "source": "ALIBI VÉRIFIÉ",
@@ -187,13 +212,9 @@
         "source": "ÉLÉMENT À CHARGE",
         "summary": "Hector demande dans la visioconférence si Daria possède encore la clé sur elle.",
         "evidence": {
-          "kind": "document",
-          "title": "L'outil d'Hector",
-          "subtitle": "ÉLÉMENT À CHARGE",
-          "paragraphs": [
-            "Hector demande dans la visioconférence si Daria possède encore la clé sur elle."
-          ],
-          "altText": "Document intitulé L'outil d'Hector. Hector demande dans la visioconférence si Daria possède encore la clé sur elle."
+          "kind": "note",
+          "body": "Hector demande dans la visioconférence si Daria possède encore la clé sur elle.",
+          "altText": "Note versée au dossier. Hector demande dans la visioconférence si Daria possède encore la clé sur elle."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -304,6 +325,14 @@
         "answer": "« La pièce est authentique, mais votre interprétation s'arrête trop tôt. Vérifiez la suite des événements. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "La pièce doit être replacée dans sa chronologie."
+      },
+      {
+        "id": "eva_detail",
+        "suspectId": "eva",
+        "question": "Pourquoi retrouve-t-on cet objet parmi vos affaires ?",
+        "answer": "« Cet objet m'appartient. Il ne se trouvait pourtant pas là au moment que vous imaginez. »",
+        "unlockedByClueId": "fausse_piste_b",
+        "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       }
     ],
     "timeline": [
@@ -327,7 +356,7 @@
       },
       {
         "time": "20:56",
-        "text": "Le journal moteur montre une commande locale dans la gaine, incompatible avec sa présence au local machines.",
+        "text": "Le journal moteur montre une commande locale depuis la gaine.",
         "source": "JOURNAL TECHNIQUE",
         "certainty": "CERTAIN"
       },
@@ -470,7 +499,7 @@
       }
     ],
     "reasoning": [
-      "Le journal moteur montre une commande locale dans la gaine, incompatible avec sa présence au local machines. Cette donnée fragilise directement la version de Rachid Benali.",
+      "Le journal moteur montre une commande locale depuis la gaine. Cette donnée fragilise directement la version de Rachid Benali.",
       "Une limaille magnétique de la trappe est retrouvée sur la fermeture apparemment intacte de la mallette. La trace relie le geste au procédé employé.",
       "Les factures suspectes aboutissent à une entreprise détenue par le beau-frère de Rachid. Le mobile repose donc sur un fait vérifiable.",
       "Le reflet des portes filmé avant la coupure montre les mains d'Eva levées avec son téléphone durant tout l'arrêt. De son côté, la principale autre piste ne résiste pas au recoupement.",
@@ -482,17 +511,24 @@
       {
         "title": "Ce qui trahit Rachid Benali",
         "steps": [
-          "Le journal moteur montre une commande locale dans la gaine, incompatible avec sa présence au local machines.",
+          "Le journal moteur montre une commande locale depuis la gaine.",
           "Une limaille magnétique de la trappe est retrouvée sur la fermeture apparemment intacte de la mallette.",
           "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]
       },
       {
-        "title": "Le mobile et les innocents",
+        "title": "Les deux pistes à écarter",
+        "steps": [
+          "Le registre d'accès mentionne la carte d'Eva au niveau technique la semaine précédente.",
+          "Le reflet des portes filmé avant la coupure montre les mains d'Eva levées avec son téléphone durant tout l'arrêt.",
+          "Hector demande dans la visioconférence si Daria possède encore la clé sur elle. La question suit un protocole d'audit écrit et l'enregistrement continu le maintient au 19e étage."
+        ]
+      },
+      {
+        "title": "Le mobile",
         "steps": [
           "Les factures suspectes aboutissent à une entreprise détenue par le beau-frère de Rachid.",
-          "Le reflet des portes filmé avant la coupure montre les mains d'Eva levées avec son téléphone durant tout l'arrêt.",
-          "La question suit un protocole d'audit écrit et l'enregistrement continu le maintient au 19e étage."
+          "Le mobile ne suffit pas : il faut aussi la présence et le moyen."
         ]
       }
     ]

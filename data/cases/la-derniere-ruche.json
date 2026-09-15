@@ -93,15 +93,15 @@
         "id": "trace",
         "title": "Le sirop marqué",
         "source": "ANALYSE MATÉRIELLE",
-        "summary": "Le répulsif contient l'huile de clou de girofle utilisée dans sa boîte personnelle de marquage des reines.",
+        "summary": "Le répulsif contient l'huile de clou de girofle utilisée dans la boîte personnelle d'Éloi pour marquer les reines.",
         "evidence": {
           "kind": "document",
           "title": "Le sirop marqué",
           "subtitle": "ANALYSE MATÉRIELLE",
           "paragraphs": [
-            "Le répulsif contient l'huile de clou de girofle utilisée dans sa boîte personnelle de marquage des reines."
+            "Le répulsif contient l'huile de clou de girofle utilisée dans la boîte personnelle d'Éloi pour marquer les reines."
           ],
-          "altText": "Document intitulé Le sirop marqué. Le répulsif contient l'huile de clou de girofle utilisée dans sa boîte personnelle de marquage des reines."
+          "altText": "Document intitulé Le sirop marqué. Le répulsif contient l'huile de clou de girofle utilisée dans la boîte personnelle d'Éloi pour marquer les reines."
         },
         "analysis": {
           "category": "TIMELINE",
@@ -148,6 +148,31 @@
         }
       },
       {
+        "id": "fausse_piste_b",
+        "title": "Le détail contre Nour Lemaire",
+        "source": "PIÈCE À CONFONDRE",
+        "summary": "Nour a demandé le transfert de la reine 12 sous son propre programme de recherche.",
+        "evidence": {
+          "kind": "note",
+          "body": "Nour a demandé le transfert de la reine 12 sous son propre programme de recherche.",
+          "altText": "Note versée au dossier. Nour a demandé le transfert de la reine 12 sous son propre programme de recherche."
+        },
+        "analysis": {
+          "category": "RED_HERRING",
+          "implicates": [
+            "nour"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "nour_detail"
+          ],
+          "isRedHerring": true
+        }
+      },
+      {
         "id": "alibi_a",
         "title": "Nour au rucher nord",
         "source": "ENREGISTREMENT VIDÉO",
@@ -182,13 +207,9 @@
         "source": "ÉLÉMENT À CHARGE",
         "summary": "Le pesticide pulvérisé par Didier tue les abeilles à une dose compatible.",
         "evidence": {
-          "kind": "document",
-          "title": "Le pesticide de Didier",
-          "subtitle": "ÉLÉMENT À CHARGE",
-          "paragraphs": [
-            "Le pesticide pulvérisé par Didier tue les abeilles à une dose compatible."
-          ],
-          "altText": "Document intitulé Le pesticide de Didier. Le pesticide pulvérisé par Didier tue les abeilles à une dose compatible."
+          "kind": "note",
+          "body": "Le pesticide pulvérisé par Didier tue les abeilles à une dose compatible.",
+          "altText": "Note versée au dossier. Le pesticide pulvérisé par Didier tue les abeilles à une dose compatible."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -299,6 +320,14 @@
         "answer": "« Pris seul, ce détail m'accuse. Comparé au reste du dossier, il raconte autre chose. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "La pièce doit être replacée dans sa chronologie."
+      },
+      {
+        "id": "nour_detail",
+        "suspectId": "nour",
+        "question": "Pourquoi avez-vous caché ce détail aux enquêteurs ?",
+        "answer": "« Je l'ai gardé pour moi : cela ne concernait pas l'enquête. »",
+        "unlockedByClueId": "fausse_piste_b",
+        "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       }
     ],
     "timeline": [
@@ -466,7 +495,7 @@
     ],
     "reasoning": [
       "La pesée automatique montre que la ruche 12 a été ouverte deux fois pendant la tournée unique d'Éloi. Cette donnée fragilise directement la version d'Éloi Vernet.",
-      "Le répulsif contient l'huile de clou de girofle utilisée dans sa boîte personnelle de marquage des reines. La trace relie le geste au procédé employé.",
+      "Le répulsif contient l'huile de clou de girofle utilisée dans la boîte personnelle d'Éloi pour marquer les reines. La trace relie le geste au procédé employé.",
       "Une annonce non publiée propose déjà des descendantes de la lignée 12 sous le nom commercial d'Éloi. Le mobile repose donc sur un fait vérifiable.",
       "La caméra du laboratoire place Nour derrière la vitre pendant les deux ouvertures. De son côté, la principale autre piste ne résiste pas au recoupement.",
       "Le pesticide pulvérisé par Didier tue les abeilles à une dose compatible. L'élément paraît accusateur, mais il change de sens avec la dernière pièce : les analyses de pollen sont négatives et le vent soufflait du rucher vers son champ, direction opposée à une contamination.",
@@ -478,16 +507,23 @@
         "title": "Ce qui trahit Éloi Vernet",
         "steps": [
           "La pesée automatique montre que la ruche 12 a été ouverte deux fois pendant la tournée unique d'Éloi.",
-          "Le répulsif contient l'huile de clou de girofle utilisée dans sa boîte personnelle de marquage des reines.",
+          "Le répulsif contient l'huile de clou de girofle utilisée dans la boîte personnelle d'Éloi pour marquer les reines.",
           "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]
       },
       {
-        "title": "Le mobile et les innocents",
+        "title": "Les deux pistes à écarter",
+        "steps": [
+          "Nour a demandé le transfert de la reine 12 sous son propre programme de recherche.",
+          "La caméra du laboratoire place Nour derrière la vitre pendant les deux ouvertures.",
+          "Le pesticide pulvérisé par Didier tue les abeilles à une dose compatible. Les analyses de pollen sont négatives et le vent soufflait du rucher vers son champ, direction opposée à une contamination."
+        ]
+      },
+      {
+        "title": "Le mobile",
         "steps": [
           "Une annonce non publiée propose déjà des descendantes de la lignée 12 sous le nom commercial d'Éloi.",
-          "La caméra du laboratoire place Nour derrière la vitre pendant les deux ouvertures.",
-          "Les analyses de pollen sont négatives et le vent soufflait du rucher vers son champ, direction opposée à une contamination."
+          "Le mobile ne suffit pas : il faut aussi la présence et le moyen."
         ]
       }
     ]

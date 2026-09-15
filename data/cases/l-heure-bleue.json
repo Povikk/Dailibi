@@ -58,17 +58,17 @@
         "id": "registre",
         "title": "Le badge après la fermeture",
         "source": "JOURNAL TECHNIQUE",
-        "summary": "Le capteur hygrométrique de l'atelier enregistre une ouverture à 20 h 26 avec le badge d'Iris, bien après son départ déclaré.",
+        "summary": "Le capteur hygrométrique de l'atelier enregistre une ouverture à 20 h 26 avec le badge d'Iris.",
         "evidence": {
           "kind": "schedule",
           "title": "JOURNAL TECHNIQUE",
           "rows": [
             {
               "time": "19:45",
-              "label": "Le capteur hygrométrique de l'atelier enregistre une ouverture à 20 h 26 avec le badge d'Iris, bien après son départ déclaré."
+              "label": "Le capteur hygrométrique de l'atelier enregistre une ouverture à 20 h 26 avec le badge d'Iris."
             }
           ],
-          "altText": "JOURNAL TECHNIQUE, 19:45. Le capteur hygrométrique de l'atelier enregistre une ouverture à 20 h 26 avec le badge d'Iris, bien après son départ déclaré."
+          "altText": "JOURNAL TECHNIQUE, 19:45. Le capteur hygrométrique de l'atelier enregistre une ouverture à 20 h 26 avec le badge d'Iris."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -148,6 +148,31 @@
         }
       },
       {
+        "id": "fausse_piste_b",
+        "title": "Le détail contre Mathieu Orsini",
+        "source": "PIÈCE À CONFONDRE",
+        "summary": "Le registre des clés signale un double non déclaré du monte-charge dans le casier de Mathieu.",
+        "evidence": {
+          "kind": "note",
+          "body": "Le registre des clés signale un double non déclaré du monte-charge dans le casier de Mathieu.",
+          "altText": "Note versée au dossier. Le registre des clés signale un double non déclaré du monte-charge dans le casier de Mathieu."
+        },
+        "analysis": {
+          "category": "RED_HERRING",
+          "implicates": [
+            "mathieu"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "mathieu_detail"
+          ],
+          "isRedHerring": true
+        }
+      },
+      {
         "id": "alibi_a",
         "title": "Le monte-charge ne s'arrête pas",
         "source": "ENREGISTREMENT VIDÉO",
@@ -182,13 +207,9 @@
         "source": "ÉLÉMENT À CHARGE",
         "summary": "Le carnet de Salomé contient une page intitulée « prouver que le tableau est faux ».",
         "evidence": {
-          "kind": "document",
-          "title": "Une note sur l'attribution",
-          "subtitle": "ÉLÉMENT À CHARGE",
-          "paragraphs": [
-            "Le carnet de Salomé contient une page intitulée « prouver que le tableau est faux »."
-          ],
-          "altText": "Document intitulé Une note sur l'attribution. Le carnet de Salomé contient une page intitulée « prouver que le tableau est faux »."
+          "kind": "note",
+          "body": "Le carnet de Salomé contient une page intitulée « prouver que le tableau est faux ».",
+          "altText": "Note versée au dossier. Le carnet de Salomé contient une page intitulée « prouver que le tableau est faux »."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -209,15 +230,15 @@
         "id": "resolution",
         "title": "Le dernier cliché de Salomé",
         "source": "RECOUPEMENT FINAL",
-        "summary": "Ses clichés horodatés montrent qu'elle étudiait une restauration ancienne, et capturent encore l'original après sa dernière manipulation.",
+        "summary": "Les clichés horodatés de Salomé documentent une restauration ancienne et montrent le tableau encore original après son départ.",
         "evidence": {
           "kind": "document",
           "title": "Le dernier cliché de Salomé",
           "subtitle": "RECOUPEMENT FINAL",
           "paragraphs": [
-            "Ses clichés horodatés montrent qu'elle étudiait une restauration ancienne, et capturent encore l'original après sa dernière manipulation."
+            "Les clichés horodatés de Salomé documentent une restauration ancienne et montrent le tableau encore original après son départ."
           ],
-          "altText": "Document intitulé Le dernier cliché de Salomé. Ses clichés horodatés montrent qu'elle étudiait une restauration ancienne, et capturent encore l'original après sa dernière manipulation."
+          "altText": "Document intitulé Le dernier cliché de Salomé. Les clichés horodatés de Salomé documentent une restauration ancienne et montrent le tableau encore original après son départ."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -299,6 +320,14 @@
         "answer": "« Cet objet m'appartient. Il ne se trouvait pourtant pas là au moment que vous imaginez. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
+      },
+      {
+        "id": "mathieu_detail",
+        "suspectId": "mathieu",
+        "question": "À quel moment cet élément a-t-il changé de sens ?",
+        "answer": "« Vous avez le bon élément et la mauvaise chronologie. C'est précisément ce qui vous égare. »",
+        "unlockedByClueId": "fausse_piste_b",
+        "beat": "Le recoupement suivant peut innocenter ou condamner."
       }
     ],
     "timeline": [
@@ -322,7 +351,7 @@
       },
       {
         "time": "19:45",
-        "text": "Le capteur hygrométrique de l'atelier enregistre une ouverture à 20 h 26 avec le badge d'Iris, bien après son départ déclaré.",
+        "text": "Le capteur hygrométrique de l'atelier enregistre une ouverture à 20 h 26 avec le badge d'Iris.",
         "source": "JOURNAL TECHNIQUE",
         "certainty": "CERTAIN"
       },
@@ -465,29 +494,36 @@
       }
     ],
     "reasoning": [
-      "Le capteur hygrométrique de l'atelier enregistre une ouverture à 20 h 26 avec le badge d'Iris, bien après son départ déclaré. Cette donnée fragilise directement la version d'Iris Meunier.",
+      "Le capteur hygrométrique de l'atelier enregistre une ouverture à 20 h 26 avec le badge d'Iris. Cette donnée fragilise directement la version d'Iris Meunier.",
       "La cire des scellés contient le pigment bleu de Prusse réservé au poste de restauration d'Iris. La trace relie le geste au procédé employé.",
       "Un brouillon de contrat promet à Iris un paiement immédiat pour une toile non répertoriée aux dimensions exactes de L'Heure bleue. Le mobile repose donc sur un fait vérifiable.",
       "La caméra du monte-charge place Mathieu au sous-sol sans interruption pendant la fenêtre de substitution. De son côté, la principale autre piste ne résiste pas au recoupement.",
-      "Le carnet de Salomé contient une page intitulée « prouver que le tableau est faux ». L'élément paraît accusateur, mais il change de sens avec la dernière pièce : ses clichés horodatés montrent qu'elle étudiait une restauration ancienne, et capturent encore l'original après sa dernière manipulation.",
+      "Le carnet de Salomé contient une page intitulée « prouver que le tableau est faux ». L'élément paraît accusateur, mais il change de sens avec la dernière pièce : les clichés horodatés de Salomé documentent une restauration ancienne et montrent le tableau encore original après son départ.",
       "Présence, moyen et intérêt convergent vers Iris Meunier."
     ],
-    "explanation": "Iris avait peint une copie couche après couche pendant la restauration. Elle a attendu le départ de tous, rouvert l'atelier avec son badge, transféré l'original dans un rouleau de toile neutre puis refait les scellés avec une cire contaminée par son propre pigment. Son but apparaît alors clairement : vendre l'original pour empêcher la saisie de son atelier. La méthode reposait sur une idée précise : remplacer la toile dans son cadre avant de poser de faux scellés. Ses clichés horodatés montrent qu'elle étudiait une restauration ancienne, et capturent encore l'original après sa dernière manipulation. L'autre suspect n'est donc plus une explication possible.",
+    "explanation": "Iris avait peint une copie couche après couche pendant la restauration. Elle a attendu le départ de tous, rouvert l'atelier avec son badge, transféré l'original dans un rouleau de toile neutre puis refait les scellés avec une cire contaminée par son propre pigment. Son but apparaît alors clairement : vendre l'original pour empêcher la saisie de son atelier. La méthode reposait sur une idée précise : remplacer la toile dans son cadre avant de poser de faux scellés. Les clichés horodatés de Salomé documentent une restauration ancienne et montrent le tableau encore original après son départ. L'autre suspect n'est donc plus une explication possible.",
     "proofChains": [
       {
         "title": "Ce qui trahit Iris Meunier",
         "steps": [
-          "Le capteur hygrométrique de l'atelier enregistre une ouverture à 20 h 26 avec le badge d'Iris, bien après son départ déclaré.",
+          "Le capteur hygrométrique de l'atelier enregistre une ouverture à 20 h 26 avec le badge d'Iris.",
           "La cire des scellés contient le pigment bleu de Prusse réservé au poste de restauration d'Iris.",
           "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]
       },
       {
-        "title": "Le mobile et les innocents",
+        "title": "Les deux pistes à écarter",
+        "steps": [
+          "Le registre des clés signale un double non déclaré du monte-charge dans le casier de Mathieu.",
+          "La caméra du monte-charge place Mathieu au sous-sol sans interruption pendant la fenêtre de substitution.",
+          "Le carnet de Salomé contient une page intitulée « prouver que le tableau est faux ». Les clichés horodatés de Salomé documentent une restauration ancienne et montrent le tableau encore original après son départ."
+        ]
+      },
+      {
+        "title": "Le mobile",
         "steps": [
           "Un brouillon de contrat promet à Iris un paiement immédiat pour une toile non répertoriée aux dimensions exactes de L'Heure bleue.",
-          "La caméra du monte-charge place Mathieu au sous-sol sans interruption pendant la fenêtre de substitution.",
-          "Ses clichés horodatés montrent qu'elle étudiait une restauration ancienne, et capturent encore l'original après sa dernière manipulation."
+          "Le mobile ne suffit pas : il faut aussi la présence et le moyen."
         ]
       }
     ]

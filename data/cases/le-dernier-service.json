@@ -252,6 +252,60 @@
           ],
           "isRedHerring": true
         }
+      },
+      {
+        "id": "absence_theo",
+        "title": "Le téléphone qui se tait",
+        "source": "DONNÉES DE DÉPLACEMENT",
+        "summary": "Le téléphone de Théo cesse d'émettre à 22 h 46, et personne ne le place au bistro ensuite.",
+        "evidence": {
+          "kind": "callLog",
+          "owner": "Théo Marchal",
+          "calls": [
+            {
+              "time": "22:46",
+              "contact": "Dernière émission du terminal",
+              "duration": "-",
+              "direction": "OUT"
+            }
+          ],
+          "altText": "Journal d'émissions : le téléphone de Théo se tait à 22 h 46."
+        },
+        "analysis": {
+          "category": "RED_HERRING",
+          "implicates": [
+            "theo"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [],
+          "isRedHerring": true
+        }
+      },
+      {
+        "id": "bocal_nadia",
+        "title": "Quarante euros et une enveloppe",
+        "source": "RECOUPEMENT",
+        "summary": "Le bocal à pourboires accuse quarante euros manquants, sans rapport avec le contenu de l'enveloppe volée.",
+        "evidence": {
+          "kind": "note",
+          "body": "Comptage du bocal à pourboires : quarante euros manquants. Recette du coffre : deux mille trois cent quarante euros.",
+          "altText": "Note de comptage comparant le bocal à pourboires et la recette du coffre."
+        },
+        "analysis": {
+          "category": "EXONERATING",
+          "implicates": [],
+          "clears": [
+            "nadia"
+          ],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [],
+          "isRedHerring": false
+        }
       }
     ],
     "interviews": [

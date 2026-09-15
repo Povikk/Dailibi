@@ -148,6 +148,31 @@
         }
       },
       {
+        "id": "fausse_piste_b",
+        "title": "Le détail contre Bastien Cazal",
+        "source": "PIÈCE À CONFONDRE",
+        "summary": "Bastien a consulté le dossier de Lina dans le système de l'hôtel la veille de la disparition.",
+        "evidence": {
+          "kind": "note",
+          "body": "Bastien a consulté le dossier de Lina dans le système de l'hôtel la veille de la disparition.",
+          "altText": "Note versée au dossier. Bastien a consulté le dossier de Lina dans le système de l'hôtel la veille de la disparition."
+        },
+        "analysis": {
+          "category": "RED_HERRING",
+          "implicates": [
+            "bastien"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "bastien_detail"
+          ],
+          "isRedHerring": true
+        }
+      },
+      {
         "id": "alibi_a",
         "title": "Le veilleur à son poste",
         "source": "ENREGISTREMENT VIDÉO",
@@ -182,13 +207,9 @@
         "source": "ÉLÉMENT À CHARGE",
         "summary": "Yuna a reçu 800 euros de Lina trois jours avant la disparition.",
         "evidence": {
-          "kind": "document",
-          "title": "Le message d'Yuna",
-          "subtitle": "ÉLÉMENT À CHARGE",
-          "paragraphs": [
-            "Yuna a reçu 800 euros de Lina trois jours avant la disparition."
-          ],
-          "altText": "Document intitulé Le message d'Yuna. Yuna a reçu 800 euros de Lina trois jours avant la disparition."
+          "kind": "note",
+          "body": "Yuna a reçu 800 euros de Lina trois jours avant la disparition.",
+          "altText": "Note versée au dossier. Yuna a reçu 800 euros de Lina trois jours avant la disparition."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -299,6 +320,14 @@
         "answer": "« Pris seul, ce détail m'accuse. Comparé au reste du dossier, il raconte autre chose. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "La pièce doit être replacée dans sa chronologie."
+      },
+      {
+        "id": "bastien_detail",
+        "suspectId": "bastien",
+        "question": "Pourquoi avez-vous caché ce détail aux enquêteurs ?",
+        "answer": "« Je l'ai gardé pour moi : cela ne concernait pas l'enquête. »",
+        "unlockedByClueId": "fausse_piste_b",
+        "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       }
     ],
     "timeline": [
@@ -483,11 +512,18 @@
         ]
       },
       {
-        "title": "Le mobile et les innocents",
+        "title": "Les deux pistes à écarter",
+        "steps": [
+          "Bastien a consulté le dossier de Lina dans le système de l'hôtel la veille de la disparition.",
+          "Le flux du dîner place Bastien au pupitre au moment où la chambre est préparée.",
+          "Yuna a reçu 800 euros de Lina trois jours avant la disparition. La facture jointe identifie l'achat légal d'archives de vidéosurveillance que Yuna avait sauvegardées pour l'enquête."
+        ]
+      },
+      {
+        "title": "Le mobile",
         "steps": [
           "Le message chiffré de Lina à Clément dit : « S'ils montent, fais exactement comme prévu. Personne ne doit savoir où je pars. »",
-          "Le flux du dîner place Bastien au pupitre au moment où la chambre est préparée.",
-          "La facture jointe identifie l'achat légal d'archives de vidéosurveillance que Yuna avait sauvegardées pour l'enquête."
+          "Le mobile ne suffit pas : il faut aussi la présence et le moyen."
         ]
       }
     ]

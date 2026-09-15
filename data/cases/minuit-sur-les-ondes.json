@@ -58,17 +58,17 @@
         "id": "registre",
         "title": "Le silence dans la playlist",
         "source": "JOURNAL TECHNIQUE",
-        "summary": "Une séquence publicitaire automatisée de quatre minutes a tourné seule pendant que le siège de Gaspard cessait d'émettre son capteur de présence.",
+        "summary": "Le capteur de présence du siège de Gaspard cesse d'émettre pendant quatre minutes, exactement le temps de la séquence publicitaire diffusée seule.",
         "evidence": {
           "kind": "schedule",
           "title": "JOURNAL TECHNIQUE",
           "rows": [
             {
               "time": "20:34",
-              "label": "Une séquence publicitaire automatisée de quatre minutes a tourné seule pendant que le siège de Gaspard cessait d'émettre son capteur de présence."
+              "label": "Le capteur de présence du siège de Gaspard cesse d'émettre pendant quatre minutes, exactement le temps de la séquence publicitaire diffusée seule."
             }
           ],
-          "altText": "JOURNAL TECHNIQUE, 20:34. Une séquence publicitaire automatisée de quatre minutes a tourné seule pendant que le siège de Gaspard cessait d'émettre son capteur de présence."
+          "altText": "JOURNAL TECHNIQUE, 20:34. Le capteur de présence du siège de Gaspard cesse d'émettre pendant quatre minutes, exactement le temps de la séquence publicitaire diffusée seule."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -155,24 +155,49 @@
         }
       },
       {
+        "id": "fausse_piste_b",
+        "title": "Le détail contre Alban Reyes",
+        "source": "PIÈCE À CONFONDRE",
+        "summary": "Alban a fait retirer du conducteur la séquence où Sonia annonçait son dossier.",
+        "evidence": {
+          "kind": "note",
+          "body": "Alban a fait retirer du conducteur la séquence où Sonia annonçait son dossier.",
+          "altText": "Note versée au dossier. Alban a fait retirer du conducteur la séquence où Sonia annonçait son dossier."
+        },
+        "analysis": {
+          "category": "RED_HERRING",
+          "implicates": [
+            "alban"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "alban_detail"
+          ],
+          "isRedHerring": true
+        }
+      },
+      {
         "id": "alibi_a",
         "title": "Mina derrière la vitre",
-        "source": "DONNÉES DE DÉPLACEMENT",
-        "summary": "Le badge de Mina enregistre sa sortie du bâtiment quarante minutes avant que la tasse ne soit placée.",
+        "source": "ALIBI VÉRIFIÉ",
+        "summary": "Le gala retransmis en direct montre Alban à l'antenne sans interruption pendant toute la séquence publicitaire.",
         "evidence": {
           "kind": "document",
           "title": "Mina derrière la vitre",
-          "subtitle": "DONNÉES DE DÉPLACEMENT",
+          "subtitle": "ALIBI VÉRIFIÉ",
           "paragraphs": [
-            "Le badge de Mina enregistre sa sortie du bâtiment quarante minutes avant que la tasse ne soit placée."
+            "Le gala retransmis en direct montre Alban à l'antenne sans interruption pendant toute la séquence publicitaire."
           ],
-          "altText": "Document intitulé Mina derrière la vitre. Le badge de Mina enregistre sa sortie du bâtiment quarante minutes avant que la tasse ne soit placée."
+          "altText": "Document intitulé Mina derrière la vitre. Le gala retransmis en direct montre Alban à l'antenne sans interruption pendant toute la séquence publicitaire."
         },
         "analysis": {
           "category": "EXONERATING",
           "implicates": [],
           "clears": [
-            "mina"
+            "alban"
           ],
           "contradicts": [],
           "supportsMotiveOf": [],
@@ -187,25 +212,21 @@
         "source": "ÉLÉMENT À CHARGE",
         "summary": "Les somnifères de Mina sont de la même famille chimique que le produit détecté.",
         "evidence": {
-          "kind": "document",
-          "title": "L'ordonnance d'Alban",
-          "subtitle": "ÉLÉMENT À CHARGE",
-          "paragraphs": [
-            "Les somnifères de Mina sont de la même famille chimique que le produit détecté."
-          ],
-          "altText": "Document intitulé L'ordonnance d'Alban. Les somnifères de Mina sont de la même famille chimique que le produit détecté."
+          "kind": "note",
+          "body": "Les somnifères de Mina sont de la même famille chimique que le produit détecté.",
+          "altText": "Note versée au dossier. Les somnifères de Mina sont de la même famille chimique que le produit détecté."
         },
         "analysis": {
           "category": "RED_HERRING",
           "implicates": [
-            "alban"
+            "mina"
           ],
           "clears": [],
           "contradicts": [],
           "supportsMotiveOf": [],
           "supportsMethodOf": [],
           "unlocksInterviewIds": [
-            "alban_detail"
+            "mina_detail"
           ],
           "isRedHerring": true
         }
@@ -228,7 +249,7 @@
           "category": "EXONERATING",
           "implicates": [],
           "clears": [
-            "alban"
+            "mina"
           ],
           "contradicts": [],
           "supportsMotiveOf": [],
@@ -298,12 +319,20 @@
         "beat": "La menace n'est plus abstraite pour cette personne."
       },
       {
-        "id": "alban_detail",
-        "suspectId": "alban",
+        "id": "mina_detail",
+        "suspectId": "mina",
         "question": "À quel moment cet élément a-t-il changé de sens ?",
         "answer": "« Vous avez le bon élément et la mauvaise chronologie. C'est précisément ce qui vous égare. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Le recoupement suivant peut innocenter ou condamner."
+      },
+      {
+        "id": "alban_detail",
+        "suspectId": "alban",
+        "question": "Que prouve réellement cette pièce, selon vous ?",
+        "answer": "« Pris seul, ce détail m'accuse. Comparé au reste du dossier, il raconte autre chose. »",
+        "unlockedByClueId": "fausse_piste_b",
+        "beat": "La pièce doit être replacée dans sa chronologie."
       }
     ],
     "timeline": [
@@ -327,7 +356,7 @@
       },
       {
         "time": "20:34",
-        "text": "Une séquence publicitaire automatisée de quatre minutes a tourné seule pendant que le siège de Gaspard cessait d'émettre son capteur de présence.",
+        "text": "Le capteur de présence du siège de Gaspard cesse d'émettre pendant quatre minutes, exactement le temps de la séquence publicitaire diffusée seule.",
         "source": "JOURNAL TECHNIQUE",
         "certainty": "CERTAIN"
       },
@@ -470,10 +499,10 @@
       }
     ],
     "reasoning": [
-      "Une séquence publicitaire automatisée de quatre minutes a tourné seule pendant que le siège de Gaspard cessait d'émettre son capteur de présence. Cette donnée fragilise directement la version de Gaspard Lin.",
+      "Le capteur de présence du siège de Gaspard cesse d'émettre pendant quatre minutes, exactement le temps de la séquence publicitaire diffusée seule. Cette donnée fragilise directement la version de Gaspard Lin.",
       "Le gel fluorescent est retrouvé sur la molette gauche de sa console et sous son ongle. La trace relie le geste au procédé employé.",
       "Le dossier de Sonia relie le compte bénéficiaire des faux cachets à la microentreprise de Gaspard. Le mobile repose donc sur un fait vérifiable.",
-      "Le badge de Mina enregistre sa sortie du bâtiment quarante minutes avant que la tasse ne soit placée. De son côté, la principale autre piste ne résiste pas au recoupement.",
+      "Le gala retransmis en direct montre Alban à l'antenne sans interruption pendant toute la séquence publicitaire. De son côté, la principale autre piste ne résiste pas au recoupement.",
       "Les somnifères de Mina sont de la même famille chimique que le produit détecté. L'élément paraît accusateur, mais il change de sens avec la dernière pièce : son ordonnance concerne des comprimés bleus. Le produit de la tasse est un gel vétérinaire acheté avec la carte de production.",
       "Présence, moyen et intérêt convergent vers Gaspard Lin."
     ],
@@ -482,17 +511,24 @@
       {
         "title": "Ce qui trahit Gaspard Lin",
         "steps": [
-          "Une séquence publicitaire automatisée de quatre minutes a tourné seule pendant que le siège de Gaspard cessait d'émettre son capteur de présence.",
+          "Le capteur de présence du siège de Gaspard cesse d'émettre pendant quatre minutes, exactement le temps de la séquence publicitaire diffusée seule.",
           "Le gel fluorescent est retrouvé sur la molette gauche de sa console et sous son ongle.",
           "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]
       },
       {
-        "title": "Le mobile et les innocents",
+        "title": "Les deux pistes à écarter",
+        "steps": [
+          "Alban a fait retirer du conducteur la séquence où Sonia annonçait son dossier.",
+          "Le gala retransmis en direct montre Alban à l'antenne sans interruption pendant toute la séquence publicitaire.",
+          "Les somnifères de Mina sont de la même famille chimique que le produit détecté. Son ordonnance concerne des comprimés bleus. Le produit de la tasse est un gel vétérinaire acheté avec la carte de production."
+        ]
+      },
+      {
+        "title": "Le mobile",
         "steps": [
           "Le dossier de Sonia relie le compte bénéficiaire des faux cachets à la microentreprise de Gaspard.",
-          "Le badge de Mina enregistre sa sortie du bâtiment quarante minutes avant que la tasse ne soit placée.",
-          "Son ordonnance concerne des comprimés bleus. Le produit de la tasse est un gel vétérinaire acheté avec la carte de production."
+          "Le mobile ne suffit pas : il faut aussi la présence et le moyen."
         ]
       }
     ]

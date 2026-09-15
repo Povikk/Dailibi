@@ -148,6 +148,31 @@
         }
       },
       {
+        "id": "fausse_piste_b",
+        "title": "Le détail contre Chiara Moss",
+        "source": "PIÈCE À CONFONDRE",
+        "summary": "La demande de temps d'observation déposée par Chiara coïncide avec la nuit de la fausse trajectoire.",
+        "evidence": {
+          "kind": "note",
+          "body": "La demande de temps d'observation déposée par Chiara coïncide avec la nuit de la fausse trajectoire.",
+          "altText": "Note versée au dossier. La demande de temps d'observation déposée par Chiara coïncide avec la nuit de la fausse trajectoire."
+        },
+        "analysis": {
+          "category": "RED_HERRING",
+          "implicates": [
+            "chiara"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "chiara_detail"
+          ],
+          "isRedHerring": true
+        }
+      },
+      {
         "id": "alibi_a",
         "title": "Rémi sous la coupole",
         "source": "ALIBI VÉRIFIÉ",
@@ -165,7 +190,7 @@
           "category": "EXONERATING",
           "implicates": [],
           "clears": [
-            "remi"
+            "chiara"
           ],
           "contradicts": [],
           "supportsMotiveOf": [],
@@ -180,25 +205,21 @@
         "source": "ÉLÉMENT À CHARGE",
         "summary": "Rémi avait documenté une rangée de pixels chauds proche de la trajectoire.",
         "evidence": {
-          "kind": "document",
-          "title": "Les corrections de Chiara",
-          "subtitle": "ÉLÉMENT À CHARGE",
-          "paragraphs": [
-            "Rémi avait documenté une rangée de pixels chauds proche de la trajectoire."
-          ],
-          "altText": "Document intitulé Les corrections de Chiara. Rémi avait documenté une rangée de pixels chauds proche de la trajectoire."
+          "kind": "note",
+          "body": "Rémi avait documenté une rangée de pixels chauds proche de la trajectoire.",
+          "altText": "Note versée au dossier. Rémi avait documenté une rangée de pixels chauds proche de la trajectoire."
         },
         "analysis": {
           "category": "RED_HERRING",
           "implicates": [
-            "chiara"
+            "remi"
           ],
           "clears": [],
           "contradicts": [],
           "supportsMotiveOf": [],
           "supportsMethodOf": [],
           "unlocksInterviewIds": [
-            "chiara_detail"
+            "remi_detail"
           ],
           "isRedHerring": true
         }
@@ -221,7 +242,7 @@
           "category": "EXONERATING",
           "implicates": [],
           "clears": [
-            "chiara"
+            "remi"
           ],
           "contradicts": [],
           "supportsMotiveOf": [],
@@ -291,12 +312,20 @@
         "beat": "Le document donne un poids concret au mobile."
       },
       {
-        "id": "chiara_detail",
-        "suspectId": "chiara",
+        "id": "remi_detail",
+        "suspectId": "remi",
         "question": "Pourquoi retrouve-t-on cet objet parmi vos affaires ?",
         "answer": "« Cet objet m'appartient. Il ne se trouvait pourtant pas là au moment que vous imaginez. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
+      },
+      {
+        "id": "chiara_detail",
+        "suspectId": "chiara",
+        "question": "À quel moment cet élément a-t-il changé de sens ?",
+        "answer": "« Vous avez le bon élément et la mauvaise chronologie. C'est précisément ce qui vous égare. »",
+        "unlockedByClueId": "fausse_piste_b",
+        "beat": "Le recoupement suivant peut innocenter ou condamner."
       }
     ],
     "timeline": [
@@ -481,11 +510,18 @@
         ]
       },
       {
-        "title": "Le mobile et les innocents",
+        "title": "Les deux pistes à écarter",
+        "steps": [
+          "La demande de temps d'observation déposée par Chiara coïncide avec la nuit de la fausse trajectoire.",
+          "La visioconférence et les données chiliennes signées placent Chiara à dix mille kilomètres.",
+          "Rémi avait documenté une rangée de pixels chauds proche de la trajectoire. Les pixels sont fixes dans le repère du capteur tandis que le faux objet suit les pas réguliers du rail."
+        ]
+      },
+      {
+        "title": "Le mobile",
         "steps": [
           "Son dossier de renouvellement non envoyé porte déjà le titre de la découverte et sa date d'annonce.",
-          "La visioconférence et les données chiliennes signées placent Chiara à dix mille kilomètres.",
-          "Les pixels sont fixes dans le repère du capteur tandis que le faux objet suit les pas réguliers du rail."
+          "Le mobile ne suffit pas : il faut aussi la présence et le moyen."
         ]
       }
     ]

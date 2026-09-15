@@ -93,15 +93,15 @@
         "id": "trace",
         "title": "Un son impossible",
         "source": "ANALYSE MATÉRIELLE",
-        "summary": "L'enregistrement comporte le cri d'un martinet absent en septembre mais présent lors de sa captation en juin.",
+        "summary": "L'enregistrement comporte le cri d'un martinet, oiseau absent en septembre : la séquence a été captée en juin.",
         "evidence": {
           "kind": "document",
           "title": "Un son impossible",
           "subtitle": "ANALYSE MATÉRIELLE",
           "paragraphs": [
-            "L'enregistrement comporte le cri d'un martinet absent en septembre mais présent lors de sa captation en juin."
+            "L'enregistrement comporte le cri d'un martinet, oiseau absent en septembre : la séquence a été captée en juin."
           ],
-          "altText": "Document intitulé Un son impossible. L'enregistrement comporte le cri d'un martinet absent en septembre mais présent lors de sa captation en juin."
+          "altText": "Document intitulé Un son impossible. L'enregistrement comporte le cri d'un martinet, oiseau absent en septembre : la séquence a été captée en juin."
         },
         "analysis": {
           "category": "TIMELINE",
@@ -148,6 +148,31 @@
         }
       },
       {
+        "id": "fausse_piste_b",
+        "title": "Le détail contre Basile Rémond",
+        "source": "PIÈCE À CONFONDRE",
+        "summary": "Basile conserve des photographies du reliquaire prises sous tous les angles, y compris l'ouverture.",
+        "evidence": {
+          "kind": "note",
+          "body": "Basile conserve des photographies du reliquaire prises sous tous les angles, y compris l'ouverture.",
+          "altText": "Note versée au dossier. Basile conserve des photographies du reliquaire prises sous tous les angles, y compris l'ouverture."
+        },
+        "analysis": {
+          "category": "RED_HERRING",
+          "implicates": [
+            "basile"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "basile_detail"
+          ],
+          "isRedHerring": true
+        }
+      },
+      {
         "id": "alibi_a",
         "title": "L'office d'Augustin",
         "source": "ENREGISTREMENT VIDÉO",
@@ -167,7 +192,7 @@
           "category": "EXONERATING",
           "implicates": [],
           "clears": [
-            "pere"
+            "basile"
           ],
           "contradicts": [],
           "supportsMotiveOf": [],
@@ -182,25 +207,21 @@
         "source": "ÉLÉMENT À CHARGE",
         "summary": "Le prieur avait fait expertiser la relique et caché l'estimation au conseil.",
         "evidence": {
-          "kind": "document",
-          "title": "La corde de Basile",
-          "subtitle": "ÉLÉMENT À CHARGE",
-          "paragraphs": [
-            "Le prieur avait fait expertiser la relique et caché l'estimation au conseil."
-          ],
-          "altText": "Document intitulé La corde de Basile. Le prieur avait fait expertiser la relique et caché l'estimation au conseil."
+          "kind": "note",
+          "body": "Le prieur avait fait expertiser la relique et caché l'estimation au conseil.",
+          "altText": "Note versée au dossier. Le prieur avait fait expertiser la relique et caché l'estimation au conseil."
         },
         "analysis": {
           "category": "RED_HERRING",
           "implicates": [
-            "basile"
+            "pere"
           ],
           "clears": [],
           "contradicts": [],
           "supportsMotiveOf": [],
           "supportsMethodOf": [],
           "unlocksInterviewIds": [
-            "basile_detail"
+            "pere_detail"
           ],
           "isRedHerring": true
         }
@@ -223,7 +244,7 @@
           "category": "EXONERATING",
           "implicates": [],
           "clears": [
-            "basile"
+            "pere"
           ],
           "contradicts": [],
           "supportsMotiveOf": [],
@@ -293,12 +314,20 @@
         "beat": "Le document donne un poids concret au mobile."
       },
       {
-        "id": "basile_detail",
-        "suspectId": "basile",
+        "id": "pere_detail",
+        "suspectId": "pere",
         "question": "Pourquoi retrouve-t-on cet objet parmi vos affaires ?",
         "answer": "« Cet objet m'appartient. Il ne se trouvait pourtant pas là au moment que vous imaginez. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
+      },
+      {
+        "id": "basile_detail",
+        "suspectId": "basile",
+        "question": "À quel moment cet élément a-t-il changé de sens ?",
+        "answer": "« Vous avez le bon élément et la mauvaise chronologie. C'est précisément ce qui vous égare. »",
+        "unlockedByClueId": "fausse_piste_b",
+        "beat": "Le recoupement suivant peut innocenter ou condamner."
       }
     ],
     "timeline": [
@@ -466,7 +495,7 @@
     ],
     "reasoning": [
       "Le téléphone de Léonie se connecte à la borne Wi-Fi du clocher à 20 h 56. Cette donnée fragilise directement la version de Léonie Pujol.",
-      "L'enregistrement comporte le cri d'un martinet absent en septembre mais présent lors de sa captation en juin. La trace relie le geste au procédé employé.",
+      "L'enregistrement comporte le cri d'un martinet, oiseau absent en septembre : la séquence a été captée en juin. La trace relie le geste au procédé employé.",
       "Un devis hospitalier impayé et un message d'un antiquaire fixent la valeur exacte du reliquaire. Le mobile repose donc sur un fait vérifiable.",
       "Une vidéo d'un visiteur montre Basile fermer la boutique, sans coupure, jusqu'après le retour au silence. De son côté, la principale autre piste ne résiste pas au recoupement.",
       "Le prieur avait fait expertiser la relique et caché l'estimation au conseil. L'élément paraît accusateur, mais il change de sens avec la dernière pièce : l'expertise préparait une assurance imposée par la banque et le prieur apparaît au premier rang sur trois vidéos simultanées.",
@@ -478,16 +507,23 @@
         "title": "Ce qui trahit Léonie Pujol",
         "steps": [
           "Le téléphone de Léonie se connecte à la borne Wi-Fi du clocher à 20 h 56.",
-          "L'enregistrement comporte le cri d'un martinet absent en septembre mais présent lors de sa captation en juin.",
+          "L'enregistrement comporte le cri d'un martinet, oiseau absent en septembre : la séquence a été captée en juin.",
           "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]
       },
       {
-        "title": "Le mobile et les innocents",
+        "title": "Les deux pistes à écarter",
+        "steps": [
+          "Basile conserve des photographies du reliquaire prises sous tous les angles, y compris l'ouverture.",
+          "Une vidéo d'un visiteur montre Basile fermer la boutique, sans coupure, jusqu'après le retour au silence.",
+          "Le prieur avait fait expertiser la relique et caché l'estimation au conseil. L'expertise préparait une assurance imposée par la banque et le prieur apparaît au premier rang sur trois vidéos simultanées."
+        ]
+      },
+      {
+        "title": "Le mobile",
         "steps": [
           "Un devis hospitalier impayé et un message d'un antiquaire fixent la valeur exacte du reliquaire.",
-          "Une vidéo d'un visiteur montre Basile fermer la boutique, sans coupure, jusqu'après le retour au silence.",
-          "L'expertise préparait une assurance imposée par la banque et le prieur apparaît au premier rang sur trois vidéos simultanées."
+          "Le mobile ne suffit pas : il faut aussi la présence et le moyen."
         ]
       }
     ]

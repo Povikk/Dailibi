@@ -155,6 +155,31 @@
         }
       },
       {
+        "id": "fausse_piste_b",
+        "title": "Le détail contre Ruben Keller",
+        "source": "PIÈCE À CONFONDRE",
+        "summary": "Une demande de report signée de Ruben accompagne le courriel anonyme envoyé à la direction.",
+        "evidence": {
+          "kind": "note",
+          "body": "Une demande de report signée de Ruben accompagne le courriel anonyme envoyé à la direction.",
+          "altText": "Note versée au dossier. Une demande de report signée de Ruben accompagne le courriel anonyme envoyé à la direction."
+        },
+        "analysis": {
+          "category": "RED_HERRING",
+          "implicates": [
+            "ruben"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "ruben_detail"
+          ],
+          "isRedHerring": true
+        }
+      },
+      {
         "id": "alibi_a",
         "title": "Un violon sans silence",
         "source": "ENREGISTREMENT VIDÉO",
@@ -174,7 +199,7 @@
           "category": "EXONERATING",
           "implicates": [],
           "clears": [
-            "lucien"
+            "ruben"
           ],
           "contradicts": [],
           "supportsMotiveOf": [],
@@ -189,25 +214,21 @@
         "source": "ÉLÉMENT À CHARGE",
         "summary": "La chambre de Lucien contient une version de la partition où la mesure 214 est barrée en rouge.",
         "evidence": {
-          "kind": "document",
-          "title": "La mesure barrée",
-          "subtitle": "ÉLÉMENT À CHARGE",
-          "paragraphs": [
-            "La chambre de Lucien contient une version de la partition où la mesure 214 est barrée en rouge."
-          ],
-          "altText": "Document intitulé La mesure barrée. La chambre de Lucien contient une version de la partition où la mesure 214 est barrée en rouge."
+          "kind": "note",
+          "body": "La chambre de Lucien contient une version de la partition où la mesure 214 est barrée en rouge.",
+          "altText": "Note versée au dossier. La chambre de Lucien contient une version de la partition où la mesure 214 est barrée en rouge."
         },
         "analysis": {
           "category": "RED_HERRING",
           "implicates": [
-            "ruben"
+            "lucien"
           ],
           "clears": [],
           "contradicts": [],
           "supportsMotiveOf": [],
           "supportsMethodOf": [],
           "unlocksInterviewIds": [
-            "ruben_detail"
+            "lucien_detail"
           ],
           "isRedHerring": true
         }
@@ -230,7 +251,7 @@
           "category": "EXONERATING",
           "implicates": [],
           "clears": [
-            "ruben"
+            "lucien"
           ],
           "contradicts": [],
           "supportsMotiveOf": [],
@@ -300,12 +321,20 @@
         "beat": "La menace n'est plus abstraite pour cette personne."
       },
       {
-        "id": "ruben_detail",
-        "suspectId": "ruben",
+        "id": "lucien_detail",
+        "suspectId": "lucien",
         "question": "À quel moment cet élément a-t-il changé de sens ?",
         "answer": "« Vous avez le bon élément et la mauvaise chronologie. C'est précisément ce qui vous égare. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Le recoupement suivant peut innocenter ou condamner."
+      },
+      {
+        "id": "ruben_detail",
+        "suspectId": "ruben",
+        "question": "Que prouve réellement cette pièce, selon vous ?",
+        "answer": "« Pris seul, ce détail m'accuse. Comparé au reste du dossier, il raconte autre chose. »",
+        "unlockedByClueId": "fausse_piste_b",
+        "beat": "La pièce doit être replacée dans sa chronologie."
       }
     ],
     "timeline": [
@@ -490,11 +519,18 @@
         ]
       },
       {
-        "title": "Le mobile et les innocents",
+        "title": "Les deux pistes à écarter",
+        "steps": [
+          "Une demande de report signée de Ruben accompagne le courriel anonyme envoyé à la direction.",
+          "L'appel vidéo de Ruben conserve le son continu de son violon durant toute la modification du serveur.",
+          "La chambre de Lucien contient une version de la partition où la mesure 214 est barrée en rouge. Cette annotation date des premières répétitions et la photographie de l'hôtel prouve qu'elle figurait déjà dans la version remise un mois plus tôt."
+        ]
+      },
+      {
+        "title": "Le mobile",
         "steps": [
           "Un courriel brouillon propose à la direction un contrat permanent pour gérer la crise numérique qu'elle disait prévoir.",
-          "L'appel vidéo de Ruben conserve le son continu de son violon durant toute la modification du serveur.",
-          "Cette annotation date des premières répétitions et la photographie de l'hôtel prouve qu'elle figurait déjà dans la version remise un mois plus tôt."
+          "Le mobile ne suffit pas : il faut aussi la présence et le moyen."
         ]
       }
     ]

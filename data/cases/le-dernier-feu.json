@@ -58,17 +58,17 @@
         "id": "registre",
         "title": "Onze minutes dans le journal",
         "source": "JOURNAL TECHNIQUE",
-        "summary": "La montre connectée de Malo enregistre quatre étages gravis à 2 h 05, alors qu'il se disait endormi.",
+        "summary": "La montre connectée de Malo enregistre quatre étages gravis à 2 h 05.",
         "evidence": {
           "kind": "schedule",
           "title": "JOURNAL TECHNIQUE",
           "rows": [
             {
               "time": "20:06",
-              "label": "La montre connectée de Malo enregistre quatre étages gravis à 2 h 05, alors qu'il se disait endormi."
+              "label": "La montre connectée de Malo enregistre quatre étages gravis à 2 h 05."
             }
           ],
-          "altText": "JOURNAL TECHNIQUE, 20:06. La montre connectée de Malo enregistre quatre étages gravis à 2 h 05, alors qu'il se disait endormi."
+          "altText": "JOURNAL TECHNIQUE, 20:06. La montre connectée de Malo enregistre quatre étages gravis à 2 h 05."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -155,6 +155,31 @@
         }
       },
       {
+        "id": "fausse_piste_b",
+        "title": "Le détail contre Erell Bihan",
+        "source": "PIÈCE À CONFONDRE",
+        "summary": "La pince de sertissage qui manque au phare vient de la mallette d'Erell.",
+        "evidence": {
+          "kind": "note",
+          "body": "La pince de sertissage qui manque au phare vient de la mallette d'Erell.",
+          "altText": "Note versée au dossier. La pince de sertissage qui manque au phare vient de la mallette d'Erell."
+        },
+        "analysis": {
+          "category": "RED_HERRING",
+          "implicates": [
+            "erell"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "erell_detail"
+          ],
+          "isRedHerring": true
+        }
+      },
+      {
         "id": "alibi_a",
         "title": "La radio d'Erell",
         "source": "ENREGISTREMENT VIDÉO",
@@ -189,13 +214,9 @@
         "source": "ÉLÉMENT À CHARGE",
         "summary": "Le journal de bord de Jonas mentionne « onze minutes noires » avant même le rapport officiel.",
         "evidence": {
-          "kind": "document",
-          "title": "Les appels de Jonas",
-          "subtitle": "ÉLÉMENT À CHARGE",
-          "paragraphs": [
-            "Le journal de bord de Jonas mentionne « onze minutes noires » avant même le rapport officiel."
-          ],
-          "altText": "Document intitulé Les appels de Jonas. Le journal de bord de Jonas mentionne « onze minutes noires » avant même le rapport officiel."
+          "kind": "note",
+          "body": "Le journal de bord de Jonas mentionne « onze minutes noires » avant même le rapport officiel.",
+          "altText": "Note versée au dossier. Le journal de bord de Jonas mentionne « onze minutes noires » avant même le rapport officiel."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -303,9 +324,17 @@
         "id": "jonas_detail",
         "suspectId": "jonas",
         "question": "Pourquoi avez-vous caché ce détail aux enquêteurs ?",
-        "answer": "« Je l'ai caché parce qu'il révélait un secret personnel. Ce secret n'a aucun lien avec l'incident. »",
+        "answer": "« Je l'ai gardé pour moi : cela ne concernait pas l'enquête. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
+      },
+      {
+        "id": "erell_detail",
+        "suspectId": "erell",
+        "question": "Qui peut confirmer votre explication sur cette pièce ?",
+        "answer": "« Mon explication est vérifiable. Cherchez le second enregistrement, pas seulement celui qui m'accuse. »",
+        "unlockedByClueId": "fausse_piste_b",
+        "beat": "Le recoupement suivant peut innocenter ou condamner."
       }
     ],
     "timeline": [
@@ -329,7 +358,7 @@
       },
       {
         "time": "20:06",
-        "text": "La montre connectée de Malo enregistre quatre étages gravis à 2 h 05, alors qu'il se disait endormi.",
+        "text": "La montre connectée de Malo enregistre quatre étages gravis à 2 h 05.",
         "source": "JOURNAL TECHNIQUE",
         "certainty": "CERTAIN"
       },
@@ -472,7 +501,7 @@
       }
     ],
     "reasoning": [
-      "La montre connectée de Malo enregistre quatre étages gravis à 2 h 05, alors qu'il se disait endormi. Cette donnée fragilise directement la version de Malo Quéré.",
+      "La montre connectée de Malo enregistre quatre étages gravis à 2 h 05. Cette donnée fragilise directement la version de Malo Quéré.",
       "Le relais ajouté porte une micro-rayure triangulaire laissée par sa pince de sertissage personnelle. La trace relie le geste au procédé employé.",
       "Le rapport commercial de son entreprise annonce qu'un incident majeur avant l'appel d'offres renforcerait leur dossier. Le mobile repose donc sur un fait vérifiable.",
       "La caméra thermique d'Erell la filme continûment sur la falaise, phare visible derrière elle. De son côté, la principale autre piste ne résiste pas au recoupement.",
@@ -484,17 +513,24 @@
       {
         "title": "Ce qui trahit Malo Quéré",
         "steps": [
-          "La montre connectée de Malo enregistre quatre étages gravis à 2 h 05, alors qu'il se disait endormi.",
+          "La montre connectée de Malo enregistre quatre étages gravis à 2 h 05.",
           "Le relais ajouté porte une micro-rayure triangulaire laissée par sa pince de sertissage personnelle.",
           "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]
       },
       {
-        "title": "Le mobile et les innocents",
+        "title": "Les deux pistes à écarter",
+        "steps": [
+          "La pince de sertissage qui manque au phare vient de la mallette d'Erell.",
+          "La caméra thermique d'Erell la filme continûment sur la falaise, phare visible derrière elle.",
+          "Le journal de bord de Jonas mentionne « onze minutes noires » avant même le rapport officiel. L'heure provient de l'enregistrement radio automatique de son bateau, reçu en copie par les enquêteurs."
+        ]
+      },
+      {
+        "title": "Le mobile",
         "steps": [
           "Le rapport commercial de son entreprise annonce qu'un incident majeur avant l'appel d'offres renforcerait leur dossier.",
-          "La caméra thermique d'Erell la filme continûment sur la falaise, phare visible derrière elle.",
-          "L'heure provient de l'enregistrement radio automatique de son bateau, reçu en copie par les enquêteurs."
+          "Le mobile ne suffit pas : il faut aussi la présence et le moyen."
         ]
       }
     ]

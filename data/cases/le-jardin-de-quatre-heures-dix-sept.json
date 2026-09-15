@@ -58,17 +58,17 @@
         "id": "registre",
         "title": "La porte ouverte à 4 h 09",
         "source": "JOURNAL TECHNIQUE",
-        "summary": "Le capteur de porte de June enregistre une sortie à 4 h 09 qu'elle nie.",
+        "summary": "Le capteur de porte de June enregistre une sortie à 4 h 09.",
         "evidence": {
           "kind": "schedule",
           "title": "JOURNAL TECHNIQUE",
           "rows": [
             {
               "time": "19:54",
-              "label": "Le capteur de porte de June enregistre une sortie à 4 h 09 qu'elle nie."
+              "label": "Le capteur de porte de June enregistre une sortie à 4 h 09."
             }
           ],
-          "altText": "JOURNAL TECHNIQUE, 19:54. Le capteur de porte de June enregistre une sortie à 4 h 09 qu'elle nie."
+          "altText": "JOURNAL TECHNIQUE, 19:54. Le capteur de porte de June enregistre une sortie à 4 h 09."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -93,10 +93,10 @@
         "id": "trace",
         "title": "La fleur refermée",
         "source": "ANALYSE MATÉRIELLE",
-        "summary": "À 4 h 17, June vaporise par erreur la fleur avec le flacon contaminé, provoquant sa fermeture précoce.",
+        "summary": "Le flacon de June contient le même extrait végétal que celui qui a refermé la fleur à 4 h 17.",
         "evidence": {
           "kind": "photo",
-          "caption": "À 4 h 17, June vaporise par erreur la fleur avec le flacon contaminé, provoquant sa fermeture précoce.",
+          "caption": "Le flacon de June contient le même extrait végétal que celui qui a refermé la fleur à 4 h 17.",
           "meta": [
             {
               "label": "Heure",
@@ -107,7 +107,7 @@
               "value": "La fleur refermée"
             }
           ],
-          "altText": "Photographie. À 4 h 17, June vaporise par erreur la fleur avec le flacon contaminé, provoquant sa fermeture précoce.",
+          "altText": "Photographie. Le flacon de June contient le même extrait végétal que celui qui a refermé la fleur à 4 h 17.",
           "tone": "cold"
         },
         "analysis": {
@@ -155,6 +155,31 @@
         }
       },
       {
+        "id": "fausse_piste_b",
+        "title": "Le détail contre Dr Selma Wong",
+        "source": "PIÈCE À CONFONDRE",
+        "summary": "Le dosage ajusté par Selma correspond exactement à celui retrouvé dans le sang d'Armand.",
+        "evidence": {
+          "kind": "note",
+          "body": "Le dosage ajusté par Selma correspond exactement à celui retrouvé dans le sang d'Armand.",
+          "altText": "Note versée au dossier. Le dosage ajusté par Selma correspond exactement à celui retrouvé dans le sang d'Armand."
+        },
+        "analysis": {
+          "category": "RED_HERRING",
+          "implicates": [
+            "dr"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "dr_detail"
+          ],
+          "isRedHerring": true
+        }
+      },
+      {
         "id": "alibi_a",
         "title": "Benoît dans le dernier bus",
         "source": "DONNÉES DE DÉPLACEMENT",
@@ -172,7 +197,7 @@
           "category": "EXONERATING",
           "implicates": [],
           "clears": [
-            "benoit"
+            "dr"
           ],
           "contradicts": [],
           "supportsMotiveOf": [],
@@ -187,25 +212,21 @@
         "source": "ÉLÉMENT À CHARGE",
         "summary": "Le carnet de Benoît contient la recette exacte d'extraction de l'alcaloïde.",
         "evidence": {
-          "kind": "document",
-          "title": "La recette du docteur",
-          "subtitle": "ÉLÉMENT À CHARGE",
-          "paragraphs": [
-            "Le carnet de Benoît contient la recette exacte d'extraction de l'alcaloïde."
-          ],
-          "altText": "Document intitulé La recette du docteur. Le carnet de Benoît contient la recette exacte d'extraction de l'alcaloïde."
+          "kind": "note",
+          "body": "Le carnet de Benoît contient la recette exacte d'extraction de l'alcaloïde.",
+          "altText": "Note versée au dossier. Le carnet de Benoît contient la recette exacte d'extraction de l'alcaloïde."
         },
         "analysis": {
           "category": "RED_HERRING",
           "implicates": [
-            "dr"
+            "benoit"
           ],
           "clears": [],
           "contradicts": [],
           "supportsMotiveOf": [],
           "supportsMethodOf": [],
           "unlocksInterviewIds": [
-            "dr_detail"
+            "benoit_detail"
           ],
           "isRedHerring": true
         }
@@ -228,7 +249,7 @@
           "category": "EXONERATING",
           "implicates": [],
           "clears": [
-            "dr"
+            "benoit"
           ],
           "contradicts": [],
           "supportsMotiveOf": [],
@@ -298,12 +319,20 @@
         "beat": "Le document donne un poids concret au mobile."
       },
       {
-        "id": "dr_detail",
-        "suspectId": "dr",
+        "id": "benoit_detail",
+        "suspectId": "benoit",
         "question": "Pourquoi avez-vous caché ce détail aux enquêteurs ?",
-        "answer": "« Je l'ai caché parce qu'il révélait un secret personnel. Ce secret n'a aucun lien avec l'incident. »",
+        "answer": "« Je l'ai gardé pour moi : cela ne concernait pas l'enquête. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
+      },
+      {
+        "id": "dr_detail",
+        "suspectId": "dr",
+        "question": "Qui peut confirmer votre explication sur cette pièce ?",
+        "answer": "« Mon explication est vérifiable. Cherchez le second enregistrement, pas seulement celui qui m'accuse. »",
+        "unlockedByClueId": "fausse_piste_b",
+        "beat": "Le recoupement suivant peut innocenter ou condamner."
       }
     ],
     "timeline": [
@@ -327,7 +356,7 @@
       },
       {
         "time": "19:54",
-        "text": "Le capteur de porte de June enregistre une sortie à 4 h 09 qu'elle nie.",
+        "text": "Le capteur de porte de June enregistre une sortie à 4 h 09.",
         "source": "JOURNAL TECHNIQUE",
         "certainty": "CERTAIN"
       },
@@ -470,8 +499,8 @@
       }
     ],
     "reasoning": [
-      "Le capteur de porte de June enregistre une sortie à 4 h 09 qu'elle nie. Cette donnée fragilise directement la version de June Luce.",
-      "À 4 h 17, June vaporise par erreur la fleur avec le flacon contaminé, provoquant sa fermeture précoce. La trace relie le geste au procédé employé.",
+      "Le capteur de porte de June enregistre une sortie à 4 h 09. Cette donnée fragilise directement la version de June Luce.",
+      "Le flacon de June contient le même extrait végétal que celui qui a refermé la fleur à 4 h 17. La trace relie le geste au procédé employé.",
       "Le compromis de vente prévoit la destruction immédiate de la véranda et l'évacuation des archives maternelles. Le mobile repose donc sur un fait vérifiable.",
       "Les accès et soins horodatés placent Selma à la clinique toute la nuit. De son côté, la principale autre piste ne résiste pas au recoupement.",
       "Le carnet de Benoît contient la recette exacte d'extraction de l'alcaloïde. L'élément paraît accusateur, mais il change de sens avec la dernière pièce : la page est une fiche de prévention remise à toute la propriété et son ticket de bus prouve son départ.",
@@ -482,17 +511,24 @@
       {
         "title": "Ce qui trahit June Luce",
         "steps": [
-          "Le capteur de porte de June enregistre une sortie à 4 h 09 qu'elle nie.",
-          "À 4 h 17, June vaporise par erreur la fleur avec le flacon contaminé, provoquant sa fermeture précoce.",
+          "Le capteur de porte de June enregistre une sortie à 4 h 09.",
+          "Le flacon de June contient le même extrait végétal que celui qui a refermé la fleur à 4 h 17.",
           "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]
       },
       {
-        "title": "Le mobile et les innocents",
+        "title": "Les deux pistes à écarter",
+        "steps": [
+          "Le dosage ajusté par Selma correspond exactement à celui retrouvé dans le sang d'Armand.",
+          "Les accès et soins horodatés placent Selma à la clinique toute la nuit.",
+          "Le carnet de Benoît contient la recette exacte d'extraction de l'alcaloïde. La page est une fiche de prévention remise à toute la propriété et son ticket de bus prouve son départ."
+        ]
+      },
+      {
+        "title": "Le mobile",
         "steps": [
           "Le compromis de vente prévoit la destruction immédiate de la véranda et l'évacuation des archives maternelles.",
-          "Les accès et soins horodatés placent Selma à la clinique toute la nuit.",
-          "La page est une fiche de prévention remise à toute la propriété et son ticket de bus prouve son départ."
+          "Le mobile ne suffit pas : il faut aussi la présence et le moyen."
         ]
       }
     ]

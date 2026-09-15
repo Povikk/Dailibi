@@ -148,24 +148,49 @@
         }
       },
       {
+        "id": "fausse_piste_b",
+        "title": "Le détail contre Fanny Lauzier",
+        "source": "PIÈCE À CONFONDRE",
+        "summary": "Fanny a demandé l'avancement du dépôt concurrent trois jours avant la fuite.",
+        "evidence": {
+          "kind": "note",
+          "body": "Fanny a demandé l'avancement du dépôt concurrent trois jours avant la fuite.",
+          "altText": "Note versée au dossier. Fanny a demandé l'avancement du dépôt concurrent trois jours avant la fuite."
+        },
+        "analysis": {
+          "category": "RED_HERRING",
+          "implicates": [
+            "fanny"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "fanny_detail"
+          ],
+          "isRedHerring": true
+        }
+      },
+      {
         "id": "alibi_a",
         "title": "La distillation de Karim",
         "source": "ALIBI VÉRIFIÉ",
-        "summary": "Les capteurs de distillation exigent et enregistrent l'action physique continue de Karim dans l'autre bâtiment.",
+        "summary": "La liste des passagers et l'embarquement horodaté placent Fanny dans l'avion pour Londres pendant la fuite.",
         "evidence": {
           "kind": "document",
           "title": "La distillation de Karim",
           "subtitle": "ALIBI VÉRIFIÉ",
           "paragraphs": [
-            "Les capteurs de distillation exigent et enregistrent l'action physique continue de Karim dans l'autre bâtiment."
+            "La liste des passagers et l'embarquement horodaté placent Fanny dans l'avion pour Londres pendant la fuite."
           ],
-          "altText": "Document intitulé La distillation de Karim. Les capteurs de distillation exigent et enregistrent l'action physique continue de Karim dans l'autre bâtiment."
+          "altText": "Document intitulé La distillation de Karim. La liste des passagers et l'embarquement horodaté placent Fanny dans l'avion pour Londres pendant la fuite."
         },
         "analysis": {
           "category": "EXONERATING",
           "implicates": [],
           "clears": [
-            "karim"
+            "fanny"
           ],
           "contradicts": [],
           "supportsMotiveOf": [],
@@ -180,25 +205,21 @@
         "source": "ÉLÉMENT À CHARGE",
         "summary": "L'offre d'emploi reçue par Karim inclut une prime liée au lancement d'un parfum rival.",
         "evidence": {
-          "kind": "document",
-          "title": "L'offre du concurrent",
-          "subtitle": "ÉLÉMENT À CHARGE",
-          "paragraphs": [
-            "L'offre d'emploi reçue par Karim inclut une prime liée au lancement d'un parfum rival."
-          ],
-          "altText": "Document intitulé L'offre du concurrent. L'offre d'emploi reçue par Karim inclut une prime liée au lancement d'un parfum rival."
+          "kind": "note",
+          "body": "L'offre d'emploi reçue par Karim inclut une prime liée au lancement d'un parfum rival.",
+          "altText": "Note versée au dossier. L'offre d'emploi reçue par Karim inclut une prime liée au lancement d'un parfum rival."
         },
         "analysis": {
           "category": "RED_HERRING",
           "implicates": [
-            "fanny"
+            "karim"
           ],
           "clears": [],
           "contradicts": [],
           "supportsMotiveOf": [],
           "supportsMethodOf": [],
           "unlocksInterviewIds": [
-            "fanny_detail"
+            "karim_detail"
           ],
           "isRedHerring": true
         }
@@ -221,7 +242,7 @@
           "category": "EXONERATING",
           "implicates": [],
           "clears": [
-            "fanny"
+            "karim"
           ],
           "contradicts": [],
           "supportsMotiveOf": [],
@@ -291,12 +312,20 @@
         "beat": "La menace n'est plus abstraite pour cette personne."
       },
       {
-        "id": "fanny_detail",
-        "suspectId": "fanny",
+        "id": "karim_detail",
+        "suspectId": "karim",
         "question": "Qui peut confirmer votre explication sur cette pièce ?",
         "answer": "« Mon explication est vérifiable. Cherchez le second enregistrement, pas seulement celui qui m'accuse. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Le recoupement suivant peut innocenter ou condamner."
+      },
+      {
+        "id": "fanny_detail",
+        "suspectId": "fanny",
+        "question": "Cette pièce semble vous accuser. Que manque-t-il au dossier ?",
+        "answer": "« La pièce est authentique, mais votre interprétation s'arrête trop tôt. Vérifiez la suite des événements. »",
+        "unlockedByClueId": "fausse_piste_b",
+        "beat": "La pièce doit être replacée dans sa chronologie."
       }
     ],
     "timeline": [
@@ -466,7 +495,7 @@
       "Le bracelet de sommeil d'Émilie enregistre une marche jusqu'au laboratoire à 3 h. Cette donnée fragilise directement la version d'Émilie Rey.",
       "La formule concurrente contient le narcisse présent seulement dans l'essai 47 qu'Émilie avait évalué seule. La trace relie le geste au procédé employé.",
       "Son journal décrit le dépôt concurrent comme le seul moyen de rendre sa part impossible à effacer. Le mobile repose donc sur un fait vérifiable.",
-      "Les capteurs de distillation exigent et enregistrent l'action physique continue de Karim dans l'autre bâtiment. De son côté, la principale autre piste ne résiste pas au recoupement.",
+      "La liste des passagers et l'embarquement horodaté placent Fanny dans l'avion pour Londres pendant la fuite. De son côté, la principale autre piste ne résiste pas au recoupement.",
       "L'offre d'emploi reçue par Karim inclut une prime liée au lancement d'un parfum rival. L'élément paraît accusateur, mais il change de sens avec la dernière pièce : l'offre est postérieure au dépôt et ses métadonnées montrent qu'elle fut envoyée après que la fuite devint publique.",
       "Présence, moyen et intérêt convergent vers Émilie Rey."
     ],
@@ -481,11 +510,18 @@
         ]
       },
       {
-        "title": "Le mobile et les innocents",
+        "title": "Les deux pistes à écarter",
+        "steps": [
+          "Fanny a demandé l'avancement du dépôt concurrent trois jours avant la fuite.",
+          "La liste des passagers et l'embarquement horodaté placent Fanny dans l'avion pour Londres pendant la fuite.",
+          "L'offre d'emploi reçue par Karim inclut une prime liée au lancement d'un parfum rival. L'offre est postérieure au dépôt et ses métadonnées montrent qu'elle fut envoyée après que la fuite devint publique."
+        ]
+      },
+      {
+        "title": "Le mobile",
         "steps": [
           "Son journal décrit le dépôt concurrent comme le seul moyen de rendre sa part impossible à effacer.",
-          "Les capteurs de distillation exigent et enregistrent l'action physique continue de Karim dans l'autre bâtiment.",
-          "L'offre est postérieure au dépôt et ses métadonnées montrent qu'elle fut envoyée après que la fuite devint publique."
+          "Le mobile ne suffit pas : il faut aussi la présence et le moyen."
         ]
       }
     ]

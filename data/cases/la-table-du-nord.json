@@ -58,17 +58,17 @@
         "id": "registre",
         "title": "La carte ouverte à 23 h 08",
         "source": "JOURNAL TECHNIQUE",
-        "summary": "L'ordinateur d'Owen ouvre l'outil cartographique à 23 h 08 malgré son alibi sur le quai.",
+        "summary": "L'ordinateur d'Owen ouvre l'outil cartographique à 23 h 08.",
         "evidence": {
           "kind": "schedule",
           "title": "JOURNAL TECHNIQUE",
           "rows": [
             {
               "time": "19:47",
-              "label": "L'ordinateur d'Owen ouvre l'outil cartographique à 23 h 08 malgré son alibi sur le quai."
+              "label": "L'ordinateur d'Owen ouvre l'outil cartographique à 23 h 08."
             }
           ],
-          "altText": "JOURNAL TECHNIQUE, 19:47. L'ordinateur d'Owen ouvre l'outil cartographique à 23 h 08 malgré son alibi sur le quai."
+          "altText": "JOURNAL TECHNIQUE, 19:47. L'ordinateur d'Owen ouvre l'outil cartographique à 23 h 08."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -93,15 +93,15 @@
         "id": "trace",
         "title": "La tuile de la clé logistique",
         "source": "ANALYSE MATÉRIELLE",
-        "summary": "La tuile déplacée provient d'une cache hors ligne copiée sur sa clé logistique.",
+        "summary": "La tuile déplacée provient d'une cache hors ligne copiée sur la clé logistique d'Owen.",
         "evidence": {
           "kind": "document",
           "title": "La tuile de la clé logistique",
           "subtitle": "ANALYSE MATÉRIELLE",
           "paragraphs": [
-            "La tuile déplacée provient d'une cache hors ligne copiée sur sa clé logistique."
+            "La tuile déplacée provient d'une cache hors ligne copiée sur la clé logistique d'Owen."
           ],
-          "altText": "Document intitulé La tuile de la clé logistique. La tuile déplacée provient d'une cache hors ligne copiée sur sa clé logistique."
+          "altText": "Document intitulé La tuile de la clé logistique. La tuile déplacée provient d'une cache hors ligne copiée sur la clé logistique d'Owen."
         },
         "analysis": {
           "category": "TIMELINE",
@@ -148,6 +148,31 @@
         }
       },
       {
+        "id": "fausse_piste_b",
+        "title": "Le détail contre Marta Siwek",
+        "source": "PIÈCE À CONFONDRE",
+        "summary": "La mosaïque corrigée de Marta a été déposée sur le serveur le soir de la falsification.",
+        "evidence": {
+          "kind": "note",
+          "body": "La mosaïque corrigée de Marta a été déposée sur le serveur le soir de la falsification.",
+          "altText": "Note versée au dossier. La mosaïque corrigée de Marta a été déposée sur le serveur le soir de la falsification."
+        },
+        "analysis": {
+          "category": "RED_HERRING",
+          "implicates": [
+            "marta"
+          ],
+          "clears": [],
+          "contradicts": [],
+          "supportsMotiveOf": [],
+          "supportsMethodOf": [],
+          "unlocksInterviewIds": [
+            "marta_detail"
+          ],
+          "isRedHerring": true
+        }
+      },
+      {
         "id": "alibi_a",
         "title": "Lila en salle de calcul",
         "source": "ALIBI VÉRIFIÉ",
@@ -165,7 +190,7 @@
           "category": "EXONERATING",
           "implicates": [],
           "clears": [
-            "lila"
+            "marta"
           ],
           "contradicts": [],
           "supportsMotiveOf": [],
@@ -180,25 +205,21 @@
         "source": "ÉLÉMENT À CHARGE",
         "summary": "Lila a laissé un commentaire : « cette route ne doit pas partir ».",
         "evidence": {
-          "kind": "document",
-          "title": "Le commentaire de Marta",
-          "subtitle": "ÉLÉMENT À CHARGE",
-          "paragraphs": [
-            "Lila a laissé un commentaire : « cette route ne doit pas partir »."
-          ],
-          "altText": "Document intitulé Le commentaire de Marta. Lila a laissé un commentaire : « cette route ne doit pas partir »."
+          "kind": "note",
+          "body": "Lila a laissé un commentaire : « cette route ne doit pas partir ».",
+          "altText": "Note versée au dossier. Lila a laissé un commentaire : « cette route ne doit pas partir »."
         },
         "analysis": {
           "category": "RED_HERRING",
           "implicates": [
-            "marta"
+            "lila"
           ],
           "clears": [],
           "contradicts": [],
           "supportsMotiveOf": [],
           "supportsMethodOf": [],
           "unlocksInterviewIds": [
-            "marta_detail"
+            "lila_detail"
           ],
           "isRedHerring": true
         }
@@ -221,7 +242,7 @@
           "category": "EXONERATING",
           "implicates": [],
           "clears": [
-            "marta"
+            "lila"
           ],
           "contradicts": [],
           "supportsMotiveOf": [],
@@ -291,12 +312,20 @@
         "beat": "L'intérêt personnel est reconnu sans que le passage à l'acte le soit."
       },
       {
-        "id": "marta_detail",
-        "suspectId": "marta",
+        "id": "lila_detail",
+        "suspectId": "lila",
         "question": "Que prouve réellement cette pièce, selon vous ?",
         "answer": "« Pris seul, ce détail m'accuse. Comparé au reste du dossier, il raconte autre chose. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "La pièce doit être replacée dans sa chronologie."
+      },
+      {
+        "id": "marta_detail",
+        "suspectId": "marta",
+        "question": "Pourquoi avez-vous caché ce détail aux enquêteurs ?",
+        "answer": "« Je l'ai gardé pour moi : cela ne concernait pas l'enquête. »",
+        "unlockedByClueId": "fausse_piste_b",
+        "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       }
     ],
     "timeline": [
@@ -320,7 +349,7 @@
       },
       {
         "time": "19:47",
-        "text": "L'ordinateur d'Owen ouvre l'outil cartographique à 23 h 08 malgré son alibi sur le quai.",
+        "text": "L'ordinateur d'Owen ouvre l'outil cartographique à 23 h 08.",
         "source": "JOURNAL TECHNIQUE",
         "certainty": "CERTAIN"
       },
@@ -463,8 +492,8 @@
       }
     ],
     "reasoning": [
-      "L'ordinateur d'Owen ouvre l'outil cartographique à 23 h 08 malgré son alibi sur le quai. Cette donnée fragilise directement la version d'Owen Price.",
-      "La tuile déplacée provient d'une cache hors ligne copiée sur sa clé logistique. La trace relie le geste au procédé employé.",
+      "L'ordinateur d'Owen ouvre l'outil cartographique à 23 h 08. Cette donnée fragilise directement la version d'Owen Price.",
+      "La tuile déplacée provient d'une cache hors ligne copiée sur la clé logistique d'Owen. La trace relie le geste au procédé employé.",
       "Le contrat impose une pénalité quotidienne supérieure au budget restant de sa division. Le mobile repose donc sur un fait vérifiable.",
       "La conférence enregistrée montre Marta répondant en direct durant la falsification. De son côté, la principale autre piste ne résiste pas au recoupement.",
       "Lila a laissé un commentaire : « cette route ne doit pas partir ». L'élément paraît accusateur, mais il change de sens avec la dernière pièce : elle signalait justement le danger et sa version sauvegardée contient la mosaïque correcte.",
@@ -475,17 +504,24 @@
       {
         "title": "Ce qui trahit Owen Price",
         "steps": [
-          "L'ordinateur d'Owen ouvre l'outil cartographique à 23 h 08 malgré son alibi sur le quai.",
-          "La tuile déplacée provient d'une cache hors ligne copiée sur sa clé logistique.",
+          "L'ordinateur d'Owen ouvre l'outil cartographique à 23 h 08.",
+          "La tuile déplacée provient d'une cache hors ligne copiée sur la clé logistique d'Owen.",
           "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]
       },
       {
-        "title": "Le mobile et les innocents",
+        "title": "Les deux pistes à écarter",
+        "steps": [
+          "La mosaïque corrigée de Marta a été déposée sur le serveur le soir de la falsification.",
+          "La conférence enregistrée montre Marta répondant en direct durant la falsification.",
+          "Lila a laissé un commentaire : « cette route ne doit pas partir ». Elle signalait justement le danger et sa version sauvegardée contient la mosaïque correcte."
+        ]
+      },
+      {
+        "title": "Le mobile",
         "steps": [
           "Le contrat impose une pénalité quotidienne supérieure au budget restant de sa division.",
-          "La conférence enregistrée montre Marta répondant en direct durant la falsification.",
-          "Elle signalait justement le danger et sa version sauvegardée contient la mosaïque correcte."
+          "Le mobile ne suffit pas : il faut aussi la présence et le moyen."
         ]
       }
     ]
