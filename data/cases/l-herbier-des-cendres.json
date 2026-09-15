@@ -20,7 +20,7 @@
         "occupation": "Chercheur associé",
         "relation": "Il cosigne les travaux mais pas le brevet.",
         "personality": "Mesuré, corrige chaque terme scientifique.",
-        "claimedAlibi": "Il affirme avoir quitté le laboratoire à 18h avec Jeanne.",
+        "claimedAlibi": "« J'ai quitté le laboratoire à 18 h avec Jeanne. »",
         "accent": "formal",
         "notes": [
           "Il contestait l'ordre des auteurs de l'article."
@@ -33,7 +33,7 @@
         "occupation": "Responsable des collections",
         "relation": "Elle seule possède la clé de l'armoire.",
         "personality": "Rigide, attachée aux procédures anciennes.",
-        "claimedAlibi": "Elle classait des graines dans l'aile publique jusqu'à 20h.",
+        "claimedAlibi": "« Je classais des graines dans l'aile publique jusqu'à 20 h. »",
         "accent": "nervous",
         "notes": [
           "Elle s'opposait au prélèvement destructif des spécimens."
@@ -46,7 +46,7 @@
         "occupation": "Doctorant",
         "relation": "Il a découvert la variété lors de sa thèse.",
         "personality": "Fiévreux, enthousiaste, oublie de finir ses phrases.",
-        "claimedAlibi": "Il participait à un séminaire en visioconférence.",
+        "claimedAlibi": "« Je participais à un séminaire en visioconférence. »",
         "accent": "cold",
         "notes": [
           "Son nom avait disparu du projet de brevet."
@@ -57,18 +57,18 @@
       {
         "id": "registre",
         "title": "L'armoire ouverte à contretemps",
-        "source": "JOURNAL D'ACCÈS",
-        "summary": "Le badge de Samir ressort du bâtiment à 19h43, une heure après son départ déclaré.",
+        "source": "JOURNAL TECHNIQUE",
+        "summary": "Le badge de Samir ressort du bâtiment à 19 h 43, une heure après son départ déclaré.",
         "evidence": {
           "kind": "schedule",
-          "title": "JOURNAL D'ACCÈS",
+          "title": "JOURNAL TECHNIQUE",
           "rows": [
             {
               "time": "20:13",
-              "label": "Le badge de Samir ressort du bâtiment à 19h43, une heure après son départ déclaré."
+              "label": "Le badge de Samir ressort du bâtiment à 19 h 43, une heure après son départ déclaré."
             }
           ],
-          "altText": "JOURNAL D'ACCÈS, 20:13. Le badge de Samir ressort du bâtiment à 19h43, une heure après son départ déclaré."
+          "altText": "JOURNAL TECHNIQUE, 20:13. Le badge de Samir ressort du bâtiment à 19 h 43, une heure après son départ déclaré."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -92,12 +92,12 @@
       {
         "id": "trace",
         "title": "Le départ du feu enfermé",
-        "source": "CONSTAT PHOTOGRAPHIQUE",
+        "source": "ANALYSE MATÉRIELLE",
         "summary": "Les résidus de fer et de sel correspondent aux sachets chauffants commandés sur son budget de terrain.",
         "evidence": {
           "kind": "document",
           "title": "Le départ du feu enfermé",
-          "subtitle": "CONSTAT PHOTOGRAPHIQUE",
+          "subtitle": "ANALYSE MATÉRIELLE",
           "paragraphs": [
             "Les résidus de fer et de sel correspondent aux sachets chauffants commandés sur son budget de terrain."
           ],
@@ -121,12 +121,16 @@
       {
         "id": "mobile",
         "title": "La publication menacée",
-        "source": "NOTE PERSONNELLE",
+        "source": "DOCUMENT SAISI",
         "summary": "Les statuts d'une société créée par sa sœur reprennent mot pour mot le futur usage pharmaceutique de la plante.",
         "evidence": {
-          "kind": "note",
-          "body": "Les statuts d'une société créée par sa sœur reprennent mot pour mot le futur usage pharmaceutique de la plante.",
-          "altText": "Note versée au dossier. Les statuts d'une société créée par sa sœur reprennent mot pour mot le futur usage pharmaceutique de la plante."
+          "kind": "document",
+          "title": "La publication menacée",
+          "subtitle": "DOCUMENT SAISI",
+          "paragraphs": [
+            "Les statuts d'une société créée par sa sœur reprennent mot pour mot le futur usage pharmaceutique de la plante."
+          ],
+          "altText": "Document intitulé La publication menacée. Les statuts d'une société créée par sa sœur reprennent mot pour mot le futur usage pharmaceutique de la plante."
         },
         "analysis": {
           "category": "BEHAVIORAL",
@@ -146,16 +150,18 @@
       {
         "id": "alibi_a",
         "title": "Le trajet d'Élise",
-        "source": "ALIBI VÉRIFIÉ",
+        "source": "ENREGISTREMENT VIDÉO",
         "summary": "L'enregistrement du séminaire montre Pavel à l'écran sans interruption pendant la préparation du dispositif.",
         "evidence": {
-          "kind": "email",
-          "from": "ALIBI VÉRIFIÉ",
-          "to": "Dossier d'enquête",
-          "subject": "Le trajet d'Élise",
-          "sentAt": "20:13",
-          "body": "L'enregistrement du séminaire montre Pavel à l'écran sans interruption pendant la préparation du dispositif.",
-          "altText": "Courriel intitulé Le trajet d'Élise. L'enregistrement du séminaire montre Pavel à l'écran sans interruption pendant la préparation du dispositif."
+          "kind": "camera",
+          "location": "ENREGISTREMENT VIDÉO",
+          "frames": [
+            {
+              "time": "20:06",
+              "text": "L'enregistrement du séminaire montre Pavel à l'écran sans interruption pendant la préparation du dispositif."
+            }
+          ],
+          "altText": "Image enregistrée à 20:06. L'enregistrement du séminaire montre Pavel à l'écran sans interruption pendant la préparation du dispositif."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -176,20 +182,13 @@
         "source": "ÉLÉMENT À CHARGE",
         "summary": "Élise avait caché la clé de l'armoire dans un pot plutôt que dans l'armoire sécurisée.",
         "evidence": {
-          "kind": "photo",
-          "caption": "Élise avait caché la clé de l'armoire dans un pot plutôt que dans l'armoire sécurisée.",
-          "meta": [
-            {
-              "label": "Heure",
-              "value": "20:21"
-            },
-            {
-              "label": "Pièce",
-              "value": "Les solvants de Pavel"
-            }
+          "kind": "document",
+          "title": "Les solvants de Pavel",
+          "subtitle": "ÉLÉMENT À CHARGE",
+          "paragraphs": [
+            "Élise avait caché la clé de l'armoire dans un pot plutôt que dans l'armoire sécurisée."
           ],
-          "altText": "Photographie. Élise avait caché la clé de l'armoire dans un pot plutôt que dans l'armoire sécurisée.",
-          "tone": "cold"
+          "altText": "Document intitulé Les solvants de Pavel. Élise avait caché la clé de l'armoire dans un pot plutôt que dans l'armoire sécurisée."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -209,18 +208,16 @@
       {
         "id": "resolution",
         "title": "Ce que révèle la ventilation",
-        "source": "ENREGISTREMENT TÉMOIN",
+        "source": "RECOUPEMENT FINAL",
         "summary": "Une photographie d'inventaire prise avant l'incendie montre que Samir avait vu cette cache lors d'un contrôle commun.",
         "evidence": {
-          "kind": "camera",
-          "location": "ENREGISTREMENT TÉMOIN",
-          "frames": [
-            {
-              "time": "19:35",
-              "text": "Une photographie d'inventaire prise avant l'incendie montre que Samir avait vu cette cache lors d'un contrôle commun."
-            }
+          "kind": "document",
+          "title": "Ce que révèle la ventilation",
+          "subtitle": "RECOUPEMENT FINAL",
+          "paragraphs": [
+            "Une photographie d'inventaire prise avant l'incendie montre que Samir avait vu cette cache lors d'un contrôle commun."
           ],
-          "altText": "Image enregistrée à 19:35. Une photographie d'inventaire prise avant l'incendie montre que Samir avait vu cette cache lors d'un contrôle commun."
+          "altText": "Document intitulé Ce que révèle la ventilation. Une photographie d'inventaire prise avant l'incendie montre que Samir avait vu cette cache lors d'un contrôle commun."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -240,43 +237,43 @@
       {
         "id": "samir_alibi",
         "suspectId": "samir",
-        "question": "Décrivez vos déplacements sans sauter d'étape, Samir Ouali.",
-        "answer": "Il affirme avoir quitté le laboratoire à 18h avec Jeanne. Mesuré, corrige chaque terme scientifique.",
+        "question": "Donnez votre emploi du temps précis, Samir Ouali.",
+        "answer": "« J'ai quitté le laboratoire à 18 h avec Jeanne. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
         "id": "samir_relation",
         "suspectId": "samir",
-        "question": "Aviez-vous une raison de redouter la décision de Pr, Samir Ouali ?",
-        "answer": "Il cosigne les travaux mais pas le brevet. Il contestait l'ordre des auteurs de l'article.",
+        "question": "Cette situation pouvait-elle vous profiter, Samir Ouali ?",
+        "answer": "« Je redoutais les conséquences de cette affaire. Je ne l'ai jamais caché. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "elise_alibi",
         "suspectId": "elise",
-        "question": "Quand avez-vous quitté Jardin botanique, Élise Martel ?",
-        "answer": "Elle classait des graines dans l'aile publique jusqu'à 20h. Rigide, attachée aux procédures anciennes.",
+        "question": "Où étiez-vous au moment des faits, Élise Martel ?",
+        "answer": "« Je classais des graines dans l'aile publique jusqu'à 20 h. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "elise_relation",
         "suspectId": "elise",
-        "question": "Que taisiez-vous sur votre relation avec Pr, Élise Martel ?",
-        "answer": "Elle seule possède la clé de l'armoire. Elle s'opposait au prélèvement destructif des spécimens.",
+        "question": "Que redoutiez-vous personnellement, Élise Martel ?",
+        "answer": "« Oui. Cette affaire pouvait avoir des conséquences pour moi, mais je n'ai rien provoqué. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "pavel_alibi",
         "suspectId": "pavel",
-        "question": "Qui peut confirmer votre emploi du temps, Pavel Duroc ?",
-        "answer": "Il participait à un séminaire en visioconférence. Fiévreux, enthousiaste, oublie de finir ses phrases.",
+        "question": "Que faisiez-vous pendant la période concernée, Pavel Duroc ?",
+        "answer": "« Je participais à un séminaire en visioconférence. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "pavel_relation",
         "suspectId": "pavel",
-        "question": "Quel désaccord vous opposait à Pr, Pavel Duroc ?",
-        "answer": "Il a découvert la variété lors de sa thèse. Son nom avait disparu du projet de brevet.",
+        "question": "Cette affaire pouvait-elle vous affecter, Pavel Duroc ?",
+        "answer": "« J'avais quelque chose à perdre. Cela ne suffit pas à faire de moi le coupable. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
@@ -314,19 +311,19 @@
       {
         "time": "19:47",
         "text": "Les statuts d'une société créée par sa sœur reprennent mot pour mot le futur usage pharmaceutique de la plante.",
-        "source": "NOTE PERSONNELLE",
+        "source": "DOCUMENT SAISI",
         "certainty": "CERTAIN"
       },
       {
         "time": "20:00",
-        "text": "Samir Ouali situe ici la fin de ses déplacements.",
-        "source": "Déposition",
+        "text": "Samir Ouali : « J'ai quitté le laboratoire à 18 h avec Jeanne. »",
+        "source": "Déclaration de Samir Ouali",
         "certainty": "REPORTED"
       },
       {
         "time": "20:13",
-        "text": "Le badge de Samir ressort du bâtiment à 19h43, une heure après son départ déclaré.",
-        "source": "JOURNAL D'ACCÈS",
+        "text": "Le badge de Samir ressort du bâtiment à 19 h 43, une heure après son départ déclaré.",
+        "source": "JOURNAL TECHNIQUE",
         "certainty": "CERTAIN"
       },
       {
@@ -373,15 +370,15 @@
             },
             {
               "id": "motive_innocent_a",
-              "label": "Elle s'opposait au prélèvement destructif des spécimens."
+              "label": "Empêcher le prélèvement destructif de spécimens rares"
             },
             {
               "id": "motive_innocent_b",
-              "label": "Son nom avait disparu du projet de brevet."
+              "label": "Récupérer la place de premier auteur d'une publication"
             },
             {
               "id": "motive_accident",
-              "label": "Cacher une erreur antérieure sans rapport direct avec l'incident"
+              "label": "Détruire un herbier qui contredisait un brevet"
             }
           ]
         },
@@ -397,15 +394,15 @@
             },
             {
               "id": "method_force",
-              "label": "Forcer directement l'accès principal puis dissimuler les traces"
+              "label": "Introduire une braise dans l'armoire au moment de la fermeture"
             },
             {
               "id": "method_complice",
-              "label": "Employer un complice extérieur après la fermeture"
+              "label": "Verser un produit corrosif qui a noirci les planches"
             },
             {
               "id": "method_failure",
-              "label": "Exploiter une défaillance existante sans intervenir sur les lieux"
+              "label": "Surchauffer toute la pièce en bloquant la ventilation"
             }
           ]
         }
@@ -468,7 +465,7 @@
       }
     ],
     "reasoning": [
-      "Le badge de Samir ressort du bâtiment à 19h43, une heure après son départ déclaré. Cette donnée fragilise directement la version de Samir Ouali.",
+      "Le badge de Samir ressort du bâtiment à 19 h 43, une heure après son départ déclaré. Cette donnée fragilise directement la version de Samir Ouali.",
       "Les résidus de fer et de sel correspondent aux sachets chauffants commandés sur son budget de terrain. La trace relie le geste au procédé employé.",
       "Les statuts d'une société créée par sa sœur reprennent mot pour mot le futur usage pharmaceutique de la plante. Le mobile repose donc sur un fait vérifiable.",
       "L'enregistrement du séminaire montre Pavel à l'écran sans interruption pendant la préparation du dispositif. De son côté, la principale autre piste ne résiste pas au recoupement.",
@@ -480,7 +477,7 @@
       {
         "title": "Ce qui trahit Samir Ouali",
         "steps": [
-          "Le badge de Samir ressort du bâtiment à 19h43, une heure après son départ déclaré.",
+          "Le badge de Samir ressort du bâtiment à 19 h 43, une heure après son départ déclaré.",
           "Les résidus de fer et de sel correspondent aux sachets chauffants commandés sur son budget de terrain.",
           "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]

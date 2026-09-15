@@ -20,7 +20,7 @@
         "occupation": "Technicien ascensoriste",
         "relation": "Il intervenait dans la tour cette nuit-là.",
         "personality": "Calme, concret, explique volontiers les sécurités.",
-        "claimedAlibi": "Il affirme être resté au local machines.",
+        "claimedAlibi": "« Je suis resté au local machines. »",
         "accent": "formal",
         "notes": [
           "Son badge peut activer le mode inspection."
@@ -33,7 +33,7 @@
         "occupation": "Auditrice",
         "relation": "Elle partageait la cabine avec Daria.",
         "personality": "Très attentive, mémorise les gestes et les silences.",
-        "claimedAlibi": "Elle dit avoir gardé les mains visibles pendant l'arrêt.",
+        "claimedAlibi": "« J'ai gardé les mains visibles pendant l'arrêt. »",
         "accent": "nervous",
         "notes": [
           "La clé permet d'accéder aux comptes qu'elle audite."
@@ -46,7 +46,7 @@
         "occupation": "Directeur général",
         "relation": "Il attendait Daria au 19e étage.",
         "personality": "Impassible, parle en termes de gouvernance.",
-        "claimedAlibi": "Il participait à une visioconférence enregistrée.",
+        "claimedAlibi": "« Je participais à une visioconférence enregistrée. »",
         "accent": "cold",
         "notes": [
           "L'audit menace sa position."
@@ -57,12 +57,18 @@
       {
         "id": "registre",
         "title": "Quarante secondes au palier",
-        "source": "RELEVÉ HORODATÉ",
+        "source": "JOURNAL TECHNIQUE",
         "summary": "Le journal moteur montre une commande locale dans la gaine, incompatible avec sa présence au local machines.",
         "evidence": {
-          "kind": "note",
-          "body": "Le journal moteur montre une commande locale dans la gaine, incompatible avec sa présence au local machines.",
-          "altText": "Note versée au dossier. Le journal moteur montre une commande locale dans la gaine, incompatible avec sa présence au local machines."
+          "kind": "schedule",
+          "title": "JOURNAL TECHNIQUE",
+          "rows": [
+            {
+              "time": "20:56",
+              "label": "Le journal moteur montre une commande locale dans la gaine, incompatible avec sa présence au local machines."
+            }
+          ],
+          "altText": "JOURNAL TECHNIQUE, 20:56. Le journal moteur montre une commande locale dans la gaine, incompatible avec sa présence au local machines."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -86,7 +92,7 @@
       {
         "id": "trace",
         "title": "La poussière du plafond",
-        "source": "ANALYSE DU LABORATOIRE",
+        "source": "ANALYSE MATÉRIELLE",
         "summary": "Une limaille magnétique de la trappe est retrouvée sur la fermeture apparemment intacte de la mallette.",
         "evidence": {
           "kind": "photo",
@@ -122,13 +128,16 @@
       {
         "id": "mobile",
         "title": "Le transfert secret",
-        "source": "DOSSIER CONFIDENTIEL",
+        "source": "DOCUMENT SAISI",
         "summary": "Les factures suspectes aboutissent à une entreprise détenue par le beau-frère de Rachid.",
         "evidence": {
-          "kind": "handwriting",
-          "body": "Les factures suspectes aboutissent à une entreprise détenue par le beau-frère de Rachid.",
-          "signature": "Hector Lu",
-          "altText": "Note manuscrite. Les factures suspectes aboutissent à une entreprise détenue par le beau-frère de Rachid."
+          "kind": "document",
+          "title": "Le transfert secret",
+          "subtitle": "DOCUMENT SAISI",
+          "paragraphs": [
+            "Les factures suspectes aboutissent à une entreprise détenue par le beau-frère de Rachid."
+          ],
+          "altText": "Document intitulé Le transfert secret. Les factures suspectes aboutissent à une entreprise détenue par le beau-frère de Rachid."
         },
         "analysis": {
           "category": "BEHAVIORAL",
@@ -148,18 +157,16 @@
       {
         "id": "alibi_a",
         "title": "Eva au 18e étage",
-        "source": "CONTRÔLE DES DÉPLACEMENTS",
+        "source": "ALIBI VÉRIFIÉ",
         "summary": "Le reflet des portes filmé avant la coupure montre les mains d'Eva levées avec son téléphone durant tout l'arrêt.",
         "evidence": {
-          "kind": "camera",
-          "location": "CONTRÔLE DES DÉPLACEMENTS",
-          "frames": [
-            {
-              "time": "20:49",
-              "text": "Le reflet des portes filmé avant la coupure montre les mains d'Eva levées avec son téléphone durant tout l'arrêt."
-            }
+          "kind": "document",
+          "title": "Eva au 18e étage",
+          "subtitle": "ALIBI VÉRIFIÉ",
+          "paragraphs": [
+            "Le reflet des portes filmé avant la coupure montre les mains d'Eva levées avec son téléphone durant tout l'arrêt."
           ],
-          "altText": "Image enregistrée à 20:49. Le reflet des portes filmé avant la coupure montre les mains d'Eva levées avec son téléphone durant tout l'arrêt."
+          "altText": "Document intitulé Eva au 18e étage. Le reflet des portes filmé avant la coupure montre les mains d'Eva levées avec son téléphone durant tout l'arrêt."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -177,12 +184,12 @@
       {
         "id": "fausse_piste",
         "title": "L'outil d'Hector",
-        "source": "PIÈCE SAISIE",
+        "source": "ÉLÉMENT À CHARGE",
         "summary": "Hector demande dans la visioconférence si Daria possède encore la clé sur elle.",
         "evidence": {
           "kind": "document",
           "title": "L'outil d'Hector",
-          "subtitle": "PIÈCE SAISIE",
+          "subtitle": "ÉLÉMENT À CHARGE",
           "paragraphs": [
             "Hector demande dans la visioconférence si Daria possède encore la clé sur elle."
           ],
@@ -206,20 +213,16 @@
       {
         "id": "resolution",
         "title": "La trappe au-dessus de la cabine",
-        "source": "RECOUPEMENT INDÉPENDANT",
+        "source": "RECOUPEMENT FINAL",
         "summary": "La question suit un protocole d'audit écrit et l'enregistrement continu le maintient au 19e étage.",
         "evidence": {
-          "kind": "sms",
-          "contact": "Hector Lu",
-          "channel": "sms",
-          "messages": [
-            {
-              "from": "them",
-              "text": "La question suit un protocole d'audit écrit et l'enregistrement continu le maintient au 19e étage.",
-              "time": "20:18"
-            }
+          "kind": "document",
+          "title": "La trappe au-dessus de la cabine",
+          "subtitle": "RECOUPEMENT FINAL",
+          "paragraphs": [
+            "La question suit un protocole d'audit écrit et l'enregistrement continu le maintient au 19e étage."
           ],
-          "altText": "Message de Hector Lu à 20:18. La question suit un protocole d'audit écrit et l'enregistrement continu le maintient au 19e étage."
+          "altText": "Document intitulé La trappe au-dessus de la cabine. La question suit un protocole d'audit écrit et l'enregistrement continu le maintient au 19e étage."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -239,43 +242,43 @@
       {
         "id": "rachid_alibi",
         "suspectId": "rachid",
-        "question": "Quand avez-vous quitté Tour Mercure, Rachid Benali ?",
-        "answer": "Il affirme être resté au local machines. Calme, concret, explique volontiers les sécurités.",
+        "question": "Où étiez-vous au moment des faits, Rachid Benali ?",
+        "answer": "« Je suis resté au local machines. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
         "id": "rachid_relation",
         "suspectId": "rachid",
-        "question": "Quel désaccord vous opposait à Daria, Rachid Benali ?",
-        "answer": "Il intervenait dans la tour cette nuit-là. Son badge peut activer le mode inspection.",
+        "question": "Cette affaire pouvait-elle vous affecter, Rachid Benali ?",
+        "answer": "« Oui. Cette affaire pouvait avoir des conséquences pour moi, mais je n'ai rien provoqué. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "eva_alibi",
         "suspectId": "eva",
-        "question": "Qui peut confirmer votre emploi du temps, Eva Krall ?",
-        "answer": "Elle dit avoir gardé les mains visibles pendant l'arrêt. Très attentive, mémorise les gestes et les silences.",
+        "question": "Que faisiez-vous pendant la période concernée, Eva Krall ?",
+        "answer": "« J'ai gardé les mains visibles pendant l'arrêt. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "eva_relation",
         "suspectId": "eva",
-        "question": "Que risquiez-vous si Daria allait au bout de sa décision, Eva Krall ?",
-        "answer": "Elle partageait la cabine avec Daria. La clé permet d'accéder aux comptes qu'elle audite.",
+        "question": "Aviez-vous quelque chose à perdre, Eva Krall ?",
+        "answer": "« J'avais quelque chose à perdre. Cela ne suffit pas à faire de moi le coupable. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "hector_alibi",
         "suspectId": "hector",
-        "question": "Quel est votre dernier souvenir précis avant les faits, Hector Lu ?",
-        "answer": "Il participait à une visioconférence enregistrée. Impassible, parle en termes de gouvernance.",
+        "question": "Donnez votre emploi du temps précis, Hector Lu.",
+        "answer": "« Je participais à une visioconférence enregistrée. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "hector_relation",
         "suspectId": "hector",
-        "question": "Qu'est-ce que cette affaire pouvait changer pour vous, Hector Lu ?",
-        "answer": "Il attendait Daria au 19e étage. L'audit menace sa position.",
+        "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, Hector Lu ?",
+        "answer": "« Mon intérêt personnel est réel. Il faut encore prouver que j'ai agi. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
@@ -313,19 +316,19 @@
       {
         "time": "20:30",
         "text": "Les factures suspectes aboutissent à une entreprise détenue par le beau-frère de Rachid.",
-        "source": "DOSSIER CONFIDENTIEL",
+        "source": "DOCUMENT SAISI",
         "certainty": "CERTAIN"
       },
       {
         "time": "20:43",
-        "text": "Rachid Benali situe ici la fin de ses déplacements.",
-        "source": "Déposition",
+        "text": "Rachid Benali : « Je suis resté au local machines. »",
+        "source": "Déclaration de Rachid Benali",
         "certainty": "REPORTED"
       },
       {
         "time": "20:56",
         "text": "Le journal moteur montre une commande locale dans la gaine, incompatible avec sa présence au local machines.",
-        "source": "RELEVÉ HORODATÉ",
+        "source": "JOURNAL TECHNIQUE",
         "certainty": "CERTAIN"
       },
       {
@@ -372,15 +375,15 @@
             },
             {
               "id": "motive_innocent_a",
-              "label": "La clé permet d'accéder aux comptes qu'elle audite."
+              "label": "Accéder aux comptes que contenait la clé"
             },
             {
               "id": "motive_innocent_b",
-              "label": "L'audit menace sa position."
+              "label": "Empêcher un audit de menacer un cadre de la tour"
             },
             {
               "id": "motive_accident",
-              "label": "Cacher une erreur antérieure sans rapport direct avec l'incident"
+              "label": "Démontrer que le mode inspection n'était pas sécurisé"
             }
           ]
         },
@@ -396,15 +399,15 @@
             },
             {
               "id": "method_force",
-              "label": "Forcer directement l'accès principal puis dissimuler les traces"
+              "label": "Ouvrir la mallette avec une copie de la clé physique"
             },
             {
               "id": "method_complice",
-              "label": "Employer un complice extérieur après la fermeture"
+              "label": "Profiter du noir pour échanger toute la mallette"
             },
             {
               "id": "method_failure",
-              "label": "Exploiter une défaillance existante sans intervenir sur les lieux"
+              "label": "Bloquer la cabine et transmettre la clé à un complice au palier"
             }
           ]
         }

@@ -20,7 +20,7 @@
         "occupation": "Maître de four",
         "relation": "Il a dirigé la cuisson nocturne.",
         "personality": "Taciturne, fier de quarante ans sans incident.",
-        "claimedAlibi": "Il dit n'avoir ouvert le four à aucun moment.",
+        "claimedAlibi": "« Je n'ai ouvert le four à aucun moment. »",
         "accent": "formal",
         "notes": [
           "La nouvelle série remplaçait son atelier traditionnel."
@@ -33,7 +33,7 @@
         "occupation": "Sœur et associée",
         "relation": "Elle gère les commandes de Mei.",
         "personality": "Pratique, protectrice, suit chaque coût.",
-        "claimedAlibi": "Elle préparait les caisses d'expédition avec un livreur.",
+        "claimedAlibi": "« Je préparais les caisses d'expédition avec un livreur. »",
         "accent": "nervous",
         "notes": [
           "La manufacture est lourdement endettée."
@@ -46,7 +46,7 @@
         "occupation": "Céramiste concurrent",
         "relation": "Il partage les émaux et le même four.",
         "personality": "Brillant, provocateur, traite la casse comme une expérience.",
-        "claimedAlibi": "Il exposait à Paris le soir de la cuisson.",
+        "claimedAlibi": "« J'exposais à Paris le soir de la cuisson. »",
         "accent": "cold",
         "notes": [
           "Son propre dossier avait été refusé au profit de Mei."
@@ -57,16 +57,18 @@
       {
         "id": "registre",
         "title": "Une entrée avant la cuisson",
-        "source": "CONTRÔLE TECHNIQUE",
+        "source": "JOURNAL TECHNIQUE",
         "summary": "Le registre de l'atelier montre Linh seule vingt-sept minutes avec les pièces, après le départ déclaré du livreur.",
         "evidence": {
-          "kind": "document",
-          "title": "Une entrée avant la cuisson",
-          "subtitle": "CONTRÔLE TECHNIQUE",
-          "paragraphs": [
-            "Le registre de l'atelier montre Linh seule vingt-sept minutes avec les pièces, après le départ déclaré du livreur."
+          "kind": "schedule",
+          "title": "JOURNAL TECHNIQUE",
+          "rows": [
+            {
+              "time": "20:42",
+              "label": "Le registre de l'atelier montre Linh seule vingt-sept minutes avec les pièces, après le départ déclaré du livreur."
+            }
           ],
-          "altText": "Document intitulé Une entrée avant la cuisson. Le registre de l'atelier montre Linh seule vingt-sept minutes avec les pièces, après le départ déclaré du livreur."
+          "altText": "JOURNAL TECHNIQUE, 20:42. Le registre de l'atelier montre Linh seule vingt-sept minutes avec les pièces, après le départ déclaré du livreur."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -90,13 +92,23 @@
       {
         "id": "trace",
         "title": "Le chiffre sous l'émail",
-        "source": "RAPPORT TECHNIQUE",
+        "source": "ANALYSE MATÉRIELLE",
         "summary": "La tasse intacte porte le numéro du lot de capsules pharmaceutiques acheté par Linh pour contenir le sel.",
         "evidence": {
-          "kind": "handwriting",
-          "body": "La tasse intacte porte le numéro du lot de capsules pharmaceutiques acheté par Linh pour contenir le sel.",
-          "signature": "Linh Durand",
-          "altText": "Note manuscrite. La tasse intacte porte le numéro du lot de capsules pharmaceutiques acheté par Linh pour contenir le sel."
+          "kind": "photo",
+          "caption": "La tasse intacte porte le numéro du lot de capsules pharmaceutiques acheté par Linh pour contenir le sel.",
+          "meta": [
+            {
+              "label": "Heure",
+              "value": "20:16"
+            },
+            {
+              "label": "Pièce",
+              "value": "Le chiffre sous l'émail"
+            }
+          ],
+          "altText": "Photographie. La tasse intacte porte le numéro du lot de capsules pharmaceutiques acheté par Linh pour contenir le sel.",
+          "tone": "cold"
         },
         "analysis": {
           "category": "TIMELINE",
@@ -116,20 +128,16 @@
       {
         "id": "mobile",
         "title": "La police d'assurance",
-        "source": "DOCUMENT DE LA VICTIME",
+        "source": "DOCUMENT SAISI",
         "summary": "Un échéancier bancaire exige la somme exacte couverte par l'assurance de l'exposition.",
         "evidence": {
-          "kind": "sms",
-          "contact": "Oscar Nève",
-          "channel": "sms",
-          "messages": [
-            {
-              "from": "them",
-              "text": "Un échéancier bancaire exige la somme exacte couverte par l'assurance de l'exposition.",
-              "time": "20:29"
-            }
+          "kind": "document",
+          "title": "La police d'assurance",
+          "subtitle": "DOCUMENT SAISI",
+          "paragraphs": [
+            "Un échéancier bancaire exige la somme exacte couverte par l'assurance de l'exposition."
           ],
-          "altText": "Message d'Oscar Nève à 20:29. Un échéancier bancaire exige la somme exacte couverte par l'assurance de l'exposition."
+          "altText": "Document intitulé La police d'assurance. Un échéancier bancaire exige la somme exacte couverte par l'assurance de l'exposition."
         },
         "analysis": {
           "category": "BEHAVIORAL",
@@ -149,18 +157,16 @@
       {
         "id": "alibi_a",
         "title": "Étienne à la préparation",
-        "source": "RECOUPEMENT INDÉPENDANT",
+        "source": "ALIBI VÉRIFIÉ",
         "summary": "Les photographies géolocalisées et le passage sur scène placent Oscar à Paris avant la fermeture du four.",
         "evidence": {
-          "kind": "schedule",
-          "title": "RECOUPEMENT INDÉPENDANT",
-          "rows": [
-            {
-              "time": "20:35",
-              "label": "Les photographies géolocalisées et le passage sur scène placent Oscar à Paris avant la fermeture du four."
-            }
+          "kind": "document",
+          "title": "Étienne à la préparation",
+          "subtitle": "ALIBI VÉRIFIÉ",
+          "paragraphs": [
+            "Les photographies géolocalisées et le passage sur scène placent Oscar à Paris avant la fermeture du four."
           ],
-          "altText": "RECOUPEMENT INDÉPENDANT, 20:35. Les photographies géolocalisées et le passage sur scène placent Oscar à Paris avant la fermeture du four."
+          "altText": "Document intitulé Étienne à la préparation. Les photographies géolocalisées et le passage sur scène placent Oscar à Paris avant la fermeture du four."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -178,23 +184,16 @@
       {
         "id": "fausse_piste",
         "title": "La porte forcée par Oscar",
-        "source": "OBJET RETROUVÉ",
+        "source": "ÉLÉMENT À CHARGE",
         "summary": "Étienne a désactivé l'alarme d'ouverture du four pendant douze minutes.",
         "evidence": {
-          "kind": "photo",
-          "caption": "Étienne a désactivé l'alarme d'ouverture du four pendant douze minutes.",
-          "meta": [
-            {
-              "label": "Heure",
-              "value": "20:50"
-            },
-            {
-              "label": "Pièce",
-              "value": "La porte forcée par Oscar"
-            }
+          "kind": "document",
+          "title": "La porte forcée par Oscar",
+          "subtitle": "ÉLÉMENT À CHARGE",
+          "paragraphs": [
+            "Étienne a désactivé l'alarme d'ouverture du four pendant douze minutes."
           ],
-          "altText": "Photographie. Étienne a désactivé l'alarme d'ouverture du four pendant douze minutes.",
-          "tone": "cold"
+          "altText": "Document intitulé La porte forcée par Oscar. Étienne a désactivé l'alarme d'ouverture du four pendant douze minutes."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -214,16 +213,16 @@
       {
         "id": "resolution",
         "title": "Le thermocouple extérieur",
-        "source": "CONTRÔLE DES DÉPLACEMENTS",
+        "source": "RECOUPEMENT FINAL",
         "summary": "Il l'a fait pour remplacer un thermocouple extérieur. Les scellés mécaniques de la porte restent intacts.",
         "evidence": {
-          "kind": "email",
-          "from": "CONTRÔLE DES DÉPLACEMENTS",
-          "to": "Dossier d'enquête",
-          "subject": "Le thermocouple extérieur",
-          "sentAt": "20:04",
-          "body": "Il l'a fait pour remplacer un thermocouple extérieur. Les scellés mécaniques de la porte restent intacts.",
-          "altText": "Courriel intitulé Le thermocouple extérieur. Il l'a fait pour remplacer un thermocouple extérieur. Les scellés mécaniques de la porte restent intacts."
+          "kind": "document",
+          "title": "Le thermocouple extérieur",
+          "subtitle": "RECOUPEMENT FINAL",
+          "paragraphs": [
+            "Il l'a fait pour remplacer un thermocouple extérieur. Les scellés mécaniques de la porte restent intacts."
+          ],
+          "altText": "Document intitulé Le thermocouple extérieur. Il l'a fait pour remplacer un thermocouple extérieur. Les scellés mécaniques de la porte restent intacts."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -243,43 +242,43 @@
       {
         "id": "etienne_alibi",
         "suspectId": "etienne",
-        "question": "Quand avez-vous vu Mei pour la dernière fois, Étienne Bosc ?",
-        "answer": "Il dit n'avoir ouvert le four à aucun moment. Taciturne, fier de quarante ans sans incident.",
+        "question": "Que faisiez-vous pendant la période concernée, Étienne Bosc ?",
+        "answer": "« Je n'ai ouvert le four à aucun moment. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "etienne_relation",
         "suspectId": "etienne",
-        "question": "Qu'est-ce que cette affaire pouvait changer pour vous, Étienne Bosc ?",
-        "answer": "Il a dirigé la cuisson nocturne. La nouvelle série remplaçait son atelier traditionnel.",
+        "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, Étienne Bosc ?",
+        "answer": "« J'aurais pu tirer profit de la situation. Je n'ai pourtant rien fait pour la provoquer. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "linh_alibi",
         "suspectId": "linh",
-        "question": "Décrivez vos déplacements sans sauter d'étape, Linh Durand.",
-        "answer": "Elle préparait les caisses d'expédition avec un livreur. Pratique, protectrice, suit chaque coût.",
+        "question": "Donnez votre emploi du temps précis, Linh Durand.",
+        "answer": "« Je préparais les caisses d'expédition avec un livreur. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
         "id": "linh_relation",
         "suspectId": "linh",
-        "question": "Pourquoi votre nom apparaît-il dans le dossier de Mei, Linh Durand ?",
-        "answer": "Elle gère les commandes de Mei. La manufacture est lourdement endettée.",
+        "question": "Reconnaissez-vous avoir un intérêt personnel dans cette affaire, Linh Durand ?",
+        "answer": "« Je redoutais les conséquences de cette affaire. Je ne l'ai jamais caché. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "oscar_alibi",
         "suspectId": "oscar",
-        "question": "Quand avez-vous quitté Manufacture de porcelaine, Oscar Nève ?",
-        "answer": "Il exposait à Paris le soir de la cuisson. Brillant, provocateur, traite la casse comme une expérience.",
+        "question": "Où étiez-vous au moment des faits, Oscar Nève ?",
+        "answer": "« J'exposais à Paris le soir de la cuisson. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "oscar_relation",
         "suspectId": "oscar",
-        "question": "Aviez-vous une raison de redouter la décision de Mei, Oscar Nève ?",
-        "answer": "Il partage les émaux et le même four. Son propre dossier avait été refusé au profit de Mei.",
+        "question": "Cette situation pouvait-elle vous profiter, Oscar Nève ?",
+        "answer": "« Oui. Cette affaire pouvait avoir des conséquences pour moi, mais je n'ai rien provoqué. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
@@ -317,19 +316,19 @@
       {
         "time": "20:16",
         "text": "Un échéancier bancaire exige la somme exacte couverte par l'assurance de l'exposition.",
-        "source": "DOCUMENT DE LA VICTIME",
+        "source": "DOCUMENT SAISI",
         "certainty": "CERTAIN"
       },
       {
         "time": "20:29",
-        "text": "Linh Durand situe ici la fin de ses déplacements.",
-        "source": "Déposition",
+        "text": "Linh Durand : « Je préparais les caisses d'expédition avec un livreur. »",
+        "source": "Déclaration de Linh Durand",
         "certainty": "REPORTED"
       },
       {
         "time": "20:42",
         "text": "Le registre de l'atelier montre Linh seule vingt-sept minutes avec les pièces, après le départ déclaré du livreur.",
-        "source": "CONTRÔLE TECHNIQUE",
+        "source": "JOURNAL TECHNIQUE",
         "certainty": "CERTAIN"
       },
       {
@@ -376,15 +375,15 @@
             },
             {
               "id": "motive_innocent_a",
-              "label": "La nouvelle série remplaçait son atelier traditionnel."
+              "label": "Faire accepter le dossier artistique refusé d'Oscar"
             },
             {
               "id": "motive_innocent_b",
-              "label": "Son propre dossier avait été refusé au profit de Mei."
+              "label": "Sauver l'atelier traditionnel menacé par la nouvelle série"
             },
             {
               "id": "motive_accident",
-              "label": "Cacher une erreur antérieure sans rapport direct avec l'incident"
+              "label": "Reporter l'exposition pour terminer les commandes"
             }
           ]
         },
@@ -400,15 +399,15 @@
             },
             {
               "id": "method_force",
-              "label": "Forcer directement l'accès principal puis dissimuler les traces"
+              "label": "Modifier la courbe de température du four"
             },
             {
               "id": "method_complice",
-              "label": "Employer un complice extérieur après la fermeture"
+              "label": "Frapper les bols après la cuisson puis les replacer"
             },
             {
               "id": "method_failure",
-              "label": "Exploiter une défaillance existante sans intervenir sur les lieux"
+              "label": "Mélanger du sel directement dans tout le lot d'argile"
             }
           ]
         }

@@ -7,7 +7,7 @@
     "subtitle": "Dans le train de nuit, un bijou disparaît et une lettre arrive avant d'avoir été écrite.",
     "location": "Train de nuit Paris-Nice",
     "incident": "Vol d'un collier dans un compartiment fermé",
-    "intro": "À 5h20, Octavie trouve son écrin vide dans un compartiment verrouillé. Sous l'écrin, une lettre anonyme lui reproche d'avoir volé le rôle d'une vie. Le contrôleur affirme que personne n'est descendu entre Dijon et Marseille.",
+    "intro": "À 5 h 20, Octavie trouve son écrin vide dans un compartiment verrouillé. Sous l'écrin, une lettre anonyme lui reproche d'avoir volé le rôle d'une vie. Le contrôleur affirme que personne n'est descendu entre Dijon et Marseille.",
     "victim": {
       "name": "Octavie Sanz",
       "description": "Comédienne, 63 ans. Elle transportait un collier prêté pour un festival."
@@ -20,7 +20,7 @@
         "occupation": "Doublure de théâtre",
         "relation": "Elle a remplacé Octavie durant une tournée.",
         "personality": "Émotive, passe de l'admiration au reproche.",
-        "claimedAlibi": "Elle dormait dans la couchette voisine sous somnifère.",
+        "claimedAlibi": "« Je dormais dans la couchette voisine sous somnifère. »",
         "accent": "formal",
         "notes": [
           "Le papier de la lettre vient de son carnet."
@@ -33,7 +33,7 @@
         "occupation": "Contrôleur",
         "relation": "Il possède le passe de tous les compartiments.",
         "personality": "Rassurant, connaît chaque voyageur par son billet.",
-        "claimedAlibi": "Il effectuait la ronde en voiture 12.",
+        "claimedAlibi": "« J'effectuais la ronde en voiture 12. »",
         "accent": "nervous",
         "notes": [
           "Il rembourse une dette de jeu importante."
@@ -46,7 +46,7 @@
         "occupation": "Attachée de presse",
         "relation": "Elle devait remettre le collier au joaillier.",
         "personality": "Énergique, parle en messages courts.",
-        "claimedAlibi": "Elle travaillait au wagon-bar jusqu'à sa fermeture.",
+        "claimedAlibi": "« Je travaillais au wagon-bar jusqu'à la fermeture. »",
         "accent": "cold",
         "notes": [
           "Elle avait sous-évalué le bijou dans le contrat d'assurance."
@@ -57,18 +57,18 @@
       {
         "id": "registre",
         "title": "Six minutes hors du rapport",
-        "source": "CONTRÔLE TECHNIQUE",
+        "source": "JOURNAL TECHNIQUE",
         "summary": "Le capteur de ronde place Félix devant le compartiment d'Octavie pendant six minutes qu'il omet de son rapport.",
         "evidence": {
           "kind": "schedule",
-          "title": "CONTRÔLE TECHNIQUE",
+          "title": "JOURNAL TECHNIQUE",
           "rows": [
             {
               "time": "20:48",
               "label": "Le capteur de ronde place Félix devant le compartiment d'Octavie pendant six minutes qu'il omet de son rapport."
             }
           ],
-          "altText": "CONTRÔLE TECHNIQUE, 20:48. Le capteur de ronde place Félix devant le compartiment d'Octavie pendant six minutes qu'il omet de son rapport."
+          "altText": "JOURNAL TECHNIQUE, 20:48. Le capteur de ronde place Félix devant le compartiment d'Octavie pendant six minutes qu'il omet de son rapport."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -92,16 +92,23 @@
       {
         "id": "trace",
         "title": "Une fibre dans le velours",
-        "source": "RAPPORT TECHNIQUE",
+        "source": "ANALYSE MATÉRIELLE",
         "summary": "Une fibre du gant réglementaire du contrôleur est prise dans le velours de l'écrin.",
         "evidence": {
-          "kind": "document",
-          "title": "Une fibre dans le velours",
-          "subtitle": "RAPPORT TECHNIQUE",
-          "paragraphs": [
-            "Une fibre du gant réglementaire du contrôleur est prise dans le velours de l'écrin."
+          "kind": "photo",
+          "caption": "Une fibre du gant réglementaire du contrôleur est prise dans le velours de l'écrin.",
+          "meta": [
+            {
+              "label": "Heure",
+              "value": "20:22"
+            },
+            {
+              "label": "Pièce",
+              "value": "Une fibre dans le velours"
+            }
           ],
-          "altText": "Document intitulé Une fibre dans le velours. Une fibre du gant réglementaire du contrôleur est prise dans le velours de l'écrin."
+          "altText": "Photographie. Une fibre du gant réglementaire du contrôleur est prise dans le velours de l'écrin.",
+          "tone": "cold"
         },
         "analysis": {
           "category": "TIMELINE",
@@ -121,12 +128,16 @@
       {
         "id": "mobile",
         "title": "L'échéance du créancier",
-        "source": "DOCUMENT DE LA VICTIME",
+        "source": "DOCUMENT SAISI",
         "summary": "Un créancier lui donne jusqu'à l'arrivée à Nice et accepte explicitement un bijou en garantie.",
         "evidence": {
-          "kind": "note",
-          "body": "Un créancier lui donne jusqu'à l'arrivée à Nice et accepte explicitement un bijou en garantie.",
-          "altText": "Note versée au dossier. Un créancier lui donne jusqu'à l'arrivée à Nice et accepte explicitement un bijou en garantie."
+          "kind": "document",
+          "title": "L'échéance du créancier",
+          "subtitle": "DOCUMENT SAISI",
+          "paragraphs": [
+            "Un créancier lui donne jusqu'à l'arrivée à Nice et accepte explicitement un bijou en garantie."
+          ],
+          "altText": "Document intitulé L'échéance du créancier. Un créancier lui donne jusqu'à l'arrivée à Nice et accepte explicitement un bijou en garantie."
         },
         "analysis": {
           "category": "BEHAVIORAL",
@@ -146,16 +157,18 @@
       {
         "id": "alibi_a",
         "title": "Le wagon-bar d'une traite",
-        "source": "RECOUPEMENT INDÉPENDANT",
+        "source": "ENREGISTREMENT VIDÉO",
         "summary": "La caméra du wagon-bar montre Leïla en conversation continue avec trois journalistes.",
         "evidence": {
-          "kind": "email",
-          "from": "RECOUPEMENT INDÉPENDANT",
-          "to": "Dossier d'enquête",
-          "subject": "Le wagon-bar d'une traite",
-          "sentAt": "20:48",
-          "body": "La caméra du wagon-bar montre Leïla en conversation continue avec trois journalistes.",
-          "altText": "Courriel intitulé Le wagon-bar d'une traite. La caméra du wagon-bar montre Leïla en conversation continue avec trois journalistes."
+          "kind": "camera",
+          "location": "ENREGISTREMENT VIDÉO",
+          "frames": [
+            {
+              "time": "20:41",
+              "text": "La caméra du wagon-bar montre Leïla en conversation continue avec trois journalistes."
+            }
+          ],
+          "altText": "Image enregistrée à 20:41. La caméra du wagon-bar montre Leïla en conversation continue avec trois journalistes."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -173,23 +186,16 @@
       {
         "id": "fausse_piste",
         "title": "Les mots empruntés à Alma",
-        "source": "OBJET RETROUVÉ",
+        "source": "ÉLÉMENT À CHARGE",
         "summary": "L'écriture de la lettre imite des formulations tirées du journal d'Alma.",
         "evidence": {
-          "kind": "photo",
-          "caption": "L'écriture de la lettre imite des formulations tirées du journal d'Alma.",
-          "meta": [
-            {
-              "label": "Heure",
-              "value": "20:56"
-            },
-            {
-              "label": "Pièce",
-              "value": "Les mots empruntés à Alma"
-            }
+          "kind": "document",
+          "title": "Les mots empruntés à Alma",
+          "subtitle": "ÉLÉMENT À CHARGE",
+          "paragraphs": [
+            "L'écriture de la lettre imite des formulations tirées du journal d'Alma."
           ],
-          "altText": "Photographie. L'écriture de la lettre imite des formulations tirées du journal d'Alma.",
-          "tone": "cold"
+          "altText": "Document intitulé Les mots empruntés à Alma. L'écriture de la lettre imite des formulations tirées du journal d'Alma."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -209,18 +215,16 @@
       {
         "id": "resolution",
         "title": "L'empreinte du composteur",
-        "source": "CONTRÔLE DES DÉPLACEMENTS",
+        "source": "RECOUPEMENT FINAL",
         "summary": "La feuille porte au verso l'empreinte du composteur de contrôle sur lequel Félix avait posé le carnet confisqué plus tôt.",
         "evidence": {
-          "kind": "camera",
-          "location": "CONTRÔLE DES DÉPLACEMENTS",
-          "frames": [
-            {
-              "time": "20:10",
-              "text": "La feuille porte au verso l'empreinte du composteur de contrôle sur lequel Félix avait posé le carnet confisqué plus tôt."
-            }
+          "kind": "document",
+          "title": "L'empreinte du composteur",
+          "subtitle": "RECOUPEMENT FINAL",
+          "paragraphs": [
+            "La feuille porte au verso l'empreinte du composteur de contrôle sur lequel Félix avait posé le carnet confisqué plus tôt."
           ],
-          "altText": "Image enregistrée à 20:10. La feuille porte au verso l'empreinte du composteur de contrôle sur lequel Félix avait posé le carnet confisqué plus tôt."
+          "altText": "Document intitulé L'empreinte du composteur. La feuille porte au verso l'empreinte du composteur de contrôle sur lequel Félix avait posé le carnet confisqué plus tôt."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -240,43 +244,43 @@
       {
         "id": "alma_alibi",
         "suspectId": "alma",
-        "question": "Quand avez-vous vu Octavie pour la dernière fois, Alma Veyrac ?",
-        "answer": "Elle dormait dans la couchette voisine sous somnifère. Émotive, passe de l'admiration au reproche.",
+        "question": "Que faisiez-vous pendant la période concernée, Alma Veyrac ?",
+        "answer": "« Je dormais dans la couchette voisine sous somnifère. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "alma_relation",
         "suspectId": "alma",
-        "question": "Qu'est-ce que cette affaire pouvait changer pour vous, Alma Veyrac ?",
-        "answer": "Elle a remplacé Octavie durant une tournée. Le papier de la lettre vient de son carnet.",
+        "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, Alma Veyrac ?",
+        "answer": "« J'aurais pu tirer profit de la situation. Je n'ai pourtant rien fait pour la provoquer. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "felix_alibi",
         "suspectId": "felix",
-        "question": "Décrivez vos déplacements sans sauter d'étape, Félix Donnadieu.",
-        "answer": "Il effectuait la ronde en voiture 12. Rassurant, connaît chaque voyageur par son billet.",
+        "question": "Donnez votre emploi du temps précis, Félix Donnadieu.",
+        "answer": "« J'effectuais la ronde en voiture 12. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
         "id": "felix_relation",
         "suspectId": "felix",
-        "question": "Pourquoi votre nom apparaît-il dans le dossier d'Octavie, Félix Donnadieu ?",
-        "answer": "Il possède le passe de tous les compartiments. Il rembourse une dette de jeu importante.",
+        "question": "Reconnaissez-vous avoir un intérêt personnel dans cette affaire, Félix Donnadieu ?",
+        "answer": "« Je redoutais les conséquences de cette affaire. Je ne l'ai jamais caché. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "leila_alibi",
         "suspectId": "leila",
-        "question": "Quand avez-vous quitté Train de nuit Paris-Nice, Leïla Soriano ?",
-        "answer": "Elle travaillait au wagon-bar jusqu'à sa fermeture. Énergique, parle en messages courts.",
+        "question": "Où étiez-vous au moment des faits, Leïla Soriano ?",
+        "answer": "« Je travaillais au wagon-bar jusqu'à la fermeture. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "leila_relation",
         "suspectId": "leila",
-        "question": "Aviez-vous une raison de redouter la décision d'Octavie, Leïla Soriano ?",
-        "answer": "Elle devait remettre le collier au joaillier. Elle avait sous-évalué le bijou dans le contrat d'assurance.",
+        "question": "Cette situation pouvait-elle vous profiter, Leïla Soriano ?",
+        "answer": "« Oui. Cette affaire pouvait avoir des conséquences pour moi, mais je n'ai rien provoqué. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
@@ -314,19 +318,19 @@
       {
         "time": "20:22",
         "text": "Un créancier lui donne jusqu'à l'arrivée à Nice et accepte explicitement un bijou en garantie.",
-        "source": "DOCUMENT DE LA VICTIME",
+        "source": "DOCUMENT SAISI",
         "certainty": "CERTAIN"
       },
       {
         "time": "20:35",
-        "text": "Félix Donnadieu situe ici la fin de ses déplacements.",
-        "source": "Déposition",
+        "text": "Félix Donnadieu : « J'effectuais la ronde en voiture 12. »",
+        "source": "Déclaration de Félix Donnadieu",
         "certainty": "REPORTED"
       },
       {
         "time": "20:48",
         "text": "Le capteur de ronde place Félix devant le compartiment d'Octavie pendant six minutes qu'il omet de son rapport.",
-        "source": "CONTRÔLE TECHNIQUE",
+        "source": "JOURNAL TECHNIQUE",
         "certainty": "CERTAIN"
       },
       {
@@ -373,15 +377,15 @@
             },
             {
               "id": "motive_innocent_a",
-              "label": "Le papier de la lettre vient de son carnet."
+              "label": "Faire porter le vol sur l'autrice de la lettre"
             },
             {
               "id": "motive_innocent_b",
-              "label": "Elle avait sous-évalué le bijou dans le contrat d'assurance."
+              "label": "Toucher l'assurance après avoir sous-évalué le collier"
             },
             {
               "id": "motive_accident",
-              "label": "Cacher une erreur antérieure sans rapport direct avec l'incident"
+              "label": "Empêcher Octavie de remettre le bijou au joaillier"
             }
           ]
         },
@@ -397,15 +401,15 @@
             },
             {
               "id": "method_force",
-              "label": "Forcer directement l'accès principal puis dissimuler les traces"
+              "label": "Profiter du sommeil d'Octavie pour prendre la clé"
             },
             {
               "id": "method_complice",
-              "label": "Employer un complice extérieur après la fermeture"
+              "label": "Échanger l'écrin au wagon-bar"
             },
             {
               "id": "method_failure",
-              "label": "Exploiter une défaillance existante sans intervenir sur les lieux"
+              "label": "Faire passer le collier par la fenêtre à un complice"
             }
           ]
         }

@@ -7,7 +7,7 @@
     "subtitle": "Une patineuse chute sur une glace parfaite, là où un message invisible avait été écrit.",
     "location": "Patinoire olympique, Grenoble",
     "incident": "Accident provoqué avant une sélection",
-    "intro": "Mila chute brutalement sur une zone sans fissure. Sous la lumière UV du médecin, une spirale apparaît dans la glace : un liquide incolore a modifié localement l'adhérence avant de durcir de nouveau.",
+    "intro": "Mila chute sur une zone de glace sans fissure. Lors de l'examen de la piste sous lumière ultraviolette, une spirale fluorescente apparaît : un liquide incolore a empêché la glace de durcir correctement à cet endroit.",
     "victim": {
       "name": "Mila Korvic",
       "description": "Patineuse, 21 ans. Favorite de la sélection nationale du lendemain."
@@ -20,7 +20,7 @@
         "occupation": "Patineuse remplaçante",
         "relation": "Elle hériterait de la place de Mila.",
         "personality": "Fière, parle sans détour de leur rivalité.",
-        "claimedAlibi": "Elle se changeait au vestiaire avec deux coéquipières.",
+        "claimedAlibi": "« Je me changeais au vestiaire avec deux coéquipières. »",
         "accent": "formal",
         "notes": [
           "Son flacon d'entretien contient de l'alcool."
@@ -30,10 +30,10 @@
         "id": "yves",
         "name": "Yves Molin",
         "age": 50,
-        "occupation": "Responsable de glace",
+        "occupation": "Responsable de la piste",
         "relation": "Il conduit la surfaceuse et dose les produits.",
         "personality": "Patient, paternaliste, traite la patinoire comme une matière vivante.",
-        "claimedAlibi": "Il affirme que personne n'a touché la glace après son dernier passage.",
+        "claimedAlibi": "« Personne n'a touché la glace après mon dernier passage. »",
         "accent": "nervous",
         "notes": [
           "Une inspection révélerait ses économies sur les produits."
@@ -46,7 +46,7 @@
         "occupation": "Chorégraphe",
         "relation": "Il a dessiné la spirale du programme de Mila.",
         "personality": "Intense, possessif envers ses créations.",
-        "claimedAlibi": "Il regardait la répétition depuis la tribune presse.",
+        "claimedAlibi": "« Je regardais la répétition depuis la tribune presse. »",
         "accent": "cold",
         "notes": [
           "Mila voulait changer de chorégraphe après la sélection."
@@ -57,18 +57,18 @@
       {
         "id": "registre",
         "title": "Un reflet au bord de la piste",
-        "source": "REGISTRE DE SERVICE",
-        "summary": "Une caméra de reflet place Léon au bord de piste neuf minutes avant la répétition, pas en tribune.",
+        "source": "ENREGISTREMENT VIDÉO",
+        "summary": "Le reflet d'une caméra de surveillance dans la baie vitrée montre Léon au bord de la piste neuf minutes avant la répétition, et non dans la tribune.",
         "evidence": {
-          "kind": "schedule",
-          "title": "REGISTRE DE SERVICE",
-          "rows": [
+          "kind": "camera",
+          "location": "ENREGISTREMENT VIDÉO",
+          "frames": [
             {
               "time": "19:53",
-              "label": "Une caméra de reflet place Léon au bord de piste neuf minutes avant la répétition, pas en tribune."
+              "text": "Le reflet d'une caméra de surveillance dans la baie vitrée montre Léon au bord de la piste neuf minutes avant la répétition, et non dans la tribune."
             }
           ],
-          "altText": "REGISTRE DE SERVICE, 19:53. Une caméra de reflet place Léon au bord de piste neuf minutes avant la répétition, pas en tribune."
+          "altText": "Image enregistrée à 19:53. Le reflet d'une caméra de surveillance dans la baie vitrée montre Léon au bord de la piste neuf minutes avant la répétition, et non dans la tribune."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -92,16 +92,16 @@
       {
         "id": "trace",
         "title": "L'encre dans la spirale",
-        "source": "EXAMEN DE LA PIÈCE",
-        "summary": "Le mélange contient l'encre UV utilisée pour marquer ses plans chorégraphiques.",
+        "source": "ANALYSE MATÉRIELLE",
+        "summary": "Le mélange contient des particules violettes identiques à celles de l'encre fluorescente utilisée par Léon sur ses plans chorégraphiques.",
         "evidence": {
           "kind": "document",
           "title": "L'encre dans la spirale",
-          "subtitle": "EXAMEN DE LA PIÈCE",
+          "subtitle": "ANALYSE MATÉRIELLE",
           "paragraphs": [
-            "Le mélange contient l'encre UV utilisée pour marquer ses plans chorégraphiques."
+            "Le mélange contient des particules violettes identiques à celles de l'encre fluorescente utilisée par Léon sur ses plans chorégraphiques."
           ],
-          "altText": "Document intitulé L'encre dans la spirale. Le mélange contient l'encre UV utilisée pour marquer ses plans chorégraphiques."
+          "altText": "Document intitulé L'encre dans la spirale. Le mélange contient des particules violettes identiques à celles de l'encre fluorescente utilisée par Léon sur ses plans chorégraphiques."
         },
         "analysis": {
           "category": "TIMELINE",
@@ -124,9 +124,13 @@
         "source": "CORRESPONDANCE SAISIE",
         "summary": "Son message supprimé promet que Mila « ne patinera pas cette spirale sans son nom ».",
         "evidence": {
-          "kind": "note",
-          "body": "Son message supprimé promet que Mila « ne patinera pas cette spirale sans son nom ».",
-          "altText": "Note versée au dossier. Son message supprimé promet que Mila « ne patinera pas cette spirale sans son nom »."
+          "kind": "document",
+          "title": "Le message supprimé",
+          "subtitle": "CORRESPONDANCE SAISIE",
+          "paragraphs": [
+            "Son message supprimé promet que Mila « ne patinera pas cette spirale sans son nom »."
+          ],
+          "altText": "Document intitulé Le message supprimé. Son message supprimé promet que Mila « ne patinera pas cette spirale sans son nom »."
         },
         "analysis": {
           "category": "BEHAVIORAL",
@@ -146,16 +150,18 @@
       {
         "id": "alibi_a",
         "title": "Le vestiaire d'Ana",
-        "source": "ENREGISTREMENT TÉMOIN",
-        "summary": "Les caméras du vestiaire extérieur confirment la présence continue d'Ana avec son équipe.",
+        "source": "ENREGISTREMENT VIDÉO",
+        "summary": "Les caméras du couloir des vestiaires confirment la présence continue d'Ana avec son équipe.",
         "evidence": {
-          "kind": "email",
-          "from": "ENREGISTREMENT TÉMOIN",
-          "to": "Dossier d'enquête",
-          "subject": "Le vestiaire d'Ana",
-          "sentAt": "19:53",
-          "body": "Les caméras du vestiaire extérieur confirment la présence continue d'Ana avec son équipe.",
-          "altText": "Courriel intitulé Le vestiaire d'Ana. Les caméras du vestiaire extérieur confirment la présence continue d'Ana avec son équipe."
+          "kind": "camera",
+          "location": "ENREGISTREMENT VIDÉO",
+          "frames": [
+            {
+              "time": "19:46",
+              "text": "Les caméras du couloir des vestiaires confirment la présence continue d'Ana avec son équipe."
+            }
+          ],
+          "altText": "Image enregistrée à 19:46. Les caméras du couloir des vestiaires confirment la présence continue d'Ana avec son équipe."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -173,23 +179,16 @@
       {
         "id": "fausse_piste",
         "title": "Une glace trop chaude",
-        "source": "DOCUMENT SUSPECT",
-        "summary": "Le rapport d'Yves révèle une température de glace trop élevée.",
+        "source": "ÉLÉMENT À CHARGE",
+        "summary": "Le rapport d'Yves révèle une température générale légèrement trop élevée.",
         "evidence": {
-          "kind": "photo",
-          "caption": "Le rapport d'Yves révèle une température de glace trop élevée.",
-          "meta": [
-            {
-              "label": "Heure",
-              "value": "20:01"
-            },
-            {
-              "label": "Pièce",
-              "value": "Une glace trop chaude"
-            }
+          "kind": "document",
+          "title": "Une glace trop chaude",
+          "subtitle": "ÉLÉMENT À CHARGE",
+          "paragraphs": [
+            "Le rapport d'Yves révèle une température générale légèrement trop élevée."
           ],
-          "altText": "Photographie. Le rapport d'Yves révèle une température de glace trop élevée.",
-          "tone": "cold"
+          "altText": "Document intitulé Une glace trop chaude. Le rapport d'Yves révèle une température générale légèrement trop élevée."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -209,18 +208,16 @@
       {
         "id": "resolution",
         "title": "Une figure trop précise",
-        "source": "ALIBI VÉRIFIÉ",
-        "summary": "Cette température augmente la souplesse générale mais ne peut produire l'unique spirale glissante.",
+        "source": "RECOUPEMENT FINAL",
+        "summary": "Cette température aurait assoupli toute la piste. Elle ne peut pas expliquer une unique spirale restée molle.",
         "evidence": {
-          "kind": "camera",
-          "location": "ALIBI VÉRIFIÉ",
-          "frames": [
-            {
-              "time": "19:15",
-              "text": "Cette température augmente la souplesse générale mais ne peut produire l'unique spirale glissante."
-            }
+          "kind": "document",
+          "title": "Une figure trop précise",
+          "subtitle": "RECOUPEMENT FINAL",
+          "paragraphs": [
+            "Cette température aurait assoupli toute la piste. Elle ne peut pas expliquer une unique spirale restée molle."
           ],
-          "altText": "Image enregistrée à 19:15. Cette température augmente la souplesse générale mais ne peut produire l'unique spirale glissante."
+          "altText": "Document intitulé Une figure trop précise. Cette température aurait assoupli toute la piste. Elle ne peut pas expliquer une unique spirale restée molle."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -240,43 +237,43 @@
       {
         "id": "ana_alibi",
         "suspectId": "ana",
-        "question": "Votre version comporte-t-elle un moment sans témoin, Ana Costa ?",
-        "answer": "Elle se changeait au vestiaire avec deux coéquipières. Fière, parle sans détour de leur rivalité.",
+        "question": "Où étiez-vous au moment des faits, Ana Costa ?",
+        "answer": "« Je me changeais au vestiaire avec deux coéquipières. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "ana_relation",
         "suspectId": "ana",
-        "question": "Quel désaccord vous opposait à Mila, Ana Costa ?",
-        "answer": "Elle hériterait de la place de Mila. Son flacon d'entretien contient de l'alcool.",
+        "question": "Cette affaire pouvait-elle vous affecter, Ana Costa ?",
+        "answer": "« Je comprends les soupçons. Ma situation me donnait un mobile possible, pas une preuve. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "yves_alibi",
         "suspectId": "yves",
-        "question": "Quand avez-vous vu Mila pour la dernière fois, Yves Molin ?",
-        "answer": "Il affirme que personne n'a touché la glace après son dernier passage. Patient, paternaliste, traite la patinoire comme une matière vivante.",
+        "question": "Que faisiez-vous pendant la période concernée, Yves Molin ?",
+        "answer": "« Personne n'a touché la glace après mon dernier passage. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "yves_relation",
         "suspectId": "yves",
-        "question": "Que risquiez-vous si Mila allait au bout de sa décision, Yves Molin ?",
-        "answer": "Il conduit la surfaceuse et dose les produits. Une inspection révélerait ses économies sur les produits.",
+        "question": "Aviez-vous quelque chose à perdre, Yves Molin ?",
+        "answer": "« J'aurais pu tirer profit de la situation. Je n'ai pourtant rien fait pour la provoquer. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "leon_alibi",
         "suspectId": "leon",
-        "question": "Décrivez vos déplacements sans sauter d'étape, Léon Barthe.",
-        "answer": "Il regardait la répétition depuis la tribune presse. Intense, possessif envers ses créations.",
+        "question": "Donnez votre emploi du temps précis, Léon Barthe.",
+        "answer": "« Je regardais la répétition depuis la tribune presse. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
         "id": "leon_relation",
         "suspectId": "leon",
-        "question": "Qu'est-ce que cette affaire pouvait changer pour vous, Léon Barthe ?",
-        "answer": "Il a dessiné la spirale du programme de Mila. Mila voulait changer de chorégraphe après la sélection.",
+        "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, Léon Barthe ?",
+        "answer": "« Je redoutais les conséquences de cette affaire. Je ne l'ai jamais caché. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
@@ -319,14 +316,14 @@
       },
       {
         "time": "19:40",
-        "text": "Léon Barthe situe ici la fin de ses déplacements.",
-        "source": "Déposition",
+        "text": "Léon Barthe : « Je regardais la répétition depuis la tribune presse. »",
+        "source": "Déclaration de Léon Barthe",
         "certainty": "REPORTED"
       },
       {
         "time": "19:53",
-        "text": "Une caméra de reflet place Léon au bord de piste neuf minutes avant la répétition, pas en tribune.",
-        "source": "REGISTRE DE SERVICE",
+        "text": "Le reflet d'une caméra de surveillance dans la baie vitrée montre Léon au bord de la piste neuf minutes avant la répétition, et non dans la tribune.",
+        "source": "ENREGISTREMENT VIDÉO",
         "certainty": "CERTAIN"
       },
       {
@@ -352,7 +349,7 @@
             {
               "id": "yves",
               "label": "Yves Molin",
-              "hint": "Responsable de glace"
+              "hint": "Responsable de la piste"
             },
             {
               "id": "leon",
@@ -373,15 +370,15 @@
             },
             {
               "id": "motive_innocent_a",
-              "label": "Son flacon d'entretien contient de l'alcool."
+              "label": "Prendre la place de Mila lors de la sélection"
             },
             {
               "id": "motive_innocent_b",
-              "label": "Une inspection révélerait ses économies sur les produits."
+              "label": "Cacher les économies faites sur l'entretien de la piste"
             },
             {
               "id": "motive_accident",
-              "label": "Cacher une erreur antérieure sans rapport direct avec l'incident"
+              "label": "Faire annuler une compétition jugée dangereuse"
             }
           ]
         },
@@ -397,15 +394,15 @@
             },
             {
               "id": "method_force",
-              "label": "Forcer directement l'accès principal puis dissimuler les traces"
+              "label": "Réchauffer localement la glace avec une résistance"
             },
             {
               "id": "method_complice",
-              "label": "Employer un complice extérieur après la fermeture"
+              "label": "Répandre de l'alcool depuis la surfaceuse"
             },
             {
               "id": "method_failure",
-              "label": "Exploiter une défaillance existante sans intervenir sur les lieux"
+              "label": "Dévisser une lame du patin avant la répétition"
             }
           ]
         }
@@ -456,7 +453,7 @@
         "personIds": [
           "leon"
         ],
-        "text": "Léon a transformé son propre dessin en piège : il a tracé la figure au glycol, invisible sous la lumière normale. La marque UV de ses outils rend visible la signature artistique qu'il refusait précisément de perdre."
+        "text": "Léon a transformé son propre dessin en piège. Il a tracé la figure au glycol juste avant le dernier passage de la surfaceuse. Sous l'éclairage normal, la zone semblait prise. Les particules violettes de son flacon ont pourtant laissé dans la glace la signature du dessin qu'il refusait de perdre."
       },
       {
         "time": "20:01",
@@ -468,20 +465,20 @@
       }
     ],
     "reasoning": [
-      "Une caméra de reflet place Léon au bord de piste neuf minutes avant la répétition, pas en tribune. Cette donnée fragilise directement la version de Léon Barthe.",
-      "Le mélange contient l'encre UV utilisée pour marquer ses plans chorégraphiques. La trace relie le geste au procédé employé.",
+      "Le reflet d'une caméra de surveillance dans la baie vitrée montre Léon au bord de la piste neuf minutes avant la répétition, et non dans la tribune. Cette donnée fragilise directement la version de Léon Barthe.",
+      "Le mélange contient des particules violettes identiques à celles de l'encre fluorescente utilisée par Léon sur ses plans chorégraphiques. La trace relie le geste au procédé employé.",
       "Son message supprimé promet que Mila « ne patinera pas cette spirale sans son nom ». Le mobile repose donc sur un fait vérifiable.",
-      "Les caméras du vestiaire extérieur confirment la présence continue d'Ana avec son équipe. De son côté, la principale autre piste ne résiste pas au recoupement.",
-      "Le rapport d'Yves révèle une température de glace trop élevée. L'élément paraît accusateur, mais il change de sens avec la dernière pièce : cette température augmente la souplesse générale mais ne peut produire l'unique spirale glissante.",
+      "Les caméras du couloir des vestiaires confirment la présence continue d'Ana avec son équipe. De son côté, la principale autre piste ne résiste pas au recoupement.",
+      "Le rapport d'Yves révèle une température générale légèrement trop élevée. L'élément paraît accusateur, mais il change de sens avec la dernière pièce : cette température aurait assoupli toute la piste. Elle ne peut pas expliquer une unique spirale restée molle.",
       "Présence, moyen et intérêt convergent vers Léon Barthe."
     ],
-    "explanation": "Léon a transformé son propre dessin en piège : il a tracé la figure au glycol, invisible sous la lumière normale. La marque UV de ses outils rend visible la signature artistique qu'il refusait précisément de perdre. Léon Barthe avait une raison précise d'agir : punir Mila de vouloir attribuer le programme à une autre chorégraphe. Pour y parvenir, Léon Barthe a choisi de tracer la spirale avec un mélange glycolé avant que la glace ne durcisse. Cette température augmente la souplesse générale mais ne peut produire l'unique spirale glissante. Cette vérification écarte la fausse piste et referme le dossier.",
+    "explanation": "Léon a transformé son propre dessin en piège. Il a tracé la figure au glycol juste avant le dernier passage de la surfaceuse. Sous l'éclairage normal, la zone semblait prise. Les particules violettes de son flacon ont pourtant laissé dans la glace la signature du dessin qu'il refusait de perdre. Léon Barthe avait une raison précise d'agir : punir Mila de vouloir attribuer le programme à une autre chorégraphe. Pour y parvenir, Léon Barthe a choisi de tracer la spirale avec un mélange glycolé avant que la glace ne durcisse. Cette température aurait assoupli toute la piste. Elle ne peut pas expliquer une unique spirale restée molle. Cette vérification écarte la fausse piste et referme le dossier.",
     "proofChains": [
       {
         "title": "Ce qui trahit Léon Barthe",
         "steps": [
-          "Une caméra de reflet place Léon au bord de piste neuf minutes avant la répétition, pas en tribune.",
-          "Le mélange contient l'encre UV utilisée pour marquer ses plans chorégraphiques.",
+          "Le reflet d'une caméra de surveillance dans la baie vitrée montre Léon au bord de la piste neuf minutes avant la répétition, et non dans la tribune.",
+          "Le mélange contient des particules violettes identiques à celles de l'encre fluorescente utilisée par Léon sur ses plans chorégraphiques.",
           "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]
       },
@@ -489,8 +486,8 @@
         "title": "Le mobile et les innocents",
         "steps": [
           "Son message supprimé promet que Mila « ne patinera pas cette spirale sans son nom ».",
-          "Les caméras du vestiaire extérieur confirment la présence continue d'Ana avec son équipe.",
-          "Cette température augmente la souplesse générale mais ne peut produire l'unique spirale glissante."
+          "Les caméras du couloir des vestiaires confirment la présence continue d'Ana avec son équipe.",
+          "Cette température aurait assoupli toute la piste. Elle ne peut pas expliquer une unique spirale restée molle."
         ]
       }
     ]

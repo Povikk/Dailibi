@@ -7,7 +7,7 @@
     "subtitle": "Chaque nuit, une fleur s'ouvre trop tôt. Cette fois, elle désigne l'heure d'un empoisonnement.",
     "location": "Villa expérimentale, Nice",
     "incident": "Empoisonnement d'un collectionneur",
-    "intro": "Armand est découvert à 5h, intoxiqué par un alcaloïde végétal. Son verre ne contient rien. Une belle-de-nuit normalement ouverte vers 22h s'est refermée à 4h17, heure enregistrée par la caméra botanique.",
+    "intro": "Armand est découvert à 5 h, intoxiqué par un alcaloïde végétal. Son verre ne contient rien. Une belle-de-nuit normalement ouverte vers 22 h s'est refermée à 4 h 17, heure enregistrée par la caméra botanique.",
     "victim": {
       "name": "Armand Luce",
       "description": "Collectionneur, 66 ans. Retrouvé inconscient dans sa véranda parmi ses fleurs nocturnes."
@@ -20,7 +20,7 @@
         "occupation": "Fille d'Armand",
         "relation": "Elle hérite de la collection mais pas de la villa.",
         "personality": "Réservée, attentive aux besoins pratiques de son père.",
-        "claimedAlibi": "Elle dormait dans la chambre d'amis.",
+        "claimedAlibi": "« Je dormais dans la chambre d'amis. »",
         "accent": "formal",
         "notes": [
           "Armand voulait vendre la villa contre son avis."
@@ -33,7 +33,7 @@
         "occupation": "Jardinier",
         "relation": "Il prépare les infusions et soigne les plantes.",
         "personality": "Doux, superstitieux, connaît chaque cycle de floraison.",
-        "claimedAlibi": "Il affirme avoir quitté la propriété à 20h.",
+        "claimedAlibi": "« J'ai quitté la propriété à 20 h. »",
         "accent": "nervous",
         "notes": [
           "Il avait accès aux plantes toxiques."
@@ -46,7 +46,7 @@
         "occupation": "Médecin et amie",
         "relation": "Elle ajustait le traitement cardiaque d'Armand.",
         "personality": "Claire, ferme, reste clinique même sous accusation.",
-        "claimedAlibi": "Elle était de garde à la clinique.",
+        "claimedAlibi": "« J'étais de garde à la clinique. »",
         "accent": "cold",
         "notes": [
           "Le poison imite un surdosage de son traitement."
@@ -57,18 +57,18 @@
       {
         "id": "registre",
         "title": "La porte ouverte à 4 h 09",
-        "source": "RELEVÉ HORODATÉ",
-        "summary": "Le capteur de porte de June enregistre une sortie à 4h09 qu'elle nie.",
+        "source": "JOURNAL TECHNIQUE",
+        "summary": "Le capteur de porte de June enregistre une sortie à 4 h 09 qu'elle nie.",
         "evidence": {
-          "kind": "camera",
-          "location": "RELEVÉ HORODATÉ",
-          "frames": [
+          "kind": "schedule",
+          "title": "JOURNAL TECHNIQUE",
+          "rows": [
             {
               "time": "19:54",
-              "text": "Le capteur de porte de June enregistre une sortie à 4h09 qu'elle nie."
+              "label": "Le capteur de porte de June enregistre une sortie à 4 h 09 qu'elle nie."
             }
           ],
-          "altText": "Image enregistrée à 19:54. Le capteur de porte de June enregistre une sortie à 4h09 qu'elle nie."
+          "altText": "JOURNAL TECHNIQUE, 19:54. Le capteur de porte de June enregistre une sortie à 4 h 09 qu'elle nie."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -92,16 +92,23 @@
       {
         "id": "trace",
         "title": "La fleur refermée",
-        "source": "ANALYSE DU LABORATOIRE",
-        "summary": "À 4h17, June vaporise par erreur la fleur avec le flacon contaminé, provoquant sa fermeture précoce.",
+        "source": "ANALYSE MATÉRIELLE",
+        "summary": "À 4 h 17, June vaporise par erreur la fleur avec le flacon contaminé, provoquant sa fermeture précoce.",
         "evidence": {
-          "kind": "document",
-          "title": "La fleur refermée",
-          "subtitle": "ANALYSE DU LABORATOIRE",
-          "paragraphs": [
-            "À 4h17, June vaporise par erreur la fleur avec le flacon contaminé, provoquant sa fermeture précoce."
+          "kind": "photo",
+          "caption": "À 4 h 17, June vaporise par erreur la fleur avec le flacon contaminé, provoquant sa fermeture précoce.",
+          "meta": [
+            {
+              "label": "Heure",
+              "value": "19:28"
+            },
+            {
+              "label": "Pièce",
+              "value": "La fleur refermée"
+            }
           ],
-          "altText": "Document intitulé La fleur refermée. À 4h17, June vaporise par erreur la fleur avec le flacon contaminé, provoquant sa fermeture précoce."
+          "altText": "Photographie. À 4 h 17, June vaporise par erreur la fleur avec le flacon contaminé, provoquant sa fermeture précoce.",
+          "tone": "cold"
         },
         "analysis": {
           "category": "TIMELINE",
@@ -121,16 +128,16 @@
       {
         "id": "mobile",
         "title": "Le compromis de vente",
-        "source": "DOSSIER CONFIDENTIEL",
+        "source": "DOCUMENT SAISI",
         "summary": "Le compromis de vente prévoit la destruction immédiate de la véranda et l'évacuation des archives maternelles.",
         "evidence": {
-          "kind": "email",
-          "from": "DOSSIER CONFIDENTIEL",
-          "to": "Dossier d'enquête",
-          "subject": "Le compromis de vente",
-          "sentAt": "19:41",
-          "body": "Le compromis de vente prévoit la destruction immédiate de la véranda et l'évacuation des archives maternelles.",
-          "altText": "Courriel intitulé Le compromis de vente. Le compromis de vente prévoit la destruction immédiate de la véranda et l'évacuation des archives maternelles."
+          "kind": "document",
+          "title": "Le compromis de vente",
+          "subtitle": "DOCUMENT SAISI",
+          "paragraphs": [
+            "Le compromis de vente prévoit la destruction immédiate de la véranda et l'évacuation des archives maternelles."
+          ],
+          "altText": "Document intitulé Le compromis de vente. Le compromis de vente prévoit la destruction immédiate de la véranda et l'évacuation des archives maternelles."
         },
         "analysis": {
           "category": "BEHAVIORAL",
@@ -150,13 +157,16 @@
       {
         "id": "alibi_a",
         "title": "Benoît dans le dernier bus",
-        "source": "CONTRÔLE DES DÉPLACEMENTS",
+        "source": "DONNÉES DE DÉPLACEMENT",
         "summary": "Les accès et soins horodatés placent Selma à la clinique toute la nuit.",
         "evidence": {
-          "kind": "handwriting",
-          "body": "Les accès et soins horodatés placent Selma à la clinique toute la nuit.",
-          "signature": "June Luce",
-          "altText": "Note manuscrite. Les accès et soins horodatés placent Selma à la clinique toute la nuit."
+          "kind": "document",
+          "title": "Benoît dans le dernier bus",
+          "subtitle": "DONNÉES DE DÉPLACEMENT",
+          "paragraphs": [
+            "Les accès et soins horodatés placent Selma à la clinique toute la nuit."
+          ],
+          "altText": "Document intitulé Benoît dans le dernier bus. Les accès et soins horodatés placent Selma à la clinique toute la nuit."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -174,12 +184,16 @@
       {
         "id": "fausse_piste",
         "title": "La recette du docteur",
-        "source": "PIÈCE SAISIE",
+        "source": "ÉLÉMENT À CHARGE",
         "summary": "Le carnet de Benoît contient la recette exacte d'extraction de l'alcaloïde.",
         "evidence": {
-          "kind": "note",
-          "body": "Le carnet de Benoît contient la recette exacte d'extraction de l'alcaloïde.",
-          "altText": "Note versée au dossier. Le carnet de Benoît contient la recette exacte d'extraction de l'alcaloïde."
+          "kind": "document",
+          "title": "La recette du docteur",
+          "subtitle": "ÉLÉMENT À CHARGE",
+          "paragraphs": [
+            "Le carnet de Benoît contient la recette exacte d'extraction de l'alcaloïde."
+          ],
+          "altText": "Document intitulé La recette du docteur. Le carnet de Benoît contient la recette exacte d'extraction de l'alcaloïde."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -199,18 +213,16 @@
       {
         "id": "resolution",
         "title": "Une fiche remise à tous",
-        "source": "RECOUPEMENT INDÉPENDANT",
+        "source": "RECOUPEMENT FINAL",
         "summary": "La page est une fiche de prévention remise à toute la propriété et son ticket de bus prouve son départ.",
         "evidence": {
-          "kind": "schedule",
-          "title": "RECOUPEMENT INDÉPENDANT",
-          "rows": [
-            {
-              "time": "19:16",
-              "label": "La page est une fiche de prévention remise à toute la propriété et son ticket de bus prouve son départ."
-            }
+          "kind": "document",
+          "title": "Une fiche remise à tous",
+          "subtitle": "RECOUPEMENT FINAL",
+          "paragraphs": [
+            "La page est une fiche de prévention remise à toute la propriété et son ticket de bus prouve son départ."
           ],
-          "altText": "RECOUPEMENT INDÉPENDANT, 19:16. La page est une fiche de prévention remise à toute la propriété et son ticket de bus prouve son départ."
+          "altText": "Document intitulé Une fiche remise à tous. La page est une fiche de prévention remise à toute la propriété et son ticket de bus prouve son départ."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -230,43 +242,43 @@
       {
         "id": "june_alibi",
         "suspectId": "june",
-        "question": "Quand avez-vous vu Armand pour la dernière fois, June Luce ?",
-        "answer": "Elle dormait dans la chambre d'amis. Réservée, attentive aux besoins pratiques de son père.",
+        "question": "Que faisiez-vous pendant la période concernée, June Luce ?",
+        "answer": "« Je dormais dans la chambre d'amis. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
         "id": "june_relation",
         "suspectId": "june",
-        "question": "Qu'est-ce que cette affaire pouvait changer pour vous, June Luce ?",
-        "answer": "Elle hérite de la collection mais pas de la villa. Armand voulait vendre la villa contre son avis.",
+        "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, June Luce ?",
+        "answer": "« J'aurais pu tirer profit de la situation. Je n'ai pourtant rien fait pour la provoquer. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "benoit_alibi",
         "suspectId": "benoit",
-        "question": "Décrivez vos déplacements sans sauter d'étape, Benoît Carsin.",
-        "answer": "Il affirme avoir quitté la propriété à 20h. Doux, superstitieux, connaît chaque cycle de floraison.",
+        "question": "Donnez votre emploi du temps précis, Benoît Carsin.",
+        "answer": "« J'ai quitté la propriété à 20 h. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "benoit_relation",
         "suspectId": "benoit",
-        "question": "Pourquoi votre nom apparaît-il dans le dossier d'Armand, Benoît Carsin ?",
-        "answer": "Il prépare les infusions et soigne les plantes. Il avait accès aux plantes toxiques.",
+        "question": "Reconnaissez-vous avoir un intérêt personnel dans cette affaire, Benoît Carsin ?",
+        "answer": "« Je redoutais les conséquences de cette affaire. Je ne l'ai jamais caché. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "dr_alibi",
         "suspectId": "dr",
-        "question": "Quand avez-vous quitté Villa expérimentale, Dr Selma Wong ?",
-        "answer": "Elle était de garde à la clinique. Claire, ferme, reste clinique même sous accusation.",
+        "question": "Où étiez-vous au moment des faits, Dr Selma Wong ?",
+        "answer": "« J'étais de garde à la clinique. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "dr_relation",
         "suspectId": "dr",
-        "question": "Aviez-vous une raison de redouter la décision d'Armand, Dr Selma Wong ?",
-        "answer": "Elle ajustait le traitement cardiaque d'Armand. Le poison imite un surdosage de son traitement.",
+        "question": "Cette situation pouvait-elle vous profiter, Dr Selma Wong ?",
+        "answer": "« Oui. Cette affaire pouvait avoir des conséquences pour moi, mais je n'ai rien provoqué. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
@@ -304,19 +316,19 @@
       {
         "time": "19:28",
         "text": "Le compromis de vente prévoit la destruction immédiate de la véranda et l'évacuation des archives maternelles.",
-        "source": "DOSSIER CONFIDENTIEL",
+        "source": "DOCUMENT SAISI",
         "certainty": "CERTAIN"
       },
       {
         "time": "19:41",
-        "text": "June Luce situe ici la fin de ses déplacements.",
-        "source": "Déposition",
+        "text": "June Luce : « Je dormais dans la chambre d'amis. »",
+        "source": "Déclaration de June Luce",
         "certainty": "REPORTED"
       },
       {
         "time": "19:54",
-        "text": "Le capteur de porte de June enregistre une sortie à 4h09 qu'elle nie.",
-        "source": "RELEVÉ HORODATÉ",
+        "text": "Le capteur de porte de June enregistre une sortie à 4 h 09 qu'elle nie.",
+        "source": "JOURNAL TECHNIQUE",
         "certainty": "CERTAIN"
       },
       {
@@ -363,15 +375,15 @@
             },
             {
               "id": "motive_innocent_a",
-              "label": "Il avait accès aux plantes toxiques."
+              "label": "Empêcher l'emploi d'une plante toxique dans la propriété"
             },
             {
               "id": "motive_innocent_b",
-              "label": "Le poison imite un surdosage de son traitement."
+              "label": "Faire croire à une erreur dans le traitement médical"
             },
             {
               "id": "motive_accident",
-              "label": "Cacher une erreur antérieure sans rapport direct avec l'incident"
+              "label": "Forcer Armand à renoncer à sa collection"
             }
           ]
         },
@@ -387,15 +399,15 @@
             },
             {
               "id": "method_force",
-              "label": "Forcer directement l'accès principal puis dissimuler les traces"
+              "label": "Verser l'alcaloïde dans son verre pendant la nuit"
             },
             {
               "id": "method_complice",
-              "label": "Employer un complice extérieur après la fermeture"
+              "label": "Remplacer un comprimé de son traitement cardiaque"
             },
             {
               "id": "method_failure",
-              "label": "Exploiter une défaillance existante sans intervenir sur les lieux"
+              "label": "Diffuser le poison dans le brumisateur de la véranda"
             }
           ]
         }
@@ -458,8 +470,8 @@
       }
     ],
     "reasoning": [
-      "Le capteur de porte de June enregistre une sortie à 4h09 qu'elle nie. Cette donnée fragilise directement la version de June Luce.",
-      "À 4h17, June vaporise par erreur la fleur avec le flacon contaminé, provoquant sa fermeture précoce. La trace relie le geste au procédé employé.",
+      "Le capteur de porte de June enregistre une sortie à 4 h 09 qu'elle nie. Cette donnée fragilise directement la version de June Luce.",
+      "À 4 h 17, June vaporise par erreur la fleur avec le flacon contaminé, provoquant sa fermeture précoce. La trace relie le geste au procédé employé.",
       "Le compromis de vente prévoit la destruction immédiate de la véranda et l'évacuation des archives maternelles. Le mobile repose donc sur un fait vérifiable.",
       "Les accès et soins horodatés placent Selma à la clinique toute la nuit. De son côté, la principale autre piste ne résiste pas au recoupement.",
       "Le carnet de Benoît contient la recette exacte d'extraction de l'alcaloïde. L'élément paraît accusateur, mais il change de sens avec la dernière pièce : la page est une fiche de prévention remise à toute la propriété et son ticket de bus prouve son départ.",
@@ -470,8 +482,8 @@
       {
         "title": "Ce qui trahit June Luce",
         "steps": [
-          "Le capteur de porte de June enregistre une sortie à 4h09 qu'elle nie.",
-          "À 4h17, June vaporise par erreur la fleur avec le flacon contaminé, provoquant sa fermeture précoce.",
+          "Le capteur de porte de June enregistre une sortie à 4 h 09 qu'elle nie.",
+          "À 4 h 17, June vaporise par erreur la fleur avec le flacon contaminé, provoquant sa fermeture précoce.",
           "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]
       },

@@ -20,7 +20,7 @@
         "occupation": "Réalisateur",
         "relation": "Il se disputait avec Cléo sur la fin du film.",
         "personality": "Habité, parle de vérité même pour les détails pratiques.",
-        "claimedAlibi": "Il suivait la prise au moniteur avec toute l'équipe.",
+        "claimedAlibi": "« Je suivais la prise au moniteur avec toute l'équipe. »",
         "accent": "formal",
         "notes": [
           "La disparition rendrait son film légendaire."
@@ -33,7 +33,7 @@
         "occupation": "Cascadeuse",
         "relation": "Elle avait répété le plongeon de Cléo.",
         "personality": "Athlétique, posée, distingue toujours risque et peur.",
-        "claimedAlibi": "Elle attendait dans le bateau de sécurité.",
+        "claimedAlibi": "« J'attendais dans le bateau de sécurité. »",
         "accent": "nervous",
         "notes": [
           "Elle et Cléo ont la même silhouette."
@@ -46,7 +46,7 @@
         "occupation": "Producteur",
         "relation": "Il voulait remplacer Cléo après le tournage.",
         "personality": "Conciliant en apparence, obsédé par le calendrier.",
-        "claimedAlibi": "Il téléphonait depuis la régie mobile.",
+        "claimedAlibi": "« Je téléphonais depuis la régie mobile. »",
         "accent": "cold",
         "notes": [
           "Une disparition déclenche une assurance majeure."
@@ -57,11 +57,11 @@
       {
         "id": "registre",
         "title": "Le montage ouvert de nuit",
-        "source": "REGISTRE DE SERVICE",
+        "source": "ENREGISTREMENT VIDÉO",
         "summary": "Le moniteur reçoit un fichier nommé TAKE_FINAL_2 plutôt que le flux SDI de la caméra large.",
         "evidence": {
           "kind": "camera",
-          "location": "REGISTRE DE SERVICE",
+          "location": "ENREGISTREMENT VIDÉO",
           "frames": [
             {
               "time": "20:49",
@@ -92,12 +92,12 @@
       {
         "id": "trace",
         "title": "Un plongeon sans reflet",
-        "source": "EXAMEN DE LA PIÈCE",
+        "source": "ANALYSE MATÉRIELLE",
         "summary": "L'absence de reflet et une barque identique dans deux positions prouvent que l'image du plongeon a été tournée la veille.",
         "evidence": {
           "kind": "document",
           "title": "Un plongeon sans reflet",
-          "subtitle": "EXAMEN DE LA PIÈCE",
+          "subtitle": "ANALYSE MATÉRIELLE",
           "paragraphs": [
             "L'absence de reflet et une barque identique dans deux positions prouvent que l'image du plongeon a été tournée la veille."
           ],
@@ -121,16 +121,16 @@
       {
         "id": "mobile",
         "title": "Le billet de Cléo",
-        "source": "CORRESPONDANCE SAISIE",
+        "source": "DOCUMENT SAISI",
         "summary": "Le carnet de Natan prévoit déjà une campagne intitulée « le dernier plan de Cléo ».",
         "evidence": {
-          "kind": "email",
-          "from": "CORRESPONDANCE SAISIE",
-          "to": "Dossier d'enquête",
-          "subject": "Le billet de Cléo",
-          "sentAt": "20:36",
-          "body": "Le carnet de Natan prévoit déjà une campagne intitulée « le dernier plan de Cléo ».",
-          "altText": "Courriel intitulé Le billet de Cléo. Le carnet de Natan prévoit déjà une campagne intitulée « le dernier plan de Cléo »."
+          "kind": "document",
+          "title": "Le billet de Cléo",
+          "subtitle": "DOCUMENT SAISI",
+          "paragraphs": [
+            "Le carnet de Natan prévoit déjà une campagne intitulée « le dernier plan de Cléo »."
+          ],
+          "altText": "Document intitulé Le billet de Cléo. Le carnet de Natan prévoit déjà une campagne intitulée « le dernier plan de Cléo »."
         },
         "analysis": {
           "category": "BEHAVIORAL",
@@ -150,13 +150,18 @@
       {
         "id": "alibi_a",
         "title": "Sarah en direct",
-        "source": "ENREGISTREMENT TÉMOIN",
+        "source": "ENREGISTREMENT VIDÉO",
         "summary": "Le bateau GPS et les images des deux autres axes placent Sarah à bord pendant la prétendue chute.",
         "evidence": {
-          "kind": "handwriting",
-          "body": "Le bateau GPS et les images des deux autres axes placent Sarah à bord pendant la prétendue chute.",
-          "signature": "Natan Joly",
-          "altText": "Note manuscrite. Le bateau GPS et les images des deux autres axes placent Sarah à bord pendant la prétendue chute."
+          "kind": "camera",
+          "location": "ENREGISTREMENT VIDÉO",
+          "frames": [
+            {
+              "time": "20:42",
+              "text": "Le bateau GPS et les images des deux autres axes placent Sarah à bord pendant la prétendue chute."
+            }
+          ],
+          "altText": "Image enregistrée à 20:42. Le bateau GPS et les images des deux autres axes placent Sarah à bord pendant la prétendue chute."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -174,12 +179,16 @@
       {
         "id": "fausse_piste",
         "title": "La barque de Paul",
-        "source": "DOCUMENT SUSPECT",
+        "source": "ÉLÉMENT À CHARGE",
         "summary": "Paul a augmenté l'assurance de Cléo une semaine avant le tournage.",
         "evidence": {
-          "kind": "note",
-          "body": "Paul a augmenté l'assurance de Cléo une semaine avant le tournage.",
-          "altText": "Note versée au dossier. Paul a augmenté l'assurance de Cléo une semaine avant le tournage."
+          "kind": "document",
+          "title": "La barque de Paul",
+          "subtitle": "ÉLÉMENT À CHARGE",
+          "paragraphs": [
+            "Paul a augmenté l'assurance de Cléo une semaine avant le tournage."
+          ],
+          "altText": "Document intitulé La barque de Paul. Paul a augmenté l'assurance de Cléo une semaine avant le tournage."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -199,18 +208,16 @@
       {
         "id": "resolution",
         "title": "Deux images prises la veille",
-        "source": "ALIBI VÉRIFIÉ",
+        "source": "RECOUPEMENT FINAL",
         "summary": "L'augmentation découle d'une exigence syndicale pour la scène aquatique et Paul ignorait le fichier préenregistré.",
         "evidence": {
-          "kind": "schedule",
-          "title": "ALIBI VÉRIFIÉ",
-          "rows": [
-            {
-              "time": "20:11",
-              "label": "L'augmentation découle d'une exigence syndicale pour la scène aquatique et Paul ignorait le fichier préenregistré."
-            }
+          "kind": "document",
+          "title": "Deux images prises la veille",
+          "subtitle": "RECOUPEMENT FINAL",
+          "paragraphs": [
+            "L'augmentation découle d'une exigence syndicale pour la scène aquatique et Paul ignorait le fichier préenregistré."
           ],
-          "altText": "ALIBI VÉRIFIÉ, 20:11. L'augmentation découle d'une exigence syndicale pour la scène aquatique et Paul ignorait le fichier préenregistré."
+          "altText": "Document intitulé Deux images prises la veille. L'augmentation découle d'une exigence syndicale pour la scène aquatique et Paul ignorait le fichier préenregistré."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -230,43 +237,43 @@
       {
         "id": "natan_alibi",
         "suspectId": "natan",
-        "question": "Décrivez vos déplacements sans sauter d'étape, Natan Joly.",
-        "answer": "Il suivait la prise au moniteur avec toute l'équipe. Habité, parle de vérité même pour les détails pratiques.",
+        "question": "Donnez votre emploi du temps précis, Natan Joly.",
+        "answer": "« Je suivais la prise au moniteur avec toute l'équipe. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
         "id": "natan_relation",
         "suspectId": "natan",
-        "question": "Aviez-vous une raison de redouter la décision de Cléo, Natan Joly ?",
-        "answer": "Il se disputait avec Cléo sur la fin du film. La disparition rendrait son film légendaire.",
+        "question": "Cette situation pouvait-elle vous profiter, Natan Joly ?",
+        "answer": "« Je redoutais les conséquences de cette affaire. Je ne l'ai jamais caché. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "sarah_alibi",
         "suspectId": "sarah",
-        "question": "Quand avez-vous quitté Tournage au lac d'Annecy, Sarah Montel ?",
-        "answer": "Elle attendait dans le bateau de sécurité. Athlétique, posée, distingue toujours risque et peur.",
+        "question": "Où étiez-vous au moment des faits, Sarah Montel ?",
+        "answer": "« J'attendais dans le bateau de sécurité. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "sarah_relation",
         "suspectId": "sarah",
-        "question": "Que taisiez-vous sur votre relation avec Cléo, Sarah Montel ?",
-        "answer": "Elle avait répété le plongeon de Cléo. Elle et Cléo ont la même silhouette.",
+        "question": "Que redoutiez-vous personnellement, Sarah Montel ?",
+        "answer": "« Oui. Cette affaire pouvait avoir des conséquences pour moi, mais je n'ai rien provoqué. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "paul_alibi",
         "suspectId": "paul",
-        "question": "Qui peut confirmer votre emploi du temps, Paul Eden ?",
-        "answer": "Il téléphonait depuis la régie mobile. Conciliant en apparence, obsédé par le calendrier.",
+        "question": "Que faisiez-vous pendant la période concernée, Paul Eden ?",
+        "answer": "« Je téléphonais depuis la régie mobile. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "paul_relation",
         "suspectId": "paul",
-        "question": "Quel désaccord vous opposait à Cléo, Paul Eden ?",
-        "answer": "Il voulait remplacer Cléo après le tournage. Une disparition déclenche une assurance majeure.",
+        "question": "Cette affaire pouvait-elle vous affecter, Paul Eden ?",
+        "answer": "« J'avais quelque chose à perdre. Cela ne suffit pas à faire de moi le coupable. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
@@ -304,19 +311,19 @@
       {
         "time": "20:23",
         "text": "Le carnet de Natan prévoit déjà une campagne intitulée « le dernier plan de Cléo ».",
-        "source": "CORRESPONDANCE SAISIE",
+        "source": "DOCUMENT SAISI",
         "certainty": "CERTAIN"
       },
       {
         "time": "20:36",
-        "text": "Natan Joly situe ici la fin de ses déplacements.",
-        "source": "Déposition",
+        "text": "Natan Joly : « Je suivais la prise au moniteur avec toute l'équipe. »",
+        "source": "Déclaration de Natan Joly",
         "certainty": "REPORTED"
       },
       {
         "time": "20:49",
         "text": "Le moniteur reçoit un fichier nommé TAKE_FINAL_2 plutôt que le flux SDI de la caméra large.",
-        "source": "REGISTRE DE SERVICE",
+        "source": "ENREGISTREMENT VIDÉO",
         "certainty": "CERTAIN"
       },
       {
@@ -363,15 +370,15 @@
             },
             {
               "id": "motive_innocent_a",
-              "label": "Elle et Cléo ont la même silhouette."
+              "label": "Toucher l'assurance prévue en cas de disparition"
             },
             {
               "id": "motive_innocent_b",
-              "label": "Une disparition déclenche une assurance majeure."
+              "label": "Remplacer Cléo par sa doublure pour finir le film"
             },
             {
               "id": "motive_accident",
-              "label": "Cacher une erreur antérieure sans rapport direct avec l'incident"
+              "label": "Contraindre le studio à financer une nouvelle scène"
             }
           ]
         },
@@ -387,15 +394,15 @@
             },
             {
               "id": "method_force",
-              "label": "Forcer directement l'accès principal puis dissimuler les traces"
+              "label": "Faire plonger Cléo puis la cacher sous le ponton"
             },
             {
               "id": "method_complice",
-              "label": "Employer un complice extérieur après la fermeture"
+              "label": "Couper les trois caméras pendant sa fuite"
             },
             {
               "id": "method_failure",
-              "label": "Exploiter une défaillance existante sans intervenir sur les lieux"
+              "label": "Faire remonter une plongeuse dans une barque hors champ"
             }
           ]
         }

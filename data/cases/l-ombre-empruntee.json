@@ -20,7 +20,7 @@
         "occupation": "Doctorante",
         "relation": "Elle a repéré le point la première.",
         "personality": "Brillante, impatiente, parle très vite des trajectoires.",
-        "claimedAlibi": "Elle traitait les données depuis sa chambre.",
+        "claimedAlibi": "« Je traitais les données depuis ma chambre. »",
         "accent": "formal",
         "notes": [
           "La découverte assurerait son poste."
@@ -33,7 +33,7 @@
         "occupation": "Ingénieur optique",
         "relation": "Il calibre le capteur principal.",
         "personality": "Précis, peu sociable, protège jalousement la machine.",
-        "claimedAlibi": "Il réparait la coupole secondaire avec un collègue.",
+        "claimedAlibi": "« Je réparais la coupole secondaire avec un collègue. »",
         "accent": "nervous",
         "notes": [
           "Il avait signalé des pixels défectueux ignorés."
@@ -46,7 +46,7 @@
         "occupation": "Astronome invitée",
         "relation": "Elle dirige l'équipe concurrente partenaire.",
         "personality": "Chaleureuse mais stratégique.",
-        "claimedAlibi": "Elle observait depuis le Chili en liaison continue.",
+        "claimedAlibi": "« J'observais depuis le Chili en liaison continue. »",
         "accent": "cold",
         "notes": [
           "Une fausse alerte discréditerait le programme de Luan."
@@ -57,12 +57,18 @@
       {
         "id": "registre",
         "title": "Une commande à l'aube",
-        "source": "REGISTRE DE SERVICE",
+        "source": "JOURNAL TECHNIQUE",
         "summary": "Le Wi-Fi de la chambre d'Aya reste silencieux tandis que son badge ouvre la salle optique.",
         "evidence": {
-          "kind": "note",
-          "body": "Le Wi-Fi de la chambre d'Aya reste silencieux tandis que son badge ouvre la salle optique.",
-          "altText": "Note versée au dossier. Le Wi-Fi de la chambre d'Aya reste silencieux tandis que son badge ouvre la salle optique."
+          "kind": "schedule",
+          "title": "JOURNAL TECHNIQUE",
+          "rows": [
+            {
+              "time": "20:21",
+              "label": "Le Wi-Fi de la chambre d'Aya reste silencieux tandis que son badge ouvre la salle optique."
+            }
+          ],
+          "altText": "JOURNAL TECHNIQUE, 20:21. Le Wi-Fi de la chambre d'Aya reste silencieux tandis que son badge ouvre la salle optique."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -86,23 +92,16 @@
       {
         "id": "trace",
         "title": "La trajectoire trop parfaite",
-        "source": "EXAMEN DE LA PIÈCE",
+        "source": "ANALYSE MATÉRIELLE",
         "summary": "La trajectoire conserve exactement l'espacement du rail motorisé utilisé pour les calibrations de laboratoire.",
         "evidence": {
-          "kind": "photo",
-          "caption": "La trajectoire conserve exactement l'espacement du rail motorisé utilisé pour les calibrations de laboratoire.",
-          "meta": [
-            {
-              "label": "Heure",
-              "value": "19:55"
-            },
-            {
-              "label": "Pièce",
-              "value": "La trajectoire trop parfaite"
-            }
+          "kind": "document",
+          "title": "La trajectoire trop parfaite",
+          "subtitle": "ANALYSE MATÉRIELLE",
+          "paragraphs": [
+            "La trajectoire conserve exactement l'espacement du rail motorisé utilisé pour les calibrations de laboratoire."
           ],
-          "altText": "Photographie. La trajectoire conserve exactement l'espacement du rail motorisé utilisé pour les calibrations de laboratoire.",
-          "tone": "cold"
+          "altText": "Document intitulé La trajectoire trop parfaite. La trajectoire conserve exactement l'espacement du rail motorisé utilisé pour les calibrations de laboratoire."
         },
         "analysis": {
           "category": "TIMELINE",
@@ -122,13 +121,16 @@
       {
         "id": "mobile",
         "title": "Le financement menacé",
-        "source": "CORRESPONDANCE SAISIE",
+        "source": "DOCUMENT SAISI",
         "summary": "Son dossier de renouvellement non envoyé porte déjà le titre de la découverte et sa date d'annonce.",
         "evidence": {
-          "kind": "handwriting",
-          "body": "Son dossier de renouvellement non envoyé porte déjà le titre de la découverte et sa date d'annonce.",
-          "signature": "Chiara Moss",
-          "altText": "Note manuscrite. Son dossier de renouvellement non envoyé porte déjà le titre de la découverte et sa date d'annonce."
+          "kind": "document",
+          "title": "Le financement menacé",
+          "subtitle": "DOCUMENT SAISI",
+          "paragraphs": [
+            "Son dossier de renouvellement non envoyé porte déjà le titre de la découverte et sa date d'annonce."
+          ],
+          "altText": "Document intitulé Le financement menacé. Son dossier de renouvellement non envoyé porte déjà le titre de la découverte et sa date d'annonce."
         },
         "analysis": {
           "category": "BEHAVIORAL",
@@ -148,18 +150,16 @@
       {
         "id": "alibi_a",
         "title": "Rémi sous la coupole",
-        "source": "ENREGISTREMENT TÉMOIN",
+        "source": "ALIBI VÉRIFIÉ",
         "summary": "La visioconférence et les données chiliennes signées placent Chiara à dix mille kilomètres.",
         "evidence": {
-          "kind": "camera",
-          "location": "ENREGISTREMENT TÉMOIN",
-          "frames": [
-            {
-              "time": "20:14",
-              "text": "La visioconférence et les données chiliennes signées placent Chiara à dix mille kilomètres."
-            }
+          "kind": "document",
+          "title": "Rémi sous la coupole",
+          "subtitle": "ALIBI VÉRIFIÉ",
+          "paragraphs": [
+            "La visioconférence et les données chiliennes signées placent Chiara à dix mille kilomètres."
           ],
-          "altText": "Image enregistrée à 20:14. La visioconférence et les données chiliennes signées placent Chiara à dix mille kilomètres."
+          "altText": "Document intitulé Rémi sous la coupole. La visioconférence et les données chiliennes signées placent Chiara à dix mille kilomètres."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -177,12 +177,12 @@
       {
         "id": "fausse_piste",
         "title": "Les corrections de Chiara",
-        "source": "DOCUMENT SUSPECT",
+        "source": "ÉLÉMENT À CHARGE",
         "summary": "Rémi avait documenté une rangée de pixels chauds proche de la trajectoire.",
         "evidence": {
           "kind": "document",
           "title": "Les corrections de Chiara",
-          "subtitle": "DOCUMENT SUSPECT",
+          "subtitle": "ÉLÉMENT À CHARGE",
           "paragraphs": [
             "Rémi avait documenté une rangée de pixels chauds proche de la trajectoire."
           ],
@@ -206,20 +206,16 @@
       {
         "id": "resolution",
         "title": "Un satellite à la place d'une comète",
-        "source": "ALIBI VÉRIFIÉ",
+        "source": "RECOUPEMENT FINAL",
         "summary": "Les pixels sont fixes dans le repère du capteur tandis que le faux objet suit les pas réguliers du rail.",
         "evidence": {
-          "kind": "sms",
-          "contact": "Chiara Moss",
-          "channel": "sms",
-          "messages": [
-            {
-              "from": "them",
-              "text": "Les pixels sont fixes dans le repère du capteur tandis que le faux objet suit les pas réguliers du rail.",
-              "time": "19:43"
-            }
+          "kind": "document",
+          "title": "Un satellite à la place d'une comète",
+          "subtitle": "RECOUPEMENT FINAL",
+          "paragraphs": [
+            "Les pixels sont fixes dans le repère du capteur tandis que le faux objet suit les pas réguliers du rail."
           ],
-          "altText": "Message de Chiara Moss à 19:43. Les pixels sont fixes dans le repère du capteur tandis que le faux objet suit les pas réguliers du rail."
+          "altText": "Document intitulé Un satellite à la place d'une comète. Les pixels sont fixes dans le repère du capteur tandis que le faux objet suit les pas réguliers du rail."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -239,43 +235,43 @@
       {
         "id": "aya_alibi",
         "suspectId": "aya",
-        "question": "Qui peut confirmer votre emploi du temps, Aya Ben Salem ?",
-        "answer": "Elle traitait les données depuis sa chambre. Brillante, impatiente, parle très vite des trajectoires.",
+        "question": "Que faisiez-vous pendant la période concernée, Aya Ben Salem ?",
+        "answer": "« Je traitais les données depuis ma chambre. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
         "id": "aya_relation",
         "suspectId": "aya",
-        "question": "Qu'est-ce que cette affaire pouvait changer pour vous, Aya Ben Salem ?",
-        "answer": "Elle a repéré le point la première. La découverte assurerait son poste.",
+        "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, Aya Ben Salem ?",
+        "answer": "« J'avais quelque chose à perdre. Cela ne suffit pas à faire de moi le coupable. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "remi_alibi",
         "suspectId": "remi",
-        "question": "Quel est votre dernier souvenir précis avant les faits, Rémi Corbel ?",
-        "answer": "Il réparait la coupole secondaire avec un collègue. Précis, peu sociable, protège jalousement la machine.",
+        "question": "Donnez votre emploi du temps précis, Rémi Corbel.",
+        "answer": "« Je réparais la coupole secondaire avec un collègue. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "remi_relation",
         "suspectId": "remi",
-        "question": "Pourquoi votre nom apparaît-il dans le dossier de Dr, Rémi Corbel ?",
-        "answer": "Il calibre le capteur principal. Il avait signalé des pixels défectueux ignorés.",
+        "question": "Reconnaissez-vous avoir un intérêt personnel dans cette affaire, Rémi Corbel ?",
+        "answer": "« Mon intérêt personnel est réel. Il faut encore prouver que j'ai agi. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "chiara_alibi",
         "suspectId": "chiara",
-        "question": "Votre version comporte-t-elle un moment sans témoin, Chiara Moss ?",
-        "answer": "Elle observait depuis le Chili en liaison continue. Chaleureuse mais stratégique.",
+        "question": "Où étiez-vous au moment des faits, Chiara Moss ?",
+        "answer": "« J'observais depuis le Chili en liaison continue. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "chiara_relation",
         "suspectId": "chiara",
-        "question": "Aviez-vous une raison de redouter la décision de Dr, Chiara Moss ?",
-        "answer": "Elle dirige l'équipe concurrente partenaire. Une fausse alerte discréditerait le programme de Luan.",
+        "question": "Cette situation pouvait-elle vous profiter, Chiara Moss ?",
+        "answer": "« Je comprends les soupçons. Ma situation me donnait un mobile possible, pas une preuve. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
@@ -313,19 +309,19 @@
       {
         "time": "19:55",
         "text": "Son dossier de renouvellement non envoyé porte déjà le titre de la découverte et sa date d'annonce.",
-        "source": "CORRESPONDANCE SAISIE",
+        "source": "DOCUMENT SAISI",
         "certainty": "CERTAIN"
       },
       {
         "time": "20:08",
-        "text": "Aya Ben Salem situe ici la fin de ses déplacements.",
-        "source": "Déposition",
+        "text": "Aya Ben Salem : « Je traitais les données depuis ma chambre. »",
+        "source": "Déclaration d'Aya Ben Salem",
         "certainty": "REPORTED"
       },
       {
         "time": "20:21",
         "text": "Le Wi-Fi de la chambre d'Aya reste silencieux tandis que son badge ouvre la salle optique.",
-        "source": "REGISTRE DE SERVICE",
+        "source": "JOURNAL TECHNIQUE",
         "certainty": "CERTAIN"
       },
       {
@@ -372,15 +368,15 @@
             },
             {
               "id": "motive_innocent_a",
-              "label": "Il avait signalé des pixels défectueux ignorés."
+              "label": "Obtenir le renouvellement d'un financement scientifique"
             },
             {
               "id": "motive_innocent_b",
-              "label": "Une fausse alerte discréditerait le programme de Luan."
+              "label": "Discréditer un programme astronomique concurrent"
             },
             {
               "id": "motive_accident",
-              "label": "Cacher une erreur antérieure sans rapport direct avec l'incident"
+              "label": "Cacher des pixels défectueux déjà signalés"
             }
           ]
         },
@@ -396,15 +392,15 @@
             },
             {
               "id": "method_force",
-              "label": "Forcer directement l'accès principal puis dissimuler les traces"
+              "label": "Insérer un faux objet dans les fichiers après la prise de vue"
             },
             {
               "id": "method_complice",
-              "label": "Employer un complice extérieur après la fermeture"
+              "label": "Pointer le télescope vers un satellite connu"
             },
             {
               "id": "method_failure",
-              "label": "Exploiter une défaillance existante sans intervenir sur les lieux"
+              "label": "Modifier l'horloge pour combiner trois nuits différentes"
             }
           ]
         }

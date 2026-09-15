@@ -20,7 +20,7 @@
         "occupation": "Ostréiculteur",
         "relation": "Ses concessions dépendent des résultats de Lise.",
         "personality": "Terrien, méfiant envers les modèles scientifiques.",
-        "claimedAlibi": "Il travaillait sur son chaland, suivi par GPS.",
+        "claimedAlibi": "« Je travaillais sur mon chaland, suivi par GPS. »",
         "accent": "formal",
         "notes": [
           "Un échec prolongerait les aides compensatoires."
@@ -33,7 +33,7 @@
         "occupation": "Technicienne de laboratoire",
         "relation": "Elle dose les nutriments du bassin 7.",
         "personality": "Très posée, tient un carnet d'une écriture minuscule.",
-        "claimedAlibi": "Elle assure avoir préparé tous les réservoirs à 17h.",
+        "claimedAlibi": "« J'ai préparé tous les réservoirs à 17 h. »",
         "accent": "nervous",
         "notes": [
           "Une erreur antérieure menaçait sa certification."
@@ -46,7 +46,7 @@
         "occupation": "Inspecteur sanitaire",
         "relation": "Il doit signer la réouverture.",
         "personality": "Solennel, soucieux de son autorité.",
-        "claimedAlibi": "Il dînait avec la mairie pendant la première vague.",
+        "claimedAlibi": "« Je dînais avec la mairie pendant la première vague. »",
         "accent": "cold",
         "notes": [
           "Il avait annoncé publiquement que l'essai échouerait."
@@ -57,18 +57,18 @@
       {
         "id": "registre",
         "title": "Le code entré après 20 h",
-        "source": "REGISTRE DE SERVICE",
-        "summary": "Le contrôleur de pompe enregistre une programmation locale sous le code de Clara après 20h.",
+        "source": "JOURNAL TECHNIQUE",
+        "summary": "Le contrôleur de pompe enregistre une programmation locale sous le code de Clara après 20 h.",
         "evidence": {
           "kind": "schedule",
-          "title": "REGISTRE DE SERVICE",
+          "title": "JOURNAL TECHNIQUE",
           "rows": [
             {
               "time": "20:55",
-              "label": "Le contrôleur de pompe enregistre une programmation locale sous le code de Clara après 20h."
+              "label": "Le contrôleur de pompe enregistre une programmation locale sous le code de Clara après 20 h."
             }
           ],
-          "altText": "REGISTRE DE SERVICE, 20:55. Le contrôleur de pompe enregistre une programmation locale sous le code de Clara après 20h."
+          "altText": "JOURNAL TECHNIQUE, 20:55. Le contrôleur de pompe enregistre une programmation locale sous le code de Clara après 20 h."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -92,23 +92,16 @@
       {
         "id": "trace",
         "title": "Le rose de la calibration",
-        "source": "EXAMEN DE LA PIÈCE",
+        "source": "ANALYSE MATÉRIELLE",
         "summary": "Le contaminant contient le colorant rose qu'elle ajoute à ses solutions de calibration personnelles.",
         "evidence": {
-          "kind": "photo",
-          "caption": "Le contaminant contient le colorant rose qu'elle ajoute à ses solutions de calibration personnelles.",
-          "meta": [
-            {
-              "label": "Heure",
-              "value": "20:29"
-            },
-            {
-              "label": "Pièce",
-              "value": "Le rose de la calibration"
-            }
+          "kind": "document",
+          "title": "Le rose de la calibration",
+          "subtitle": "ANALYSE MATÉRIELLE",
+          "paragraphs": [
+            "Le contaminant contient le colorant rose qu'elle ajoute à ses solutions de calibration personnelles."
           ],
-          "altText": "Photographie. Le contaminant contient le colorant rose qu'elle ajoute à ses solutions de calibration personnelles.",
-          "tone": "cold"
+          "altText": "Document intitulé Le rose de la calibration. Le contaminant contient le colorant rose qu'elle ajoute à ses solutions de calibration personnelles."
         },
         "analysis": {
           "category": "TIMELINE",
@@ -128,16 +121,16 @@
       {
         "id": "mobile",
         "title": "La page arrachée",
-        "source": "CORRESPONDANCE SAISIE",
+        "source": "DOCUMENT SAISI",
         "summary": "Son carnet comporte une page arrachée dont l'empreinte révèle le dosage fautif du premier jour.",
         "evidence": {
-          "kind": "email",
-          "from": "CORRESPONDANCE SAISIE",
-          "to": "Dossier d'enquête",
-          "subject": "La page arrachée",
-          "sentAt": "20:42",
-          "body": "Son carnet comporte une page arrachée dont l'empreinte révèle le dosage fautif du premier jour.",
-          "altText": "Courriel intitulé La page arrachée. Son carnet comporte une page arrachée dont l'empreinte révèle le dosage fautif du premier jour."
+          "kind": "document",
+          "title": "La page arrachée",
+          "subtitle": "DOCUMENT SAISI",
+          "paragraphs": [
+            "Son carnet comporte une page arrachée dont l'empreinte révèle le dosage fautif du premier jour."
+          ],
+          "altText": "Document intitulé La page arrachée. Son carnet comporte une page arrachée dont l'empreinte révèle le dosage fautif du premier jour."
         },
         "analysis": {
           "category": "BEHAVIORAL",
@@ -157,11 +150,11 @@
       {
         "id": "alibi_a",
         "title": "Éwen au large",
-        "source": "ENREGISTREMENT TÉMOIN",
+        "source": "ENREGISTREMENT VIDÉO",
         "summary": "Le GPS et une vidéo de pont placent Éwen en mer durant les deux interventions physiques possibles.",
         "evidence": {
           "kind": "camera",
-          "location": "ENREGISTREMENT TÉMOIN",
+          "location": "ENREGISTREMENT VIDÉO",
           "frames": [
             {
               "time": "20:48",
@@ -186,13 +179,16 @@
       {
         "id": "fausse_piste",
         "title": "Le flacon de l'inspecteur",
-        "source": "DOCUMENT SUSPECT",
+        "source": "ÉLÉMENT À CHARGE",
         "summary": "Marc possédait un flacon du même contaminant pour ses prélèvements réglementaires.",
         "evidence": {
-          "kind": "handwriting",
-          "body": "Marc possédait un flacon du même contaminant pour ses prélèvements réglementaires.",
-          "signature": "Clara Nomura",
-          "altText": "Note manuscrite. Marc possédait un flacon du même contaminant pour ses prélèvements réglementaires."
+          "kind": "document",
+          "title": "Le flacon de l'inspecteur",
+          "subtitle": "ÉLÉMENT À CHARGE",
+          "paragraphs": [
+            "Marc possédait un flacon du même contaminant pour ses prélèvements réglementaires."
+          ],
+          "altText": "Document intitulé Le flacon de l'inspecteur. Marc possédait un flacon du même contaminant pour ses prélèvements réglementaires."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -212,12 +208,12 @@
       {
         "id": "resolution",
         "title": "Le rythme fabriqué",
-        "source": "ALIBI VÉRIFIÉ",
+        "source": "RECOUPEMENT FINAL",
         "summary": "Son flacon est numéroté, intact, et le registre du restaurant confirme sa présence lors de la programmation.",
         "evidence": {
           "kind": "document",
           "title": "Le rythme fabriqué",
-          "subtitle": "ALIBI VÉRIFIÉ",
+          "subtitle": "RECOUPEMENT FINAL",
           "paragraphs": [
             "Son flacon est numéroté, intact, et le registre du restaurant confirme sa présence lors de la programmation."
           ],
@@ -241,43 +237,43 @@
       {
         "id": "ewen_alibi",
         "suspectId": "ewen",
-        "question": "Décrivez vos déplacements sans sauter d'étape, Éwen Piat.",
-        "answer": "Il travaillait sur son chaland, suivi par GPS. Terrien, méfiant envers les modèles scientifiques.",
+        "question": "Donnez votre emploi du temps précis, Éwen Piat.",
+        "answer": "« Je travaillais sur mon chaland, suivi par GPS. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "ewen_relation",
         "suspectId": "ewen",
-        "question": "Aviez-vous une raison de redouter la décision de Lise, Éwen Piat ?",
-        "answer": "Ses concessions dépendent des résultats de Lise. Un échec prolongerait les aides compensatoires.",
+        "question": "Cette situation pouvait-elle vous profiter, Éwen Piat ?",
+        "answer": "« Je redoutais les conséquences de cette affaire. Je ne l'ai jamais caché. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "clara_alibi",
         "suspectId": "clara",
-        "question": "Quand avez-vous quitté Station marine, Clara Nomura ?",
-        "answer": "Elle assure avoir préparé tous les réservoirs à 17h. Très posée, tient un carnet d'une écriture minuscule.",
+        "question": "Où étiez-vous au moment des faits, Clara Nomura ?",
+        "answer": "« J'ai préparé tous les réservoirs à 17 h. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
         "id": "clara_relation",
         "suspectId": "clara",
-        "question": "Que taisiez-vous sur votre relation avec Lise, Clara Nomura ?",
-        "answer": "Elle dose les nutriments du bassin 7. Une erreur antérieure menaçait sa certification.",
+        "question": "Que redoutiez-vous personnellement, Clara Nomura ?",
+        "answer": "« Oui. Cette affaire pouvait avoir des conséquences pour moi, mais je n'ai rien provoqué. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "marc_alibi",
         "suspectId": "marc",
-        "question": "Qui peut confirmer votre emploi du temps, Marc Vignal ?",
-        "answer": "Il dînait avec la mairie pendant la première vague. Solennel, soucieux de son autorité.",
+        "question": "Que faisiez-vous pendant la période concernée, Marc Vignal ?",
+        "answer": "« Je dînais avec la mairie pendant la première vague. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "marc_relation",
         "suspectId": "marc",
-        "question": "Quel désaccord vous opposait à Lise, Marc Vignal ?",
-        "answer": "Il doit signer la réouverture. Il avait annoncé publiquement que l'essai échouerait.",
+        "question": "Cette affaire pouvait-elle vous affecter, Marc Vignal ?",
+        "answer": "« J'avais quelque chose à perdre. Cela ne suffit pas à faire de moi le coupable. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
@@ -315,19 +311,19 @@
       {
         "time": "20:29",
         "text": "Son carnet comporte une page arrachée dont l'empreinte révèle le dosage fautif du premier jour.",
-        "source": "CORRESPONDANCE SAISIE",
+        "source": "DOCUMENT SAISI",
         "certainty": "CERTAIN"
       },
       {
         "time": "20:42",
-        "text": "Clara Nomura situe ici la fin de ses déplacements.",
-        "source": "Déposition",
+        "text": "Clara Nomura : « J'ai préparé tous les réservoirs à 17 h. »",
+        "source": "Déclaration de Clara Nomura",
         "certainty": "REPORTED"
       },
       {
         "time": "20:55",
-        "text": "Le contrôleur de pompe enregistre une programmation locale sous le code de Clara après 20h.",
-        "source": "REGISTRE DE SERVICE",
+        "text": "Le contrôleur de pompe enregistre une programmation locale sous le code de Clara après 20 h.",
+        "source": "JOURNAL TECHNIQUE",
         "certainty": "CERTAIN"
       },
       {
@@ -374,15 +370,15 @@
             },
             {
               "id": "motive_innocent_a",
-              "label": "Un échec prolongerait les aides compensatoires."
+              "label": "Prolonger les aides versées aux ostréiculteurs"
             },
             {
               "id": "motive_innocent_b",
-              "label": "Il avait annoncé publiquement que l'essai échouerait."
+              "label": "Prouver publiquement que l'essai scientifique devait échouer"
             },
             {
               "id": "motive_accident",
-              "label": "Cacher une erreur antérieure sans rapport direct avec l'incident"
+              "label": "Cacher une pollution venue de la mer extérieure"
             }
           ]
         },
@@ -398,15 +394,15 @@
             },
             {
               "id": "method_force",
-              "label": "Forcer directement l'accès principal puis dissimuler les traces"
+              "label": "Verser le contaminant directement dans le bassin à marée basse"
             },
             {
               "id": "method_complice",
-              "label": "Employer un complice extérieur après la fermeture"
+              "label": "Relier discrètement le bassin à une prise d'eau de mer"
             },
             {
               "id": "method_failure",
-              "label": "Exploiter une défaillance existante sans intervenir sur les lieux"
+              "label": "Remplacer les huîtres par un lot déjà malade"
             }
           ]
         }
@@ -469,7 +465,7 @@
       }
     ],
     "reasoning": [
-      "Le contrôleur de pompe enregistre une programmation locale sous le code de Clara après 20h. Cette donnée fragilise directement la version de Clara Nomura.",
+      "Le contrôleur de pompe enregistre une programmation locale sous le code de Clara après 20 h. Cette donnée fragilise directement la version de Clara Nomura.",
       "Le contaminant contient le colorant rose qu'elle ajoute à ses solutions de calibration personnelles. La trace relie le geste au procédé employé.",
       "Son carnet comporte une page arrachée dont l'empreinte révèle le dosage fautif du premier jour. Le mobile repose donc sur un fait vérifiable.",
       "Le GPS et une vidéo de pont placent Éwen en mer durant les deux interventions physiques possibles. De son côté, la principale autre piste ne résiste pas au recoupement.",
@@ -481,7 +477,7 @@
       {
         "title": "Ce qui trahit Clara Nomura",
         "steps": [
-          "Le contrôleur de pompe enregistre une programmation locale sous le code de Clara après 20h.",
+          "Le contrôleur de pompe enregistre une programmation locale sous le code de Clara après 20 h.",
           "Le contaminant contient le colorant rose qu'elle ajoute à ses solutions de calibration personnelles.",
           "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]

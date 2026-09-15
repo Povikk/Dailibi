@@ -7,7 +7,7 @@
     "subtitle": "L'animatrice s'effondre en direct après avoir bu dans une tasse que personne n'a touchée.",
     "location": "Radio Nébuleuse, Toulouse",
     "incident": "Tentative d'empoisonnement pendant une émission",
-    "intro": "À 00h07, Sonia boit son infusion et perd connaissance au micro. La tasse était dans le studio verrouillé depuis 23h30. L'analyse révèle un puissant sédatif, absent de la théière commune.",
+    "intro": "À 00 h 07, Sonia boit son infusion et perd connaissance au micro. La tasse était dans le studio verrouillé depuis 23 h 30. L'analyse révèle un puissant sédatif, absent de la théière commune.",
     "victim": {
       "name": "Sonia Kermadec",
       "description": "Animatrice, 40 ans. Elle présentait sa dernière émission avant de révéler un dossier interne."
@@ -20,7 +20,7 @@
         "occupation": "Réalisateur sonore",
         "relation": "Il pilote l'émission derrière la vitre.",
         "personality": "Vif, sarcastique, ne supporte pas les silences.",
-        "claimedAlibi": "Il assure n'avoir jamais quitté la régie.",
+        "claimedAlibi": "« Je n'ai jamais quitté la régie. »",
         "accent": "formal",
         "notes": [
           "Sonia allait dénoncer ses faux relevés d'heures."
@@ -33,7 +33,7 @@
         "occupation": "Stagiaire",
         "relation": "Elle prépare habituellement l'infusion de Sonia.",
         "personality": "Appliquée, inquiète de mal faire.",
-        "claimedAlibi": "Elle dit avoir posé une tasse propre avant 23h puis être partie.",
+        "claimedAlibi": "« J'ai posé une tasse propre avant 23 h puis je suis partie. »",
         "accent": "nervous",
         "notes": [
           "Un flacon de somnifères porte son nom."
@@ -46,7 +46,7 @@
         "occupation": "Directeur d'antenne",
         "relation": "Il avait interdit à Sonia d'évoquer le dossier.",
         "personality": "Poli, autoritaire, parle de la radio comme d'une famille.",
-        "claimedAlibi": "Il assistait à un gala retransmis sur les réseaux.",
+        "claimedAlibi": "« J'assistais à un gala retransmis sur les réseaux. »",
         "accent": "cold",
         "notes": [
           "Le scandale pouvait lui coûter sa fréquence."
@@ -57,18 +57,18 @@
       {
         "id": "registre",
         "title": "Le silence dans la playlist",
-        "source": "RELEVÉ HORODATÉ",
+        "source": "JOURNAL TECHNIQUE",
         "summary": "Une séquence publicitaire automatisée de quatre minutes a tourné seule pendant que le siège de Gaspard cessait d'émettre son capteur de présence.",
         "evidence": {
-          "kind": "camera",
-          "location": "RELEVÉ HORODATÉ",
-          "frames": [
+          "kind": "schedule",
+          "title": "JOURNAL TECHNIQUE",
+          "rows": [
             {
               "time": "20:34",
-              "text": "Une séquence publicitaire automatisée de quatre minutes a tourné seule pendant que le siège de Gaspard cessait d'émettre son capteur de présence."
+              "label": "Une séquence publicitaire automatisée de quatre minutes a tourné seule pendant que le siège de Gaspard cessait d'émettre son capteur de présence."
             }
           ],
-          "altText": "Image enregistrée à 20:34. Une séquence publicitaire automatisée de quatre minutes a tourné seule pendant que le siège de Gaspard cessait d'émettre son capteur de présence."
+          "altText": "JOURNAL TECHNIQUE, 20:34. Une séquence publicitaire automatisée de quatre minutes a tourné seule pendant que le siège de Gaspard cessait d'émettre son capteur de présence."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -92,16 +92,23 @@
       {
         "id": "trace",
         "title": "Du gel sur la molette",
-        "source": "ANALYSE DU LABORATOIRE",
+        "source": "ANALYSE MATÉRIELLE",
         "summary": "Le gel fluorescent est retrouvé sur la molette gauche de sa console et sous son ongle.",
         "evidence": {
-          "kind": "document",
-          "title": "Du gel sur la molette",
-          "subtitle": "ANALYSE DU LABORATOIRE",
-          "paragraphs": [
-            "Le gel fluorescent est retrouvé sur la molette gauche de sa console et sous son ongle."
+          "kind": "photo",
+          "caption": "Le gel fluorescent est retrouvé sur la molette gauche de sa console et sous son ongle.",
+          "meta": [
+            {
+              "label": "Heure",
+              "value": "20:08"
+            },
+            {
+              "label": "Pièce",
+              "value": "Du gel sur la molette"
+            }
           ],
-          "altText": "Document intitulé Du gel sur la molette. Le gel fluorescent est retrouvé sur la molette gauche de sa console et sous son ongle."
+          "altText": "Photographie. Le gel fluorescent est retrouvé sur la molette gauche de sa console et sous son ongle.",
+          "tone": "cold"
         },
         "analysis": {
           "category": "TIMELINE",
@@ -121,16 +128,16 @@
       {
         "id": "mobile",
         "title": "Les cachets détournés",
-        "source": "DOSSIER CONFIDENTIEL",
+        "source": "DOCUMENT SAISI",
         "summary": "Le dossier de Sonia relie le compte bénéficiaire des faux cachets à la microentreprise de Gaspard.",
         "evidence": {
-          "kind": "email",
-          "from": "DOSSIER CONFIDENTIEL",
-          "to": "Dossier d'enquête",
-          "subject": "Les cachets détournés",
-          "sentAt": "20:21",
-          "body": "Le dossier de Sonia relie le compte bénéficiaire des faux cachets à la microentreprise de Gaspard.",
-          "altText": "Courriel intitulé Les cachets détournés. Le dossier de Sonia relie le compte bénéficiaire des faux cachets à la microentreprise de Gaspard."
+          "kind": "document",
+          "title": "Les cachets détournés",
+          "subtitle": "DOCUMENT SAISI",
+          "paragraphs": [
+            "Le dossier de Sonia relie le compte bénéficiaire des faux cachets à la microentreprise de Gaspard."
+          ],
+          "altText": "Document intitulé Les cachets détournés. Le dossier de Sonia relie le compte bénéficiaire des faux cachets à la microentreprise de Gaspard."
         },
         "analysis": {
           "category": "BEHAVIORAL",
@@ -150,13 +157,16 @@
       {
         "id": "alibi_a",
         "title": "Mina derrière la vitre",
-        "source": "CONTRÔLE DES DÉPLACEMENTS",
+        "source": "DONNÉES DE DÉPLACEMENT",
         "summary": "Le badge de Mina enregistre sa sortie du bâtiment quarante minutes avant que la tasse ne soit placée.",
         "evidence": {
-          "kind": "handwriting",
-          "body": "Le badge de Mina enregistre sa sortie du bâtiment quarante minutes avant que la tasse ne soit placée.",
-          "signature": "Gaspard Lin",
-          "altText": "Note manuscrite. Le badge de Mina enregistre sa sortie du bâtiment quarante minutes avant que la tasse ne soit placée."
+          "kind": "document",
+          "title": "Mina derrière la vitre",
+          "subtitle": "DONNÉES DE DÉPLACEMENT",
+          "paragraphs": [
+            "Le badge de Mina enregistre sa sortie du bâtiment quarante minutes avant que la tasse ne soit placée."
+          ],
+          "altText": "Document intitulé Mina derrière la vitre. Le badge de Mina enregistre sa sortie du bâtiment quarante minutes avant que la tasse ne soit placée."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -174,12 +184,16 @@
       {
         "id": "fausse_piste",
         "title": "L'ordonnance d'Alban",
-        "source": "PIÈCE SAISIE",
+        "source": "ÉLÉMENT À CHARGE",
         "summary": "Les somnifères de Mina sont de la même famille chimique que le produit détecté.",
         "evidence": {
-          "kind": "note",
-          "body": "Les somnifères de Mina sont de la même famille chimique que le produit détecté.",
-          "altText": "Note versée au dossier. Les somnifères de Mina sont de la même famille chimique que le produit détecté."
+          "kind": "document",
+          "title": "L'ordonnance d'Alban",
+          "subtitle": "ÉLÉMENT À CHARGE",
+          "paragraphs": [
+            "Les somnifères de Mina sont de la même famille chimique que le produit détecté."
+          ],
+          "altText": "Document intitulé L'ordonnance d'Alban. Les somnifères de Mina sont de la même famille chimique que le produit détecté."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -199,18 +213,16 @@
       {
         "id": "resolution",
         "title": "Deux produits, deux usages",
-        "source": "RECOUPEMENT INDÉPENDANT",
+        "source": "RECOUPEMENT FINAL",
         "summary": "Son ordonnance concerne des comprimés bleus. Le produit de la tasse est un gel vétérinaire acheté avec la carte de production.",
         "evidence": {
-          "kind": "schedule",
-          "title": "RECOUPEMENT INDÉPENDANT",
-          "rows": [
-            {
-              "time": "19:56",
-              "label": "Son ordonnance concerne des comprimés bleus. Le produit de la tasse est un gel vétérinaire acheté avec la carte de production."
-            }
+          "kind": "document",
+          "title": "Deux produits, deux usages",
+          "subtitle": "RECOUPEMENT FINAL",
+          "paragraphs": [
+            "Son ordonnance concerne des comprimés bleus. Le produit de la tasse est un gel vétérinaire acheté avec la carte de production."
           ],
-          "altText": "RECOUPEMENT INDÉPENDANT, 19:56. Son ordonnance concerne des comprimés bleus. Le produit de la tasse est un gel vétérinaire acheté avec la carte de production."
+          "altText": "Document intitulé Deux produits, deux usages. Son ordonnance concerne des comprimés bleus. Le produit de la tasse est un gel vétérinaire acheté avec la carte de production."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -230,43 +242,43 @@
       {
         "id": "gaspard_alibi",
         "suspectId": "gaspard",
-        "question": "Quel est votre dernier souvenir précis avant les faits, Gaspard Lin ?",
-        "answer": "Il assure n'avoir jamais quitté la régie. Vif, sarcastique, ne supporte pas les silences.",
+        "question": "Donnez votre emploi du temps précis, Gaspard Lin.",
+        "answer": "« Je n'ai jamais quitté la régie. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
         "id": "gaspard_relation",
         "suspectId": "gaspard",
-        "question": "Aviez-vous une raison de redouter la décision de Sonia, Gaspard Lin ?",
-        "answer": "Il pilote l'émission derrière la vitre. Sonia allait dénoncer ses faux relevés d'heures.",
+        "question": "Cette situation pouvait-elle vous profiter, Gaspard Lin ?",
+        "answer": "« Mon intérêt personnel est réel. Il faut encore prouver que j'ai agi. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "mina_alibi",
         "suspectId": "mina",
-        "question": "Votre version comporte-t-elle un moment sans témoin, Mina Ferhat ?",
-        "answer": "Elle dit avoir posé une tasse propre avant 23h puis être partie. Appliquée, inquiète de mal faire.",
+        "question": "Où étiez-vous au moment des faits, Mina Ferhat ?",
+        "answer": "« J'ai posé une tasse propre avant 23 h puis je suis partie. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "mina_relation",
         "suspectId": "mina",
-        "question": "Que taisiez-vous sur votre relation avec Sonia, Mina Ferhat ?",
-        "answer": "Elle prépare habituellement l'infusion de Sonia. Un flacon de somnifères porte son nom.",
+        "question": "Que redoutiez-vous personnellement, Mina Ferhat ?",
+        "answer": "« Je comprends les soupçons. Ma situation me donnait un mobile possible, pas une preuve. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "alban_alibi",
         "suspectId": "alban",
-        "question": "Quand avez-vous vu Sonia pour la dernière fois, Alban Reyes ?",
-        "answer": "Il assistait à un gala retransmis sur les réseaux. Poli, autoritaire, parle de la radio comme d'une famille.",
+        "question": "Que faisiez-vous pendant la période concernée, Alban Reyes ?",
+        "answer": "« J'assistais à un gala retransmis sur les réseaux. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "alban_relation",
         "suspectId": "alban",
-        "question": "Quel désaccord vous opposait à Sonia, Alban Reyes ?",
-        "answer": "Il avait interdit à Sonia d'évoquer le dossier. Le scandale pouvait lui coûter sa fréquence.",
+        "question": "Cette affaire pouvait-elle vous affecter, Alban Reyes ?",
+        "answer": "« J'aurais pu tirer profit de la situation. Je n'ai pourtant rien fait pour la provoquer. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
@@ -304,19 +316,19 @@
       {
         "time": "20:08",
         "text": "Le dossier de Sonia relie le compte bénéficiaire des faux cachets à la microentreprise de Gaspard.",
-        "source": "DOSSIER CONFIDENTIEL",
+        "source": "DOCUMENT SAISI",
         "certainty": "CERTAIN"
       },
       {
         "time": "20:21",
-        "text": "Gaspard Lin situe ici la fin de ses déplacements.",
-        "source": "Déposition",
+        "text": "Gaspard Lin : « Je n'ai jamais quitté la régie. »",
+        "source": "Déclaration de Gaspard Lin",
         "certainty": "REPORTED"
       },
       {
         "time": "20:34",
         "text": "Une séquence publicitaire automatisée de quatre minutes a tourné seule pendant que le siège de Gaspard cessait d'émettre son capteur de présence.",
-        "source": "RELEVÉ HORODATÉ",
+        "source": "JOURNAL TECHNIQUE",
         "certainty": "CERTAIN"
       },
       {
@@ -363,15 +375,15 @@
             },
             {
               "id": "motive_innocent_a",
-              "label": "Un flacon de somnifères porte son nom."
+              "label": "Faire accuser Mina à cause de ses somnifères"
             },
             {
               "id": "motive_innocent_b",
-              "label": "Le scandale pouvait lui coûter sa fréquence."
+              "label": "Empêcher Sonia de faire perdre sa fréquence à la radio"
             },
             {
               "id": "motive_accident",
-              "label": "Cacher une erreur antérieure sans rapport direct avec l'incident"
+              "label": "Interrompre l'émission pour créer un scandale publicitaire"
             }
           ]
         },
@@ -387,15 +399,15 @@
             },
             {
               "id": "method_force",
-              "label": "Forcer directement l'accès principal puis dissimuler les traces"
+              "label": "Verser le produit dans la théière commune"
             },
             {
               "id": "method_complice",
-              "label": "Employer un complice extérieur après la fermeture"
+              "label": "Remplacer la tasse avant son entrée dans le studio"
             },
             {
               "id": "method_failure",
-              "label": "Exploiter une défaillance existante sans intervenir sur les lieux"
+              "label": "Injecter le sédatif dans le sachet d'infusion"
             }
           ]
         }

@@ -7,7 +7,7 @@
     "subtitle": "Le phare s'est éteint onze minutes. Assez pour qu'un bateau perde sa cargaison, pas assez pour parler de panne.",
     "location": "Phare de Keravel, Finistère",
     "incident": "Extinction volontaire d'un feu maritime",
-    "intro": "À 2h13, un caboteur signale l'extinction du phare. Le feu revient seul à 2h24. Aucun fusible n'a sauté et le groupe de secours n'a pas démarré. La mer isolait alors les trois personnes présentes sur l'île.",
+    "intro": "À 2 h 13, un caboteur signale l'extinction du phare. Le feu revient seul à 2 h 24. Aucun fusible n'a sauté et le groupe de secours n'a pas démarré. La mer isolait alors les trois personnes présentes sur l'île.",
     "victim": {
       "name": "Anaël Morvan",
       "description": "Gardien principal, 61 ans. Il répond personnellement de la continuité du signal."
@@ -20,7 +20,7 @@
         "occupation": "Technicien maritime",
         "relation": "Il entretient l'automate du feu.",
         "personality": "Pragmatique, agacé par les superstitions du lieu.",
-        "claimedAlibi": "Il dit avoir dormi dans l'annexe depuis 1h30.",
+        "claimedAlibi": "« J'ai dormi dans l'annexe depuis 1 h 30. »",
         "accent": "formal",
         "notes": [
           "Son entreprise risque de perdre le marché d'entretien."
@@ -33,7 +33,7 @@
         "occupation": "Biologiste",
         "relation": "Elle suit les oiseaux nocturnes autour du phare.",
         "personality": "Patiente, parle en images mais note tout à la minute.",
-        "claimedAlibi": "Elle observait la falaise nord avec sa caméra thermique.",
+        "claimedAlibi": "« J'observais la falaise nord avec ma caméra thermique. »",
         "accent": "nervous",
         "notes": [
           "Elle réclame depuis longtemps une réduction de la puissance lumineuse."
@@ -46,7 +46,7 @@
         "occupation": "Marin-pêcheur",
         "relation": "Son bateau était amarré dans l'anse.",
         "personality": "Brusque, protecteur envers son équipage.",
-        "claimedAlibi": "Il affirme avoir réparé seul un casier sur le pont.",
+        "claimedAlibi": "« J'ai réparé seul un casier sur le pont. »",
         "accent": "cold",
         "notes": [
           "Son frère commandait le caboteur touché par l'incident."
@@ -57,12 +57,18 @@
       {
         "id": "registre",
         "title": "Onze minutes dans le journal",
-        "source": "RELEVÉ HORODATÉ",
-        "summary": "La montre connectée de Malo enregistre quatre étages gravis à 2h05, alors qu'il se disait endormi.",
+        "source": "JOURNAL TECHNIQUE",
+        "summary": "La montre connectée de Malo enregistre quatre étages gravis à 2 h 05, alors qu'il se disait endormi.",
         "evidence": {
-          "kind": "note",
-          "body": "La montre connectée de Malo enregistre quatre étages gravis à 2h05, alors qu'il se disait endormi.",
-          "altText": "Note versée au dossier. La montre connectée de Malo enregistre quatre étages gravis à 2h05, alors qu'il se disait endormi."
+          "kind": "schedule",
+          "title": "JOURNAL TECHNIQUE",
+          "rows": [
+            {
+              "time": "20:06",
+              "label": "La montre connectée de Malo enregistre quatre étages gravis à 2 h 05, alors qu'il se disait endormi."
+            }
+          ],
+          "altText": "JOURNAL TECHNIQUE, 20:06. La montre connectée de Malo enregistre quatre étages gravis à 2 h 05, alors qu'il se disait endormi."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -86,7 +92,7 @@
       {
         "id": "trace",
         "title": "La marque de la pince",
-        "source": "ANALYSE DU LABORATOIRE",
+        "source": "ANALYSE MATÉRIELLE",
         "summary": "Le relais ajouté porte une micro-rayure triangulaire laissée par sa pince de sertissage personnelle.",
         "evidence": {
           "kind": "photo",
@@ -122,13 +128,16 @@
       {
         "id": "mobile",
         "title": "Le manifeste du caboteur",
-        "source": "DOSSIER CONFIDENTIEL",
+        "source": "DOCUMENT SAISI",
         "summary": "Le rapport commercial de son entreprise annonce qu'un incident majeur avant l'appel d'offres renforcerait leur dossier.",
         "evidence": {
-          "kind": "handwriting",
-          "body": "Le rapport commercial de son entreprise annonce qu'un incident majeur avant l'appel d'offres renforcerait leur dossier.",
-          "signature": "Jonas Le Guen",
-          "altText": "Note manuscrite. Le rapport commercial de son entreprise annonce qu'un incident majeur avant l'appel d'offres renforcerait leur dossier."
+          "kind": "document",
+          "title": "Le manifeste du caboteur",
+          "subtitle": "DOCUMENT SAISI",
+          "paragraphs": [
+            "Le rapport commercial de son entreprise annonce qu'un incident majeur avant l'appel d'offres renforcerait leur dossier."
+          ],
+          "altText": "Document intitulé Le manifeste du caboteur. Le rapport commercial de son entreprise annonce qu'un incident majeur avant l'appel d'offres renforcerait leur dossier."
         },
         "analysis": {
           "category": "BEHAVIORAL",
@@ -148,11 +157,11 @@
       {
         "id": "alibi_a",
         "title": "La radio d'Erell",
-        "source": "CONTRÔLE DES DÉPLACEMENTS",
+        "source": "ENREGISTREMENT VIDÉO",
         "summary": "La caméra thermique d'Erell la filme continûment sur la falaise, phare visible derrière elle.",
         "evidence": {
           "kind": "camera",
-          "location": "CONTRÔLE DES DÉPLACEMENTS",
+          "location": "ENREGISTREMENT VIDÉO",
           "frames": [
             {
               "time": "19:59",
@@ -177,12 +186,12 @@
       {
         "id": "fausse_piste",
         "title": "Les appels de Jonas",
-        "source": "PIÈCE SAISIE",
+        "source": "ÉLÉMENT À CHARGE",
         "summary": "Le journal de bord de Jonas mentionne « onze minutes noires » avant même le rapport officiel.",
         "evidence": {
           "kind": "document",
           "title": "Les appels de Jonas",
-          "subtitle": "PIÈCE SAISIE",
+          "subtitle": "ÉLÉMENT À CHARGE",
           "paragraphs": [
             "Le journal de bord de Jonas mentionne « onze minutes noires » avant même le rapport officiel."
           ],
@@ -206,20 +215,16 @@
       {
         "id": "resolution",
         "title": "Une panne qui n'en est pas une",
-        "source": "RECOUPEMENT INDÉPENDANT",
+        "source": "RECOUPEMENT FINAL",
         "summary": "L'heure provient de l'enregistrement radio automatique de son bateau, reçu en copie par les enquêteurs.",
         "evidence": {
-          "kind": "sms",
-          "contact": "Jonas Le Guen",
-          "channel": "sms",
-          "messages": [
-            {
-              "from": "them",
-              "text": "L'heure provient de l'enregistrement radio automatique de son bateau, reçu en copie par les enquêteurs.",
-              "time": "19:28"
-            }
+          "kind": "document",
+          "title": "Une panne qui n'en est pas une",
+          "subtitle": "RECOUPEMENT FINAL",
+          "paragraphs": [
+            "L'heure provient de l'enregistrement radio automatique de son bateau, reçu en copie par les enquêteurs."
           ],
-          "altText": "Message de Jonas Le Guen à 19:28. L'heure provient de l'enregistrement radio automatique de son bateau, reçu en copie par les enquêteurs."
+          "altText": "Document intitulé Une panne qui n'en est pas une. L'heure provient de l'enregistrement radio automatique de son bateau, reçu en copie par les enquêteurs."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -239,43 +244,43 @@
       {
         "id": "malo_alibi",
         "suspectId": "malo",
-        "question": "Quand avez-vous vu Anaël pour la dernière fois, Malo Quéré ?",
-        "answer": "Il dit avoir dormi dans l'annexe depuis 1h30. Pragmatique, agacé par les superstitions du lieu.",
+        "question": "Que faisiez-vous pendant la période concernée, Malo Quéré ?",
+        "answer": "« J'ai dormi dans l'annexe depuis 1 h 30. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
         "id": "malo_relation",
         "suspectId": "malo",
-        "question": "Qu'est-ce que cette affaire pouvait changer pour vous, Malo Quéré ?",
-        "answer": "Il entretient l'automate du feu. Son entreprise risque de perdre le marché d'entretien.",
+        "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, Malo Quéré ?",
+        "answer": "« J'aurais pu tirer profit de la situation. Je n'ai pourtant rien fait pour la provoquer. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "erell_alibi",
         "suspectId": "erell",
-        "question": "Décrivez vos déplacements sans sauter d'étape, Erell Bihan.",
-        "answer": "Elle observait la falaise nord avec sa caméra thermique. Patiente, parle en images mais note tout à la minute.",
+        "question": "Donnez votre emploi du temps précis, Erell Bihan.",
+        "answer": "« J'observais la falaise nord avec ma caméra thermique. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "erell_relation",
         "suspectId": "erell",
-        "question": "Pourquoi votre nom apparaît-il dans le dossier d'Anaël, Erell Bihan ?",
-        "answer": "Elle suit les oiseaux nocturnes autour du phare. Elle réclame depuis longtemps une réduction de la puissance lumineuse.",
+        "question": "Reconnaissez-vous avoir un intérêt personnel dans cette affaire, Erell Bihan ?",
+        "answer": "« Je redoutais les conséquences de cette affaire. Je ne l'ai jamais caché. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "jonas_alibi",
         "suspectId": "jonas",
-        "question": "Quand avez-vous quitté Phare de Keravel, Jonas Le Guen ?",
-        "answer": "Il affirme avoir réparé seul un casier sur le pont. Brusque, protecteur envers son équipage.",
+        "question": "Où étiez-vous au moment des faits, Jonas Le Guen ?",
+        "answer": "« J'ai réparé seul un casier sur le pont. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "jonas_relation",
         "suspectId": "jonas",
-        "question": "Aviez-vous une raison de redouter la décision d'Anaël, Jonas Le Guen ?",
-        "answer": "Son bateau était amarré dans l'anse. Son frère commandait le caboteur touché par l'incident.",
+        "question": "Cette situation pouvait-elle vous profiter, Jonas Le Guen ?",
+        "answer": "« Oui. Cette affaire pouvait avoir des conséquences pour moi, mais je n'ai rien provoqué. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
@@ -313,19 +318,19 @@
       {
         "time": "19:40",
         "text": "Le rapport commercial de son entreprise annonce qu'un incident majeur avant l'appel d'offres renforcerait leur dossier.",
-        "source": "DOSSIER CONFIDENTIEL",
+        "source": "DOCUMENT SAISI",
         "certainty": "CERTAIN"
       },
       {
         "time": "19:53",
-        "text": "Malo Quéré situe ici la fin de ses déplacements.",
-        "source": "Déposition",
+        "text": "Malo Quéré : « J'ai dormi dans l'annexe depuis 1 h 30. »",
+        "source": "Déclaration de Malo Quéré",
         "certainty": "REPORTED"
       },
       {
         "time": "20:06",
-        "text": "La montre connectée de Malo enregistre quatre étages gravis à 2h05, alors qu'il se disait endormi.",
-        "source": "RELEVÉ HORODATÉ",
+        "text": "La montre connectée de Malo enregistre quatre étages gravis à 2 h 05, alors qu'il se disait endormi.",
+        "source": "JOURNAL TECHNIQUE",
         "certainty": "CERTAIN"
       },
       {
@@ -372,15 +377,15 @@
             },
             {
               "id": "motive_innocent_a",
-              "label": "Elle réclame depuis longtemps une réduction de la puissance lumineuse."
+              "label": "Réduire la puissance du phare pour protéger les oiseaux"
             },
             {
               "id": "motive_innocent_b",
-              "label": "Son frère commandait le caboteur touché par l'incident."
+              "label": "Provoquer un incident contre le navire commandé par le frère de Jonas"
             },
             {
               "id": "motive_accident",
-              "label": "Cacher une erreur antérieure sans rapport direct avec l'incident"
+              "label": "Cacher une erreur d'entretien du groupe de secours"
             }
           ]
         },
@@ -396,15 +401,15 @@
             },
             {
               "id": "method_force",
-              "label": "Forcer directement l'accès principal puis dissimuler les traces"
+              "label": "Couper manuellement l'alimentation depuis le tableau principal"
             },
             {
               "id": "method_complice",
-              "label": "Employer un complice extérieur après la fermeture"
+              "label": "Neutraliser le groupe électrogène avant la nuit"
             },
             {
               "id": "method_failure",
-              "label": "Exploiter une défaillance existante sans intervenir sur les lieux"
+              "label": "Masquer la lampe avec un écran posé devant l'optique"
             }
           ]
         }
@@ -467,7 +472,7 @@
       }
     ],
     "reasoning": [
-      "La montre connectée de Malo enregistre quatre étages gravis à 2h05, alors qu'il se disait endormi. Cette donnée fragilise directement la version de Malo Quéré.",
+      "La montre connectée de Malo enregistre quatre étages gravis à 2 h 05, alors qu'il se disait endormi. Cette donnée fragilise directement la version de Malo Quéré.",
       "Le relais ajouté porte une micro-rayure triangulaire laissée par sa pince de sertissage personnelle. La trace relie le geste au procédé employé.",
       "Le rapport commercial de son entreprise annonce qu'un incident majeur avant l'appel d'offres renforcerait leur dossier. Le mobile repose donc sur un fait vérifiable.",
       "La caméra thermique d'Erell la filme continûment sur la falaise, phare visible derrière elle. De son côté, la principale autre piste ne résiste pas au recoupement.",
@@ -479,7 +484,7 @@
       {
         "title": "Ce qui trahit Malo Quéré",
         "steps": [
-          "La montre connectée de Malo enregistre quatre étages gravis à 2h05, alors qu'il se disait endormi.",
+          "La montre connectée de Malo enregistre quatre étages gravis à 2 h 05, alors qu'il se disait endormi.",
           "Le relais ajouté porte une micro-rayure triangulaire laissée par sa pince de sertissage personnelle.",
           "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]

@@ -20,7 +20,7 @@
         "occupation": "Chef machiniste",
         "relation": "Il a refusé de certifier le décor trop lourd.",
         "personality": "Bourru, loyal à son équipe, parle en charges et mesures.",
-        "claimedAlibi": "Il supervisait les cintres opposés avec deux techniciens.",
+        "claimedAlibi": "« Je supervisais les cintres opposés avec deux techniciens. »",
         "accent": "formal",
         "notes": [
           "L'accident confirme ses avertissements."
@@ -33,7 +33,7 @@
         "occupation": "Assistante scénographe",
         "relation": "Elle a construit la maquette et peint la lune.",
         "personality": "Inventive, nerveuse, touche tout en parlant.",
-        "claimedAlibi": "Elle dit avoir quitté le plateau avant la mise en tension.",
+        "claimedAlibi": "« J'ai quitté le plateau avant la mise en tension. »",
         "accent": "nervous",
         "notes": [
           "Édith présentait son travail comme le sien."
@@ -46,7 +46,7 @@
         "occupation": "Producteur",
         "relation": "Il assurait la tournée contre annulation.",
         "personality": "Aimable, calcule chaque phrase.",
-        "claimedAlibi": "Il recevait les coproducteurs dans le foyer vitré.",
+        "claimedAlibi": "« Je recevais les coproducteurs dans le foyer vitré. »",
         "accent": "cold",
         "notes": [
           "Une annulation lui rapporterait plus qu'une tournée déficitaire."
@@ -57,16 +57,18 @@
       {
         "id": "registre",
         "title": "Pia sur l'échelle",
-        "source": "RELEVÉ HORODATÉ",
-        "summary": "Une photo de répétition montre Pia sur l'échelle à 19h12, après son départ annoncé.",
+        "source": "ENREGISTREMENT VIDÉO",
+        "summary": "Une photo de répétition montre Pia sur l'échelle à 19 h 12, après son départ annoncé.",
         "evidence": {
-          "kind": "document",
-          "title": "Pia sur l'échelle",
-          "subtitle": "RELEVÉ HORODATÉ",
-          "paragraphs": [
-            "Une photo de répétition montre Pia sur l'échelle à 19h12, après son départ annoncé."
+          "kind": "camera",
+          "location": "ENREGISTREMENT VIDÉO",
+          "frames": [
+            {
+              "time": "21:02",
+              "text": "Une photo de répétition montre Pia sur l'échelle à 19 h 12, après son départ annoncé."
+            }
           ],
-          "altText": "Document intitulé Pia sur l'échelle. Une photo de répétition montre Pia sur l'échelle à 19h12, après son départ annoncé."
+          "altText": "Image enregistrée à 21:02. Une photo de répétition montre Pia sur l'échelle à 19 h 12, après son départ annoncé."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -90,13 +92,23 @@
       {
         "id": "trace",
         "title": "Les paillettes du câble",
-        "source": "ANALYSE DU LABORATOIRE",
+        "source": "ANALYSE MATÉRIELLE",
         "summary": "La peinture autour du câble contient ses paillettes expérimentales, absentes des pots communs.",
         "evidence": {
-          "kind": "handwriting",
-          "body": "La peinture autour du câble contient ses paillettes expérimentales, absentes des pots communs.",
-          "signature": "Pia Lenoir",
-          "altText": "Note manuscrite. La peinture autour du câble contient ses paillettes expérimentales, absentes des pots communs."
+          "kind": "photo",
+          "caption": "La peinture autour du câble contient ses paillettes expérimentales, absentes des pots communs.",
+          "meta": [
+            {
+              "label": "Heure",
+              "value": "20:36"
+            },
+            {
+              "label": "Pièce",
+              "value": "Les paillettes du câble"
+            }
+          ],
+          "altText": "Photographie. La peinture autour du câble contient ses paillettes expérimentales, absentes des pots communs.",
+          "tone": "cold"
         },
         "analysis": {
           "category": "TIMELINE",
@@ -116,20 +128,16 @@
       {
         "id": "mobile",
         "title": "Un dossier nommé Libération",
-        "source": "DOSSIER CONFIDENTIEL",
+        "source": "DOCUMENT SAISI",
         "summary": "Un dossier envoyé à une galerie revendique la lune sous son nom et annonce sa « libération » le soir de l'accident.",
         "evidence": {
-          "kind": "sms",
-          "contact": "Sacha Derval",
-          "channel": "sms",
-          "messages": [
-            {
-              "from": "them",
-              "text": "Un dossier envoyé à une galerie revendique la lune sous son nom et annonce sa « libération » le soir de l'accident.",
-              "time": "20:49"
-            }
+          "kind": "document",
+          "title": "Un dossier nommé Libération",
+          "subtitle": "DOCUMENT SAISI",
+          "paragraphs": [
+            "Un dossier envoyé à une galerie revendique la lune sous son nom et annonce sa « libération » le soir de l'accident."
           ],
-          "altText": "Message de Sacha Derval à 20:49. Un dossier envoyé à une galerie revendique la lune sous son nom et annonce sa « libération » le soir de l'accident."
+          "altText": "Document intitulé Un dossier nommé Libération. Un dossier envoyé à une galerie revendique la lune sous son nom et annonce sa « libération » le soir de l'accident."
         },
         "analysis": {
           "category": "BEHAVIORAL",
@@ -149,18 +157,16 @@
       {
         "id": "alibi_a",
         "title": "Le cintre opposé",
-        "source": "CONTRÔLE DES DÉPLACEMENTS",
+        "source": "ALIBI VÉRIFIÉ",
         "summary": "Le relevé de charge signé par Joël est filmé au cintre opposé pendant toute la retouche.",
         "evidence": {
-          "kind": "schedule",
-          "title": "CONTRÔLE DES DÉPLACEMENTS",
-          "rows": [
-            {
-              "time": "20:55",
-              "label": "Le relevé de charge signé par Joël est filmé au cintre opposé pendant toute la retouche."
-            }
+          "kind": "document",
+          "title": "Le cintre opposé",
+          "subtitle": "ALIBI VÉRIFIÉ",
+          "paragraphs": [
+            "Le relevé de charge signé par Joël est filmé au cintre opposé pendant toute la retouche."
           ],
-          "altText": "CONTRÔLE DES DÉPLACEMENTS, 20:55. Le relevé de charge signé par Joël est filmé au cintre opposé pendant toute la retouche."
+          "altText": "Document intitulé Le cintre opposé. Le relevé de charge signé par Joël est filmé au cintre opposé pendant toute la retouche."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -178,23 +184,16 @@
       {
         "id": "fausse_piste",
         "title": "La clause d'assurance",
-        "source": "PIÈCE SAISIE",
+        "source": "ÉLÉMENT À CHARGE",
         "summary": "La police d'assurance de Sacha double l'indemnité en cas d'accident avant première.",
         "evidence": {
-          "kind": "photo",
-          "caption": "La police d'assurance de Sacha double l'indemnité en cas d'accident avant première.",
-          "meta": [
-            {
-              "label": "Heure",
-              "value": "21:10"
-            },
-            {
-              "label": "Pièce",
-              "value": "La clause d'assurance"
-            }
+          "kind": "document",
+          "title": "La clause d'assurance",
+          "subtitle": "ÉLÉMENT À CHARGE",
+          "paragraphs": [
+            "La police d'assurance de Sacha double l'indemnité en cas d'accident avant première."
           ],
-          "altText": "Photographie. La police d'assurance de Sacha double l'indemnité en cas d'accident avant première.",
-          "tone": "cold"
+          "altText": "Document intitulé La clause d'assurance. La police d'assurance de Sacha double l'indemnité en cas d'accident avant première."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -214,16 +213,16 @@
       {
         "id": "resolution",
         "title": "La réunion dans le foyer",
-        "source": "RECOUPEMENT INDÉPENDANT",
+        "source": "RECOUPEMENT FINAL",
         "summary": "Le foyer vitré le montre en réunion continue et la clause avait été exigée par le théâtre, non par lui.",
         "evidence": {
-          "kind": "email",
-          "from": "RECOUPEMENT INDÉPENDANT",
-          "to": "Dossier d'enquête",
-          "subject": "La réunion dans le foyer",
-          "sentAt": "20:24",
-          "body": "Le foyer vitré le montre en réunion continue et la clause avait été exigée par le théâtre, non par lui.",
-          "altText": "Courriel intitulé La réunion dans le foyer. Le foyer vitré le montre en réunion continue et la clause avait été exigée par le théâtre, non par lui."
+          "kind": "document",
+          "title": "La réunion dans le foyer",
+          "subtitle": "RECOUPEMENT FINAL",
+          "paragraphs": [
+            "Le foyer vitré le montre en réunion continue et la clause avait été exigée par le théâtre, non par lui."
+          ],
+          "altText": "Document intitulé La réunion dans le foyer. Le foyer vitré le montre en réunion continue et la clause avait été exigée par le théâtre, non par lui."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -243,43 +242,43 @@
       {
         "id": "joel_alibi",
         "suspectId": "joel",
-        "question": "Quand avez-vous quitté Théâtre du Passage, Joël Garnier ?",
-        "answer": "Il supervisait les cintres opposés avec deux techniciens. Bourru, loyal à son équipe, parle en charges et mesures.",
+        "question": "Où étiez-vous au moment des faits, Joël Garnier ?",
+        "answer": "« Je supervisais les cintres opposés avec deux techniciens. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "joel_relation",
         "suspectId": "joel",
-        "question": "Quel désaccord vous opposait à Édith, Joël Garnier ?",
-        "answer": "Il a refusé de certifier le décor trop lourd. L'accident confirme ses avertissements.",
+        "question": "Cette affaire pouvait-elle vous affecter, Joël Garnier ?",
+        "answer": "« Oui. Cette affaire pouvait avoir des conséquences pour moi, mais je n'ai rien provoqué. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "pia_alibi",
         "suspectId": "pia",
-        "question": "Qui peut confirmer votre emploi du temps, Pia Lenoir ?",
-        "answer": "Elle dit avoir quitté le plateau avant la mise en tension. Inventive, nerveuse, touche tout en parlant.",
+        "question": "Que faisiez-vous pendant la période concernée, Pia Lenoir ?",
+        "answer": "« J'ai quitté le plateau avant la mise en tension. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
         "id": "pia_relation",
         "suspectId": "pia",
-        "question": "Que risquiez-vous si Édith allait au bout de sa décision, Pia Lenoir ?",
-        "answer": "Elle a construit la maquette et peint la lune. Édith présentait son travail comme le sien.",
+        "question": "Aviez-vous quelque chose à perdre, Pia Lenoir ?",
+        "answer": "« J'avais quelque chose à perdre. Cela ne suffit pas à faire de moi le coupable. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "sacha_alibi",
         "suspectId": "sacha",
-        "question": "Quel est votre dernier souvenir précis avant les faits, Sacha Derval ?",
-        "answer": "Il recevait les coproducteurs dans le foyer vitré. Aimable, calcule chaque phrase.",
+        "question": "Donnez votre emploi du temps précis, Sacha Derval.",
+        "answer": "« Je recevais les coproducteurs dans le foyer vitré. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "sacha_relation",
         "suspectId": "sacha",
-        "question": "Qu'est-ce que cette affaire pouvait changer pour vous, Sacha Derval ?",
-        "answer": "Il assurait la tournée contre annulation. Une annulation lui rapporterait plus qu'une tournée déficitaire.",
+        "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, Sacha Derval ?",
+        "answer": "« Mon intérêt personnel est réel. Il faut encore prouver que j'ai agi. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
@@ -317,19 +316,19 @@
       {
         "time": "20:36",
         "text": "Un dossier envoyé à une galerie revendique la lune sous son nom et annonce sa « libération » le soir de l'accident.",
-        "source": "DOSSIER CONFIDENTIEL",
+        "source": "DOCUMENT SAISI",
         "certainty": "CERTAIN"
       },
       {
         "time": "20:49",
-        "text": "Pia Lenoir situe ici la fin de ses déplacements.",
-        "source": "Déposition",
+        "text": "Pia Lenoir : « J'ai quitté le plateau avant la mise en tension. »",
+        "source": "Déclaration de Pia Lenoir",
         "certainty": "REPORTED"
       },
       {
         "time": "21:02",
-        "text": "Une photo de répétition montre Pia sur l'échelle à 19h12, après son départ annoncé.",
-        "source": "RELEVÉ HORODATÉ",
+        "text": "Une photo de répétition montre Pia sur l'échelle à 19 h 12, après son départ annoncé.",
+        "source": "ENREGISTREMENT VIDÉO",
         "certainty": "CERTAIN"
       },
       {
@@ -376,15 +375,15 @@
             },
             {
               "id": "motive_innocent_a",
-              "label": "L'accident confirme ses avertissements."
+              "label": "Faire respecter les avertissements du chef machiniste"
             },
             {
               "id": "motive_innocent_b",
-              "label": "Une annulation lui rapporterait plus qu'une tournée déficitaire."
+              "label": "Toucher l'indemnité prévue en cas d'annulation"
             },
             {
               "id": "motive_accident",
-              "label": "Cacher une erreur antérieure sans rapport direct avec l'incident"
+              "label": "Retarder une tournée dont le décor n'était pas prêt"
             }
           ]
         },
@@ -400,15 +399,15 @@
             },
             {
               "id": "method_force",
-              "label": "Forcer directement l'accès principal puis dissimuler les traces"
+              "label": "Desserrer l'ancrage du câble dans les cintres"
             },
             {
               "id": "method_complice",
-              "label": "Employer un complice extérieur après la fermeture"
+              "label": "Surcharger la lune pour rompre un câble intact"
             },
             {
               "id": "method_failure",
-              "label": "Exploiter une défaillance existante sans intervenir sur les lieux"
+              "label": "Sectionner le câble pendant la mise en tension"
             }
           ]
         }
@@ -471,7 +470,7 @@
       }
     ],
     "reasoning": [
-      "Une photo de répétition montre Pia sur l'échelle à 19h12, après son départ annoncé. Cette donnée fragilise directement la version de Pia Lenoir.",
+      "Une photo de répétition montre Pia sur l'échelle à 19 h 12, après son départ annoncé. Cette donnée fragilise directement la version de Pia Lenoir.",
       "La peinture autour du câble contient ses paillettes expérimentales, absentes des pots communs. La trace relie le geste au procédé employé.",
       "Un dossier envoyé à une galerie revendique la lune sous son nom et annonce sa « libération » le soir de l'accident. Le mobile repose donc sur un fait vérifiable.",
       "Le relevé de charge signé par Joël est filmé au cintre opposé pendant toute la retouche. De son côté, la principale autre piste ne résiste pas au recoupement.",
@@ -483,7 +482,7 @@
       {
         "title": "Ce qui trahit Pia Lenoir",
         "steps": [
-          "Une photo de répétition montre Pia sur l'échelle à 19h12, après son départ annoncé.",
+          "Une photo de répétition montre Pia sur l'échelle à 19 h 12, après son départ annoncé.",
           "La peinture autour du câble contient ses paillettes expérimentales, absentes des pots communs.",
           "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]

@@ -20,7 +20,7 @@
         "occupation": "Ingénieur climatique",
         "relation": "Il programme l'irrigation et la ventilation.",
         "personality": "Laconique, fait confiance aux courbes plus qu'aux témoins.",
-        "claimedAlibi": "Il surveillait les systèmes depuis chez lui.",
+        "claimedAlibi": "« Je surveillais les systèmes depuis chez moi. »",
         "accent": "formal",
         "notes": [
           "Son prototype de brumisation venait d'être refusé."
@@ -33,7 +33,7 @@
         "occupation": "Pépiniériste partenaire",
         "relation": "Elle fournit la majorité des plants.",
         "personality": "Chaleureuse, commerciale, évite les noms latins.",
-        "claimedAlibi": "Elle était sur la route vers Perpignan.",
+        "claimedAlibi": "« J'étais sur la route vers Perpignan. »",
         "accent": "nervous",
         "notes": [
           "Une épidémie ruinerait son concurrent."
@@ -46,7 +46,7 @@
         "occupation": "Chercheuse rivale",
         "relation": "Elle conteste la variété annoncée par Célia.",
         "personality": "Froide, méthodique, demande à voir chaque donnée brute.",
-        "claimedAlibi": "Elle travaillait dans la serre A jusqu'à 22h.",
+        "claimedAlibi": "« Je travaillais dans la serre A jusqu'à 22 h. »",
         "accent": "cold",
         "notes": [
           "La plante intacte valide précisément sa propre hypothèse."
@@ -57,12 +57,18 @@
       {
         "id": "registre",
         "title": "Une entrée dans la serre C",
-        "source": "JOURNAL D'ACCÈS",
-        "summary": "Le registre de vanne montre une commande manuelle depuis la tablette de Nora à 22h18 après son départ déclaré.",
+        "source": "JOURNAL TECHNIQUE",
+        "summary": "Le registre de vanne montre une commande manuelle depuis la tablette de Nora à 22 h 18 après son départ déclaré.",
         "evidence": {
-          "kind": "note",
-          "body": "Le registre de vanne montre une commande manuelle depuis la tablette de Nora à 22h18 après son départ déclaré.",
-          "altText": "Note versée au dossier. Le registre de vanne montre une commande manuelle depuis la tablette de Nora à 22h18 après son départ déclaré."
+          "kind": "schedule",
+          "title": "JOURNAL TECHNIQUE",
+          "rows": [
+            {
+              "time": "20:41",
+              "label": "Le registre de vanne montre une commande manuelle depuis la tablette de Nora à 22 h 18 après son départ déclaré."
+            }
+          ],
+          "altText": "JOURNAL TECHNIQUE, 20:41. Le registre de vanne montre une commande manuelle depuis la tablette de Nora à 22 h 18 après son départ déclaré."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -86,23 +92,16 @@
       {
         "id": "trace",
         "title": "Le collier de la survivante",
-        "source": "CONSTAT PHOTOGRAPHIQUE",
+        "source": "ANALYSE MATÉRIELLE",
         "summary": "La plante intacte porte un collier d'isolement imprimé avec le polymère du laboratoire de Nora.",
         "evidence": {
-          "kind": "photo",
-          "caption": "La plante intacte porte un collier d'isolement imprimé avec le polymère du laboratoire de Nora.",
-          "meta": [
-            {
-              "label": "Heure",
-              "value": "20:15"
-            },
-            {
-              "label": "Pièce",
-              "value": "Le collier de la survivante"
-            }
+          "kind": "document",
+          "title": "Le collier de la survivante",
+          "subtitle": "ANALYSE MATÉRIELLE",
+          "paragraphs": [
+            "La plante intacte porte un collier d'isolement imprimé avec le polymère du laboratoire de Nora."
           ],
-          "altText": "Photographie. La plante intacte porte un collier d'isolement imprimé avec le polymère du laboratoire de Nora.",
-          "tone": "cold"
+          "altText": "Document intitulé Le collier de la survivante. La plante intacte porte un collier d'isolement imprimé avec le polymère du laboratoire de Nora."
         },
         "analysis": {
           "category": "TIMELINE",
@@ -122,13 +121,16 @@
       {
         "id": "mobile",
         "title": "Le brevet concurrent",
-        "source": "NOTE PERSONNELLE",
+        "source": "DOCUMENT SAISI",
         "summary": "Son article refusé devient publiable uniquement si la variété de Célia est discréditée.",
         "evidence": {
-          "kind": "handwriting",
-          "body": "Son article refusé devient publiable uniquement si la variété de Célia est discréditée.",
-          "signature": "Nora Saïd",
-          "altText": "Note manuscrite. Son article refusé devient publiable uniquement si la variété de Célia est discréditée."
+          "kind": "document",
+          "title": "Le brevet concurrent",
+          "subtitle": "DOCUMENT SAISI",
+          "paragraphs": [
+            "Son article refusé devient publiable uniquement si la variété de Célia est discréditée."
+          ],
+          "altText": "Document intitulé Le brevet concurrent. Son article refusé devient publiable uniquement si la variété de Célia est discréditée."
         },
         "analysis": {
           "category": "BEHAVIORAL",
@@ -151,15 +153,13 @@
         "source": "ALIBI VÉRIFIÉ",
         "summary": "La télémétrie signée du domicile de Tao prouve qu'il observait sans pouvoir commander le circuit secondaire déconnecté.",
         "evidence": {
-          "kind": "camera",
-          "location": "ALIBI VÉRIFIÉ",
-          "frames": [
-            {
-              "time": "20:34",
-              "text": "La télémétrie signée du domicile de Tao prouve qu'il observait sans pouvoir commander le circuit secondaire déconnecté."
-            }
+          "kind": "document",
+          "title": "Le relevé de Tao",
+          "subtitle": "ALIBI VÉRIFIÉ",
+          "paragraphs": [
+            "La télémétrie signée du domicile de Tao prouve qu'il observait sans pouvoir commander le circuit secondaire déconnecté."
           ],
-          "altText": "Image enregistrée à 20:34. La télémétrie signée du domicile de Tao prouve qu'il observait sans pouvoir commander le circuit secondaire déconnecté."
+          "altText": "Document intitulé Le relevé de Tao. La télémétrie signée du domicile de Tao prouve qu'il observait sans pouvoir commander le circuit secondaire déconnecté."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -206,20 +206,16 @@
       {
         "id": "resolution",
         "title": "Pourquoi une orchidée a résisté",
-        "source": "ENREGISTREMENT TÉMOIN",
+        "source": "RECOUPEMENT FINAL",
         "summary": "Le bouchon témoin du bidon est scellé et son péage la place à 140 kilomètres pendant l'injection.",
         "evidence": {
-          "kind": "sms",
-          "contact": "Nora Saïd",
-          "channel": "sms",
-          "messages": [
-            {
-              "from": "them",
-              "text": "Le bouchon témoin du bidon est scellé et son péage la place à 140 kilomètres pendant l'injection.",
-              "time": "20:03"
-            }
+          "kind": "document",
+          "title": "Pourquoi une orchidée a résisté",
+          "subtitle": "RECOUPEMENT FINAL",
+          "paragraphs": [
+            "Le bouchon témoin du bidon est scellé et son péage la place à 140 kilomètres pendant l'injection."
           ],
-          "altText": "Message de Nora Saïd à 20:03. Le bouchon témoin du bidon est scellé et son péage la place à 140 kilomètres pendant l'injection."
+          "altText": "Document intitulé Pourquoi une orchidée a résisté. Le bouchon témoin du bidon est scellé et son péage la place à 140 kilomètres pendant l'injection."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -239,43 +235,43 @@
       {
         "id": "tao_alibi",
         "suspectId": "tao",
-        "question": "Votre version comporte-t-elle un moment sans témoin, Tao Ménard ?",
-        "answer": "Il surveillait les systèmes depuis chez lui. Laconique, fait confiance aux courbes plus qu'aux témoins.",
+        "question": "Où étiez-vous au moment des faits, Tao Ménard ?",
+        "answer": "« Je surveillais les systèmes depuis chez moi. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "tao_relation",
         "suspectId": "tao",
-        "question": "Quel désaccord vous opposait à Dr, Tao Ménard ?",
-        "answer": "Il programme l'irrigation et la ventilation. Son prototype de brumisation venait d'être refusé.",
+        "question": "Cette affaire pouvait-elle vous affecter, Tao Ménard ?",
+        "answer": "« Je comprends les soupçons. Ma situation me donnait un mobile possible, pas une preuve. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "gaelle_alibi",
         "suspectId": "gaelle",
-        "question": "Quand avez-vous vu Dr pour la dernière fois, Gaëlle Rios ?",
-        "answer": "Elle était sur la route vers Perpignan. Chaleureuse, commerciale, évite les noms latins.",
+        "question": "Que faisiez-vous pendant la période concernée, Gaëlle Rios ?",
+        "answer": "« J'étais sur la route vers Perpignan. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "gaelle_relation",
         "suspectId": "gaelle",
-        "question": "Que risquiez-vous si Dr allait au bout de sa décision, Gaëlle Rios ?",
-        "answer": "Elle fournit la majorité des plants. Une épidémie ruinerait son concurrent.",
+        "question": "Aviez-vous quelque chose à perdre, Gaëlle Rios ?",
+        "answer": "« J'aurais pu tirer profit de la situation. Je n'ai pourtant rien fait pour la provoquer. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "nora_alibi",
         "suspectId": "nora",
-        "question": "Décrivez vos déplacements sans sauter d'étape, Nora Saïd.",
-        "answer": "Elle travaillait dans la serre A jusqu'à 22h. Froide, méthodique, demande à voir chaque donnée brute.",
+        "question": "Donnez votre emploi du temps précis, Nora Saïd.",
+        "answer": "« Je travaillais dans la serre A jusqu'à 22 h. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
         "id": "nora_relation",
         "suspectId": "nora",
-        "question": "Qu'est-ce que cette affaire pouvait changer pour vous, Nora Saïd ?",
-        "answer": "Elle conteste la variété annoncée par Célia. La plante intacte valide précisément sa propre hypothèse.",
+        "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, Nora Saïd ?",
+        "answer": "« Je redoutais les conséquences de cette affaire. Je ne l'ai jamais caché. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
@@ -313,19 +309,19 @@
       {
         "time": "20:15",
         "text": "Son article refusé devient publiable uniquement si la variété de Célia est discréditée.",
-        "source": "NOTE PERSONNELLE",
+        "source": "DOCUMENT SAISI",
         "certainty": "CERTAIN"
       },
       {
         "time": "20:28",
-        "text": "Nora Saïd situe ici la fin de ses déplacements.",
-        "source": "Déposition",
+        "text": "Nora Saïd : « Je travaillais dans la serre A jusqu'à 22 h. »",
+        "source": "Déclaration de Nora Saïd",
         "certainty": "REPORTED"
       },
       {
         "time": "20:41",
-        "text": "Le registre de vanne montre une commande manuelle depuis la tablette de Nora à 22h18 après son départ déclaré.",
-        "source": "JOURNAL D'ACCÈS",
+        "text": "Le registre de vanne montre une commande manuelle depuis la tablette de Nora à 22 h 18 après son départ déclaré.",
+        "source": "JOURNAL TECHNIQUE",
         "certainty": "CERTAIN"
       },
       {
@@ -372,15 +368,15 @@
             },
             {
               "id": "motive_innocent_a",
-              "label": "Son prototype de brumisation venait d'être refusé."
+              "label": "Saboter l'expérience rivale pour sauver un brevet refusé"
             },
             {
               "id": "motive_innocent_b",
-              "label": "Une épidémie ruinerait son concurrent."
+              "label": "Provoquer une épidémie chez un concurrent horticole"
             },
             {
               "id": "motive_accident",
-              "label": "Cacher une erreur antérieure sans rapport direct avec l'incident"
+              "label": "Empêcher la publication d'une erreur d'étiquetage"
             }
           ]
         },
@@ -396,15 +392,15 @@
             },
             {
               "id": "method_force",
-              "label": "Forcer directement l'accès principal puis dissimuler les traces"
+              "label": "Faire chuter la température de toute la serre pendant la nuit"
             },
             {
               "id": "method_complice",
-              "label": "Employer un complice extérieur après la fermeture"
+              "label": "Contaminer l'eau du réservoir principal"
             },
             {
               "id": "method_failure",
-              "label": "Exploiter une défaillance existante sans intervenir sur les lieux"
+              "label": "Pulvériser directement un herbicide sur les orchidées"
             }
           ]
         }
@@ -467,7 +463,7 @@
       }
     ],
     "reasoning": [
-      "Le registre de vanne montre une commande manuelle depuis la tablette de Nora à 22h18 après son départ déclaré. Cette donnée fragilise directement la version de Nora Saïd.",
+      "Le registre de vanne montre une commande manuelle depuis la tablette de Nora à 22 h 18 après son départ déclaré. Cette donnée fragilise directement la version de Nora Saïd.",
       "La plante intacte porte un collier d'isolement imprimé avec le polymère du laboratoire de Nora. La trace relie le geste au procédé employé.",
       "Son article refusé devient publiable uniquement si la variété de Célia est discréditée. Le mobile repose donc sur un fait vérifiable.",
       "La télémétrie signée du domicile de Tao prouve qu'il observait sans pouvoir commander le circuit secondaire déconnecté. De son côté, la principale autre piste ne résiste pas au recoupement.",
@@ -479,7 +475,7 @@
       {
         "title": "Ce qui trahit Nora Saïd",
         "steps": [
-          "Le registre de vanne montre une commande manuelle depuis la tablette de Nora à 22h18 après son départ déclaré.",
+          "Le registre de vanne montre une commande manuelle depuis la tablette de Nora à 22 h 18 après son départ déclaré.",
           "La plante intacte porte un collier d'isolement imprimé avec le polymère du laboratoire de Nora.",
           "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]

@@ -20,7 +20,7 @@
         "occupation": "Ancien contremaître",
         "relation": "Il travaillait sur le site l'année concernée.",
         "personality": "Lent, digne, choisit ce qu'il oublie.",
-        "claimedAlibi": "Il guidait un groupe scolaire en surface.",
+        "claimedAlibi": "« Je guidais un groupe scolaire en surface. »",
         "accent": "formal",
         "notes": [
           "Les documents pouvaient engager sa responsabilité."
@@ -33,7 +33,7 @@
         "occupation": "Conservatrice",
         "relation": "Elle règle l'humidité des galeries.",
         "personality": "Méthodique, protectrice envers les collections.",
-        "claimedAlibi": "Elle affirme n'avoir ouvert aucune caisse ce jour-là.",
+        "claimedAlibi": "« Je n'ai ouvert aucune caisse ce jour-là. »",
         "accent": "nervous",
         "notes": [
           "Son poste serait menacé par une défaillance climatique."
@@ -46,7 +46,7 @@
         "occupation": "Juriste associatif",
         "relation": "Il finance la recherche d'Éva.",
         "personality": "Combatif, impatient, photographie tous les bordereaux.",
-        "claimedAlibi": "Il travaillait au tribunal de Metz.",
+        "claimedAlibi": "« Je travaillais au tribunal de Metz. »",
         "accent": "cold",
         "notes": [
           "La disparition des preuves ruine son procès."
@@ -57,18 +57,18 @@
       {
         "id": "registre",
         "title": "La ronde dans la galerie",
-        "source": "JOURNAL D'ACCÈS",
+        "source": "ENREGISTREMENT VIDÉO",
         "summary": "Une photo du groupe scolaire reflète Gilles descendant seul vers la galerie pendant la pause.",
         "evidence": {
-          "kind": "schedule",
-          "title": "JOURNAL D'ACCÈS",
-          "rows": [
+          "kind": "camera",
+          "location": "ENREGISTREMENT VIDÉO",
+          "frames": [
             {
               "time": "21:03",
-              "label": "Une photo du groupe scolaire reflète Gilles descendant seul vers la galerie pendant la pause."
+              "text": "Une photo du groupe scolaire reflète Gilles descendant seul vers la galerie pendant la pause."
             }
           ],
-          "altText": "JOURNAL D'ACCÈS, 21:03. Une photo du groupe scolaire reflète Gilles descendant seul vers la galerie pendant la pause."
+          "altText": "Image enregistrée à 21:03. Une photo du groupe scolaire reflète Gilles descendant seul vers la galerie pendant la pause."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -92,12 +92,12 @@
       {
         "id": "trace",
         "title": "Le sel du garage",
-        "source": "CONSTAT PHOTOGRAPHIQUE",
+        "source": "ANALYSE MATÉRIELLE",
         "summary": "Le sel utilisé contient un antiagglomérant réservé aux sacs de déneigement stockés dans son garage.",
         "evidence": {
           "kind": "document",
           "title": "Le sel du garage",
-          "subtitle": "CONSTAT PHOTOGRAPHIQUE",
+          "subtitle": "ANALYSE MATÉRIELLE",
           "paragraphs": [
             "Le sel utilisé contient un antiagglomérant réservé aux sacs de déneigement stockés dans son garage."
           ],
@@ -121,12 +121,16 @@
       {
         "id": "mobile",
         "title": "L'année à faire disparaître",
-        "source": "NOTE PERSONNELLE",
+        "source": "DOCUMENT SAISI",
         "summary": "Une copie partielle du registre porte sa signature sous des mesures réécrites après l'accident.",
         "evidence": {
-          "kind": "note",
-          "body": "Une copie partielle du registre porte sa signature sous des mesures réécrites après l'accident.",
-          "altText": "Note versée au dossier. Une copie partielle du registre porte sa signature sous des mesures réécrites après l'accident."
+          "kind": "document",
+          "title": "L'année à faire disparaître",
+          "subtitle": "DOCUMENT SAISI",
+          "paragraphs": [
+            "Une copie partielle du registre porte sa signature sous des mesures réécrites après l'accident."
+          ],
+          "altText": "Document intitulé L'année à faire disparaître. Une copie partielle du registre porte sa signature sous des mesures réécrites après l'accident."
         },
         "analysis": {
           "category": "BEHAVIORAL",
@@ -149,13 +153,13 @@
         "source": "ALIBI VÉRIFIÉ",
         "summary": "Les journaux du tribunal et une audience enregistrée placent Sofiane à Metz.",
         "evidence": {
-          "kind": "email",
-          "from": "ALIBI VÉRIFIÉ",
-          "to": "Dossier d'enquête",
-          "subject": "Mara devant les capteurs",
-          "sentAt": "21:03",
-          "body": "Les journaux du tribunal et une audience enregistrée placent Sofiane à Metz.",
-          "altText": "Courriel intitulé Mara devant les capteurs. Les journaux du tribunal et une audience enregistrée placent Sofiane à Metz."
+          "kind": "document",
+          "title": "Mara devant les capteurs",
+          "subtitle": "ALIBI VÉRIFIÉ",
+          "paragraphs": [
+            "Les journaux du tribunal et une audience enregistrée placent Sofiane à Metz."
+          ],
+          "altText": "Document intitulé Mara devant les capteurs. Les journaux du tribunal et une audience enregistrée placent Sofiane à Metz."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -176,20 +180,13 @@
         "source": "ÉLÉMENT À CHARGE",
         "summary": "Mara avait désactivé l'alarme d'humidité de la caisse la semaine précédente.",
         "evidence": {
-          "kind": "photo",
-          "caption": "Mara avait désactivé l'alarme d'humidité de la caisse la semaine précédente.",
-          "meta": [
-            {
-              "label": "Heure",
-              "value": "21:11"
-            },
-            {
-              "label": "Pièce",
-              "value": "La bouteille de Sofiane"
-            }
+          "kind": "document",
+          "title": "La bouteille de Sofiane",
+          "subtitle": "ÉLÉMENT À CHARGE",
+          "paragraphs": [
+            "Mara avait désactivé l'alarme d'humidité de la caisse la semaine précédente."
           ],
-          "altText": "Photographie. Mara avait désactivé l'alarme d'humidité de la caisse la semaine précédente.",
-          "tone": "cold"
+          "altText": "Document intitulé La bouteille de Sofiane. Mara avait désactivé l'alarme d'humidité de la caisse la semaine précédente."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -209,18 +206,16 @@
       {
         "id": "resolution",
         "title": "Une fuite née dans la caisse",
-        "source": "ENREGISTREMENT TÉMOIN",
+        "source": "RECOUPEMENT FINAL",
         "summary": "Elle avait remplacé le capteur par un modèle autonome dont les données prouvent que seul l'intérieur de la boîte s'est humidifié.",
         "evidence": {
-          "kind": "camera",
-          "location": "ENREGISTREMENT TÉMOIN",
-          "frames": [
-            {
-              "time": "20:25",
-              "text": "Elle avait remplacé le capteur par un modèle autonome dont les données prouvent que seul l'intérieur de la boîte s'est humidifié."
-            }
+          "kind": "document",
+          "title": "Une fuite née dans la caisse",
+          "subtitle": "RECOUPEMENT FINAL",
+          "paragraphs": [
+            "Elle avait remplacé le capteur par un modèle autonome dont les données prouvent que seul l'intérieur de la boîte s'est humidifié."
           ],
-          "altText": "Image enregistrée à 20:25. Elle avait remplacé le capteur par un modèle autonome dont les données prouvent que seul l'intérieur de la boîte s'est humidifié."
+          "altText": "Document intitulé Une fuite née dans la caisse. Elle avait remplacé le capteur par un modèle autonome dont les données prouvent que seul l'intérieur de la boîte s'est humidifié."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -240,43 +235,43 @@
       {
         "id": "gilles_alibi",
         "suspectId": "gilles",
-        "question": "Qui peut confirmer votre emploi du temps, Gilles Roth ?",
-        "answer": "Il guidait un groupe scolaire en surface. Lent, digne, choisit ce qu'il oublie.",
+        "question": "Que faisiez-vous pendant la période concernée, Gilles Roth ?",
+        "answer": "« Je guidais un groupe scolaire en surface. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
         "id": "gilles_relation",
         "suspectId": "gilles",
-        "question": "Qu'est-ce que cette affaire pouvait changer pour vous, Gilles Roth ?",
-        "answer": "Il travaillait sur le site l'année concernée. Les documents pouvaient engager sa responsabilité.",
+        "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, Gilles Roth ?",
+        "answer": "« J'avais quelque chose à perdre. Cela ne suffit pas à faire de moi le coupable. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "mara_alibi",
         "suspectId": "mara",
-        "question": "Quel est votre dernier souvenir précis avant les faits, Mara Klein ?",
-        "answer": "Elle affirme n'avoir ouvert aucune caisse ce jour-là. Méthodique, protectrice envers les collections.",
+        "question": "Donnez votre emploi du temps précis, Mara Klein.",
+        "answer": "« Je n'ai ouvert aucune caisse ce jour-là. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "mara_relation",
         "suspectId": "mara",
-        "question": "Pourquoi votre nom apparaît-il dans le dossier d'Éva, Mara Klein ?",
-        "answer": "Elle règle l'humidité des galeries. Son poste serait menacé par une défaillance climatique.",
+        "question": "Reconnaissez-vous avoir un intérêt personnel dans cette affaire, Mara Klein ?",
+        "answer": "« Mon intérêt personnel est réel. Il faut encore prouver que j'ai agi. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "sofiane_alibi",
         "suspectId": "sofiane",
-        "question": "Votre version comporte-t-elle un moment sans témoin, Sofiane Clerc ?",
-        "answer": "Il travaillait au tribunal de Metz. Combatif, impatient, photographie tous les bordereaux.",
+        "question": "Où étiez-vous au moment des faits, Sofiane Clerc ?",
+        "answer": "« Je travaillais au tribunal de Metz. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "sofiane_relation",
         "suspectId": "sofiane",
-        "question": "Aviez-vous une raison de redouter la décision d'Éva, Sofiane Clerc ?",
-        "answer": "Il finance la recherche d'Éva. La disparition des preuves ruine son procès.",
+        "question": "Cette situation pouvait-elle vous profiter, Sofiane Clerc ?",
+        "answer": "« Je comprends les soupçons. Ma situation me donnait un mobile possible, pas une preuve. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
@@ -314,19 +309,19 @@
       {
         "time": "20:37",
         "text": "Une copie partielle du registre porte sa signature sous des mesures réécrites après l'accident.",
-        "source": "NOTE PERSONNELLE",
+        "source": "DOCUMENT SAISI",
         "certainty": "CERTAIN"
       },
       {
         "time": "20:50",
-        "text": "Gilles Roth situe ici la fin de ses déplacements.",
-        "source": "Déposition",
+        "text": "Gilles Roth : « Je guidais un groupe scolaire en surface. »",
+        "source": "Déclaration de Gilles Roth",
         "certainty": "REPORTED"
       },
       {
         "time": "21:03",
         "text": "Une photo du groupe scolaire reflète Gilles descendant seul vers la galerie pendant la pause.",
-        "source": "JOURNAL D'ACCÈS",
+        "source": "ENREGISTREMENT VIDÉO",
         "certainty": "CERTAIN"
       },
       {
@@ -373,15 +368,15 @@
             },
             {
               "id": "motive_innocent_a",
-              "label": "Son poste serait menacé par une défaillance climatique."
+              "label": "Cacher une panne du système de contrôle d'humidité"
             },
             {
               "id": "motive_innocent_b",
-              "label": "La disparition des preuves ruine son procès."
+              "label": "Détruire des preuves utiles au procès de Sofiane"
             },
             {
               "id": "motive_accident",
-              "label": "Cacher une erreur antérieure sans rapport direct avec l'incident"
+              "label": "Faire fermer les archives souterraines jugées dangereuses"
             }
           ]
         },
@@ -397,15 +392,15 @@
             },
             {
               "id": "method_force",
-              "label": "Forcer directement l'accès principal puis dissimuler les traces"
+              "label": "Verser de l'eau dans la caisse avant sa descente"
             },
             {
               "id": "method_complice",
-              "label": "Employer un complice extérieur après la fermeture"
+              "label": "Provoquer une fuite dans la conduite au-dessus des rayonnages"
             },
             {
               "id": "method_failure",
-              "label": "Exploiter une défaillance existante sans intervenir sur les lieux"
+              "label": "Désactiver les capteurs puis arroser toute la galerie"
             }
           ]
         }

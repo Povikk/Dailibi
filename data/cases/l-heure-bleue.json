@@ -7,7 +7,7 @@
     "subtitle": "À l'ouverture du musée, le tableau est toujours là, mais ce n'est plus le même.",
     "location": "Musée des Beaux-Arts, Rouen",
     "incident": "Substitution d'un tableau restauré par une copie",
-    "intro": "À 7h40, Agnès Villon retire la toile de sa réserve climatique et remarque une craquelure qui n'existait pas. Le cadre, les scellés et l'alarme sont intacts. Trois personnes ont travaillé dans l'aile fermée la veille.",
+    "intro": "À 7 h 40, Agnès Villon retire la toile de sa réserve climatique et remarque une craquelure qui n'existait pas. Le cadre, les scellés et l'alarme sont intacts. Trois personnes ont travaillé dans l'aile fermée la veille.",
     "victim": {
       "name": "Agnès Villon",
       "description": "Conservatrice, 52 ans. Elle devait présenter le tableau restauré à la presse au matin."
@@ -20,7 +20,7 @@
         "occupation": "Restauratrice",
         "relation": "Elle a passé quatre mois sur la toile.",
         "personality": "Précise, presque tendre lorsqu'elle parle des pigments.",
-        "claimedAlibi": "Elle dit avoir quitté l'atelier à 19h10 après avoir posé les scellés.",
+        "claimedAlibi": "« J'ai quitté l'atelier à 19 h 10 après avoir posé les scellés. »",
         "accent": "formal",
         "notes": [
           "Sa demande de crédit vient d'être refusée."
@@ -33,7 +33,7 @@
         "occupation": "Régisseur",
         "relation": "Il contrôle les clés et les transports d'œuvres.",
         "personality": "Méthodique, vexé qu'on questionne ses procédures.",
-        "claimedAlibi": "Il affirme avoir inventorié les cadres au sous-sol jusqu'à 20h.",
+        "claimedAlibi": "« J'ai inventorié les cadres au sous-sol jusqu'à 20 h. »",
         "accent": "nervous",
         "notes": [
           "Il conteste depuis des mois le budget de restauration."
@@ -46,7 +46,7 @@
         "occupation": "Doctorante en histoire de l'art",
         "relation": "Elle prépare le catalogue raisonné du peintre.",
         "personality": "Enthousiaste, digressive, excellente mémoire visuelle.",
-        "claimedAlibi": "Elle travaillait à la bibliothèque, visible du gardien.",
+        "claimedAlibi": "« Je travaillais à la bibliothèque, visible du gardien. »",
         "accent": "cold",
         "notes": [
           "Elle avait publiquement douté de l'attribution du tableau."
@@ -57,18 +57,18 @@
       {
         "id": "registre",
         "title": "Le badge après la fermeture",
-        "source": "JOURNAL D'ACCÈS",
-        "summary": "Le capteur hygrométrique de l'atelier enregistre une ouverture à 20h26 avec le badge d'Iris, bien après son départ déclaré.",
+        "source": "JOURNAL TECHNIQUE",
+        "summary": "Le capteur hygrométrique de l'atelier enregistre une ouverture à 20 h 26 avec le badge d'Iris, bien après son départ déclaré.",
         "evidence": {
           "kind": "schedule",
-          "title": "JOURNAL D'ACCÈS",
+          "title": "JOURNAL TECHNIQUE",
           "rows": [
             {
               "time": "19:45",
-              "label": "Le capteur hygrométrique de l'atelier enregistre une ouverture à 20h26 avec le badge d'Iris, bien après son départ déclaré."
+              "label": "Le capteur hygrométrique de l'atelier enregistre une ouverture à 20 h 26 avec le badge d'Iris, bien après son départ déclaré."
             }
           ],
-          "altText": "JOURNAL D'ACCÈS, 19:45. Le capteur hygrométrique de l'atelier enregistre une ouverture à 20h26 avec le badge d'Iris, bien après son départ déclaré."
+          "altText": "JOURNAL TECHNIQUE, 19:45. Le capteur hygrométrique de l'atelier enregistre une ouverture à 20 h 26 avec le badge d'Iris, bien après son départ déclaré."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -92,23 +92,16 @@
       {
         "id": "trace",
         "title": "Du bleu dans la cire",
-        "source": "CONSTAT PHOTOGRAPHIQUE",
+        "source": "ANALYSE MATÉRIELLE",
         "summary": "La cire des scellés contient le pigment bleu de Prusse réservé au poste de restauration d'Iris.",
         "evidence": {
-          "kind": "photo",
-          "caption": "La cire des scellés contient le pigment bleu de Prusse réservé au poste de restauration d'Iris.",
-          "meta": [
-            {
-              "label": "Heure",
-              "value": "19:19"
-            },
-            {
-              "label": "Pièce",
-              "value": "Du bleu dans la cire"
-            }
+          "kind": "document",
+          "title": "Du bleu dans la cire",
+          "subtitle": "ANALYSE MATÉRIELLE",
+          "paragraphs": [
+            "La cire des scellés contient le pigment bleu de Prusse réservé au poste de restauration d'Iris."
           ],
-          "altText": "Photographie. La cire des scellés contient le pigment bleu de Prusse réservé au poste de restauration d'Iris.",
-          "tone": "cold"
+          "altText": "Document intitulé Du bleu dans la cire. La cire des scellés contient le pigment bleu de Prusse réservé au poste de restauration d'Iris."
         },
         "analysis": {
           "category": "TIMELINE",
@@ -128,16 +121,16 @@
       {
         "id": "mobile",
         "title": "Un marché sans catalogue",
-        "source": "NOTE PERSONNELLE",
+        "source": "DOCUMENT SAISI",
         "summary": "Un brouillon de contrat promet à Iris un paiement immédiat pour une toile non répertoriée aux dimensions exactes de L'Heure bleue.",
         "evidence": {
-          "kind": "email",
-          "from": "NOTE PERSONNELLE",
-          "to": "Dossier d'enquête",
-          "subject": "Un marché sans catalogue",
-          "sentAt": "19:32",
-          "body": "Un brouillon de contrat promet à Iris un paiement immédiat pour une toile non répertoriée aux dimensions exactes de L'Heure bleue.",
-          "altText": "Courriel intitulé Un marché sans catalogue. Un brouillon de contrat promet à Iris un paiement immédiat pour une toile non répertoriée aux dimensions exactes de L'Heure bleue."
+          "kind": "document",
+          "title": "Un marché sans catalogue",
+          "subtitle": "DOCUMENT SAISI",
+          "paragraphs": [
+            "Un brouillon de contrat promet à Iris un paiement immédiat pour une toile non répertoriée aux dimensions exactes de L'Heure bleue."
+          ],
+          "altText": "Document intitulé Un marché sans catalogue. Un brouillon de contrat promet à Iris un paiement immédiat pour une toile non répertoriée aux dimensions exactes de L'Heure bleue."
         },
         "analysis": {
           "category": "BEHAVIORAL",
@@ -157,11 +150,11 @@
       {
         "id": "alibi_a",
         "title": "Le monte-charge ne s'arrête pas",
-        "source": "ALIBI VÉRIFIÉ",
+        "source": "ENREGISTREMENT VIDÉO",
         "summary": "La caméra du monte-charge place Mathieu au sous-sol sans interruption pendant la fenêtre de substitution.",
         "evidence": {
           "kind": "camera",
-          "location": "ALIBI VÉRIFIÉ",
+          "location": "ENREGISTREMENT VIDÉO",
           "frames": [
             {
               "time": "19:38",
@@ -189,10 +182,13 @@
         "source": "ÉLÉMENT À CHARGE",
         "summary": "Le carnet de Salomé contient une page intitulée « prouver que le tableau est faux ».",
         "evidence": {
-          "kind": "handwriting",
-          "body": "Le carnet de Salomé contient une page intitulée « prouver que le tableau est faux ».",
-          "signature": "Mathieu Orsini",
-          "altText": "Note manuscrite. Le carnet de Salomé contient une page intitulée « prouver que le tableau est faux »."
+          "kind": "document",
+          "title": "Une note sur l'attribution",
+          "subtitle": "ÉLÉMENT À CHARGE",
+          "paragraphs": [
+            "Le carnet de Salomé contient une page intitulée « prouver que le tableau est faux »."
+          ],
+          "altText": "Document intitulé Une note sur l'attribution. Le carnet de Salomé contient une page intitulée « prouver que le tableau est faux »."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -212,12 +208,12 @@
       {
         "id": "resolution",
         "title": "Le dernier cliché de Salomé",
-        "source": "ENREGISTREMENT TÉMOIN",
+        "source": "RECOUPEMENT FINAL",
         "summary": "Ses clichés horodatés montrent qu'elle étudiait une restauration ancienne, et capturent encore l'original après sa dernière manipulation.",
         "evidence": {
           "kind": "document",
           "title": "Le dernier cliché de Salomé",
-          "subtitle": "ENREGISTREMENT TÉMOIN",
+          "subtitle": "RECOUPEMENT FINAL",
           "paragraphs": [
             "Ses clichés horodatés montrent qu'elle étudiait une restauration ancienne, et capturent encore l'original après sa dernière manipulation."
           ],
@@ -241,43 +237,43 @@
       {
         "id": "iris_alibi",
         "suspectId": "iris",
-        "question": "Qui peut confirmer votre emploi du temps, Iris Meunier ?",
-        "answer": "Elle dit avoir quitté l'atelier à 19h10 après avoir posé les scellés. Précise, presque tendre lorsqu'elle parle des pigments.",
+        "question": "Que faisiez-vous pendant la période concernée, Iris Meunier ?",
+        "answer": "« J'ai quitté l'atelier à 19 h 10 après avoir posé les scellés. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
         "id": "iris_relation",
         "suspectId": "iris",
-        "question": "Qu'est-ce que cette affaire pouvait changer pour vous, Iris Meunier ?",
-        "answer": "Elle a passé quatre mois sur la toile. Sa demande de crédit vient d'être refusée.",
+        "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, Iris Meunier ?",
+        "answer": "« J'avais quelque chose à perdre. Cela ne suffit pas à faire de moi le coupable. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "mathieu_alibi",
         "suspectId": "mathieu",
-        "question": "Quel est votre dernier souvenir précis avant les faits, Mathieu Orsini ?",
-        "answer": "Il affirme avoir inventorié les cadres au sous-sol jusqu'à 20h. Méthodique, vexé qu'on questionne ses procédures.",
+        "question": "Donnez votre emploi du temps précis, Mathieu Orsini.",
+        "answer": "« J'ai inventorié les cadres au sous-sol jusqu'à 20 h. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "mathieu_relation",
         "suspectId": "mathieu",
-        "question": "Pourquoi votre nom apparaît-il dans le dossier d'Agnès, Mathieu Orsini ?",
-        "answer": "Il contrôle les clés et les transports d'œuvres. Il conteste depuis des mois le budget de restauration.",
+        "question": "Reconnaissez-vous avoir un intérêt personnel dans cette affaire, Mathieu Orsini ?",
+        "answer": "« Mon intérêt personnel est réel. Il faut encore prouver que j'ai agi. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "salome_alibi",
         "suspectId": "salome",
-        "question": "Votre version comporte-t-elle un moment sans témoin, Salomé Varenne ?",
-        "answer": "Elle travaillait à la bibliothèque, visible du gardien. Enthousiaste, digressive, excellente mémoire visuelle.",
+        "question": "Où étiez-vous au moment des faits, Salomé Varenne ?",
+        "answer": "« Je travaillais à la bibliothèque, visible du gardien. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "salome_relation",
         "suspectId": "salome",
-        "question": "Aviez-vous une raison de redouter la décision d'Agnès, Salomé Varenne ?",
-        "answer": "Elle prépare le catalogue raisonné du peintre. Elle avait publiquement douté de l'attribution du tableau.",
+        "question": "Cette situation pouvait-elle vous profiter, Salomé Varenne ?",
+        "answer": "« Je comprends les soupçons. Ma situation me donnait un mobile possible, pas une preuve. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
@@ -315,19 +311,19 @@
       {
         "time": "19:19",
         "text": "Un brouillon de contrat promet à Iris un paiement immédiat pour une toile non répertoriée aux dimensions exactes de L'Heure bleue.",
-        "source": "NOTE PERSONNELLE",
+        "source": "DOCUMENT SAISI",
         "certainty": "CERTAIN"
       },
       {
         "time": "19:32",
-        "text": "Iris Meunier situe ici la fin de ses déplacements.",
-        "source": "Déposition",
+        "text": "Iris Meunier : « J'ai quitté l'atelier à 19 h 10 après avoir posé les scellés. »",
+        "source": "Déclaration d'Iris Meunier",
         "certainty": "REPORTED"
       },
       {
         "time": "19:45",
-        "text": "Le capteur hygrométrique de l'atelier enregistre une ouverture à 20h26 avec le badge d'Iris, bien après son départ déclaré.",
-        "source": "JOURNAL D'ACCÈS",
+        "text": "Le capteur hygrométrique de l'atelier enregistre une ouverture à 20 h 26 avec le badge d'Iris, bien après son départ déclaré.",
+        "source": "JOURNAL TECHNIQUE",
         "certainty": "CERTAIN"
       },
       {
@@ -374,15 +370,15 @@
             },
             {
               "id": "motive_innocent_a",
-              "label": "Il conteste depuis des mois le budget de restauration."
+              "label": "Prouver que l'attribution du tableau était erronée"
             },
             {
               "id": "motive_innocent_b",
-              "label": "Elle avait publiquement douté de l'attribution du tableau."
+              "label": "Faire suspendre une restauration jugée trop coûteuse"
             },
             {
               "id": "motive_accident",
-              "label": "Cacher une erreur antérieure sans rapport direct avec l'incident"
+              "label": "Cacher une dégradation accidentelle de la toile"
             }
           ]
         },
@@ -398,15 +394,15 @@
             },
             {
               "id": "method_force",
-              "label": "Forcer directement l'accès principal puis dissimuler les traces"
+              "label": "Échanger la toile pendant son passage par le monte-charge"
             },
             {
               "id": "method_complice",
-              "label": "Employer un complice extérieur après la fermeture"
+              "label": "Vieillir artificiellement la surface sans déplacer le tableau"
             },
             {
               "id": "method_failure",
-              "label": "Exploiter une défaillance existante sans intervenir sur les lieux"
+              "label": "Sortir l'œuvre avec un faux ordre de transport"
             }
           ]
         }
@@ -469,7 +465,7 @@
       }
     ],
     "reasoning": [
-      "Le capteur hygrométrique de l'atelier enregistre une ouverture à 20h26 avec le badge d'Iris, bien après son départ déclaré. Cette donnée fragilise directement la version d'Iris Meunier.",
+      "Le capteur hygrométrique de l'atelier enregistre une ouverture à 20 h 26 avec le badge d'Iris, bien après son départ déclaré. Cette donnée fragilise directement la version d'Iris Meunier.",
       "La cire des scellés contient le pigment bleu de Prusse réservé au poste de restauration d'Iris. La trace relie le geste au procédé employé.",
       "Un brouillon de contrat promet à Iris un paiement immédiat pour une toile non répertoriée aux dimensions exactes de L'Heure bleue. Le mobile repose donc sur un fait vérifiable.",
       "La caméra du monte-charge place Mathieu au sous-sol sans interruption pendant la fenêtre de substitution. De son côté, la principale autre piste ne résiste pas au recoupement.",
@@ -481,7 +477,7 @@
       {
         "title": "Ce qui trahit Iris Meunier",
         "steps": [
-          "Le capteur hygrométrique de l'atelier enregistre une ouverture à 20h26 avec le badge d'Iris, bien après son départ déclaré.",
+          "Le capteur hygrométrique de l'atelier enregistre une ouverture à 20 h 26 avec le badge d'Iris, bien après son départ déclaré.",
           "La cire des scellés contient le pigment bleu de Prusse réservé au poste de restauration d'Iris.",
           "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]

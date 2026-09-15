@@ -7,7 +7,7 @@
     "subtitle": "La statue a vu le vol. En fondant légèrement, elle a même conservé le visage du voleur.",
     "location": "Musée de cire, Lyon",
     "incident": "Vol d'un diamant exposé sur une statue",
-    "intro": "À 23h, le diamant de la statue de cantatrice est remplacé par du verre. La vitrine n'a pas été ouverte selon son capteur. Sur la joue de cire, une zone brillante semble avoir été réchauffée puis refroidie.",
+    "intro": "À 23 h, le diamant de la statue de cantatrice est remplacé par du verre. La vitrine n'a pas été ouverte selon son capteur. Sur la joue de cire, une zone brillante semble avoir été réchauffée puis refroidie.",
     "victim": {
       "name": "Nadège Ravel",
       "description": "Directrice, 48 ans. Elle avait obtenu le prêt du diamant pour une nuit caritative."
@@ -20,7 +20,7 @@
         "occupation": "Sculpteur de cire",
         "relation": "Il entretient la statue et connaît sa structure.",
         "personality": "Sensuel dans ses descriptions, susceptible sur son art.",
-        "claimedAlibi": "Il réparait une autre figure dans l'atelier filmé.",
+        "claimedAlibi": "« Je réparais une autre figure dans l'atelier filmé. »",
         "accent": "formal",
         "notes": [
           "Il refusait que le bijou perce le costume original."
@@ -33,7 +33,7 @@
         "occupation": "Régisseuse événementielle",
         "relation": "Elle gérait les invités et le prêt du diamant.",
         "personality": "Rapide, souriante, change de sujet avec aisance.",
-        "claimedAlibi": "Elle était au vestiaire pendant le discours.",
+        "claimedAlibi": "« J'étais au vestiaire pendant le discours. »",
         "accent": "nervous",
         "notes": [
           "Elle avait assuré le diamant pour une somme excessive."
@@ -46,7 +46,7 @@
         "occupation": "Joaillier prêteur",
         "relation": "Il a monté lui-même le diamant sur la statue.",
         "personality": "Froid, sûr de son expertise.",
-        "claimedAlibi": "Il prononçait le discours dans la grande salle.",
+        "claimedAlibi": "« Je prononçais le discours dans la grande salle. »",
         "accent": "cold",
         "notes": [
           "La pierre était difficile à vendre légalement."
@@ -57,12 +57,18 @@
       {
         "id": "registre",
         "title": "La trappe climatique",
-        "source": "JOURNAL D'ACCÈS",
+        "source": "JOURNAL TECHNIQUE",
         "summary": "Le vestiaire reste vide tandis que le badge de Roxane ouvre la trappe climatique derrière la statue.",
         "evidence": {
-          "kind": "note",
-          "body": "Le vestiaire reste vide tandis que le badge de Roxane ouvre la trappe climatique derrière la statue.",
-          "altText": "Note versée au dossier. Le vestiaire reste vide tandis que le badge de Roxane ouvre la trappe climatique derrière la statue."
+          "kind": "schedule",
+          "title": "JOURNAL TECHNIQUE",
+          "rows": [
+            {
+              "time": "20:01",
+              "label": "Le vestiaire reste vide tandis que le badge de Roxane ouvre la trappe climatique derrière la statue."
+            }
+          ],
+          "altText": "JOURNAL TECHNIQUE, 20:01. Le vestiaire reste vide tandis que le badge de Roxane ouvre la trappe climatique derrière la statue."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -86,23 +92,16 @@
       {
         "id": "trace",
         "title": "La bague dans la cire",
-        "source": "CONSTAT PHOTOGRAPHIQUE",
+        "source": "ANALYSE MATÉRIELLE",
         "summary": "La cire ramollie conserve l'empreinte inversée de sa bague carrée lorsqu'elle a appuyé son visage contre le panneau étroit.",
         "evidence": {
-          "kind": "photo",
-          "caption": "La cire ramollie conserve l'empreinte inversée de sa bague carrée lorsqu'elle a appuyé son visage contre le panneau étroit.",
-          "meta": [
-            {
-              "label": "Heure",
-              "value": "19:35"
-            },
-            {
-              "label": "Pièce",
-              "value": "La bague dans la cire"
-            }
+          "kind": "document",
+          "title": "La bague dans la cire",
+          "subtitle": "ANALYSE MATÉRIELLE",
+          "paragraphs": [
+            "La cire ramollie conserve l'empreinte inversée de sa bague carrée lorsqu'elle a appuyé son visage contre le panneau étroit."
           ],
-          "altText": "Photographie. La cire ramollie conserve l'empreinte inversée de sa bague carrée lorsqu'elle a appuyé son visage contre le panneau étroit.",
-          "tone": "cold"
+          "altText": "Document intitulé La bague dans la cire. La cire ramollie conserve l'empreinte inversée de sa bague carrée lorsqu'elle a appuyé son visage contre le panneau étroit."
         },
         "analysis": {
           "category": "TIMELINE",
@@ -122,13 +121,16 @@
       {
         "id": "mobile",
         "title": "La commission d'assurance",
-        "source": "NOTE PERSONNELLE",
+        "source": "DOCUMENT SAISI",
         "summary": "Une police complémentaire souscrite par Roxane lui verse une commission si le sinistre survient pendant son événement.",
         "evidence": {
-          "kind": "handwriting",
-          "body": "Une police complémentaire souscrite par Roxane lui verse une commission si le sinistre survient pendant son événement.",
-          "signature": "Étienne Valois",
-          "altText": "Note manuscrite. Une police complémentaire souscrite par Roxane lui verse une commission si le sinistre survient pendant son événement."
+          "kind": "document",
+          "title": "La commission d'assurance",
+          "subtitle": "DOCUMENT SAISI",
+          "paragraphs": [
+            "Une police complémentaire souscrite par Roxane lui verse une commission si le sinistre survient pendant son événement."
+          ],
+          "altText": "Document intitulé La commission d'assurance. Une police complémentaire souscrite par Roxane lui verse une commission si le sinistre survient pendant son événement."
         },
         "analysis": {
           "category": "BEHAVIORAL",
@@ -148,11 +150,11 @@
       {
         "id": "alibi_a",
         "title": "Côme face à l'horloge",
-        "source": "ALIBI VÉRIFIÉ",
+        "source": "ENREGISTREMENT VIDÉO",
         "summary": "Le flux de l'atelier montre Côme travailler sans interruption, horloge visible.",
         "evidence": {
           "kind": "camera",
-          "location": "ALIBI VÉRIFIÉ",
+          "location": "ENREGISTREMENT VIDÉO",
           "frames": [
             {
               "time": "19:54",
@@ -206,20 +208,16 @@
       {
         "id": "resolution",
         "title": "Étienne au pupitre",
-        "source": "ENREGISTREMENT TÉMOIN",
+        "source": "RECOUPEMENT FINAL",
         "summary": "La pierre volée est malgré tout authentique et les vidéos le gardent au pupitre pendant l'accès à la trappe.",
         "evidence": {
-          "kind": "sms",
-          "contact": "Étienne Valois",
-          "channel": "sms",
-          "messages": [
-            {
-              "from": "them",
-              "text": "La pierre volée est malgré tout authentique et les vidéos le gardent au pupitre pendant l'accès à la trappe.",
-              "time": "19:23"
-            }
+          "kind": "document",
+          "title": "Étienne au pupitre",
+          "subtitle": "RECOUPEMENT FINAL",
+          "paragraphs": [
+            "La pierre volée est malgré tout authentique et les vidéos le gardent au pupitre pendant l'accès à la trappe."
           ],
-          "altText": "Message d'Étienne Valois à 19:23. La pierre volée est malgré tout authentique et les vidéos le gardent au pupitre pendant l'accès à la trappe."
+          "altText": "Document intitulé Étienne au pupitre. La pierre volée est malgré tout authentique et les vidéos le gardent au pupitre pendant l'accès à la trappe."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -239,43 +237,43 @@
       {
         "id": "come_alibi",
         "suspectId": "come",
-        "question": "Décrivez vos déplacements sans sauter d'étape, Côme Vidal.",
-        "answer": "Il réparait une autre figure dans l'atelier filmé. Sensuel dans ses descriptions, susceptible sur son art.",
+        "question": "Donnez votre emploi du temps précis, Côme Vidal.",
+        "answer": "« Je réparais une autre figure dans l'atelier filmé. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "come_relation",
         "suspectId": "come",
-        "question": "Aviez-vous une raison de redouter la décision de Nadège, Côme Vidal ?",
-        "answer": "Il entretient la statue et connaît sa structure. Il refusait que le bijou perce le costume original.",
+        "question": "Cette situation pouvait-elle vous profiter, Côme Vidal ?",
+        "answer": "« Je redoutais les conséquences de cette affaire. Je ne l'ai jamais caché. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "roxane_alibi",
         "suspectId": "roxane",
-        "question": "Quand avez-vous quitté Musée de cire, Roxane Perez ?",
-        "answer": "Elle était au vestiaire pendant le discours. Rapide, souriante, change de sujet avec aisance.",
+        "question": "Où étiez-vous au moment des faits, Roxane Perez ?",
+        "answer": "« J'étais au vestiaire pendant le discours. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
         "id": "roxane_relation",
         "suspectId": "roxane",
-        "question": "Que taisiez-vous sur votre relation avec Nadège, Roxane Perez ?",
-        "answer": "Elle gérait les invités et le prêt du diamant. Elle avait assuré le diamant pour une somme excessive.",
+        "question": "Que redoutiez-vous personnellement, Roxane Perez ?",
+        "answer": "« Oui. Cette affaire pouvait avoir des conséquences pour moi, mais je n'ai rien provoqué. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "etienne_alibi",
         "suspectId": "etienne",
-        "question": "Qui peut confirmer votre emploi du temps, Étienne Valois ?",
-        "answer": "Il prononçait le discours dans la grande salle. Froid, sûr de son expertise.",
+        "question": "Que faisiez-vous pendant la période concernée, Étienne Valois ?",
+        "answer": "« Je prononçais le discours dans la grande salle. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "etienne_relation",
         "suspectId": "etienne",
-        "question": "Quel désaccord vous opposait à Nadège, Étienne Valois ?",
-        "answer": "Il a monté lui-même le diamant sur la statue. La pierre était difficile à vendre légalement.",
+        "question": "Cette affaire pouvait-elle vous affecter, Étienne Valois ?",
+        "answer": "« J'avais quelque chose à perdre. Cela ne suffit pas à faire de moi le coupable. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
@@ -313,19 +311,19 @@
       {
         "time": "19:35",
         "text": "Une police complémentaire souscrite par Roxane lui verse une commission si le sinistre survient pendant son événement.",
-        "source": "NOTE PERSONNELLE",
+        "source": "DOCUMENT SAISI",
         "certainty": "CERTAIN"
       },
       {
         "time": "19:48",
-        "text": "Roxane Perez situe ici la fin de ses déplacements.",
-        "source": "Déposition",
+        "text": "Roxane Perez : « J'étais au vestiaire pendant le discours. »",
+        "source": "Déclaration de Roxane Perez",
         "certainty": "REPORTED"
       },
       {
         "time": "20:01",
         "text": "Le vestiaire reste vide tandis que le badge de Roxane ouvre la trappe climatique derrière la statue.",
-        "source": "JOURNAL D'ACCÈS",
+        "source": "JOURNAL TECHNIQUE",
         "certainty": "CERTAIN"
       },
       {
@@ -372,15 +370,15 @@
             },
             {
               "id": "motive_innocent_a",
-              "label": "Il refusait que le bijou perce le costume original."
+              "label": "Empêcher le bijou d'abîmer le costume original"
             },
             {
               "id": "motive_innocent_b",
-              "label": "La pierre était difficile à vendre légalement."
+              "label": "Récupérer une pierre dont la valeur avait été exagérée"
             },
             {
               "id": "motive_accident",
-              "label": "Cacher une erreur antérieure sans rapport direct avec l'incident"
+              "label": "Faire annuler le prêt du diamant avant la soirée"
             }
           ]
         },
@@ -396,15 +394,15 @@
             },
             {
               "id": "method_force",
-              "label": "Forcer directement l'accès principal puis dissimuler les traces"
+              "label": "Ouvrir la vitrine avec la clé du joaillier"
             },
             {
               "id": "method_complice",
-              "label": "Employer un complice extérieur après la fermeture"
+              "label": "Remplacer la pierre avant son montage sur la statue"
             },
             {
               "id": "method_failure",
-              "label": "Exploiter une défaillance existante sans intervenir sur les lieux"
+              "label": "Désactiver le capteur pendant le discours"
             }
           ]
         }

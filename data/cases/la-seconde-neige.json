@@ -20,7 +20,7 @@
         "occupation": "Guide",
         "relation": "Il a posé les balises de sécurité.",
         "personality": "Stable, peu démonstratif, écoute avant de parler.",
-        "claimedAlibi": "Il affirme n'être pas sorti après le début de la tempête.",
+        "claimedAlibi": "« Je ne suis pas sorti après le début de la tempête. »",
         "accent": "formal",
         "notes": [
           "Ariane allait signaler ses sorties hors quota."
@@ -33,7 +33,7 @@
         "occupation": "Climatologue",
         "relation": "Elle partageait les données sensibles d'Ariane.",
         "personality": "Analytique, distante, photographie chaque mesure.",
-        "claimedAlibi": "Elle travaillait dans la salle radio avec deux chercheurs.",
+        "claimedAlibi": "« Je travaillais dans la salle radio avec deux chercheurs. »",
         "accent": "nervous",
         "notes": [
           "Le rapport d'Ariane contredisait son modèle."
@@ -46,7 +46,7 @@
         "occupation": "Gardien adjoint",
         "relation": "Il a découvert l'absence d'Ariane.",
         "personality": "Serviable, anxieux, connaît mal le glacier.",
-        "claimedAlibi": "Il préparait le petit-déjeuner dès 4h30.",
+        "claimedAlibi": "« Je préparais le petit-déjeuner dès 4 h 30. »",
         "accent": "cold",
         "notes": [
           "Il avait emprunté le GPS d'Ariane sans permission."
@@ -57,18 +57,18 @@
       {
         "id": "registre",
         "title": "Le froid dans les chaussures",
-        "source": "CONTRÔLE TECHNIQUE",
+        "source": "JOURNAL TECHNIQUE",
         "summary": "Le thermomètre de ses chaussures enregistre une chute brutale à -18 °C pendant son prétendu sommeil.",
         "evidence": {
           "kind": "schedule",
-          "title": "CONTRÔLE TECHNIQUE",
+          "title": "JOURNAL TECHNIQUE",
           "rows": [
             {
               "time": "20:08",
               "label": "Le thermomètre de ses chaussures enregistre une chute brutale à -18 °C pendant son prétendu sommeil."
             }
           ],
-          "altText": "CONTRÔLE TECHNIQUE, 20:08. Le thermomètre de ses chaussures enregistre une chute brutale à -18 °C pendant son prétendu sommeil."
+          "altText": "JOURNAL TECHNIQUE, 20:08. Le thermomètre de ses chaussures enregistre une chute brutale à -18 °C pendant son prétendu sommeil."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -92,16 +92,23 @@
       {
         "id": "trace",
         "title": "Des pas sans arrivée",
-        "source": "RAPPORT TECHNIQUE",
+        "source": "ANALYSE MATÉRIELLE",
         "summary": "Les pas sans arrivée commencent à la bouche enneigée du tunnel technique reliant le refuge à la pente.",
         "evidence": {
-          "kind": "document",
-          "title": "Des pas sans arrivée",
-          "subtitle": "RAPPORT TECHNIQUE",
-          "paragraphs": [
-            "Les pas sans arrivée commencent à la bouche enneigée du tunnel technique reliant le refuge à la pente."
+          "kind": "photo",
+          "caption": "Les pas sans arrivée commencent à la bouche enneigée du tunnel technique reliant le refuge à la pente.",
+          "meta": [
+            {
+              "label": "Heure",
+              "value": "19:42"
+            },
+            {
+              "label": "Pièce",
+              "value": "Des pas sans arrivée"
+            }
           ],
-          "altText": "Document intitulé Des pas sans arrivée. Les pas sans arrivée commencent à la bouche enneigée du tunnel technique reliant le refuge à la pente."
+          "altText": "Photographie. Les pas sans arrivée commencent à la bouche enneigée du tunnel technique reliant le refuge à la pente.",
+          "tone": "cold"
         },
         "analysis": {
           "category": "TIMELINE",
@@ -121,12 +128,16 @@
       {
         "id": "mobile",
         "title": "Le rapport d'Ariane",
-        "source": "DOCUMENT DE LA VICTIME",
+        "source": "DOCUMENT SAISI",
         "summary": "Le brouillon de rapport d'Ariane relie Loup à une balise falsifiée lors de l'accident précédent.",
         "evidence": {
-          "kind": "note",
-          "body": "Le brouillon de rapport d'Ariane relie Loup à une balise falsifiée lors de l'accident précédent.",
-          "altText": "Note versée au dossier. Le brouillon de rapport d'Ariane relie Loup à une balise falsifiée lors de l'accident précédent."
+          "kind": "document",
+          "title": "Le rapport d'Ariane",
+          "subtitle": "DOCUMENT SAISI",
+          "paragraphs": [
+            "Le brouillon de rapport d'Ariane relie Loup à une balise falsifiée lors de l'accident précédent."
+          ],
+          "altText": "Document intitulé Le rapport d'Ariane. Le brouillon de rapport d'Ariane relie Loup à une balise falsifiée lors de l'accident précédent."
         },
         "analysis": {
           "category": "BEHAVIORAL",
@@ -146,16 +157,18 @@
       {
         "id": "alibi_a",
         "title": "Mila à la radio",
-        "source": "RECOUPEMENT INDÉPENDANT",
+        "source": "ENREGISTREMENT VIDÉO",
         "summary": "L'enregistrement radio conserve la voix et les manipulations de Mila pendant toute la sortie.",
         "evidence": {
-          "kind": "email",
-          "from": "RECOUPEMENT INDÉPENDANT",
-          "to": "Dossier d'enquête",
-          "subject": "Mila à la radio",
-          "sentAt": "20:08",
-          "body": "L'enregistrement radio conserve la voix et les manipulations de Mila pendant toute la sortie.",
-          "altText": "Courriel intitulé Mila à la radio. L'enregistrement radio conserve la voix et les manipulations de Mila pendant toute la sortie."
+          "kind": "camera",
+          "location": "ENREGISTREMENT VIDÉO",
+          "frames": [
+            {
+              "time": "20:01",
+              "text": "L'enregistrement radio conserve la voix et les manipulations de Mila pendant toute la sortie."
+            }
+          ],
+          "altText": "Image enregistrée à 20:01. L'enregistrement radio conserve la voix et les manipulations de Mila pendant toute la sortie."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -173,23 +186,16 @@
       {
         "id": "fausse_piste",
         "title": "Le GPS de Jon",
-        "source": "OBJET RETROUVÉ",
+        "source": "ÉLÉMENT À CHARGE",
         "summary": "Le GPS volé dans le sac de Jon contient l'itinéraire exact vers la crevasse.",
         "evidence": {
-          "kind": "photo",
-          "caption": "Le GPS volé dans le sac de Jon contient l'itinéraire exact vers la crevasse.",
-          "meta": [
-            {
-              "label": "Heure",
-              "value": "20:16"
-            },
-            {
-              "label": "Pièce",
-              "value": "Le GPS de Jon"
-            }
+          "kind": "document",
+          "title": "Le GPS de Jon",
+          "subtitle": "ÉLÉMENT À CHARGE",
+          "paragraphs": [
+            "Le GPS volé dans le sac de Jon contient l'itinéraire exact vers la crevasse."
           ],
-          "altText": "Photographie. Le GPS volé dans le sac de Jon contient l'itinéraire exact vers la crevasse.",
-          "tone": "cold"
+          "altText": "Document intitulé Le GPS de Jon. Le GPS volé dans le sac de Jon contient l'itinéraire exact vers la crevasse."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -209,18 +215,16 @@
       {
         "id": "resolution",
         "title": "Une recherche après la disparition",
-        "source": "CONTRÔLE DES DÉPLACEMENTS",
+        "source": "RECOUPEMENT FINAL",
         "summary": "Son historique montre qu'il l'a copié après la disparition pour chercher Ariane, et les caméras de cuisine confirment son heure de départ.",
         "evidence": {
-          "kind": "camera",
-          "location": "CONTRÔLE DES DÉPLACEMENTS",
-          "frames": [
-            {
-              "time": "19:30",
-              "text": "Son historique montre qu'il l'a copié après la disparition pour chercher Ariane, et les caméras de cuisine confirment son heure de départ."
-            }
+          "kind": "document",
+          "title": "Une recherche après la disparition",
+          "subtitle": "RECOUPEMENT FINAL",
+          "paragraphs": [
+            "Son historique montre qu'il l'a copié après la disparition pour chercher Ariane, et les caméras de cuisine confirment son heure de départ."
           ],
-          "altText": "Image enregistrée à 19:30. Son historique montre qu'il l'a copié après la disparition pour chercher Ariane, et les caméras de cuisine confirment son heure de départ."
+          "altText": "Document intitulé Une recherche après la disparition. Son historique montre qu'il l'a copié après la disparition pour chercher Ariane, et les caméras de cuisine confirment son heure de départ."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -240,43 +244,43 @@
       {
         "id": "loup_alibi",
         "suspectId": "loup",
-        "question": "Quand avez-vous quitté Refuge des Aiguilles, Loup Charrier ?",
-        "answer": "Il affirme n'être pas sorti après le début de la tempête. Stable, peu démonstratif, écoute avant de parler.",
+        "question": "Où étiez-vous au moment des faits, Loup Charrier ?",
+        "answer": "« Je ne suis pas sorti après le début de la tempête. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
         "id": "loup_relation",
         "suspectId": "loup",
-        "question": "Quel désaccord vous opposait à Ariane, Loup Charrier ?",
-        "answer": "Il a posé les balises de sécurité. Ariane allait signaler ses sorties hors quota.",
+        "question": "Cette affaire pouvait-elle vous affecter, Loup Charrier ?",
+        "answer": "« Oui. Cette affaire pouvait avoir des conséquences pour moi, mais je n'ai rien provoqué. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "mila_alibi",
         "suspectId": "mila",
-        "question": "Qui peut confirmer votre emploi du temps, Mila Anders ?",
-        "answer": "Elle travaillait dans la salle radio avec deux chercheurs. Analytique, distante, photographie chaque mesure.",
+        "question": "Que faisiez-vous pendant la période concernée, Mila Anders ?",
+        "answer": "« Je travaillais dans la salle radio avec deux chercheurs. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "mila_relation",
         "suspectId": "mila",
-        "question": "Que risquiez-vous si Ariane allait au bout de sa décision, Mila Anders ?",
-        "answer": "Elle partageait les données sensibles d'Ariane. Le rapport d'Ariane contredisait son modèle.",
+        "question": "Aviez-vous quelque chose à perdre, Mila Anders ?",
+        "answer": "« J'avais quelque chose à perdre. Cela ne suffit pas à faire de moi le coupable. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "jon_alibi",
         "suspectId": "jon",
-        "question": "Quel est votre dernier souvenir précis avant les faits, Jon Ravel ?",
-        "answer": "Il préparait le petit-déjeuner dès 4h30. Serviable, anxieux, connaît mal le glacier.",
+        "question": "Donnez votre emploi du temps précis, Jon Ravel.",
+        "answer": "« Je préparais le petit-déjeuner dès 4 h 30. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "jon_relation",
         "suspectId": "jon",
-        "question": "Qu'est-ce que cette affaire pouvait changer pour vous, Jon Ravel ?",
-        "answer": "Il a découvert l'absence d'Ariane. Il avait emprunté le GPS d'Ariane sans permission.",
+        "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, Jon Ravel ?",
+        "answer": "« Mon intérêt personnel est réel. Il faut encore prouver que j'ai agi. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
@@ -314,19 +318,19 @@
       {
         "time": "19:42",
         "text": "Le brouillon de rapport d'Ariane relie Loup à une balise falsifiée lors de l'accident précédent.",
-        "source": "DOCUMENT DE LA VICTIME",
+        "source": "DOCUMENT SAISI",
         "certainty": "CERTAIN"
       },
       {
         "time": "19:55",
-        "text": "Loup Charrier situe ici la fin de ses déplacements.",
-        "source": "Déposition",
+        "text": "Loup Charrier : « Je ne suis pas sorti après le début de la tempête. »",
+        "source": "Déclaration de Loup Charrier",
         "certainty": "REPORTED"
       },
       {
         "time": "20:08",
         "text": "Le thermomètre de ses chaussures enregistre une chute brutale à -18 °C pendant son prétendu sommeil.",
-        "source": "CONTRÔLE TECHNIQUE",
+        "source": "JOURNAL TECHNIQUE",
         "certainty": "CERTAIN"
       },
       {
@@ -373,15 +377,15 @@
             },
             {
               "id": "motive_innocent_a",
-              "label": "Le rapport d'Ariane contredisait son modèle."
+              "label": "Empêcher un rapport de contredire un modèle climatique"
             },
             {
               "id": "motive_innocent_b",
-              "label": "Il avait emprunté le GPS d'Ariane sans permission."
+              "label": "Cacher l'emprunt non autorisé du GPS d'Ariane"
             },
             {
               "id": "motive_accident",
-              "label": "Cacher une erreur antérieure sans rapport direct avec l'incident"
+              "label": "Faire fermer un refuge devenu trop dangereux"
             }
           ]
         },
@@ -397,15 +401,15 @@
             },
             {
               "id": "method_force",
-              "label": "Forcer directement l'accès principal puis dissimuler les traces"
+              "label": "Modifier l'itinéraire enregistré dans le GPS"
             },
             {
               "id": "method_complice",
-              "label": "Employer un complice extérieur après la fermeture"
+              "label": "Effacer les traces avec la surfaceuse du refuge"
             },
             {
               "id": "method_failure",
-              "label": "Exploiter une défaillance existante sans intervenir sur les lieux"
+              "label": "Attirer Ariane vers la crevasse par un faux appel radio"
             }
           ]
         }

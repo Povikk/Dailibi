@@ -20,7 +20,7 @@
         "occupation": "Directrice de l'atelier",
         "relation": "Nièce d'Iseult, elle gère le patrimoine de la maison.",
         "personality": "Élégante, efficace, parle de chaque pièce comme d'un actif.",
-        "claimedAlibi": "Elle assistait au dîner des mécènes.",
+        "claimedAlibi": "« J'assistais au dîner des mécènes. »",
         "accent": "formal",
         "notes": [
           "La maison manque de trésorerie."
@@ -33,7 +33,7 @@
         "occupation": "Costumier",
         "relation": "Il a restauré la robe avant emballage.",
         "personality": "Délicat, passionné par les coutures invisibles.",
-        "claimedAlibi": "Il dit avoir refermé la caisse à 18h.",
+        "claimedAlibi": "« J'ai refermé la caisse à 18 h. »",
         "accent": "nervous",
         "notes": [
           "Il possède les patrons complets de la robe."
@@ -46,7 +46,7 @@
         "occupation": "Ancien mannequin",
         "relation": "Elle a porté la robe au concours de 1984.",
         "personality": "Drôle, nostalgique, refuse d'être traitée en relique.",
-        "claimedAlibi": "Elle répétait son discours avec le commissaire.",
+        "claimedAlibi": "« Je répétais mon discours avec le commissaire. »",
         "accent": "cold",
         "notes": [
           "Elle affirme que la robe lui avait été promise."
@@ -92,7 +92,7 @@
       {
         "id": "trace",
         "title": "Le fil de la copie",
-        "source": "RAPPORT TECHNIQUE",
+        "source": "ANALYSE MATÉRIELLE",
         "summary": "La copie utilise un fil moderne commandé sur le compte personnel de Mona sous un faux projet.",
         "evidence": {
           "kind": "photo",
@@ -128,16 +128,16 @@
       {
         "id": "mobile",
         "title": "La lettre de la créatrice",
-        "source": "DOCUMENT DE LA VICTIME",
+        "source": "DOCUMENT SAISI",
         "summary": "Un accord de vente secret couvre exactement les salaires en retard de l'atelier.",
         "evidence": {
-          "kind": "email",
-          "from": "DOCUMENT DE LA VICTIME",
-          "to": "Dossier d'enquête",
-          "subject": "La lettre de la créatrice",
-          "sentAt": "19:27",
-          "body": "Un accord de vente secret couvre exactement les salaires en retard de l'atelier.",
-          "altText": "Courriel intitulé La lettre de la créatrice. Un accord de vente secret couvre exactement les salaires en retard de l'atelier."
+          "kind": "document",
+          "title": "La lettre de la créatrice",
+          "subtitle": "DOCUMENT SAISI",
+          "paragraphs": [
+            "Un accord de vente secret couvre exactement les salaires en retard de l'atelier."
+          ],
+          "altText": "Document intitulé La lettre de la créatrice. Un accord de vente secret couvre exactement les salaires en retard de l'atelier."
         },
         "analysis": {
           "category": "BEHAVIORAL",
@@ -157,11 +157,11 @@
       {
         "id": "alibi_a",
         "title": "Yacine au défilé",
-        "source": "RECOUPEMENT INDÉPENDANT",
+        "source": "ENREGISTREMENT VIDÉO",
         "summary": "La vidéo de restauration montre Yacine fermer la vraie robe et quitter les lieux avant que Mona ne reprenne la caisse.",
         "evidence": {
           "kind": "camera",
-          "location": "RECOUPEMENT INDÉPENDANT",
+          "location": "ENREGISTREMENT VIDÉO",
           "frames": [
             {
               "time": "19:33",
@@ -186,13 +186,16 @@
       {
         "id": "fausse_piste",
         "title": "Les ciseaux d'Odette",
-        "source": "OBJET RETROUVÉ",
+        "source": "ÉLÉMENT À CHARGE",
         "summary": "Odette conserve une lettre d'Iseult disant « cette robe sera toujours à toi ».",
         "evidence": {
-          "kind": "handwriting",
-          "body": "Odette conserve une lettre d'Iseult disant « cette robe sera toujours à toi ».",
-          "signature": "Yacine Dupré",
-          "altText": "Note manuscrite. Odette conserve une lettre d'Iseult disant « cette robe sera toujours à toi »."
+          "kind": "document",
+          "title": "Les ciseaux d'Odette",
+          "subtitle": "ÉLÉMENT À CHARGE",
+          "paragraphs": [
+            "Odette conserve une lettre d'Iseult disant « cette robe sera toujours à toi »."
+          ],
+          "altText": "Document intitulé Les ciseaux d'Odette. Odette conserve une lettre d'Iseult disant « cette robe sera toujours à toi »."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -212,12 +215,12 @@
       {
         "id": "resolution",
         "title": "La reprise que l'original portait",
-        "source": "CONTRÔLE DES DÉPLACEMENTS",
+        "source": "RECOUPEMENT FINAL",
         "summary": "La formule est affective, non un acte de propriété, et le commissaire confirme sa présence continue à la répétition.",
         "evidence": {
           "kind": "document",
           "title": "La reprise que l'original portait",
-          "subtitle": "CONTRÔLE DES DÉPLACEMENTS",
+          "subtitle": "RECOUPEMENT FINAL",
           "paragraphs": [
             "La formule est affective, non un acte de propriété, et le commissaire confirme sa présence continue à la répétition."
           ],
@@ -241,43 +244,43 @@
       {
         "id": "mona_alibi",
         "suspectId": "mona",
-        "question": "Quel est votre dernier souvenir précis avant les faits, Mona Brémont ?",
-        "answer": "Elle assistait au dîner des mécènes. Élégante, efficace, parle de chaque pièce comme d'un actif.",
+        "question": "Donnez votre emploi du temps précis, Mona Brémont.",
+        "answer": "« J'assistais au dîner des mécènes. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
         "id": "mona_relation",
         "suspectId": "mona",
-        "question": "Aviez-vous une raison de redouter la décision d'Iseult, Mona Brémont ?",
-        "answer": "Nièce d'Iseult, elle gère le patrimoine de la maison. La maison manque de trésorerie.",
+        "question": "Cette situation pouvait-elle vous profiter, Mona Brémont ?",
+        "answer": "« Mon intérêt personnel est réel. Il faut encore prouver que j'ai agi. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "yacine_alibi",
         "suspectId": "yacine",
-        "question": "Votre version comporte-t-elle un moment sans témoin, Yacine Dupré ?",
-        "answer": "Il dit avoir refermé la caisse à 18h. Délicat, passionné par les coutures invisibles.",
+        "question": "Où étiez-vous au moment des faits, Yacine Dupré ?",
+        "answer": "« J'ai refermé la caisse à 18 h. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "yacine_relation",
         "suspectId": "yacine",
-        "question": "Que taisiez-vous sur votre relation avec Iseult, Yacine Dupré ?",
-        "answer": "Il a restauré la robe avant emballage. Il possède les patrons complets de la robe.",
+        "question": "Que redoutiez-vous personnellement, Yacine Dupré ?",
+        "answer": "« Je comprends les soupçons. Ma situation me donnait un mobile possible, pas une preuve. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "odette_alibi",
         "suspectId": "odette",
-        "question": "Quand avez-vous vu Iseult pour la dernière fois, Odette Marin ?",
-        "answer": "Elle répétait son discours avec le commissaire. Drôle, nostalgique, refuse d'être traitée en relique.",
+        "question": "Que faisiez-vous pendant la période concernée, Odette Marin ?",
+        "answer": "« Je répétais mon discours avec le commissaire. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "odette_relation",
         "suspectId": "odette",
-        "question": "Quel désaccord vous opposait à Iseult, Odette Marin ?",
-        "answer": "Elle a porté la robe au concours de 1984. Elle affirme que la robe lui avait été promise.",
+        "question": "Cette affaire pouvait-elle vous affecter, Odette Marin ?",
+        "answer": "« J'aurais pu tirer profit de la situation. Je n'ai pourtant rien fait pour la provoquer. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
@@ -315,13 +318,13 @@
       {
         "time": "19:14",
         "text": "Un accord de vente secret couvre exactement les salaires en retard de l'atelier.",
-        "source": "DOCUMENT DE LA VICTIME",
+        "source": "DOCUMENT SAISI",
         "certainty": "CERTAIN"
       },
       {
         "time": "19:27",
-        "text": "Mona Brémont situe ici la fin de ses déplacements.",
-        "source": "Déposition",
+        "text": "Mona Brémont : « J'assistais au dîner des mécènes. »",
+        "source": "Déclaration de Mona Brémont",
         "certainty": "REPORTED"
       },
       {
@@ -374,15 +377,15 @@
             },
             {
               "id": "motive_innocent_a",
-              "label": "Il possède les patrons complets de la robe."
+              "label": "Récupérer une robe qu'Odette estimait lui avoir été promise"
             },
             {
               "id": "motive_innocent_b",
-              "label": "Elle affirme que la robe lui avait été promise."
+              "label": "Revendre les patrons complets de la création"
             },
             {
               "id": "motive_accident",
-              "label": "Cacher une erreur antérieure sans rapport direct avec l'incident"
+              "label": "Empêcher l'exposition d'une pièce trop fragile"
             }
           ]
         },
@@ -398,15 +401,15 @@
             },
             {
               "id": "method_force",
-              "label": "Forcer directement l'accès principal puis dissimuler les traces"
+              "label": "Échanger la robe pendant son transport vers l'exposition"
             },
             {
               "id": "method_complice",
-              "label": "Employer un complice extérieur après la fermeture"
+              "label": "Découdre la doublure originale puis la poser sur une copie"
             },
             {
               "id": "method_failure",
-              "label": "Exploiter une défaillance existante sans intervenir sur les lieux"
+              "label": "Ouvrir la caisse avec un double de la clé du commissaire"
             }
           ]
         }

@@ -20,7 +20,7 @@
         "occupation": "Ouvreuse de voie",
         "relation": "Elle a dessiné et monté la finale.",
         "personality": "Créative, compétitive, assume ses choix techniques.",
-        "claimedAlibi": "Elle dit avoir terminé le montage à 20h et scellé la zone.",
+        "claimedAlibi": "« J'ai terminé le montage à 20 h et scellé la zone. »",
         "accent": "formal",
         "notes": [
           "Tom avait critiqué sa voie comme dangereuse."
@@ -33,7 +33,7 @@
         "occupation": "Grimpeur rival",
         "relation": "Il devait affronter Tom en finale.",
         "personality": "Calme, ascétique, observe avant de répondre.",
-        "claimedAlibi": "Il récupérait en chambre d'hôtel.",
+        "claimedAlibi": "« Je récupérais en chambre d'hôtel. »",
         "accent": "nervous",
         "notes": [
           "La chute lui ouvre la victoire."
@@ -46,7 +46,7 @@
         "occupation": "Responsable sécurité",
         "relation": "Il contrôle chaque prise après les ouvreurs.",
         "personality": "Méticuleux, anxieux, récite les normes.",
-        "claimedAlibi": "Il affirme avoir vérifié la prise rouge à 21h.",
+        "claimedAlibi": "« J'ai vérifié la prise rouge à 21 h. »",
         "accent": "cold",
         "notes": [
           "Il avait oublié un contrôle lors d'une précédente compétition."
@@ -57,18 +57,18 @@
       {
         "id": "registre",
         "title": "Le sceau remplacé",
-        "source": "CONTRÔLE TECHNIQUE",
-        "summary": "Le sceau de zone photographié à 20h porte un numéro différent de celui retrouvé au matin, provenant du carnet de Zoé.",
+        "source": "ENREGISTREMENT VIDÉO",
+        "summary": "Le sceau de zone photographié à 20 h porte un numéro différent de celui retrouvé au matin, provenant du carnet de Zoé.",
         "evidence": {
           "kind": "camera",
-          "location": "CONTRÔLE TECHNIQUE",
+          "location": "ENREGISTREMENT VIDÉO",
           "frames": [
             {
               "time": "20:14",
-              "text": "Le sceau de zone photographié à 20h porte un numéro différent de celui retrouvé au matin, provenant du carnet de Zoé."
+              "text": "Le sceau de zone photographié à 20 h porte un numéro différent de celui retrouvé au matin, provenant du carnet de Zoé."
             }
           ],
-          "altText": "Image enregistrée à 20:14. Le sceau de zone photographié à 20h porte un numéro différent de celui retrouvé au matin, provenant du carnet de Zoé."
+          "altText": "Image enregistrée à 20:14. Le sceau de zone photographié à 20 h porte un numéro différent de celui retrouvé au matin, provenant du carnet de Zoé."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -92,16 +92,23 @@
       {
         "id": "trace",
         "title": "La résine violette",
-        "source": "RAPPORT TECHNIQUE",
+        "source": "ANALYSE MATÉRIELLE",
         "summary": "La craie derrière la prise contient la résine violette du mélange personnel de Zoé.",
         "evidence": {
-          "kind": "document",
-          "title": "La résine violette",
-          "subtitle": "RAPPORT TECHNIQUE",
-          "paragraphs": [
-            "La craie derrière la prise contient la résine violette du mélange personnel de Zoé."
+          "kind": "photo",
+          "caption": "La craie derrière la prise contient la résine violette du mélange personnel de Zoé.",
+          "meta": [
+            {
+              "label": "Heure",
+              "value": "19:48"
+            },
+            {
+              "label": "Pièce",
+              "value": "La résine violette"
+            }
           ],
-          "altText": "Document intitulé La résine violette. La craie derrière la prise contient la résine violette du mélange personnel de Zoé."
+          "altText": "Photographie. La craie derrière la prise contient la résine violette du mélange personnel de Zoé.",
+          "tone": "cold"
         },
         "analysis": {
           "category": "TIMELINE",
@@ -121,16 +128,16 @@
       {
         "id": "mobile",
         "title": "Le vocal de Zoé",
-        "source": "DOCUMENT DE LA VICTIME",
+        "source": "DOCUMENT SAISI",
         "summary": "Un vocal supprimé dit qu'après la chute, plus personne ne traiterait sa voie de facile et médiocre.",
         "evidence": {
-          "kind": "email",
-          "from": "DOCUMENT DE LA VICTIME",
-          "to": "Dossier d'enquête",
-          "subject": "Le vocal de Zoé",
-          "sentAt": "20:01",
-          "body": "Un vocal supprimé dit qu'après la chute, plus personne ne traiterait sa voie de facile et médiocre.",
-          "altText": "Courriel intitulé Le vocal de Zoé. Un vocal supprimé dit qu'après la chute, plus personne ne traiterait sa voie de facile et médiocre."
+          "kind": "document",
+          "title": "Le vocal de Zoé",
+          "subtitle": "DOCUMENT SAISI",
+          "paragraphs": [
+            "Un vocal supprimé dit qu'après la chute, plus personne ne traiterait sa voie de facile et médiocre."
+          ],
+          "altText": "Document intitulé Le vocal de Zoé. Un vocal supprimé dit qu'après la chute, plus personne ne traiterait sa voie de facile et médiocre."
         },
         "analysis": {
           "category": "BEHAVIORAL",
@@ -150,13 +157,16 @@
       {
         "id": "alibi_a",
         "title": "Milan dans sa chambre",
-        "source": "RECOUPEMENT INDÉPENDANT",
+        "source": "ALIBI VÉRIFIÉ",
         "summary": "La serrure de la chambre et un appel filmé placent Milan à l'hôtel.",
         "evidence": {
-          "kind": "handwriting",
-          "body": "La serrure de la chambre et un appel filmé placent Milan à l'hôtel.",
-          "signature": "Zoé Henin",
-          "altText": "Note manuscrite. La serrure de la chambre et un appel filmé placent Milan à l'hôtel."
+          "kind": "document",
+          "title": "Milan dans sa chambre",
+          "subtitle": "ALIBI VÉRIFIÉ",
+          "paragraphs": [
+            "La serrure de la chambre et un appel filmé placent Milan à l'hôtel."
+          ],
+          "altText": "Document intitulé Milan dans sa chambre. La serrure de la chambre et un appel filmé placent Milan à l'hôtel."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -174,12 +184,16 @@
       {
         "id": "fausse_piste",
         "title": "Le contrôle d'Armand",
-        "source": "OBJET RETROUVÉ",
+        "source": "ÉLÉMENT À CHARGE",
         "summary": "Armand a signé le contrôle d'une prise qu'il reconnaît ne pas avoir démontée.",
         "evidence": {
-          "kind": "note",
-          "body": "Armand a signé le contrôle d'une prise qu'il reconnaît ne pas avoir démontée.",
-          "altText": "Note versée au dossier. Armand a signé le contrôle d'une prise qu'il reconnaît ne pas avoir démontée."
+          "kind": "document",
+          "title": "Le contrôle d'Armand",
+          "subtitle": "ÉLÉMENT À CHARGE",
+          "paragraphs": [
+            "Armand a signé le contrôle d'une prise qu'il reconnaît ne pas avoir démontée."
+          ],
+          "altText": "Document intitulé Le contrôle d'Armand. Armand a signé le contrôle d'une prise qu'il reconnaît ne pas avoir démontée."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -199,18 +213,16 @@
       {
         "id": "resolution",
         "title": "Ce que le couple de serrage ne dit pas",
-        "source": "CONTRÔLE DES DÉPLACEMENTS",
+        "source": "RECOUPEMENT FINAL",
         "summary": "Son contrôle vérifiait le couple externe. La couche cachée ne pouvait être vue sans retirer la prise et le sceau semblait intact.",
         "evidence": {
-          "kind": "schedule",
-          "title": "CONTRÔLE DES DÉPLACEMENTS",
-          "rows": [
-            {
-              "time": "19:36",
-              "label": "Son contrôle vérifiait le couple externe. La couche cachée ne pouvait être vue sans retirer la prise et le sceau semblait intact."
-            }
+          "kind": "document",
+          "title": "Ce que le couple de serrage ne dit pas",
+          "subtitle": "RECOUPEMENT FINAL",
+          "paragraphs": [
+            "Son contrôle vérifiait le couple externe. La couche cachée ne pouvait être vue sans retirer la prise et le sceau semblait intact."
           ],
-          "altText": "CONTRÔLE DES DÉPLACEMENTS, 19:36. Son contrôle vérifiait le couple externe. La couche cachée ne pouvait être vue sans retirer la prise et le sceau semblait intact."
+          "altText": "Document intitulé Ce que le couple de serrage ne dit pas. Son contrôle vérifiait le couple externe. La couche cachée ne pouvait être vue sans retirer la prise et le sceau semblait intact."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -230,43 +242,43 @@
       {
         "id": "zoe_alibi",
         "suspectId": "zoe",
-        "question": "Quand avez-vous quitté Salle d'escalade La Dalle, Zoé Henin ?",
-        "answer": "Elle dit avoir terminé le montage à 20h et scellé la zone. Créative, compétitive, assume ses choix techniques.",
+        "question": "Où étiez-vous au moment des faits, Zoé Henin ?",
+        "answer": "« J'ai terminé le montage à 20 h et scellé la zone. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
         "id": "zoe_relation",
         "suspectId": "zoe",
-        "question": "Quel désaccord vous opposait à Tom, Zoé Henin ?",
-        "answer": "Elle a dessiné et monté la finale. Tom avait critiqué sa voie comme dangereuse.",
+        "question": "Cette affaire pouvait-elle vous affecter, Zoé Henin ?",
+        "answer": "« Oui. Cette affaire pouvait avoir des conséquences pour moi, mais je n'ai rien provoqué. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "milan_alibi",
         "suspectId": "milan",
-        "question": "Qui peut confirmer votre emploi du temps, Milan Roche ?",
-        "answer": "Il récupérait en chambre d'hôtel. Calme, ascétique, observe avant de répondre.",
+        "question": "Que faisiez-vous pendant la période concernée, Milan Roche ?",
+        "answer": "« Je récupérais en chambre d'hôtel. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "milan_relation",
         "suspectId": "milan",
-        "question": "Que risquiez-vous si Tom allait au bout de sa décision, Milan Roche ?",
-        "answer": "Il devait affronter Tom en finale. La chute lui ouvre la victoire.",
+        "question": "Aviez-vous quelque chose à perdre, Milan Roche ?",
+        "answer": "« J'avais quelque chose à perdre. Cela ne suffit pas à faire de moi le coupable. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "armand_alibi",
         "suspectId": "armand",
-        "question": "Quel est votre dernier souvenir précis avant les faits, Armand Seux ?",
-        "answer": "Il affirme avoir vérifié la prise rouge à 21h. Méticuleux, anxieux, récite les normes.",
+        "question": "Donnez votre emploi du temps précis, Armand Seux.",
+        "answer": "« J'ai vérifié la prise rouge à 21 h. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "armand_relation",
         "suspectId": "armand",
-        "question": "Qu'est-ce que cette affaire pouvait changer pour vous, Armand Seux ?",
-        "answer": "Il contrôle chaque prise après les ouvreurs. Il avait oublié un contrôle lors d'une précédente compétition.",
+        "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, Armand Seux ?",
+        "answer": "« Mon intérêt personnel est réel. Il faut encore prouver que j'ai agi. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
@@ -304,19 +316,19 @@
       {
         "time": "19:48",
         "text": "Un vocal supprimé dit qu'après la chute, plus personne ne traiterait sa voie de facile et médiocre.",
-        "source": "DOCUMENT DE LA VICTIME",
+        "source": "DOCUMENT SAISI",
         "certainty": "CERTAIN"
       },
       {
         "time": "20:01",
-        "text": "Zoé Henin situe ici la fin de ses déplacements.",
-        "source": "Déposition",
+        "text": "Zoé Henin : « J'ai terminé le montage à 20 h et scellé la zone. »",
+        "source": "Déclaration de Zoé Henin",
         "certainty": "REPORTED"
       },
       {
         "time": "20:14",
-        "text": "Le sceau de zone photographié à 20h porte un numéro différent de celui retrouvé au matin, provenant du carnet de Zoé.",
-        "source": "CONTRÔLE TECHNIQUE",
+        "text": "Le sceau de zone photographié à 20 h porte un numéro différent de celui retrouvé au matin, provenant du carnet de Zoé.",
+        "source": "ENREGISTREMENT VIDÉO",
         "certainty": "CERTAIN"
       },
       {
@@ -363,15 +375,15 @@
             },
             {
               "id": "motive_innocent_a",
-              "label": "La chute lui ouvre la victoire."
+              "label": "Écarter Tom pour gagner la finale"
             },
             {
               "id": "motive_innocent_b",
-              "label": "Il avait oublié un contrôle lors d'une précédente compétition."
+              "label": "Cacher un contrôle de sécurité oublié"
             },
             {
               "id": "motive_accident",
-              "label": "Cacher une erreur antérieure sans rapport direct avec l'incident"
+              "label": "Faire fermer une voie considérée comme dangereuse"
             }
           ]
         },
@@ -387,15 +399,15 @@
             },
             {
               "id": "method_force",
-              "label": "Forcer directement l'accès principal puis dissimuler les traces"
+              "label": "Desserrer la vis après le contrôle officiel"
             },
             {
               "id": "method_complice",
-              "label": "Employer un complice extérieur après la fermeture"
+              "label": "Remplacer la prise rouge par une copie fragile"
             },
             {
               "id": "method_failure",
-              "label": "Exploiter une défaillance existante sans intervenir sur les lieux"
+              "label": "Enduire la prise d'un produit glissant"
             }
           ]
         }
@@ -458,7 +470,7 @@
       }
     ],
     "reasoning": [
-      "Le sceau de zone photographié à 20h porte un numéro différent de celui retrouvé au matin, provenant du carnet de Zoé. Cette donnée fragilise directement la version de Zoé Henin.",
+      "Le sceau de zone photographié à 20 h porte un numéro différent de celui retrouvé au matin, provenant du carnet de Zoé. Cette donnée fragilise directement la version de Zoé Henin.",
       "La craie derrière la prise contient la résine violette du mélange personnel de Zoé. La trace relie le geste au procédé employé.",
       "Un vocal supprimé dit qu'après la chute, plus personne ne traiterait sa voie de facile et médiocre. Le mobile repose donc sur un fait vérifiable.",
       "La serrure de la chambre et un appel filmé placent Milan à l'hôtel. De son côté, la principale autre piste ne résiste pas au recoupement.",
@@ -470,7 +482,7 @@
       {
         "title": "Ce qui trahit Zoé Henin",
         "steps": [
-          "Le sceau de zone photographié à 20h porte un numéro différent de celui retrouvé au matin, provenant du carnet de Zoé.",
+          "Le sceau de zone photographié à 20 h porte un numéro différent de celui retrouvé au matin, provenant du carnet de Zoé.",
           "La craie derrière la prise contient la résine violette du mélange personnel de Zoé.",
           "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]

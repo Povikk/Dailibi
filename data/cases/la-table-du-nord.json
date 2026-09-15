@@ -20,7 +20,7 @@
         "occupation": "Cartographe",
         "relation": "Elle assemble les mosaïques satellites.",
         "personality": "Patiente, visuelle, repère les erreurs au premier regard.",
-        "claimedAlibi": "Elle dit avoir validé la carte à 21h puis être rentrée.",
+        "claimedAlibi": "« J'ai validé la carte à 21 h puis être rentrée. »",
         "accent": "formal",
         "notes": [
           "Elle s'opposait au trajet risqué du Boréal."
@@ -33,7 +33,7 @@
         "occupation": "Responsable logistique",
         "relation": "Il doit tenir le calendrier de ravitaillement.",
         "personality": "Pressé, cordial, ramène tout aux délais.",
-        "claimedAlibi": "Il suivait le départ depuis le quai.",
+        "claimedAlibi": "« Je suivais le départ depuis le quai. »",
         "accent": "nervous",
         "notes": [
           "Un raccourci lui évite des pénalités énormes."
@@ -46,7 +46,7 @@
         "occupation": "Océanographe",
         "relation": "Son modèle contredit la carte finale.",
         "personality": "Directe, sûre de ses calculs.",
-        "claimedAlibi": "Elle présentait ses travaux à Varsovie en visioconférence.",
+        "claimedAlibi": "« Je présentais mes travaux à Varsovie en visioconférence. »",
         "accent": "cold",
         "notes": [
           "Un échec de Sven renforcerait son programme rival."
@@ -57,16 +57,18 @@
       {
         "id": "registre",
         "title": "La carte ouverte à 23 h 08",
-        "source": "REGISTRE DE SERVICE",
-        "summary": "L'ordinateur d'Owen ouvre l'outil cartographique à 23h08 malgré son alibi sur le quai.",
+        "source": "JOURNAL TECHNIQUE",
+        "summary": "L'ordinateur d'Owen ouvre l'outil cartographique à 23 h 08 malgré son alibi sur le quai.",
         "evidence": {
-          "kind": "document",
-          "title": "La carte ouverte à 23 h 08",
-          "subtitle": "REGISTRE DE SERVICE",
-          "paragraphs": [
-            "L'ordinateur d'Owen ouvre l'outil cartographique à 23h08 malgré son alibi sur le quai."
+          "kind": "schedule",
+          "title": "JOURNAL TECHNIQUE",
+          "rows": [
+            {
+              "time": "19:47",
+              "label": "L'ordinateur d'Owen ouvre l'outil cartographique à 23 h 08 malgré son alibi sur le quai."
+            }
           ],
-          "altText": "Document intitulé La carte ouverte à 23 h 08. L'ordinateur d'Owen ouvre l'outil cartographique à 23h08 malgré son alibi sur le quai."
+          "altText": "JOURNAL TECHNIQUE, 19:47. L'ordinateur d'Owen ouvre l'outil cartographique à 23 h 08 malgré son alibi sur le quai."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -90,13 +92,16 @@
       {
         "id": "trace",
         "title": "La tuile de la clé logistique",
-        "source": "EXAMEN DE LA PIÈCE",
+        "source": "ANALYSE MATÉRIELLE",
         "summary": "La tuile déplacée provient d'une cache hors ligne copiée sur sa clé logistique.",
         "evidence": {
-          "kind": "handwriting",
-          "body": "La tuile déplacée provient d'une cache hors ligne copiée sur sa clé logistique.",
-          "signature": "Owen Price",
-          "altText": "Note manuscrite. La tuile déplacée provient d'une cache hors ligne copiée sur sa clé logistique."
+          "kind": "document",
+          "title": "La tuile de la clé logistique",
+          "subtitle": "ANALYSE MATÉRIELLE",
+          "paragraphs": [
+            "La tuile déplacée provient d'une cache hors ligne copiée sur sa clé logistique."
+          ],
+          "altText": "Document intitulé La tuile de la clé logistique. La tuile déplacée provient d'une cache hors ligne copiée sur sa clé logistique."
         },
         "analysis": {
           "category": "TIMELINE",
@@ -116,20 +121,16 @@
       {
         "id": "mobile",
         "title": "Le contrat de ravitaillement",
-        "source": "CORRESPONDANCE SAISIE",
+        "source": "DOCUMENT SAISI",
         "summary": "Le contrat impose une pénalité quotidienne supérieure au budget restant de sa division.",
         "evidence": {
-          "kind": "sms",
-          "contact": "Marta Siwek",
-          "channel": "sms",
-          "messages": [
-            {
-              "from": "them",
-              "text": "Le contrat impose une pénalité quotidienne supérieure au budget restant de sa division.",
-              "time": "19:34"
-            }
+          "kind": "document",
+          "title": "Le contrat de ravitaillement",
+          "subtitle": "DOCUMENT SAISI",
+          "paragraphs": [
+            "Le contrat impose une pénalité quotidienne supérieure au budget restant de sa division."
           ],
-          "altText": "Message de Marta Siwek à 19:34. Le contrat impose une pénalité quotidienne supérieure au budget restant de sa division."
+          "altText": "Document intitulé Le contrat de ravitaillement. Le contrat impose une pénalité quotidienne supérieure au budget restant de sa division."
         },
         "analysis": {
           "category": "BEHAVIORAL",
@@ -149,18 +150,16 @@
       {
         "id": "alibi_a",
         "title": "Lila en salle de calcul",
-        "source": "ENREGISTREMENT TÉMOIN",
+        "source": "ALIBI VÉRIFIÉ",
         "summary": "La conférence enregistrée montre Marta répondant en direct durant la falsification.",
         "evidence": {
-          "kind": "schedule",
-          "title": "ENREGISTREMENT TÉMOIN",
-          "rows": [
-            {
-              "time": "19:40",
-              "label": "La conférence enregistrée montre Marta répondant en direct durant la falsification."
-            }
+          "kind": "document",
+          "title": "Lila en salle de calcul",
+          "subtitle": "ALIBI VÉRIFIÉ",
+          "paragraphs": [
+            "La conférence enregistrée montre Marta répondant en direct durant la falsification."
           ],
-          "altText": "ENREGISTREMENT TÉMOIN, 19:40. La conférence enregistrée montre Marta répondant en direct durant la falsification."
+          "altText": "Document intitulé Lila en salle de calcul. La conférence enregistrée montre Marta répondant en direct durant la falsification."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -178,23 +177,16 @@
       {
         "id": "fausse_piste",
         "title": "Le commentaire de Marta",
-        "source": "DOCUMENT SUSPECT",
+        "source": "ÉLÉMENT À CHARGE",
         "summary": "Lila a laissé un commentaire : « cette route ne doit pas partir ».",
         "evidence": {
-          "kind": "photo",
-          "caption": "Lila a laissé un commentaire : « cette route ne doit pas partir ».",
-          "meta": [
-            {
-              "label": "Heure",
-              "value": "19:55"
-            },
-            {
-              "label": "Pièce",
-              "value": "Le commentaire de Marta"
-            }
+          "kind": "document",
+          "title": "Le commentaire de Marta",
+          "subtitle": "ÉLÉMENT À CHARGE",
+          "paragraphs": [
+            "Lila a laissé un commentaire : « cette route ne doit pas partir »."
           ],
-          "altText": "Photographie. Lila a laissé un commentaire : « cette route ne doit pas partir ».",
-          "tone": "cold"
+          "altText": "Document intitulé Le commentaire de Marta. Lila a laissé un commentaire : « cette route ne doit pas partir »."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -214,16 +206,16 @@
       {
         "id": "resolution",
         "title": "La mosaïque sauvegardée",
-        "source": "ALIBI VÉRIFIÉ",
+        "source": "RECOUPEMENT FINAL",
         "summary": "Elle signalait justement le danger et sa version sauvegardée contient la mosaïque correcte.",
         "evidence": {
-          "kind": "email",
-          "from": "ALIBI VÉRIFIÉ",
-          "to": "Dossier d'enquête",
-          "subject": "La mosaïque sauvegardée",
-          "sentAt": "19:09",
-          "body": "Elle signalait justement le danger et sa version sauvegardée contient la mosaïque correcte.",
-          "altText": "Courriel intitulé La mosaïque sauvegardée. Elle signalait justement le danger et sa version sauvegardée contient la mosaïque correcte."
+          "kind": "document",
+          "title": "La mosaïque sauvegardée",
+          "subtitle": "RECOUPEMENT FINAL",
+          "paragraphs": [
+            "Elle signalait justement le danger et sa version sauvegardée contient la mosaïque correcte."
+          ],
+          "altText": "Document intitulé La mosaïque sauvegardée. Elle signalait justement le danger et sa version sauvegardée contient la mosaïque correcte."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -243,43 +235,43 @@
       {
         "id": "lila_alibi",
         "suspectId": "lila",
-        "question": "Votre version comporte-t-elle un moment sans témoin, Lila Charvet ?",
-        "answer": "Elle dit avoir validé la carte à 21h puis être rentrée. Patiente, visuelle, repère les erreurs au premier regard.",
+        "question": "Où étiez-vous au moment des faits, Lila Charvet ?",
+        "answer": "« J'ai validé la carte à 21 h puis être rentrée. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "lila_relation",
         "suspectId": "lila",
-        "question": "Quel désaccord vous opposait à Dr, Lila Charvet ?",
-        "answer": "Elle assemble les mosaïques satellites. Elle s'opposait au trajet risqué du Boréal.",
+        "question": "Cette affaire pouvait-elle vous affecter, Lila Charvet ?",
+        "answer": "« Je comprends les soupçons. Ma situation me donnait un mobile possible, pas une preuve. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "owen_alibi",
         "suspectId": "owen",
-        "question": "Quand avez-vous vu Dr pour la dernière fois, Owen Price ?",
-        "answer": "Il suivait le départ depuis le quai. Pressé, cordial, ramène tout aux délais.",
+        "question": "Que faisiez-vous pendant la période concernée, Owen Price ?",
+        "answer": "« Je suivais le départ depuis le quai. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
         "id": "owen_relation",
         "suspectId": "owen",
-        "question": "Que risquiez-vous si Dr allait au bout de sa décision, Owen Price ?",
-        "answer": "Il doit tenir le calendrier de ravitaillement. Un raccourci lui évite des pénalités énormes.",
+        "question": "Aviez-vous quelque chose à perdre, Owen Price ?",
+        "answer": "« J'aurais pu tirer profit de la situation. Je n'ai pourtant rien fait pour la provoquer. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "marta_alibi",
         "suspectId": "marta",
-        "question": "Décrivez vos déplacements sans sauter d'étape, Marta Siwek.",
-        "answer": "Elle présentait ses travaux à Varsovie en visioconférence. Directe, sûre de ses calculs.",
+        "question": "Donnez votre emploi du temps précis, Marta Siwek.",
+        "answer": "« Je présentais mes travaux à Varsovie en visioconférence. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "marta_relation",
         "suspectId": "marta",
-        "question": "Qu'est-ce que cette affaire pouvait changer pour vous, Marta Siwek ?",
-        "answer": "Son modèle contredit la carte finale. Un échec de Sven renforcerait son programme rival.",
+        "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, Marta Siwek ?",
+        "answer": "« Je redoutais les conséquences de cette affaire. Je ne l'ai jamais caché. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
@@ -317,19 +309,19 @@
       {
         "time": "19:21",
         "text": "Le contrat impose une pénalité quotidienne supérieure au budget restant de sa division.",
-        "source": "CORRESPONDANCE SAISIE",
+        "source": "DOCUMENT SAISI",
         "certainty": "CERTAIN"
       },
       {
         "time": "19:34",
-        "text": "Owen Price situe ici la fin de ses déplacements.",
-        "source": "Déposition",
+        "text": "Owen Price : « Je suivais le départ depuis le quai. »",
+        "source": "Déclaration d'Owen Price",
         "certainty": "REPORTED"
       },
       {
         "time": "19:47",
-        "text": "L'ordinateur d'Owen ouvre l'outil cartographique à 23h08 malgré son alibi sur le quai.",
-        "source": "REGISTRE DE SERVICE",
+        "text": "L'ordinateur d'Owen ouvre l'outil cartographique à 23 h 08 malgré son alibi sur le quai.",
+        "source": "JOURNAL TECHNIQUE",
         "certainty": "CERTAIN"
       },
       {
@@ -376,15 +368,15 @@
             },
             {
               "id": "motive_innocent_a",
-              "label": "Elle s'opposait au trajet risqué du Boréal."
+              "label": "Empêcher le Boréal d'emprunter une route dangereuse"
             },
             {
               "id": "motive_innocent_b",
-              "label": "Un échec de Sven renforcerait son programme rival."
+              "label": "Faire échouer le modèle scientifique d'une rivale"
             },
             {
               "id": "motive_accident",
-              "label": "Cacher une erreur antérieure sans rapport direct avec l'incident"
+              "label": "Obtenir un délai supplémentaire pour vérifier les images"
             }
           ]
         },
@@ -400,15 +392,15 @@
             },
             {
               "id": "method_force",
-              "label": "Forcer directement l'accès principal puis dissimuler les traces"
+              "label": "Supprimer les images montrant la banquise"
             },
             {
               "id": "method_complice",
-              "label": "Employer un complice extérieur après la fermeture"
+              "label": "Modifier les coordonnées envoyées au navire après validation"
             },
             {
               "id": "method_failure",
-              "label": "Exploiter une défaillance existante sans intervenir sur les lieux"
+              "label": "Fabriquer entièrement une nouvelle image satellite"
             }
           ]
         }
@@ -471,7 +463,7 @@
       }
     ],
     "reasoning": [
-      "L'ordinateur d'Owen ouvre l'outil cartographique à 23h08 malgré son alibi sur le quai. Cette donnée fragilise directement la version d'Owen Price.",
+      "L'ordinateur d'Owen ouvre l'outil cartographique à 23 h 08 malgré son alibi sur le quai. Cette donnée fragilise directement la version d'Owen Price.",
       "La tuile déplacée provient d'une cache hors ligne copiée sur sa clé logistique. La trace relie le geste au procédé employé.",
       "Le contrat impose une pénalité quotidienne supérieure au budget restant de sa division. Le mobile repose donc sur un fait vérifiable.",
       "La conférence enregistrée montre Marta répondant en direct durant la falsification. De son côté, la principale autre piste ne résiste pas au recoupement.",
@@ -483,7 +475,7 @@
       {
         "title": "Ce qui trahit Owen Price",
         "steps": [
-          "L'ordinateur d'Owen ouvre l'outil cartographique à 23h08 malgré son alibi sur le quai.",
+          "L'ordinateur d'Owen ouvre l'outil cartographique à 23 h 08 malgré son alibi sur le quai.",
           "La tuile déplacée provient d'une cache hors ligne copiée sur sa clé logistique.",
           "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]

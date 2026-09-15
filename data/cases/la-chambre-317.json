@@ -7,7 +7,7 @@
     "subtitle": "La cliente a disparu d'une chambre verrouillée, en laissant derrière elle une valise qui n'est pas la sienne.",
     "location": "Hôtel des Arcades, Bordeaux",
     "incident": "Disparition mise en scène",
-    "intro": "À 6h15, le petit-déjeuner de Lina reste devant la chambre 317. La chaîne est tirée de l'intérieur, la fenêtre donne sur cinq étages de vide et son téléphone est sous l'oreiller. Dans la valise, aucun vêtement ne lui appartient.",
+    "intro": "À 6 h 15, le petit-déjeuner de Lina reste devant la chambre 317. La chaîne est tirée de l'intérieur, la fenêtre donne sur cinq étages de vide et son téléphone est sous l'oreiller. Dans la valise, aucun vêtement ne lui appartient.",
     "victim": {
       "name": "Lina Verneuil",
       "description": "Journaliste, 38 ans. Elle enquêtait sur les comptes d'une fondation locale."
@@ -20,7 +20,7 @@
         "occupation": "Directeur de l'hôtel",
         "relation": "La fondation finance la rénovation de son établissement.",
         "personality": "Affable, répond trop vite au nom de son personnel.",
-        "claimedAlibi": "Il présidait un dîner caritatif filmé jusqu'à minuit.",
+        "claimedAlibi": "« Je présidais un dîner caritatif filmé jusqu'à minuit. »",
         "accent": "formal",
         "notes": [
           "Il connaissait le sujet de l'enquête de Lina."
@@ -33,7 +33,7 @@
         "occupation": "Réceptionniste de nuit",
         "relation": "Elle a remis la dernière clé à Lina.",
         "personality": "Observatrice, ironique, se souvient des chaussures plus que des visages.",
-        "claimedAlibi": "Elle affirme n'avoir jamais quitté la réception.",
+        "claimedAlibi": "« Je n'ai jamais quitté la réception. »",
         "accent": "nervous",
         "notes": [
           "Elle a reçu récemment un virement de Lina."
@@ -46,7 +46,7 @@
         "occupation": "Photographe indépendant",
         "relation": "Source et ancien collègue de Lina.",
         "personality": "Fatigué, méfiant, garde son appareil contre lui.",
-        "claimedAlibi": "Il dit être reparti par le dernier tram à 23h34.",
+        "claimedAlibi": "« Je suis reparti par le dernier tram à 23 h 34. »",
         "accent": "cold",
         "notes": [
           "Il craignait que Lina publie sans protéger ses sources."
@@ -58,17 +58,17 @@
         "id": "registre",
         "title": "Le passage de service",
         "source": "REGISTRE DE SERVICE",
-        "summary": "La validation du tram de Clément correspond à une carte expirée. Son véritable abonnement entre dans l'hôtel à 00h06.",
+        "summary": "La validation du tram de Clément correspond à une carte expirée. Son véritable abonnement entre dans l'hôtel à 00 h 06.",
         "evidence": {
-          "kind": "camera",
-          "location": "REGISTRE DE SERVICE",
-          "frames": [
+          "kind": "schedule",
+          "title": "REGISTRE DE SERVICE",
+          "rows": [
             {
               "time": "19:59",
-              "text": "La validation du tram de Clément correspond à une carte expirée. Son véritable abonnement entre dans l'hôtel à 00h06."
+              "label": "La validation du tram de Clément correspond à une carte expirée. Son véritable abonnement entre dans l'hôtel à 00 h 06."
             }
           ],
-          "altText": "Image enregistrée à 19:59. La validation du tram de Clément correspond à une carte expirée. Son véritable abonnement entre dans l'hôtel à 00h06."
+          "altText": "REGISTRE DE SERVICE, 19:59. La validation du tram de Clément correspond à une carte expirée. Son véritable abonnement entre dans l'hôtel à 00 h 06."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -92,12 +92,12 @@
       {
         "id": "trace",
         "title": "Une valise trop bien préparée",
-        "source": "EXAMEN DE LA PIÈCE",
+        "source": "ANALYSE MATÉRIELLE",
         "summary": "Une photographie accidentelle reflète dans un miroir la porte communicante ouverte entre 317 et 319.",
         "evidence": {
           "kind": "document",
           "title": "Une valise trop bien préparée",
-          "subtitle": "EXAMEN DE LA PIÈCE",
+          "subtitle": "ANALYSE MATÉRIELLE",
           "paragraphs": [
             "Une photographie accidentelle reflète dans un miroir la porte communicante ouverte entre 317 et 319."
           ],
@@ -124,13 +124,13 @@
         "source": "CORRESPONDANCE SAISIE",
         "summary": "Le message chiffré de Lina à Clément dit : « S'ils montent, fais exactement comme prévu. Personne ne doit savoir où je pars. »",
         "evidence": {
-          "kind": "email",
-          "from": "CORRESPONDANCE SAISIE",
-          "to": "Dossier d'enquête",
-          "subject": "Les comptes de la fondation",
-          "sentAt": "19:46",
-          "body": "Le message chiffré de Lina à Clément dit : « S'ils montent, fais exactement comme prévu. Personne ne doit savoir où je pars. »",
-          "altText": "Courriel intitulé Les comptes de la fondation. Le message chiffré de Lina à Clément dit : « S'ils montent, fais exactement comme prévu. Personne ne doit savoir où je pars. »"
+          "kind": "document",
+          "title": "Les comptes de la fondation",
+          "subtitle": "CORRESPONDANCE SAISIE",
+          "paragraphs": [
+            "Le message chiffré de Lina à Clément dit : « S'ils montent, fais exactement comme prévu. Personne ne doit savoir où je pars. »"
+          ],
+          "altText": "Document intitulé Les comptes de la fondation. Le message chiffré de Lina à Clément dit : « S'ils montent, fais exactement comme prévu. Personne ne doit savoir où je pars. »"
         },
         "analysis": {
           "category": "BEHAVIORAL",
@@ -150,13 +150,18 @@
       {
         "id": "alibi_a",
         "title": "Le veilleur à son poste",
-        "source": "ENREGISTREMENT TÉMOIN",
+        "source": "ENREGISTREMENT VIDÉO",
         "summary": "Le flux du dîner place Bastien au pupitre au moment où la chambre est préparée.",
         "evidence": {
-          "kind": "handwriting",
-          "body": "Le flux du dîner place Bastien au pupitre au moment où la chambre est préparée.",
-          "signature": "Bastien Cazal",
-          "altText": "Note manuscrite. Le flux du dîner place Bastien au pupitre au moment où la chambre est préparée."
+          "kind": "camera",
+          "location": "ENREGISTREMENT VIDÉO",
+          "frames": [
+            {
+              "time": "19:52",
+              "text": "Le flux du dîner place Bastien au pupitre au moment où la chambre est préparée."
+            }
+          ],
+          "altText": "Image enregistrée à 19:52. Le flux du dîner place Bastien au pupitre au moment où la chambre est préparée."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -174,12 +179,16 @@
       {
         "id": "fausse_piste",
         "title": "Le message d'Yuna",
-        "source": "DOCUMENT SUSPECT",
+        "source": "ÉLÉMENT À CHARGE",
         "summary": "Yuna a reçu 800 euros de Lina trois jours avant la disparition.",
         "evidence": {
-          "kind": "note",
-          "body": "Yuna a reçu 800 euros de Lina trois jours avant la disparition.",
-          "altText": "Note versée au dossier. Yuna a reçu 800 euros de Lina trois jours avant la disparition."
+          "kind": "document",
+          "title": "Le message d'Yuna",
+          "subtitle": "ÉLÉMENT À CHARGE",
+          "paragraphs": [
+            "Yuna a reçu 800 euros de Lina trois jours avant la disparition."
+          ],
+          "altText": "Document intitulé Le message d'Yuna. Yuna a reçu 800 euros de Lina trois jours avant la disparition."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -199,18 +208,16 @@
       {
         "id": "resolution",
         "title": "La chaîne vue de l'extérieur",
-        "source": "ALIBI VÉRIFIÉ",
+        "source": "RECOUPEMENT FINAL",
         "summary": "La facture jointe identifie l'achat légal d'archives de vidéosurveillance que Yuna avait sauvegardées pour l'enquête.",
         "evidence": {
-          "kind": "schedule",
-          "title": "ALIBI VÉRIFIÉ",
-          "rows": [
-            {
-              "time": "19:21",
-              "label": "La facture jointe identifie l'achat légal d'archives de vidéosurveillance que Yuna avait sauvegardées pour l'enquête."
-            }
+          "kind": "document",
+          "title": "La chaîne vue de l'extérieur",
+          "subtitle": "RECOUPEMENT FINAL",
+          "paragraphs": [
+            "La facture jointe identifie l'achat légal d'archives de vidéosurveillance que Yuna avait sauvegardées pour l'enquête."
           ],
-          "altText": "ALIBI VÉRIFIÉ, 19:21. La facture jointe identifie l'achat légal d'archives de vidéosurveillance que Yuna avait sauvegardées pour l'enquête."
+          "altText": "Document intitulé La chaîne vue de l'extérieur. La facture jointe identifie l'achat légal d'archives de vidéosurveillance que Yuna avait sauvegardées pour l'enquête."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -230,43 +237,43 @@
       {
         "id": "bastien_alibi",
         "suspectId": "bastien",
-        "question": "Votre version comporte-t-elle un moment sans témoin, Bastien Cazal ?",
-        "answer": "Il présidait un dîner caritatif filmé jusqu'à minuit. Affable, répond trop vite au nom de son personnel.",
+        "question": "Où étiez-vous au moment des faits, Bastien Cazal ?",
+        "answer": "« Je présidais un dîner caritatif filmé jusqu'à minuit. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "bastien_relation",
         "suspectId": "bastien",
-        "question": "Quel désaccord vous opposait à Lina, Bastien Cazal ?",
-        "answer": "La fondation finance la rénovation de son établissement. Il connaissait le sujet de l'enquête de Lina.",
+        "question": "Cette affaire pouvait-elle vous affecter, Bastien Cazal ?",
+        "answer": "« Je comprends les soupçons. Ma situation me donnait un mobile possible, pas une preuve. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "yuna_alibi",
         "suspectId": "yuna",
-        "question": "Quand avez-vous vu Lina pour la dernière fois, Yuna Delmas ?",
-        "answer": "Elle affirme n'avoir jamais quitté la réception. Observatrice, ironique, se souvient des chaussures plus que des visages.",
+        "question": "Que faisiez-vous pendant la période concernée, Yuna Delmas ?",
+        "answer": "« Je n'ai jamais quitté la réception. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "yuna_relation",
         "suspectId": "yuna",
-        "question": "Que risquiez-vous si Lina allait au bout de sa décision, Yuna Delmas ?",
-        "answer": "Elle a remis la dernière clé à Lina. Elle a reçu récemment un virement de Lina.",
+        "question": "Aviez-vous quelque chose à perdre, Yuna Delmas ?",
+        "answer": "« J'aurais pu tirer profit de la situation. Je n'ai pourtant rien fait pour la provoquer. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "clement_alibi",
         "suspectId": "clement",
-        "question": "Décrivez vos déplacements sans sauter d'étape, Clément Rive.",
-        "answer": "Il dit être reparti par le dernier tram à 23h34. Fatigué, méfiant, garde son appareil contre lui.",
+        "question": "Donnez votre emploi du temps précis, Clément Rive.",
+        "answer": "« Je suis reparti par le dernier tram à 23 h 34. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
         "id": "clement_relation",
         "suspectId": "clement",
-        "question": "Qu'est-ce que cette affaire pouvait changer pour vous, Clément Rive ?",
-        "answer": "Source et ancien collègue de Lina. Il craignait que Lina publie sans protéger ses sources.",
+        "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, Clément Rive ?",
+        "answer": "« Je redoutais les conséquences de cette affaire. Je ne l'ai jamais caché. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
@@ -309,13 +316,13 @@
       },
       {
         "time": "19:46",
-        "text": "Clément Rive situe ici la fin de ses déplacements.",
-        "source": "Déposition",
+        "text": "Clément Rive : « Je suis reparti par le dernier tram à 23 h 34. »",
+        "source": "Déclaration de Clément Rive",
         "certainty": "REPORTED"
       },
       {
         "time": "19:59",
-        "text": "La validation du tram de Clément correspond à une carte expirée. Son véritable abonnement entre dans l'hôtel à 00h06.",
+        "text": "La validation du tram de Clément correspond à une carte expirée. Son véritable abonnement entre dans l'hôtel à 00 h 06.",
         "source": "REGISTRE DE SERVICE",
         "certainty": "CERTAIN"
       },
@@ -363,15 +370,15 @@
             },
             {
               "id": "motive_innocent_a",
-              "label": "Il connaissait le sujet de l'enquête de Lina."
+              "label": "Protéger les sources de Lina avant la publication"
             },
             {
               "id": "motive_innocent_b",
-              "label": "Elle a reçu récemment un virement de Lina."
+              "label": "Empêcher la journaliste de révéler les comptes de la fondation"
             },
             {
               "id": "motive_accident",
-              "label": "Cacher une erreur antérieure sans rapport direct avec l'incident"
+              "label": "Faire croire à un enlèvement pour obtenir une rançon"
             }
           ]
         },
@@ -387,15 +394,15 @@
             },
             {
               "id": "method_force",
-              "label": "Forcer directement l'accès principal puis dissimuler les traces"
+              "label": "Faire sortir Lina cachée dans un chariot de service"
             },
             {
               "id": "method_complice",
-              "label": "Employer un complice extérieur après la fermeture"
+              "label": "La faire passer par la fenêtre jusqu'à une chambre voisine"
             },
             {
               "id": "method_failure",
-              "label": "Exploiter une défaillance existante sans intervenir sur les lieux"
+              "label": "Utiliser un double de clé puis tirer la chaîne avec un fil"
             }
           ]
         }
@@ -458,7 +465,7 @@
       }
     ],
     "reasoning": [
-      "La validation du tram de Clément correspond à une carte expirée. Son véritable abonnement entre dans l'hôtel à 00h06. Cette donnée fragilise directement la version de Clément Rive.",
+      "La validation du tram de Clément correspond à une carte expirée. Son véritable abonnement entre dans l'hôtel à 00 h 06. Cette donnée fragilise directement la version de Clément Rive.",
       "Une photographie accidentelle reflète dans un miroir la porte communicante ouverte entre 317 et 319. La trace relie le geste au procédé employé.",
       "Le message chiffré de Lina à Clément dit : « S'ils montent, fais exactement comme prévu. Personne ne doit savoir où je pars. » Le mobile repose donc sur un fait vérifiable.",
       "Le flux du dîner place Bastien au pupitre au moment où la chambre est préparée. De son côté, la principale autre piste ne résiste pas au recoupement.",
@@ -470,7 +477,7 @@
       {
         "title": "Ce qui trahit Clément Rive",
         "steps": [
-          "La validation du tram de Clément correspond à une carte expirée. Son véritable abonnement entre dans l'hôtel à 00h06.",
+          "La validation du tram de Clément correspond à une carte expirée. Son véritable abonnement entre dans l'hôtel à 00 h 06.",
           "Une photographie accidentelle reflète dans un miroir la porte communicante ouverte entre 317 et 319.",
           "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]

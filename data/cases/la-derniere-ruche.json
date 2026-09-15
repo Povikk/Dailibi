@@ -20,7 +20,7 @@
         "occupation": "Généticienne",
         "relation": "Elle étudie la lignée de la reine.",
         "personality": "Réfléchie, attentive aux mots de causalité.",
-        "claimedAlibi": "Elle analysait des larves dans le laboratoire vitré.",
+        "claimedAlibi": "« J'analysais des larves dans le laboratoire vitré. »",
         "accent": "formal",
         "notes": [
           "Ses résultats contredisaient ceux de Baptiste."
@@ -33,7 +33,7 @@
         "occupation": "Exploitant voisin",
         "relation": "Ses cultures sont accusées d'utiliser trop de pesticides.",
         "personality": "Défensif, parle fort, connaît mal les protocoles.",
-        "claimedAlibi": "Il traitait un champ à trois kilomètres.",
+        "claimedAlibi": "« Je traitais un champ à trois kilomètres. »",
         "accent": "nervous",
         "notes": [
           "La mort des abeilles pouvait lui être imputée."
@@ -46,7 +46,7 @@
         "occupation": "Assistant apicole",
         "relation": "Il nourrit et ferme les ruches chaque soir.",
         "personality": "Doux, minutieux, appelle les reines par leur numéro.",
-        "claimedAlibi": "Il affirme avoir donné le même sirop aux douze ruches.",
+        "claimedAlibi": "« J'ai donné le même sirop aux douze ruches. »",
         "accent": "cold",
         "notes": [
           "Baptiste refusait de lui céder une reine."
@@ -92,23 +92,16 @@
       {
         "id": "trace",
         "title": "Le sirop marqué",
-        "source": "CONSTAT PHOTOGRAPHIQUE",
+        "source": "ANALYSE MATÉRIELLE",
         "summary": "Le répulsif contient l'huile de clou de girofle utilisée dans sa boîte personnelle de marquage des reines.",
         "evidence": {
-          "kind": "photo",
-          "caption": "Le répulsif contient l'huile de clou de girofle utilisée dans sa boîte personnelle de marquage des reines.",
-          "meta": [
-            {
-              "label": "Heure",
-              "value": "20:09"
-            },
-            {
-              "label": "Pièce",
-              "value": "Le sirop marqué"
-            }
+          "kind": "document",
+          "title": "Le sirop marqué",
+          "subtitle": "ANALYSE MATÉRIELLE",
+          "paragraphs": [
+            "Le répulsif contient l'huile de clou de girofle utilisée dans sa boîte personnelle de marquage des reines."
           ],
-          "altText": "Photographie. Le répulsif contient l'huile de clou de girofle utilisée dans sa boîte personnelle de marquage des reines.",
-          "tone": "cold"
+          "altText": "Document intitulé Le sirop marqué. Le répulsif contient l'huile de clou de girofle utilisée dans sa boîte personnelle de marquage des reines."
         },
         "analysis": {
           "category": "TIMELINE",
@@ -128,16 +121,16 @@
       {
         "id": "mobile",
         "title": "La vente de la reine",
-        "source": "NOTE PERSONNELLE",
+        "source": "DOCUMENT SAISI",
         "summary": "Une annonce non publiée propose déjà des descendantes de la lignée 12 sous le nom commercial d'Éloi.",
         "evidence": {
-          "kind": "email",
-          "from": "NOTE PERSONNELLE",
-          "to": "Dossier d'enquête",
-          "subject": "La vente de la reine",
-          "sentAt": "20:22",
-          "body": "Une annonce non publiée propose déjà des descendantes de la lignée 12 sous le nom commercial d'Éloi.",
-          "altText": "Courriel intitulé La vente de la reine. Une annonce non publiée propose déjà des descendantes de la lignée 12 sous le nom commercial d'Éloi."
+          "kind": "document",
+          "title": "La vente de la reine",
+          "subtitle": "DOCUMENT SAISI",
+          "paragraphs": [
+            "Une annonce non publiée propose déjà des descendantes de la lignée 12 sous le nom commercial d'Éloi."
+          ],
+          "altText": "Document intitulé La vente de la reine. Une annonce non publiée propose déjà des descendantes de la lignée 12 sous le nom commercial d'Éloi."
         },
         "analysis": {
           "category": "BEHAVIORAL",
@@ -157,11 +150,11 @@
       {
         "id": "alibi_a",
         "title": "Nour au rucher nord",
-        "source": "ALIBI VÉRIFIÉ",
+        "source": "ENREGISTREMENT VIDÉO",
         "summary": "La caméra du laboratoire place Nour derrière la vitre pendant les deux ouvertures.",
         "evidence": {
           "kind": "camera",
-          "location": "ALIBI VÉRIFIÉ",
+          "location": "ENREGISTREMENT VIDÉO",
           "frames": [
             {
               "time": "20:28",
@@ -189,10 +182,13 @@
         "source": "ÉLÉMENT À CHARGE",
         "summary": "Le pesticide pulvérisé par Didier tue les abeilles à une dose compatible.",
         "evidence": {
-          "kind": "handwriting",
-          "body": "Le pesticide pulvérisé par Didier tue les abeilles à une dose compatible.",
-          "signature": "Didier Pons",
-          "altText": "Note manuscrite. Le pesticide pulvérisé par Didier tue les abeilles à une dose compatible."
+          "kind": "document",
+          "title": "Le pesticide de Didier",
+          "subtitle": "ÉLÉMENT À CHARGE",
+          "paragraphs": [
+            "Le pesticide pulvérisé par Didier tue les abeilles à une dose compatible."
+          ],
+          "altText": "Document intitulé Le pesticide de Didier. Le pesticide pulvérisé par Didier tue les abeilles à une dose compatible."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -212,12 +208,12 @@
       {
         "id": "resolution",
         "title": "Du poison sans pollen",
-        "source": "ENREGISTREMENT TÉMOIN",
+        "source": "RECOUPEMENT FINAL",
         "summary": "Les analyses de pollen sont négatives et le vent soufflait du rucher vers son champ, direction opposée à une contamination.",
         "evidence": {
           "kind": "document",
           "title": "Du poison sans pollen",
-          "subtitle": "ENREGISTREMENT TÉMOIN",
+          "subtitle": "RECOUPEMENT FINAL",
           "paragraphs": [
             "Les analyses de pollen sont négatives et le vent soufflait du rucher vers son champ, direction opposée à une contamination."
           ],
@@ -241,43 +237,43 @@
       {
         "id": "nour_alibi",
         "suspectId": "nour",
-        "question": "Votre version comporte-t-elle un moment sans témoin, Nour Lemaire ?",
-        "answer": "Elle analysait des larves dans le laboratoire vitré. Réfléchie, attentive aux mots de causalité.",
+        "question": "Où étiez-vous au moment des faits, Nour Lemaire ?",
+        "answer": "« J'analysais des larves dans le laboratoire vitré. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "nour_relation",
         "suspectId": "nour",
-        "question": "Quel désaccord vous opposait à Baptiste, Nour Lemaire ?",
-        "answer": "Elle étudie la lignée de la reine. Ses résultats contredisaient ceux de Baptiste.",
+        "question": "Cette affaire pouvait-elle vous affecter, Nour Lemaire ?",
+        "answer": "« Je comprends les soupçons. Ma situation me donnait un mobile possible, pas une preuve. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "didier_alibi",
         "suspectId": "didier",
-        "question": "Quand avez-vous vu Baptiste pour la dernière fois, Didier Pons ?",
-        "answer": "Il traitait un champ à trois kilomètres. Défensif, parle fort, connaît mal les protocoles.",
+        "question": "Que faisiez-vous pendant la période concernée, Didier Pons ?",
+        "answer": "« Je traitais un champ à trois kilomètres. »",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "didier_relation",
         "suspectId": "didier",
-        "question": "Que risquiez-vous si Baptiste allait au bout de sa décision, Didier Pons ?",
-        "answer": "Ses cultures sont accusées d'utiliser trop de pesticides. La mort des abeilles pouvait lui être imputée.",
+        "question": "Aviez-vous quelque chose à perdre, Didier Pons ?",
+        "answer": "« J'aurais pu tirer profit de la situation. Je n'ai pourtant rien fait pour la provoquer. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "eloi_alibi",
         "suspectId": "eloi",
-        "question": "Décrivez vos déplacements sans sauter d'étape, Éloi Vernet.",
-        "answer": "Il affirme avoir donné le même sirop aux douze ruches. Doux, minutieux, appelle les reines par leur numéro.",
+        "question": "Donnez votre emploi du temps précis, Éloi Vernet.",
+        "answer": "« J'ai donné le même sirop aux douze ruches. »",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
         "id": "eloi_relation",
         "suspectId": "eloi",
-        "question": "Qu'est-ce que cette affaire pouvait changer pour vous, Éloi Vernet ?",
-        "answer": "Il nourrit et ferme les ruches chaque soir. Baptiste refusait de lui céder une reine.",
+        "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, Éloi Vernet ?",
+        "answer": "« Je redoutais les conséquences de cette affaire. Je ne l'ai jamais caché. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
@@ -315,13 +311,13 @@
       {
         "time": "20:09",
         "text": "Une annonce non publiée propose déjà des descendantes de la lignée 12 sous le nom commercial d'Éloi.",
-        "source": "NOTE PERSONNELLE",
+        "source": "DOCUMENT SAISI",
         "certainty": "CERTAIN"
       },
       {
         "time": "20:22",
-        "text": "Éloi Vernet situe ici la fin de ses déplacements.",
-        "source": "Déposition",
+        "text": "Éloi Vernet : « J'ai donné le même sirop aux douze ruches. »",
+        "source": "Déclaration d'Éloi Vernet",
         "certainty": "REPORTED"
       },
       {
@@ -374,15 +370,15 @@
             },
             {
               "id": "motive_innocent_a",
-              "label": "Ses résultats contredisaient ceux de Baptiste."
+              "label": "Faire accuser l'agriculteur qui traitait le champ voisin"
             },
             {
               "id": "motive_innocent_b",
-              "label": "La mort des abeilles pouvait lui être imputée."
+              "label": "Empêcher des résultats scientifiques défavorables"
             },
             {
               "id": "motive_accident",
-              "label": "Cacher une erreur antérieure sans rapport direct avec l'incident"
+              "label": "Vendre la colonie entière à un éleveur étranger"
             }
           ]
         },
@@ -398,15 +394,15 @@
             },
             {
               "id": "method_force",
-              "label": "Forcer directement l'accès principal puis dissimuler les traces"
+              "label": "Contaminer le pollen rapporté par les butineuses"
             },
             {
               "id": "method_complice",
-              "label": "Employer un complice extérieur après la fermeture"
+              "label": "Injecter le poison dans le sirop commun aux douze ruches"
             },
             {
               "id": "method_failure",
-              "label": "Exploiter une défaillance existante sans intervenir sur les lieux"
+              "label": "Pulvériser un insecticide depuis le champ voisin"
             }
           ]
         }
