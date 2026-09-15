@@ -233,6 +233,21 @@ const detailAnswers = [
 ];
 
 const root = join(process.cwd(), "data", "cases");
+
+/**
+ * Réponses écrites sur mesure, par affaire et par suspect.
+ * Absentes d'une affaire, la passe retombe sur les banques génériques.
+ */
+const interviewOverrides: Record<string, Record<string, Record<string, string>>> = (() => {
+  try {
+    return JSON.parse(
+      readFileSync(join(process.cwd(), "case-authoring", "interviews.json"), "utf8"),
+    ) as Record<string, Record<string, Record<string, string>>>;
+  } catch {
+    return {};
+  }
+})();
+
 for (const filename of readdirSync(root).filter((name) => name.endsWith(".json"))) {
   const path = join(root, filename);
   const file = JSON.parse(readFileSync(path, "utf8")) as CaseFile;
@@ -282,18 +297,20 @@ for (const filename of readdirSync(root).filter((name) => name.endsWith(".json")
     );
   });
 
+  const overrides = interviewOverrides[p.id] ?? {};
   p.suspects.forEach((suspect, index) => {
+    const custom = overrides[suspect.id] ?? {};
     const observation = p.interviews.find((item) => item.id === `${suspect.id}_observation`);
     const relation = p.interviews.find((item) => item.id === `${suspect.id}_relation`);
     if (observation) {
       observation.question =
         observationQuestions[(p.number + index) % observationQuestions.length](suspect.name);
       observation.answer =
-        observationAnswers[(p.number + index) % observationAnswers.length];
+        custom.observation ?? observationAnswers[(p.number + index) % observationAnswers.length];
     }
     if (relation) {
       relation.question = relationQuestions[(p.number * 2 + index) % relationQuestions.length](suspect.name);
-      relation.answer = relationAnswers[(p.number + index) % relationAnswers.length];
+      relation.answer = custom.relation ?? relationAnswers[(p.number + index) % relationAnswers.length];
     }
   });
 
@@ -311,15 +328,20 @@ for (const filename of readdirSync(root).filter((name) => name.endsWith(".json")
     detail.question = redHerringQuestions[(p.number + offset) % redHerringQuestions.length];
   });
   if (confrontation) {
-    confrontation.answer = confrontationAnswers[p.number % confrontationAnswers.length];
+    confrontation.answer =
+      overrides[culpritId]?.confrontation ??
+      confrontationAnswers[p.number % confrontationAnswers.length];
     confrontation.beat = ["Le mensonge est admis, mais sa raison reste à établir.", "La présence devient certaine. Le geste reste à prouver.", "La réponse réduit l'alibi à une version non vérifiée."][p.number % 3];
   }
   if (motive) {
-    motive.answer = motiveAnswers[p.number % motiveAnswers.length];
+    motive.answer =
+      overrides[culpritId]?.mobile ?? motiveAnswers[p.number % motiveAnswers.length];
     motive.beat = ["L'intérêt personnel est reconnu sans que le passage à l'acte le soit.", "Le document donne un poids concret au mobile.", "La menace n'est plus abstraite pour cette personne."][p.number % 3];
   }
   details.forEach((detail, offset) => {
-    detail.answer = detailAnswers[(p.number + offset) % detailAnswers.length];
+    detail.answer =
+      overrides[detail.suspectId]?.detail ??
+      detailAnswers[(p.number + offset) % detailAnswers.length];
     detail.beat = ["La pièce doit être replacée dans sa chronologie.", "Une coïncidence forte n'est pas encore une preuve complète.", "Le recoupement suivant peut innocenter ou condamner."][(p.number + offset) % 3];
   });
 

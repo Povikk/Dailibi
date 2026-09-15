@@ -264,49 +264,49 @@
         "id": "june_observation",
         "suspectId": "june",
         "question": "Que retenez-vous de cette soirée, June Luce ?",
-        "answer": "« Rien qui mérite un rapport. La soirée s'est déroulée comme les autres. »",
+        "answer": "« Mon père se levait la nuit pour respirer ses fleurs. Tout le monde ici le savait. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "june_relation",
         "suspectId": "june",
         "question": "Que risquiez-vous dans cette histoire, June Luce ?",
-        "answer": "« Oui, je perdais gros. J'étais surtout en train de chercher une solution. »",
+        "answer": "« J'hérite de la collection, pas de la villa. Il voulait la vendre, et je ne le voulais pas. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "benoit_observation",
         "suspectId": "benoit",
         "question": "Est-ce que quelque chose vous a mis mal à l'aise, Benoît Carsin ?",
-        "answer": "« Il y avait une tension, mais elle retombe vite ici. C'est tout. »",
+        "answer": "« Les belles-de-nuit s'ouvrent vers 22 h et se referment à l'aube. Sauf quand quelque chose les touche. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "benoit_relation",
         "suspectId": "benoit",
         "question": "Quel était votre intérêt, Benoît Carsin ?",
-        "answer": "« Si j'avais voulu en finir, j'aurais eu cent façons plus simples. »",
+        "answer": "« J'ai accès aux plantes toxiques, comme tout le personnel. C'est écrit dans mes fiches d'entretien. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "dr_observation",
         "suspectId": "dr",
         "question": "Avez-vous remarqué quelque chose d'inhabituel, Dr Selma Wong ?",
-        "answer": "« Vous me demandez ça parce que j'étais là. Je n'ai rien vu, moi. »",
+        "answer": "« Cliniquement, ce que je vois est un surdosage. Ce n'est pas une preuve, c'est un tableau. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "dr_relation",
         "suspectId": "dr",
         "question": "Qu'est-ce que cela changeait pour vous, Dr Selma Wong ?",
-        "answer": "« Je n'ai pas à me justifier sur ma situation. Demandez plutôt autour de vous. »",
+        "answer": "« J'ajustais son traitement cardiaque. Le poison imite exactement un surdosage : vous imaginez comme c'est confortable. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "june_confrontation",
         "suspectId": "june",
         "question": "Le relevé vous place sur les lieux. Pourquoi l'avoir omis ?",
-        "answer": "« Je maintiens l'essentiel. Sur cette minute-là, j'ai pu me tromper. »",
+        "answer": "« Le capteur enregistre une sortie à 4 h 09. Je suis allée chercher un verre d'eau dans la cuisine. »",
         "unlockedByClueId": "registre",
         "beat": "La présence devient certaine. Le geste reste à prouver."
       },
@@ -314,7 +314,7 @@
         "id": "june_mobile",
         "suspectId": "june",
         "question": "Qu'auriez-vous perdu si ce projet avait abouti ?",
-        "answer": "« J'ai voulu garder ça privé. La divulgation aurait détruit des années de travail. »",
+        "answer": "« Le compromis prévoit de détruire la véranda. Les archives de ma mère y sont. Vous auriez attendu, vous ? »",
         "unlockedByClueId": "mobile",
         "beat": "Le document donne un poids concret au mobile."
       },
@@ -322,7 +322,7 @@
         "id": "benoit_detail",
         "suspectId": "benoit",
         "question": "Pourquoi retrouve-t-on cet objet parmi vos affaires ?",
-        "answer": "« Non, ce n'est pas moi. Et cette pièce, seule, ne dit rien de tel. »",
+        "answer": "« Cette page est une fiche de prévention, remise à toute la propriété. Mon ticket de bus prouve que je suis parti à 20 h. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       },
@@ -330,7 +330,7 @@
         "id": "dr_detail",
         "suspectId": "dr",
         "question": "À quel moment cet élément a-t-il changé de sens ?",
-        "answer": "« Vous avez trouvé cela chez moi, oui. Ça ne raconte pas la soirée. »",
+        "answer": "« Mon ajustement date de trois semaines. Les accès horodatés de la clinique me placent de garde toute la nuit. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "Le recoupement suivant peut innocenter ou condamner."
       }

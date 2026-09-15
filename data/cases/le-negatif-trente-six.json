@@ -264,49 +264,49 @@
         "id": "diane_observation",
         "suspectId": "diane",
         "question": "Une chose vous a-t-elle semblé déplacée, Diane Fabre ?",
-        "answer": "« Non. Si quelque chose clochait, je ne l'ai pas remarqué. »",
+        "answer": "« Cette série, je la connais depuis trente ans. La trente-sixième vue, personne ne l'a jamais vue. Sauf celui qui l'a prise. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "diane_relation",
         "suspectId": "diane",
         "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, Diane Fabre ?",
-        "answer": "« Vous cherchez un mobile ? Le voilà. Trouvez maintenant le geste. »",
+        "answer": "« Ce négatif pouvait me sortir de trente ans de soupçons. Vous comprenez que je n'avais aucun intérêt à le voir disparaître. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "nils_observation",
         "suspectId": "nils",
         "question": "Qu'avez-vous vu juste avant que cela arrive, Nils Caron ?",
-        "answer": "« Je ne me mêle pas des affaires des autres. Je ne saurais rien vous dire. »",
+        "answer": "« Le scanner garde tout en mémoire, y compris les profils. Ce n'est pas moi qui l'ai rallumé. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "nils_relation",
         "suspectId": "nils",
         "question": "Reconnaissez-vous avoir un intérêt personnel dans cette affaire, Nils Caron ?",
-        "answer": "« Ça me met dans une position délicate. Je le reconnais. Et alors ? »",
+        "answer": "« Je revends des boîtiers et des objectifs. Ça ne fait pas de moi un voleur de négatifs. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "helene_observation",
         "suspectId": "helene",
         "question": "Que retenez-vous de cette soirée, Hélène Jouve ?",
-        "answer": "« Rien qui mérite un rapport. La soirée s'est déroulée comme les autres. »",
+        "answer": "« Je reformule : on me demande ce que j'ai vu ce soir-là. J'ai vu un dîner. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "helene_relation",
         "suspectId": "helene",
         "question": "Cette situation pouvait-elle vous profiter, Hélène Jouve ?",
-        "answer": "« Oui, je perdais gros. J'étais surtout en train de chercher une solution. »",
+        "answer": "« Mon père apparaît sur cette photographie. Vous imaginez le reste. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "nils_confrontation",
         "suspectId": "nils",
         "question": "Le relevé ne correspond pas à ce que vous dites. Que s'est-il passé ?",
-        "answer": "« Vous partez d'un outil et vous en tirez une conclusion. C'est un peu rapide. »",
+        "answer": "« Le profil de session reste sur le poste : n'importe qui peut le rappeler. La vraie question, c'est qui avait la clé. »",
         "unlockedByClueId": "registre",
         "beat": "Le mensonge est admis, mais sa raison reste à établir."
       },
@@ -314,7 +314,7 @@
         "id": "nils_mobile",
         "suspectId": "nils",
         "question": "Pourquoi ce document comptait-il autant pour vous ?",
-        "answer": "« Tout le monde dans la pièce avait une raison de s'inquiéter. Pas seulement moi. »",
+        "answer": "« Je vends du matériel, pas des images. Retrouvez la conversation, vous verrez de quel côté elle penche. »",
         "unlockedByClueId": "mobile",
         "beat": "L'intérêt personnel est reconnu sans que le passage à l'acte le soit."
       },
@@ -322,7 +322,7 @@
         "id": "helene_detail",
         "suspectId": "helene",
         "question": "Comment cet objet est-il arrivé là, selon vous ?",
-        "answer": "« Oui, c'est à moi. Demandez à la personne qui l'a vu changer de mains. »",
+        "answer": "« Ma demande invoquait un mineur non flouté sur la vue 12. Relisez-la : je ne parle jamais de la vue 36. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "La pièce doit être replacée dans sa chronologie."
       },
@@ -330,7 +330,7 @@
         "id": "diane_detail",
         "suspectId": "diane",
         "question": "Que répondez-vous à cette pièce qui vous met en cause ?",
-        "answer": "« Vous remontez une piste qui s'arrête juste avant moi. »",
+        "answer": "« J'ai demandé son retrait du catalogue, pas sa disparition. La nuance m'importe beaucoup. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       }

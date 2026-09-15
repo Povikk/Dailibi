@@ -259,49 +259,49 @@
         "id": "pere_observation",
         "suspectId": "pere",
         "question": "Qu'avez-vous vu juste avant que cela arrive, Père Augustin ?",
-        "answer": "« Je ne me mêle pas des affaires des autres. Je ne saurais rien vous dire. »",
+        "answer": "« Nous étions tous dans la cour, pour les complies. Nous n'avons rien remarqué, et nous le regrettons. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "pere_relation",
         "suspectId": "pere",
         "question": "Cette situation pouvait-elle vous profiter, Père Augustin ?",
-        "answer": "« Ça me met dans une position délicate. Je le reconnais. Et alors ? »",
+        "answer": "« Nous devons rembourser un emprunt. C'est vrai. C'est aussi le cas de bien des communautés. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "leonie_observation",
         "suspectId": "leonie",
         "question": "Que retenez-vous de cette soirée, Léonie Pujol ?",
-        "answer": "« Rien qui mérite un rapport. La soirée s'est déroulée comme les autres. »",
+        "answer": "« Quatre minutes de volée, ça s'écoute. Et ce que j'ai entendu ce soir-là n'était pas la grande cloche. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "leonie_relation",
         "suspectId": "leonie",
         "question": "Que redoutiez-vous personnellement, Léonie Pujol ?",
-        "answer": "« Oui, je perdais gros. J'étais surtout en train de chercher une solution. »",
+        "answer": "« J'ai restauré ce mécanisme pendant deux mois. Le son, je le connais mieux que personne. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "basile_observation",
         "suspectId": "basile",
         "question": "Est-ce que quelque chose vous a mis mal à l'aise, Basile Rémond ?",
-        "answer": "« Il y avait une tension, mais elle retombe vite ici. C'est tout. »",
+        "answer": "« On entend toujours la cloche. C'est justement pour ça que personne ne regarde l'heure quand elle sonne. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "basile_relation",
         "suspectId": "basile",
         "question": "Que risquiez-vous dans cette histoire, Basile Rémond ?",
-        "answer": "« Si j'avais voulu en finir, j'aurais eu cent façons plus simples. »",
+        "answer": "« Je connais les passages condamnés, bien sûr. Je les montre aux groupes. C'est mon travail. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "leonie_confrontation",
         "suspectId": "leonie",
         "question": "Expliquez-moi cet écart entre votre version et les données.",
-        "answer": "« J'étais là. Ça n'a rien à voir avec ce qu'on me reproche. »",
+        "answer": "« Mon téléphone se connecte à la borne du clocher : c'est la seule antenne du secteur. Il s'y connecte aussi depuis ma chambre, à trente mètres. »",
         "unlockedByClueId": "registre",
         "beat": "La présence devient certaine. Le geste reste à prouver."
       },
@@ -309,7 +309,7 @@
         "id": "leonie_mobile",
         "suspectId": "leonie",
         "question": "Qu'est-ce que cela remettait en cause, pour vous ?",
-        "answer": "« J'aurais pu régler ça autrement. C'est ce que j'ai essayé de faire. »",
+        "answer": "« Mon fils est hospitalisé. Le devis, c'est le mien. Ça ne prouve pas que j'aie vendu quoi que ce soit. »",
         "unlockedByClueId": "mobile",
         "beat": "Le document donne un poids concret au mobile."
       },
@@ -317,7 +317,7 @@
         "id": "pere_detail",
         "suspectId": "pere",
         "question": "Que répondez-vous à cette pièce qui vous met en cause ?",
-        "answer": "« Vous remontez une piste qui s'arrête juste avant moi. »",
+        "answer": "« L'expertise préparait une assurance imposée par la banque. Trois vidéos nous placent au premier rang pendant toute la sonnerie. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       },
@@ -325,7 +325,7 @@
         "id": "basile_detail",
         "suspectId": "basile",
         "question": "À qui profite le doute jeté sur vous ?",
-        "answer": "« Je n'ai rien à voir avec cela, et ce détail ne prouve pas le contraire. »",
+        "answer": "« Je photographie tout ce que je guide. Une vidéo de visiteur me montre à la boutique, sans coupure, jusqu'après la sonnerie. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "Le recoupement suivant peut innocenter ou condamner."
       }

@@ -259,49 +259,49 @@
         "id": "ewen_observation",
         "suspectId": "ewen",
         "question": "Quelque chose vous a-t-il paru anormal ce soir-là, Éwen Piat ?",
-        "answer": "« J'ai surtout remarqué que personne ne semblait inquiet. C'est peut-être ça, l'anormal. »",
+        "answer": "« Les huîtres s'ouvrent par vagues de six heures. La mer, je la connais mieux qu'un modèle. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "ewen_relation",
         "suspectId": "ewen",
         "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, Éwen Piat ?",
-        "answer": "« Ça m'inquiétait plus que ça m'arrangeait. Nuance. »",
+        "answer": "« Si l'essai échoue, on prolonge les aides. Naturellement que ça m'arrange. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "clara_observation",
         "suspectId": "clara",
         "question": "Avez-vous vu ou entendu un détail qui vous a surpris, Clara Nomura ?",
-        "answer": "« Je n'ai pas fait attention. On m'a posé la question après, et j'ai cherché : rien. »",
+        "answer": "« J'ai préparé les réservoirs à 17 h. Ensuite, les bassins sont en circuit fermé, je ne m'en occupe plus. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "clara_relation",
         "suspectId": "clara",
         "question": "Reconnaissez-vous avoir un intérêt personnel dans cette affaire, Clara Nomura ?",
-        "answer": "« Ça ne me plaisait pas, cette histoire. Je n'y pouvais rien. »",
+        "answer": "« J'ai fait une erreur de dosage l'an dernier et je l'ai signalée moi-même. Depuis, on me surveille. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "marc_observation",
         "suspectId": "marc",
         "question": "Y a-t-il un détail que les enquêteurs devraient connaître, Marc Vignal ?",
-        "answer": "« Si j'avais vu quelque chose, je l'aurais dit. Je n'ai rien à gagner à me taire. »",
+        "answer": "« J'avais annoncé que cet essai échouerait. Je maintiens, et les faits me donnent raison. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "marc_relation",
         "suspectId": "marc",
         "question": "Cette situation pouvait-elle vous profiter, Marc Vignal ?",
-        "answer": "« J'avais surtout peur des conséquences pour les autres. »",
+        "answer": "« Je signe la réouverture. Mon intérêt est que le bassin soit propre, pas contaminé. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "clara_confrontation",
         "suspectId": "clara",
         "question": "Votre alibi s'arrête précisément ici. Que s'est-il passé ensuite ?",
-        "answer": "« C'est possible. Je ne regardais pas ma montre ce soir-là. »",
+        "answer": "« Une programmation locale sous mon code. Mon code est écrit sur le tableau des consignes, comme celui de tout le monde. »",
         "unlockedByClueId": "registre",
         "beat": "La réponse réduit l'alibi à une version non vérifiée."
       },
@@ -309,7 +309,7 @@
         "id": "clara_mobile",
         "suspectId": "clara",
         "question": "Depuis quand connaissiez-vous cette décision ?",
-        "answer": "« Vous confondez l'inquiétude et la décision. »",
+        "answer": "« Mon carnet a une page arrachée. Arrachée, pas écrite par moi. Faites analyser les traces de colle. »",
         "unlockedByClueId": "mobile",
         "beat": "La menace n'est plus abstraite pour cette personne."
       },
@@ -317,7 +317,7 @@
         "id": "marc_detail",
         "suspectId": "marc",
         "question": "À quel moment cet élément a-t-il changé de sens ?",
-        "answer": "« Trouvez qui a remis cet objet en place, et vous aurez votre réponse. »",
+        "answer": "« Mon flacon est numéroté et intact. Le restaurant confirme que j'y dînais à l'heure de la programmation. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Le recoupement suivant peut innocenter ou condamner."
       },
@@ -325,7 +325,7 @@
         "id": "ewen_detail",
         "suspectId": "ewen",
         "question": "Que prouve réellement cette pièce, selon vous ?",
-        "answer": "« Non, ce n'est pas moi. Et cette pièce, seule, ne dit rien de tel. »",
+        "answer": "« Un colorant rose, oui, je m'en sers pour marquer mes poches. Le pont et le GPS me placent en mer. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "La pièce doit être replacée dans sa chronologie."
       }

@@ -264,49 +264,49 @@
         "id": "gaspard_observation",
         "suspectId": "gaspard",
         "question": "Que retenez-vous de cette soirée, Gaspard Lin ?",
-        "answer": "« Rien qui mérite un rapport. La soirée s'est déroulée comme les autres. »",
+        "answer": "« Une séquence automatique de quatre minutes, ça se voit au conducteur. Elle était programmée, je ne l'ai pas lancée. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "gaspard_relation",
         "suspectId": "gaspard",
         "question": "Que risquiez-vous dans cette histoire, Gaspard Lin ?",
-        "answer": "« Oui, je perdais gros. J'étais surtout en train de chercher une solution. »",
+        "answer": "« Sonia allait parler de mes heures. Des heures, pas un crime. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "mina_observation",
         "suspectId": "mina",
         "question": "Est-ce que quelque chose vous a mis mal à l'aise, Mina Ferhat ?",
-        "answer": "« Il y avait une tension, mais elle retombe vite ici. C'est tout. »",
+        "answer": "« J'ai préparé l'infusion comme tous les soirs. J'espère que je n'ai pas mal fait. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "mina_relation",
         "suspectId": "mina",
         "question": "Quel était votre intérêt, Mina Ferhat ?",
-        "answer": "« Si j'avais voulu en finir, j'aurais eu cent façons plus simples. »",
+        "answer": "« Je suis stagiaire. Si quelque chose se passe mal, c'est moi qu'on regarde en premier. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "alban_observation",
         "suspectId": "alban",
         "question": "Avez-vous remarqué quelque chose d'inhabituel, Alban Reyes ?",
-        "answer": "« Vous me demandez ça parce que j'étais là. Je n'ai rien vu, moi. »",
+        "answer": "« L'antenne était propre ce soir-là. La régie, je n'y mets jamais les pieds pendant un direct. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "alban_relation",
         "suspectId": "alban",
         "question": "Qu'est-ce que cela changeait pour vous, Alban Reyes ?",
-        "answer": "« Je n'ai pas à me justifier sur ma situation. Demandez plutôt autour de vous. »",
+        "answer": "« J'avais demandé à Sonia de ne pas évoquer ce dossier. J'assume de l'avoir demandé. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "gaspard_confrontation",
         "suspectId": "gaspard",
         "question": "Pourquoi ne pas avoir signalé ce détail vous-même ?",
-        "answer": "« Je ne me souviens pas de tout, et je refuse de compléter au hasard. »",
+        "answer": "« Mon capteur de présence s'est coupé quatre minutes. Un capteur, ça se coupe. Vous n'avez jamais vu un détecteur fatigué ? »",
         "unlockedByClueId": "registre",
         "beat": "La réponse réduit l'alibi à une version non vérifiée."
       },
@@ -314,7 +314,7 @@
         "id": "gaspard_mobile",
         "suspectId": "gaspard",
         "question": "Que pouviez-vous craindre de cette décision ?",
-        "answer": "« Ce n'est pas une raison pour faire ce qu'on imagine. »",
+        "answer": "« Le compte bénéficiaire est à moi. Je facture de la prestation, comme la moitié de la station. »",
         "unlockedByClueId": "mobile",
         "beat": "La menace n'est plus abstraite pour cette personne."
       },
@@ -322,7 +322,7 @@
         "id": "mina_detail",
         "suspectId": "mina",
         "question": "À qui profite le doute jeté sur vous ?",
-        "answer": "« Je n'ai rien à voir avec cela, et ce détail ne prouve pas le contraire. »",
+        "answer": "« Mon ordonnance, ce sont des comprimés bleus. Le produit de la tasse est un gel vétérinaire. Ce n'est pas la même chose. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Le recoupement suivant peut innocenter ou condamner."
       },
@@ -330,7 +330,7 @@
         "id": "alban_detail",
         "suspectId": "alban",
         "question": "Cette pièce semble vous accuser. Que manque-t-il au dossier ?",
-        "answer": "« Ce que vous montrez date d'avant. La suite vous manque. »",
+        "answer": "« J'ai fait couper une annonce, c'est vrai. Le gala en direct me montre à l'antenne pendant toute la séquence suivante. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "La pièce doit être replacée dans sa chronologie."
       }

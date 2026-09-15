@@ -264,49 +264,49 @@
         "id": "etienne_observation",
         "suspectId": "etienne",
         "question": "Avez-vous vu ou entendu un détail qui vous a surpris, Étienne Bosc ?",
-        "answer": "« Je n'ai rien vu. J'étais concentré sur ce que j'avais à faire. »",
+        "answer": "« Quarante ans que je cuis. Je sais ce qu'une porte qui s'ouvre fait à une pièce. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "etienne_relation",
         "suspectId": "etienne",
         "question": "Cette situation pouvait-elle vous profiter, Étienne Bosc ?",
-        "answer": "« Mon intérêt est réel. Il reste à prouver que j'ai fait quelque chose. »",
+        "answer": "« La nouvelle série remplace mon atelier traditionnel. On me met à la retraite. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "linh_observation",
         "suspectId": "linh",
         "question": "Y a-t-il un détail que les enquêteurs devraient connaître, Linh Durand ?",
-        "answer": "« Il y avait quelque chose dans l'air, mais je ne saurais pas le nommer. »",
+        "answer": "« Vingt-sept minutes seule avec les pièces, c'est ce que dit le registre. J'ai compté les invendus, comme tous les soirs. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "linh_relation",
         "suspectId": "linh",
         "question": "Que redoutiez-vous personnellement, Linh Durand ?",
-        "answer": "« Je comprends que ça vous saute aux yeux. Ça ne fait pas de moi un coupable. »",
+        "answer": "« La manufacture est endettée. Je gère les commandes de ma sœur. Si elle coule, je coule avec elle. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "oscar_observation",
         "suspectId": "oscar",
         "question": "Qu'est-ce qui vous a le plus surpris ce soir-là, Oscar Nève ?",
-        "answer": "« Les gens étaient pressés. Plus que d'habitude, je trouve. »",
+        "answer": "« La casse, en céramique, c'est une expérience. Pas forcément un délit. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "oscar_relation",
         "suspectId": "oscar",
         "question": "Que risquiez-vous dans cette histoire, Oscar Nève ?",
-        "answer": "« J'aurais pu en tirer profit. Je n'ai rien provoqué. »",
+        "answer": "« Mon dossier a été refusé au profit de celui de Mei. Me voilà avec un mobile parfait. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "linh_confrontation",
         "suspectId": "linh",
         "question": "Vous aviez dit être parti. Pourquoi le registre indique-t-il le contraire ?",
-        "answer": "« Si je vous explique ce point, vous en ferez une preuve. Alors je me tais. »",
+        "answer": "« Le registre me montre seule après le départ du livreur. Il est parti à 19 h 40, pas à 19 h 20. Demandez-lui. »",
         "unlockedByClueId": "registre",
         "beat": "La présence devient certaine. Le geste reste à prouver."
       },
@@ -314,7 +314,7 @@
         "id": "linh_mobile",
         "suspectId": "linh",
         "question": "Pourquoi avez-vous cherché à dissimuler ce document ?",
-        "answer": "« J'avais un problème. Ça ne fait pas de moi quelqu'un qui commet un crime. »",
+        "answer": "« L'échéancier bancaire, oui. Toute entreprise en a un. »",
         "unlockedByClueId": "mobile",
         "beat": "Le document donne un poids concret au mobile."
       },
@@ -322,7 +322,7 @@
         "id": "etienne_detail",
         "suspectId": "etienne",
         "question": "Pourquoi ce détail n'était-il pas dans votre première déclaration ?",
-        "answer": "« Oui, c'est à moi. Demandez à la personne qui l'a vu changer de mains. »",
+        "answer": "« J'ai coupé l'alarme pour remplacer un thermocouple. Les scellés mécaniques de la porte sont intacts. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       },
@@ -330,7 +330,7 @@
         "id": "oscar_detail",
         "suspectId": "oscar",
         "question": "Qui peut confirmer votre explication sur cette pièce ?",
-        "answer": "« Vous remontez une piste qui s'arrête juste avant moi. »",
+        "answer": "« J'ai emprunté la clé une fois, pour rendre un émaux. Les photos géolocalisées et la scène me placent à Paris avant la fermeture du four. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "Le recoupement suivant peut innocenter ou condamner."
       }

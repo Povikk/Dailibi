@@ -266,49 +266,49 @@
         "id": "loup_observation",
         "suspectId": "loup",
         "question": "Avez-vous remarqué quelque chose d'inhabituel, Loup Charrier ?",
-        "answer": "« Vous me demandez ça parce que j'étais là. Je n'ai rien vu, moi. »",
+        "answer": "« La tempête a commencé vers minuit. Après ça, personne ne sort. C'est la règle du refuge. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "loup_relation",
         "suspectId": "loup",
         "question": "Cette affaire pouvait-elle vous affecter, Loup Charrier ?",
-        "answer": "« Je n'ai pas à me justifier sur ma situation. Demandez plutôt autour de vous. »",
+        "answer": "« Ariane allait signaler mes sorties. Un guide sort, c'est le métier. Je n'ai pas à m'en excuser. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "mila_observation",
         "suspectId": "mila",
         "question": "Quelque chose vous a-t-il paru anormal ce soir-là, Mila Anders ?",
-        "answer": "« J'ai surtout remarqué que personne ne semblait inquiet. C'est peut-être ça, l'anormal. »",
+        "answer": "« Je photographie chaque mesure. La température de la nuit est dans mon carnet, à la minute. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "mila_relation",
         "suspectId": "mila",
         "question": "Aviez-vous quelque chose à perdre, Mila Anders ?",
-        "answer": "« Ça m'inquiétait plus que ça m'arrangeait. Nuance. »",
+        "answer": "« Le rapport d'Ariane contredisait mon modèle. Un rapport, ça se discute, ça ne se supprime pas. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "jon_observation",
         "suspectId": "jon",
         "question": "Avez-vous vu ou entendu un détail qui vous a surpris, Jon Ravel ?",
-        "answer": "« Je n'ai pas fait attention. On m'a posé la question après, et j'ai cherché : rien. »",
+        "answer": "« Je prépare le petit-déjeuner à 4 h 30. À cette heure-là, la cuisine est la seule pièce allumée. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "jon_relation",
         "suspectId": "jon",
         "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, Jon Ravel ?",
-        "answer": "« Ça ne me plaisait pas, cette histoire. Je n'y pouvais rien. »",
+        "answer": "« J'ai emprunté son GPS sans permission, j'admets. Pour chercher un passage, pas autre chose. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "loup_confrontation",
         "suspectId": "loup",
         "question": "Cette trace porte jusqu'à vous. Quelle autre explication proposez-vous ?",
-        "answer": "« Vous partez d'un outil et vous en tirez une conclusion. C'est un peu rapide. »",
+        "answer": "« Le thermomètre de mes chaussures a chuté à -18 °C. Elles étaient sur la terrasse, hors du sas : elles prennent la température ambiante. »",
         "unlockedByClueId": "registre",
         "beat": "Le mensonge est admis, mais sa raison reste à établir."
       },
@@ -316,7 +316,7 @@
         "id": "loup_mobile",
         "suspectId": "loup",
         "question": "Cette découverte menaçait-elle votre situation ?",
-        "answer": "« Tout le monde dans la pièce avait une raison de s'inquiéter. Pas seulement moi. »",
+        "answer": "« Ce brouillon date de l'accident précédent. Une balise falsifiée, c'est son hypothèse, pas mon aveu. »",
         "unlockedByClueId": "mobile",
         "beat": "L'intérêt personnel est reconnu sans que le passage à l'acte le soit."
       },
@@ -324,7 +324,7 @@
         "id": "jon_detail",
         "suspectId": "jon",
         "question": "Que prouve réellement cette pièce, selon vous ?",
-        "answer": "« Il manque le moment où cet objet a bougé. Vous sautez cette partie. »",
+        "answer": "« J'ai copié l'itinéraire après sa disparition, pour la chercher. Les caméras de cuisine confirment mon heure de départ. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "La pièce doit être replacée dans sa chronologie."
       },
@@ -332,7 +332,7 @@
         "id": "mila_detail",
         "suspectId": "mila",
         "question": "Pourquoi ce détail n'était-il pas dans votre première déclaration ?",
-        "answer": "« Je peux vous dire d'où il vient. Pas ce que vous en déduisez. »",
+        "answer": "« Oui, son rapport annulait mon financement. L'enregistrement radio conserve ma voix et mes manipulations pendant toute la sortie. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       }

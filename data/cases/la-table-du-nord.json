@@ -257,49 +257,49 @@
         "id": "lila_observation",
         "suspectId": "lila",
         "question": "Qu'avez-vous vu juste avant que cela arrive, Lila Charvet ?",
-        "answer": "« Je ne me mêle pas des affaires des autres. Je ne saurais rien vous dire. »",
+        "answer": "« Je repère une tuile déplacée au premier regard. Celle-là, je l'ai vue tout de suite. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "lila_relation",
         "suspectId": "lila",
         "question": "Cette situation pouvait-elle vous profiter, Lila Charvet ?",
-        "answer": "« Ça me met dans une position délicate. Je le reconnais. Et alors ? »",
+        "answer": "« Je m'opposais à ce trajet. On ne m'a pas écoutée. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "owen_observation",
         "suspectId": "owen",
         "question": "Que retenez-vous de cette soirée, Owen Price ?",
-        "answer": "« Rien qui mérite un rapport. La soirée s'est déroulée comme les autres. »",
+        "answer": "« Le départ du Boréal, je le suis du quai. C'est le seul moment où je souffle. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "owen_relation",
         "suspectId": "owen",
         "question": "Que redoutiez-vous personnellement, Owen Price ?",
-        "answer": "« Oui, je perdais gros. J'étais surtout en train de chercher une solution. »",
+        "answer": "« Le contrat impose une pénalité quotidienne supérieure à mon budget restant. Ça vous donne un mobile. Bravo. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "marta_observation",
         "suspectId": "marta",
         "question": "Est-ce que quelque chose vous a mis mal à l'aise, Marta Siwek ?",
-        "answer": "« Il y avait une tension, mais elle retombe vite ici. C'est tout. »",
+        "answer": "« Le modèle contredit la carte finale. Mon calcul est bon, je le maintiens. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "marta_relation",
         "suspectId": "marta",
         "question": "Que risquiez-vous dans cette histoire, Marta Siwek ?",
-        "answer": "« Si j'avais voulu en finir, j'aurais eu cent façons plus simples. »",
+        "answer": "« Un échec de Sven renforcerait mon programme. C'est vrai. Ça ne m'en rend pas capable. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "owen_confrontation",
         "suspectId": "owen",
         "question": "Cette heure contredit votre récit. Comment l'expliquez-vous ?",
-        "answer": "« La donnée est exacte. Mon récit, lui, était incomplet. »",
+        "answer": "« L'outil s'est ouvert à 23 h 08 sur mon ordinateur. Mon ordinateur est en libre accès au bureau logistique. »",
         "unlockedByClueId": "registre",
         "beat": "Le mensonge est admis, mais sa raison reste à établir."
       },
@@ -307,7 +307,7 @@
         "id": "owen_mobile",
         "suspectId": "owen",
         "question": "Pourquoi ce document vous concernait-il directement ?",
-        "answer": "« Vous appelez ça un mobile parce que vous connaissez la fin. »",
+        "answer": "« La pénalité, je la subis, je ne l'organise pas. »",
         "unlockedByClueId": "mobile",
         "beat": "L'intérêt personnel est reconnu sans que le passage à l'acte le soit."
       },
@@ -315,7 +315,7 @@
         "id": "lila_detail",
         "suspectId": "lila",
         "question": "Cette pièce semble vous accuser. Que manque-t-il au dossier ?",
-        "answer": "« Trouvez qui a remis cet objet en place, et vous aurez votre réponse. »",
+        "answer": "« Ce commentaire signalait un danger, rien de plus. Ma version sauvegardée contient la mosaïque correcte. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "La pièce doit être replacée dans sa chronologie."
       },
@@ -323,7 +323,7 @@
         "id": "marta_detail",
         "suspectId": "marta",
         "question": "Pourquoi retrouve-t-on cet objet parmi vos affaires ?",
-        "answer": "« Non, ce n'est pas moi. Et cette pièce, seule, ne dit rien de tel. »",
+        "answer": "« J'ai déposé une mosaïque corrigée, oui. La conférence enregistrée me montre répondant en direct pendant ce temps. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       }

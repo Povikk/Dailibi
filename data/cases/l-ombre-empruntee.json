@@ -257,49 +257,49 @@
         "id": "aya_observation",
         "suspectId": "aya",
         "question": "Est-ce que quelque chose vous a mis mal à l'aise, Aya Ben Salem ?",
-        "answer": "« J'entendais ce qui se passait autour, je ne regardais pas. »",
+        "answer": "« Le point apparaît sur les trois séries. J'ai vérifié la parallaxe avant d'en parler. Personne d'autre ne l'a fait. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "aya_relation",
         "suspectId": "aya",
         "question": "Qu'est-ce que cela changeait pour vous, Aya Ben Salem ?",
-        "answer": "« On me prête des intentions que je n'ai pas. »",
+        "answer": "« Mon financement s'arrête en décembre. Cette découverte, c'était mon seul moyen de rester. C'est un mobile, je le reconnais. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "remi_observation",
         "suspectId": "remi",
         "question": "Avez-vous remarqué quelque chose d'inhabituel, Rémi Corbel ?",
-        "answer": "« Rien de particulier. Tout le monde est parti à son heure habituelle. »",
+        "answer": "« Les pixels chauds, encore. Je les avais signalés deux fois. Rappelez-moi pourquoi on ne m'écoute pas. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "remi_relation",
         "suspectId": "remi",
         "question": "Pourquoi vous, Rémi Corbel ?",
-        "answer": "« Oui, cette affaire pouvait me coûter cher. Ce n'est pas pour autant que j'ai agi. »",
+        "answer": "« Le capteur, c'est ma bête. Si quelqu'un l'a bricolé, je veux le savoir avant vous. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "chiara_observation",
         "suspectId": "chiara",
         "question": "Quelque chose vous a-t-il paru anormal ce soir-là, Chiara Moss ?",
-        "answer": "« Franchement ? Non. Et je me suis posé la question après vous. »",
+        "answer": "« J'observais depuis le Chili. Onze heures de décalage : notre nuit était votre matinée. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "chiara_relation",
         "suspectId": "chiara",
         "question": "Cette affaire pouvait-elle vous affecter, Chiara Moss ?",
-        "answer": "« J'avais quelque chose à perdre. Comme tout le monde ici, d'ailleurs. »",
+        "answer": "« Une fausse alerte discréditerait le programme de Luan. Pour mon équipe, ce serait une aubaine. Je ne vais pas prétendre le contraire. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "aya_confrontation",
         "suspectId": "aya",
         "question": "Le relevé vous place sur les lieux. Pourquoi l'avoir omis ?",
-        "answer": "« J'étais là. Ça n'a rien à voir avec ce qu'on me reproche. »",
+        "answer": "« Mon Wi-Fi a coupé. Ma chambre est dans la zone morte du bâtiment, tout le monde le sait. J'ai ouvert la salle optique pour me connecter. »",
         "unlockedByClueId": "registre",
         "beat": "La présence devient certaine. Le geste reste à prouver."
       },
@@ -307,7 +307,7 @@
         "id": "aya_mobile",
         "suspectId": "aya",
         "question": "Qu'auriez-vous perdu si ce projet avait abouti ?",
-        "answer": "« J'aurais pu régler ça autrement. C'est ce que j'ai essayé de faire. »",
+        "answer": "« J'ai rempli ce dossier le jour où j'ai vu le point. C'est de l'enthousiasme, pas un aveu. »",
         "unlockedByClueId": "mobile",
         "beat": "Le document donne un poids concret au mobile."
       },
@@ -315,7 +315,7 @@
         "id": "remi_detail",
         "suspectId": "remi",
         "question": "Pourquoi retrouve-t-on cet objet parmi vos affaires ?",
-        "answer": "« Pris seul, ce détail m'accuse. Replacé dans la soirée, il raconte autre chose. »",
+        "answer": "« Ces pixels sont fixes. Ils sont dans le repère du capteur. L'objet, lui, avance comme un rail. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       },
@@ -323,7 +323,7 @@
         "id": "chiara_detail",
         "suspectId": "chiara",
         "question": "À quel moment cet élément a-t-il changé de sens ?",
-        "answer": "« Je l'ai gardé pour moi : cela ne concernait pas l'enquête. »",
+        "answer": "« Je dépose des demandes de temps toute l'année. Celle-là a été accordée, comme quinze autres. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "Le recoupement suivant peut innocenter ou condamner."
       }

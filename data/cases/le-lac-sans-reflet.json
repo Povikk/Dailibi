@@ -259,49 +259,49 @@
         "id": "natan_observation",
         "suspectId": "natan",
         "question": "Y a-t-il un détail que les enquêteurs devraient connaître, Natan Joly ?",
-        "answer": "« Il y avait quelque chose dans l'air, mais je ne saurais pas le nommer. »",
+        "answer": "« Ce take était le bon. Je le savais au moniteur, avant même de le revoir. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "natan_relation",
         "suspectId": "natan",
         "question": "Que risquiez-vous dans cette histoire, Natan Joly ?",
-        "answer": "« Je comprends que ça vous saute aux yeux. Ça ne fait pas de moi un coupable. »",
+        "answer": "« Cléo et moi, on se disputait sur la fin. Elle voulait une sortie douce, moi une disparition. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "sarah_observation",
         "suspectId": "sarah",
         "question": "Qu'est-ce qui vous a le plus surpris ce soir-là, Sarah Montel ?",
-        "answer": "« Les gens étaient pressés. Plus que d'habitude, je trouve. »",
+        "answer": "« Le plongeon, je l'avais répété onze fois. La douzième, personne ne m'a appelée. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "sarah_relation",
         "suspectId": "sarah",
         "question": "Quel était votre intérêt, Sarah Montel ?",
-        "answer": "« J'aurais pu en tirer profit. Je n'ai rien provoqué. »",
+        "answer": "« On m'a choisie pour cette scène parce que j'ai la même silhouette que Cléo. C'est tout. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "paul_observation",
         "suspectId": "paul",
         "question": "Avez-vous relevé une incohérence autour de vous, Paul Eden ?",
-        "answer": "« Un détail m'a étonné sur le moment. Je n'y ai plus repensé avant ce soir. »",
+        "answer": "« Le calendrier était tenu. Une journée de retard coûte quatre-vingt mille euros. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "paul_relation",
         "suspectId": "paul",
         "question": "Qu'est-ce que cela changeait pour vous, Paul Eden ?",
-        "answer": "« Je redoutais les conséquences. Je ne l'ai jamais dissimulé à personne. »",
+        "answer": "« Je voulais remplacer Cléo après le tournage. Une disparition déclenche une assurance majeure. Les deux phrases ne vont pas ensemble. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "natan_confrontation",
         "suspectId": "natan",
         "question": "Votre version ne correspond pas aux données. La maintenez-vous ?",
-        "answer": "« C'est possible. Je ne regardais pas ma montre ce soir-là. »",
+        "answer": "« Le moniteur a reçu un fichier au lieu du flux direct. Ça arrive quand quelqu'un ouvre la session de montage. Le technicien a la clé. »",
         "unlockedByClueId": "registre",
         "beat": "La réponse réduit l'alibi à une version non vérifiée."
       },
@@ -309,7 +309,7 @@
         "id": "natan_mobile",
         "suspectId": "natan",
         "question": "Quelle issue espériez-vous encore trouver ?",
-        "answer": "« Vous confondez l'inquiétude et la décision. »",
+        "answer": "« Cette campagne, je la note depuis des mois. C'est le titre de travail du film, rien de plus. »",
         "unlockedByClueId": "mobile",
         "beat": "La menace n'est plus abstraite pour cette personne."
       },
@@ -317,7 +317,7 @@
         "id": "paul_detail",
         "suspectId": "paul",
         "question": "Qui peut confirmer votre explication sur cette pièce ?",
-        "answer": "« Vous remontez une piste qui s'arrête juste avant moi. »",
+        "answer": "« C'est une exigence syndicale pour la scène aquatique. Et j'ignorais qu'un fichier préenregistré existait. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Le recoupement suivant peut innocenter ou condamner."
       },
@@ -325,7 +325,7 @@
         "id": "sarah_detail",
         "suspectId": "sarah",
         "question": "Comment cet objet est-il arrivé là, selon vous ?",
-        "answer": "« Je n'ai rien à voir avec cela, et ce détail ne prouve pas le contraire. »",
+        "answer": "« J'ai signé la feuille de service, oui. Cléo était en retard sur le maquillage et me l'a demandé. Le bateau GPS me place à bord pendant la chute. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "La pièce doit être replacée dans sa chronologie."
       }

@@ -257,49 +257,49 @@
         "id": "tao_observation",
         "suspectId": "tao",
         "question": "Est-ce que quelque chose vous a mis mal à l'aise, Tao Ménard ?",
-        "answer": "« Il y avait une tension, mais elle retombe vite ici. C'est tout. »",
+        "answer": "« Les courbes disent tout. Le circuit secondaire était déconnecté toute la nuit. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "tao_relation",
         "suspectId": "tao",
         "question": "Qu'est-ce que cela changeait pour vous, Tao Ménard ?",
-        "answer": "« Si j'avais voulu en finir, j'aurais eu cent façons plus simples. »",
+        "answer": "« On a refusé mon prototype de brumisation. Le lien avec un herbicide, je ne le vois pas. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "gaelle_observation",
         "suspectId": "gaelle",
         "question": "Avez-vous remarqué quelque chose d'inhabituel, Gaëlle Rios ?",
-        "answer": "« Vous me demandez ça parce que j'étais là. Je n'ai rien vu, moi. »",
+        "answer": "« J'ai livré lundi, comme chaque semaine. Après, je ne remets pas les pieds dans la serre. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "gaelle_relation",
         "suspectId": "gaelle",
         "question": "Pourquoi vous, Gaëlle Rios ?",
-        "answer": "« Je n'ai pas à me justifier sur ma situation. Demandez plutôt autour de vous. »",
+        "answer": "« Une épidémie chez un concurrent m'arrange, évidemment. Ça ne veut pas dire que je la provoque. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "nora_observation",
         "suspectId": "nora",
         "question": "Quelque chose vous a-t-il paru anormal ce soir-là, Nora Saïd ?",
-        "answer": "« J'ai surtout remarqué que personne ne semblait inquiet. C'est peut-être ça, l'anormal. »",
+        "answer": "« La plante intacte valide mon hypothèse. Je vous fournis les courbes si vous voulez les vérifier. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "nora_relation",
         "suspectId": "nora",
         "question": "Cette affaire pouvait-elle vous affecter, Nora Saïd ?",
-        "answer": "« Ça m'inquiétait plus que ça m'arrangeait. Nuance. »",
+        "answer": "« Mon article a été refusé deux fois. Il devient publiable si la variété de Célia est discréditée. C'est un fait, pas un aveu. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "nora_confrontation",
         "suspectId": "nora",
         "question": "Cette heure contredit votre récit. Comment l'expliquez-vous ?",
-        "answer": "« Vous avez l'heure. Vous n'avez pas le geste. »",
+        "answer": "« Une commande passée depuis ma tablette à 22 h 18. Ma tablette reste sur le bureau de la serre. Qui y avait accès ? »",
         "unlockedByClueId": "registre",
         "beat": "Le mensonge est admis, mais sa raison reste à établir."
       },
@@ -307,7 +307,7 @@
         "id": "nora_mobile",
         "suspectId": "nora",
         "question": "Pourquoi ce document vous concernait-il directement ?",
-        "answer": "« Le document dit ce qu'il dit. L'intention, c'est vous qui la rajoutez. »",
+        "answer": "« Mon article attend sa troisième version. Ça ne fait pas de moi quelqu'un qui sabote une serre. »",
         "unlockedByClueId": "mobile",
         "beat": "L'intérêt personnel est reconnu sans que le passage à l'acte le soit."
       },
@@ -315,7 +315,7 @@
         "id": "gaelle_detail",
         "suspectId": "gaelle",
         "question": "Cette pièce semble vous accuser. Que manque-t-il au dossier ?",
-        "answer": "« Ce que vous montrez date d'avant. La suite vous manque. »",
+        "answer": "« Le bidon est scellé, avec son bouchon témoin. Et mon péage me place à cent quarante kilomètres. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "La pièce doit être replacée dans sa chronologie."
       },
@@ -323,7 +323,7 @@
         "id": "tao_detail",
         "suspectId": "tao",
         "question": "Pourquoi retrouve-t-on cet objet parmi vos affaires ?",
-        "answer": "« Je pourrais arranger la vérité pour m'en sortir. Je préfère vous expliquer. »",
+        "answer": "« Mon prototype contient ce polymère, comme trois autres équipements du site. La télémétrie signée me place chez moi. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       }

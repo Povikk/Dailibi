@@ -257,49 +257,49 @@
         "id": "gilles_observation",
         "suspectId": "gilles",
         "question": "Avez-vous relevé une incohérence autour de vous, Gilles Roth ?",
-        "answer": "« Un détail m'a étonné sur le moment. Je n'y ai plus repensé avant ce soir. »",
+        "answer": "« Un groupe scolaire, ça occupe. On répond aux questions, on ne regarde pas l'heure. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "gilles_relation",
         "suspectId": "gilles",
         "question": "Cette affaire pouvait-elle vous affecter, Gilles Roth ?",
-        "answer": "« Je redoutais les conséquences. Je ne l'ai jamais dissimulé à personne. »",
+        "answer": "« Je travaillais sur ce site l'année de l'accident. Si ces documents sortent, c'est ma responsabilité. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "mara_observation",
         "suspectId": "mara",
         "question": "Une chose vous a-t-elle semblé déplacée, Mara Klein ?",
-        "answer": "« Non. Si quelque chose clochait, je ne l'ai pas remarqué. »",
+        "answer": "« Humidité stable, température stable. C'est ce que dit mon relevé de la semaine. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "mara_relation",
         "suspectId": "mara",
         "question": "Aviez-vous quelque chose à perdre, Mara Klein ?",
-        "answer": "« Vous cherchez un mobile ? Le voilà. Trouvez maintenant le geste. »",
+        "answer": "« Une défaillance climatique menacerait mon poste. Vous me prêtez un intérêt que je n'ai pas. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "sofiane_observation",
         "suspectId": "sofiane",
         "question": "Qu'avez-vous vu juste avant que cela arrive, Sofiane Clerc ?",
-        "answer": "« Je ne me mêle pas des affaires des autres. Je ne saurais rien vous dire. »",
+        "answer": "« Je photographie tous les bordereaux. Si j'avais vu quelque chose, vous auriez la photo avant la question. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "sofiane_relation",
         "suspectId": "sofiane",
         "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, Sofiane Clerc ?",
-        "answer": "« Ça me met dans une position délicate. Je le reconnais. Et alors ? »",
+        "answer": "« La disparition de ces preuves ruine mon procès. Vous imaginez que j'avais intérêt à les faire disparaître ? »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "gilles_confrontation",
         "suspectId": "gilles",
         "question": "Expliquez-moi cet écart entre votre version et les données.",
-        "answer": "« J'ai omis ce passage. Il me mettait dans une position inconfortable, ce n'est pas un aveu. »",
+        "answer": "« La photo me reflète descendant vers la galerie pendant la pause. Je suis descendu chercher un plan, pour le montrer aux enfants. »",
         "unlockedByClueId": "registre",
         "beat": "La présence devient certaine. Le geste reste à prouver."
       },
@@ -307,7 +307,7 @@
         "id": "gilles_mobile",
         "suspectId": "gilles",
         "question": "Qu'est-ce que cela remettait en cause, pour vous ?",
-        "answer": "« J'avais beaucoup à perdre. Je cherchais une solution, pas un coupable. »",
+        "answer": "« Ma signature est sur le registre de chantier. Tous les bordereaux du site portent ma signature. »",
         "unlockedByClueId": "mobile",
         "beat": "Le document donne un poids concret au mobile."
       },
@@ -315,7 +315,7 @@
         "id": "mara_detail",
         "suspectId": "mara",
         "question": "Que répondez-vous à cette pièce qui vous met en cause ?",
-        "answer": "« Ce que vous montrez date d'avant. La suite vous manque. »",
+        "answer": "« J'ai remplacé le capteur par un modèle autonome. Ses données prouvent que seul l'intérieur de la boîte s'est humidifié. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       },
@@ -323,7 +323,7 @@
         "id": "sofiane_detail",
         "suspectId": "sofiane",
         "question": "À qui profite le doute jeté sur vous ?",
-        "answer": "« Je pourrais arranger la vérité pour m'en sortir. Je préfère vous expliquer. »",
+        "answer": "« J'ai demandé la liste des mesures réécrites au nom de ma procédure. Les journaux du tribunal et l'audience enregistrée me placent à Metz. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "Le recoupement suivant peut innocenter ou condamner."
       }

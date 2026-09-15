@@ -266,49 +266,49 @@
         "id": "lucien_observation",
         "suspectId": "lucien",
         "question": "Avez-vous vu ou entendu un détail qui vous a surpris, Lucien Prado ?",
-        "answer": "« Je n'ai rien vu. J'étais concentré sur ce que j'avais à faire. »",
+        "answer": "« Je connais cette partition par cœur, y compris les coupures qu'on m'a imposées. La 214, je ne l'aurais pas touchée. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "lucien_relation",
         "suspectId": "lucien",
         "question": "Cette situation pouvait-elle vous profiter, Lucien Prado ?",
-        "answer": "« Mon intérêt est réel. Il reste à prouver que j'ai fait quelque chose. »",
+        "answer": "« J'ai refusé les coupes. On a fini par les imposer. Voilà tout mon différend avec Noémi. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "maelle_observation",
         "suspectId": "maelle",
         "question": "Y a-t-il un détail que les enquêteurs devraient connaître, Maëlle Coste ?",
-        "answer": "« Il y avait quelque chose dans l'air, mais je ne saurais pas le nommer. »",
+        "answer": "« La mesure 214 est celle que tout le monde rate. C'est aussi la seule que j'avais signalée dans mes notes. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "maelle_relation",
         "suspectId": "maelle",
         "question": "Que redoutiez-vous personnellement, Maëlle Coste ?",
-        "answer": "« Je comprends que ça vous saute aux yeux. Ça ne fait pas de moi un coupable. »",
+        "answer": "« Mon contrat finissait après la générale. Le reste, ce sont des suppositions. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "ruben_observation",
         "suspectId": "ruben",
         "question": "Qu'est-ce qui vous a le plus surpris ce soir-là, Ruben Keller ?",
-        "answer": "« Les gens étaient pressés. Plus que d'habitude, je trouve. »",
+        "answer": "« Musicalement, la générale était juste. Le problème n'était pas dans l'orchestre. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "ruben_relation",
         "suspectId": "ruben",
         "question": "Que risquiez-vous dans cette histoire, Ruben Keller ?",
-        "answer": "« J'aurais pu en tirer profit. Je n'ai rien provoqué. »",
+        "answer": "« J'ai demandé un report. On me l'a refusé. Demander un report n'est pas saboter une création. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "maelle_confrontation",
         "suspectId": "maelle",
         "question": "Votre alibi s'arrête précisément ici. Que s'est-il passé ensuite ?",
-        "answer": "« Ce registre montre un accès, pas ce que j'ai fait ensuite. »",
+        "answer": "« Le journal montre une seconde session à 23 h 17. Mon poste était resté ouvert : la session a pu être reprise depuis le pupitre. »",
         "unlockedByClueId": "registre",
         "beat": "La réponse réduit l'alibi à une version non vérifiée."
       },
@@ -316,7 +316,7 @@
         "id": "maelle_mobile",
         "suspectId": "maelle",
         "question": "Depuis quand connaissiez-vous cette décision ?",
-        "answer": "« Je le savais depuis peu. J'espérais encore pouvoir changer la décision. »",
+        "answer": "« Ce brouillon, je l'ai écrit après la panne. C'est de l'anticipation, pas un plan. »",
         "unlockedByClueId": "mobile",
         "beat": "La menace n'est plus abstraite pour cette personne."
       },
@@ -324,7 +324,7 @@
         "id": "lucien_detail",
         "suspectId": "lucien",
         "question": "À quel moment cet élément a-t-il changé de sens ?",
-        "answer": "« Vous avez le bon élément et la mauvaise chronologie. »",
+        "answer": "« Cette annotation date des premières répétitions. Elle figurait déjà sur la version rendue il y a un mois, et la photo de l'hôtel le prouve. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Le recoupement suivant peut innocenter ou condamner."
       },
@@ -332,7 +332,7 @@
         "id": "ruben_detail",
         "suspectId": "ruben",
         "question": "Que prouve réellement cette pièce, selon vous ?",
-        "answer": "« Pris seul, ce détail m'accuse. Replacé dans la soirée, il raconte autre chose. »",
+        "answer": "« Ma demande de report est passée par la voie normale, avec le cachet de la direction. Trouvez qui l'a jointe à ce courriel anonyme. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "La pièce doit être replacée dans sa chronologie."
       }

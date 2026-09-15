@@ -257,49 +257,49 @@
         "id": "vera_observation",
         "suspectId": "vera",
         "question": "Y a-t-il un détail que les enquêteurs devraient connaître, Véra Klein ?",
-        "answer": "« Si j'avais vu quelque chose, je l'aurais dit. Je n'ai rien à gagner à me taire. »",
+        "answer": "« Le lot est resté devant les enchérisseurs pendant trois heures. Chacun pouvait le voir. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "vera_relation",
         "suspectId": "vera",
         "question": "Que risquiez-vous dans cette histoire, Véra Klein ?",
-        "answer": "« J'avais surtout peur des conséquences pour les autres. »",
+        "answer": "« Je dois racheter sa part à mon associé. C'est un montant, rien de plus. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "nassim_observation",
         "suspectId": "nassim",
         "question": "Qu'est-ce qui vous a le plus surpris ce soir-là, Nassim Grégoire ?",
-        "answer": "« Il y a toujours du bruit ici. Un détail de plus, un de moins, je ne le remarque pas. »",
+        "answer": "« Les ratures racontent tout du copiste. Celle du feuillet 4 est une faute de lecture, pas de fabrication. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "nassim_relation",
         "suspectId": "nassim",
         "question": "Quel était votre intérêt, Nassim Grégoire ?",
-        "answer": "« Oui, ça pouvait me retomber dessus. Ça ne veut pas dire que je l'ai provoqué. »",
+        "answer": "« J'ai établi la transcription confidentielle. Elle n'est sortie de mon bureau qu'avec mon accord. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "colombe_observation",
         "suspectId": "colombe",
         "question": "Avez-vous relevé une incohérence autour de vous, Colombe Masson ?",
-        "answer": "« Non. Et ça m'ennuie de ne pas pouvoir vous aider mieux que ça. »",
+        "answer": "« Je préparais les lots, je les emballais. Je faisais tout, et mon père signait. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "colombe_relation",
         "suspectId": "colombe",
         "question": "Qu'est-ce que cela changeait pour vous, Colombe Masson ?",
-        "answer": "« Ce n'était pas mon problème, jusqu'à ce que ça le devienne. »",
+        "answer": "« La maison a des dettes. Mon père le sait mieux que moi. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "vera_confrontation",
         "suspectId": "vera",
         "question": "Vous aviez dit être parti. Pourquoi le registre indique-t-il le contraire ?",
-        "answer": "« J'ai omis ce passage. Il me mettait dans une position inconfortable, ce n'est pas un aveu. »",
+        "answer": "« Mon badge visiteur à 6 h 42. J'étais là avant l'ouverture, c'est exact : je venais préparer la vente. »",
         "unlockedByClueId": "registre",
         "beat": "La présence devient certaine. Le geste reste à prouver."
       },
@@ -307,7 +307,7 @@
         "id": "vera_mobile",
         "suspectId": "vera",
         "question": "Pourquoi avez-vous cherché à dissimuler ce document ?",
-        "answer": "« J'avais beaucoup à perdre. Je cherchais une solution, pas un coupable. »",
+        "answer": "« Un virement suisse de la moitié du prix. Vous additionnez deux choses et vous appelez ça une preuve. »",
         "unlockedByClueId": "mobile",
         "beat": "Le document donne un poids concret au mobile."
       },
@@ -315,7 +315,7 @@
         "id": "colombe_detail",
         "suspectId": "colombe",
         "question": "Pourquoi ce détail n'était-il pas dans votre première déclaration ?",
-        "answer": "« Vous avez trouvé cela chez moi, oui. Ça ne raconte pas la soirée. »",
+        "answer": "« J'ai effacé une séquence. Elle montrait une dispute avec mon père, la veille. La sauvegarde montre le manuscrit encore original après mon départ. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       },
@@ -323,7 +323,7 @@
         "id": "nassim_detail",
         "suspectId": "nassim",
         "question": "Qui peut confirmer votre explication sur cette pièce ?",
-        "answer": "« Il manque le moment où cet objet a bougé. Vous sautez cette partie. »",
+        "answer": "« La faute est dans mon fichier parce qu'elle était dans le manuscrit. Le lecteur des archives m'y place toute la soirée. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "Le recoupement suivant peut innocenter ou condamner."
       }

@@ -259,49 +259,49 @@
         "id": "come_observation",
         "suspectId": "come",
         "question": "Est-ce que quelque chose vous a mis mal à l'aise, Côme Vidal ?",
-        "answer": "« Il y avait une tension, mais elle retombe vite ici. C'est tout. »",
+        "answer": "« La cire garde tout : l'humidité, la chaleur, la forme d'une main. C'est une mémoire. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "come_relation",
         "suspectId": "come",
         "question": "Qu'est-ce que cela changeait pour vous, Côme Vidal ?",
-        "answer": "« Si j'avais voulu en finir, j'aurais eu cent façons plus simples. »",
+        "answer": "« Je refusais que ce bijou perce le costume original. C'était mon désaccord, rien de plus. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "roxane_observation",
         "suspectId": "roxane",
         "question": "Avez-vous remarqué quelque chose d'inhabituel, Roxane Perez ?",
-        "answer": "« Vous me demandez ça parce que j'étais là. Je n'ai rien vu, moi. »",
+        "answer": "« J'ai géré cent vingt invités ce soir-là. Le vestiaire, c'est moi qui le tenais. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "roxane_relation",
         "suspectId": "roxane",
         "question": "Pourquoi vous, Roxane Perez ?",
-        "answer": "« Je n'ai pas à me justifier sur ma situation. Demandez plutôt autour de vous. »",
+        "answer": "« J'avais assuré le diamant pour une somme élevée, pas excessive. Les primes se calculent. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "etienne_observation",
         "suspectId": "etienne",
         "question": "Quelque chose vous a-t-il paru anormal ce soir-là, Étienne Valois ?",
-        "answer": "« J'ai surtout remarqué que personne ne semblait inquiet. C'est peut-être ça, l'anormal. »",
+        "answer": "« Un diamant se reconnaît à la main avant de se reconnaître au rapport. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "etienne_relation",
         "suspectId": "etienne",
         "question": "Cette affaire pouvait-elle vous affecter, Étienne Valois ?",
-        "answer": "« Ça m'inquiétait plus que ça m'arrangeait. Nuance. »",
+        "answer": "« La pierre était difficile à écouler légalement. Vous en déduisez que je l'ai prise moi-même. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "roxane_confrontation",
         "suspectId": "roxane",
         "question": "Votre alibi s'arrête précisément ici. Que s'est-il passé ensuite ?",
-        "answer": "« Oui, j'étais encore là. J'ai menti sur l'heure. Pour une autre raison. »",
+        "answer": "« Mon badge a ouvert la trappe climatique. Le vestiaire est vide sur les images, c'est vrai : j'étais dans le couloir, pas au vestiaire. »",
         "unlockedByClueId": "registre",
         "beat": "La réponse réduit l'alibi à une version non vérifiée."
       },
@@ -309,7 +309,7 @@
         "id": "roxane_mobile",
         "suspectId": "roxane",
         "question": "Depuis quand connaissiez-vous cette décision ?",
-        "answer": "« Oui, la situation me menaçait. Non, ça ne me laissait pas indifférent. »",
+        "answer": "« Cette police verse une commission si le sinistre tombe pendant mon événement. Statistiquement, ça n'a rien d'extraordinaire. »",
         "unlockedByClueId": "mobile",
         "beat": "La menace n'est plus abstraite pour cette personne."
       },
@@ -317,7 +317,7 @@
         "id": "etienne_detail",
         "suspectId": "etienne",
         "question": "À quel moment cet élément a-t-il changé de sens ?",
-        "answer": "« Vous avez trouvé cela chez moi, oui. Ça ne raconte pas la soirée. »",
+        "answer": "« J'ai surévalué la pureté de deux degrés, comme tout le métier. La pierre volée est authentique, et les vidéos me gardent au pupitre. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Le recoupement suivant peut innocenter ou condamner."
       },
@@ -325,7 +325,7 @@
         "id": "come_detail",
         "suspectId": "come",
         "question": "Que prouve réellement cette pièce, selon vous ?",
-        "answer": "« Il manque le moment où cet objet a bougé. Vous sautez cette partie. »",
+        "answer": "« Tout l'atelier porte cette cire, y compris mes outils. Le flux vidéo me montre travaillant sans interruption, horloge visible. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "La pièce doit être replacée dans sa chronologie."
       }

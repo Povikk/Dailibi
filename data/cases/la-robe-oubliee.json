@@ -266,49 +266,49 @@
         "id": "mona_observation",
         "suspectId": "mona",
         "question": "Une chose vous a-t-elle semblé déplacée, Mona Brémont ?",
-        "answer": "« Non. Si quelque chose clochait, je ne l'ai pas remarqué. »",
+        "answer": "« La pièce est au coffre. Le traceur dit qu'il a bougé après le dîner, quand tout le monde était encore à table. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "mona_relation",
         "suspectId": "mona",
         "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, Mona Brémont ?",
-        "answer": "« Vous cherchez un mobile ? Le voilà. Trouvez maintenant le geste. »",
+        "answer": "« La maison manque de trésorerie. C'est écrit dans les comptes, pas dans les intentions. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "yacine_observation",
         "suspectId": "yacine",
         "question": "Qu'avez-vous vu juste avant que cela arrive, Yacine Dupré ?",
-        "answer": "« Je ne me mêle pas des affaires des autres. Je ne saurais rien vous dire. »",
+        "answer": "« La doublure raconte tout. Celle-ci a été recousue à la main, avec un fil qui n'est pas d'époque. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "yacine_relation",
         "suspectId": "yacine",
         "question": "Reconnaissez-vous avoir un intérêt personnel dans cette affaire, Yacine Dupré ?",
-        "answer": "« Ça me met dans une position délicate. Je le reconnais. Et alors ? »",
+        "answer": "« Je possède les patrons, évidemment : je les ai refaits pour la restauration. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "odette_observation",
         "suspectId": "odette",
         "question": "Que retenez-vous de cette soirée, Odette Marin ?",
-        "answer": "« Rien qui mérite un rapport. La soirée s'est déroulée comme les autres. »",
+        "answer": "« J'ai porté cette robe en 84. Le tissu a une mémoire, comme nous. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "odette_relation",
         "suspectId": "odette",
         "question": "Cette situation pouvait-elle vous profiter, Odette Marin ?",
-        "answer": "« Oui, je perdais gros. J'étais surtout en train de chercher une solution. »",
+        "answer": "« Iseult m'avait promis cette robe. Écrite à la main, la promesse. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "mona_confrontation",
         "suspectId": "mona",
         "question": "Pourquoi ne pas avoir signalé ce détail vous-même ?",
-        "answer": "« Ce registre montre un accès, pas ce que j'ai fait ensuite. »",
+        "answer": "« Le traceur est passé au coffre après le dîner. Je suis rentrée à 23 h 10 : vérifiez la liste des invités. »",
         "unlockedByClueId": "registre",
         "beat": "La réponse réduit l'alibi à une version non vérifiée."
       },
@@ -316,7 +316,7 @@
         "id": "mona_mobile",
         "suspectId": "mona",
         "question": "Que pouviez-vous craindre de cette décision ?",
-        "answer": "« Je le savais depuis peu. J'espérais encore pouvoir changer la décision. »",
+        "answer": "« Un accord de vente couvre les salaires en retard. On appelle ça gérer une maison, pas organiser un vol. »",
         "unlockedByClueId": "mobile",
         "beat": "La menace n'est plus abstraite pour cette personne."
       },
@@ -324,7 +324,7 @@
         "id": "odette_detail",
         "suspectId": "odette",
         "question": "À qui profite le doute jeté sur vous ?",
-        "answer": "« Je pourrais arranger la vérité pour m'en sortir. Je préfère vous expliquer. »",
+        "answer": "« C'est une formule affective, pas un acte de propriété. Le commissaire confirme que je répétais avec lui pendant ce temps. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Le recoupement suivant peut innocenter ou condamner."
       },
@@ -332,7 +332,7 @@
         "id": "yacine_detail",
         "suspectId": "yacine",
         "question": "Cette pièce semble vous accuser. Que manque-t-il au dossier ?",
-        "answer": "« Trouvez qui a remis cet objet en place, et vous aurez votre réponse. »",
+        "answer": "« Mes patrons sont sur mon poste depuis six mois. La vidéo montre que je range la vraie robe puis que je pars avant le retour de Mona. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "La pièce doit être replacée dans sa chronologie."
       }

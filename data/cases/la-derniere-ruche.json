@@ -259,49 +259,49 @@
         "id": "nour_observation",
         "suspectId": "nour",
         "question": "Quelque chose vous a-t-il paru anormal ce soir-là, Nour Lemaire ?",
-        "answer": "« Franchement ? Non. Et je me suis posé la question après vous. »",
+        "answer": "« Attention aux mots : les abeilles ne meurent pas, elles cessent de revenir. Ce n'est pas la même chose. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "nour_relation",
         "suspectId": "nour",
         "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, Nour Lemaire ?",
-        "answer": "« J'avais quelque chose à perdre. Comme tout le monde ici, d'ailleurs. »",
+        "answer": "« Mes résultats contredisaient ceux de Baptiste. Dans ce milieu, ça suffit à vous rendre suspecte. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "didier_observation",
         "suspectId": "didier",
         "question": "Avez-vous vu ou entendu un détail qui vous a surpris, Didier Pons ?",
-        "answer": "« Je n'ai rien vu. J'étais concentré sur ce que j'avais à faire. »",
+        "answer": "« Je traite mes champs aux doses autorisées. Le carnet est à la coopérative. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "didier_relation",
         "suspectId": "didier",
         "question": "Reconnaissez-vous avoir un intérêt personnel dans cette affaire, Didier Pons ?",
-        "answer": "« Mon intérêt est réel. Il reste à prouver que j'ai fait quelque chose. »",
+        "answer": "« On m'impute la mort des abeilles à chaque fois. Cette fois, on me le dira en face. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "eloi_observation",
         "suspectId": "eloi",
         "question": "Y a-t-il un détail que les enquêteurs devraient connaître, Éloi Vernet ?",
-        "answer": "« Il y avait quelque chose dans l'air, mais je ne saurais pas le nommer. »",
+        "answer": "« La ruche 12 est la plus calme du rucher. C'est la mienne depuis deux ans. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "eloi_relation",
         "suspectId": "eloi",
         "question": "Cette situation pouvait-elle vous profiter, Éloi Vernet ?",
-        "answer": "« Je comprends que ça vous saute aux yeux. Ça ne fait pas de moi un coupable. »",
+        "answer": "« Baptiste refuse de me céder une reine. Je le lui ai demandé trois fois, il a dit non trois fois. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "eloi_confrontation",
         "suspectId": "eloi",
         "question": "Cette trace porte jusqu'à vous. Quelle autre explication proposez-vous ?",
-        "answer": "« Vous avez l'heure. Vous n'avez pas le geste. »",
+        "answer": "« La pesée dit que la ruche a été ouverte deux fois pendant ma tournée. J'en ai douze, et la 12 a un couvercle plus dur : j'y suis repassé. »",
         "unlockedByClueId": "registre",
         "beat": "Le mensonge est admis, mais sa raison reste à établir."
       },
@@ -309,7 +309,7 @@
         "id": "eloi_mobile",
         "suspectId": "eloi",
         "question": "Cette découverte menaçait-elle votre situation ?",
-        "answer": "« Le document dit ce qu'il dit. L'intention, c'est vous qui la rajoutez. »",
+        "answer": "« Une annonce non publiée, oui. Je prépare mon élevage depuis un an. Ce n'est pas un crime. »",
         "unlockedByClueId": "mobile",
         "beat": "L'intérêt personnel est reconnu sans que le passage à l'acte le soit."
       },
@@ -317,7 +317,7 @@
         "id": "didier_detail",
         "suspectId": "didier",
         "question": "Que prouve réellement cette pièce, selon vous ?",
-        "answer": "« Mon explication est vérifiable. Cherchez le second enregistrement. »",
+        "answer": "« Les analyses de pollen sont négatives. Et le vent soufflait du rucher vers chez moi, pas l'inverse. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "La pièce doit être replacée dans sa chronologie."
       },
@@ -325,7 +325,7 @@
         "id": "nour_detail",
         "suspectId": "nour",
         "question": "Pourquoi ce détail n'était-il pas dans votre première déclaration ?",
-        "answer": "« Oui, c'est à moi. Demandez à la personne qui l'a vu changer de mains. »",
+        "answer": "« J'ai demandé un transfert, par écrit et par la voie normale. La caméra du laboratoire me montre derrière la vitre aux deux ouvertures. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       }

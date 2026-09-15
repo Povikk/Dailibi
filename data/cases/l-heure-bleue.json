@@ -259,49 +259,49 @@
         "id": "iris_observation",
         "suspectId": "iris",
         "question": "Quelque chose vous a-t-il paru anormal ce soir-là, Iris Meunier ?",
-        "answer": "« Franchement ? Non. Et je me suis posé la question après vous. »",
+        "answer": "« Dans l'atelier, tout sent la térébenthine et le vernis. Un détail de plus, je ne le sens même plus. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "iris_relation",
         "suspectId": "iris",
         "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, Iris Meunier ?",
-        "answer": "« J'avais quelque chose à perdre. Comme tout le monde ici, d'ailleurs. »",
+        "answer": "« Quatre mois sur cette toile. Je connais chaque craquelure. C'est pour ça qu'on m'interroge, pas parce que j'ai fait quelque chose. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "mathieu_observation",
         "suspectId": "mathieu",
         "question": "Avez-vous vu ou entendu un détail qui vous a surpris, Mathieu Orsini ?",
-        "answer": "« Je n'ai rien vu. J'étais concentré sur ce que j'avais à faire. »",
+        "answer": "« Le monte-charge a un bruit que je reconnais entre mille. Cette nuit-là, il n'a pas bougé. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "mathieu_relation",
         "suspectId": "mathieu",
         "question": "Reconnaissez-vous avoir un intérêt personnel dans cette affaire, Mathieu Orsini ?",
-        "answer": "« Mon intérêt est réel. Il reste à prouver que j'ai fait quelque chose. »",
+        "answer": "« Je réclame un budget correct depuis des mois. On m'ignore. Ça n'a rien à voir avec cette histoire. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "salome_observation",
         "suspectId": "salome",
         "question": "Y a-t-il un détail que les enquêteurs devraient connaître, Salomé Varenne ?",
-        "answer": "« Il y avait quelque chose dans l'air, mais je ne saurais pas le nommer. »",
+        "answer": "« J'ai vu quelque chose, oui. Enfin, une ombre sous la porte. Enfin, une lumière. Je note tout, je peux vous montrer. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "salome_relation",
         "suspectId": "salome",
         "question": "Cette situation pouvait-elle vous profiter, Salomé Varenne ?",
-        "answer": "« Je comprends que ça vous saute aux yeux. Ça ne fait pas de moi un coupable. »",
+        "answer": "« J'ai dit publiquement que l'attribution était douteuse. Vous imaginez le nombre de personnes que ça a fâchées ? »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "iris_confrontation",
         "suspectId": "iris",
         "question": "Le relevé vous place sur les lieux. Pourquoi l'avoir omis ?",
-        "answer": "« J'ai omis ce passage. Il me mettait dans une position inconfortable, ce n'est pas un aveu. »",
+        "answer": "« J'ai posé les scellés à 19 h 10. Le capteur parle ensuite d'une ouverture à 20 h 26 avec mon badge. Mon badge reste accroché au tableau de service, comme toujours. »",
         "unlockedByClueId": "registre",
         "beat": "La présence devient certaine. Le geste reste à prouver."
       },
@@ -309,7 +309,7 @@
         "id": "iris_mobile",
         "suspectId": "iris",
         "question": "Qu'auriez-vous perdu si ce projet avait abouti ?",
-        "answer": "« J'avais beaucoup à perdre. Je cherchais une solution, pas un coupable. »",
+        "answer": "« Un brouillon de contrat. On m'en envoie toute la journée. Celui-là, je ne l'ai jamais signé. »",
         "unlockedByClueId": "mobile",
         "beat": "Le document donne un poids concret au mobile."
       },
@@ -317,7 +317,7 @@
         "id": "salome_detail",
         "suspectId": "salome",
         "question": "Pourquoi retrouve-t-on cet objet parmi vos affaires ?",
-        "answer": "« Cet objet m'appartient. Il ne se trouvait pas là à l'heure que vous imaginez. »",
+        "answer": "« C'est le titre d'un chapitre, pas un plan. Je cherche à comprendre, pas à détruire. Mes clichés sont horodatés. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       },
@@ -325,7 +325,7 @@
         "id": "mathieu_detail",
         "suspectId": "mathieu",
         "question": "À quel moment cet élément a-t-il changé de sens ?",
-        "answer": "« Vous avez le bon élément et la mauvaise chronologie. »",
+        "answer": "« Un double de clé dans mon casier ? Demandez à l'intendance où sont rangés les doubles. C'est moi qui les étiquette. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "Le recoupement suivant peut innocenter ou condamner."
       }

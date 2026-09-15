@@ -266,49 +266,49 @@
         "id": "malo_observation",
         "suspectId": "malo",
         "question": "Qu'est-ce qui vous a le plus surpris ce soir-là, Malo Quéré ?",
-        "answer": "« Les gens étaient pressés. Plus que d'habitude, je trouve. »",
+        "answer": "« L'automate a fait son cycle, puis le feu est revenu seul. Ça arrive, c'est dans la documentation. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "malo_relation",
         "suspectId": "malo",
         "question": "Qu'est-ce que cela changeait pour vous, Malo Quéré ?",
-        "answer": "« J'aurais pu en tirer profit. Je n'ai rien provoqué. »",
+        "answer": "« Le marché d'entretien se rejoue en octobre. Un incident nous met en lumière, forcément. Ça ne veut pas dire que je l'ai fabriqué. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "erell_observation",
         "suspectId": "erell",
         "question": "Avez-vous relevé une incohérence autour de vous, Erell Bihan ?",
-        "answer": "« Un détail m'a étonné sur le moment. Je n'y ai plus repensé avant ce soir. »",
+        "answer": "« Le phare ne clignotait pas comme d'habitude, cette nuit-là. J'ai noté l'heure : 2 h 13. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "erell_relation",
         "suspectId": "erell",
         "question": "Pourquoi vous, Erell Bihan ?",
-        "answer": "« Je redoutais les conséquences. Je ne l'ai jamais dissimulé à personne. »",
+        "answer": "« Je demande un éclairage réduit depuis trois ans, pour les oiseaux. On me répond que le phare est une obligation. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "jonas_observation",
         "suspectId": "jonas",
         "question": "Une chose vous a-t-elle semblé déplacée, Jonas Le Guen ?",
-        "answer": "« Non. Si quelque chose clochait, je ne l'ai pas remarqué. »",
+        "answer": "« Les onze minutes noires, je les ai notées quand je les ai vues. Pas après coup. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "jonas_relation",
         "suspectId": "jonas",
         "question": "Cette affaire pouvait-elle vous affecter, Jonas Le Guen ?",
-        "answer": "« Vous cherchez un mobile ? Le voilà. Trouvez maintenant le geste. »",
+        "answer": "« C'était mon frère, à la passerelle. Vous comprenez que je l'aie noté ? »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "malo_confrontation",
         "suspectId": "malo",
         "question": "Vous aviez dit être parti. Pourquoi le registre indique-t-il le contraire ?",
-        "answer": "« Je maintiens l'essentiel. Sur cette minute-là, j'ai pu me tromper. »",
+        "answer": "« Ma montre compte les étages. Quatre étages à 2 h 05, ça peut être moi qui monte vérifier la lanterne. Je l'ai fait dix fois cet hiver. »",
         "unlockedByClueId": "registre",
         "beat": "La présence devient certaine. Le geste reste à prouver."
       },
@@ -316,7 +316,7 @@
         "id": "malo_mobile",
         "suspectId": "malo",
         "question": "Pourquoi avez-vous cherché à dissimuler ce document ?",
-        "answer": "« J'ai voulu garder ça privé. La divulgation aurait détruit des années de travail. »",
+        "answer": "« C'est une note interne écrite en juin. Toutes les entreprises écrivent ce genre de chose pour se rassurer. »",
         "unlockedByClueId": "mobile",
         "beat": "Le document donne un poids concret au mobile."
       },
@@ -324,7 +324,7 @@
         "id": "jonas_detail",
         "suspectId": "jonas",
         "question": "Pourquoi ce détail n'était-il pas dans votre première déclaration ?",
-        "answer": "« Je l'ai gardé pour moi : cela ne concernait pas l'enquête. »",
+        "answer": "« L'heure vient de l'enregistrement radio du bord, transmis automatiquement. Il est en copie chez vous. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       },
@@ -332,7 +332,7 @@
         "id": "erell_detail",
         "suspectId": "erell",
         "question": "Qui peut confirmer votre explication sur cette pièce ?",
-        "answer": "« Mon explication est vérifiable. Cherchez le second enregistrement. »",
+        "answer": "« Ma pince sert à baguer. Elle était dans ma mallette, à la falaise, et elle y est encore. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "Le recoupement suivant peut innocenter ou condamner."
       }

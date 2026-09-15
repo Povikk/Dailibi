@@ -259,49 +259,49 @@
         "id": "ana_observation",
         "suspectId": "ana",
         "question": "Avez-vous relevé une incohérence autour de vous, Ana Costa ?",
-        "answer": "« Non. Et ça m'ennuie de ne pas pouvoir vous aider mieux que ça. »",
+        "answer": "« Mila et moi, on ne se parle pas. Tout le monde le sait. Ça ne veut pas dire que je lui veux du mal. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "ana_relation",
         "suspectId": "ana",
         "question": "Cette affaire pouvait-elle vous affecter, Ana Costa ?",
-        "answer": "« Ce n'était pas mon problème, jusqu'à ce que ça le devienne. »",
+        "answer": "« Sa place, c'est la mienne si elle déclare forfait. Je ne l'ai jamais nié. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "yves_observation",
         "suspectId": "yves",
         "question": "Une chose vous a-t-elle semblé déplacée, Yves Molin ?",
-        "answer": "« Il y a eu un moment de flottement, mais rien que je saurais décrire. »",
+        "answer": "« La glace, c'est une matière vivante. Elle vous dit quand elle n'est pas prise. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "yves_relation",
         "suspectId": "yves",
         "question": "Aviez-vous quelque chose à perdre, Yves Molin ?",
-        "answer": "« J'y perdais plus qu'autre chose. Demandez à n'importe qui. »",
+        "answer": "« Une inspection montrerait que j'économise sur les produits. Économiser n'est pas saboter. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "leon_observation",
         "suspectId": "leon",
         "question": "Qu'avez-vous vu juste avant que cela arrive, Léon Barthe ?",
-        "answer": "« Je ne suis pas du genre à surveiller les autres. »",
+        "answer": "« J'ai dessiné cette spirale. Je la connais ligne par ligne, courbe par courbe. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "leon_relation",
         "suspectId": "leon",
         "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, Léon Barthe ?",
-        "answer": "« Je n'avais rien à y gagner. Rien. »",
+        "answer": "« Mila voulait travailler avec quelqu'un d'autre après la sélection. Dix ans de programme, vous imaginez. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "leon_confrontation",
         "suspectId": "leon",
         "question": "Le relevé ne correspond pas à ce que vous dites. Que s'est-il passé ?",
-        "answer": "« La donnée est exacte. Mon récit, lui, était incomplet. »",
+        "answer": "« Le reflet d'une caméra dans la baie me montre au bord de la piste. J'y passe chaque répétition : c'est mon travail. »",
         "unlockedByClueId": "registre",
         "beat": "Le mensonge est admis, mais sa raison reste à établir."
       },
@@ -309,7 +309,7 @@
         "id": "leon_mobile",
         "suspectId": "leon",
         "question": "Pourquoi ce document comptait-il autant pour vous ?",
-        "answer": "« Vous appelez ça un mobile parce que vous connaissez la fin. »",
+        "answer": "« J'ai écrit ce message à chaud, après une réunion. Je l'ai supprimé le soir même. »",
         "unlockedByClueId": "mobile",
         "beat": "L'intérêt personnel est reconnu sans que le passage à l'acte le soit."
       },
@@ -317,7 +317,7 @@
         "id": "yves_detail",
         "suspectId": "yves",
         "question": "Comment cet objet est-il arrivé là, selon vous ?",
-        "answer": "« Je peux vous dire d'où il vient. Pas ce que vous en déduisez. »",
+        "answer": "« Une température trop élevée aurait assoupli toute la piste. Elle n'explique pas une seule spirale restée molle. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "La pièce doit être replacée dans sa chronologie."
       },
@@ -325,7 +325,7 @@
         "id": "ana_detail",
         "suspectId": "ana",
         "question": "Que répondez-vous à cette pièce qui vous met en cause ?",
-        "answer": "« La pièce est authentique, mais votre interprétation s'arrête trop tôt. »",
+        "answer": "« Mon flacon contient de l'alcool, comme celui de toutes les filles du vestiaire. Les caméras du couloir m'y montrent toute la soirée. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       }

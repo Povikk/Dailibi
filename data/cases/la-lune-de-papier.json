@@ -266,49 +266,49 @@
         "id": "joel_observation",
         "suspectId": "joel",
         "question": "Avez-vous vu ou entendu un détail qui vous a surpris, Joël Garnier ?",
-        "answer": "« Je n'ai pas fait attention. On m'a posé la question après, et j'ai cherché : rien. »",
+        "answer": "« J'avais prévenu. Le décor était trop lourd. On m'a écouté trop tard. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "joel_relation",
         "suspectId": "joel",
         "question": "Cette situation pouvait-elle vous profiter, Joël Garnier ?",
-        "answer": "« Ça ne me plaisait pas, cette histoire. Je n'y pouvais rien. »",
+        "answer": "« J'ai refusé de certifier. On m'a passé outre. Et maintenant on me soupçonne. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "pia_observation",
         "suspectId": "pia",
         "question": "Y a-t-il un détail que les enquêteurs devraient connaître, Pia Lenoir ?",
-        "answer": "« Si j'avais vu quelque chose, je l'aurais dit. Je n'ai rien à gagner à me taire. »",
+        "answer": "« J'ai peint cette lune pendant trois semaines. Les paillettes, c'est ma touche. Enfin, c'était. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "pia_relation",
         "suspectId": "pia",
         "question": "Que redoutiez-vous personnellement, Pia Lenoir ?",
-        "answer": "« J'avais surtout peur des conséquences pour les autres. »",
+        "answer": "« Édith présentait la maquette comme son travail. J'ai passé trois semaines dessus, évidemment que ça me rongeait. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "sacha_observation",
         "suspectId": "sacha",
         "question": "Qu'est-ce qui vous a le plus surpris ce soir-là, Sacha Derval ?",
-        "answer": "« Il y a toujours du bruit ici. Un détail de plus, un de moins, je ne le remarque pas. »",
+        "answer": "« J'ai suivi le filage depuis le foyer. Je ne monte plus sur un plateau. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "sacha_relation",
         "suspectId": "sacha",
         "question": "Que risquiez-vous dans cette histoire, Sacha Derval ?",
-        "answer": "« Oui, ça pouvait me retomber dessus. Ça ne veut pas dire que je l'ai provoqué. »",
+        "answer": "« Une annulation me rapporterait plus qu'une tournée déficitaire. C'est de l'arithmétique, pas un projet. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "pia_confrontation",
         "suspectId": "pia",
         "question": "Cette trace porte jusqu'à vous. Quelle autre explication proposez-vous ?",
-        "answer": "« Je n'ai pas d'explication pour ce relevé. Une heure qui cloche ne prouve pas que j'ai agi. »",
+        "answer": "« Une photo me montre sur l'échelle à 19 h 12. J'étais revenue chercher mon pinceau. Trois minutes, pas plus. »",
         "unlockedByClueId": "registre",
         "beat": "Le mensonge est admis, mais sa raison reste à établir."
       },
@@ -316,7 +316,7 @@
         "id": "pia_mobile",
         "suspectId": "pia",
         "question": "Cette découverte menaçait-elle votre situation ?",
-        "answer": "« Ce document me concernait, oui. Ça ne veut pas dire que j'étais prêt à tout. »",
+        "answer": "« Ce dossier, je l'ai envoyé parce qu'on m'en a demandé un. On verra ce que la galerie en dira. »",
         "unlockedByClueId": "mobile",
         "beat": "L'intérêt personnel est reconnu sans que le passage à l'acte le soit."
       },
@@ -324,7 +324,7 @@
         "id": "sacha_detail",
         "suspectId": "sacha",
         "question": "Que prouve réellement cette pièce, selon vous ?",
-        "answer": "« Non, ce n'est pas moi. Et cette pièce, seule, ne dit rien de tel. »",
+        "answer": "« La clause d'assurance a été exigée par le théâtre, pas par moi. Le foyer vitré me montre en réunion avec les coproducteurs. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "La pièce doit être replacée dans sa chronologie."
       },
@@ -332,7 +332,7 @@
         "id": "joel_detail",
         "suspectId": "joel",
         "question": "Pourquoi ce détail n'était-il pas dans votre première déclaration ?",
-        "answer": "« Vous avez trouvé cela chez moi, oui. Ça ne raconte pas la soirée. »",
+        "answer": "« J'ai signé un bon de retour, ça m'arrive vingt fois par mois. Une caméra me montre au cintre opposé pendant toute la retouche. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       }

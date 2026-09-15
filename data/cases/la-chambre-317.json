@@ -259,49 +259,49 @@
         "id": "bastien_observation",
         "suspectId": "bastien",
         "question": "Y a-t-il un détail que les enquêteurs devraient connaître, Bastien Cazal ?",
-        "answer": "« Il y avait quelque chose dans l'air, mais je ne saurais pas le nommer. »",
+        "answer": "« Le service du soir s'est déroulé normalement. Nous avions un dîner de la fondation, deux cents couverts. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "bastien_relation",
         "suspectId": "bastien",
         "question": "Que risquiez-vous dans cette histoire, Bastien Cazal ?",
-        "answer": "« Je comprends que ça vous saute aux yeux. Ça ne fait pas de moi un coupable. »",
+        "answer": "« La fondation finance nos travaux. Évidemment que je connaissais le sujet de son enquête. Tout le monde le connaissait. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "yuna_observation",
         "suspectId": "yuna",
         "question": "Qu'est-ce qui vous a le plus surpris ce soir-là, Yuna Delmas ?",
-        "answer": "« Les gens étaient pressés. Plus que d'habitude, je trouve. »",
+        "answer": "« Les gens croient qu'on ne voit rien, la nuit. On voit surtout les chaussures. Celles de Mme Verneuil étaient des bottines à talon. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "yuna_relation",
         "suspectId": "yuna",
         "question": "Quel était votre intérêt, Yuna Delmas ?",
-        "answer": "« J'aurais pu en tirer profit. Je n'ai rien provoqué. »",
+        "answer": "« Huit cents euros de sa part, oui. Pour des archives de vidéosurveillance qu'elle m'avait demandées. Facture à l'appui. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "clement_observation",
         "suspectId": "clement",
         "question": "Avez-vous relevé une incohérence autour de vous, Clément Rive ?",
-        "answer": "« Un détail m'a étonné sur le moment. Je n'y ai plus repensé avant ce soir. »",
+        "answer": "« Je photographie des lieux vides depuis quinze ans. Les couloirs d'hôtel, j'en ai des centaines. Celui-là ne m'a rien dit de plus. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "clement_relation",
         "suspectId": "clement",
         "question": "Qu'est-ce que cela changeait pour vous, Clément Rive ?",
-        "answer": "« Je redoutais les conséquences. Je ne l'ai jamais dissimulé à personne. »",
+        "answer": "« Elle allait publier. Avec ou sans moi. Mes sources, c'est mon fonds de commerce. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "clement_confrontation",
         "suspectId": "clement",
         "question": "Cette trace porte jusqu'à vous. Quelle autre explication proposez-vous ?",
-        "answer": "« La donnée est exacte. Mon récit, lui, était incomplet. »",
+        "answer": "« La validation du tram, c'est une carte périmée que je garde pour le portique. Mon abonnement, lui, enregistre mon retour à l'hôtel à 00 h 06. Je suis revenu chercher un objectif. »",
         "unlockedByClueId": "registre",
         "beat": "Le mensonge est admis, mais sa raison reste à établir."
       },
@@ -309,7 +309,7 @@
         "id": "clement_mobile",
         "suspectId": "clement",
         "question": "Cette découverte menaçait-elle votre situation ?",
-        "answer": "« Vous appelez ça un mobile parce que vous connaissez la fin. »",
+        "answer": "« Vous avez déchiffré ce message et vous en faites un aveu. Lisez-le encore : elle me dit de faire comme prévu. Prévu par qui ? »",
         "unlockedByClueId": "mobile",
         "beat": "L'intérêt personnel est reconnu sans que le passage à l'acte le soit."
       },
@@ -317,7 +317,7 @@
         "id": "yuna_detail",
         "suspectId": "yuna",
         "question": "Que prouve réellement cette pièce, selon vous ?",
-        "answer": "« Pris seul, ce détail m'accuse. Replacé dans la soirée, il raconte autre chose. »",
+        "answer": "« Ce virement paie un travail, pas un silence. La facture est au dossier. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "La pièce doit être replacée dans sa chronologie."
       },
@@ -325,7 +325,7 @@
         "id": "bastien_detail",
         "suspectId": "bastien",
         "question": "Pourquoi ce détail n'était-il pas dans votre première déclaration ?",
-        "answer": "« Je l'ai gardé pour moi : cela ne concernait pas l'enquête. »",
+        "answer": "« J'ai regardé sa fiche client. Un directeur d'hôtel regarde les fiches. C'est mon métier, pas un délit. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       }

@@ -264,49 +264,49 @@
         "id": "zoe_observation",
         "suspectId": "zoe",
         "question": "Que retenez-vous de cette soirée, Zoé Henin ?",
-        "answer": "« J'en garde une impression, pas un souvenir précis. »",
+        "answer": "« J'ai scellé la zone à 20 h, comme toujours. On retrouve un sceau avec un autre numéro, et vous en concluez que j'ai menti. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "zoe_relation",
         "suspectId": "zoe",
         "question": "Que risquiez-vous dans cette histoire, Zoé Henin ?",
-        "answer": "« Ma situation était déjà compliquée avant cette affaire. »",
+        "answer": "« Tom a dit devant tout le monde que ma voie était dangereuse. Vous auriez encaissé ça, vous ? »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "milan_observation",
         "suspectId": "milan",
         "question": "Est-ce que quelque chose vous a mis mal à l'aise, Milan Roche ?",
-        "answer": "« J'entendais ce qui se passait autour, je ne regardais pas. »",
+        "answer": "« Je regardais la voie. Je ne l'ai pas touchée. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "milan_relation",
         "suspectId": "milan",
         "question": "Quel était votre intérêt, Milan Roche ?",
-        "answer": "« On me prête des intentions que je n'ai pas. »",
+        "answer": "« Sa chute me qualifie en finale. Vous imaginez que ça me suffit ? J'aurais préféré le battre. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "armand_observation",
         "suspectId": "armand",
         "question": "Avez-vous remarqué quelque chose d'inhabituel, Armand Seux ?",
-        "answer": "« Rien de particulier. Tout le monde est parti à son heure habituelle. »",
+        "answer": "« J'avais mon tour à 21 h. Je l'ai fait. C'est écrit dans le registre. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "armand_relation",
         "suspectId": "armand",
         "question": "Qu'est-ce que cela changeait pour vous, Armand Seux ?",
-        "answer": "« Oui, cette affaire pouvait me coûter cher. Ce n'est pas pour autant que j'ai agi. »",
+        "answer": "« L'accident me met en cause. J'ai commis une erreur il y a deux ans, et on me la ressort à chaque fois. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "zoe_confrontation",
         "suspectId": "zoe",
         "question": "Cette heure contredit votre récit. Comment l'expliquez-vous ?",
-        "answer": "« Vous partez d'un outil et vous en tirez une conclusion. C'est un peu rapide. »",
+        "answer": "« Le carnet d'où vient ce numéro traîne dans l'atelier. N'importe qui peut y prendre une feuille. »",
         "unlockedByClueId": "registre",
         "beat": "Le mensonge est admis, mais sa raison reste à établir."
       },
@@ -314,7 +314,7 @@
         "id": "zoe_mobile",
         "suspectId": "zoe",
         "question": "Pourquoi ce document vous concernait-il directement ?",
-        "answer": "« Tout le monde dans la pièce avait une raison de s'inquiéter. Pas seulement moi. »",
+        "answer": "« J'étais en colère. On dit des choses, on les efface, et ça ne veut pas dire qu'on a fait quelque chose. »",
         "unlockedByClueId": "mobile",
         "beat": "L'intérêt personnel est reconnu sans que le passage à l'acte le soit."
       },
@@ -322,7 +322,7 @@
         "id": "armand_detail",
         "suspectId": "armand",
         "question": "Cette pièce semble vous accuser. Que manque-t-il au dossier ?",
-        "answer": "« Vous avez le bon élément et la mauvaise chronologie. »",
+        "answer": "« J'ai signé sur le couple extérieur, comme le protocole le prévoit. Rien ne m'autorisait à démonter une prise d'ouvreur. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "La pièce doit être replacée dans sa chronologie."
       },
@@ -330,7 +330,7 @@
         "id": "milan_detail",
         "suspectId": "milan",
         "question": "Pourquoi retrouve-t-on cet objet parmi vos affaires ?",
-        "answer": "« Pris seul, ce détail m'accuse. Replacé dans la soirée, il raconte autre chose. »",
+        "answer": "« Toute la salle achète la même craie au même endroit. Vérifiez le lot, pas mon sac. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       }

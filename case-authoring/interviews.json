@@ -1,0 +1,524 @@
+{
+  "le-fauteuil-vide": {
+    "ines": {
+      "observation": "« Je regardais le film. Je ne pensais qu'à ma fille, assise à côté de moi. »",
+      "relation": "« On ne me dit jamais rien. Je croyais qu'il allait déposer, un point c'est tout. »",
+      "detail": "« Deux billets à mon nom dans ce cinéma, et toute la ville savait où nous étions. J'ai voulu qu'on soit tranquilles. »"
+    },
+    "victor": {
+      "observation": "« La coupure, d'abord. Quatre-vingt-dix secondes, exactement. J'ai vérifié la source : elle vient de l'automate, pas de moi. »",
+      "relation": "« Mon frère est cité dans le dossier de Romain. Vous comprendrez que je n'avais pas envie de voir son nom traîner dans une salle d'audience. »",
+      "confrontation": "« Le badge ouvre la passerelle plusieurs fois par semaine : c'est par là qu'on passe les bobines. Si vous voulez me placer derrière l'écran, il vous faudra mieux qu'un bip. »",
+      "mobile": "« Ce message, je l'ai reçu. Je ne vois pas ce qu'il prouve, sinon que je m'inquiétais pour mon frère. »"
+    },
+    "meryem": {
+      "observation": "« J'étais dehors, au café d'en face. Je n'ai rien vu de la salle, et c'est exactement ce que je regrette. »",
+      "relation": "« Je préparais sa déposition. Mon intérêt n'était pas qu'il disparaisse : sans lui, mon dossier tombe. »",
+      "detail": "« La chambre était réservée pour lui, pas par lui. C'est le protocole de mise à l'abri que j'avais demandé et qu'on m'a refusé. »"
+    }
+  },
+  "l-anatomie-d-un-parfum": {
+    "emilie": {
+      "observation": "« Le narcisse n'est plus dans la version finale. C'est moi qui l'ai retiré. Personne ne l'a remarqué, sauf moi. »",
+      "relation": "« Ce parfum, c'est dix ans de sa vie. Et quatre ans de la mienne, sans que mon nom apparaisse nulle part. »",
+      "confrontation": "« Mon bracelet enregistre une marche. Il ne dit pas où je suis allée. Je suis descendue chercher de l'eau. »",
+      "mobile": "« J'ai écrit ça un soir de colère. On écrit beaucoup de choses qu'on ne fait pas. »"
+    },
+    "karim": {
+      "observation": "« Rien d'anormal. Les distillations tournent. Le reste, c'est de la littérature. »",
+      "relation": "« Le concurrent m'a proposé un poste. J'ai refusé. Ça va vous décevoir, mais je n'ai rien à fuir ici. »",
+      "detail": "« La prime figurait dans le contrat, oui. Une prime, ça se refuse aussi. Demandez la date d'envoi. »"
+    },
+    "fanny": {
+      "observation": "« J'ai vu que la production prenait du retard sur le planning. C'est mon métier de le voir, pas de le commenter. »",
+      "relation": "« Un retard, pour moi, c'est un trimestre entier qui s'effondre. Je préfère vous le dire franchement. »",
+      "detail": "« J'ai poussé le dossier trois jours avant. Oui. Pourquoi croyez-vous qu'on me l'ait demandé ? »"
+    }
+  },
+  "la-ligne-de-craie": {
+    "zoe": {
+      "observation": "« J'ai scellé la zone à 20 h, comme toujours. On retrouve un sceau avec un autre numéro, et vous en concluez que j'ai menti. »",
+      "relation": "« Tom a dit devant tout le monde que ma voie était dangereuse. Vous auriez encaissé ça, vous ? »",
+      "confrontation": "« Le carnet d'où vient ce numéro traîne dans l'atelier. N'importe qui peut y prendre une feuille. »",
+      "mobile": "« J'étais en colère. On dit des choses, on les efface, et ça ne veut pas dire qu'on a fait quelque chose. »"
+    },
+    "milan": {
+      "observation": "« Je regardais la voie. Je ne l'ai pas touchée. »",
+      "relation": "« Sa chute me qualifie en finale. Vous imaginez que ça me suffit ? J'aurais préféré le battre. »",
+      "detail": "« Toute la salle achète la même craie au même endroit. Vérifiez le lot, pas mon sac. »"
+    },
+    "armand": {
+      "observation": "« J'avais mon tour à 21 h. Je l'ai fait. C'est écrit dans le registre. »",
+      "relation": "« L'accident me met en cause. J'ai commis une erreur il y a deux ans, et on me la ressort à chaque fois. »",
+      "detail": "« J'ai signé sur le couple extérieur, comme le protocole le prévoit. Rien ne m'autorisait à démonter une prise d'ouvreur. »"
+    }
+  },
+  "l-ombre-empruntee": {
+    "aya": {
+      "observation": "« Le point apparaît sur les trois séries. J'ai vérifié la parallaxe avant d'en parler. Personne d'autre ne l'a fait. »",
+      "relation": "« Mon financement s'arrête en décembre. Cette découverte, c'était mon seul moyen de rester. C'est un mobile, je le reconnais. »",
+      "confrontation": "« Mon Wi-Fi a coupé. Ma chambre est dans la zone morte du bâtiment, tout le monde le sait. J'ai ouvert la salle optique pour me connecter. »",
+      "mobile": "« J'ai rempli ce dossier le jour où j'ai vu le point. C'est de l'enthousiasme, pas un aveu. »"
+    },
+    "remi": {
+      "observation": "« Les pixels chauds, encore. Je les avais signalés deux fois. Rappelez-moi pourquoi on ne m'écoute pas. »",
+      "relation": "« Le capteur, c'est ma bête. Si quelqu'un l'a bricolé, je veux le savoir avant vous. »",
+      "detail": "« Ces pixels sont fixes. Ils sont dans le repère du capteur. L'objet, lui, avance comme un rail. »"
+    },
+    "chiara": {
+      "observation": "« J'observais depuis le Chili. Onze heures de décalage : notre nuit était votre matinée. »",
+      "relation": "« Une fausse alerte discréditerait le programme de Luan. Pour mon équipe, ce serait une aubaine. Je ne vais pas prétendre le contraire. »",
+      "detail": "« Je dépose des demandes de temps toute l'année. Celle-là a été accordée, comme quinze autres. »"
+    }
+  },
+  "la-cle-de-la-chambre-rouge": {
+    "lola": {
+      "observation": "« Je photographie tout, tout le temps. C'est plus fort que moi. Ça ne veut pas dire que je vends. »",
+      "relation": "« L'atelier doit trois mois de loyer. Vous croyez que ça me laisse indifférente ? »",
+      "confrontation": "« Ma sauvegarde a envoyé une photo de la porte à 20 h 11. Mon téléphone était sur la table. Moi, je n'y étais plus. »",
+      "mobile": "« Ce message est de moi. Vous avez déjà vu quelqu'un négocier un prix ? Ça ne s'appelle pas encore un vol. »"
+    },
+    "marc": {
+      "observation": "« Je suis arrivé au conseil à 19 h 50, j'y suis resté jusqu'à minuit. Demandez la retransmission. »",
+      "relation": "« Le recours de Mme Kern expose mon projet. C'est une contrariété, pas un motif. Regardez le budget en jeu, vous verrez. »",
+      "detail": "« J'ai demandé les plans au service urbanisme. C'est public, je paie des impôts pour ça. »"
+    },
+    "hugo": {
+      "observation": "« Rien. Je suis parti à 19 h 30 pour Kehl et je suis rentré tard. »",
+      "relation": "« On m'appelle pour tout. Un passe qui ouvre plusieurs portes, dans un bâtiment, c'est la base du métier. »",
+      "detail": "« Ce passe sert à dépanner, pas à visiter. Vous avez la liste de mes interventions : regardez celle de Kehl. »"
+    }
+  },
+  "l-heure-bleue": {
+    "iris": {
+      "observation": "« Dans l'atelier, tout sent la térébenthine et le vernis. Un détail de plus, je ne le sens même plus. »",
+      "relation": "« Quatre mois sur cette toile. Je connais chaque craquelure. C'est pour ça qu'on m'interroge, pas parce que j'ai fait quelque chose. »",
+      "confrontation": "« J'ai posé les scellés à 19 h 10. Le capteur parle ensuite d'une ouverture à 20 h 26 avec mon badge. Mon badge reste accroché au tableau de service, comme toujours. »",
+      "mobile": "« Un brouillon de contrat. On m'en envoie toute la journée. Celui-là, je ne l'ai jamais signé. »"
+    },
+    "mathieu": {
+      "observation": "« Le monte-charge a un bruit que je reconnais entre mille. Cette nuit-là, il n'a pas bougé. »",
+      "relation": "« Je réclame un budget correct depuis des mois. On m'ignore. Ça n'a rien à voir avec cette histoire. »",
+      "detail": "« Un double de clé dans mon casier ? Demandez à l'intendance où sont rangés les doubles. C'est moi qui les étiquette. »"
+    },
+    "salome": {
+      "observation": "« J'ai vu quelque chose, oui. Enfin, une ombre sous la porte. Enfin, une lumière. Je note tout, je peux vous montrer. »",
+      "relation": "« J'ai dit publiquement que l'attribution était douteuse. Vous imaginez le nombre de personnes que ça a fâchées ? »",
+      "detail": "« C'est le titre d'un chapitre, pas un plan. Je cherche à comprendre, pas à détruire. Mes clichés sont horodatés. »"
+    }
+  },
+  "la-partition-muette": {
+    "maelle": {
+      "observation": "« La mesure 214 est celle que tout le monde rate. C'est aussi la seule que j'avais signalée dans mes notes. »",
+      "relation": "« Mon contrat finissait après la générale. Le reste, ce sont des suppositions. »",
+      "confrontation": "« Le journal montre une seconde session à 23 h 17. Mon poste était resté ouvert : la session a pu être reprise depuis le pupitre. »",
+      "mobile": "« Ce brouillon, je l'ai écrit après la panne. C'est de l'anticipation, pas un plan. »"
+    },
+    "lucien": {
+      "observation": "« Je connais cette partition par cœur, y compris les coupures qu'on m'a imposées. La 214, je ne l'aurais pas touchée. »",
+      "relation": "« J'ai refusé les coupes. On a fini par les imposer. Voilà tout mon différend avec Noémi. »",
+      "detail": "« Cette annotation date des premières répétitions. Elle figurait déjà sur la version rendue il y a un mois, et la photo de l'hôtel le prouve. »"
+    },
+    "ruben": {
+      "observation": "« Musicalement, la générale était juste. Le problème n'était pas dans l'orchestre. »",
+      "relation": "« J'ai demandé un report. On me l'a refusé. Demander un report n'est pas saboter une création. »",
+      "detail": "« Ma demande de report est passée par la voie normale, avec le cachet de la direction. Trouvez qui l'a jointe à ce courriel anonyme. »"
+    }
+  },
+  "la-chambre-317": {
+    "clement": {
+      "observation": "« Je photographie des lieux vides depuis quinze ans. Les couloirs d'hôtel, j'en ai des centaines. Celui-là ne m'a rien dit de plus. »",
+      "relation": "« Elle allait publier. Avec ou sans moi. Mes sources, c'est mon fonds de commerce. »",
+      "confrontation": "« La validation du tram, c'est une carte périmée que je garde pour le portique. Mon abonnement, lui, enregistre mon retour à l'hôtel à 00 h 06. Je suis revenu chercher un objectif. »",
+      "mobile": "« Vous avez déchiffré ce message et vous en faites un aveu. Lisez-le encore : elle me dit de faire comme prévu. Prévu par qui ? »"
+    },
+    "yuna": {
+      "observation": "« Les gens croient qu'on ne voit rien, la nuit. On voit surtout les chaussures. Celles de Mme Verneuil étaient des bottines à talon. »",
+      "relation": "« Huit cents euros de sa part, oui. Pour des archives de vidéosurveillance qu'elle m'avait demandées. Facture à l'appui. »",
+      "detail": "« Ce virement paie un travail, pas un silence. La facture est au dossier. »"
+    },
+    "bastien": {
+      "observation": "« Le service du soir s'est déroulé normalement. Nous avions un dîner de la fondation, deux cents couverts. »",
+      "relation": "« La fondation finance nos travaux. Évidemment que je connaissais le sujet de son enquête. Tout le monde le connaissait. »",
+      "detail": "« J'ai regardé sa fiche client. Un directeur d'hôtel regarde les fiches. C'est mon métier, pas un délit. »"
+    }
+  },
+  "le-dernier-feu": {
+    "malo": {
+      "observation": "« L'automate a fait son cycle, puis le feu est revenu seul. Ça arrive, c'est dans la documentation. »",
+      "relation": "« Le marché d'entretien se rejoue en octobre. Un incident nous met en lumière, forcément. Ça ne veut pas dire que je l'ai fabriqué. »",
+      "confrontation": "« Ma montre compte les étages. Quatre étages à 2 h 05, ça peut être moi qui monte vérifier la lanterne. Je l'ai fait dix fois cet hiver. »",
+      "mobile": "« C'est une note interne écrite en juin. Toutes les entreprises écrivent ce genre de chose pour se rassurer. »"
+    },
+    "erell": {
+      "observation": "« Le phare ne clignotait pas comme d'habitude, cette nuit-là. J'ai noté l'heure : 2 h 13. »",
+      "relation": "« Je demande un éclairage réduit depuis trois ans, pour les oiseaux. On me répond que le phare est une obligation. »",
+      "detail": "« Ma pince sert à baguer. Elle était dans ma mallette, à la falaise, et elle y est encore. »"
+    },
+    "jonas": {
+      "observation": "« Les onze minutes noires, je les ai notées quand je les ai vues. Pas après coup. »",
+      "relation": "« C'était mon frère, à la passerelle. Vous comprenez que je l'aie noté ? »",
+      "detail": "« L'heure vient de l'enregistrement radio du bord, transmis automatiquement. Il est en copie chez vous. »"
+    }
+  },
+  "l-herbier-des-cendres": {
+    "samir": {
+      "observation": "« Une combustion sans flamme en milieu confiné, ça laisse des résidus. On en a trouvé. C'est un fait, pas une opinion. »",
+      "relation": "« Je cosigne les travaux, pas le brevet. C'est une nuance juridique, pas un motif de brûler quoi que ce soit. »",
+      "confrontation": "« Mon badge ressort à 19 h 43. J'étais revenu chercher un carnet oublié. Je ne suis pas monté à la serre. »",
+      "mobile": "« Ma sœur a créé une société. Elle a repris des formulations publiques. Vérifiez la date de dépôt. »"
+    },
+    "elise": {
+      "observation": "« L'armoire était fermée à clé. Je l'ai retrouvée dans le même état, à la suie près. »",
+      "relation": "« Je m'opposais au prélèvement destructif. Ça me met en cause, je le sais. C'est absurde. »",
+      "detail": "« La clé dans un pot ? C'est mon usage depuis quinze ans. Une photographie d'inventaire le montre, prise bien avant l'incendie. »"
+    },
+    "pavel": {
+      "observation": "« Le détecteur n'a rien vu, et moi non plus. Enfin, je n'étais pas là, j'étais au séminaire, donc... »",
+      "relation": "« Mon nom a disparu du projet de brevet. Entre nous, ça m'a mis en colère. »",
+      "detail": "« J'ai déposé une demande à mon nom après. On se retourne contre moi parce que j'ai enfin voulu exister. »"
+    }
+  },
+  "le-negatif-trente-six": {
+    "nils": {
+      "observation": "« Le scanner garde tout en mémoire, y compris les profils. Ce n'est pas moi qui l'ai rallumé. »",
+      "relation": "« Je revends des boîtiers et des objectifs. Ça ne fait pas de moi un voleur de négatifs. »",
+      "confrontation": "« Le profil de session reste sur le poste : n'importe qui peut le rappeler. La vraie question, c'est qui avait la clé. »",
+      "mobile": "« Je vends du matériel, pas des images. Retrouvez la conversation, vous verrez de quel côté elle penche. »"
+    },
+    "diane": {
+      "observation": "« Cette série, je la connais depuis trente ans. La trente-sixième vue, personne ne l'a jamais vue. Sauf celui qui l'a prise. »",
+      "relation": "« Ce négatif pouvait me sortir de trente ans de soupçons. Vous comprenez que je n'avais aucun intérêt à le voir disparaître. »",
+      "detail": "« J'ai demandé son retrait du catalogue, pas sa disparition. La nuance m'importe beaucoup. »"
+    },
+    "helene": {
+      "observation": "« Je reformule : on me demande ce que j'ai vu ce soir-là. J'ai vu un dîner. »",
+      "relation": "« Mon père apparaît sur cette photographie. Vous imaginez le reste. »",
+      "detail": "« Ma demande invoquait un mineur non flouté sur la vue 12. Relisez-la : je ne parle jamais de la vue 36. »"
+    }
+  },
+  "la-cloche-sans-voix": {
+    "leonie": {
+      "observation": "« Quatre minutes de volée, ça s'écoute. Et ce que j'ai entendu ce soir-là n'était pas la grande cloche. »",
+      "relation": "« J'ai restauré ce mécanisme pendant deux mois. Le son, je le connais mieux que personne. »",
+      "confrontation": "« Mon téléphone se connecte à la borne du clocher : c'est la seule antenne du secteur. Il s'y connecte aussi depuis ma chambre, à trente mètres. »",
+      "mobile": "« Mon fils est hospitalisé. Le devis, c'est le mien. Ça ne prouve pas que j'aie vendu quoi que ce soit. »"
+    },
+    "pere": {
+      "observation": "« Nous étions tous dans la cour, pour les complies. Nous n'avons rien remarqué, et nous le regrettons. »",
+      "relation": "« Nous devons rembourser un emprunt. C'est vrai. C'est aussi le cas de bien des communautés. »",
+      "detail": "« L'expertise préparait une assurance imposée par la banque. Trois vidéos nous placent au premier rang pendant toute la sonnerie. »"
+    },
+    "basile": {
+      "observation": "« On entend toujours la cloche. C'est justement pour ça que personne ne regarde l'heure quand elle sonne. »",
+      "relation": "« Je connais les passages condamnés, bien sûr. Je les montre aux groupes. C'est mon travail. »",
+      "detail": "« Je photographie tout ce que je guide. Une vidéo de visiteur me montre à la boutique, sans coupure, jusqu'après la sonnerie. »"
+    }
+  },
+  "minuit-sur-les-ondes": {
+    "gaspard": {
+      "observation": "« Une séquence automatique de quatre minutes, ça se voit au conducteur. Elle était programmée, je ne l'ai pas lancée. »",
+      "relation": "« Sonia allait parler de mes heures. Des heures, pas un crime. »",
+      "confrontation": "« Mon capteur de présence s'est coupé quatre minutes. Un capteur, ça se coupe. Vous n'avez jamais vu un détecteur fatigué ? »",
+      "mobile": "« Le compte bénéficiaire est à moi. Je facture de la prestation, comme la moitié de la station. »"
+    },
+    "mina": {
+      "observation": "« J'ai préparé l'infusion comme tous les soirs. J'espère que je n'ai pas mal fait. »",
+      "relation": "« Je suis stagiaire. Si quelque chose se passe mal, c'est moi qu'on regarde en premier. »",
+      "detail": "« Mon ordonnance, ce sont des comprimés bleus. Le produit de la tasse est un gel vétérinaire. Ce n'est pas la même chose. »"
+    },
+    "alban": {
+      "observation": "« L'antenne était propre ce soir-là. La régie, je n'y mets jamais les pieds pendant un direct. »",
+      "relation": "« J'avais demandé à Sonia de ne pas évoquer ce dossier. J'assume de l'avoir demandé. »",
+      "detail": "« J'ai fait couper une annonce, c'est vrai. Le gala en direct me montre à l'antenne pendant toute la séquence suivante. »"
+    }
+  },
+  "le-jardin-de-verre": {
+    "nora": {
+      "observation": "« La plante intacte valide mon hypothèse. Je vous fournis les courbes si vous voulez les vérifier. »",
+      "relation": "« Mon article a été refusé deux fois. Il devient publiable si la variété de Célia est discréditée. C'est un fait, pas un aveu. »",
+      "confrontation": "« Une commande passée depuis ma tablette à 22 h 18. Ma tablette reste sur le bureau de la serre. Qui y avait accès ? »",
+      "mobile": "« Mon article attend sa troisième version. Ça ne fait pas de moi quelqu'un qui sabote une serre. »"
+    },
+    "tao": {
+      "observation": "« Les courbes disent tout. Le circuit secondaire était déconnecté toute la nuit. »",
+      "relation": "« On a refusé mon prototype de brumisation. Le lien avec un herbicide, je ne le vois pas. »",
+      "detail": "« Mon prototype contient ce polymère, comme trois autres équipements du site. La télémétrie signée me place chez moi. »"
+    },
+    "gaelle": {
+      "observation": "« J'ai livré lundi, comme chaque semaine. Après, je ne remets pas les pieds dans la serre. »",
+      "relation": "« Une épidémie chez un concurrent m'arrange, évidemment. Ça ne veut pas dire que je la provoque. »",
+      "detail": "« Le bidon est scellé, avec son bouchon témoin. Et mon péage me place à cent quarante kilomètres. »"
+    }
+  },
+  "la-lettre-du-dormeur": {
+    "felix": {
+      "observation": "« J'ai fait ma ronde en voiture 12. Le train de nuit, c'est mon métier depuis onze ans. »",
+      "relation": "« On me connaît dans ce train. On me raconte tout. Ça ne fait pas de moi un voleur. »",
+      "confrontation": "« Le capteur me place six minutes devant le compartiment : j'ai contrôlé un billet. Sur une ronde, chaque arrêt compte. »",
+      "mobile": "« Le créancier accepte un bijou en garantie. Il ne dit pas que je le lui ai apporté. »"
+    },
+    "alma": {
+      "observation": "« J'ai dormi d'un sommeil de plomb. Les somnifères, c'est pour la scène, pas pour le train. »",
+      "relation": "« Octavie me traitait comme sa doublure, pas comme une actrice. Enfin, c'est compliqué. »",
+      "detail": "« Mes phrases, il les a reprises. La feuille porte au verso l'empreinte de son composteur à lui. »"
+    },
+    "leila": {
+      "observation": "« Trop de monde dans ce wagon. Aucun ne m'a paru suspect, et je regarde tout le monde. »",
+      "relation": "« J'ai sous-évalué le bijou dans le contrat. Une erreur de chiffres, et me voilà suspecte. »",
+      "detail": "« C'est ma signature au bas du contrat, oui. Je l'ai signé le 12, à la demande de tout le monde. »"
+    }
+  },
+  "la-septieme-maree": {
+    "clara": {
+      "observation": "« J'ai préparé les réservoirs à 17 h. Ensuite, les bassins sont en circuit fermé, je ne m'en occupe plus. »",
+      "relation": "« J'ai fait une erreur de dosage l'an dernier et je l'ai signalée moi-même. Depuis, on me surveille. »",
+      "confrontation": "« Une programmation locale sous mon code. Mon code est écrit sur le tableau des consignes, comme celui de tout le monde. »",
+      "mobile": "« Mon carnet a une page arrachée. Arrachée, pas écrite par moi. Faites analyser les traces de colle. »"
+    },
+    "ewen": {
+      "observation": "« Les huîtres s'ouvrent par vagues de six heures. La mer, je la connais mieux qu'un modèle. »",
+      "relation": "« Si l'essai échoue, on prolonge les aides. Naturellement que ça m'arrange. »",
+      "detail": "« Un colorant rose, oui, je m'en sers pour marquer mes poches. Le pont et le GPS me placent en mer. »"
+    },
+    "marc": {
+      "observation": "« J'avais annoncé que cet essai échouerait. Je maintiens, et les faits me donnent raison. »",
+      "relation": "« Je signe la réouverture. Mon intérêt est que le bassin soit propre, pas contaminé. »",
+      "detail": "« Mon flacon est numéroté et intact. Le restaurant confirme que j'y dînais à l'heure de la programmation. »"
+    }
+  },
+  "la-lune-de-papier": {
+    "pia": {
+      "observation": "« J'ai peint cette lune pendant trois semaines. Les paillettes, c'est ma touche. Enfin, c'était. »",
+      "relation": "« Édith présentait la maquette comme son travail. J'ai passé trois semaines dessus, évidemment que ça me rongeait. »",
+      "confrontation": "« Une photo me montre sur l'échelle à 19 h 12. J'étais revenue chercher mon pinceau. Trois minutes, pas plus. »",
+      "mobile": "« Ce dossier, je l'ai envoyé parce qu'on m'en a demandé un. On verra ce que la galerie en dira. »"
+    },
+    "joel": {
+      "observation": "« J'avais prévenu. Le décor était trop lourd. On m'a écouté trop tard. »",
+      "relation": "« J'ai refusé de certifier. On m'a passé outre. Et maintenant on me soupçonne. »",
+      "detail": "« J'ai signé un bon de retour, ça m'arrive vingt fois par mois. Une caméra me montre au cintre opposé pendant toute la retouche. »"
+    },
+    "sacha": {
+      "observation": "« J'ai suivi le filage depuis le foyer. Je ne monte plus sur un plateau. »",
+      "relation": "« Une annulation me rapporterait plus qu'une tournée déficitaire. C'est de l'arithmétique, pas un projet. »",
+      "detail": "« La clause d'assurance a été exigée par le théâtre, pas par moi. Le foyer vitré me montre en réunion avec les coproducteurs. »"
+    }
+  },
+  "l-enchere-silencieuse": {
+    "vera": {
+      "observation": "« Le lot est resté devant les enchérisseurs pendant trois heures. Chacun pouvait le voir. »",
+      "relation": "« Je dois racheter sa part à mon associé. C'est un montant, rien de plus. »",
+      "confrontation": "« Mon badge visiteur à 6 h 42. J'étais là avant l'ouverture, c'est exact : je venais préparer la vente. »",
+      "mobile": "« Un virement suisse de la moitié du prix. Vous additionnez deux choses et vous appelez ça une preuve. »"
+    },
+    "nassim": {
+      "observation": "« Les ratures racontent tout du copiste. Celle du feuillet 4 est une faute de lecture, pas de fabrication. »",
+      "relation": "« J'ai établi la transcription confidentielle. Elle n'est sortie de mon bureau qu'avec mon accord. »",
+      "detail": "« La faute est dans mon fichier parce qu'elle était dans le manuscrit. Le lecteur des archives m'y place toute la soirée. »"
+    },
+    "colombe": {
+      "observation": "« Je préparais les lots, je les emballais. Je faisais tout, et mon père signait. »",
+      "relation": "« La maison a des dettes. Mon père le sait mieux que moi. »",
+      "detail": "« J'ai effacé une séquence. Elle montrait une dispute avec mon père, la veille. La sauvegarde montre le manuscrit encore original après mon départ. »"
+    }
+  },
+  "l-encre-sous-la-glace": {
+    "leon": {
+      "observation": "« J'ai dessiné cette spirale. Je la connais ligne par ligne, courbe par courbe. »",
+      "relation": "« Mila voulait travailler avec quelqu'un d'autre après la sélection. Dix ans de programme, vous imaginez. »",
+      "confrontation": "« Le reflet d'une caméra dans la baie me montre au bord de la piste. J'y passe chaque répétition : c'est mon travail. »",
+      "mobile": "« J'ai écrit ce message à chaud, après une réunion. Je l'ai supprimé le soir même. »"
+    },
+    "yves": {
+      "observation": "« La glace, c'est une matière vivante. Elle vous dit quand elle n'est pas prise. »",
+      "relation": "« Une inspection montrerait que j'économise sur les produits. Économiser n'est pas saboter. »",
+      "detail": "« Une température trop élevée aurait assoupli toute la piste. Elle n'explique pas une seule spirale restée molle. »"
+    },
+    "ana": {
+      "observation": "« Mila et moi, on ne se parle pas. Tout le monde le sait. Ça ne veut pas dire que je lui veux du mal. »",
+      "relation": "« Sa place, c'est la mienne si elle déclare forfait. Je ne l'ai jamais nié. »",
+      "detail": "« Mon flacon contient de l'alcool, comme celui de toutes les filles du vestiaire. Les caméras du couloir m'y montrent toute la soirée. »"
+    }
+  },
+  "la-derniere-ruche": {
+    "eloi": {
+      "observation": "« La ruche 12 est la plus calme du rucher. C'est la mienne depuis deux ans. »",
+      "relation": "« Baptiste refuse de me céder une reine. Je le lui ai demandé trois fois, il a dit non trois fois. »",
+      "confrontation": "« La pesée dit que la ruche a été ouverte deux fois pendant ma tournée. J'en ai douze, et la 12 a un couvercle plus dur : j'y suis repassé. »",
+      "mobile": "« Une annonce non publiée, oui. Je prépare mon élevage depuis un an. Ce n'est pas un crime. »"
+    },
+    "didier": {
+      "observation": "« Je traite mes champs aux doses autorisées. Le carnet est à la coopérative. »",
+      "relation": "« On m'impute la mort des abeilles à chaque fois. Cette fois, on me le dira en face. »",
+      "detail": "« Les analyses de pollen sont négatives. Et le vent soufflait du rucher vers chez moi, pas l'inverse. »"
+    },
+    "nour": {
+      "observation": "« Attention aux mots : les abeilles ne meurent pas, elles cessent de revenir. Ce n'est pas la même chose. »",
+      "relation": "« Mes résultats contredisaient ceux de Baptiste. Dans ce milieu, ça suffit à vous rendre suspecte. »",
+      "detail": "« J'ai demandé un transfert, par écrit et par la voie normale. La caméra du laboratoire me montre derrière la vitre aux deux ouvertures. »"
+    }
+  },
+  "la-pluie-de-porcelaine": {
+    "linh": {
+      "observation": "« Vingt-sept minutes seule avec les pièces, c'est ce que dit le registre. J'ai compté les invendus, comme tous les soirs. »",
+      "relation": "« La manufacture est endettée. Je gère les commandes de ma sœur. Si elle coule, je coule avec elle. »",
+      "confrontation": "« Le registre me montre seule après le départ du livreur. Il est parti à 19 h 40, pas à 19 h 20. Demandez-lui. »",
+      "mobile": "« L'échéancier bancaire, oui. Toute entreprise en a un. »"
+    },
+    "etienne": {
+      "observation": "« Quarante ans que je cuis. Je sais ce qu'une porte qui s'ouvre fait à une pièce. »",
+      "relation": "« La nouvelle série remplace mon atelier traditionnel. On me met à la retraite. »",
+      "detail": "« J'ai coupé l'alarme pour remplacer un thermocouple. Les scellés mécaniques de la porte sont intacts. »"
+    },
+    "oscar": {
+      "observation": "« La casse, en céramique, c'est une expérience. Pas forcément un délit. »",
+      "relation": "« Mon dossier a été refusé au profit de celui de Mei. Me voilà avec un mobile parfait. »",
+      "detail": "« J'ai emprunté la clé une fois, pour rendre un émaux. Les photos géolocalisées et la scène me placent à Paris avant la fermeture du four. »"
+    }
+  },
+  "le-lac-sans-reflet": {
+    "natan": {
+      "observation": "« Ce take était le bon. Je le savais au moniteur, avant même de le revoir. »",
+      "relation": "« Cléo et moi, on se disputait sur la fin. Elle voulait une sortie douce, moi une disparition. »",
+      "confrontation": "« Le moniteur a reçu un fichier au lieu du flux direct. Ça arrive quand quelqu'un ouvre la session de montage. Le technicien a la clé. »",
+      "mobile": "« Cette campagne, je la note depuis des mois. C'est le titre de travail du film, rien de plus. »"
+    },
+    "sarah": {
+      "observation": "« Le plongeon, je l'avais répété onze fois. La douzième, personne ne m'a appelée. »",
+      "relation": "« On m'a choisie pour cette scène parce que j'ai la même silhouette que Cléo. C'est tout. »",
+      "detail": "« J'ai signé la feuille de service, oui. Cléo était en retard sur le maquillage et me l'a demandé. Le bateau GPS me place à bord pendant la chute. »"
+    },
+    "paul": {
+      "observation": "« Le calendrier était tenu. Une journée de retard coûte quatre-vingt mille euros. »",
+      "relation": "« Je voulais remplacer Cléo après le tournage. Une disparition déclenche une assurance majeure. Les deux phrases ne vont pas ensemble. »",
+      "detail": "« C'est une exigence syndicale pour la scène aquatique. Et j'ignorais qu'un fichier préenregistré existait. »"
+    }
+  },
+  "l-ascenseur-en-silence": {
+    "rachid": {
+      "observation": "« Le mode inspection, c'est une sécurité. On l'active pour travailler dans la gaine, jamais pour bloquer quelqu'un. »",
+      "relation": "« Je facture des interventions à une société de dépannage. C'est mon beau-frère, et c'est légal. »",
+      "confrontation": "« Une commande locale depuis la gaine : c'est le point de commande technique. Il s'ouvre avec la clé carrée, comme tous ceux du bâtiment. »",
+      "mobile": "« Mon beau-frère exploite une société de maintenance. Il n'y a rien de dissimulé là-dedans. »"
+    },
+    "eva": {
+      "observation": "« Vingt-deux secondes d'arrêt. J'ai compté. En ascenseur, on compte toujours. »",
+      "relation": "« Cette clé ouvre la salle serveurs que j'audite. C'est exactement pour ça que je ne l'ai pas. »",
+      "detail": "« Ma carte au niveau technique, c'était pour l'audit, accompagnée de deux personnes. Le reflet des portes montre mes mains levées pendant tout l'arrêt. »"
+    },
+    "hector": {
+      "observation": "« Je ne me déplace jamais sans être attendu. Le 19e m'attendait. »",
+      "relation": "« L'audit menace ma position. C'est une évidence, je ne vais pas la maquiller. »",
+      "detail": "« Ma question suit le protocole d'audit, à l'article 4. L'enregistrement continu me maintient au 19e étage pendant tout l'arrêt. »"
+    }
+  },
+  "les-archives-de-sel": {
+    "gilles": {
+      "observation": "« Un groupe scolaire, ça occupe. On répond aux questions, on ne regarde pas l'heure. »",
+      "relation": "« Je travaillais sur ce site l'année de l'accident. Si ces documents sortent, c'est ma responsabilité. »",
+      "confrontation": "« La photo me reflète descendant vers la galerie pendant la pause. Je suis descendu chercher un plan, pour le montrer aux enfants. »",
+      "mobile": "« Ma signature est sur le registre de chantier. Tous les bordereaux du site portent ma signature. »"
+    },
+    "mara": {
+      "observation": "« Humidité stable, température stable. C'est ce que dit mon relevé de la semaine. »",
+      "relation": "« Une défaillance climatique menacerait mon poste. Vous me prêtez un intérêt que je n'ai pas. »",
+      "detail": "« J'ai remplacé le capteur par un modèle autonome. Ses données prouvent que seul l'intérieur de la boîte s'est humidifié. »"
+    },
+    "sofiane": {
+      "observation": "« Je photographie tous les bordereaux. Si j'avais vu quelque chose, vous auriez la photo avant la question. »",
+      "relation": "« La disparition de ces preuves ruine mon procès. Vous imaginez que j'avais intérêt à les faire disparaître ? »",
+      "detail": "« J'ai demandé la liste des mesures réécrites au nom de ma procédure. Les journaux du tribunal et l'audience enregistrée me placent à Metz. »"
+    }
+  },
+  "la-robe-oubliee": {
+    "mona": {
+      "observation": "« La pièce est au coffre. Le traceur dit qu'il a bougé après le dîner, quand tout le monde était encore à table. »",
+      "relation": "« La maison manque de trésorerie. C'est écrit dans les comptes, pas dans les intentions. »",
+      "confrontation": "« Le traceur est passé au coffre après le dîner. Je suis rentrée à 23 h 10 : vérifiez la liste des invités. »",
+      "mobile": "« Un accord de vente couvre les salaires en retard. On appelle ça gérer une maison, pas organiser un vol. »"
+    },
+    "yacine": {
+      "observation": "« La doublure raconte tout. Celle-ci a été recousue à la main, avec un fil qui n'est pas d'époque. »",
+      "relation": "« Je possède les patrons, évidemment : je les ai refaits pour la restauration. »",
+      "detail": "« Mes patrons sont sur mon poste depuis six mois. La vidéo montre que je range la vraie robe puis que je pars avant le retour de Mona. »"
+    },
+    "odette": {
+      "observation": "« J'ai porté cette robe en 84. Le tissu a une mémoire, comme nous. »",
+      "relation": "« Iseult m'avait promis cette robe. Écrite à la main, la promesse. »",
+      "detail": "« C'est une formule affective, pas un acte de propriété. Le commissaire confirme que je répétais avec lui pendant ce temps. »"
+    }
+  },
+  "la-table-du-nord": {
+    "owen": {
+      "observation": "« Le départ du Boréal, je le suis du quai. C'est le seul moment où je souffle. »",
+      "relation": "« Le contrat impose une pénalité quotidienne supérieure à mon budget restant. Ça vous donne un mobile. Bravo. »",
+      "confrontation": "« L'outil s'est ouvert à 23 h 08 sur mon ordinateur. Mon ordinateur est en libre accès au bureau logistique. »",
+      "mobile": "« La pénalité, je la subis, je ne l'organise pas. »"
+    },
+    "lila": {
+      "observation": "« Je repère une tuile déplacée au premier regard. Celle-là, je l'ai vue tout de suite. »",
+      "relation": "« Je m'opposais à ce trajet. On ne m'a pas écoutée. »",
+      "detail": "« Ce commentaire signalait un danger, rien de plus. Ma version sauvegardée contient la mosaïque correcte. »"
+    },
+    "marta": {
+      "observation": "« Le modèle contredit la carte finale. Mon calcul est bon, je le maintiens. »",
+      "relation": "« Un échec de Sven renforcerait mon programme. C'est vrai. Ça ne m'en rend pas capable. »",
+      "detail": "« J'ai déposé une mosaïque corrigée, oui. La conférence enregistrée me montre répondant en direct pendant ce temps. »"
+    }
+  },
+  "le-jardin-de-quatre-heures-dix-sept": {
+    "june": {
+      "observation": "« Mon père se levait la nuit pour respirer ses fleurs. Tout le monde ici le savait. »",
+      "relation": "« J'hérite de la collection, pas de la villa. Il voulait la vendre, et je ne le voulais pas. »",
+      "confrontation": "« Le capteur enregistre une sortie à 4 h 09. Je suis allée chercher un verre d'eau dans la cuisine. »",
+      "mobile": "« Le compromis prévoit de détruire la véranda. Les archives de ma mère y sont. Vous auriez attendu, vous ? »"
+    },
+    "benoit": {
+      "observation": "« Les belles-de-nuit s'ouvrent vers 22 h et se referment à l'aube. Sauf quand quelque chose les touche. »",
+      "relation": "« J'ai accès aux plantes toxiques, comme tout le personnel. C'est écrit dans mes fiches d'entretien. »",
+      "detail": "« Cette page est une fiche de prévention, remise à toute la propriété. Mon ticket de bus prouve que je suis parti à 20 h. »"
+    },
+    "dr": {
+      "observation": "« Cliniquement, ce que je vois est un surdosage. Ce n'est pas une preuve, c'est un tableau. »",
+      "relation": "« J'ajustais son traitement cardiaque. Le poison imite exactement un surdosage : vous imaginez comme c'est confortable. »",
+      "detail": "« Mon ajustement date de trois semaines. Les accès horodatés de la clinique me placent de garde toute la nuit. »"
+    }
+  },
+  "le-temoin-de-cire": {
+    "roxane": {
+      "observation": "« J'ai géré cent vingt invités ce soir-là. Le vestiaire, c'est moi qui le tenais. »",
+      "relation": "« J'avais assuré le diamant pour une somme élevée, pas excessive. Les primes se calculent. »",
+      "confrontation": "« Mon badge a ouvert la trappe climatique. Le vestiaire est vide sur les images, c'est vrai : j'étais dans le couloir, pas au vestiaire. »",
+      "mobile": "« Cette police verse une commission si le sinistre tombe pendant mon événement. Statistiquement, ça n'a rien d'extraordinaire. »"
+    },
+    "come": {
+      "observation": "« La cire garde tout : l'humidité, la chaleur, la forme d'une main. C'est une mémoire. »",
+      "relation": "« Je refusais que ce bijou perce le costume original. C'était mon désaccord, rien de plus. »",
+      "detail": "« Tout l'atelier porte cette cire, y compris mes outils. Le flux vidéo me montre travaillant sans interruption, horloge visible. »"
+    },
+    "etienne": {
+      "observation": "« Un diamant se reconnaît à la main avant de se reconnaître au rapport. »",
+      "relation": "« La pierre était difficile à écouler légalement. Vous en déduisez que je l'ai prise moi-même. »",
+      "detail": "« J'ai surévalué la pureté de deux degrés, comme tout le métier. La pierre volée est authentique, et les vidéos me gardent au pupitre. »"
+    }
+  },
+  "la-seconde-neige": {
+    "loup": {
+      "observation": "« La tempête a commencé vers minuit. Après ça, personne ne sort. C'est la règle du refuge. »",
+      "relation": "« Ariane allait signaler mes sorties. Un guide sort, c'est le métier. Je n'ai pas à m'en excuser. »",
+      "confrontation": "« Le thermomètre de mes chaussures a chuté à -18 °C. Elles étaient sur la terrasse, hors du sas : elles prennent la température ambiante. »",
+      "mobile": "« Ce brouillon date de l'accident précédent. Une balise falsifiée, c'est son hypothèse, pas mon aveu. »"
+    },
+    "mila": {
+      "observation": "« Je photographie chaque mesure. La température de la nuit est dans mon carnet, à la minute. »",
+      "relation": "« Le rapport d'Ariane contredisait mon modèle. Un rapport, ça se discute, ça ne se supprime pas. »",
+      "detail": "« Oui, son rapport annulait mon financement. L'enregistrement radio conserve ma voix et mes manipulations pendant toute la sortie. »"
+    },
+    "jon": {
+      "observation": "« Je prépare le petit-déjeuner à 4 h 30. À cette heure-là, la cuisine est la seule pièce allumée. »",
+      "relation": "« J'ai emprunté son GPS sans permission, j'admets. Pour chercher un passage, pas autre chose. »",
+      "detail": "« J'ai copié l'itinéraire après sa disparition, pour la chercher. Les caméras de cuisine confirment mon heure de départ. »"
+    }
+  }
+}

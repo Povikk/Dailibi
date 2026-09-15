@@ -257,49 +257,49 @@
         "id": "emilie_observation",
         "suspectId": "emilie",
         "question": "Qu'avez-vous vu juste avant que cela arrive, Émilie Rey ?",
-        "answer": "« Je ne suis pas du genre à surveiller les autres. »",
+        "answer": "« Le narcisse n'est plus dans la version finale. C'est moi qui l'ai retiré. Personne ne l'a remarqué, sauf moi. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "emilie_relation",
         "suspectId": "emilie",
         "question": "Cette situation pouvait-elle vous profiter, Émilie Rey ?",
-        "answer": "« Je n'avais rien à y gagner. Rien. »",
+        "answer": "« Ce parfum, c'est dix ans de sa vie. Et quatre ans de la mienne, sans que mon nom apparaisse nulle part. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "karim_observation",
         "suspectId": "karim",
         "question": "Que retenez-vous de cette soirée, Karim Borel ?",
-        "answer": "« J'en garde une impression, pas un souvenir précis. »",
+        "answer": "« Rien d'anormal. Les distillations tournent. Le reste, c'est de la littérature. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "karim_relation",
         "suspectId": "karim",
         "question": "Que redoutiez-vous personnellement, Karim Borel ?",
-        "answer": "« Ma situation était déjà compliquée avant cette affaire. »",
+        "answer": "« Le concurrent m'a proposé un poste. J'ai refusé. Ça va vous décevoir, mais je n'ai rien à fuir ici. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "fanny_observation",
         "suspectId": "fanny",
         "question": "Est-ce que quelque chose vous a mis mal à l'aise, Fanny Lauzier ?",
-        "answer": "« J'entendais ce qui se passait autour, je ne regardais pas. »",
+        "answer": "« J'ai vu que la production prenait du retard sur le planning. C'est mon métier de le voir, pas de le commenter. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "fanny_relation",
         "suspectId": "fanny",
         "question": "Que risquiez-vous dans cette histoire, Fanny Lauzier ?",
-        "answer": "« On me prête des intentions que je n'ai pas. »",
+        "answer": "« Un retard, pour moi, c'est un trimestre entier qui s'effondre. Je préfère vous le dire franchement. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "emilie_confrontation",
         "suspectId": "emilie",
         "question": "Pourquoi ne pas avoir signalé ce détail vous-même ?",
-        "answer": "« Oui, j'étais encore là. J'ai menti sur l'heure. Pour une autre raison. »",
+        "answer": "« Mon bracelet enregistre une marche. Il ne dit pas où je suis allée. Je suis descendue chercher de l'eau. »",
         "unlockedByClueId": "registre",
         "beat": "La réponse réduit l'alibi à une version non vérifiée."
       },
@@ -307,7 +307,7 @@
         "id": "emilie_mobile",
         "suspectId": "emilie",
         "question": "Que pouviez-vous craindre de cette décision ?",
-        "answer": "« Oui, la situation me menaçait. Non, ça ne me laissait pas indifférent. »",
+        "answer": "« J'ai écrit ça un soir de colère. On écrit beaucoup de choses qu'on ne fait pas. »",
         "unlockedByClueId": "mobile",
         "beat": "La menace n'est plus abstraite pour cette personne."
       },
@@ -315,7 +315,7 @@
         "id": "karim_detail",
         "suspectId": "karim",
         "question": "À qui profite le doute jeté sur vous ?",
-        "answer": "« Cet objet m'appartient. Il ne se trouvait pas là à l'heure que vous imaginez. »",
+        "answer": "« La prime figurait dans le contrat, oui. Une prime, ça se refuse aussi. Demandez la date d'envoi. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Le recoupement suivant peut innocenter ou condamner."
       },
@@ -323,7 +323,7 @@
         "id": "fanny_detail",
         "suspectId": "fanny",
         "question": "Cette pièce semble vous accuser. Que manque-t-il au dossier ?",
-        "answer": "« Vous avez le bon élément et la mauvaise chronologie. »",
+        "answer": "« J'ai poussé le dossier trois jours avant. Oui. Pourquoi croyez-vous qu'on me l'ait demandé ? »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "La pièce doit être replacée dans sa chronologie."
       }

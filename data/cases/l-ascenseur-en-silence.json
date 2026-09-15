@@ -264,49 +264,49 @@
         "id": "rachid_observation",
         "suspectId": "rachid",
         "question": "Qu'est-ce qui vous a le plus surpris ce soir-là, Rachid Benali ?",
-        "answer": "« Les gens étaient pressés. Plus que d'habitude, je trouve. »",
+        "answer": "« Le mode inspection, c'est une sécurité. On l'active pour travailler dans la gaine, jamais pour bloquer quelqu'un. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "rachid_relation",
         "suspectId": "rachid",
         "question": "Qu'est-ce que cela changeait pour vous, Rachid Benali ?",
-        "answer": "« J'aurais pu en tirer profit. Je n'ai rien provoqué. »",
+        "answer": "« Je facture des interventions à une société de dépannage. C'est mon beau-frère, et c'est légal. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "eva_observation",
         "suspectId": "eva",
         "question": "Avez-vous relevé une incohérence autour de vous, Eva Krall ?",
-        "answer": "« Un détail m'a étonné sur le moment. Je n'y ai plus repensé avant ce soir. »",
+        "answer": "« Vingt-deux secondes d'arrêt. J'ai compté. En ascenseur, on compte toujours. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "eva_relation",
         "suspectId": "eva",
         "question": "Pourquoi vous, Eva Krall ?",
-        "answer": "« Je redoutais les conséquences. Je ne l'ai jamais dissimulé à personne. »",
+        "answer": "« Cette clé ouvre la salle serveurs que j'audite. C'est exactement pour ça que je ne l'ai pas. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "hector_observation",
         "suspectId": "hector",
         "question": "Une chose vous a-t-elle semblé déplacée, Hector Lu ?",
-        "answer": "« Non. Si quelque chose clochait, je ne l'ai pas remarqué. »",
+        "answer": "« Je ne me déplace jamais sans être attendu. Le 19e m'attendait. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "hector_relation",
         "suspectId": "hector",
         "question": "Cette affaire pouvait-elle vous affecter, Hector Lu ?",
-        "answer": "« Vous cherchez un mobile ? Le voilà. Trouvez maintenant le geste. »",
+        "answer": "« L'audit menace ma position. C'est une évidence, je ne vais pas la maquiller. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "rachid_confrontation",
         "suspectId": "rachid",
         "question": "Le relevé ne correspond pas à ce que vous dites. Que s'est-il passé ?",
-        "answer": "« Je n'ai pas d'explication pour ce relevé. Une heure qui cloche ne prouve pas que j'ai agi. »",
+        "answer": "« Une commande locale depuis la gaine : c'est le point de commande technique. Il s'ouvre avec la clé carrée, comme tous ceux du bâtiment. »",
         "unlockedByClueId": "registre",
         "beat": "Le mensonge est admis, mais sa raison reste à établir."
       },
@@ -314,7 +314,7 @@
         "id": "rachid_mobile",
         "suspectId": "rachid",
         "question": "Pourquoi ce document comptait-il autant pour vous ?",
-        "answer": "« Ce document me concernait, oui. Ça ne veut pas dire que j'étais prêt à tout. »",
+        "answer": "« Mon beau-frère exploite une société de maintenance. Il n'y a rien de dissimulé là-dedans. »",
         "unlockedByClueId": "mobile",
         "beat": "L'intérêt personnel est reconnu sans que le passage à l'acte le soit."
       },
@@ -322,7 +322,7 @@
         "id": "hector_detail",
         "suspectId": "hector",
         "question": "Comment cet objet est-il arrivé là, selon vous ?",
-        "answer": "« Je n'ai rien à voir avec cela, et ce détail ne prouve pas le contraire. »",
+        "answer": "« Ma question suit le protocole d'audit, à l'article 4. L'enregistrement continu me maintient au 19e étage pendant tout l'arrêt. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "La pièce doit être replacée dans sa chronologie."
       },
@@ -330,7 +330,7 @@
         "id": "eva_detail",
         "suspectId": "eva",
         "question": "Que répondez-vous à cette pièce qui vous met en cause ?",
-        "answer": "« Ce que vous montrez date d'avant. La suite vous manque. »",
+        "answer": "« Ma carte au niveau technique, c'était pour l'audit, accompagnée de deux personnes. Le reflet des portes montre mes mains levées pendant tout l'arrêt. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       }
