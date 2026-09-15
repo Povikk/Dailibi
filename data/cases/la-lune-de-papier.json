@@ -265,74 +265,74 @@
       {
         "id": "joel_observation",
         "suspectId": "joel",
-        "question": "Avez-vous remarqué quelque chose d'inhabituel, Joël Garnier ?",
-        "answer": "« Tout était normal. Si quelque chose clochait, je ne l'ai pas remarqué. »",
+        "question": "Avez-vous vu ou entendu un détail qui vous a surpris, Joël Garnier ?",
+        "answer": "« Je n'ai pas fait attention. On m'a posé la question après, et j'ai cherché : rien. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "joel_relation",
         "suspectId": "joel",
-        "question": "Cette affaire pouvait-elle vous affecter, Joël Garnier ?",
-        "answer": "« Oui. Cette affaire pouvait avoir des conséquences pour moi, mais je n'ai rien provoqué. »",
+        "question": "Cette situation pouvait-elle vous profiter, Joël Garnier ?",
+        "answer": "« Ça ne me plaisait pas, cette histoire. Je n'y pouvais rien. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "pia_observation",
         "suspectId": "pia",
-        "question": "Quelque chose vous a-t-il paru anormal ce soir-là, Pia Lenoir ?",
-        "answer": "« Je ne me mêle pas des affaires des autres, je ne saurais rien vous dire. »",
+        "question": "Y a-t-il un détail que les enquêteurs devraient connaître, Pia Lenoir ?",
+        "answer": "« Si j'avais vu quelque chose, je l'aurais dit. Je n'ai rien à gagner à me taire. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "pia_relation",
         "suspectId": "pia",
-        "question": "Aviez-vous quelque chose à perdre, Pia Lenoir ?",
-        "answer": "« J'avais quelque chose à perdre. Cela ne suffit pas à faire de moi le coupable. »",
+        "question": "Que redoutiez-vous personnellement, Pia Lenoir ?",
+        "answer": "« J'avais surtout peur des conséquences pour les autres. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "sacha_observation",
         "suspectId": "sacha",
-        "question": "Avez-vous vu ou entendu un détail qui vous a surpris, Sacha Derval ?",
-        "answer": "« Rien qui mérite d'être signalé. La soirée s'est déroulée comme d'habitude. »",
+        "question": "Qu'est-ce qui vous a le plus surpris ce soir-là, Sacha Derval ?",
+        "answer": "« Il y a toujours du bruit ici. Un détail de plus, un de moins, je ne le remarque pas. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "sacha_relation",
         "suspectId": "sacha",
-        "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, Sacha Derval ?",
-        "answer": "« Mon intérêt personnel est réel. Il faut encore prouver que j'ai agi. »",
+        "question": "Que risquiez-vous dans cette histoire, Sacha Derval ?",
+        "answer": "« Oui, ça pouvait me retomber dessus. Ça ne veut pas dire que je l'ai provoqué. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "pia_confrontation",
         "suspectId": "pia",
-        "question": "Cette heure contredit votre récit. Comment l'expliquez-vous ?",
-        "answer": "« Je n'ai pas d'explication pour ce relevé. Mais une heure incohérente ne prouve pas que j'ai provoqué l'incident. »",
+        "question": "Cette trace porte jusqu'à vous. Quelle autre explication proposez-vous ?",
+        "answer": "« Je n'ai pas d'explication pour ce relevé. Une heure qui cloche ne prouve pas que j'ai agi. »",
         "unlockedByClueId": "registre",
         "beat": "Le mensonge est admis, mais sa raison reste à établir."
       },
       {
         "id": "pia_mobile",
         "suspectId": "pia",
-        "question": "Pourquoi ce document vous concernait-il directement ?",
-        "answer": "« Ce document me concernait, évidemment. Cela ne signifie pas que j'étais prêt à commettre l'irréparable. »",
+        "question": "Cette découverte menaçait-elle votre situation ?",
+        "answer": "« Ce document me concernait, oui. Ça ne veut pas dire que j'étais prêt à tout. »",
         "unlockedByClueId": "mobile",
         "beat": "L'intérêt personnel est reconnu sans que le passage à l'acte le soit."
       },
       {
         "id": "sacha_detail",
         "suspectId": "sacha",
-        "question": "Cette pièce semble vous accuser. Que manque-t-il au dossier ?",
-        "answer": "« La pièce est authentique, mais votre interprétation s'arrête trop tôt. Vérifiez la suite des événements. »",
+        "question": "Que prouve réellement cette pièce, selon vous ?",
+        "answer": "« Non, ce n'est pas moi. Et cette pièce, seule, ne dit rien de tel. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "La pièce doit être replacée dans sa chronologie."
       },
       {
         "id": "joel_detail",
         "suspectId": "joel",
-        "question": "Pourquoi retrouve-t-on cet objet parmi vos affaires ?",
-        "answer": "« Cet objet m'appartient. Il ne se trouvait pourtant pas là au moment que vous imaginez. »",
+        "question": "Pourquoi ce détail n'était-il pas dans votre première déclaration ?",
+        "answer": "« Vous avez trouvé cela chez moi, oui. Ça ne raconte pas la soirée. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       }

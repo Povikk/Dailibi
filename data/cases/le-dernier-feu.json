@@ -266,49 +266,49 @@
         "id": "malo_observation",
         "suspectId": "malo",
         "question": "Qu'est-ce qui vous a le plus surpris ce soir-là, Malo Quéré ?",
-        "answer": "« Tout était normal. Si quelque chose clochait, je ne l'ai pas remarqué. »",
+        "answer": "« Les gens étaient pressés. Plus que d'habitude, je trouve. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "malo_relation",
         "suspectId": "malo",
-        "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, Malo Quéré ?",
-        "answer": "« J'aurais pu tirer profit de la situation. Je n'ai pourtant rien fait pour la provoquer. »",
+        "question": "Qu'est-ce que cela changeait pour vous, Malo Quéré ?",
+        "answer": "« J'aurais pu en tirer profit. Je n'ai rien provoqué. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "erell_observation",
         "suspectId": "erell",
         "question": "Avez-vous relevé une incohérence autour de vous, Erell Bihan ?",
-        "answer": "« Je ne me mêle pas des affaires des autres, je ne saurais rien vous dire. »",
+        "answer": "« Un détail m'a étonné sur le moment. Je n'y ai plus repensé avant ce soir. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "erell_relation",
         "suspectId": "erell",
-        "question": "Reconnaissez-vous avoir un intérêt personnel dans cette affaire, Erell Bihan ?",
-        "answer": "« Je redoutais les conséquences de cette affaire. Je ne l'ai jamais caché. »",
+        "question": "Pourquoi vous, Erell Bihan ?",
+        "answer": "« Je redoutais les conséquences. Je ne l'ai jamais dissimulé à personne. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "jonas_observation",
         "suspectId": "jonas",
-        "question": "Avez-vous remarqué quelque chose d'inhabituel, Jonas Le Guen ?",
-        "answer": "« Rien qui mérite d'être signalé. La soirée s'est déroulée comme d'habitude. »",
+        "question": "Une chose vous a-t-elle semblé déplacée, Jonas Le Guen ?",
+        "answer": "« Non. Si quelque chose clochait, je ne l'ai pas remarqué. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "jonas_relation",
         "suspectId": "jonas",
-        "question": "Cette situation pouvait-elle vous profiter, Jonas Le Guen ?",
-        "answer": "« Oui. Cette affaire pouvait avoir des conséquences pour moi, mais je n'ai rien provoqué. »",
+        "question": "Cette affaire pouvait-elle vous affecter, Jonas Le Guen ?",
+        "answer": "« Vous cherchez un mobile ? Le voilà. Trouvez maintenant le geste. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "malo_confrontation",
         "suspectId": "malo",
         "question": "Vous aviez dit être parti. Pourquoi le registre indique-t-il le contraire ?",
-        "answer": "« Je maintiens l'essentiel de ma version. Sur cette minute précise, je reconnais m'être trompé. »",
+        "answer": "« Je maintiens l'essentiel. Sur cette minute-là, j'ai pu me tromper. »",
         "unlockedByClueId": "registre",
         "beat": "La présence devient certaine. Le geste reste à prouver."
       },
@@ -316,14 +316,14 @@
         "id": "malo_mobile",
         "suspectId": "malo",
         "question": "Pourquoi avez-vous cherché à dissimuler ce document ?",
-        "answer": "« J'ai voulu que ce document reste privé. Sa divulgation aurait détruit des années de travail. »",
+        "answer": "« J'ai voulu garder ça privé. La divulgation aurait détruit des années de travail. »",
         "unlockedByClueId": "mobile",
         "beat": "Le document donne un poids concret au mobile."
       },
       {
         "id": "jonas_detail",
         "suspectId": "jonas",
-        "question": "Pourquoi avez-vous caché ce détail aux enquêteurs ?",
+        "question": "Pourquoi ce détail n'était-il pas dans votre première déclaration ?",
         "answer": "« Je l'ai gardé pour moi : cela ne concernait pas l'enquête. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
@@ -332,7 +332,7 @@
         "id": "erell_detail",
         "suspectId": "erell",
         "question": "Qui peut confirmer votre explication sur cette pièce ?",
-        "answer": "« Mon explication est vérifiable. Cherchez le second enregistrement, pas seulement celui qui m'accuse. »",
+        "answer": "« Mon explication est vérifiable. Cherchez le second enregistrement. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "Le recoupement suivant peut innocenter ou condamner."
       }

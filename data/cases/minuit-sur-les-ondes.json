@@ -263,74 +263,74 @@
       {
         "id": "gaspard_observation",
         "suspectId": "gaspard",
-        "question": "Avez-vous vu ou entendu un détail qui vous a surpris, Gaspard Lin ?",
-        "answer": "« Rien de particulier. Tout le monde est parti à son heure habituelle. »",
+        "question": "Que retenez-vous de cette soirée, Gaspard Lin ?",
+        "answer": "« Rien qui mérite un rapport. La soirée s'est déroulée comme les autres. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "gaspard_relation",
         "suspectId": "gaspard",
-        "question": "Cette situation pouvait-elle vous profiter, Gaspard Lin ?",
-        "answer": "« Mon intérêt personnel est réel. Il faut encore prouver que j'ai agi. »",
+        "question": "Que risquiez-vous dans cette histoire, Gaspard Lin ?",
+        "answer": "« Oui, je perdais gros. J'étais surtout en train de chercher une solution. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "mina_observation",
         "suspectId": "mina",
-        "question": "Y a-t-il un détail que les enquêteurs devraient connaître, Mina Ferhat ?",
-        "answer": "« Les gens semblaient pressés, mais c'est le cas chaque soir. »",
+        "question": "Est-ce que quelque chose vous a mis mal à l'aise, Mina Ferhat ?",
+        "answer": "« Il y avait une tension, mais elle retombe vite ici. C'est tout. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "mina_relation",
         "suspectId": "mina",
-        "question": "Que redoutiez-vous personnellement, Mina Ferhat ?",
-        "answer": "« Je comprends les soupçons. Ma situation me donnait un mobile possible, pas une preuve. »",
+        "question": "Quel était votre intérêt, Mina Ferhat ?",
+        "answer": "« Si j'avais voulu en finir, j'aurais eu cent façons plus simples. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "alban_observation",
         "suspectId": "alban",
-        "question": "Qu'est-ce qui vous a le plus surpris ce soir-là, Alban Reyes ?",
-        "answer": "« Je n'ai rien vu d'anormal. J'étais concentré sur ma tâche. »",
+        "question": "Avez-vous remarqué quelque chose d'inhabituel, Alban Reyes ?",
+        "answer": "« Vous me demandez ça parce que j'étais là. Je n'ai rien vu, moi. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "alban_relation",
         "suspectId": "alban",
-        "question": "Cette affaire pouvait-elle vous affecter, Alban Reyes ?",
-        "answer": "« J'aurais pu tirer profit de la situation. Je n'ai pourtant rien fait pour la provoquer. »",
+        "question": "Qu'est-ce que cela changeait pour vous, Alban Reyes ?",
+        "answer": "« Je n'ai pas à me justifier sur ma situation. Demandez plutôt autour de vous. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "gaspard_confrontation",
         "suspectId": "gaspard",
-        "question": "Votre alibi s'arrête précisément ici. Que s'est-il passé ensuite ?",
-        "answer": "« Le registre montre mon accès, pas ce que j'ai fait ensuite. Vous confondez présence et culpabilité. »",
+        "question": "Pourquoi ne pas avoir signalé ce détail vous-même ?",
+        "answer": "« Je ne me souviens pas de tout, et je refuse de compléter au hasard. »",
         "unlockedByClueId": "registre",
         "beat": "La réponse réduit l'alibi à une version non vérifiée."
       },
       {
         "id": "gaspard_mobile",
         "suspectId": "gaspard",
-        "question": "Depuis quand connaissiez-vous cette décision ?",
-        "answer": "« Je connaissais cette décision depuis peu. J'espérais encore pouvoir la faire changer. »",
+        "question": "Que pouviez-vous craindre de cette décision ?",
+        "answer": "« Ce n'est pas une raison pour faire ce qu'on imagine. »",
         "unlockedByClueId": "mobile",
         "beat": "La menace n'est plus abstraite pour cette personne."
       },
       {
         "id": "mina_detail",
         "suspectId": "mina",
-        "question": "À quel moment cet élément a-t-il changé de sens ?",
-        "answer": "« Vous avez le bon élément et la mauvaise chronologie. C'est précisément ce qui vous égare. »",
+        "question": "À qui profite le doute jeté sur vous ?",
+        "answer": "« Je n'ai rien à voir avec cela, et ce détail ne prouve pas le contraire. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Le recoupement suivant peut innocenter ou condamner."
       },
       {
         "id": "alban_detail",
         "suspectId": "alban",
-        "question": "Que prouve réellement cette pièce, selon vous ?",
-        "answer": "« Pris seul, ce détail m'accuse. Comparé au reste du dossier, il raconte autre chose. »",
+        "question": "Cette pièce semble vous accuser. Que manque-t-il au dossier ?",
+        "answer": "« Ce que vous montrez date d'avant. La suite vous manque. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "La pièce doit être replacée dans sa chronologie."
       }

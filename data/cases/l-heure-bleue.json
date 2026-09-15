@@ -259,49 +259,49 @@
         "id": "iris_observation",
         "suspectId": "iris",
         "question": "Quelque chose vous a-t-il paru anormal ce soir-là, Iris Meunier ?",
-        "answer": "« Les gens semblaient pressés, mais c'est le cas chaque soir. »",
+        "answer": "« Franchement ? Non. Et je me suis posé la question après vous. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "iris_relation",
         "suspectId": "iris",
         "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, Iris Meunier ?",
-        "answer": "« J'avais quelque chose à perdre. Cela ne suffit pas à faire de moi le coupable. »",
+        "answer": "« J'avais quelque chose à perdre. Comme tout le monde ici, d'ailleurs. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "mathieu_observation",
         "suspectId": "mathieu",
         "question": "Avez-vous vu ou entendu un détail qui vous a surpris, Mathieu Orsini ?",
-        "answer": "« Je n'ai rien vu d'anormal. J'étais concentré sur ma tâche. »",
+        "answer": "« Je n'ai rien vu. J'étais concentré sur ce que j'avais à faire. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "mathieu_relation",
         "suspectId": "mathieu",
         "question": "Reconnaissez-vous avoir un intérêt personnel dans cette affaire, Mathieu Orsini ?",
-        "answer": "« Mon intérêt personnel est réel. Il faut encore prouver que j'ai agi. »",
+        "answer": "« Mon intérêt est réel. Il reste à prouver que j'ai fait quelque chose. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "salome_observation",
         "suspectId": "salome",
         "question": "Y a-t-il un détail que les enquêteurs devraient connaître, Salomé Varenne ?",
-        "answer": "« Un détail m'a étonné sur le moment, mais je n'y ai plus repensé. »",
+        "answer": "« Il y avait quelque chose dans l'air, mais je ne saurais pas le nommer. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "salome_relation",
         "suspectId": "salome",
         "question": "Cette situation pouvait-elle vous profiter, Salomé Varenne ?",
-        "answer": "« Je comprends les soupçons. Ma situation me donnait un mobile possible, pas une preuve. »",
+        "answer": "« Je comprends que ça vous saute aux yeux. Ça ne fait pas de moi un coupable. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "iris_confrontation",
         "suspectId": "iris",
         "question": "Le relevé vous place sur les lieux. Pourquoi l'avoir omis ?",
-        "answer": "« J'ai omis ce passage parce qu'il me mettait dans une mauvaise position. Ce n'est pas un aveu. »",
+        "answer": "« J'ai omis ce passage. Il me mettait dans une position inconfortable, ce n'est pas un aveu. »",
         "unlockedByClueId": "registre",
         "beat": "La présence devient certaine. Le geste reste à prouver."
       },
@@ -309,7 +309,7 @@
         "id": "iris_mobile",
         "suspectId": "iris",
         "question": "Qu'auriez-vous perdu si ce projet avait abouti ?",
-        "answer": "« J'avais beaucoup à perdre. Je cherchais une solution, pas un coupable à fabriquer. »",
+        "answer": "« J'avais beaucoup à perdre. Je cherchais une solution, pas un coupable. »",
         "unlockedByClueId": "mobile",
         "beat": "Le document donne un poids concret au mobile."
       },
@@ -317,7 +317,7 @@
         "id": "salome_detail",
         "suspectId": "salome",
         "question": "Pourquoi retrouve-t-on cet objet parmi vos affaires ?",
-        "answer": "« Cet objet m'appartient. Il ne se trouvait pourtant pas là au moment que vous imaginez. »",
+        "answer": "« Cet objet m'appartient. Il ne se trouvait pas là à l'heure que vous imaginez. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       },
@@ -325,7 +325,7 @@
         "id": "mathieu_detail",
         "suspectId": "mathieu",
         "question": "À quel moment cet élément a-t-il changé de sens ?",
-        "answer": "« Vous avez le bon élément et la mauvaise chronologie. C'est précisément ce qui vous égare. »",
+        "answer": "« Vous avez le bon élément et la mauvaise chronologie. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "Le recoupement suivant peut innocenter ou condamner."
       }

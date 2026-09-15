@@ -258,74 +258,74 @@
       {
         "id": "come_observation",
         "suspectId": "come",
-        "question": "Avez-vous relevé une incohérence autour de vous, Côme Vidal ?",
-        "answer": "« Je ne me mêle pas des affaires des autres, je ne saurais rien vous dire. »",
+        "question": "Est-ce que quelque chose vous a mis mal à l'aise, Côme Vidal ?",
+        "answer": "« Il y avait une tension, mais elle retombe vite ici. C'est tout. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "come_relation",
         "suspectId": "come",
-        "question": "Cette situation pouvait-elle vous profiter, Côme Vidal ?",
-        "answer": "« Je redoutais les conséquences de cette affaire. Je ne l'ai jamais caché. »",
+        "question": "Qu'est-ce que cela changeait pour vous, Côme Vidal ?",
+        "answer": "« Si j'avais voulu en finir, j'aurais eu cent façons plus simples. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "roxane_observation",
         "suspectId": "roxane",
         "question": "Avez-vous remarqué quelque chose d'inhabituel, Roxane Perez ?",
-        "answer": "« Rien qui mérite d'être signalé. La soirée s'est déroulée comme d'habitude. »",
+        "answer": "« Vous me demandez ça parce que j'étais là. Je n'ai rien vu, moi. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "roxane_relation",
         "suspectId": "roxane",
-        "question": "Que redoutiez-vous personnellement, Roxane Perez ?",
-        "answer": "« Oui. Cette affaire pouvait avoir des conséquences pour moi, mais je n'ai rien provoqué. »",
+        "question": "Pourquoi vous, Roxane Perez ?",
+        "answer": "« Je n'ai pas à me justifier sur ma situation. Demandez plutôt autour de vous. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "etienne_observation",
         "suspectId": "etienne",
         "question": "Quelque chose vous a-t-il paru anormal ce soir-là, Étienne Valois ?",
-        "answer": "« Il y avait une tension, mais elle retombe vite ici. Rien de plus. »",
+        "answer": "« J'ai surtout remarqué que personne ne semblait inquiet. C'est peut-être ça, l'anormal. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "etienne_relation",
         "suspectId": "etienne",
         "question": "Cette affaire pouvait-elle vous affecter, Étienne Valois ?",
-        "answer": "« J'avais quelque chose à perdre. Cela ne suffit pas à faire de moi le coupable. »",
+        "answer": "« Ça m'inquiétait plus que ça m'arrangeait. Nuance. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "roxane_confrontation",
         "suspectId": "roxane",
-        "question": "Votre version ne correspond pas aux données. La maintenez-vous ?",
-        "answer": "« Oui, j'étais encore là. J'ai menti sur l'heure pour cacher une autre affaire, pas celle-ci. »",
+        "question": "Votre alibi s'arrête précisément ici. Que s'est-il passé ensuite ?",
+        "answer": "« Oui, j'étais encore là. J'ai menti sur l'heure. Pour une autre raison. »",
         "unlockedByClueId": "registre",
         "beat": "La réponse réduit l'alibi à une version non vérifiée."
       },
       {
         "id": "roxane_mobile",
         "suspectId": "roxane",
-        "question": "Quelle issue espériez-vous encore trouver ?",
-        "answer": "« Oui, la situation me menaçait directement. Non, je ne vous dirai pas que cela m'a laissé indifférent. »",
+        "question": "Depuis quand connaissiez-vous cette décision ?",
+        "answer": "« Oui, la situation me menaçait. Non, ça ne me laissait pas indifférent. »",
         "unlockedByClueId": "mobile",
         "beat": "La menace n'est plus abstraite pour cette personne."
       },
       {
         "id": "etienne_detail",
         "suspectId": "etienne",
-        "question": "Qui peut confirmer votre explication sur cette pièce ?",
-        "answer": "« Mon explication est vérifiable. Cherchez le second enregistrement, pas seulement celui qui m'accuse. »",
+        "question": "À quel moment cet élément a-t-il changé de sens ?",
+        "answer": "« Vous avez trouvé cela chez moi, oui. Ça ne raconte pas la soirée. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Le recoupement suivant peut innocenter ou condamner."
       },
       {
         "id": "come_detail",
         "suspectId": "come",
-        "question": "Cette pièce semble vous accuser. Que manque-t-il au dossier ?",
-        "answer": "« La pièce est authentique, mais votre interprétation s'arrête trop tôt. Vérifiez la suite des événements. »",
+        "question": "Que prouve réellement cette pièce, selon vous ?",
+        "answer": "« Il manque le moment où cet objet a bougé. Vous sautez cette partie. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "La pièce doit être replacée dans sa chronologie."
       }

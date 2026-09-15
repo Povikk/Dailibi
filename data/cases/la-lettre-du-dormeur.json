@@ -265,74 +265,74 @@
       {
         "id": "alma_observation",
         "suspectId": "alma",
-        "question": "Qu'est-ce qui vous a le plus surpris ce soir-là, Alma Veyrac ?",
-        "answer": "« Je n'ai rien vu d'anormal. J'étais concentré sur ma tâche. »",
+        "question": "Avez-vous remarqué quelque chose d'inhabituel, Alma Veyrac ?",
+        "answer": "« Vous me demandez ça parce que j'étais là. Je n'ai rien vu, moi. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "alma_relation",
         "suspectId": "alma",
-        "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, Alma Veyrac ?",
-        "answer": "« J'aurais pu tirer profit de la situation. Je n'ai pourtant rien fait pour la provoquer. »",
+        "question": "Cette affaire pouvait-elle vous affecter, Alma Veyrac ?",
+        "answer": "« Je n'ai pas à me justifier sur ma situation. Demandez plutôt autour de vous. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "felix_observation",
         "suspectId": "felix",
-        "question": "Avez-vous relevé une incohérence autour de vous, Félix Donnadieu ?",
-        "answer": "« Un détail m'a étonné sur le moment, mais je n'y ai plus repensé. »",
+        "question": "Quelque chose vous a-t-il paru anormal ce soir-là, Félix Donnadieu ?",
+        "answer": "« J'ai surtout remarqué que personne ne semblait inquiet. C'est peut-être ça, l'anormal. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "felix_relation",
         "suspectId": "felix",
-        "question": "Reconnaissez-vous avoir un intérêt personnel dans cette affaire, Félix Donnadieu ?",
-        "answer": "« Je redoutais les conséquences de cette affaire. Je ne l'ai jamais caché. »",
+        "question": "Aviez-vous quelque chose à perdre, Félix Donnadieu ?",
+        "answer": "« Ça m'inquiétait plus que ça m'arrangeait. Nuance. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "leila_observation",
         "suspectId": "leila",
-        "question": "Avez-vous remarqué quelque chose d'inhabituel, Leïla Soriano ?",
-        "answer": "« Tout était normal. Si quelque chose clochait, je ne l'ai pas remarqué. »",
+        "question": "Avez-vous vu ou entendu un détail qui vous a surpris, Leïla Soriano ?",
+        "answer": "« Je n'ai pas fait attention. On m'a posé la question après, et j'ai cherché : rien. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "leila_relation",
         "suspectId": "leila",
-        "question": "Cette situation pouvait-elle vous profiter, Leïla Soriano ?",
-        "answer": "« Oui. Cette affaire pouvait avoir des conséquences pour moi, mais je n'ai rien provoqué. »",
+        "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, Leïla Soriano ?",
+        "answer": "« Ça ne me plaisait pas, cette histoire. Je n'y pouvais rien. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "felix_confrontation",
         "suspectId": "felix",
-        "question": "Vous aviez dit être parti. Pourquoi le registre indique-t-il le contraire ?",
-        "answer": "« Je maintiens l'essentiel de ma version. Sur cette minute précise, je reconnais m'être trompé. »",
+        "question": "Le relevé vous place sur les lieux. Pourquoi l'avoir omis ?",
+        "answer": "« Si je vous explique ce point, vous en ferez une preuve. Alors je me tais. »",
         "unlockedByClueId": "registre",
         "beat": "La présence devient certaine. Le geste reste à prouver."
       },
       {
         "id": "felix_mobile",
         "suspectId": "felix",
-        "question": "Pourquoi avez-vous cherché à dissimuler ce document ?",
-        "answer": "« J'ai voulu que ce document reste privé. Sa divulgation aurait détruit des années de travail. »",
+        "question": "Qu'auriez-vous perdu si ce projet avait abouti ?",
+        "answer": "« J'avais un problème. Ça ne fait pas de moi quelqu'un qui commet un crime. »",
         "unlockedByClueId": "mobile",
         "beat": "Le document donne un poids concret au mobile."
       },
       {
         "id": "alma_detail",
         "suspectId": "alma",
-        "question": "Pourquoi avez-vous caché ce détail aux enquêteurs ?",
-        "answer": "« Je l'ai gardé pour moi : cela ne concernait pas l'enquête. »",
+        "question": "Pourquoi retrouve-t-on cet objet parmi vos affaires ?",
+        "answer": "« Je pourrais arranger la vérité pour m'en sortir. Je préfère vous expliquer. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       },
       {
         "id": "leila_detail",
         "suspectId": "leila",
-        "question": "Qui peut confirmer votre explication sur cette pièce ?",
-        "answer": "« Mon explication est vérifiable. Cherchez le second enregistrement, pas seulement celui qui m'accuse. »",
+        "question": "À quel moment cet élément a-t-il changé de sens ?",
+        "answer": "« Trouvez qui a remis cet objet en place, et vous aurez votre réponse. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "Le recoupement suivant peut innocenter ou condamner."
       }

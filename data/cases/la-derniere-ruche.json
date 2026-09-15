@@ -258,50 +258,50 @@
       {
         "id": "nour_observation",
         "suspectId": "nour",
-        "question": "Y a-t-il un détail que les enquêteurs devraient connaître, Nour Lemaire ?",
-        "answer": "« Je ne me mêle pas des affaires des autres, je ne saurais rien vous dire. »",
+        "question": "Quelque chose vous a-t-il paru anormal ce soir-là, Nour Lemaire ?",
+        "answer": "« Franchement ? Non. Et je me suis posé la question après vous. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "nour_relation",
         "suspectId": "nour",
-        "question": "Cette affaire pouvait-elle vous affecter, Nour Lemaire ?",
-        "answer": "« Je comprends les soupçons. Ma situation me donnait un mobile possible, pas une preuve. »",
+        "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, Nour Lemaire ?",
+        "answer": "« J'avais quelque chose à perdre. Comme tout le monde ici, d'ailleurs. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "didier_observation",
         "suspectId": "didier",
-        "question": "Qu'est-ce qui vous a le plus surpris ce soir-là, Didier Pons ?",
-        "answer": "« Rien qui mérite d'être signalé. La soirée s'est déroulée comme d'habitude. »",
+        "question": "Avez-vous vu ou entendu un détail qui vous a surpris, Didier Pons ?",
+        "answer": "« Je n'ai rien vu. J'étais concentré sur ce que j'avais à faire. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "didier_relation",
         "suspectId": "didier",
-        "question": "Aviez-vous quelque chose à perdre, Didier Pons ?",
-        "answer": "« J'aurais pu tirer profit de la situation. Je n'ai pourtant rien fait pour la provoquer. »",
+        "question": "Reconnaissez-vous avoir un intérêt personnel dans cette affaire, Didier Pons ?",
+        "answer": "« Mon intérêt est réel. Il reste à prouver que j'ai fait quelque chose. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "eloi_observation",
         "suspectId": "eloi",
-        "question": "Avez-vous relevé une incohérence autour de vous, Éloi Vernet ?",
-        "answer": "« Il y avait une tension, mais elle retombe vite ici. Rien de plus. »",
+        "question": "Y a-t-il un détail que les enquêteurs devraient connaître, Éloi Vernet ?",
+        "answer": "« Il y avait quelque chose dans l'air, mais je ne saurais pas le nommer. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "eloi_relation",
         "suspectId": "eloi",
-        "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, Éloi Vernet ?",
-        "answer": "« Je redoutais les conséquences de cette affaire. Je ne l'ai jamais caché. »",
+        "question": "Cette situation pouvait-elle vous profiter, Éloi Vernet ?",
+        "answer": "« Je comprends que ça vous saute aux yeux. Ça ne fait pas de moi un coupable. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "eloi_confrontation",
         "suspectId": "eloi",
         "question": "Cette trace porte jusqu'à vous. Quelle autre explication proposez-vous ?",
-        "answer": "« Cette donnée est exacte. Mon récit, lui, était incomplet. Je ne voulais pas avoir à expliquer ce détour. »",
+        "answer": "« Vous avez l'heure. Vous n'avez pas le geste. »",
         "unlockedByClueId": "registre",
         "beat": "Le mensonge est admis, mais sa raison reste à établir."
       },
@@ -309,7 +309,7 @@
         "id": "eloi_mobile",
         "suspectId": "eloi",
         "question": "Cette découverte menaçait-elle votre situation ?",
-        "answer": "« Vous appelez cela un mobile parce que vous connaissez la suite. À ce moment-là, rien n'était joué. »",
+        "answer": "« Le document dit ce qu'il dit. L'intention, c'est vous qui la rajoutez. »",
         "unlockedByClueId": "mobile",
         "beat": "L'intérêt personnel est reconnu sans que le passage à l'acte le soit."
       },
@@ -317,15 +317,15 @@
         "id": "didier_detail",
         "suspectId": "didier",
         "question": "Que prouve réellement cette pièce, selon vous ?",
-        "answer": "« Pris seul, ce détail m'accuse. Comparé au reste du dossier, il raconte autre chose. »",
+        "answer": "« Mon explication est vérifiable. Cherchez le second enregistrement. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "La pièce doit être replacée dans sa chronologie."
       },
       {
         "id": "nour_detail",
         "suspectId": "nour",
-        "question": "Pourquoi avez-vous caché ce détail aux enquêteurs ?",
-        "answer": "« Je l'ai gardé pour moi : cela ne concernait pas l'enquête. »",
+        "question": "Pourquoi ce détail n'était-il pas dans votre première déclaration ?",
+        "answer": "« Oui, c'est à moi. Demandez à la personne qui l'a vu changer de mains. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       }

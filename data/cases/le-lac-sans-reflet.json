@@ -258,50 +258,50 @@
       {
         "id": "natan_observation",
         "suspectId": "natan",
-        "question": "Avez-vous relevé une incohérence autour de vous, Natan Joly ?",
-        "answer": "« Il y avait une tension, mais elle retombe vite ici. Rien de plus. »",
+        "question": "Y a-t-il un détail que les enquêteurs devraient connaître, Natan Joly ?",
+        "answer": "« Il y avait quelque chose dans l'air, mais je ne saurais pas le nommer. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "natan_relation",
         "suspectId": "natan",
-        "question": "Cette situation pouvait-elle vous profiter, Natan Joly ?",
-        "answer": "« Je redoutais les conséquences de cette affaire. Je ne l'ai jamais caché. »",
+        "question": "Que risquiez-vous dans cette histoire, Natan Joly ?",
+        "answer": "« Je comprends que ça vous saute aux yeux. Ça ne fait pas de moi un coupable. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "sarah_observation",
         "suspectId": "sarah",
-        "question": "Avez-vous remarqué quelque chose d'inhabituel, Sarah Montel ?",
-        "answer": "« Rien de particulier. Tout le monde est parti à son heure habituelle. »",
+        "question": "Qu'est-ce qui vous a le plus surpris ce soir-là, Sarah Montel ?",
+        "answer": "« Les gens étaient pressés. Plus que d'habitude, je trouve. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "sarah_relation",
         "suspectId": "sarah",
-        "question": "Que redoutiez-vous personnellement, Sarah Montel ?",
-        "answer": "« Oui. Cette affaire pouvait avoir des conséquences pour moi, mais je n'ai rien provoqué. »",
+        "question": "Quel était votre intérêt, Sarah Montel ?",
+        "answer": "« J'aurais pu en tirer profit. Je n'ai rien provoqué. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "paul_observation",
         "suspectId": "paul",
-        "question": "Quelque chose vous a-t-il paru anormal ce soir-là, Paul Eden ?",
-        "answer": "« Les gens semblaient pressés, mais c'est le cas chaque soir. »",
+        "question": "Avez-vous relevé une incohérence autour de vous, Paul Eden ?",
+        "answer": "« Un détail m'a étonné sur le moment. Je n'y ai plus repensé avant ce soir. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "paul_relation",
         "suspectId": "paul",
-        "question": "Cette affaire pouvait-elle vous affecter, Paul Eden ?",
-        "answer": "« J'avais quelque chose à perdre. Cela ne suffit pas à faire de moi le coupable. »",
+        "question": "Qu'est-ce que cela changeait pour vous, Paul Eden ?",
+        "answer": "« Je redoutais les conséquences. Je ne l'ai jamais dissimulé à personne. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "natan_confrontation",
         "suspectId": "natan",
         "question": "Votre version ne correspond pas aux données. La maintenez-vous ?",
-        "answer": "« Oui, j'étais encore là. J'ai menti sur l'heure pour cacher une autre affaire, pas celle-ci. »",
+        "answer": "« C'est possible. Je ne regardais pas ma montre ce soir-là. »",
         "unlockedByClueId": "registre",
         "beat": "La réponse réduit l'alibi à une version non vérifiée."
       },
@@ -309,7 +309,7 @@
         "id": "natan_mobile",
         "suspectId": "natan",
         "question": "Quelle issue espériez-vous encore trouver ?",
-        "answer": "« Oui, la situation me menaçait directement. Non, je ne vous dirai pas que cela m'a laissé indifférent. »",
+        "answer": "« Vous confondez l'inquiétude et la décision. »",
         "unlockedByClueId": "mobile",
         "beat": "La menace n'est plus abstraite pour cette personne."
       },
@@ -317,15 +317,15 @@
         "id": "paul_detail",
         "suspectId": "paul",
         "question": "Qui peut confirmer votre explication sur cette pièce ?",
-        "answer": "« Mon explication est vérifiable. Cherchez le second enregistrement, pas seulement celui qui m'accuse. »",
+        "answer": "« Vous remontez une piste qui s'arrête juste avant moi. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Le recoupement suivant peut innocenter ou condamner."
       },
       {
         "id": "sarah_detail",
         "suspectId": "sarah",
-        "question": "Cette pièce semble vous accuser. Que manque-t-il au dossier ?",
-        "answer": "« La pièce est authentique, mais votre interprétation s'arrête trop tôt. Vérifiez la suite des événements. »",
+        "question": "Comment cet objet est-il arrivé là, selon vous ?",
+        "answer": "« Je n'ai rien à voir avec cela, et ce détail ne prouve pas le contraire. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "La pièce doit être replacée dans sa chronologie."
       }

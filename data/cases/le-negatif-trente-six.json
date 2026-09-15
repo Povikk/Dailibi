@@ -263,74 +263,74 @@
       {
         "id": "diane_observation",
         "suspectId": "diane",
-        "question": "Avez-vous remarqué quelque chose d'inhabituel, Diane Fabre ?",
-        "answer": "« Rien qui mérite d'être signalé. La soirée s'est déroulée comme d'habitude. »",
+        "question": "Une chose vous a-t-elle semblé déplacée, Diane Fabre ?",
+        "answer": "« Non. Si quelque chose clochait, je ne l'ai pas remarqué. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "diane_relation",
         "suspectId": "diane",
-        "question": "Cette affaire pouvait-elle vous affecter, Diane Fabre ?",
-        "answer": "« Oui. Cette affaire pouvait avoir des conséquences pour moi, mais je n'ai rien provoqué. »",
+        "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, Diane Fabre ?",
+        "answer": "« Vous cherchez un mobile ? Le voilà. Trouvez maintenant le geste. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "nils_observation",
         "suspectId": "nils",
-        "question": "Quelque chose vous a-t-il paru anormal ce soir-là, Nils Caron ?",
-        "answer": "« Il y avait une tension, mais elle retombe vite ici. Rien de plus. »",
+        "question": "Qu'avez-vous vu juste avant que cela arrive, Nils Caron ?",
+        "answer": "« Je ne me mêle pas des affaires des autres. Je ne saurais rien vous dire. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "nils_relation",
         "suspectId": "nils",
-        "question": "Aviez-vous quelque chose à perdre, Nils Caron ?",
-        "answer": "« J'avais quelque chose à perdre. Cela ne suffit pas à faire de moi le coupable. »",
+        "question": "Reconnaissez-vous avoir un intérêt personnel dans cette affaire, Nils Caron ?",
+        "answer": "« Ça me met dans une position délicate. Je le reconnais. Et alors ? »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "helene_observation",
         "suspectId": "helene",
-        "question": "Avez-vous vu ou entendu un détail qui vous a surpris, Hélène Jouve ?",
-        "answer": "« Rien de particulier. Tout le monde est parti à son heure habituelle. »",
+        "question": "Que retenez-vous de cette soirée, Hélène Jouve ?",
+        "answer": "« Rien qui mérite un rapport. La soirée s'est déroulée comme les autres. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "helene_relation",
         "suspectId": "helene",
-        "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, Hélène Jouve ?",
-        "answer": "« Mon intérêt personnel est réel. Il faut encore prouver que j'ai agi. »",
+        "question": "Cette situation pouvait-elle vous profiter, Hélène Jouve ?",
+        "answer": "« Oui, je perdais gros. J'étais surtout en train de chercher une solution. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "nils_confrontation",
         "suspectId": "nils",
-        "question": "Cette heure contredit votre récit. Comment l'expliquez-vous ?",
-        "answer": "« Je n'ai pas d'explication pour ce relevé. Mais une heure incohérente ne prouve pas que j'ai provoqué l'incident. »",
+        "question": "Le relevé ne correspond pas à ce que vous dites. Que s'est-il passé ?",
+        "answer": "« Vous partez d'un outil et vous en tirez une conclusion. C'est un peu rapide. »",
         "unlockedByClueId": "registre",
         "beat": "Le mensonge est admis, mais sa raison reste à établir."
       },
       {
         "id": "nils_mobile",
         "suspectId": "nils",
-        "question": "Pourquoi ce document vous concernait-il directement ?",
-        "answer": "« Ce document me concernait, évidemment. Cela ne signifie pas que j'étais prêt à commettre l'irréparable. »",
+        "question": "Pourquoi ce document comptait-il autant pour vous ?",
+        "answer": "« Tout le monde dans la pièce avait une raison de s'inquiéter. Pas seulement moi. »",
         "unlockedByClueId": "mobile",
         "beat": "L'intérêt personnel est reconnu sans que le passage à l'acte le soit."
       },
       {
         "id": "helene_detail",
         "suspectId": "helene",
-        "question": "Cette pièce semble vous accuser. Que manque-t-il au dossier ?",
-        "answer": "« La pièce est authentique, mais votre interprétation s'arrête trop tôt. Vérifiez la suite des événements. »",
+        "question": "Comment cet objet est-il arrivé là, selon vous ?",
+        "answer": "« Oui, c'est à moi. Demandez à la personne qui l'a vu changer de mains. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "La pièce doit être replacée dans sa chronologie."
       },
       {
         "id": "diane_detail",
         "suspectId": "diane",
-        "question": "Pourquoi retrouve-t-on cet objet parmi vos affaires ?",
-        "answer": "« Cet objet m'appartient. Il ne se trouvait pourtant pas là au moment que vous imaginez. »",
+        "question": "Que répondez-vous à cette pièce qui vous met en cause ?",
+        "answer": "« Vous remontez une piste qui s'arrête juste avant moi. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       }

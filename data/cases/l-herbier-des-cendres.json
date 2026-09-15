@@ -259,49 +259,49 @@
         "id": "samir_observation",
         "suspectId": "samir",
         "question": "Avez-vous relevé une incohérence autour de vous, Samir Ouali ?",
-        "answer": "« Je ne me mêle pas des affaires des autres, je ne saurais rien vous dire. »",
+        "answer": "« Un détail m'a étonné sur le moment. Je n'y ai plus repensé avant ce soir. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "samir_relation",
         "suspectId": "samir",
-        "question": "Cette situation pouvait-elle vous profiter, Samir Ouali ?",
-        "answer": "« Je redoutais les conséquences de cette affaire. Je ne l'ai jamais caché. »",
+        "question": "Cette affaire pouvait-elle vous affecter, Samir Ouali ?",
+        "answer": "« Je redoutais les conséquences. Je ne l'ai jamais dissimulé à personne. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "elise_observation",
         "suspectId": "elise",
-        "question": "Avez-vous remarqué quelque chose d'inhabituel, Élise Martel ?",
-        "answer": "« Rien qui mérite d'être signalé. La soirée s'est déroulée comme d'habitude. »",
+        "question": "Une chose vous a-t-elle semblé déplacée, Élise Martel ?",
+        "answer": "« Non. Si quelque chose clochait, je ne l'ai pas remarqué. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "elise_relation",
         "suspectId": "elise",
-        "question": "Que redoutiez-vous personnellement, Élise Martel ?",
-        "answer": "« Oui. Cette affaire pouvait avoir des conséquences pour moi, mais je n'ai rien provoqué. »",
+        "question": "Aviez-vous quelque chose à perdre, Élise Martel ?",
+        "answer": "« Vous cherchez un mobile ? Le voilà. Trouvez maintenant le geste. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "pavel_observation",
         "suspectId": "pavel",
-        "question": "Quelque chose vous a-t-il paru anormal ce soir-là, Pavel Duroc ?",
-        "answer": "« Il y avait une tension, mais elle retombe vite ici. Rien de plus. »",
+        "question": "Qu'avez-vous vu juste avant que cela arrive, Pavel Duroc ?",
+        "answer": "« Je ne me mêle pas des affaires des autres. Je ne saurais rien vous dire. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "pavel_relation",
         "suspectId": "pavel",
-        "question": "Cette affaire pouvait-elle vous affecter, Pavel Duroc ?",
-        "answer": "« J'avais quelque chose à perdre. Cela ne suffit pas à faire de moi le coupable. »",
+        "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, Pavel Duroc ?",
+        "answer": "« Ça me met dans une position délicate. Je le reconnais. Et alors ? »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "samir_confrontation",
         "suspectId": "samir",
         "question": "Votre version ne correspond pas aux données. La maintenez-vous ?",
-        "answer": "« Oui, j'étais encore là. J'ai menti sur l'heure pour cacher une autre affaire, pas celle-ci. »",
+        "answer": "« Oui, j'étais encore là. J'ai menti sur l'heure. Pour une autre raison. »",
         "unlockedByClueId": "registre",
         "beat": "La réponse réduit l'alibi à une version non vérifiée."
       },
@@ -309,7 +309,7 @@
         "id": "samir_mobile",
         "suspectId": "samir",
         "question": "Quelle issue espériez-vous encore trouver ?",
-        "answer": "« Oui, la situation me menaçait directement. Non, je ne vous dirai pas que cela m'a laissé indifférent. »",
+        "answer": "« Oui, la situation me menaçait. Non, ça ne me laissait pas indifférent. »",
         "unlockedByClueId": "mobile",
         "beat": "La menace n'est plus abstraite pour cette personne."
       },
@@ -317,15 +317,15 @@
         "id": "elise_detail",
         "suspectId": "elise",
         "question": "Qui peut confirmer votre explication sur cette pièce ?",
-        "answer": "« Mon explication est vérifiable. Cherchez le second enregistrement, pas seulement celui qui m'accuse. »",
+        "answer": "« Mon explication est vérifiable. Cherchez le second enregistrement. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Le recoupement suivant peut innocenter ou condamner."
       },
       {
         "id": "pavel_detail",
         "suspectId": "pavel",
-        "question": "Cette pièce semble vous accuser. Que manque-t-il au dossier ?",
-        "answer": "« La pièce est authentique, mais votre interprétation s'arrête trop tôt. Vérifiez la suite des événements. »",
+        "question": "Comment cet objet est-il arrivé là, selon vous ?",
+        "answer": "« Oui, c'est à moi. Demandez à la personne qui l'a vu changer de mains. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "La pièce doit être replacée dans sa chronologie."
       }

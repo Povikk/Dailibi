@@ -263,74 +263,74 @@
       {
         "id": "june_observation",
         "suspectId": "june",
-        "question": "Qu'est-ce qui vous a le plus surpris ce soir-là, June Luce ?",
-        "answer": "« Tout était normal. Si quelque chose clochait, je ne l'ai pas remarqué. »",
+        "question": "Que retenez-vous de cette soirée, June Luce ?",
+        "answer": "« Rien qui mérite un rapport. La soirée s'est déroulée comme les autres. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "june_relation",
         "suspectId": "june",
-        "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, June Luce ?",
-        "answer": "« J'aurais pu tirer profit de la situation. Je n'ai pourtant rien fait pour la provoquer. »",
+        "question": "Que risquiez-vous dans cette histoire, June Luce ?",
+        "answer": "« Oui, je perdais gros. J'étais surtout en train de chercher une solution. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "benoit_observation",
         "suspectId": "benoit",
-        "question": "Avez-vous relevé une incohérence autour de vous, Benoît Carsin ?",
-        "answer": "« Je ne me mêle pas des affaires des autres, je ne saurais rien vous dire. »",
+        "question": "Est-ce que quelque chose vous a mis mal à l'aise, Benoît Carsin ?",
+        "answer": "« Il y avait une tension, mais elle retombe vite ici. C'est tout. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "benoit_relation",
         "suspectId": "benoit",
-        "question": "Reconnaissez-vous avoir un intérêt personnel dans cette affaire, Benoît Carsin ?",
-        "answer": "« Je redoutais les conséquences de cette affaire. Je ne l'ai jamais caché. »",
+        "question": "Quel était votre intérêt, Benoît Carsin ?",
+        "answer": "« Si j'avais voulu en finir, j'aurais eu cent façons plus simples. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "dr_observation",
         "suspectId": "dr",
         "question": "Avez-vous remarqué quelque chose d'inhabituel, Dr Selma Wong ?",
-        "answer": "« Rien qui mérite d'être signalé. La soirée s'est déroulée comme d'habitude. »",
+        "answer": "« Vous me demandez ça parce que j'étais là. Je n'ai rien vu, moi. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "dr_relation",
         "suspectId": "dr",
-        "question": "Cette situation pouvait-elle vous profiter, Dr Selma Wong ?",
-        "answer": "« Oui. Cette affaire pouvait avoir des conséquences pour moi, mais je n'ai rien provoqué. »",
+        "question": "Qu'est-ce que cela changeait pour vous, Dr Selma Wong ?",
+        "answer": "« Je n'ai pas à me justifier sur ma situation. Demandez plutôt autour de vous. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "june_confrontation",
         "suspectId": "june",
-        "question": "Vous aviez dit être parti. Pourquoi le registre indique-t-il le contraire ?",
-        "answer": "« Je maintiens l'essentiel de ma version. Sur cette minute précise, je reconnais m'être trompé. »",
+        "question": "Le relevé vous place sur les lieux. Pourquoi l'avoir omis ?",
+        "answer": "« Je maintiens l'essentiel. Sur cette minute-là, j'ai pu me tromper. »",
         "unlockedByClueId": "registre",
         "beat": "La présence devient certaine. Le geste reste à prouver."
       },
       {
         "id": "june_mobile",
         "suspectId": "june",
-        "question": "Pourquoi avez-vous cherché à dissimuler ce document ?",
-        "answer": "« J'ai voulu que ce document reste privé. Sa divulgation aurait détruit des années de travail. »",
+        "question": "Qu'auriez-vous perdu si ce projet avait abouti ?",
+        "answer": "« J'ai voulu garder ça privé. La divulgation aurait détruit des années de travail. »",
         "unlockedByClueId": "mobile",
         "beat": "Le document donne un poids concret au mobile."
       },
       {
         "id": "benoit_detail",
         "suspectId": "benoit",
-        "question": "Pourquoi avez-vous caché ce détail aux enquêteurs ?",
-        "answer": "« Je l'ai gardé pour moi : cela ne concernait pas l'enquête. »",
+        "question": "Pourquoi retrouve-t-on cet objet parmi vos affaires ?",
+        "answer": "« Non, ce n'est pas moi. Et cette pièce, seule, ne dit rien de tel. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       },
       {
         "id": "dr_detail",
         "suspectId": "dr",
-        "question": "Qui peut confirmer votre explication sur cette pièce ?",
-        "answer": "« Mon explication est vérifiable. Cherchez le second enregistrement, pas seulement celui qui m'accuse. »",
+        "question": "À quel moment cet élément a-t-il changé de sens ?",
+        "answer": "« Vous avez trouvé cela chez moi, oui. Ça ne raconte pas la soirée. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "Le recoupement suivant peut innocenter ou condamner."
       }

@@ -258,74 +258,74 @@
       {
         "id": "pere_observation",
         "suspectId": "pere",
-        "question": "Quelque chose vous a-t-il paru anormal ce soir-là, Père Augustin ?",
-        "answer": "« Il y avait une tension, mais elle retombe vite ici. Rien de plus. »",
+        "question": "Qu'avez-vous vu juste avant que cela arrive, Père Augustin ?",
+        "answer": "« Je ne me mêle pas des affaires des autres. Je ne saurais rien vous dire. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "pere_relation",
         "suspectId": "pere",
-        "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, Père Augustin ?",
-        "answer": "« J'avais quelque chose à perdre. Cela ne suffit pas à faire de moi le coupable. »",
+        "question": "Cette situation pouvait-elle vous profiter, Père Augustin ?",
+        "answer": "« Ça me met dans une position délicate. Je le reconnais. Et alors ? »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "leonie_observation",
         "suspectId": "leonie",
-        "question": "Avez-vous vu ou entendu un détail qui vous a surpris, Léonie Pujol ?",
-        "answer": "« Rien de particulier. Tout le monde est parti à son heure habituelle. »",
+        "question": "Que retenez-vous de cette soirée, Léonie Pujol ?",
+        "answer": "« Rien qui mérite un rapport. La soirée s'est déroulée comme les autres. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "leonie_relation",
         "suspectId": "leonie",
-        "question": "Reconnaissez-vous avoir un intérêt personnel dans cette affaire, Léonie Pujol ?",
-        "answer": "« Mon intérêt personnel est réel. Il faut encore prouver que j'ai agi. »",
+        "question": "Que redoutiez-vous personnellement, Léonie Pujol ?",
+        "answer": "« Oui, je perdais gros. J'étais surtout en train de chercher une solution. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "basile_observation",
         "suspectId": "basile",
-        "question": "Y a-t-il un détail que les enquêteurs devraient connaître, Basile Rémond ?",
-        "answer": "« Les gens semblaient pressés, mais c'est le cas chaque soir. »",
+        "question": "Est-ce que quelque chose vous a mis mal à l'aise, Basile Rémond ?",
+        "answer": "« Il y avait une tension, mais elle retombe vite ici. C'est tout. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "basile_relation",
         "suspectId": "basile",
-        "question": "Cette situation pouvait-elle vous profiter, Basile Rémond ?",
-        "answer": "« Je comprends les soupçons. Ma situation me donnait un mobile possible, pas une preuve. »",
+        "question": "Que risquiez-vous dans cette histoire, Basile Rémond ?",
+        "answer": "« Si j'avais voulu en finir, j'aurais eu cent façons plus simples. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "leonie_confrontation",
         "suspectId": "leonie",
-        "question": "Le relevé vous place sur les lieux. Pourquoi l'avoir omis ?",
-        "answer": "« J'ai omis ce passage parce qu'il me mettait dans une mauvaise position. Ce n'est pas un aveu. »",
+        "question": "Expliquez-moi cet écart entre votre version et les données.",
+        "answer": "« J'étais là. Ça n'a rien à voir avec ce qu'on me reproche. »",
         "unlockedByClueId": "registre",
         "beat": "La présence devient certaine. Le geste reste à prouver."
       },
       {
         "id": "leonie_mobile",
         "suspectId": "leonie",
-        "question": "Qu'auriez-vous perdu si ce projet avait abouti ?",
-        "answer": "« J'avais beaucoup à perdre. Je cherchais une solution, pas un coupable à fabriquer. »",
+        "question": "Qu'est-ce que cela remettait en cause, pour vous ?",
+        "answer": "« J'aurais pu régler ça autrement. C'est ce que j'ai essayé de faire. »",
         "unlockedByClueId": "mobile",
         "beat": "Le document donne un poids concret au mobile."
       },
       {
         "id": "pere_detail",
         "suspectId": "pere",
-        "question": "Pourquoi retrouve-t-on cet objet parmi vos affaires ?",
-        "answer": "« Cet objet m'appartient. Il ne se trouvait pourtant pas là au moment que vous imaginez. »",
+        "question": "Que répondez-vous à cette pièce qui vous met en cause ?",
+        "answer": "« Vous remontez une piste qui s'arrête juste avant moi. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       },
       {
         "id": "basile_detail",
         "suspectId": "basile",
-        "question": "À quel moment cet élément a-t-il changé de sens ?",
-        "answer": "« Vous avez le bon élément et la mauvaise chronologie. C'est précisément ce qui vous égare. »",
+        "question": "À qui profite le doute jeté sur vous ?",
+        "answer": "« Je n'ai rien à voir avec cela, et ce détail ne prouve pas le contraire. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "Le recoupement suivant peut innocenter ou condamner."
       }

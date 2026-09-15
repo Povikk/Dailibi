@@ -266,73 +266,73 @@
         "id": "loup_observation",
         "suspectId": "loup",
         "question": "Avez-vous remarqué quelque chose d'inhabituel, Loup Charrier ?",
-        "answer": "« Rien qui mérite d'être signalé. La soirée s'est déroulée comme d'habitude. »",
+        "answer": "« Vous me demandez ça parce que j'étais là. Je n'ai rien vu, moi. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "loup_relation",
         "suspectId": "loup",
         "question": "Cette affaire pouvait-elle vous affecter, Loup Charrier ?",
-        "answer": "« Oui. Cette affaire pouvait avoir des conséquences pour moi, mais je n'ai rien provoqué. »",
+        "answer": "« Je n'ai pas à me justifier sur ma situation. Demandez plutôt autour de vous. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "mila_observation",
         "suspectId": "mila",
         "question": "Quelque chose vous a-t-il paru anormal ce soir-là, Mila Anders ?",
-        "answer": "« Il y avait une tension, mais elle retombe vite ici. Rien de plus. »",
+        "answer": "« J'ai surtout remarqué que personne ne semblait inquiet. C'est peut-être ça, l'anormal. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "mila_relation",
         "suspectId": "mila",
         "question": "Aviez-vous quelque chose à perdre, Mila Anders ?",
-        "answer": "« J'avais quelque chose à perdre. Cela ne suffit pas à faire de moi le coupable. »",
+        "answer": "« Ça m'inquiétait plus que ça m'arrangeait. Nuance. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "jon_observation",
         "suspectId": "jon",
         "question": "Avez-vous vu ou entendu un détail qui vous a surpris, Jon Ravel ?",
-        "answer": "« Rien de particulier. Tout le monde est parti à son heure habituelle. »",
+        "answer": "« Je n'ai pas fait attention. On m'a posé la question après, et j'ai cherché : rien. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "jon_relation",
         "suspectId": "jon",
         "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, Jon Ravel ?",
-        "answer": "« Mon intérêt personnel est réel. Il faut encore prouver que j'ai agi. »",
+        "answer": "« Ça ne me plaisait pas, cette histoire. Je n'y pouvais rien. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "loup_confrontation",
         "suspectId": "loup",
-        "question": "Cette heure contredit votre récit. Comment l'expliquez-vous ?",
-        "answer": "« Je n'ai pas d'explication pour ce relevé. Mais une heure incohérente ne prouve pas que j'ai provoqué l'incident. »",
+        "question": "Cette trace porte jusqu'à vous. Quelle autre explication proposez-vous ?",
+        "answer": "« Vous partez d'un outil et vous en tirez une conclusion. C'est un peu rapide. »",
         "unlockedByClueId": "registre",
         "beat": "Le mensonge est admis, mais sa raison reste à établir."
       },
       {
         "id": "loup_mobile",
         "suspectId": "loup",
-        "question": "Pourquoi ce document vous concernait-il directement ?",
-        "answer": "« Ce document me concernait, évidemment. Cela ne signifie pas que j'étais prêt à commettre l'irréparable. »",
+        "question": "Cette découverte menaçait-elle votre situation ?",
+        "answer": "« Tout le monde dans la pièce avait une raison de s'inquiéter. Pas seulement moi. »",
         "unlockedByClueId": "mobile",
         "beat": "L'intérêt personnel est reconnu sans que le passage à l'acte le soit."
       },
       {
         "id": "jon_detail",
         "suspectId": "jon",
-        "question": "Cette pièce semble vous accuser. Que manque-t-il au dossier ?",
-        "answer": "« La pièce est authentique, mais votre interprétation s'arrête trop tôt. Vérifiez la suite des événements. »",
+        "question": "Que prouve réellement cette pièce, selon vous ?",
+        "answer": "« Il manque le moment où cet objet a bougé. Vous sautez cette partie. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "La pièce doit être replacée dans sa chronologie."
       },
       {
         "id": "mila_detail",
         "suspectId": "mila",
-        "question": "Pourquoi retrouve-t-on cet objet parmi vos affaires ?",
-        "answer": "« Cet objet m'appartient. Il ne se trouvait pourtant pas là au moment que vous imaginez. »",
+        "question": "Pourquoi ce détail n'était-il pas dans votre première déclaration ?",
+        "answer": "« Je peux vous dire d'où il vient. Pas ce que vous en déduisez. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       }

@@ -258,74 +258,74 @@
       {
         "id": "ana_observation",
         "suspectId": "ana",
-        "question": "Y a-t-il un détail que les enquêteurs devraient connaître, Ana Costa ?",
-        "answer": "« Il y avait une tension, mais elle retombe vite ici. Rien de plus. »",
+        "question": "Avez-vous relevé une incohérence autour de vous, Ana Costa ?",
+        "answer": "« Non. Et ça m'ennuie de ne pas pouvoir vous aider mieux que ça. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "ana_relation",
         "suspectId": "ana",
         "question": "Cette affaire pouvait-elle vous affecter, Ana Costa ?",
-        "answer": "« Je comprends les soupçons. Ma situation me donnait un mobile possible, pas une preuve. »",
+        "answer": "« Ce n'était pas mon problème, jusqu'à ce que ça le devienne. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "yves_observation",
         "suspectId": "yves",
-        "question": "Qu'est-ce qui vous a le plus surpris ce soir-là, Yves Molin ?",
-        "answer": "« Rien de particulier. Tout le monde est parti à son heure habituelle. »",
+        "question": "Une chose vous a-t-elle semblé déplacée, Yves Molin ?",
+        "answer": "« Il y a eu un moment de flottement, mais rien que je saurais décrire. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "yves_relation",
         "suspectId": "yves",
         "question": "Aviez-vous quelque chose à perdre, Yves Molin ?",
-        "answer": "« J'aurais pu tirer profit de la situation. Je n'ai pourtant rien fait pour la provoquer. »",
+        "answer": "« J'y perdais plus qu'autre chose. Demandez à n'importe qui. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "leon_observation",
         "suspectId": "leon",
-        "question": "Avez-vous relevé une incohérence autour de vous, Léon Barthe ?",
-        "answer": "« Les gens semblaient pressés, mais c'est le cas chaque soir. »",
+        "question": "Qu'avez-vous vu juste avant que cela arrive, Léon Barthe ?",
+        "answer": "« Je ne suis pas du genre à surveiller les autres. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "leon_relation",
         "suspectId": "leon",
         "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, Léon Barthe ?",
-        "answer": "« Je redoutais les conséquences de cette affaire. Je ne l'ai jamais caché. »",
+        "answer": "« Je n'avais rien à y gagner. Rien. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "leon_confrontation",
         "suspectId": "leon",
-        "question": "Cette trace porte jusqu'à vous. Quelle autre explication proposez-vous ?",
-        "answer": "« Cette donnée est exacte. Mon récit, lui, était incomplet. Je ne voulais pas avoir à expliquer ce détour. »",
+        "question": "Le relevé ne correspond pas à ce que vous dites. Que s'est-il passé ?",
+        "answer": "« La donnée est exacte. Mon récit, lui, était incomplet. »",
         "unlockedByClueId": "registre",
         "beat": "Le mensonge est admis, mais sa raison reste à établir."
       },
       {
         "id": "leon_mobile",
         "suspectId": "leon",
-        "question": "Cette découverte menaçait-elle votre situation ?",
-        "answer": "« Vous appelez cela un mobile parce que vous connaissez la suite. À ce moment-là, rien n'était joué. »",
+        "question": "Pourquoi ce document comptait-il autant pour vous ?",
+        "answer": "« Vous appelez ça un mobile parce que vous connaissez la fin. »",
         "unlockedByClueId": "mobile",
         "beat": "L'intérêt personnel est reconnu sans que le passage à l'acte le soit."
       },
       {
         "id": "yves_detail",
         "suspectId": "yves",
-        "question": "Que prouve réellement cette pièce, selon vous ?",
-        "answer": "« Pris seul, ce détail m'accuse. Comparé au reste du dossier, il raconte autre chose. »",
+        "question": "Comment cet objet est-il arrivé là, selon vous ?",
+        "answer": "« Je peux vous dire d'où il vient. Pas ce que vous en déduisez. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "La pièce doit être replacée dans sa chronologie."
       },
       {
         "id": "ana_detail",
         "suspectId": "ana",
-        "question": "Pourquoi avez-vous caché ce détail aux enquêteurs ?",
-        "answer": "« Je l'ai gardé pour moi : cela ne concernait pas l'enquête. »",
+        "question": "Que répondez-vous à cette pièce qui vous met en cause ?",
+        "answer": "« La pièce est authentique, mais votre interprétation s'arrête trop tôt. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       }

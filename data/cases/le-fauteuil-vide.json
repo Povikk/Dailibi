@@ -265,74 +265,74 @@
       {
         "id": "ines_observation",
         "suspectId": "ines",
-        "question": "Qu'est-ce qui vous a le plus surpris ce soir-là, Inès Delcourt ?",
-        "answer": "« Rien de particulier. Tout le monde est parti à son heure habituelle. »",
+        "question": "Une chose vous a-t-elle semblé déplacée, Inès Delcourt ?",
+        "answer": "« Il y a eu un moment de flottement, mais rien que je saurais décrire. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "ines_relation",
         "suspectId": "ines",
         "question": "Pourquoi les enquêteurs s'intéressent-ils à vous, Inès Delcourt ?",
-        "answer": "« J'aurais pu tirer profit de la situation. Je n'ai pourtant rien fait pour la provoquer. »",
+        "answer": "« J'y perdais plus qu'autre chose. Demandez à n'importe qui. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "victor_observation",
         "suspectId": "victor",
-        "question": "Avez-vous relevé une incohérence autour de vous, Victor Amsel ?",
-        "answer": "« Les gens semblaient pressés, mais c'est le cas chaque soir. »",
+        "question": "Qu'avez-vous vu juste avant que cela arrive, Victor Amsel ?",
+        "answer": "« Je ne suis pas du genre à surveiller les autres. »",
         "beat": "La réponse élude un détail précis."
       },
       {
         "id": "victor_relation",
         "suspectId": "victor",
         "question": "Reconnaissez-vous avoir un intérêt personnel dans cette affaire, Victor Amsel ?",
-        "answer": "« Je redoutais les conséquences de cette affaire. Je ne l'ai jamais caché. »",
+        "answer": "« Je n'avais rien à y gagner. Rien. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "meryem_observation",
         "suspectId": "meryem",
-        "question": "Avez-vous remarqué quelque chose d'inhabituel, Meryem Solal ?",
-        "answer": "« Je n'ai rien vu d'anormal. J'étais concentré sur ma tâche. »",
+        "question": "Que retenez-vous de cette soirée, Meryem Solal ?",
+        "answer": "« J'en garde une impression, pas un souvenir précis. »",
         "beat": "À recouper avec les autres déclarations."
       },
       {
         "id": "meryem_relation",
         "suspectId": "meryem",
         "question": "Cette situation pouvait-elle vous profiter, Meryem Solal ?",
-        "answer": "« Oui. Cette affaire pouvait avoir des conséquences pour moi, mais je n'ai rien provoqué. »",
+        "answer": "« Ma situation était déjà compliquée avant cette affaire. »",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "victor_confrontation",
         "suspectId": "victor",
-        "question": "Vous aviez dit être parti. Pourquoi le registre indique-t-il le contraire ?",
-        "answer": "« Je maintiens l'essentiel de ma version. Sur cette minute précise, je reconnais m'être trompé. »",
+        "question": "Expliquez-moi cet écart entre votre version et les données.",
+        "answer": "« Je maintiens l'essentiel. Sur cette minute-là, j'ai pu me tromper. »",
         "unlockedByClueId": "registre",
         "beat": "La présence devient certaine. Le geste reste à prouver."
       },
       {
         "id": "victor_mobile",
         "suspectId": "victor",
-        "question": "Pourquoi avez-vous cherché à dissimuler ce document ?",
-        "answer": "« J'ai voulu que ce document reste privé. Sa divulgation aurait détruit des années de travail. »",
+        "question": "Qu'est-ce que cela remettait en cause, pour vous ?",
+        "answer": "« J'ai voulu garder ça privé. La divulgation aurait détruit des années de travail. »",
         "unlockedByClueId": "mobile",
         "beat": "Le document donne un poids concret au mobile."
       },
       {
         "id": "meryem_detail",
         "suspectId": "meryem",
-        "question": "Pourquoi avez-vous caché ce détail aux enquêteurs ?",
-        "answer": "« Je l'ai gardé pour moi : cela ne concernait pas l'enquête. »",
+        "question": "Que répondez-vous à cette pièce qui vous met en cause ?",
+        "answer": "« La pièce est authentique, mais votre interprétation s'arrête trop tôt. »",
         "unlockedByClueId": "fausse_piste",
         "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       },
       {
         "id": "ines_detail",
         "suspectId": "ines",
-        "question": "Qui peut confirmer votre explication sur cette pièce ?",
-        "answer": "« Mon explication est vérifiable. Cherchez le second enregistrement, pas seulement celui qui m'accuse. »",
+        "question": "À qui profite le doute jeté sur vous ?",
+        "answer": "« Cet objet m'appartient. Il ne se trouvait pas là à l'heure que vous imaginez. »",
         "unlockedByClueId": "fausse_piste_b",
         "beat": "Le recoupement suivant peut innocenter ou condamner."
       }
