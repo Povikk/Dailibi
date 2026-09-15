@@ -39,19 +39,40 @@ export function StatsBar() {
       <Stat label="Jouées" value={`${stats.played}`} />
       <Stat label="Parfaites" value={`${stats.perfect}`} />
       <Stat label="Score moyen" value={`${average}%`} />
-      <Stat label="Distinctions" value={`${badges}/${BADGES.length}`} />
+      <Stat label="Distinctions" value={`${badges}/${BADGES.length}`} href="/collection" />
     </dl>
   );
 }
 
-function Stat({ icon, label, value }: { icon?: string; label: string; value: string }) {
+function Stat({
+  icon,
+  label,
+  value,
+  href,
+}: {
+  icon?: string;
+  label: string;
+  value: string;
+  href?: string;
+}) {
   return (
     <div className="flex items-baseline gap-1.5">
       <dt className="text-paper-300/50">
         {icon ? <span aria-hidden>{icon} </span> : null}
         {label}
       </dt>
-      <dd className="font-mono font-bold tabular-nums text-paper-100">{value}</dd>
+      <dd className="font-mono font-bold tabular-nums text-paper-100">
+        {href ? (
+          <a
+            href={href}
+            className="underline decoration-dotted underline-offset-2 transition-colors hover:text-kraft-300"
+          >
+            {value}
+          </a>
+        ) : (
+          value
+        )}
+      </dd>
     </div>
   );
 }

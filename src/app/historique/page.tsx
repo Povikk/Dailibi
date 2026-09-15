@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 import { HistoryView } from "@/components/history/HistoryView";
-import { BadgesPanel } from "@/components/history/BadgesPanel";
 import { isDailyKeyUnlocked } from "@/lib/daily";
 import { listCasesForArchive } from "@/server/caseStore";
 
@@ -29,7 +28,12 @@ export default function HistoryPage() {
       </header>
 
       <HistoryView cases={cases} />
-      <BadgesPanel />
+
+      <div className="mt-8 text-center">
+        <Link href="/collection" className="btn-ghost">
+          Voir ma collection
+        </Link>
+      </div>
     </main>
   );
 }

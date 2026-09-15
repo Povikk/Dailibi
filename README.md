@@ -28,7 +28,7 @@ npm run verify:build
 
 ## Progression du joueur
 
-Statistiques personnelles, série, **50 distinctions**, grade et titre affiché en haut de l'écran : tout est calculé dans le navigateur, sans inscription. Le titre équipé se choisit depuis la page Historique.
+Statistiques personnelles, série, **50 distinctions**, grade et titre affiché en haut de l'écran : tout est calculé dans le navigateur, sans inscription. Le titre équipé se choisit depuis la page **Collection**.
 
 ## Statistiques entre joueurs (D1)
 
@@ -45,7 +45,7 @@ Un dossier n'affiche ses pourcentages qu'à partir de 10 accusations, et le jour
 
 Les distinctions, le grade et le titre sont recalculés **côté serveur** à partir d'un instantané de progression (compteurs uniquement : parties jouées, meilleure série, affaires entièrement explorées…). Aucun compte n'est créé : le navigateur garde un secret aléatoire qui sert à la fois d'identifiant et de **code de secours**, et le serveur n'en stocke qu'un hachage SHA-256.
 
-Le code affiché dans *Historique → Code de secours* permet de retrouver ses distinctions sur un autre appareil. Les statistiques personnelles, elles, restent locales. Le profil ne régresse jamais : un navigateur vidé n'efface pas les badges déjà gagnés.
+Le code affiché dans *Collection → Code de secours* permet de retrouver ses distinctions sur un autre appareil. Les statistiques personnelles, elles, restent locales. Le profil ne régresse jamais : un navigateur vidé n'efface pas les badges déjà gagnés.
 
 Quand la collection est terminée, la page d'accueil affiche le bilan du joueur (affaires classées, résolues, moyenne, distinctions) au lieu d'un emplacement vide.
 

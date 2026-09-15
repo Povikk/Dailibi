@@ -167,10 +167,10 @@ export function ResultPanel({
           </ul>
           <div className="border-t border-ink-800 px-4 py-2 text-right">
             <a
-              href="/historique"
+              href="/collection"
               className="text-[10px] font-semibold uppercase tracking-[0.15em] text-paper-300/50 transition-colors hover:text-paper-100"
             >
-              Voir mes distinctions →
+              Voir ma collection →
             </a>
           </div>
         </section>
