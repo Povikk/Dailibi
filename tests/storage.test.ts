@@ -80,8 +80,8 @@ describe("storage: stats et streak", () => {
     expect(loadDayRecord("2026-09-14")?.score).toBe(100);
   });
 
-  it("une archive ne fait pas progresser la série", async () => {
-    const { recordResult, loadStreak } = await import("@/lib/storage");
+  it("une archive est mémorisée sans modifier les statistiques ni la série", async () => {
+    const { recordResult, loadDayRecord, loadStats, loadStreak } = await import("@/lib/storage");
     recordResult({ date: "2026-09-14", caseId: "x", score: 100, who: true, why: true, how: true, seconds: 1 });
     recordResult({
       date: "2026-08-01",
@@ -94,7 +94,12 @@ describe("storage: stats et streak", () => {
       optional: true,
     });
     const streak = loadStreak();
+    const stats = loadStats();
     expect(streak.currentStreak).toBe(1);
     expect(streak.lastPlayedDate).toBe("2026-09-14");
+    expect(stats.played).toBe(1);
+    expect(stats.perfect).toBe(1);
+    expect(stats.history).toHaveLength(1);
+    expect(loadDayRecord("2026-08-01")?.caseId).toBe("old");
   });
 });

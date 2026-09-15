@@ -5,7 +5,7 @@
     "date": "2026-09-10",
     "title": "LA LETTRE DU DORMEUR",
     "subtitle": "Dans le train de nuit, un bijou disparaît et une lettre arrive avant d'avoir été écrite.",
-    "location": "Train de nuit Paris–Nice",
+    "location": "Train de nuit Paris-Nice",
     "incident": "Vol d'un collier dans un compartiment fermé",
     "intro": "À 5h20, Octavie trouve son écrin vide dans un compartiment verrouillé. Sous l'écrin, une lettre anonyme lui reproche d'avoir volé le rôle d'une vie. Le contrôleur affirme que personne n'est descendu entre Dijon et Marseille.",
     "victim": {
@@ -56,19 +56,19 @@
     "clues": [
       {
         "id": "registre",
-        "title": "L'alibi qui se fissure",
-        "source": "JOURNAL TECHNIQUE",
+        "title": "Six minutes hors du rapport",
+        "source": "CONTRÔLE TECHNIQUE",
         "summary": "Le capteur de ronde place Félix devant le compartiment d'Octavie pendant six minutes qu'il omet de son rapport.",
         "evidence": {
           "kind": "schedule",
-          "title": "JOURNAL TECHNIQUE",
+          "title": "CONTRÔLE TECHNIQUE",
           "rows": [
             {
               "time": "20:48",
               "label": "Le capteur de ronde place Félix devant le compartiment d'Octavie pendant six minutes qu'il omet de son rapport."
             }
           ],
-          "altText": "JOURNAL TECHNIQUE à 20:48 : Le capteur de ronde place Félix devant le compartiment d'Octavie pendant six minutes qu'il omet de son rapport."
+          "altText": "CONTRÔLE TECHNIQUE, 20:48. Le capteur de ronde place Félix devant le compartiment d'Octavie pendant six minutes qu'il omet de son rapport."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -91,24 +91,17 @@
       },
       {
         "id": "trace",
-        "title": "La trace qui ne devait pas rester",
-        "source": "ANALYSE MATÉRIELLE",
+        "title": "Une fibre dans le velours",
+        "source": "RAPPORT TECHNIQUE",
         "summary": "Une fibre du gant réglementaire du contrôleur est prise dans le velours de l'écrin.",
         "evidence": {
-          "kind": "photo",
-          "caption": "Une fibre du gant réglementaire du contrôleur est prise dans le velours de l'écrin.",
-          "meta": [
-            {
-              "label": "HEURE",
-              "value": "20:53"
-            },
-            {
-              "label": "STATUT",
-              "value": "Pièce analysée"
-            }
+          "kind": "document",
+          "title": "Une fibre dans le velours",
+          "subtitle": "RAPPORT TECHNIQUE",
+          "paragraphs": [
+            "Une fibre du gant réglementaire du contrôleur est prise dans le velours de l'écrin."
           ],
-          "altText": "Photographie d'analyse : Une fibre du gant réglementaire du contrôleur est prise dans le velours de l'écrin.",
-          "tone": "cold"
+          "altText": "Document intitulé Une fibre dans le velours. Une fibre du gant réglementaire du contrôleur est prise dans le velours de l'écrin."
         },
         "analysis": {
           "category": "TIMELINE",
@@ -127,17 +120,13 @@
       },
       {
         "id": "mobile",
-        "title": "Ce que la victime allait révéler",
-        "source": "DOCUMENT CONFIDENTIEL",
+        "title": "L'échéance du créancier",
+        "source": "DOCUMENT DE LA VICTIME",
         "summary": "Un créancier lui donne jusqu'à l'arrivée à Nice et accepte explicitement un bijou en garantie.",
         "evidence": {
-          "kind": "email",
-          "from": "Dossier de la victime",
-          "to": "Archives de l'enquête",
-          "subject": "Ce que la victime allait révéler",
-          "sentAt": "20:22",
+          "kind": "note",
           "body": "Un créancier lui donne jusqu'à l'arrivée à Nice et accepte explicitement un bijou en garantie.",
-          "altText": "Document confidentiel : Un créancier lui donne jusqu'à l'arrivée à Nice et accepte explicitement un bijou en garantie."
+          "altText": "Note versée au dossier. Un créancier lui donne jusqu'à l'arrivée à Nice et accepte explicitement un bijou en garantie."
         },
         "analysis": {
           "category": "BEHAVIORAL",
@@ -156,19 +145,17 @@
       },
       {
         "id": "alibi_a",
-        "title": "La preuve de Alma Veyrac",
-        "source": "VÉRIFICATION D'ALIBI",
+        "title": "Le wagon-bar d'une traite",
+        "source": "RECOUPEMENT INDÉPENDANT",
         "summary": "La caméra du wagon-bar montre Leïla en conversation continue avec trois journalistes.",
         "evidence": {
-          "kind": "camera",
-          "location": "VÉRIFICATION D'ALIBI",
-          "frames": [
-            {
-              "time": "20:41",
-              "text": "La caméra du wagon-bar montre Leïla en conversation continue avec trois journalistes."
-            }
-          ],
-          "altText": "Relevé de vérification à 20:41 : La caméra du wagon-bar montre Leïla en conversation continue avec trois journalistes."
+          "kind": "email",
+          "from": "RECOUPEMENT INDÉPENDANT",
+          "to": "Dossier d'enquête",
+          "subject": "Le wagon-bar d'une traite",
+          "sentAt": "20:48",
+          "body": "La caméra du wagon-bar montre Leïla en conversation continue avec trois journalistes.",
+          "altText": "Courriel intitulé Le wagon-bar d'une traite. La caméra du wagon-bar montre Leïla en conversation continue avec trois journalistes."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -185,13 +172,24 @@
       },
       {
         "id": "fausse_piste",
-        "title": "Le détail contre Leïla Soriano",
-        "source": "PIÈCE SAISIE",
+        "title": "Les mots empruntés à Alma",
+        "source": "OBJET RETROUVÉ",
         "summary": "L'écriture de la lettre imite des formulations tirées du journal d'Alma.",
         "evidence": {
-          "kind": "note",
-          "body": "L'écriture de la lettre imite des formulations tirées du journal d'Alma.",
-          "altText": "Note saisie constituant une fausse piste : L'écriture de la lettre imite des formulations tirées du journal d'Alma."
+          "kind": "photo",
+          "caption": "L'écriture de la lettre imite des formulations tirées du journal d'Alma.",
+          "meta": [
+            {
+              "label": "Heure",
+              "value": "20:56"
+            },
+            {
+              "label": "Pièce",
+              "value": "Les mots empruntés à Alma"
+            }
+          ],
+          "altText": "Photographie. L'écriture de la lettre imite des formulations tirées du journal d'Alma.",
+          "tone": "cold"
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -210,17 +208,19 @@
       },
       {
         "id": "resolution",
-        "title": "Ce que la fausse piste oublie",
-        "source": "RECOUPEMENT",
+        "title": "L'empreinte du composteur",
+        "source": "CONTRÔLE DES DÉPLACEMENTS",
         "summary": "La feuille porte au verso l'empreinte du composteur de contrôle sur lequel Félix avait posé le carnet confisqué plus tôt.",
         "evidence": {
-          "kind": "document",
-          "title": "RECOUPEMENT",
-          "subtitle": "Pièce enregistrée à 20:56",
-          "paragraphs": [
-            "La feuille porte au verso l'empreinte du composteur de contrôle sur lequel Félix avait posé le carnet confisqué plus tôt."
+          "kind": "camera",
+          "location": "CONTRÔLE DES DÉPLACEMENTS",
+          "frames": [
+            {
+              "time": "20:10",
+              "text": "La feuille porte au verso l'empreinte du composteur de contrôle sur lequel Félix avait posé le carnet confisqué plus tôt."
+            }
           ],
-          "altText": "RECOUPEMENT : La feuille porte au verso l'empreinte du composteur de contrôle sur lequel Félix avait posé le carnet confisqué plus tôt."
+          "altText": "Image enregistrée à 20:10. La feuille porte au verso l'empreinte du composteur de contrôle sur lequel Félix avait posé le carnet confisqué plus tôt."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -240,99 +240,99 @@
       {
         "id": "alma_alibi",
         "suspectId": "alma",
-        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "question": "Quand avez-vous vu Octavie pour la dernière fois, Alma Veyrac ?",
         "answer": "Elle dormait dans la couchette voisine sous somnifère. Émotive, passe de l'admiration au reproche.",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "alma_relation",
         "suspectId": "alma",
-        "question": "Qu'est-ce que Octavie Sanz risquait de changer pour vous ?",
+        "question": "Qu'est-ce que cette affaire pouvait changer pour vous, Alma Veyrac ?",
         "answer": "Elle a remplacé Octavie durant une tournée. Le papier de la lettre vient de son carnet.",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "felix_alibi",
         "suspectId": "felix",
-        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "question": "Décrivez vos déplacements sans sauter d'étape, Félix Donnadieu.",
         "answer": "Il effectuait la ronde en voiture 12. Rassurant, connaît chaque voyageur par son billet.",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
         "id": "felix_relation",
         "suspectId": "felix",
-        "question": "Qu'est-ce que Octavie Sanz risquait de changer pour vous ?",
+        "question": "Pourquoi votre nom apparaît-il dans le dossier d'Octavie, Félix Donnadieu ?",
         "answer": "Il possède le passe de tous les compartiments. Il rembourse une dette de jeu importante.",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "leila_alibi",
         "suspectId": "leila",
-        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "question": "Quand avez-vous quitté Train de nuit Paris-Nice, Leïla Soriano ?",
         "answer": "Elle travaillait au wagon-bar jusqu'à sa fermeture. Énergique, parle en messages courts.",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "leila_relation",
         "suspectId": "leila",
-        "question": "Qu'est-ce que Octavie Sanz risquait de changer pour vous ?",
+        "question": "Aviez-vous une raison de redouter la décision d'Octavie, Leïla Soriano ?",
         "answer": "Elle devait remettre le collier au joaillier. Elle avait sous-évalué le bijou dans le contrat d'assurance.",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "felix_confrontation",
         "suspectId": "felix",
-        "question": "Votre heure ne correspond pas au registre. Pourquoi ?",
-        "answer": "« Le registre se trompe parfois. Cela ne prouve pas que j'ai fait ce qu'on me reproche. »",
+        "question": "Vous aviez dit être parti. Pourquoi le registre indique-t-il le contraire ?",
+        "answer": "« Je maintiens l'essentiel de ma version. Sur cette minute précise, je reconnais m'être trompé. »",
         "unlockedByClueId": "registre",
-        "beat": "La personne conteste l'outil, sans expliquer sa propre trace."
+        "beat": "La présence devient certaine. Le geste reste à prouver."
       },
       {
         "id": "felix_mobile",
         "suspectId": "felix",
-        "question": "Ce document vous donnait-il une raison d'agir ?",
-        "answer": "« Vous appelez cela un mobile parce que vous connaissez déjà la fin. Sur le moment, je cherchais seulement une issue. »",
+        "question": "Pourquoi avez-vous cherché à dissimuler ce document ?",
+        "answer": "« J'ai voulu que ce document reste privé. Sa divulgation aurait détruit des années de travail. »",
         "unlockedByClueId": "mobile",
-        "beat": "La raison d'agir est reconnue à demi-mot."
+        "beat": "Le document donne un poids concret au mobile."
       },
       {
         "id": "leila_detail",
         "suspectId": "leila",
-        "question": "Pourquoi cette pièce vous désigne-t-elle ?",
-        "answer": "« Elle est vraie, mais votre conclusion ne l'est pas. Cherchez ce qui s'est passé après. »",
+        "question": "Pourquoi avez-vous caché ce détail aux enquêteurs ?",
+        "answer": "« Je l'ai caché parce qu'il révélait un secret personnel. Ce secret n'a aucun lien avec l'incident. »",
         "unlockedByClueId": "fausse_piste",
-        "beat": "La pièce cache une chronologie plus complète."
+        "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       }
     ],
     "timeline": [
       {
         "time": "20:10",
-        "text": "Octavie Sanz est vu pour la dernière fois avant l'incident.",
-        "source": "Témoignages concordants",
+        "text": "Dernière apparition confirmée d'Octavie Sanz.",
+        "source": "Recoupement des témoignages",
         "certainty": "CERTAIN"
       },
       {
         "time": "20:22",
-        "text": "Le document révélant le mobile est créé ou consulté.",
-        "source": "Métadonnées",
+        "text": "Un créancier lui donne jusqu'à l'arrivée à Nice et accepte explicitement un bijou en garantie.",
+        "source": "DOCUMENT DE LA VICTIME",
         "certainty": "CERTAIN"
       },
       {
         "time": "20:35",
-        "text": "Félix Donnadieu affirme ne plus pouvoir intervenir.",
-        "source": "Déclaration",
+        "text": "Félix Donnadieu situe ici la fin de ses déplacements.",
+        "source": "Déposition",
         "certainty": "REPORTED"
       },
       {
         "time": "20:48",
-        "text": "Une activité technique contredit cette version.",
-        "source": "Registre",
+        "text": "Le capteur de ronde place Félix devant le compartiment d'Octavie pendant six minutes qu'il omet de son rapport.",
+        "source": "CONTRÔLE TECHNIQUE",
         "certainty": "CERTAIN"
       },
       {
         "time": "20:56",
-        "text": "L'incident devient visible ou produit ses effets.",
-        "source": "Constat",
+        "text": "Les premiers effets de l'incident sont constatés.",
+        "source": "Constat sur place",
         "certainty": "ESTIMATED"
       }
     ],
@@ -435,24 +435,24 @@
     "correctTimeline": [
       {
         "time": "20:10",
-        "place": "Train de nuit Paris–Nice",
+        "place": "Train de nuit Paris-Nice",
         "personIds": [
           "felix"
         ],
-        "text": "Félix Donnadieu comprend que la situation menace directement ses intérêts."
+        "text": "Félix Donnadieu comprend que la décision d'Octavie Sanz menace directement ses intérêts."
       },
       {
         "time": "20:22",
-        "place": "Train de nuit Paris–Nice",
+        "place": "Train de nuit Paris-Nice",
         "personIds": [
           "felix"
         ],
-        "text": "Le mobile se cristallise : revendre le collier pour régler une dette avant saisie."
+        "text": "Un créancier lui donne jusqu'à l'arrivée à Nice et accepte explicitement un bijou en garantie."
       },
       {
         "time": "20:48",
         "endTime": "20:53",
-        "place": "Train de nuit Paris–Nice",
+        "place": "Train de nuit Paris-Nice",
         "personIds": [
           "felix"
         ],
@@ -460,36 +460,37 @@
       },
       {
         "time": "20:56",
-        "place": "Train de nuit Paris–Nice",
+        "place": "Train de nuit Paris-Nice",
         "personIds": [
           "felix"
         ],
-        "text": "La personne remet les lieux en ordre et s'appuie sur son alibi préparé."
+        "text": "Après les faits, Félix Donnadieu s'appuie sur l'alibi que le relevé finira par contredire."
       }
     ],
     "reasoning": [
-      "Le registre contredit l'heure donnée par Félix Donnadieu : Le capteur de ronde place Félix devant le compartiment d'Octavie pendant six minutes qu'il omet de son rapport.",
-      "La trace matérielle ne prouve pas seulement une présence; elle décrit la méthode : Une fibre du gant réglementaire du contrôleur est prise dans le velours de l'écrin.",
-      "Le document confidentiel fournit un mobile précis : Un créancier lui donne jusqu'à l'arrivée à Nice et accepte explicitement un bijou en garantie.",
-      "Alma Veyrac est écarté par une preuve indépendante, tandis que l'élément visant Leïla Soriano est expliqué par le recoupement final.",
-      "La seule personne réunissant présence, moyen et mobile est Félix Donnadieu."
+      "Le capteur de ronde place Félix devant le compartiment d'Octavie pendant six minutes qu'il omet de son rapport. Cette donnée fragilise directement la version de Félix Donnadieu.",
+      "Une fibre du gant réglementaire du contrôleur est prise dans le velours de l'écrin. La trace relie le geste au procédé employé.",
+      "Un créancier lui donne jusqu'à l'arrivée à Nice et accepte explicitement un bijou en garantie. Le mobile repose donc sur un fait vérifiable.",
+      "La caméra du wagon-bar montre Leïla en conversation continue avec trois journalistes. De son côté, la principale autre piste ne résiste pas au recoupement.",
+      "L'écriture de la lettre imite des formulations tirées du journal d'Alma. L'élément paraît accusateur, mais il change de sens avec la dernière pièce : la feuille porte au verso l'empreinte du composteur de contrôle sur lequel Félix avait posé le carnet confisqué plus tôt.",
+      "Présence, moyen et intérêt convergent vers Félix Donnadieu."
     ],
-    "explanation": "Félix a prélevé une page du carnet d'Alma lors d'un contrôle, composé la lettre à partir de ses phrases publiques puis ouvert la cabine. Le message sentimental devait détourner l'enquête d'un vol purement financier. Le mobile était de revendre le collier pour régler une dette avant saisie. La méthode consistait à ouvrir le compartiment avec le passe et déposer une lettre fabriquée à partir d'une page volée. La fausse piste contre Leïla Soriano paraît forte isolément, mais la feuille porte au verso l'empreinte du composteur de contrôle sur lequel Félix avait posé le carnet confisqué plus tôt. Ainsi, les preuves convergent sans supposer d'information extérieure au dossier.",
+    "explanation": "Félix a prélevé une page du carnet d'Alma lors d'un contrôle, composé la lettre à partir de ses phrases publiques puis ouvert la cabine. Le message sentimental devait détourner l'enquête d'un vol purement financier. Félix Donnadieu voulait revendre le collier pour régler une dette avant saisie. Pour y parvenir, Félix Donnadieu a choisi de ouvrir le compartiment avec le passe et déposer une lettre fabriquée à partir d'une page volée. La feuille porte au verso l'empreinte du composteur de contrôle sur lequel Félix avait posé le carnet confisqué plus tôt. Cette vérification écarte la fausse piste et referme le dossier.",
     "proofChains": [
       {
-        "title": "La chaîne du geste",
+        "title": "Ce qui trahit Félix Donnadieu",
         "steps": [
           "Le capteur de ronde place Félix devant le compartiment d'Octavie pendant six minutes qu'il omet de son rapport.",
           "Une fibre du gant réglementaire du contrôleur est prise dans le velours de l'écrin.",
-          "Ces deux pièces relient matériellement Félix Donnadieu à l'action."
+          "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]
       },
       {
-        "title": "La chaîne de l'intention",
+        "title": "Le mobile et les innocents",
         "steps": [
           "Un créancier lui donne jusqu'à l'arrivée à Nice et accepte explicitement un bijou en garantie.",
           "La caméra du wagon-bar montre Leïla en conversation continue avec trois journalistes.",
-          "Le mobile devient exclusif une fois les alibis recoupés."
+          "La feuille porte au verso l'empreinte du composteur de contrôle sur lequel Félix avait posé le carnet confisqué plus tôt."
         ]
       }
     ]

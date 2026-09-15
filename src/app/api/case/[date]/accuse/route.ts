@@ -6,9 +6,8 @@ import { findCaseForDate } from "@/server/caseStore";
 import { buildSolvabilityMatrix } from "@/case-engine/solvability";
 import { validateCase, validateFairPlay } from "@/case-engine/validateCase";
 import { validateSolutionTimeline } from "@/case-engine/timelineValidator";
-import { scoreAccusation } from "@/case-engine/scoring";
 import { isDailyKeyUnlocked } from "@/lib/daily";
-import type { AccuseResult } from "@/types/case";
+import { buildAccuseResult } from "@/server/accusationResult";
 
 export const dynamic = "force-dynamic";
 
@@ -67,39 +66,7 @@ export async function POST(
     if (typeof value === "string") clean[question.id] = value;
   }
 
-  const breakdown = scoreAccusation(file.public, file.solution, clean);
-  const culprit = file.public.suspects.find((s) => s.id === file.solution.culpritId)!;
-
-  const motiveLabel =
-    file.public.accusation.questions
-      .find((q) => q.kind === "motive")
-      ?.options.find((o) => o.id === file.solution.correctMotive)?.label ?? "";
-  const methodLabel =
-    file.public.accusation.questions
-      .find((q) => q.kind === "method")
-      ?.options.find((o) => o.id === file.solution.correctMethod)?.label ?? "";
-
-  const result: AccuseResult = {
-    caseId: file.public.id,
-    date: file.public.date,
-    correct: breakdown.allCorrect,
-    partial: breakdown.partial,
-    score: breakdown.score,
-    perQuestion: breakdown.perQuestion,
-    culprit: { id: culprit.id, name: culprit.name },
-    solution: {
-      culpritId: culprit.id,
-      culpritName: culprit.name,
-      motive: motiveLabel,
-      method: methodLabel,
-      reasoning: file.solution.reasoning,
-      explanation: file.solution.explanation,
-      correctTimeline: file.solution.correctTimeline,
-      proofChains: file.solution.proofChains,
-    },
-  };
-
-  return NextResponse.json(result);
+  return NextResponse.json(buildAccuseResult(file, clean));
 }
 
 /**

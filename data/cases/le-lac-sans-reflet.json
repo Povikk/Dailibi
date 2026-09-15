@@ -4,7 +4,7 @@
     "number": 23,
     "date": "2026-09-23",
     "title": "LE LAC SANS REFLET",
-    "subtitle": "Une actrice se noie devant trois caméras; aucune ne filme son reflet entrer dans l'eau.",
+    "subtitle": "Une actrice se noie devant trois caméras. Aucune ne filme son reflet entrer dans l'eau.",
     "location": "Tournage au lac d'Annecy",
     "incident": "Fausse noyade organisée",
     "intro": "Cléo plonge depuis le ponton et ne remonte pas. Les plongeurs ne trouvent aucun corps. Les trois caméras ont filmé la chute, mais sur le plan large, la surface sombre ne reçoit aucun reflet humain.",
@@ -56,19 +56,19 @@
     "clues": [
       {
         "id": "registre",
-        "title": "L'alibi qui se fissure",
-        "source": "JOURNAL TECHNIQUE",
+        "title": "Le montage ouvert de nuit",
+        "source": "REGISTRE DE SERVICE",
         "summary": "Le moniteur reçoit un fichier nommé TAKE_FINAL_2 plutôt que le flux SDI de la caméra large.",
         "evidence": {
-          "kind": "schedule",
-          "title": "JOURNAL TECHNIQUE",
-          "rows": [
+          "kind": "camera",
+          "location": "REGISTRE DE SERVICE",
+          "frames": [
             {
               "time": "20:49",
-              "label": "Le moniteur reçoit un fichier nommé TAKE_FINAL_2 plutôt que le flux SDI de la caméra large."
+              "text": "Le moniteur reçoit un fichier nommé TAKE_FINAL_2 plutôt que le flux SDI de la caméra large."
             }
           ],
-          "altText": "JOURNAL TECHNIQUE à 20:49 : Le moniteur reçoit un fichier nommé TAKE_FINAL_2 plutôt que le flux SDI de la caméra large."
+          "altText": "Image enregistrée à 20:49. Le moniteur reçoit un fichier nommé TAKE_FINAL_2 plutôt que le flux SDI de la caméra large."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -91,24 +91,17 @@
       },
       {
         "id": "trace",
-        "title": "La trace qui ne devait pas rester",
-        "source": "ANALYSE MATÉRIELLE",
+        "title": "Un plongeon sans reflet",
+        "source": "EXAMEN DE LA PIÈCE",
         "summary": "L'absence de reflet et une barque identique dans deux positions prouvent que l'image du plongeon a été tournée la veille.",
         "evidence": {
-          "kind": "photo",
-          "caption": "L'absence de reflet et une barque identique dans deux positions prouvent que l'image du plongeon a été tournée la veille.",
-          "meta": [
-            {
-              "label": "HEURE",
-              "value": "20:54"
-            },
-            {
-              "label": "STATUT",
-              "value": "Pièce analysée"
-            }
+          "kind": "document",
+          "title": "Un plongeon sans reflet",
+          "subtitle": "EXAMEN DE LA PIÈCE",
+          "paragraphs": [
+            "L'absence de reflet et une barque identique dans deux positions prouvent que l'image du plongeon a été tournée la veille."
           ],
-          "altText": "Photographie d'analyse : L'absence de reflet et une barque identique dans deux positions prouvent que l'image du plongeon a été tournée la veille.",
-          "tone": "cold"
+          "altText": "Document intitulé Un plongeon sans reflet. L'absence de reflet et une barque identique dans deux positions prouvent que l'image du plongeon a été tournée la veille."
         },
         "analysis": {
           "category": "TIMELINE",
@@ -127,17 +120,17 @@
       },
       {
         "id": "mobile",
-        "title": "Ce que la victime allait révéler",
-        "source": "DOCUMENT CONFIDENTIEL",
+        "title": "Le billet de Cléo",
+        "source": "CORRESPONDANCE SAISIE",
         "summary": "Le carnet de Natan prévoit déjà une campagne intitulée « le dernier plan de Cléo ».",
         "evidence": {
           "kind": "email",
-          "from": "Dossier de la victime",
-          "to": "Archives de l'enquête",
-          "subject": "Ce que la victime allait révéler",
-          "sentAt": "20:23",
+          "from": "CORRESPONDANCE SAISIE",
+          "to": "Dossier d'enquête",
+          "subject": "Le billet de Cléo",
+          "sentAt": "20:36",
           "body": "Le carnet de Natan prévoit déjà une campagne intitulée « le dernier plan de Cléo ».",
-          "altText": "Document confidentiel : Le carnet de Natan prévoit déjà une campagne intitulée « le dernier plan de Cléo »."
+          "altText": "Courriel intitulé Le billet de Cléo. Le carnet de Natan prévoit déjà une campagne intitulée « le dernier plan de Cléo »."
         },
         "analysis": {
           "category": "BEHAVIORAL",
@@ -156,19 +149,14 @@
       },
       {
         "id": "alibi_a",
-        "title": "La preuve de Sarah Montel",
-        "source": "VÉRIFICATION D'ALIBI",
+        "title": "Sarah en direct",
+        "source": "ENREGISTREMENT TÉMOIN",
         "summary": "Le bateau GPS et les images des deux autres axes placent Sarah à bord pendant la prétendue chute.",
         "evidence": {
-          "kind": "camera",
-          "location": "VÉRIFICATION D'ALIBI",
-          "frames": [
-            {
-              "time": "20:42",
-              "text": "Le bateau GPS et les images des deux autres axes placent Sarah à bord pendant la prétendue chute."
-            }
-          ],
-          "altText": "Relevé de vérification à 20:42 : Le bateau GPS et les images des deux autres axes placent Sarah à bord pendant la prétendue chute."
+          "kind": "handwriting",
+          "body": "Le bateau GPS et les images des deux autres axes placent Sarah à bord pendant la prétendue chute.",
+          "signature": "Natan Joly",
+          "altText": "Note manuscrite. Le bateau GPS et les images des deux autres axes placent Sarah à bord pendant la prétendue chute."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -185,13 +173,13 @@
       },
       {
         "id": "fausse_piste",
-        "title": "Le détail contre Paul Eden",
-        "source": "PIÈCE SAISIE",
+        "title": "La barque de Paul",
+        "source": "DOCUMENT SUSPECT",
         "summary": "Paul a augmenté l'assurance de Cléo une semaine avant le tournage.",
         "evidence": {
           "kind": "note",
           "body": "Paul a augmenté l'assurance de Cléo une semaine avant le tournage.",
-          "altText": "Note saisie constituant une fausse piste : Paul a augmenté l'assurance de Cléo une semaine avant le tournage."
+          "altText": "Note versée au dossier. Paul a augmenté l'assurance de Cléo une semaine avant le tournage."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -210,17 +198,19 @@
       },
       {
         "id": "resolution",
-        "title": "Ce que la fausse piste oublie",
-        "source": "RECOUPEMENT",
+        "title": "Deux images prises la veille",
+        "source": "ALIBI VÉRIFIÉ",
         "summary": "L'augmentation découle d'une exigence syndicale pour la scène aquatique et Paul ignorait le fichier préenregistré.",
         "evidence": {
-          "kind": "document",
-          "title": "RECOUPEMENT",
-          "subtitle": "Pièce enregistrée à 20:57",
-          "paragraphs": [
-            "L'augmentation découle d'une exigence syndicale pour la scène aquatique et Paul ignorait le fichier préenregistré."
+          "kind": "schedule",
+          "title": "ALIBI VÉRIFIÉ",
+          "rows": [
+            {
+              "time": "20:11",
+              "label": "L'augmentation découle d'une exigence syndicale pour la scène aquatique et Paul ignorait le fichier préenregistré."
+            }
           ],
-          "altText": "RECOUPEMENT : L'augmentation découle d'une exigence syndicale pour la scène aquatique et Paul ignorait le fichier préenregistré."
+          "altText": "ALIBI VÉRIFIÉ, 20:11. L'augmentation découle d'une exigence syndicale pour la scène aquatique et Paul ignorait le fichier préenregistré."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -240,99 +230,99 @@
       {
         "id": "natan_alibi",
         "suspectId": "natan",
-        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "question": "Décrivez vos déplacements sans sauter d'étape, Natan Joly.",
         "answer": "Il suivait la prise au moniteur avec toute l'équipe. Habité, parle de vérité même pour les détails pratiques.",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
         "id": "natan_relation",
         "suspectId": "natan",
-        "question": "Qu'est-ce que Cléo Marin risquait de changer pour vous ?",
+        "question": "Aviez-vous une raison de redouter la décision de Cléo, Natan Joly ?",
         "answer": "Il se disputait avec Cléo sur la fin du film. La disparition rendrait son film légendaire.",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "sarah_alibi",
         "suspectId": "sarah",
-        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "question": "Quand avez-vous quitté Tournage au lac d'Annecy, Sarah Montel ?",
         "answer": "Elle attendait dans le bateau de sécurité. Athlétique, posée, distingue toujours risque et peur.",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "sarah_relation",
         "suspectId": "sarah",
-        "question": "Qu'est-ce que Cléo Marin risquait de changer pour vous ?",
+        "question": "Que taisiez-vous sur votre relation avec Cléo, Sarah Montel ?",
         "answer": "Elle avait répété le plongeon de Cléo. Elle et Cléo ont la même silhouette.",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "paul_alibi",
         "suspectId": "paul",
-        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "question": "Qui peut confirmer votre emploi du temps, Paul Eden ?",
         "answer": "Il téléphonait depuis la régie mobile. Conciliant en apparence, obsédé par le calendrier.",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "paul_relation",
         "suspectId": "paul",
-        "question": "Qu'est-ce que Cléo Marin risquait de changer pour vous ?",
+        "question": "Quel désaccord vous opposait à Cléo, Paul Eden ?",
         "answer": "Il voulait remplacer Cléo après le tournage. Une disparition déclenche une assurance majeure.",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "natan_confrontation",
         "suspectId": "natan",
-        "question": "Votre heure ne correspond pas au registre. Pourquoi ?",
-        "answer": "« Le registre se trompe parfois. Cela ne prouve pas que j'ai fait ce qu'on me reproche. »",
+        "question": "Votre version ne correspond pas aux données. La maintenez-vous ?",
+        "answer": "« Oui, j'étais encore là. J'ai menti sur l'heure pour cacher une autre affaire, pas celle-ci. »",
         "unlockedByClueId": "registre",
-        "beat": "La personne conteste l'outil, sans expliquer sa propre trace."
+        "beat": "La réponse réduit l'alibi à une version non vérifiée."
       },
       {
         "id": "natan_mobile",
         "suspectId": "natan",
-        "question": "Ce document vous donnait-il une raison d'agir ?",
-        "answer": "« Vous appelez cela un mobile parce que vous connaissez déjà la fin. Sur le moment, je cherchais seulement une issue. »",
+        "question": "Quelle issue espériez-vous encore trouver ?",
+        "answer": "« Oui, la situation me menaçait directement. Non, je ne vous dirai pas que cela m'a laissé indifférent. »",
         "unlockedByClueId": "mobile",
-        "beat": "La raison d'agir est reconnue à demi-mot."
+        "beat": "La menace n'est plus abstraite pour cette personne."
       },
       {
         "id": "paul_detail",
         "suspectId": "paul",
-        "question": "Pourquoi cette pièce vous désigne-t-elle ?",
-        "answer": "« Elle est vraie, mais votre conclusion ne l'est pas. Cherchez ce qui s'est passé après. »",
+        "question": "Qui peut confirmer votre explication sur cette pièce ?",
+        "answer": "« Mon explication est vérifiable. Cherchez le second enregistrement, pas seulement celui qui m'accuse. »",
         "unlockedByClueId": "fausse_piste",
-        "beat": "La pièce cache une chronologie plus complète."
+        "beat": "Le recoupement suivant peut innocenter ou condamner."
       }
     ],
     "timeline": [
       {
         "time": "20:11",
-        "text": "Cléo Marin est vu pour la dernière fois avant l'incident.",
-        "source": "Témoignages concordants",
+        "text": "Dernière apparition confirmée de Cléo Marin.",
+        "source": "Recoupement des témoignages",
         "certainty": "CERTAIN"
       },
       {
         "time": "20:23",
-        "text": "Le document révélant le mobile est créé ou consulté.",
-        "source": "Métadonnées",
+        "text": "Le carnet de Natan prévoit déjà une campagne intitulée « le dernier plan de Cléo ».",
+        "source": "CORRESPONDANCE SAISIE",
         "certainty": "CERTAIN"
       },
       {
         "time": "20:36",
-        "text": "Natan Joly affirme ne plus pouvoir intervenir.",
-        "source": "Déclaration",
+        "text": "Natan Joly situe ici la fin de ses déplacements.",
+        "source": "Déposition",
         "certainty": "REPORTED"
       },
       {
         "time": "20:49",
-        "text": "Une activité technique contredit cette version.",
-        "source": "Registre",
+        "text": "Le moniteur reçoit un fichier nommé TAKE_FINAL_2 plutôt que le flux SDI de la caméra large.",
+        "source": "REGISTRE DE SERVICE",
         "certainty": "CERTAIN"
       },
       {
         "time": "20:57",
-        "text": "L'incident devient visible ou produit ses effets.",
-        "source": "Constat",
+        "text": "Les premiers effets de l'incident sont constatés.",
+        "source": "Constat sur place",
         "certainty": "ESTIMATED"
       }
     ],
@@ -439,7 +429,7 @@
         "personIds": [
           "natan"
         ],
-        "text": "Natan Joly comprend que la situation menace directement ses intérêts."
+        "text": "Natan Joly comprend que la décision de Cléo Marin menace directement ses intérêts."
       },
       {
         "time": "20:23",
@@ -447,7 +437,7 @@
         "personIds": [
           "natan"
         ],
-        "text": "Le mobile se cristallise : fabriquer une légende autour du film et forcer le studio à conserver sa fin."
+        "text": "Le carnet de Natan prévoit déjà une campagne intitulée « le dernier plan de Cléo »."
       },
       {
         "time": "20:49",
@@ -464,32 +454,33 @@
         "personIds": [
           "natan"
         ],
-        "text": "La personne remet les lieux en ordre et s'appuie sur son alibi préparé."
+        "text": "Après les faits, Natan Joly s'appuie sur l'alibi que le relevé finira par contredire."
       }
     ],
     "reasoning": [
-      "Le registre contredit l'heure donnée par Natan Joly : Le moniteur reçoit un fichier nommé TAKE_FINAL_2 plutôt que le flux SDI de la caméra large.",
-      "La trace matérielle ne prouve pas seulement une présence; elle décrit la méthode : L'absence de reflet et une barque identique dans deux positions prouvent que l'image du plongeon a été tournée la veille.",
-      "Le document confidentiel fournit un mobile précis : Le carnet de Natan prévoit déjà une campagne intitulée « le dernier plan de Cléo ».",
-      "Sarah Montel est écarté par une preuve indépendante, tandis que l'élément visant Paul Eden est expliqué par le recoupement final.",
-      "La seule personne réunissant présence, moyen et mobile est Natan Joly."
+      "Le moniteur reçoit un fichier nommé TAKE_FINAL_2 plutôt que le flux SDI de la caméra large. Cette donnée fragilise directement la version de Natan Joly.",
+      "L'absence de reflet et une barque identique dans deux positions prouvent que l'image du plongeon a été tournée la veille. La trace relie le geste au procédé employé.",
+      "Le carnet de Natan prévoit déjà une campagne intitulée « le dernier plan de Cléo ». Le mobile repose donc sur un fait vérifiable.",
+      "Le bateau GPS et les images des deux autres axes placent Sarah à bord pendant la prétendue chute. De son côté, la principale autre piste ne résiste pas au recoupement.",
+      "Paul a augmenté l'assurance de Cléo une semaine avant le tournage. L'élément paraît accusateur, mais il change de sens avec la dernière pièce : l'augmentation découle d'une exigence syndicale pour la scène aquatique et Paul ignorait le fichier préenregistré.",
+      "Présence, moyen et intérêt convergent vers Natan Joly."
     ],
-    "explanation": "Natan et Cléo avaient convenu d'une disparition de vingt-quatre heures pour imposer leur montage, mais Natan a poursuivi le plan malgré le retrait de Cléo. Il a diffusé l'ancienne répétition d'une doublure pendant que Cléo quittait le site en voiture. Le mobile était de fabriquer une légende autour du film et forcer le studio à conserver sa fin. La méthode consistait à filmer une doublure sur fond noir la veille et diffuser la séquence comme retour direct. La fausse piste contre Paul Eden paraît forte isolément, mais l'augmentation découle d'une exigence syndicale pour la scène aquatique et Paul ignorait le fichier préenregistré. Ainsi, les preuves convergent sans supposer d'information extérieure au dossier.",
+    "explanation": "Natan et Cléo avaient convenu d'une disparition de vingt-quatre heures pour imposer leur montage, mais Natan a poursuivi le plan malgré le retrait de Cléo. Il a diffusé l'ancienne répétition d'une doublure pendant que Cléo quittait le site en voiture. Le mobile n'est pas une simple supposition. Natan Joly cherchait à fabriquer une légende autour du film et forcer le studio à conserver sa fin. Le geste décisif consistait à filmer une doublure sur fond noir la veille et diffuser la séquence comme retour direct. L'augmentation découle d'une exigence syndicale pour la scène aquatique et Paul ignorait le fichier préenregistré. La dernière ambiguïté disparaît avec ce recoupement.",
     "proofChains": [
       {
-        "title": "La chaîne du geste",
+        "title": "Ce qui trahit Natan Joly",
         "steps": [
           "Le moniteur reçoit un fichier nommé TAKE_FINAL_2 plutôt que le flux SDI de la caméra large.",
           "L'absence de reflet et une barque identique dans deux positions prouvent que l'image du plongeon a été tournée la veille.",
-          "Ces deux pièces relient matériellement Natan Joly à l'action."
+          "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]
       },
       {
-        "title": "La chaîne de l'intention",
+        "title": "Le mobile et les innocents",
         "steps": [
           "Le carnet de Natan prévoit déjà une campagne intitulée « le dernier plan de Cléo ».",
           "Le bateau GPS et les images des deux autres axes placent Sarah à bord pendant la prétendue chute.",
-          "Le mobile devient exclusif une fois les alibis recoupés."
+          "L'augmentation découle d'une exigence syndicale pour la scène aquatique et Paul ignorait le fichier préenregistré."
         ]
       }
     ]

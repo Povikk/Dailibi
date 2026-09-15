@@ -5,7 +5,7 @@
     "date": "2026-09-09",
     "title": "LE JARDIN DE VERRE",
     "subtitle": "Toute une floraison rare meurt en une nuit, sauf la plante que le saboteur voulait condamner.",
-    "location": "Serres expérimentales — Montpellier",
+    "location": "Serres expérimentales, Montpellier",
     "incident": "Sabotage d'une collection horticole",
     "intro": "Au matin, vingt-huit orchidées sont flétries dans la serre C. Les capteurs n'indiquent ni gel ni manque d'eau. Une seule plante, au centre, reste intacte alors qu'elle devait être la plus fragile.",
     "victim": {
@@ -56,19 +56,13 @@
     "clues": [
       {
         "id": "registre",
-        "title": "L'alibi qui se fissure",
-        "source": "JOURNAL TECHNIQUE",
+        "title": "Une entrée dans la serre C",
+        "source": "JOURNAL D'ACCÈS",
         "summary": "Le registre de vanne montre une commande manuelle depuis la tablette de Nora à 22h18 après son départ déclaré.",
         "evidence": {
-          "kind": "schedule",
-          "title": "JOURNAL TECHNIQUE",
-          "rows": [
-            {
-              "time": "20:41",
-              "label": "Le registre de vanne montre une commande manuelle depuis la tablette de Nora à 22h18 après son départ déclaré."
-            }
-          ],
-          "altText": "JOURNAL TECHNIQUE à 20:41 : Le registre de vanne montre une commande manuelle depuis la tablette de Nora à 22h18 après son départ déclaré."
+          "kind": "note",
+          "body": "Le registre de vanne montre une commande manuelle depuis la tablette de Nora à 22h18 après son départ déclaré.",
+          "altText": "Note versée au dossier. Le registre de vanne montre une commande manuelle depuis la tablette de Nora à 22h18 après son départ déclaré."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -91,23 +85,23 @@
       },
       {
         "id": "trace",
-        "title": "La trace qui ne devait pas rester",
-        "source": "ANALYSE MATÉRIELLE",
+        "title": "Le collier de la survivante",
+        "source": "CONSTAT PHOTOGRAPHIQUE",
         "summary": "La plante intacte porte un collier d'isolement imprimé avec le polymère du laboratoire de Nora.",
         "evidence": {
           "kind": "photo",
           "caption": "La plante intacte porte un collier d'isolement imprimé avec le polymère du laboratoire de Nora.",
           "meta": [
             {
-              "label": "HEURE",
-              "value": "20:46"
+              "label": "Heure",
+              "value": "20:15"
             },
             {
-              "label": "STATUT",
-              "value": "Pièce analysée"
+              "label": "Pièce",
+              "value": "Le collier de la survivante"
             }
           ],
-          "altText": "Photographie d'analyse : La plante intacte porte un collier d'isolement imprimé avec le polymère du laboratoire de Nora.",
+          "altText": "Photographie. La plante intacte porte un collier d'isolement imprimé avec le polymère du laboratoire de Nora.",
           "tone": "cold"
         },
         "analysis": {
@@ -127,17 +121,14 @@
       },
       {
         "id": "mobile",
-        "title": "Ce que la victime allait révéler",
-        "source": "DOCUMENT CONFIDENTIEL",
+        "title": "Le brevet concurrent",
+        "source": "NOTE PERSONNELLE",
         "summary": "Son article refusé devient publiable uniquement si la variété de Célia est discréditée.",
         "evidence": {
-          "kind": "email",
-          "from": "Dossier de la victime",
-          "to": "Archives de l'enquête",
-          "subject": "Ce que la victime allait révéler",
-          "sentAt": "20:15",
+          "kind": "handwriting",
           "body": "Son article refusé devient publiable uniquement si la variété de Célia est discréditée.",
-          "altText": "Document confidentiel : Son article refusé devient publiable uniquement si la variété de Célia est discréditée."
+          "signature": "Nora Saïd",
+          "altText": "Note manuscrite. Son article refusé devient publiable uniquement si la variété de Célia est discréditée."
         },
         "analysis": {
           "category": "BEHAVIORAL",
@@ -156,19 +147,19 @@
       },
       {
         "id": "alibi_a",
-        "title": "La preuve de Tao Ménard",
-        "source": "VÉRIFICATION D'ALIBI",
+        "title": "Le relevé de Tao",
+        "source": "ALIBI VÉRIFIÉ",
         "summary": "La télémétrie signée du domicile de Tao prouve qu'il observait sans pouvoir commander le circuit secondaire déconnecté.",
         "evidence": {
           "kind": "camera",
-          "location": "VÉRIFICATION D'ALIBI",
+          "location": "ALIBI VÉRIFIÉ",
           "frames": [
             {
               "time": "20:34",
               "text": "La télémétrie signée du domicile de Tao prouve qu'il observait sans pouvoir commander le circuit secondaire déconnecté."
             }
           ],
-          "altText": "Relevé de vérification à 20:34 : La télémétrie signée du domicile de Tao prouve qu'il observait sans pouvoir commander le circuit secondaire déconnecté."
+          "altText": "Image enregistrée à 20:34. La télémétrie signée du domicile de Tao prouve qu'il observait sans pouvoir commander le circuit secondaire déconnecté."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -185,13 +176,17 @@
       },
       {
         "id": "fausse_piste",
-        "title": "Le détail contre Gaëlle Rios",
-        "source": "PIÈCE SAISIE",
+        "title": "L'arrosoir de Gaëlle",
+        "source": "ÉLÉMENT À CHARGE",
         "summary": "Le camion de Gaëlle transporte le même herbicide utilisé dans la serre.",
         "evidence": {
-          "kind": "note",
-          "body": "Le camion de Gaëlle transporte le même herbicide utilisé dans la serre.",
-          "altText": "Note saisie constituant une fausse piste : Le camion de Gaëlle transporte le même herbicide utilisé dans la serre."
+          "kind": "document",
+          "title": "L'arrosoir de Gaëlle",
+          "subtitle": "ÉLÉMENT À CHARGE",
+          "paragraphs": [
+            "Le camion de Gaëlle transporte le même herbicide utilisé dans la serre."
+          ],
+          "altText": "Document intitulé L'arrosoir de Gaëlle. Le camion de Gaëlle transporte le même herbicide utilisé dans la serre."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -210,17 +205,21 @@
       },
       {
         "id": "resolution",
-        "title": "Ce que la fausse piste oublie",
-        "source": "RECOUPEMENT",
+        "title": "Pourquoi une orchidée a résisté",
+        "source": "ENREGISTREMENT TÉMOIN",
         "summary": "Le bouchon témoin du bidon est scellé et son péage la place à 140 kilomètres pendant l'injection.",
         "evidence": {
-          "kind": "document",
-          "title": "RECOUPEMENT",
-          "subtitle": "Pièce enregistrée à 20:49",
-          "paragraphs": [
-            "Le bouchon témoin du bidon est scellé et son péage la place à 140 kilomètres pendant l'injection."
+          "kind": "sms",
+          "contact": "Nora Saïd",
+          "channel": "sms",
+          "messages": [
+            {
+              "from": "them",
+              "text": "Le bouchon témoin du bidon est scellé et son péage la place à 140 kilomètres pendant l'injection.",
+              "time": "20:03"
+            }
           ],
-          "altText": "RECOUPEMENT : Le bouchon témoin du bidon est scellé et son péage la place à 140 kilomètres pendant l'injection."
+          "altText": "Message de Nora Saïd à 20:03. Le bouchon témoin du bidon est scellé et son péage la place à 140 kilomètres pendant l'injection."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -240,99 +239,99 @@
       {
         "id": "tao_alibi",
         "suspectId": "tao",
-        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "question": "Votre version comporte-t-elle un moment sans témoin, Tao Ménard ?",
         "answer": "Il surveillait les systèmes depuis chez lui. Laconique, fait confiance aux courbes plus qu'aux témoins.",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "tao_relation",
         "suspectId": "tao",
-        "question": "Qu'est-ce que Dr Célia Nardin risquait de changer pour vous ?",
+        "question": "Quel désaccord vous opposait à Dr, Tao Ménard ?",
         "answer": "Il programme l'irrigation et la ventilation. Son prototype de brumisation venait d'être refusé.",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "gaelle_alibi",
         "suspectId": "gaelle",
-        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "question": "Quand avez-vous vu Dr pour la dernière fois, Gaëlle Rios ?",
         "answer": "Elle était sur la route vers Perpignan. Chaleureuse, commerciale, évite les noms latins.",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "gaelle_relation",
         "suspectId": "gaelle",
-        "question": "Qu'est-ce que Dr Célia Nardin risquait de changer pour vous ?",
+        "question": "Que risquiez-vous si Dr allait au bout de sa décision, Gaëlle Rios ?",
         "answer": "Elle fournit la majorité des plants. Une épidémie ruinerait son concurrent.",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "nora_alibi",
         "suspectId": "nora",
-        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "question": "Décrivez vos déplacements sans sauter d'étape, Nora Saïd.",
         "answer": "Elle travaillait dans la serre A jusqu'à 22h. Froide, méthodique, demande à voir chaque donnée brute.",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
         "id": "nora_relation",
         "suspectId": "nora",
-        "question": "Qu'est-ce que Dr Célia Nardin risquait de changer pour vous ?",
+        "question": "Qu'est-ce que cette affaire pouvait changer pour vous, Nora Saïd ?",
         "answer": "Elle conteste la variété annoncée par Célia. La plante intacte valide précisément sa propre hypothèse.",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "nora_confrontation",
         "suspectId": "nora",
-        "question": "Votre heure ne correspond pas au registre. Pourquoi ?",
-        "answer": "« Le registre se trompe parfois. Cela ne prouve pas que j'ai fait ce qu'on me reproche. »",
+        "question": "Cette trace porte jusqu'à vous. Quelle autre explication proposez-vous ?",
+        "answer": "« Cette donnée est exacte. Mon récit, lui, était incomplet. Je ne voulais pas avoir à expliquer ce détour. »",
         "unlockedByClueId": "registre",
-        "beat": "La personne conteste l'outil, sans expliquer sa propre trace."
+        "beat": "Le mensonge est admis, mais sa raison reste à établir."
       },
       {
         "id": "nora_mobile",
         "suspectId": "nora",
-        "question": "Ce document vous donnait-il une raison d'agir ?",
-        "answer": "« Vous appelez cela un mobile parce que vous connaissez déjà la fin. Sur le moment, je cherchais seulement une issue. »",
+        "question": "Cette découverte menaçait-elle votre situation ?",
+        "answer": "« Vous appelez cela un mobile parce que vous connaissez la suite. À ce moment-là, rien n'était joué. »",
         "unlockedByClueId": "mobile",
-        "beat": "La raison d'agir est reconnue à demi-mot."
+        "beat": "L'intérêt personnel est reconnu sans que le passage à l'acte le soit."
       },
       {
         "id": "gaelle_detail",
         "suspectId": "gaelle",
-        "question": "Pourquoi cette pièce vous désigne-t-elle ?",
-        "answer": "« Elle est vraie, mais votre conclusion ne l'est pas. Cherchez ce qui s'est passé après. »",
+        "question": "Que prouve réellement cette pièce, selon vous ?",
+        "answer": "« Pris seul, ce détail m'accuse. Comparé au reste du dossier, il raconte autre chose. »",
         "unlockedByClueId": "fausse_piste",
-        "beat": "La pièce cache une chronologie plus complète."
+        "beat": "La pièce doit être replacée dans sa chronologie."
       }
     ],
     "timeline": [
       {
         "time": "20:03",
-        "text": "Dr Célia Nardin est vu pour la dernière fois avant l'incident.",
-        "source": "Témoignages concordants",
+        "text": "Dernière apparition confirmée de Dr Célia Nardin.",
+        "source": "Recoupement des témoignages",
         "certainty": "CERTAIN"
       },
       {
         "time": "20:15",
-        "text": "Le document révélant le mobile est créé ou consulté.",
-        "source": "Métadonnées",
+        "text": "Son article refusé devient publiable uniquement si la variété de Célia est discréditée.",
+        "source": "NOTE PERSONNELLE",
         "certainty": "CERTAIN"
       },
       {
         "time": "20:28",
-        "text": "Nora Saïd affirme ne plus pouvoir intervenir.",
-        "source": "Déclaration",
+        "text": "Nora Saïd situe ici la fin de ses déplacements.",
+        "source": "Déposition",
         "certainty": "REPORTED"
       },
       {
         "time": "20:41",
-        "text": "Une activité technique contredit cette version.",
-        "source": "Registre",
+        "text": "Le registre de vanne montre une commande manuelle depuis la tablette de Nora à 22h18 après son départ déclaré.",
+        "source": "JOURNAL D'ACCÈS",
         "certainty": "CERTAIN"
       },
       {
         "time": "20:49",
-        "text": "L'incident devient visible ou produit ses effets.",
-        "source": "Constat",
+        "text": "Les premiers effets de l'incident sont constatés.",
+        "source": "Constat sur place",
         "certainty": "ESTIMATED"
       }
     ],
@@ -435,24 +434,24 @@
     "correctTimeline": [
       {
         "time": "20:03",
-        "place": "Serres expérimentales — Montpellier",
+        "place": "Serres expérimentales, Montpellier",
         "personIds": [
           "nora"
         ],
-        "text": "Nora Saïd comprend que la situation menace directement ses intérêts."
+        "text": "Nora Saïd comprend que la décision de Dr Célia Nardin menace directement ses intérêts."
       },
       {
         "time": "20:15",
-        "place": "Serres expérimentales — Montpellier",
+        "place": "Serres expérimentales, Montpellier",
         "personIds": [
           "nora"
         ],
-        "text": "Le mobile se cristallise : faire passer une erreur d'étiquetage pour une fraude scientifique de célia."
+        "text": "Son article refusé devient publiable uniquement si la variété de Célia est discréditée."
       },
       {
         "time": "20:41",
         "endTime": "20:46",
-        "place": "Serres expérimentales — Montpellier",
+        "place": "Serres expérimentales, Montpellier",
         "personIds": [
           "nora"
         ],
@@ -460,36 +459,37 @@
       },
       {
         "time": "20:49",
-        "place": "Serres expérimentales — Montpellier",
+        "place": "Serres expérimentales, Montpellier",
         "personIds": [
           "nora"
         ],
-        "text": "La personne remet les lieux en ordre et s'appuie sur son alibi préparé."
+        "text": "Après les faits, Nora Saïd s'appuie sur l'alibi que le relevé finira par contredire."
       }
     ],
     "reasoning": [
-      "Le registre contredit l'heure donnée par Nora Saïd : Le registre de vanne montre une commande manuelle depuis la tablette de Nora à 22h18 après son départ déclaré.",
-      "La trace matérielle ne prouve pas seulement une présence; elle décrit la méthode : La plante intacte porte un collier d'isolement imprimé avec le polymère du laboratoire de Nora.",
-      "Le document confidentiel fournit un mobile précis : Son article refusé devient publiable uniquement si la variété de Célia est discréditée.",
-      "Tao Ménard est écarté par une preuve indépendante, tandis que l'élément visant Gaëlle Rios est expliqué par le recoupement final.",
-      "La seule personne réunissant présence, moyen et mobile est Nora Saïd."
+      "Le registre de vanne montre une commande manuelle depuis la tablette de Nora à 22h18 après son départ déclaré. Cette donnée fragilise directement la version de Nora Saïd.",
+      "La plante intacte porte un collier d'isolement imprimé avec le polymère du laboratoire de Nora. La trace relie le geste au procédé employé.",
+      "Son article refusé devient publiable uniquement si la variété de Célia est discréditée. Le mobile repose donc sur un fait vérifiable.",
+      "La télémétrie signée du domicile de Tao prouve qu'il observait sans pouvoir commander le circuit secondaire déconnecté. De son côté, la principale autre piste ne résiste pas au recoupement.",
+      "Le camion de Gaëlle transporte le même herbicide utilisé dans la serre. L'élément paraît accusateur, mais il change de sens avec la dernière pièce : le bouchon témoin du bidon est scellé et son péage la place à 140 kilomètres pendant l'injection.",
+      "Présence, moyen et intérêt convergent vers Nora Saïd."
     ],
-    "explanation": "Nora a isolé la plante qui lui donnait raison puis contaminé le réseau des autres pots. Elle ne voulait pas tuer la découverte : elle voulait que la survivante paraisse révéler une falsification de Célia. Le mobile était de faire passer une erreur d'étiquetage pour une fraude scientifique de célia. La méthode consistait à injecter un herbicide dans le circuit secondaire tout en isolant la plante témoin. La fausse piste contre Gaëlle Rios paraît forte isolément, mais le bouchon témoin du bidon est scellé et son péage la place à 140 kilomètres pendant l'injection. Ainsi, les preuves convergent sans supposer d'information extérieure au dossier.",
+    "explanation": "Nora a isolé la plante qui lui donnait raison puis contaminé le réseau des autres pots. Elle ne voulait pas tuer la découverte : elle voulait que la survivante paraisse révéler une falsification de Célia. Le motif de Nora Saïd ne laisse plus de doute : faire passer une erreur d'étiquetage pour une fraude scientifique de Célia. Le procédé était discret : injecter un herbicide dans le circuit secondaire tout en isolant la plante témoin. Le bouchon témoin du bidon est scellé et son péage la place à 140 kilomètres pendant l'injection. C'est la pièce qui manquait pour distinguer le soupçon de la preuve.",
     "proofChains": [
       {
-        "title": "La chaîne du geste",
+        "title": "Ce qui trahit Nora Saïd",
         "steps": [
           "Le registre de vanne montre une commande manuelle depuis la tablette de Nora à 22h18 après son départ déclaré.",
           "La plante intacte porte un collier d'isolement imprimé avec le polymère du laboratoire de Nora.",
-          "Ces deux pièces relient matériellement Nora Saïd à l'action."
+          "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]
       },
       {
-        "title": "La chaîne de l'intention",
+        "title": "Le mobile et les innocents",
         "steps": [
           "Son article refusé devient publiable uniquement si la variété de Célia est discréditée.",
           "La télémétrie signée du domicile de Tao prouve qu'il observait sans pouvoir commander le circuit secondaire déconnecté.",
-          "Le mobile devient exclusif une fois les alibis recoupés."
+          "Le bouchon témoin du bidon est scellé et son péage la place à 140 kilomètres pendant l'injection."
         ]
       }
     ]

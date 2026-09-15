@@ -5,7 +5,7 @@
     "date": "2026-09-02",
     "title": "LA PARTITION MUETTE",
     "subtitle": "Le concerto s'arrête au même endroit, comme si quelqu'un avait composé l'accident.",
-    "location": "Opéra municipal — Lille",
+    "location": "Opéra municipal, Lille",
     "incident": "Sabotage d'une création musicale",
     "intro": "Pendant la générale, toutes les tablettes des musiciens deviennent noires à la mesure 214. La copie papier de secours contient, elle aussi, quatre pages blanches. Le fichier maître était placé sous contrôle depuis la veille.",
     "victim": {
@@ -56,19 +56,17 @@
     "clues": [
       {
         "id": "registre",
-        "title": "L'alibi qui se fissure",
-        "source": "JOURNAL TECHNIQUE",
+        "title": "La session de 23 h 17",
+        "source": "CONTRÔLE TECHNIQUE",
         "summary": "Le journal de synchronisation montre une seconde session signée Maëlle à 23h17.",
         "evidence": {
-          "kind": "schedule",
-          "title": "JOURNAL TECHNIQUE",
-          "rows": [
-            {
-              "time": "19:52",
-              "label": "Le journal de synchronisation montre une seconde session signée Maëlle à 23h17."
-            }
+          "kind": "document",
+          "title": "La session de 23 h 17",
+          "subtitle": "CONTRÔLE TECHNIQUE",
+          "paragraphs": [
+            "Le journal de synchronisation montre une seconde session signée Maëlle à 23h17."
           ],
-          "altText": "JOURNAL TECHNIQUE à 19:52 : Le journal de synchronisation montre une seconde session signée Maëlle à 23h17."
+          "altText": "Document intitulé La session de 23 h 17. Le journal de synchronisation montre une seconde session signée Maëlle à 23h17."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -91,24 +89,14 @@
       },
       {
         "id": "trace",
-        "title": "La trace qui ne devait pas rester",
-        "source": "ANALYSE MATÉRIELLE",
+        "title": "Le papier du bureau",
+        "source": "RAPPORT TECHNIQUE",
         "summary": "Les pages blanches ont été remplacées avec le papier filigrané stocké uniquement dans son bureau.",
         "evidence": {
-          "kind": "photo",
-          "caption": "Les pages blanches ont été remplacées avec le papier filigrané stocké uniquement dans son bureau.",
-          "meta": [
-            {
-              "label": "HEURE",
-              "value": "19:57"
-            },
-            {
-              "label": "STATUT",
-              "value": "Pièce analysée"
-            }
-          ],
-          "altText": "Photographie d'analyse : Les pages blanches ont été remplacées avec le papier filigrané stocké uniquement dans son bureau.",
-          "tone": "cold"
+          "kind": "handwriting",
+          "body": "Les pages blanches ont été remplacées avec le papier filigrané stocké uniquement dans son bureau.",
+          "signature": "Maëlle Coste",
+          "altText": "Note manuscrite. Les pages blanches ont été remplacées avec le papier filigrané stocké uniquement dans son bureau."
         },
         "analysis": {
           "category": "TIMELINE",
@@ -127,17 +115,21 @@
       },
       {
         "id": "mobile",
-        "title": "Ce que la victime allait révéler",
-        "source": "DOCUMENT CONFIDENTIEL",
+        "title": "Le contrat de la crise",
+        "source": "DOCUMENT DE LA VICTIME",
         "summary": "Un courriel brouillon propose à la direction un contrat permanent pour gérer la crise numérique qu'elle disait prévoir.",
         "evidence": {
-          "kind": "email",
-          "from": "Dossier de la victime",
-          "to": "Archives de l'enquête",
-          "subject": "Ce que la victime allait révéler",
-          "sentAt": "19:26",
-          "body": "Un courriel brouillon propose à la direction un contrat permanent pour gérer la crise numérique qu'elle disait prévoir.",
-          "altText": "Document confidentiel : Un courriel brouillon propose à la direction un contrat permanent pour gérer la crise numérique qu'elle disait prévoir."
+          "kind": "sms",
+          "contact": "Ruben Keller",
+          "channel": "sms",
+          "messages": [
+            {
+              "from": "them",
+              "text": "Un courriel brouillon propose à la direction un contrat permanent pour gérer la crise numérique qu'elle disait prévoir.",
+              "time": "19:39"
+            }
+          ],
+          "altText": "Message de Ruben Keller à 19:39. Un courriel brouillon propose à la direction un contrat permanent pour gérer la crise numérique qu'elle disait prévoir."
         },
         "analysis": {
           "category": "BEHAVIORAL",
@@ -156,19 +148,19 @@
       },
       {
         "id": "alibi_a",
-        "title": "La preuve de Lucien Prado",
-        "source": "VÉRIFICATION D'ALIBI",
+        "title": "Un violon sans silence",
+        "source": "RECOUPEMENT INDÉPENDANT",
         "summary": "L'appel vidéo de Ruben conserve le son continu de son violon durant toute la modification du serveur.",
         "evidence": {
-          "kind": "camera",
-          "location": "VÉRIFICATION D'ALIBI",
-          "frames": [
+          "kind": "schedule",
+          "title": "RECOUPEMENT INDÉPENDANT",
+          "rows": [
             {
               "time": "19:45",
-              "text": "L'appel vidéo de Ruben conserve le son continu de son violon durant toute la modification du serveur."
+              "label": "L'appel vidéo de Ruben conserve le son continu de son violon durant toute la modification du serveur."
             }
           ],
-          "altText": "Relevé de vérification à 19:45 : L'appel vidéo de Ruben conserve le son continu de son violon durant toute la modification du serveur."
+          "altText": "RECOUPEMENT INDÉPENDANT, 19:45. L'appel vidéo de Ruben conserve le son continu de son violon durant toute la modification du serveur."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -185,13 +177,24 @@
       },
       {
         "id": "fausse_piste",
-        "title": "Le détail contre Ruben Keller",
-        "source": "PIÈCE SAISIE",
+        "title": "La mesure barrée",
+        "source": "OBJET RETROUVÉ",
         "summary": "La chambre de Lucien contient une version de la partition où la mesure 214 est barrée en rouge.",
         "evidence": {
-          "kind": "note",
-          "body": "La chambre de Lucien contient une version de la partition où la mesure 214 est barrée en rouge.",
-          "altText": "Note saisie constituant une fausse piste : La chambre de Lucien contient une version de la partition où la mesure 214 est barrée en rouge."
+          "kind": "photo",
+          "caption": "La chambre de Lucien contient une version de la partition où la mesure 214 est barrée en rouge.",
+          "meta": [
+            {
+              "label": "Heure",
+              "value": "20:00"
+            },
+            {
+              "label": "Pièce",
+              "value": "La mesure barrée"
+            }
+          ],
+          "altText": "Photographie. La chambre de Lucien contient une version de la partition où la mesure 214 est barrée en rouge.",
+          "tone": "cold"
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -210,17 +213,17 @@
       },
       {
         "id": "resolution",
-        "title": "Ce que la fausse piste oublie",
-        "source": "RECOUPEMENT",
+        "title": "Une annotation vieille d'un mois",
+        "source": "CONTRÔLE DES DÉPLACEMENTS",
         "summary": "Cette annotation date des premières répétitions et la photographie de l'hôtel prouve qu'elle figurait déjà dans la version remise un mois plus tôt.",
         "evidence": {
-          "kind": "document",
-          "title": "RECOUPEMENT",
-          "subtitle": "Pièce enregistrée à 20:00",
-          "paragraphs": [
-            "Cette annotation date des premières répétitions et la photographie de l'hôtel prouve qu'elle figurait déjà dans la version remise un mois plus tôt."
-          ],
-          "altText": "RECOUPEMENT : Cette annotation date des premières répétitions et la photographie de l'hôtel prouve qu'elle figurait déjà dans la version remise un mois plus tôt."
+          "kind": "email",
+          "from": "CONTRÔLE DES DÉPLACEMENTS",
+          "to": "Dossier d'enquête",
+          "subject": "Une annotation vieille d'un mois",
+          "sentAt": "19:14",
+          "body": "Cette annotation date des premières répétitions et la photographie de l'hôtel prouve qu'elle figurait déjà dans la version remise un mois plus tôt.",
+          "altText": "Courriel intitulé Une annotation vieille d'un mois. Cette annotation date des premières répétitions et la photographie de l'hôtel prouve qu'elle figurait déjà dans la version remise un mois plus tôt."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -240,99 +243,99 @@
       {
         "id": "lucien_alibi",
         "suspectId": "lucien",
-        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "question": "Quel est votre dernier souvenir précis avant les faits, Lucien Prado ?",
         "answer": "Il assure avoir dormi dans son hôtel après 22h. Courtois, théâtral, transforme chaque réponse en anecdote.",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "lucien_relation",
         "suspectId": "lucien",
-        "question": "Qu'est-ce que Noémi Sorel risquait de changer pour vous ?",
+        "question": "Aviez-vous une raison de redouter la décision de Noémi, Lucien Prado ?",
         "answer": "Auteur du concerto et ancien compagnon de Noémi. Il refusait les coupures imposées par Noémi.",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "maelle_alibi",
         "suspectId": "maelle",
-        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "question": "Votre version comporte-t-elle un moment sans témoin, Maëlle Coste ?",
         "answer": "Elle dit avoir lancé la synchronisation à 21h puis fermé son ordinateur. Calme, parle bas, connaît chaque version du fichier.",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
         "id": "maelle_relation",
         "suspectId": "maelle",
-        "question": "Qu'est-ce que Noémi Sorel risquait de changer pour vous ?",
+        "question": "Que taisiez-vous sur votre relation avec Noémi, Maëlle Coste ?",
         "answer": "Elle prépare et synchronise toutes les partitions. Son contrat temporaire devait prendre fin après la création.",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "ruben_alibi",
         "suspectId": "ruben",
-        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "question": "Quand avez-vous vu Noémi pour la dernière fois, Ruben Keller ?",
         "answer": "Il répétait un trait chez lui en appel vidéo avec une collègue. Sec, discipliné, ne répond qu'aux faits musicaux.",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "ruben_relation",
         "suspectId": "ruben",
-        "question": "Qu'est-ce que Noémi Sorel risquait de changer pour vous ?",
+        "question": "Quel désaccord vous opposait à Noémi, Ruben Keller ?",
         "answer": "Il contestait ouvertement la direction de Noémi. Il avait demandé le report du concert.",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "maelle_confrontation",
         "suspectId": "maelle",
-        "question": "Votre heure ne correspond pas au registre. Pourquoi ?",
-        "answer": "« Le registre se trompe parfois. Cela ne prouve pas que j'ai fait ce qu'on me reproche. »",
+        "question": "Votre alibi s'arrête précisément ici. Que s'est-il passé ensuite ?",
+        "answer": "« Le registre montre mon accès, pas ce que j'ai fait ensuite. Vous confondez présence et culpabilité. »",
         "unlockedByClueId": "registre",
-        "beat": "La personne conteste l'outil, sans expliquer sa propre trace."
+        "beat": "La réponse réduit l'alibi à une version non vérifiée."
       },
       {
         "id": "maelle_mobile",
         "suspectId": "maelle",
-        "question": "Ce document vous donnait-il une raison d'agir ?",
-        "answer": "« Vous appelez cela un mobile parce que vous connaissez déjà la fin. Sur le moment, je cherchais seulement une issue. »",
+        "question": "Depuis quand connaissiez-vous cette décision ?",
+        "answer": "« Je connaissais cette décision depuis peu. J'espérais encore pouvoir la faire changer. »",
         "unlockedByClueId": "mobile",
-        "beat": "La raison d'agir est reconnue à demi-mot."
+        "beat": "La menace n'est plus abstraite pour cette personne."
       },
       {
         "id": "ruben_detail",
         "suspectId": "ruben",
-        "question": "Pourquoi cette pièce vous désigne-t-elle ?",
-        "answer": "« Elle est vraie, mais votre conclusion ne l'est pas. Cherchez ce qui s'est passé après. »",
+        "question": "À quel moment cet élément a-t-il changé de sens ?",
+        "answer": "« Vous avez le bon élément et la mauvaise chronologie. C'est précisément ce qui vous égare. »",
         "unlockedByClueId": "fausse_piste",
-        "beat": "La pièce cache une chronologie plus complète."
+        "beat": "Le recoupement suivant peut innocenter ou condamner."
       }
     ],
     "timeline": [
       {
         "time": "19:14",
-        "text": "Noémi Sorel est vu pour la dernière fois avant l'incident.",
-        "source": "Témoignages concordants",
+        "text": "Dernière apparition confirmée de Noémi Sorel.",
+        "source": "Recoupement des témoignages",
         "certainty": "CERTAIN"
       },
       {
         "time": "19:26",
-        "text": "Le document révélant le mobile est créé ou consulté.",
-        "source": "Métadonnées",
+        "text": "Un courriel brouillon propose à la direction un contrat permanent pour gérer la crise numérique qu'elle disait prévoir.",
+        "source": "DOCUMENT DE LA VICTIME",
         "certainty": "CERTAIN"
       },
       {
         "time": "19:39",
-        "text": "Maëlle Coste affirme ne plus pouvoir intervenir.",
-        "source": "Déclaration",
+        "text": "Maëlle Coste situe ici la fin de ses déplacements.",
+        "source": "Déposition",
         "certainty": "REPORTED"
       },
       {
         "time": "19:52",
-        "text": "Une activité technique contredit cette version.",
-        "source": "Registre",
+        "text": "Le journal de synchronisation montre une seconde session signée Maëlle à 23h17.",
+        "source": "CONTRÔLE TECHNIQUE",
         "certainty": "CERTAIN"
       },
       {
         "time": "20:00",
-        "text": "L'incident devient visible ou produit ses effets.",
-        "source": "Constat",
+        "text": "Les premiers effets de l'incident sont constatés.",
+        "source": "Constat sur place",
         "certainty": "ESTIMATED"
       }
     ],
@@ -435,24 +438,24 @@
     "correctTimeline": [
       {
         "time": "19:14",
-        "place": "Opéra municipal — Lille",
+        "place": "Opéra municipal, Lille",
         "personIds": [
           "maelle"
         ],
-        "text": "Maëlle Coste comprend que la situation menace directement ses intérêts."
+        "text": "Maëlle Coste comprend que la décision de Noémi Sorel menace directement ses intérêts."
       },
       {
         "time": "19:26",
-        "place": "Opéra municipal — Lille",
+        "place": "Opéra municipal, Lille",
         "personIds": [
           "maelle"
         ],
-        "text": "Le mobile se cristallise : provoquer l'échec de la générale pour rendre son poste indispensable."
+        "text": "Un courriel brouillon propose à la direction un contrat permanent pour gérer la crise numérique qu'elle disait prévoir."
       },
       {
         "time": "19:52",
         "endTime": "19:57",
-        "place": "Opéra municipal — Lille",
+        "place": "Opéra municipal, Lille",
         "personIds": [
           "maelle"
         ],
@@ -460,36 +463,37 @@
       },
       {
         "time": "20:00",
-        "place": "Opéra municipal — Lille",
+        "place": "Opéra municipal, Lille",
         "personIds": [
           "maelle"
         ],
-        "text": "La personne remet les lieux en ordre et s'appuie sur son alibi préparé."
+        "text": "Après les faits, Maëlle Coste s'appuie sur l'alibi que le relevé finira par contredire."
       }
     ],
     "reasoning": [
-      "Le registre contredit l'heure donnée par Maëlle Coste : Le journal de synchronisation montre une seconde session signée Maëlle à 23h17.",
-      "La trace matérielle ne prouve pas seulement une présence; elle décrit la méthode : Les pages blanches ont été remplacées avec le papier filigrané stocké uniquement dans son bureau.",
-      "Le document confidentiel fournit un mobile précis : Un courriel brouillon propose à la direction un contrat permanent pour gérer la crise numérique qu'elle disait prévoir.",
-      "Lucien Prado est écarté par une preuve indépendante, tandis que l'élément visant Ruben Keller est expliqué par le recoupement final.",
-      "La seule personne réunissant présence, moyen et mobile est Maëlle Coste."
+      "Le journal de synchronisation montre une seconde session signée Maëlle à 23h17. Cette donnée fragilise directement la version de Maëlle Coste.",
+      "Les pages blanches ont été remplacées avec le papier filigrané stocké uniquement dans son bureau. La trace relie le geste au procédé employé.",
+      "Un courriel brouillon propose à la direction un contrat permanent pour gérer la crise numérique qu'elle disait prévoir. Le mobile repose donc sur un fait vérifiable.",
+      "L'appel vidéo de Ruben conserve le son continu de son violon durant toute la modification du serveur. De son côté, la principale autre piste ne résiste pas au recoupement.",
+      "La chambre de Lucien contient une version de la partition où la mesure 214 est barrée en rouge. L'élément paraît accusateur, mais il change de sens avec la dernière pièce : cette annotation date des premières répétitions et la photographie de l'hôtel prouve qu'elle figurait déjà dans la version remise un mois plus tôt.",
+      "Présence, moyen et intérêt convergent vers Maëlle Coste."
     ],
-    "explanation": "Maëlle a exploité son rôle invisible : elle a planifié la diffusion d'un fichier incomplet, puis remplacé les quatre pages du classeur de secours. Elle voulait fabriquer la catastrophe qu'elle seule saurait réparer et forcer l'Opéra à la garder. Le mobile était de provoquer l'échec de la générale pour rendre son poste indispensable. La méthode consistait à programmer une version corrompue puis altérer la copie papier correspondante. La fausse piste contre Ruben Keller paraît forte isolément, mais cette annotation date des premières répétitions et la photographie de l'hôtel prouve qu'elle figurait déjà dans la version remise un mois plus tôt. Ainsi, les preuves convergent sans supposer d'information extérieure au dossier.",
+    "explanation": "Maëlle a exploité son rôle invisible : elle a planifié la diffusion d'un fichier incomplet, puis remplacé les quatre pages du classeur de secours. Elle voulait fabriquer la catastrophe qu'elle seule saurait réparer et forcer l'Opéra à la garder. Ce qui pousse Maëlle Coste à agir devient clair : provoquer l'échec de la générale pour rendre son poste indispensable. Concrètement, il fallait programmer une version corrompue puis altérer la copie papier correspondante. Cette annotation date des premières répétitions et la photographie de l'hôtel prouve qu'elle figurait déjà dans la version remise un mois plus tôt. Une fois ce point vérifié, toutes les pièces s'accordent.",
     "proofChains": [
       {
-        "title": "La chaîne du geste",
+        "title": "Ce qui trahit Maëlle Coste",
         "steps": [
           "Le journal de synchronisation montre une seconde session signée Maëlle à 23h17.",
           "Les pages blanches ont été remplacées avec le papier filigrané stocké uniquement dans son bureau.",
-          "Ces deux pièces relient matériellement Maëlle Coste à l'action."
+          "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]
       },
       {
-        "title": "La chaîne de l'intention",
+        "title": "Le mobile et les innocents",
         "steps": [
           "Un courriel brouillon propose à la direction un contrat permanent pour gérer la crise numérique qu'elle disait prévoir.",
           "L'appel vidéo de Ruben conserve le son continu de son violon durant toute la modification du serveur.",
-          "Le mobile devient exclusif une fois les alibis recoupés."
+          "Cette annotation date des premières répétitions et la photographie de l'hôtel prouve qu'elle figurait déjà dans la version remise un mois plus tôt."
         ]
       }
     ]

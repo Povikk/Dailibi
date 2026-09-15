@@ -15,7 +15,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "case:new": "tsx scripts/new-case.ts",
-    "case:generate": "tsx scripts/generate-case-collection.ts",
+    "case:generate": "tsx scripts/generate-case-collection.ts && tsx scripts/editorial-pass.ts",
     "case:validate": "tsx scripts/validate-cases.ts",
     "case:cliche": "tsx scripts/cliche-check.ts"
   },

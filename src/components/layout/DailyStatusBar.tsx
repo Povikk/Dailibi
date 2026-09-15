@@ -41,12 +41,20 @@ export function DailyStatusBar() {
           </span>
         </p>
 
-        <Link
-          href="/historique"
-          className="text-[10px] font-semibold uppercase tracking-[0.13em] text-paper-300/60 transition-colors hover:text-paper-100"
-        >
-          Historique
-        </Link>
+        <nav aria-label="Navigation principale" className="flex items-center gap-3 sm:gap-5">
+          <Link
+            href="/archives"
+            className="text-[10px] font-semibold uppercase tracking-[0.1em] text-paper-100 transition-colors hover:text-kraft-300 sm:tracking-[0.13em]"
+          >
+            Archives
+          </Link>
+          <Link
+            href="/historique"
+            className="hidden text-[10px] font-semibold uppercase tracking-[0.13em] text-paper-300/60 transition-colors hover:text-paper-100 sm:inline"
+          >
+            Historique
+          </Link>
+        </nav>
       </div>
     </aside>
   );

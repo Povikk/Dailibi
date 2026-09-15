@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 
 import type { AccuseResult, ClientCase } from "@/types/case";
 import { ResultPanel } from "@/components/case/ResultPanel";
+import { currentDailyKey } from "@/lib/daily";
 
 export function AccusationPanel({
   caseData,
@@ -25,6 +26,7 @@ export function AccusationPanel({
     [caseData.accusation.questions],
   );
   const complete = required.every((q) => answers[q.id]);
+  const isArchive = caseData.date !== currentDailyKey();
 
   if (result) {
     return (
@@ -66,7 +68,9 @@ export function AccusationPanel({
         <p className="label-meta">Une seule accusation</p>
         <h1 className="mt-2 text-xl font-black tracking-tight sm:text-2xl">RÉSOUDRE L&apos;AFFAIRE</h1>
         <p className="mt-2 text-sm text-paper-300/80">
-          Vous ne pourrez envoyer qu&apos;une seule réponse. Vérifiez avant de valider.
+          {isArchive
+            ? "Vous ne pourrez envoyer qu’une seule réponse. Cette archive ne modifiera pas vos statistiques."
+            : "Vous ne pourrez envoyer qu’une seule réponse. Vérifiez avant de valider."}
         </p>
       </header>
 
@@ -135,7 +139,9 @@ export function AccusationPanel({
           <div className="card border-accent/60 p-5">
             <p className="text-sm font-semibold">Confirmer définitivement cette accusation ?</p>
             <p className="mt-1 text-xs text-paper-300/70">
-              Le résultat sera enregistré pour l&apos;affaire du jour.
+              {isArchive
+                ? "Le dossier sera marqué comme consulté, sans modifier vos statistiques."
+                : "Le résultat sera enregistré pour l’affaire du jour."}
             </p>
             <div className="mt-4 flex flex-col gap-2 sm:flex-row">
               <button type="button" className="btn-primary flex-1" disabled={submitting} onClick={submit}>

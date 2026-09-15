@@ -54,8 +54,8 @@ export function DailyCaseStatus({ date, href }: { date: string; href: string }) 
         </div>
 
         <div className="flex flex-col gap-3 sm:flex-row">
-          <Link href={href} className="btn-ghost">
-            Revoir le dossier
+          <Link href={`${href}?review=1`} className="btn-ghost">
+            Voir les réponses
           </Link>
           <Link href="/historique" className="btn-ghost">
             Mon historique

@@ -17,20 +17,23 @@ export function ResultPanel({
   caseData,
   result,
   seconds,
+  reviewOnly = false,
 }: {
   caseData: ClientCase;
   result: AccuseResult;
   seconds: number;
+  reviewOnly?: boolean;
 }) {
   const [copied, setCopied] = useState(false);
   const [nextCase, setNextCase] = useState<{ remaining: number; available: boolean } | null>(null);
-  const [isDailyResult] = useState(() => caseData.date === currentDailyKey());
+  const [isDailyResult] = useState(() => !reviewOnly && caseData.date === currentDailyKey());
   const [streak, setStreak] = useState<{ currentStreak: number; bestStreak: number }>({
     currentStreak: 0,
     bestStreak: 0,
   });
 
   useEffect(() => {
+    if (reviewOnly) return;
     const who = perKind("suspect");
     const why = perKind("motive");
     const how = perKind("method");
@@ -46,7 +49,7 @@ export function ResultPanel({
     });
     setStreak(stored.streak);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [reviewOnly]);
 
   useEffect(() => {
     if (!isDailyResult) return;
@@ -137,7 +140,7 @@ export function ResultPanel({
         </ul>
       </header>
 
-      {streak.currentStreak > 0 ? (
+      {isDailyResult && streak.currentStreak > 0 ? (
         <p className="mt-4 text-center text-sm text-paper-300/70">
           Série en cours : <span className="font-bold text-paper-50">{streak.currentStreak} jour{streak.currentStreak > 1 ? "s" : ""}</span>
           {" · "}meilleure série : {streak.bestStreak}

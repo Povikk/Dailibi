@@ -4,8 +4,8 @@
     "number": 1,
     "date": "2026-09-01",
     "title": "L'HEURE BLEUE",
-    "subtitle": "À l'ouverture du musée, le tableau est toujours là — mais ce n'est plus le même.",
-    "location": "Musée des Beaux-Arts — Rouen",
+    "subtitle": "À l'ouverture du musée, le tableau est toujours là, mais ce n'est plus le même.",
+    "location": "Musée des Beaux-Arts, Rouen",
     "incident": "Substitution d'un tableau restauré par une copie",
     "intro": "À 7h40, Agnès Villon retire la toile de sa réserve climatique et remarque une craquelure qui n'existait pas. Le cadre, les scellés et l'alarme sont intacts. Trois personnes ont travaillé dans l'aile fermée la veille.",
     "victim": {
@@ -56,19 +56,19 @@
     "clues": [
       {
         "id": "registre",
-        "title": "L'alibi qui se fissure",
-        "source": "JOURNAL TECHNIQUE",
+        "title": "Le badge après la fermeture",
+        "source": "JOURNAL D'ACCÈS",
         "summary": "Le capteur hygrométrique de l'atelier enregistre une ouverture à 20h26 avec le badge d'Iris, bien après son départ déclaré.",
         "evidence": {
           "kind": "schedule",
-          "title": "JOURNAL TECHNIQUE",
+          "title": "JOURNAL D'ACCÈS",
           "rows": [
             {
               "time": "19:45",
               "label": "Le capteur hygrométrique de l'atelier enregistre une ouverture à 20h26 avec le badge d'Iris, bien après son départ déclaré."
             }
           ],
-          "altText": "JOURNAL TECHNIQUE à 19:45 : Le capteur hygrométrique de l'atelier enregistre une ouverture à 20h26 avec le badge d'Iris, bien après son départ déclaré."
+          "altText": "JOURNAL D'ACCÈS, 19:45. Le capteur hygrométrique de l'atelier enregistre une ouverture à 20h26 avec le badge d'Iris, bien après son départ déclaré."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -91,23 +91,23 @@
       },
       {
         "id": "trace",
-        "title": "La trace qui ne devait pas rester",
-        "source": "ANALYSE MATÉRIELLE",
+        "title": "Du bleu dans la cire",
+        "source": "CONSTAT PHOTOGRAPHIQUE",
         "summary": "La cire des scellés contient le pigment bleu de Prusse réservé au poste de restauration d'Iris.",
         "evidence": {
           "kind": "photo",
           "caption": "La cire des scellés contient le pigment bleu de Prusse réservé au poste de restauration d'Iris.",
           "meta": [
             {
-              "label": "HEURE",
-              "value": "19:50"
+              "label": "Heure",
+              "value": "19:19"
             },
             {
-              "label": "STATUT",
-              "value": "Pièce analysée"
+              "label": "Pièce",
+              "value": "Du bleu dans la cire"
             }
           ],
-          "altText": "Photographie d'analyse : La cire des scellés contient le pigment bleu de Prusse réservé au poste de restauration d'Iris.",
+          "altText": "Photographie. La cire des scellés contient le pigment bleu de Prusse réservé au poste de restauration d'Iris.",
           "tone": "cold"
         },
         "analysis": {
@@ -127,17 +127,17 @@
       },
       {
         "id": "mobile",
-        "title": "Ce que la victime allait révéler",
-        "source": "DOCUMENT CONFIDENTIEL",
+        "title": "Un marché sans catalogue",
+        "source": "NOTE PERSONNELLE",
         "summary": "Un brouillon de contrat promet à Iris un paiement immédiat pour une toile non répertoriée aux dimensions exactes de L'Heure bleue.",
         "evidence": {
           "kind": "email",
-          "from": "Dossier de la victime",
-          "to": "Archives de l'enquête",
-          "subject": "Ce que la victime allait révéler",
-          "sentAt": "19:19",
+          "from": "NOTE PERSONNELLE",
+          "to": "Dossier d'enquête",
+          "subject": "Un marché sans catalogue",
+          "sentAt": "19:32",
           "body": "Un brouillon de contrat promet à Iris un paiement immédiat pour une toile non répertoriée aux dimensions exactes de L'Heure bleue.",
-          "altText": "Document confidentiel : Un brouillon de contrat promet à Iris un paiement immédiat pour une toile non répertoriée aux dimensions exactes de L'Heure bleue."
+          "altText": "Courriel intitulé Un marché sans catalogue. Un brouillon de contrat promet à Iris un paiement immédiat pour une toile non répertoriée aux dimensions exactes de L'Heure bleue."
         },
         "analysis": {
           "category": "BEHAVIORAL",
@@ -156,19 +156,19 @@
       },
       {
         "id": "alibi_a",
-        "title": "La preuve de Mathieu Orsini",
-        "source": "VÉRIFICATION D'ALIBI",
+        "title": "Le monte-charge ne s'arrête pas",
+        "source": "ALIBI VÉRIFIÉ",
         "summary": "La caméra du monte-charge place Mathieu au sous-sol sans interruption pendant la fenêtre de substitution.",
         "evidence": {
           "kind": "camera",
-          "location": "VÉRIFICATION D'ALIBI",
+          "location": "ALIBI VÉRIFIÉ",
           "frames": [
             {
               "time": "19:38",
               "text": "La caméra du monte-charge place Mathieu au sous-sol sans interruption pendant la fenêtre de substitution."
             }
           ],
-          "altText": "Relevé de vérification à 19:38 : La caméra du monte-charge place Mathieu au sous-sol sans interruption pendant la fenêtre de substitution."
+          "altText": "Image enregistrée à 19:38. La caméra du monte-charge place Mathieu au sous-sol sans interruption pendant la fenêtre de substitution."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -185,13 +185,14 @@
       },
       {
         "id": "fausse_piste",
-        "title": "Le détail contre Salomé Varenne",
-        "source": "PIÈCE SAISIE",
+        "title": "Une note sur l'attribution",
+        "source": "ÉLÉMENT À CHARGE",
         "summary": "Le carnet de Salomé contient une page intitulée « prouver que le tableau est faux ».",
         "evidence": {
-          "kind": "note",
+          "kind": "handwriting",
           "body": "Le carnet de Salomé contient une page intitulée « prouver que le tableau est faux ».",
-          "altText": "Note saisie constituant une fausse piste : Le carnet de Salomé contient une page intitulée « prouver que le tableau est faux »."
+          "signature": "Mathieu Orsini",
+          "altText": "Note manuscrite. Le carnet de Salomé contient une page intitulée « prouver que le tableau est faux »."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -210,17 +211,17 @@
       },
       {
         "id": "resolution",
-        "title": "Ce que la fausse piste oublie",
-        "source": "RECOUPEMENT",
+        "title": "Le dernier cliché de Salomé",
+        "source": "ENREGISTREMENT TÉMOIN",
         "summary": "Ses clichés horodatés montrent qu'elle étudiait une restauration ancienne, et capturent encore l'original après sa dernière manipulation.",
         "evidence": {
           "kind": "document",
-          "title": "RECOUPEMENT",
-          "subtitle": "Pièce enregistrée à 19:53",
+          "title": "Le dernier cliché de Salomé",
+          "subtitle": "ENREGISTREMENT TÉMOIN",
           "paragraphs": [
             "Ses clichés horodatés montrent qu'elle étudiait une restauration ancienne, et capturent encore l'original après sa dernière manipulation."
           ],
-          "altText": "RECOUPEMENT : Ses clichés horodatés montrent qu'elle étudiait une restauration ancienne, et capturent encore l'original après sa dernière manipulation."
+          "altText": "Document intitulé Le dernier cliché de Salomé. Ses clichés horodatés montrent qu'elle étudiait une restauration ancienne, et capturent encore l'original après sa dernière manipulation."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -240,99 +241,99 @@
       {
         "id": "iris_alibi",
         "suspectId": "iris",
-        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "question": "Qui peut confirmer votre emploi du temps, Iris Meunier ?",
         "answer": "Elle dit avoir quitté l'atelier à 19h10 après avoir posé les scellés. Précise, presque tendre lorsqu'elle parle des pigments.",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
         "id": "iris_relation",
         "suspectId": "iris",
-        "question": "Qu'est-ce que Agnès Villon risquait de changer pour vous ?",
+        "question": "Qu'est-ce que cette affaire pouvait changer pour vous, Iris Meunier ?",
         "answer": "Elle a passé quatre mois sur la toile. Sa demande de crédit vient d'être refusée.",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "mathieu_alibi",
         "suspectId": "mathieu",
-        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "question": "Quel est votre dernier souvenir précis avant les faits, Mathieu Orsini ?",
         "answer": "Il affirme avoir inventorié les cadres au sous-sol jusqu'à 20h. Méthodique, vexé qu'on questionne ses procédures.",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "mathieu_relation",
         "suspectId": "mathieu",
-        "question": "Qu'est-ce que Agnès Villon risquait de changer pour vous ?",
+        "question": "Pourquoi votre nom apparaît-il dans le dossier d'Agnès, Mathieu Orsini ?",
         "answer": "Il contrôle les clés et les transports d'œuvres. Il conteste depuis des mois le budget de restauration.",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "salome_alibi",
         "suspectId": "salome",
-        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "question": "Votre version comporte-t-elle un moment sans témoin, Salomé Varenne ?",
         "answer": "Elle travaillait à la bibliothèque, visible du gardien. Enthousiaste, digressive, excellente mémoire visuelle.",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "salome_relation",
         "suspectId": "salome",
-        "question": "Qu'est-ce que Agnès Villon risquait de changer pour vous ?",
+        "question": "Aviez-vous une raison de redouter la décision d'Agnès, Salomé Varenne ?",
         "answer": "Elle prépare le catalogue raisonné du peintre. Elle avait publiquement douté de l'attribution du tableau.",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "iris_confrontation",
         "suspectId": "iris",
-        "question": "Votre heure ne correspond pas au registre. Pourquoi ?",
-        "answer": "« Le registre se trompe parfois. Cela ne prouve pas que j'ai fait ce qu'on me reproche. »",
+        "question": "Le relevé vous place sur les lieux. Pourquoi l'avoir omis ?",
+        "answer": "« J'ai omis ce passage parce qu'il me mettait dans une mauvaise position. Ce n'est pas un aveu. »",
         "unlockedByClueId": "registre",
-        "beat": "La personne conteste l'outil, sans expliquer sa propre trace."
+        "beat": "La présence devient certaine. Le geste reste à prouver."
       },
       {
         "id": "iris_mobile",
         "suspectId": "iris",
-        "question": "Ce document vous donnait-il une raison d'agir ?",
-        "answer": "« Vous appelez cela un mobile parce que vous connaissez déjà la fin. Sur le moment, je cherchais seulement une issue. »",
+        "question": "Qu'auriez-vous perdu si ce projet avait abouti ?",
+        "answer": "« J'avais beaucoup à perdre. Je cherchais une solution, pas un coupable à fabriquer. »",
         "unlockedByClueId": "mobile",
-        "beat": "La raison d'agir est reconnue à demi-mot."
+        "beat": "Le document donne un poids concret au mobile."
       },
       {
         "id": "salome_detail",
         "suspectId": "salome",
-        "question": "Pourquoi cette pièce vous désigne-t-elle ?",
-        "answer": "« Elle est vraie, mais votre conclusion ne l'est pas. Cherchez ce qui s'est passé après. »",
+        "question": "Pourquoi retrouve-t-on cet objet parmi vos affaires ?",
+        "answer": "« Cet objet m'appartient. Il ne se trouvait pourtant pas là au moment que vous imaginez. »",
         "unlockedByClueId": "fausse_piste",
-        "beat": "La pièce cache une chronologie plus complète."
+        "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       }
     ],
     "timeline": [
       {
         "time": "19:07",
-        "text": "Agnès Villon est vu pour la dernière fois avant l'incident.",
-        "source": "Témoignages concordants",
+        "text": "Dernière apparition confirmée d'Agnès Villon.",
+        "source": "Recoupement des témoignages",
         "certainty": "CERTAIN"
       },
       {
         "time": "19:19",
-        "text": "Le document révélant le mobile est créé ou consulté.",
-        "source": "Métadonnées",
+        "text": "Un brouillon de contrat promet à Iris un paiement immédiat pour une toile non répertoriée aux dimensions exactes de L'Heure bleue.",
+        "source": "NOTE PERSONNELLE",
         "certainty": "CERTAIN"
       },
       {
         "time": "19:32",
-        "text": "Iris Meunier affirme ne plus pouvoir intervenir.",
-        "source": "Déclaration",
+        "text": "Iris Meunier situe ici la fin de ses déplacements.",
+        "source": "Déposition",
         "certainty": "REPORTED"
       },
       {
         "time": "19:45",
-        "text": "Une activité technique contredit cette version.",
-        "source": "Registre",
+        "text": "Le capteur hygrométrique de l'atelier enregistre une ouverture à 20h26 avec le badge d'Iris, bien après son départ déclaré.",
+        "source": "JOURNAL D'ACCÈS",
         "certainty": "CERTAIN"
       },
       {
         "time": "19:53",
-        "text": "L'incident devient visible ou produit ses effets.",
-        "source": "Constat",
+        "text": "Les premiers effets de l'incident sont constatés.",
+        "source": "Constat sur place",
         "certainty": "ESTIMATED"
       }
     ],
@@ -435,24 +436,24 @@
     "correctTimeline": [
       {
         "time": "19:07",
-        "place": "Musée des Beaux-Arts — Rouen",
+        "place": "Musée des Beaux-Arts, Rouen",
         "personIds": [
           "iris"
         ],
-        "text": "Iris Meunier comprend que la situation menace directement ses intérêts."
+        "text": "Iris Meunier comprend que la décision d'Agnès Villon menace directement ses intérêts."
       },
       {
         "time": "19:19",
-        "place": "Musée des Beaux-Arts — Rouen",
+        "place": "Musée des Beaux-Arts, Rouen",
         "personIds": [
           "iris"
         ],
-        "text": "Le mobile se cristallise : vendre l'original pour empêcher la saisie de son atelier."
+        "text": "Un brouillon de contrat promet à Iris un paiement immédiat pour une toile non répertoriée aux dimensions exactes de L'Heure bleue."
       },
       {
         "time": "19:45",
         "endTime": "19:50",
-        "place": "Musée des Beaux-Arts — Rouen",
+        "place": "Musée des Beaux-Arts, Rouen",
         "personIds": [
           "iris"
         ],
@@ -460,36 +461,37 @@
       },
       {
         "time": "19:53",
-        "place": "Musée des Beaux-Arts — Rouen",
+        "place": "Musée des Beaux-Arts, Rouen",
         "personIds": [
           "iris"
         ],
-        "text": "La personne remet les lieux en ordre et s'appuie sur son alibi préparé."
+        "text": "Après les faits, Iris Meunier s'appuie sur l'alibi que le relevé finira par contredire."
       }
     ],
     "reasoning": [
-      "Le registre contredit l'heure donnée par Iris Meunier : Le capteur hygrométrique de l'atelier enregistre une ouverture à 20h26 avec le badge d'Iris, bien après son départ déclaré.",
-      "La trace matérielle ne prouve pas seulement une présence; elle décrit la méthode : La cire des scellés contient le pigment bleu de Prusse réservé au poste de restauration d'Iris.",
-      "Le document confidentiel fournit un mobile précis : Un brouillon de contrat promet à Iris un paiement immédiat pour une toile non répertoriée aux dimensions exactes de L'Heure bleue.",
-      "Mathieu Orsini est écarté par une preuve indépendante, tandis que l'élément visant Salomé Varenne est expliqué par le recoupement final.",
-      "La seule personne réunissant présence, moyen et mobile est Iris Meunier."
+      "Le capteur hygrométrique de l'atelier enregistre une ouverture à 20h26 avec le badge d'Iris, bien après son départ déclaré. Cette donnée fragilise directement la version d'Iris Meunier.",
+      "La cire des scellés contient le pigment bleu de Prusse réservé au poste de restauration d'Iris. La trace relie le geste au procédé employé.",
+      "Un brouillon de contrat promet à Iris un paiement immédiat pour une toile non répertoriée aux dimensions exactes de L'Heure bleue. Le mobile repose donc sur un fait vérifiable.",
+      "La caméra du monte-charge place Mathieu au sous-sol sans interruption pendant la fenêtre de substitution. De son côté, la principale autre piste ne résiste pas au recoupement.",
+      "Le carnet de Salomé contient une page intitulée « prouver que le tableau est faux ». L'élément paraît accusateur, mais il change de sens avec la dernière pièce : ses clichés horodatés montrent qu'elle étudiait une restauration ancienne, et capturent encore l'original après sa dernière manipulation.",
+      "Présence, moyen et intérêt convergent vers Iris Meunier."
     ],
-    "explanation": "Iris avait peint une copie couche après couche pendant la restauration. Elle a attendu le départ de tous, rouvert l'atelier avec son badge, transféré l'original dans un rouleau de toile neutre puis refait les scellés avec une cire contaminée par son propre pigment. Le mobile était de vendre l'original pour empêcher la saisie de son atelier. La méthode consistait à remplacer la toile dans son cadre avant de poser de faux scellés. La fausse piste contre Salomé Varenne paraît forte isolément, mais ses clichés horodatés montrent qu'elle étudiait une restauration ancienne, et capturent encore l'original après sa dernière manipulation. Ainsi, les preuves convergent sans supposer d'information extérieure au dossier.",
+    "explanation": "Iris avait peint une copie couche après couche pendant la restauration. Elle a attendu le départ de tous, rouvert l'atelier avec son badge, transféré l'original dans un rouleau de toile neutre puis refait les scellés avec une cire contaminée par son propre pigment. Son but apparaît alors clairement : vendre l'original pour empêcher la saisie de son atelier. La méthode reposait sur une idée précise : remplacer la toile dans son cadre avant de poser de faux scellés. Ses clichés horodatés montrent qu'elle étudiait une restauration ancienne, et capturent encore l'original après sa dernière manipulation. L'autre suspect n'est donc plus une explication possible.",
     "proofChains": [
       {
-        "title": "La chaîne du geste",
+        "title": "Ce qui trahit Iris Meunier",
         "steps": [
           "Le capteur hygrométrique de l'atelier enregistre une ouverture à 20h26 avec le badge d'Iris, bien après son départ déclaré.",
           "La cire des scellés contient le pigment bleu de Prusse réservé au poste de restauration d'Iris.",
-          "Ces deux pièces relient matériellement Iris Meunier à l'action."
+          "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]
       },
       {
-        "title": "La chaîne de l'intention",
+        "title": "Le mobile et les innocents",
         "steps": [
           "Un brouillon de contrat promet à Iris un paiement immédiat pour une toile non répertoriée aux dimensions exactes de L'Heure bleue.",
           "La caméra du monte-charge place Mathieu au sous-sol sans interruption pendant la fenêtre de substitution.",
-          "Le mobile devient exclusif une fois les alibis recoupés."
+          "Ses clichés horodatés montrent qu'elle étudiait une restauration ancienne, et capturent encore l'original après sa dernière manipulation."
         ]
       }
     ]

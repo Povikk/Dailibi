@@ -4,8 +4,8 @@
     "number": 26,
     "date": "2026-09-26",
     "title": "LA ROBE OUBLIÉE",
-    "subtitle": "La robe originale est volée avant l'exposition; sa doublure continue pourtant de raconter qui l'a portée.",
-    "location": "Atelier de haute couture — Paris",
+    "subtitle": "La robe originale est volée avant l'exposition. Sa doublure continue pourtant de raconter qui l'a portée.",
+    "location": "Atelier de haute couture, Paris",
     "incident": "Substitution d'une robe historique",
     "intro": "Au déballage, la robe de 1984 semble parfaite. Iseult remarque pourtant que la doublure ne porte plus une reprise cousue la nuit du concours. La caisse et ses scellés sont intacts.",
     "victim": {
@@ -56,19 +56,19 @@
     "clues": [
       {
         "id": "registre",
-        "title": "L'alibi qui se fissure",
-        "source": "JOURNAL TECHNIQUE",
+        "title": "La caisse ouverte en atelier",
+        "source": "CONTRÔLE TECHNIQUE",
         "summary": "Le traceur censé rester dans la caisse se déplace jusqu'au coffre privé de Mona après le dîner.",
         "evidence": {
           "kind": "schedule",
-          "title": "JOURNAL TECHNIQUE",
+          "title": "CONTRÔLE TECHNIQUE",
           "rows": [
             {
               "time": "19:40",
               "label": "Le traceur censé rester dans la caisse se déplace jusqu'au coffre privé de Mona après le dîner."
             }
           ],
-          "altText": "JOURNAL TECHNIQUE à 19:40 : Le traceur censé rester dans la caisse se déplace jusqu'au coffre privé de Mona après le dîner."
+          "altText": "CONTRÔLE TECHNIQUE, 19:40. Le traceur censé rester dans la caisse se déplace jusqu'au coffre privé de Mona après le dîner."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -91,23 +91,23 @@
       },
       {
         "id": "trace",
-        "title": "La trace qui ne devait pas rester",
-        "source": "ANALYSE MATÉRIELLE",
+        "title": "Le fil de la copie",
+        "source": "RAPPORT TECHNIQUE",
         "summary": "La copie utilise un fil moderne commandé sur le compte personnel de Mona sous un faux projet.",
         "evidence": {
           "kind": "photo",
           "caption": "La copie utilise un fil moderne commandé sur le compte personnel de Mona sous un faux projet.",
           "meta": [
             {
-              "label": "HEURE",
-              "value": "19:45"
+              "label": "Heure",
+              "value": "19:14"
             },
             {
-              "label": "STATUT",
-              "value": "Pièce analysée"
+              "label": "Pièce",
+              "value": "Le fil de la copie"
             }
           ],
-          "altText": "Photographie d'analyse : La copie utilise un fil moderne commandé sur le compte personnel de Mona sous un faux projet.",
+          "altText": "Photographie. La copie utilise un fil moderne commandé sur le compte personnel de Mona sous un faux projet.",
           "tone": "cold"
         },
         "analysis": {
@@ -127,17 +127,17 @@
       },
       {
         "id": "mobile",
-        "title": "Ce que la victime allait révéler",
-        "source": "DOCUMENT CONFIDENTIEL",
+        "title": "La lettre de la créatrice",
+        "source": "DOCUMENT DE LA VICTIME",
         "summary": "Un accord de vente secret couvre exactement les salaires en retard de l'atelier.",
         "evidence": {
           "kind": "email",
-          "from": "Dossier de la victime",
-          "to": "Archives de l'enquête",
-          "subject": "Ce que la victime allait révéler",
-          "sentAt": "19:14",
+          "from": "DOCUMENT DE LA VICTIME",
+          "to": "Dossier d'enquête",
+          "subject": "La lettre de la créatrice",
+          "sentAt": "19:27",
           "body": "Un accord de vente secret couvre exactement les salaires en retard de l'atelier.",
-          "altText": "Document confidentiel : Un accord de vente secret couvre exactement les salaires en retard de l'atelier."
+          "altText": "Courriel intitulé La lettre de la créatrice. Un accord de vente secret couvre exactement les salaires en retard de l'atelier."
         },
         "analysis": {
           "category": "BEHAVIORAL",
@@ -156,19 +156,19 @@
       },
       {
         "id": "alibi_a",
-        "title": "La preuve de Yacine Dupré",
-        "source": "VÉRIFICATION D'ALIBI",
+        "title": "Yacine au défilé",
+        "source": "RECOUPEMENT INDÉPENDANT",
         "summary": "La vidéo de restauration montre Yacine fermer la vraie robe et quitter les lieux avant que Mona ne reprenne la caisse.",
         "evidence": {
           "kind": "camera",
-          "location": "VÉRIFICATION D'ALIBI",
+          "location": "RECOUPEMENT INDÉPENDANT",
           "frames": [
             {
               "time": "19:33",
               "text": "La vidéo de restauration montre Yacine fermer la vraie robe et quitter les lieux avant que Mona ne reprenne la caisse."
             }
           ],
-          "altText": "Relevé de vérification à 19:33 : La vidéo de restauration montre Yacine fermer la vraie robe et quitter les lieux avant que Mona ne reprenne la caisse."
+          "altText": "Image enregistrée à 19:33. La vidéo de restauration montre Yacine fermer la vraie robe et quitter les lieux avant que Mona ne reprenne la caisse."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -185,13 +185,14 @@
       },
       {
         "id": "fausse_piste",
-        "title": "Le détail contre Odette Marin",
-        "source": "PIÈCE SAISIE",
+        "title": "Les ciseaux d'Odette",
+        "source": "OBJET RETROUVÉ",
         "summary": "Odette conserve une lettre d'Iseult disant « cette robe sera toujours à toi ».",
         "evidence": {
-          "kind": "note",
+          "kind": "handwriting",
           "body": "Odette conserve une lettre d'Iseult disant « cette robe sera toujours à toi ».",
-          "altText": "Note saisie constituant une fausse piste : Odette conserve une lettre d'Iseult disant « cette robe sera toujours à toi »."
+          "signature": "Yacine Dupré",
+          "altText": "Note manuscrite. Odette conserve une lettre d'Iseult disant « cette robe sera toujours à toi »."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -210,17 +211,17 @@
       },
       {
         "id": "resolution",
-        "title": "Ce que la fausse piste oublie",
-        "source": "RECOUPEMENT",
+        "title": "La reprise que l'original portait",
+        "source": "CONTRÔLE DES DÉPLACEMENTS",
         "summary": "La formule est affective, non un acte de propriété, et le commissaire confirme sa présence continue à la répétition.",
         "evidence": {
           "kind": "document",
-          "title": "RECOUPEMENT",
-          "subtitle": "Pièce enregistrée à 19:48",
+          "title": "La reprise que l'original portait",
+          "subtitle": "CONTRÔLE DES DÉPLACEMENTS",
           "paragraphs": [
             "La formule est affective, non un acte de propriété, et le commissaire confirme sa présence continue à la répétition."
           ],
-          "altText": "RECOUPEMENT : La formule est affective, non un acte de propriété, et le commissaire confirme sa présence continue à la répétition."
+          "altText": "Document intitulé La reprise que l'original portait. La formule est affective, non un acte de propriété, et le commissaire confirme sa présence continue à la répétition."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -240,99 +241,99 @@
       {
         "id": "mona_alibi",
         "suspectId": "mona",
-        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "question": "Quel est votre dernier souvenir précis avant les faits, Mona Brémont ?",
         "answer": "Elle assistait au dîner des mécènes. Élégante, efficace, parle de chaque pièce comme d'un actif.",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
         "id": "mona_relation",
         "suspectId": "mona",
-        "question": "Qu'est-ce que Iseult Brémont risquait de changer pour vous ?",
+        "question": "Aviez-vous une raison de redouter la décision d'Iseult, Mona Brémont ?",
         "answer": "Nièce d'Iseult, elle gère le patrimoine de la maison. La maison manque de trésorerie.",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "yacine_alibi",
         "suspectId": "yacine",
-        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "question": "Votre version comporte-t-elle un moment sans témoin, Yacine Dupré ?",
         "answer": "Il dit avoir refermé la caisse à 18h. Délicat, passionné par les coutures invisibles.",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "yacine_relation",
         "suspectId": "yacine",
-        "question": "Qu'est-ce que Iseult Brémont risquait de changer pour vous ?",
+        "question": "Que taisiez-vous sur votre relation avec Iseult, Yacine Dupré ?",
         "answer": "Il a restauré la robe avant emballage. Il possède les patrons complets de la robe.",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "odette_alibi",
         "suspectId": "odette",
-        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "question": "Quand avez-vous vu Iseult pour la dernière fois, Odette Marin ?",
         "answer": "Elle répétait son discours avec le commissaire. Drôle, nostalgique, refuse d'être traitée en relique.",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "odette_relation",
         "suspectId": "odette",
-        "question": "Qu'est-ce que Iseult Brémont risquait de changer pour vous ?",
+        "question": "Quel désaccord vous opposait à Iseult, Odette Marin ?",
         "answer": "Elle a porté la robe au concours de 1984. Elle affirme que la robe lui avait été promise.",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "mona_confrontation",
         "suspectId": "mona",
-        "question": "Votre heure ne correspond pas au registre. Pourquoi ?",
-        "answer": "« Le registre se trompe parfois. Cela ne prouve pas que j'ai fait ce qu'on me reproche. »",
+        "question": "Votre alibi s'arrête précisément ici. Que s'est-il passé ensuite ?",
+        "answer": "« Le registre montre mon accès, pas ce que j'ai fait ensuite. Vous confondez présence et culpabilité. »",
         "unlockedByClueId": "registre",
-        "beat": "La personne conteste l'outil, sans expliquer sa propre trace."
+        "beat": "La réponse réduit l'alibi à une version non vérifiée."
       },
       {
         "id": "mona_mobile",
         "suspectId": "mona",
-        "question": "Ce document vous donnait-il une raison d'agir ?",
-        "answer": "« Vous appelez cela un mobile parce que vous connaissez déjà la fin. Sur le moment, je cherchais seulement une issue. »",
+        "question": "Depuis quand connaissiez-vous cette décision ?",
+        "answer": "« Je connaissais cette décision depuis peu. J'espérais encore pouvoir la faire changer. »",
         "unlockedByClueId": "mobile",
-        "beat": "La raison d'agir est reconnue à demi-mot."
+        "beat": "La menace n'est plus abstraite pour cette personne."
       },
       {
         "id": "odette_detail",
         "suspectId": "odette",
-        "question": "Pourquoi cette pièce vous désigne-t-elle ?",
-        "answer": "« Elle est vraie, mais votre conclusion ne l'est pas. Cherchez ce qui s'est passé après. »",
+        "question": "À quel moment cet élément a-t-il changé de sens ?",
+        "answer": "« Vous avez le bon élément et la mauvaise chronologie. C'est précisément ce qui vous égare. »",
         "unlockedByClueId": "fausse_piste",
-        "beat": "La pièce cache une chronologie plus complète."
+        "beat": "Le recoupement suivant peut innocenter ou condamner."
       }
     ],
     "timeline": [
       {
         "time": "19:02",
-        "text": "Iseult Brémont est vu pour la dernière fois avant l'incident.",
-        "source": "Témoignages concordants",
+        "text": "Dernière apparition confirmée d'Iseult Brémont.",
+        "source": "Recoupement des témoignages",
         "certainty": "CERTAIN"
       },
       {
         "time": "19:14",
-        "text": "Le document révélant le mobile est créé ou consulté.",
-        "source": "Métadonnées",
+        "text": "Un accord de vente secret couvre exactement les salaires en retard de l'atelier.",
+        "source": "DOCUMENT DE LA VICTIME",
         "certainty": "CERTAIN"
       },
       {
         "time": "19:27",
-        "text": "Mona Brémont affirme ne plus pouvoir intervenir.",
-        "source": "Déclaration",
+        "text": "Mona Brémont situe ici la fin de ses déplacements.",
+        "source": "Déposition",
         "certainty": "REPORTED"
       },
       {
         "time": "19:40",
-        "text": "Une activité technique contredit cette version.",
-        "source": "Registre",
+        "text": "Le traceur censé rester dans la caisse se déplace jusqu'au coffre privé de Mona après le dîner.",
+        "source": "CONTRÔLE TECHNIQUE",
         "certainty": "CERTAIN"
       },
       {
         "time": "19:48",
-        "text": "L'incident devient visible ou produit ses effets.",
-        "source": "Constat",
+        "text": "Les premiers effets de l'incident sont constatés.",
+        "source": "Constat sur place",
         "certainty": "ESTIMATED"
       }
     ],
@@ -435,24 +436,24 @@
     "correctTimeline": [
       {
         "time": "19:02",
-        "place": "Atelier de haute couture — Paris",
+        "place": "Atelier de haute couture, Paris",
         "personIds": [
           "mona"
         ],
-        "text": "Mona Brémont comprend que la situation menace directement ses intérêts."
+        "text": "Mona Brémont comprend que la décision d'Iseult Brémont menace directement ses intérêts."
       },
       {
         "time": "19:14",
-        "place": "Atelier de haute couture — Paris",
+        "place": "Atelier de haute couture, Paris",
         "personIds": [
           "mona"
         ],
-        "text": "Le mobile se cristallise : vendre l'original pour sauver financièrement la maison."
+        "text": "Un accord de vente secret couvre exactement les salaires en retard de l'atelier."
       },
       {
         "time": "19:40",
         "endTime": "19:45",
-        "place": "Atelier de haute couture — Paris",
+        "place": "Atelier de haute couture, Paris",
         "personIds": [
           "mona"
         ],
@@ -460,36 +461,37 @@
       },
       {
         "time": "19:48",
-        "place": "Atelier de haute couture — Paris",
+        "place": "Atelier de haute couture, Paris",
         "personIds": [
           "mona"
         ],
-        "text": "La personne remet les lieux en ordre et s'appuie sur son alibi préparé."
+        "text": "Après les faits, Mona Brémont s'appuie sur l'alibi que le relevé finira par contredire."
       }
     ],
     "reasoning": [
-      "Le registre contredit l'heure donnée par Mona Brémont : Le traceur censé rester dans la caisse se déplace jusqu'au coffre privé de Mona après le dîner.",
-      "La trace matérielle ne prouve pas seulement une présence; elle décrit la méthode : La copie utilise un fil moderne commandé sur le compte personnel de Mona sous un faux projet.",
-      "Le document confidentiel fournit un mobile précis : Un accord de vente secret couvre exactement les salaires en retard de l'atelier.",
-      "Yacine Dupré est écarté par une preuve indépendante, tandis que l'élément visant Odette Marin est expliqué par le recoupement final.",
-      "La seule personne réunissant présence, moyen et mobile est Mona Brémont."
+      "Le traceur censé rester dans la caisse se déplace jusqu'au coffre privé de Mona après le dîner. Cette donnée fragilise directement la version de Mona Brémont.",
+      "La copie utilise un fil moderne commandé sur le compte personnel de Mona sous un faux projet. La trace relie le geste au procédé employé.",
+      "Un accord de vente secret couvre exactement les salaires en retard de l'atelier. Le mobile repose donc sur un fait vérifiable.",
+      "La vidéo de restauration montre Yacine fermer la vraie robe et quitter les lieux avant que Mona ne reprenne la caisse. De son côté, la principale autre piste ne résiste pas au recoupement.",
+      "Odette conserve une lettre d'Iseult disant « cette robe sera toujours à toi ». L'élément paraît accusateur, mais il change de sens avec la dernière pièce : la formule est affective, non un acte de propriété, et le commissaire confirme sa présence continue à la répétition.",
+      "Présence, moyen et intérêt convergent vers Mona Brémont."
     ],
-    "explanation": "Mona avait commandé une copie exacte et déplacé le traceur pour faire croire au trajet normal de la caisse. Elle a sacrifié l'objet fondateur de la maison afin de sauver les personnes qui y travaillent, convaincue qu'Iseult choisirait les salaires plutôt que la mémoire. Le mobile était de vendre l'original pour sauver financièrement la maison. La méthode consistait à faire sceller une copie puis échanger l'étiquette électronique de suivi. La fausse piste contre Odette Marin paraît forte isolément, mais la formule est affective, non un acte de propriété, et le commissaire confirme sa présence continue à la répétition. Ainsi, les preuves convergent sans supposer d'information extérieure au dossier.",
+    "explanation": "Mona avait commandé une copie exacte et déplacé le traceur pour faire croire au trajet normal de la caisse. Elle a sacrifié l'objet fondateur de la maison afin de sauver les personnes qui y travaillent, convaincue qu'Iseult choisirait les salaires plutôt que la mémoire. L'enjeu pour Mona Brémont était de taille : vendre l'original pour sauver financièrement la maison. La méthode reposait sur une idée précise : faire sceller une copie puis échanger l'étiquette électronique de suivi. La formule est affective, non un acte de propriété, et le commissaire confirme sa présence continue à la répétition. L'autre suspect n'est donc plus une explication possible.",
     "proofChains": [
       {
-        "title": "La chaîne du geste",
+        "title": "Ce qui trahit Mona Brémont",
         "steps": [
           "Le traceur censé rester dans la caisse se déplace jusqu'au coffre privé de Mona après le dîner.",
           "La copie utilise un fil moderne commandé sur le compte personnel de Mona sous un faux projet.",
-          "Ces deux pièces relient matériellement Mona Brémont à l'action."
+          "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]
       },
       {
-        "title": "La chaîne de l'intention",
+        "title": "Le mobile et les innocents",
         "steps": [
           "Un accord de vente secret couvre exactement les salaires en retard de l'atelier.",
           "La vidéo de restauration montre Yacine fermer la vraie robe et quitter les lieux avant que Mona ne reprenne la caisse.",
-          "Le mobile devient exclusif une fois les alibis recoupés."
+          "La formule est affective, non un acte de propriété, et le commissaire confirme sa présence continue à la répétition."
         ]
       }
     ]

@@ -4,8 +4,8 @@
     "number": 29,
     "date": "2026-09-29",
     "title": "LE TÉMOIN DE CIRE",
-    "subtitle": "La statue a vu le vol; en fondant légèrement, elle a même conservé le visage du voleur.",
-    "location": "Musée de cire — Lyon",
+    "subtitle": "La statue a vu le vol. En fondant légèrement, elle a même conservé le visage du voleur.",
+    "location": "Musée de cire, Lyon",
     "incident": "Vol d'un diamant exposé sur une statue",
     "intro": "À 23h, le diamant de la statue de cantatrice est remplacé par du verre. La vitrine n'a pas été ouverte selon son capteur. Sur la joue de cire, une zone brillante semble avoir été réchauffée puis refroidie.",
     "victim": {
@@ -56,19 +56,13 @@
     "clues": [
       {
         "id": "registre",
-        "title": "L'alibi qui se fissure",
-        "source": "JOURNAL TECHNIQUE",
+        "title": "La trappe climatique",
+        "source": "JOURNAL D'ACCÈS",
         "summary": "Le vestiaire reste vide tandis que le badge de Roxane ouvre la trappe climatique derrière la statue.",
         "evidence": {
-          "kind": "schedule",
-          "title": "JOURNAL TECHNIQUE",
-          "rows": [
-            {
-              "time": "20:01",
-              "label": "Le vestiaire reste vide tandis que le badge de Roxane ouvre la trappe climatique derrière la statue."
-            }
-          ],
-          "altText": "JOURNAL TECHNIQUE à 20:01 : Le vestiaire reste vide tandis que le badge de Roxane ouvre la trappe climatique derrière la statue."
+          "kind": "note",
+          "body": "Le vestiaire reste vide tandis que le badge de Roxane ouvre la trappe climatique derrière la statue.",
+          "altText": "Note versée au dossier. Le vestiaire reste vide tandis que le badge de Roxane ouvre la trappe climatique derrière la statue."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -91,23 +85,23 @@
       },
       {
         "id": "trace",
-        "title": "La trace qui ne devait pas rester",
-        "source": "ANALYSE MATÉRIELLE",
+        "title": "La bague dans la cire",
+        "source": "CONSTAT PHOTOGRAPHIQUE",
         "summary": "La cire ramollie conserve l'empreinte inversée de sa bague carrée lorsqu'elle a appuyé son visage contre le panneau étroit.",
         "evidence": {
           "kind": "photo",
           "caption": "La cire ramollie conserve l'empreinte inversée de sa bague carrée lorsqu'elle a appuyé son visage contre le panneau étroit.",
           "meta": [
             {
-              "label": "HEURE",
-              "value": "20:06"
+              "label": "Heure",
+              "value": "19:35"
             },
             {
-              "label": "STATUT",
-              "value": "Pièce analysée"
+              "label": "Pièce",
+              "value": "La bague dans la cire"
             }
           ],
-          "altText": "Photographie d'analyse : La cire ramollie conserve l'empreinte inversée de sa bague carrée lorsqu'elle a appuyé son visage contre le panneau étroit.",
+          "altText": "Photographie. La cire ramollie conserve l'empreinte inversée de sa bague carrée lorsqu'elle a appuyé son visage contre le panneau étroit.",
           "tone": "cold"
         },
         "analysis": {
@@ -127,17 +121,14 @@
       },
       {
         "id": "mobile",
-        "title": "Ce que la victime allait révéler",
-        "source": "DOCUMENT CONFIDENTIEL",
+        "title": "La commission d'assurance",
+        "source": "NOTE PERSONNELLE",
         "summary": "Une police complémentaire souscrite par Roxane lui verse une commission si le sinistre survient pendant son événement.",
         "evidence": {
-          "kind": "email",
-          "from": "Dossier de la victime",
-          "to": "Archives de l'enquête",
-          "subject": "Ce que la victime allait révéler",
-          "sentAt": "19:35",
+          "kind": "handwriting",
           "body": "Une police complémentaire souscrite par Roxane lui verse une commission si le sinistre survient pendant son événement.",
-          "altText": "Document confidentiel : Une police complémentaire souscrite par Roxane lui verse une commission si le sinistre survient pendant son événement."
+          "signature": "Étienne Valois",
+          "altText": "Note manuscrite. Une police complémentaire souscrite par Roxane lui verse une commission si le sinistre survient pendant son événement."
         },
         "analysis": {
           "category": "BEHAVIORAL",
@@ -156,19 +147,19 @@
       },
       {
         "id": "alibi_a",
-        "title": "La preuve de Côme Vidal",
-        "source": "VÉRIFICATION D'ALIBI",
+        "title": "Côme face à l'horloge",
+        "source": "ALIBI VÉRIFIÉ",
         "summary": "Le flux de l'atelier montre Côme travailler sans interruption, horloge visible.",
         "evidence": {
           "kind": "camera",
-          "location": "VÉRIFICATION D'ALIBI",
+          "location": "ALIBI VÉRIFIÉ",
           "frames": [
             {
               "time": "19:54",
               "text": "Le flux de l'atelier montre Côme travailler sans interruption, horloge visible."
             }
           ],
-          "altText": "Relevé de vérification à 19:54 : Le flux de l'atelier montre Côme travailler sans interruption, horloge visible."
+          "altText": "Image enregistrée à 19:54. Le flux de l'atelier montre Côme travailler sans interruption, horloge visible."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -185,13 +176,17 @@
       },
       {
         "id": "fausse_piste",
-        "title": "Le détail contre Étienne Valois",
-        "source": "PIÈCE SAISIE",
+        "title": "Le certificat du joaillier",
+        "source": "ÉLÉMENT À CHARGE",
         "summary": "Le certificat d'Étienne surévalue nettement la pureté du diamant.",
         "evidence": {
-          "kind": "note",
-          "body": "Le certificat d'Étienne surévalue nettement la pureté du diamant.",
-          "altText": "Note saisie constituant une fausse piste : Le certificat d'Étienne surévalue nettement la pureté du diamant."
+          "kind": "document",
+          "title": "Le certificat du joaillier",
+          "subtitle": "ÉLÉMENT À CHARGE",
+          "paragraphs": [
+            "Le certificat d'Étienne surévalue nettement la pureté du diamant."
+          ],
+          "altText": "Document intitulé Le certificat du joaillier. Le certificat d'Étienne surévalue nettement la pureté du diamant."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -210,17 +205,21 @@
       },
       {
         "id": "resolution",
-        "title": "Ce que la fausse piste oublie",
-        "source": "RECOUPEMENT",
+        "title": "Étienne au pupitre",
+        "source": "ENREGISTREMENT TÉMOIN",
         "summary": "La pierre volée est malgré tout authentique et les vidéos le gardent au pupitre pendant l'accès à la trappe.",
         "evidence": {
-          "kind": "document",
-          "title": "RECOUPEMENT",
-          "subtitle": "Pièce enregistrée à 20:09",
-          "paragraphs": [
-            "La pierre volée est malgré tout authentique et les vidéos le gardent au pupitre pendant l'accès à la trappe."
+          "kind": "sms",
+          "contact": "Étienne Valois",
+          "channel": "sms",
+          "messages": [
+            {
+              "from": "them",
+              "text": "La pierre volée est malgré tout authentique et les vidéos le gardent au pupitre pendant l'accès à la trappe.",
+              "time": "19:23"
+            }
           ],
-          "altText": "RECOUPEMENT : La pierre volée est malgré tout authentique et les vidéos le gardent au pupitre pendant l'accès à la trappe."
+          "altText": "Message d'Étienne Valois à 19:23. La pierre volée est malgré tout authentique et les vidéos le gardent au pupitre pendant l'accès à la trappe."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -240,99 +239,99 @@
       {
         "id": "come_alibi",
         "suspectId": "come",
-        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "question": "Décrivez vos déplacements sans sauter d'étape, Côme Vidal.",
         "answer": "Il réparait une autre figure dans l'atelier filmé. Sensuel dans ses descriptions, susceptible sur son art.",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "come_relation",
         "suspectId": "come",
-        "question": "Qu'est-ce que Nadège Ravel risquait de changer pour vous ?",
+        "question": "Aviez-vous une raison de redouter la décision de Nadège, Côme Vidal ?",
         "answer": "Il entretient la statue et connaît sa structure. Il refusait que le bijou perce le costume original.",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "roxane_alibi",
         "suspectId": "roxane",
-        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "question": "Quand avez-vous quitté Musée de cire, Roxane Perez ?",
         "answer": "Elle était au vestiaire pendant le discours. Rapide, souriante, change de sujet avec aisance.",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
         "id": "roxane_relation",
         "suspectId": "roxane",
-        "question": "Qu'est-ce que Nadège Ravel risquait de changer pour vous ?",
+        "question": "Que taisiez-vous sur votre relation avec Nadège, Roxane Perez ?",
         "answer": "Elle gérait les invités et le prêt du diamant. Elle avait assuré le diamant pour une somme excessive.",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "etienne_alibi",
         "suspectId": "etienne",
-        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "question": "Qui peut confirmer votre emploi du temps, Étienne Valois ?",
         "answer": "Il prononçait le discours dans la grande salle. Froid, sûr de son expertise.",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "etienne_relation",
         "suspectId": "etienne",
-        "question": "Qu'est-ce que Nadège Ravel risquait de changer pour vous ?",
+        "question": "Quel désaccord vous opposait à Nadège, Étienne Valois ?",
         "answer": "Il a monté lui-même le diamant sur la statue. La pierre était difficile à vendre légalement.",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "roxane_confrontation",
         "suspectId": "roxane",
-        "question": "Votre heure ne correspond pas au registre. Pourquoi ?",
-        "answer": "« Le registre se trompe parfois. Cela ne prouve pas que j'ai fait ce qu'on me reproche. »",
+        "question": "Votre version ne correspond pas aux données. La maintenez-vous ?",
+        "answer": "« Oui, j'étais encore là. J'ai menti sur l'heure pour cacher une autre affaire, pas celle-ci. »",
         "unlockedByClueId": "registre",
-        "beat": "La personne conteste l'outil, sans expliquer sa propre trace."
+        "beat": "La réponse réduit l'alibi à une version non vérifiée."
       },
       {
         "id": "roxane_mobile",
         "suspectId": "roxane",
-        "question": "Ce document vous donnait-il une raison d'agir ?",
-        "answer": "« Vous appelez cela un mobile parce que vous connaissez déjà la fin. Sur le moment, je cherchais seulement une issue. »",
+        "question": "Quelle issue espériez-vous encore trouver ?",
+        "answer": "« Oui, la situation me menaçait directement. Non, je ne vous dirai pas que cela m'a laissé indifférent. »",
         "unlockedByClueId": "mobile",
-        "beat": "La raison d'agir est reconnue à demi-mot."
+        "beat": "La menace n'est plus abstraite pour cette personne."
       },
       {
         "id": "etienne_detail",
         "suspectId": "etienne",
-        "question": "Pourquoi cette pièce vous désigne-t-elle ?",
-        "answer": "« Elle est vraie, mais votre conclusion ne l'est pas. Cherchez ce qui s'est passé après. »",
+        "question": "Qui peut confirmer votre explication sur cette pièce ?",
+        "answer": "« Mon explication est vérifiable. Cherchez le second enregistrement, pas seulement celui qui m'accuse. »",
         "unlockedByClueId": "fausse_piste",
-        "beat": "La pièce cache une chronologie plus complète."
+        "beat": "Le recoupement suivant peut innocenter ou condamner."
       }
     ],
     "timeline": [
       {
         "time": "19:23",
-        "text": "Nadège Ravel est vu pour la dernière fois avant l'incident.",
-        "source": "Témoignages concordants",
+        "text": "Dernière apparition confirmée de Nadège Ravel.",
+        "source": "Recoupement des témoignages",
         "certainty": "CERTAIN"
       },
       {
         "time": "19:35",
-        "text": "Le document révélant le mobile est créé ou consulté.",
-        "source": "Métadonnées",
+        "text": "Une police complémentaire souscrite par Roxane lui verse une commission si le sinistre survient pendant son événement.",
+        "source": "NOTE PERSONNELLE",
         "certainty": "CERTAIN"
       },
       {
         "time": "19:48",
-        "text": "Roxane Perez affirme ne plus pouvoir intervenir.",
-        "source": "Déclaration",
+        "text": "Roxane Perez situe ici la fin de ses déplacements.",
+        "source": "Déposition",
         "certainty": "REPORTED"
       },
       {
         "time": "20:01",
-        "text": "Une activité technique contredit cette version.",
-        "source": "Registre",
+        "text": "Le vestiaire reste vide tandis que le badge de Roxane ouvre la trappe climatique derrière la statue.",
+        "source": "JOURNAL D'ACCÈS",
         "certainty": "CERTAIN"
       },
       {
         "time": "20:09",
-        "text": "L'incident devient visible ou produit ses effets.",
-        "source": "Constat",
+        "text": "Les premiers effets de l'incident sont constatés.",
+        "source": "Constat sur place",
         "certainty": "ESTIMATED"
       }
     ],
@@ -435,24 +434,24 @@
     "correctTimeline": [
       {
         "time": "19:23",
-        "place": "Musée de cire — Lyon",
+        "place": "Musée de cire, Lyon",
         "personIds": [
           "roxane"
         ],
-        "text": "Roxane Perez comprend que la situation menace directement ses intérêts."
+        "text": "Roxane Perez comprend que la décision de Nadège Ravel menace directement ses intérêts."
       },
       {
         "time": "19:35",
-        "place": "Musée de cire — Lyon",
+        "place": "Musée de cire, Lyon",
         "personIds": [
           "roxane"
         ],
-        "text": "Le mobile se cristallise : encaisser sa part d'une fraude à l'assurance organisée sans le prêteur."
+        "text": "Une police complémentaire souscrite par Roxane lui verse une commission si le sinistre survient pendant son événement."
       },
       {
         "time": "20:01",
         "endTime": "20:06",
-        "place": "Musée de cire — Lyon",
+        "place": "Musée de cire, Lyon",
         "personIds": [
           "roxane"
         ],
@@ -460,36 +459,37 @@
       },
       {
         "time": "20:09",
-        "place": "Musée de cire — Lyon",
+        "place": "Musée de cire, Lyon",
         "personIds": [
           "roxane"
         ],
-        "text": "La personne remet les lieux en ordre et s'appuie sur son alibi préparé."
+        "text": "Après les faits, Roxane Perez s'appuie sur l'alibi que le relevé finira par contredire."
       }
     ],
     "reasoning": [
-      "Le registre contredit l'heure donnée par Roxane Perez : Le vestiaire reste vide tandis que le badge de Roxane ouvre la trappe climatique derrière la statue.",
-      "La trace matérielle ne prouve pas seulement une présence; elle décrit la méthode : La cire ramollie conserve l'empreinte inversée de sa bague carrée lorsqu'elle a appuyé son visage contre le panneau étroit.",
-      "Le document confidentiel fournit un mobile précis : Une police complémentaire souscrite par Roxane lui verse une commission si le sinistre survient pendant son événement.",
-      "Côme Vidal est écarté par une preuve indépendante, tandis que l'élément visant Étienne Valois est expliqué par le recoupement final.",
-      "La seule personne réunissant présence, moyen et mobile est Roxane Perez."
+      "Le vestiaire reste vide tandis que le badge de Roxane ouvre la trappe climatique derrière la statue. Cette donnée fragilise directement la version de Roxane Perez.",
+      "La cire ramollie conserve l'empreinte inversée de sa bague carrée lorsqu'elle a appuyé son visage contre le panneau étroit. La trace relie le geste au procédé employé.",
+      "Une police complémentaire souscrite par Roxane lui verse une commission si le sinistre survient pendant son événement. Le mobile repose donc sur un fait vérifiable.",
+      "Le flux de l'atelier montre Côme travailler sans interruption, horloge visible. De son côté, la principale autre piste ne résiste pas au recoupement.",
+      "Le certificat d'Étienne surévalue nettement la pureté du diamant. L'élément paraît accusateur, mais il change de sens avec la dernière pièce : la pierre volée est malgré tout authentique et les vidéos le gardent au pupitre pendant l'accès à la trappe.",
+      "Présence, moyen et intérêt convergent vers Roxane Perez."
     ],
-    "explanation": "Roxane connaissait une ouverture de maintenance derrière la statue. Elle a chauffé la cire, passé la main par la structure creuse et remplacé la pierre sans toucher la vitrine. En se penchant, sa bague a imprimé la cire molle comme un sceau. Le mobile était de encaisser sa part d'une fraude à l'assurance organisée sans le prêteur. La méthode consistait à ramollir la joue de cire pour atteindre le mécanisme interne sans ouvrir la vitrine. La fausse piste contre Étienne Valois paraît forte isolément, mais la pierre volée est malgré tout authentique et les vidéos le gardent au pupitre pendant l'accès à la trappe. Ainsi, les preuves convergent sans supposer d'information extérieure au dossier.",
+    "explanation": "Roxane connaissait une ouverture de maintenance derrière la statue. Elle a chauffé la cire, passé la main par la structure creuse et remplacé la pierre sans toucher la vitrine. En se penchant, sa bague a imprimé la cire molle comme un sceau. Le motif de Roxane Perez ne laisse plus de doute : encaisser sa part d'une fraude à l'assurance organisée sans le prêteur. Le procédé était discret : ramollir la joue de cire pour atteindre le mécanisme interne sans ouvrir la vitrine. La pierre volée est malgré tout authentique et les vidéos le gardent au pupitre pendant l'accès à la trappe. C'est la pièce qui manquait pour distinguer le soupçon de la preuve.",
     "proofChains": [
       {
-        "title": "La chaîne du geste",
+        "title": "Ce qui trahit Roxane Perez",
         "steps": [
           "Le vestiaire reste vide tandis que le badge de Roxane ouvre la trappe climatique derrière la statue.",
           "La cire ramollie conserve l'empreinte inversée de sa bague carrée lorsqu'elle a appuyé son visage contre le panneau étroit.",
-          "Ces deux pièces relient matériellement Roxane Perez à l'action."
+          "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]
       },
       {
-        "title": "La chaîne de l'intention",
+        "title": "Le mobile et les innocents",
         "steps": [
           "Une police complémentaire souscrite par Roxane lui verse une commission si le sinistre survient pendant son événement.",
           "Le flux de l'atelier montre Côme travailler sans interruption, horloge visible.",
-          "Le mobile devient exclusif une fois les alibis recoupés."
+          "La pierre volée est malgré tout authentique et les vidéos le gardent au pupitre pendant l'accès à la trappe."
         ]
       }
     ]

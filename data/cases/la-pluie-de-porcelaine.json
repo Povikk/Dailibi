@@ -4,8 +4,8 @@
     "number": 22,
     "date": "2026-09-22",
     "title": "LA PLUIE DE PORCELAINE",
-    "subtitle": "Quarante pièces éclatent dans le four; une seule porte à l'intérieur la date de leur destruction.",
-    "location": "Manufacture de porcelaine — Limoges",
+    "subtitle": "Quarante pièces éclatent dans le four. Une seule porte à l'intérieur la date de leur destruction.",
+    "location": "Manufacture de porcelaine, Limoges",
     "incident": "Sabotage d'une cuisson d'exposition",
     "intro": "À l'ouverture du four, quarante bols sont fendus de l'intérieur comme des coquilles. La courbe de température est parfaite. Au fond, une tasse intacte révèle sous son émail un chiffre qui ne devient visible qu'après cuisson.",
     "victim": {
@@ -56,19 +56,17 @@
     "clues": [
       {
         "id": "registre",
-        "title": "L'alibi qui se fissure",
-        "source": "JOURNAL TECHNIQUE",
+        "title": "Une entrée avant la cuisson",
+        "source": "CONTRÔLE TECHNIQUE",
         "summary": "Le registre de l'atelier montre Linh seule vingt-sept minutes avec les pièces, après le départ déclaré du livreur.",
         "evidence": {
-          "kind": "schedule",
-          "title": "JOURNAL TECHNIQUE",
-          "rows": [
-            {
-              "time": "20:42",
-              "label": "Le registre de l'atelier montre Linh seule vingt-sept minutes avec les pièces, après le départ déclaré du livreur."
-            }
+          "kind": "document",
+          "title": "Une entrée avant la cuisson",
+          "subtitle": "CONTRÔLE TECHNIQUE",
+          "paragraphs": [
+            "Le registre de l'atelier montre Linh seule vingt-sept minutes avec les pièces, après le départ déclaré du livreur."
           ],
-          "altText": "JOURNAL TECHNIQUE à 20:42 : Le registre de l'atelier montre Linh seule vingt-sept minutes avec les pièces, après le départ déclaré du livreur."
+          "altText": "Document intitulé Une entrée avant la cuisson. Le registre de l'atelier montre Linh seule vingt-sept minutes avec les pièces, après le départ déclaré du livreur."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -91,24 +89,14 @@
       },
       {
         "id": "trace",
-        "title": "La trace qui ne devait pas rester",
-        "source": "ANALYSE MATÉRIELLE",
+        "title": "Le chiffre sous l'émail",
+        "source": "RAPPORT TECHNIQUE",
         "summary": "La tasse intacte porte le numéro du lot de capsules pharmaceutiques acheté par Linh pour contenir le sel.",
         "evidence": {
-          "kind": "photo",
-          "caption": "La tasse intacte porte le numéro du lot de capsules pharmaceutiques acheté par Linh pour contenir le sel.",
-          "meta": [
-            {
-              "label": "HEURE",
-              "value": "20:47"
-            },
-            {
-              "label": "STATUT",
-              "value": "Pièce analysée"
-            }
-          ],
-          "altText": "Photographie d'analyse : La tasse intacte porte le numéro du lot de capsules pharmaceutiques acheté par Linh pour contenir le sel.",
-          "tone": "cold"
+          "kind": "handwriting",
+          "body": "La tasse intacte porte le numéro du lot de capsules pharmaceutiques acheté par Linh pour contenir le sel.",
+          "signature": "Linh Durand",
+          "altText": "Note manuscrite. La tasse intacte porte le numéro du lot de capsules pharmaceutiques acheté par Linh pour contenir le sel."
         },
         "analysis": {
           "category": "TIMELINE",
@@ -127,17 +115,21 @@
       },
       {
         "id": "mobile",
-        "title": "Ce que la victime allait révéler",
-        "source": "DOCUMENT CONFIDENTIEL",
+        "title": "La police d'assurance",
+        "source": "DOCUMENT DE LA VICTIME",
         "summary": "Un échéancier bancaire exige la somme exacte couverte par l'assurance de l'exposition.",
         "evidence": {
-          "kind": "email",
-          "from": "Dossier de la victime",
-          "to": "Archives de l'enquête",
-          "subject": "Ce que la victime allait révéler",
-          "sentAt": "20:16",
-          "body": "Un échéancier bancaire exige la somme exacte couverte par l'assurance de l'exposition.",
-          "altText": "Document confidentiel : Un échéancier bancaire exige la somme exacte couverte par l'assurance de l'exposition."
+          "kind": "sms",
+          "contact": "Oscar Nève",
+          "channel": "sms",
+          "messages": [
+            {
+              "from": "them",
+              "text": "Un échéancier bancaire exige la somme exacte couverte par l'assurance de l'exposition.",
+              "time": "20:29"
+            }
+          ],
+          "altText": "Message d'Oscar Nève à 20:29. Un échéancier bancaire exige la somme exacte couverte par l'assurance de l'exposition."
         },
         "analysis": {
           "category": "BEHAVIORAL",
@@ -156,19 +148,19 @@
       },
       {
         "id": "alibi_a",
-        "title": "La preuve de Étienne Bosc",
-        "source": "VÉRIFICATION D'ALIBI",
+        "title": "Étienne à la préparation",
+        "source": "RECOUPEMENT INDÉPENDANT",
         "summary": "Les photographies géolocalisées et le passage sur scène placent Oscar à Paris avant la fermeture du four.",
         "evidence": {
-          "kind": "camera",
-          "location": "VÉRIFICATION D'ALIBI",
-          "frames": [
+          "kind": "schedule",
+          "title": "RECOUPEMENT INDÉPENDANT",
+          "rows": [
             {
               "time": "20:35",
-              "text": "Les photographies géolocalisées et le passage sur scène placent Oscar à Paris avant la fermeture du four."
+              "label": "Les photographies géolocalisées et le passage sur scène placent Oscar à Paris avant la fermeture du four."
             }
           ],
-          "altText": "Relevé de vérification à 20:35 : Les photographies géolocalisées et le passage sur scène placent Oscar à Paris avant la fermeture du four."
+          "altText": "RECOUPEMENT INDÉPENDANT, 20:35. Les photographies géolocalisées et le passage sur scène placent Oscar à Paris avant la fermeture du four."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -185,13 +177,24 @@
       },
       {
         "id": "fausse_piste",
-        "title": "Le détail contre Oscar Nève",
-        "source": "PIÈCE SAISIE",
+        "title": "La porte forcée par Oscar",
+        "source": "OBJET RETROUVÉ",
         "summary": "Étienne a désactivé l'alarme d'ouverture du four pendant douze minutes.",
         "evidence": {
-          "kind": "note",
-          "body": "Étienne a désactivé l'alarme d'ouverture du four pendant douze minutes.",
-          "altText": "Note saisie constituant une fausse piste : Étienne a désactivé l'alarme d'ouverture du four pendant douze minutes."
+          "kind": "photo",
+          "caption": "Étienne a désactivé l'alarme d'ouverture du four pendant douze minutes.",
+          "meta": [
+            {
+              "label": "Heure",
+              "value": "20:50"
+            },
+            {
+              "label": "Pièce",
+              "value": "La porte forcée par Oscar"
+            }
+          ],
+          "altText": "Photographie. Étienne a désactivé l'alarme d'ouverture du four pendant douze minutes.",
+          "tone": "cold"
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -210,17 +213,17 @@
       },
       {
         "id": "resolution",
-        "title": "Ce que la fausse piste oublie",
-        "source": "RECOUPEMENT",
-        "summary": "Il l'a fait pour remplacer un thermocouple extérieur; les scellés mécaniques de la porte restent intacts.",
+        "title": "Le thermocouple extérieur",
+        "source": "CONTRÔLE DES DÉPLACEMENTS",
+        "summary": "Il l'a fait pour remplacer un thermocouple extérieur. Les scellés mécaniques de la porte restent intacts.",
         "evidence": {
-          "kind": "document",
-          "title": "RECOUPEMENT",
-          "subtitle": "Pièce enregistrée à 20:50",
-          "paragraphs": [
-            "Il l'a fait pour remplacer un thermocouple extérieur; les scellés mécaniques de la porte restent intacts."
-          ],
-          "altText": "RECOUPEMENT : Il l'a fait pour remplacer un thermocouple extérieur; les scellés mécaniques de la porte restent intacts."
+          "kind": "email",
+          "from": "CONTRÔLE DES DÉPLACEMENTS",
+          "to": "Dossier d'enquête",
+          "subject": "Le thermocouple extérieur",
+          "sentAt": "20:04",
+          "body": "Il l'a fait pour remplacer un thermocouple extérieur. Les scellés mécaniques de la porte restent intacts.",
+          "altText": "Courriel intitulé Le thermocouple extérieur. Il l'a fait pour remplacer un thermocouple extérieur. Les scellés mécaniques de la porte restent intacts."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -240,99 +243,99 @@
       {
         "id": "etienne_alibi",
         "suspectId": "etienne",
-        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "question": "Quand avez-vous vu Mei pour la dernière fois, Étienne Bosc ?",
         "answer": "Il dit n'avoir ouvert le four à aucun moment. Taciturne, fier de quarante ans sans incident.",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "etienne_relation",
         "suspectId": "etienne",
-        "question": "Qu'est-ce que Mei Durand risquait de changer pour vous ?",
+        "question": "Qu'est-ce que cette affaire pouvait changer pour vous, Étienne Bosc ?",
         "answer": "Il a dirigé la cuisson nocturne. La nouvelle série remplaçait son atelier traditionnel.",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "linh_alibi",
         "suspectId": "linh",
-        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "question": "Décrivez vos déplacements sans sauter d'étape, Linh Durand.",
         "answer": "Elle préparait les caisses d'expédition avec un livreur. Pratique, protectrice, suit chaque coût.",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
         "id": "linh_relation",
         "suspectId": "linh",
-        "question": "Qu'est-ce que Mei Durand risquait de changer pour vous ?",
+        "question": "Pourquoi votre nom apparaît-il dans le dossier de Mei, Linh Durand ?",
         "answer": "Elle gère les commandes de Mei. La manufacture est lourdement endettée.",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "oscar_alibi",
         "suspectId": "oscar",
-        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "question": "Quand avez-vous quitté Manufacture de porcelaine, Oscar Nève ?",
         "answer": "Il exposait à Paris le soir de la cuisson. Brillant, provocateur, traite la casse comme une expérience.",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "oscar_relation",
         "suspectId": "oscar",
-        "question": "Qu'est-ce que Mei Durand risquait de changer pour vous ?",
+        "question": "Aviez-vous une raison de redouter la décision de Mei, Oscar Nève ?",
         "answer": "Il partage les émaux et le même four. Son propre dossier avait été refusé au profit de Mei.",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "linh_confrontation",
         "suspectId": "linh",
-        "question": "Votre heure ne correspond pas au registre. Pourquoi ?",
-        "answer": "« Le registre se trompe parfois. Cela ne prouve pas que j'ai fait ce qu'on me reproche. »",
+        "question": "Vous aviez dit être parti. Pourquoi le registre indique-t-il le contraire ?",
+        "answer": "« Je maintiens l'essentiel de ma version. Sur cette minute précise, je reconnais m'être trompé. »",
         "unlockedByClueId": "registre",
-        "beat": "La personne conteste l'outil, sans expliquer sa propre trace."
+        "beat": "La présence devient certaine. Le geste reste à prouver."
       },
       {
         "id": "linh_mobile",
         "suspectId": "linh",
-        "question": "Ce document vous donnait-il une raison d'agir ?",
-        "answer": "« Vous appelez cela un mobile parce que vous connaissez déjà la fin. Sur le moment, je cherchais seulement une issue. »",
+        "question": "Pourquoi avez-vous cherché à dissimuler ce document ?",
+        "answer": "« J'ai voulu que ce document reste privé. Sa divulgation aurait détruit des années de travail. »",
         "unlockedByClueId": "mobile",
-        "beat": "La raison d'agir est reconnue à demi-mot."
+        "beat": "Le document donne un poids concret au mobile."
       },
       {
         "id": "oscar_detail",
         "suspectId": "oscar",
-        "question": "Pourquoi cette pièce vous désigne-t-elle ?",
-        "answer": "« Elle est vraie, mais votre conclusion ne l'est pas. Cherchez ce qui s'est passé après. »",
+        "question": "Pourquoi avez-vous caché ce détail aux enquêteurs ?",
+        "answer": "« Je l'ai caché parce qu'il révélait un secret personnel. Ce secret n'a aucun lien avec l'incident. »",
         "unlockedByClueId": "fausse_piste",
-        "beat": "La pièce cache une chronologie plus complète."
+        "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       }
     ],
     "timeline": [
       {
         "time": "20:04",
-        "text": "Mei Durand est vu pour la dernière fois avant l'incident.",
-        "source": "Témoignages concordants",
+        "text": "Dernière apparition confirmée de Mei Durand.",
+        "source": "Recoupement des témoignages",
         "certainty": "CERTAIN"
       },
       {
         "time": "20:16",
-        "text": "Le document révélant le mobile est créé ou consulté.",
-        "source": "Métadonnées",
+        "text": "Un échéancier bancaire exige la somme exacte couverte par l'assurance de l'exposition.",
+        "source": "DOCUMENT DE LA VICTIME",
         "certainty": "CERTAIN"
       },
       {
         "time": "20:29",
-        "text": "Linh Durand affirme ne plus pouvoir intervenir.",
-        "source": "Déclaration",
+        "text": "Linh Durand situe ici la fin de ses déplacements.",
+        "source": "Déposition",
         "certainty": "REPORTED"
       },
       {
         "time": "20:42",
-        "text": "Une activité technique contredit cette version.",
-        "source": "Registre",
+        "text": "Le registre de l'atelier montre Linh seule vingt-sept minutes avec les pièces, après le départ déclaré du livreur.",
+        "source": "CONTRÔLE TECHNIQUE",
         "certainty": "CERTAIN"
       },
       {
         "time": "20:50",
-        "text": "L'incident devient visible ou produit ses effets.",
-        "source": "Constat",
+        "text": "Les premiers effets de l'incident sont constatés.",
+        "source": "Constat sur place",
         "certainty": "ESTIMATED"
       }
     ],
@@ -435,24 +438,24 @@
     "correctTimeline": [
       {
         "time": "20:04",
-        "place": "Manufacture de porcelaine — Limoges",
+        "place": "Manufacture de porcelaine, Limoges",
         "personIds": [
           "linh"
         ],
-        "text": "Linh Durand comprend que la situation menace directement ses intérêts."
+        "text": "Linh Durand comprend que la décision de Mei Durand menace directement ses intérêts."
       },
       {
         "time": "20:16",
-        "place": "Manufacture de porcelaine — Limoges",
+        "place": "Manufacture de porcelaine, Limoges",
         "personIds": [
           "linh"
         ],
-        "text": "Le mobile se cristallise : faire jouer l'assurance pour empêcher la faillite de la manufacture."
+        "text": "Un échéancier bancaire exige la somme exacte couverte par l'assurance de l'exposition."
       },
       {
         "time": "20:42",
         "endTime": "20:47",
-        "place": "Manufacture de porcelaine — Limoges",
+        "place": "Manufacture de porcelaine, Limoges",
         "personIds": [
           "linh"
         ],
@@ -460,36 +463,37 @@
       },
       {
         "time": "20:50",
-        "place": "Manufacture de porcelaine — Limoges",
+        "place": "Manufacture de porcelaine, Limoges",
         "personIds": [
           "linh"
         ],
-        "text": "La personne remet les lieux en ordre et s'appuie sur son alibi préparé."
+        "text": "Après les faits, Linh Durand s'appuie sur l'alibi que le relevé finira par contredire."
       }
     ],
     "reasoning": [
-      "Le registre contredit l'heure donnée par Linh Durand : Le registre de l'atelier montre Linh seule vingt-sept minutes avec les pièces, après le départ déclaré du livreur.",
-      "La trace matérielle ne prouve pas seulement une présence; elle décrit la méthode : La tasse intacte porte le numéro du lot de capsules pharmaceutiques acheté par Linh pour contenir le sel.",
-      "Le document confidentiel fournit un mobile précis : Un échéancier bancaire exige la somme exacte couverte par l'assurance de l'exposition.",
-      "Étienne Bosc est écarté par une preuve indépendante, tandis que l'élément visant Oscar Nève est expliqué par le recoupement final.",
-      "La seule personne réunissant présence, moyen et mobile est Linh Durand."
+      "Le registre de l'atelier montre Linh seule vingt-sept minutes avec les pièces, après le départ déclaré du livreur. Cette donnée fragilise directement la version de Linh Durand.",
+      "La tasse intacte porte le numéro du lot de capsules pharmaceutiques acheté par Linh pour contenir le sel. La trace relie le geste au procédé employé.",
+      "Un échéancier bancaire exige la somme exacte couverte par l'assurance de l'exposition. Le mobile repose donc sur un fait vérifiable.",
+      "Les photographies géolocalisées et le passage sur scène placent Oscar à Paris avant la fermeture du four. De son côté, la principale autre piste ne résiste pas au recoupement.",
+      "Étienne a désactivé l'alarme d'ouverture du four pendant douze minutes. L'élément paraît accusateur, mais il change de sens avec la dernière pièce : il l'a fait pour remplacer un thermocouple extérieur. Les scellés mécaniques de la porte restent intacts.",
+      "Présence, moyen et intérêt convergent vers Linh Durand."
     ],
-    "explanation": "Linh a caché du sel dans de petites capsules au creux des pièces crues. À la cuisson, les capsules ont disparu et le sel a créé une tension interne. La tasse test, oubliée hors du lot, conserve le chiffre imprimé sur une capsule. Le mobile était de faire jouer l'assurance pour empêcher la faillite de la manufacture. La méthode consistait à introduire des capsules de sel dans les pièces avant l'émaillage. La fausse piste contre Oscar Nève paraît forte isolément, mais il l'a fait pour remplacer un thermocouple extérieur; les scellés mécaniques de la porte restent intacts. Ainsi, les preuves convergent sans supposer d'information extérieure au dossier.",
+    "explanation": "Linh a caché du sel dans de petites capsules au creux des pièces crues. À la cuisson, les capsules ont disparu et le sel a créé une tension interne. La tasse test, oubliée hors du lot, conserve le chiffre imprimé sur une capsule. Ce qui pousse Linh Durand à agir devient clair : faire jouer l'assurance pour empêcher la faillite de la manufacture. Concrètement, il fallait introduire des capsules de sel dans les pièces avant l'émaillage. Il l'a fait pour remplacer un thermocouple extérieur. Les scellés mécaniques de la porte restent intacts. Une fois ce point vérifié, toutes les pièces s'accordent.",
     "proofChains": [
       {
-        "title": "La chaîne du geste",
+        "title": "Ce qui trahit Linh Durand",
         "steps": [
           "Le registre de l'atelier montre Linh seule vingt-sept minutes avec les pièces, après le départ déclaré du livreur.",
           "La tasse intacte porte le numéro du lot de capsules pharmaceutiques acheté par Linh pour contenir le sel.",
-          "Ces deux pièces relient matériellement Linh Durand à l'action."
+          "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]
       },
       {
-        "title": "La chaîne de l'intention",
+        "title": "Le mobile et les innocents",
         "steps": [
           "Un échéancier bancaire exige la somme exacte couverte par l'assurance de l'exposition.",
           "Les photographies géolocalisées et le passage sur scène placent Oscar à Paris avant la fermeture du four.",
-          "Le mobile devient exclusif une fois les alibis recoupés."
+          "Il l'a fait pour remplacer un thermocouple extérieur. Les scellés mécaniques de la porte restent intacts."
         ]
       }
     ]

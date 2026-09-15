@@ -4,8 +4,8 @@
     "number": 19,
     "date": "2026-09-19",
     "title": "L'OMBRE EMPRUNTÉE",
-    "subtitle": "L'astéroïde n'existe que dans les données — et dans l'ambition de celui qui prétend l'avoir découvert.",
-    "location": "Observatoire du Pic Noir — Hautes-Pyrénées",
+    "subtitle": "L'astéroïde n'existe que dans les données, et dans l'ambition de celui qui prétend l'avoir découvert.",
+    "location": "Observatoire du Pic Noir, Hautes-Pyrénées",
     "incident": "Fabrication d'une découverte astronomique",
     "intro": "Trois séries d'images montrent un point mobile cohérent. Pourtant, l'objet n'apparaît dans aucun observatoire partenaire. Les fichiers bruts portent les signatures cryptographiques correctes du télescope.",
     "victim": {
@@ -56,19 +56,13 @@
     "clues": [
       {
         "id": "registre",
-        "title": "L'alibi qui se fissure",
-        "source": "JOURNAL TECHNIQUE",
+        "title": "Une commande à l'aube",
+        "source": "REGISTRE DE SERVICE",
         "summary": "Le Wi-Fi de la chambre d'Aya reste silencieux tandis que son badge ouvre la salle optique.",
         "evidence": {
-          "kind": "schedule",
-          "title": "JOURNAL TECHNIQUE",
-          "rows": [
-            {
-              "time": "20:21",
-              "label": "Le Wi-Fi de la chambre d'Aya reste silencieux tandis que son badge ouvre la salle optique."
-            }
-          ],
-          "altText": "JOURNAL TECHNIQUE à 20:21 : Le Wi-Fi de la chambre d'Aya reste silencieux tandis que son badge ouvre la salle optique."
+          "kind": "note",
+          "body": "Le Wi-Fi de la chambre d'Aya reste silencieux tandis que son badge ouvre la salle optique.",
+          "altText": "Note versée au dossier. Le Wi-Fi de la chambre d'Aya reste silencieux tandis que son badge ouvre la salle optique."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -91,23 +85,23 @@
       },
       {
         "id": "trace",
-        "title": "La trace qui ne devait pas rester",
-        "source": "ANALYSE MATÉRIELLE",
+        "title": "La trajectoire trop parfaite",
+        "source": "EXAMEN DE LA PIÈCE",
         "summary": "La trajectoire conserve exactement l'espacement du rail motorisé utilisé pour les calibrations de laboratoire.",
         "evidence": {
           "kind": "photo",
           "caption": "La trajectoire conserve exactement l'espacement du rail motorisé utilisé pour les calibrations de laboratoire.",
           "meta": [
             {
-              "label": "HEURE",
-              "value": "20:26"
+              "label": "Heure",
+              "value": "19:55"
             },
             {
-              "label": "STATUT",
-              "value": "Pièce analysée"
+              "label": "Pièce",
+              "value": "La trajectoire trop parfaite"
             }
           ],
-          "altText": "Photographie d'analyse : La trajectoire conserve exactement l'espacement du rail motorisé utilisé pour les calibrations de laboratoire.",
+          "altText": "Photographie. La trajectoire conserve exactement l'espacement du rail motorisé utilisé pour les calibrations de laboratoire.",
           "tone": "cold"
         },
         "analysis": {
@@ -127,17 +121,14 @@
       },
       {
         "id": "mobile",
-        "title": "Ce que la victime allait révéler",
-        "source": "DOCUMENT CONFIDENTIEL",
+        "title": "Le financement menacé",
+        "source": "CORRESPONDANCE SAISIE",
         "summary": "Son dossier de renouvellement non envoyé porte déjà le titre de la découverte et sa date d'annonce.",
         "evidence": {
-          "kind": "email",
-          "from": "Dossier de la victime",
-          "to": "Archives de l'enquête",
-          "subject": "Ce que la victime allait révéler",
-          "sentAt": "19:55",
+          "kind": "handwriting",
           "body": "Son dossier de renouvellement non envoyé porte déjà le titre de la découverte et sa date d'annonce.",
-          "altText": "Document confidentiel : Son dossier de renouvellement non envoyé porte déjà le titre de la découverte et sa date d'annonce."
+          "signature": "Chiara Moss",
+          "altText": "Note manuscrite. Son dossier de renouvellement non envoyé porte déjà le titre de la découverte et sa date d'annonce."
         },
         "analysis": {
           "category": "BEHAVIORAL",
@@ -156,19 +147,19 @@
       },
       {
         "id": "alibi_a",
-        "title": "La preuve de Rémi Corbel",
-        "source": "VÉRIFICATION D'ALIBI",
+        "title": "Rémi sous la coupole",
+        "source": "ENREGISTREMENT TÉMOIN",
         "summary": "La visioconférence et les données chiliennes signées placent Chiara à dix mille kilomètres.",
         "evidence": {
           "kind": "camera",
-          "location": "VÉRIFICATION D'ALIBI",
+          "location": "ENREGISTREMENT TÉMOIN",
           "frames": [
             {
               "time": "20:14",
               "text": "La visioconférence et les données chiliennes signées placent Chiara à dix mille kilomètres."
             }
           ],
-          "altText": "Relevé de vérification à 20:14 : La visioconférence et les données chiliennes signées placent Chiara à dix mille kilomètres."
+          "altText": "Image enregistrée à 20:14. La visioconférence et les données chiliennes signées placent Chiara à dix mille kilomètres."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -185,13 +176,17 @@
       },
       {
         "id": "fausse_piste",
-        "title": "Le détail contre Chiara Moss",
-        "source": "PIÈCE SAISIE",
+        "title": "Les corrections de Chiara",
+        "source": "DOCUMENT SUSPECT",
         "summary": "Rémi avait documenté une rangée de pixels chauds proche de la trajectoire.",
         "evidence": {
-          "kind": "note",
-          "body": "Rémi avait documenté une rangée de pixels chauds proche de la trajectoire.",
-          "altText": "Note saisie constituant une fausse piste : Rémi avait documenté une rangée de pixels chauds proche de la trajectoire."
+          "kind": "document",
+          "title": "Les corrections de Chiara",
+          "subtitle": "DOCUMENT SUSPECT",
+          "paragraphs": [
+            "Rémi avait documenté une rangée de pixels chauds proche de la trajectoire."
+          ],
+          "altText": "Document intitulé Les corrections de Chiara. Rémi avait documenté une rangée de pixels chauds proche de la trajectoire."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -210,17 +205,21 @@
       },
       {
         "id": "resolution",
-        "title": "Ce que la fausse piste oublie",
-        "source": "RECOUPEMENT",
+        "title": "Un satellite à la place d'une comète",
+        "source": "ALIBI VÉRIFIÉ",
         "summary": "Les pixels sont fixes dans le repère du capteur tandis que le faux objet suit les pas réguliers du rail.",
         "evidence": {
-          "kind": "document",
-          "title": "RECOUPEMENT",
-          "subtitle": "Pièce enregistrée à 20:29",
-          "paragraphs": [
-            "Les pixels sont fixes dans le repère du capteur tandis que le faux objet suit les pas réguliers du rail."
+          "kind": "sms",
+          "contact": "Chiara Moss",
+          "channel": "sms",
+          "messages": [
+            {
+              "from": "them",
+              "text": "Les pixels sont fixes dans le repère du capteur tandis que le faux objet suit les pas réguliers du rail.",
+              "time": "19:43"
+            }
           ],
-          "altText": "RECOUPEMENT : Les pixels sont fixes dans le repère du capteur tandis que le faux objet suit les pas réguliers du rail."
+          "altText": "Message de Chiara Moss à 19:43. Les pixels sont fixes dans le repère du capteur tandis que le faux objet suit les pas réguliers du rail."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -240,99 +239,99 @@
       {
         "id": "aya_alibi",
         "suspectId": "aya",
-        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "question": "Qui peut confirmer votre emploi du temps, Aya Ben Salem ?",
         "answer": "Elle traitait les données depuis sa chambre. Brillante, impatiente, parle très vite des trajectoires.",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
         "id": "aya_relation",
         "suspectId": "aya",
-        "question": "Qu'est-ce que Dr Luan Perrin risquait de changer pour vous ?",
+        "question": "Qu'est-ce que cette affaire pouvait changer pour vous, Aya Ben Salem ?",
         "answer": "Elle a repéré le point la première. La découverte assurerait son poste.",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "remi_alibi",
         "suspectId": "remi",
-        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "question": "Quel est votre dernier souvenir précis avant les faits, Rémi Corbel ?",
         "answer": "Il réparait la coupole secondaire avec un collègue. Précis, peu sociable, protège jalousement la machine.",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "remi_relation",
         "suspectId": "remi",
-        "question": "Qu'est-ce que Dr Luan Perrin risquait de changer pour vous ?",
+        "question": "Pourquoi votre nom apparaît-il dans le dossier de Dr, Rémi Corbel ?",
         "answer": "Il calibre le capteur principal. Il avait signalé des pixels défectueux ignorés.",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "chiara_alibi",
         "suspectId": "chiara",
-        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "question": "Votre version comporte-t-elle un moment sans témoin, Chiara Moss ?",
         "answer": "Elle observait depuis le Chili en liaison continue. Chaleureuse mais stratégique.",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "chiara_relation",
         "suspectId": "chiara",
-        "question": "Qu'est-ce que Dr Luan Perrin risquait de changer pour vous ?",
+        "question": "Aviez-vous une raison de redouter la décision de Dr, Chiara Moss ?",
         "answer": "Elle dirige l'équipe concurrente partenaire. Une fausse alerte discréditerait le programme de Luan.",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "aya_confrontation",
         "suspectId": "aya",
-        "question": "Votre heure ne correspond pas au registre. Pourquoi ?",
-        "answer": "« Le registre se trompe parfois. Cela ne prouve pas que j'ai fait ce qu'on me reproche. »",
+        "question": "Le relevé vous place sur les lieux. Pourquoi l'avoir omis ?",
+        "answer": "« J'ai omis ce passage parce qu'il me mettait dans une mauvaise position. Ce n'est pas un aveu. »",
         "unlockedByClueId": "registre",
-        "beat": "La personne conteste l'outil, sans expliquer sa propre trace."
+        "beat": "La présence devient certaine. Le geste reste à prouver."
       },
       {
         "id": "aya_mobile",
         "suspectId": "aya",
-        "question": "Ce document vous donnait-il une raison d'agir ?",
-        "answer": "« Vous appelez cela un mobile parce que vous connaissez déjà la fin. Sur le moment, je cherchais seulement une issue. »",
+        "question": "Qu'auriez-vous perdu si ce projet avait abouti ?",
+        "answer": "« J'avais beaucoup à perdre. Je cherchais une solution, pas un coupable à fabriquer. »",
         "unlockedByClueId": "mobile",
-        "beat": "La raison d'agir est reconnue à demi-mot."
+        "beat": "Le document donne un poids concret au mobile."
       },
       {
         "id": "chiara_detail",
         "suspectId": "chiara",
-        "question": "Pourquoi cette pièce vous désigne-t-elle ?",
-        "answer": "« Elle est vraie, mais votre conclusion ne l'est pas. Cherchez ce qui s'est passé après. »",
+        "question": "Pourquoi retrouve-t-on cet objet parmi vos affaires ?",
+        "answer": "« Cet objet m'appartient. Il ne se trouvait pourtant pas là au moment que vous imaginez. »",
         "unlockedByClueId": "fausse_piste",
-        "beat": "La pièce cache une chronologie plus complète."
+        "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       }
     ],
     "timeline": [
       {
         "time": "19:43",
-        "text": "Dr Luan Perrin est vu pour la dernière fois avant l'incident.",
-        "source": "Témoignages concordants",
+        "text": "Dernière apparition confirmée de Dr Luan Perrin.",
+        "source": "Recoupement des témoignages",
         "certainty": "CERTAIN"
       },
       {
         "time": "19:55",
-        "text": "Le document révélant le mobile est créé ou consulté.",
-        "source": "Métadonnées",
+        "text": "Son dossier de renouvellement non envoyé porte déjà le titre de la découverte et sa date d'annonce.",
+        "source": "CORRESPONDANCE SAISIE",
         "certainty": "CERTAIN"
       },
       {
         "time": "20:08",
-        "text": "Aya Ben Salem affirme ne plus pouvoir intervenir.",
-        "source": "Déclaration",
+        "text": "Aya Ben Salem situe ici la fin de ses déplacements.",
+        "source": "Déposition",
         "certainty": "REPORTED"
       },
       {
         "time": "20:21",
-        "text": "Une activité technique contredit cette version.",
-        "source": "Registre",
+        "text": "Le Wi-Fi de la chambre d'Aya reste silencieux tandis que son badge ouvre la salle optique.",
+        "source": "REGISTRE DE SERVICE",
         "certainty": "CERTAIN"
       },
       {
         "time": "20:29",
-        "text": "L'incident devient visible ou produit ses effets.",
-        "source": "Constat",
+        "text": "Les premiers effets de l'incident sont constatés.",
+        "source": "Constat sur place",
         "certainty": "ESTIMATED"
       }
     ],
@@ -435,61 +434,62 @@
     "correctTimeline": [
       {
         "time": "19:43",
-        "place": "Observatoire du Pic Noir — Hautes-Pyrénées",
+        "place": "Observatoire du Pic Noir, Hautes-Pyrénées",
         "personIds": [
           "aya"
         ],
-        "text": "Aya Ben Salem comprend que la situation menace directement ses intérêts."
+        "text": "Aya Ben Salem comprend que la décision de Dr Luan Perrin menace directement ses intérêts."
       },
       {
         "time": "19:55",
-        "place": "Observatoire du Pic Noir — Hautes-Pyrénées",
+        "place": "Observatoire du Pic Noir, Hautes-Pyrénées",
         "personIds": [
           "aya"
         ],
-        "text": "Le mobile se cristallise : obtenir une découverte majeure avant la fin de son financement."
+        "text": "Son dossier de renouvellement non envoyé porte déjà le titre de la découverte et sa date d'annonce."
       },
       {
         "time": "20:21",
         "endTime": "20:26",
-        "place": "Observatoire du Pic Noir — Hautes-Pyrénées",
+        "place": "Observatoire du Pic Noir, Hautes-Pyrénées",
         "personIds": [
           "aya"
         ],
-        "text": "Aya a placé une diode sur le rail de calibration et l'a déplacée entre les poses. Les signatures sont authentiques parce que le télescope a réellement photographié la lumière; seule sa source était dans la pièce."
+        "text": "Aya a placé une diode sur le rail de calibration et l'a déplacée entre les poses. Les signatures sont authentiques parce que le télescope a réellement photographié la lumière. Seule sa source était dans la pièce."
       },
       {
         "time": "20:29",
-        "place": "Observatoire du Pic Noir — Hautes-Pyrénées",
+        "place": "Observatoire du Pic Noir, Hautes-Pyrénées",
         "personIds": [
           "aya"
         ],
-        "text": "La personne remet les lieux en ordre et s'appuie sur son alibi préparé."
+        "text": "Après les faits, Aya Ben Salem s'appuie sur l'alibi que le relevé finira par contredire."
       }
     ],
     "reasoning": [
-      "Le registre contredit l'heure donnée par Aya Ben Salem : Le Wi-Fi de la chambre d'Aya reste silencieux tandis que son badge ouvre la salle optique.",
-      "La trace matérielle ne prouve pas seulement une présence; elle décrit la méthode : La trajectoire conserve exactement l'espacement du rail motorisé utilisé pour les calibrations de laboratoire.",
-      "Le document confidentiel fournit un mobile précis : Son dossier de renouvellement non envoyé porte déjà le titre de la découverte et sa date d'annonce.",
-      "Rémi Corbel est écarté par une preuve indépendante, tandis que l'élément visant Chiara Moss est expliqué par le recoupement final.",
-      "La seule personne réunissant présence, moyen et mobile est Aya Ben Salem."
+      "Le Wi-Fi de la chambre d'Aya reste silencieux tandis que son badge ouvre la salle optique. Cette donnée fragilise directement la version d'Aya Ben Salem.",
+      "La trajectoire conserve exactement l'espacement du rail motorisé utilisé pour les calibrations de laboratoire. La trace relie le geste au procédé employé.",
+      "Son dossier de renouvellement non envoyé porte déjà le titre de la découverte et sa date d'annonce. Le mobile repose donc sur un fait vérifiable.",
+      "La visioconférence et les données chiliennes signées placent Chiara à dix mille kilomètres. De son côté, la principale autre piste ne résiste pas au recoupement.",
+      "Rémi avait documenté une rangée de pixels chauds proche de la trajectoire. L'élément paraît accusateur, mais il change de sens avec la dernière pièce : les pixels sont fixes dans le repère du capteur tandis que le faux objet suit les pas réguliers du rail.",
+      "Présence, moyen et intérêt convergent vers Aya Ben Salem."
     ],
-    "explanation": "Aya a placé une diode sur le rail de calibration et l'a déplacée entre les poses. Les signatures sont authentiques parce que le télescope a réellement photographié la lumière; seule sa source était dans la pièce. Le mobile était de obtenir une découverte majeure avant la fin de son financement. La méthode consistait à projeter une faible diode mobile sur le capteur pendant trois expositions. La fausse piste contre Chiara Moss paraît forte isolément, mais les pixels sont fixes dans le repère du capteur tandis que le faux objet suit les pas réguliers du rail. Ainsi, les preuves convergent sans supposer d'information extérieure au dossier.",
+    "explanation": "Aya a placé une diode sur le rail de calibration et l'a déplacée entre les poses. Les signatures sont authentiques parce que le télescope a réellement photographié la lumière. Seule sa source était dans la pièce. Le motif d'Aya Ben Salem ne laisse plus de doute : obtenir une découverte majeure avant la fin de son financement. Le procédé était discret : projeter une faible diode mobile sur le capteur pendant trois expositions. Les pixels sont fixes dans le repère du capteur tandis que le faux objet suit les pas réguliers du rail. C'est la pièce qui manquait pour distinguer le soupçon de la preuve.",
     "proofChains": [
       {
-        "title": "La chaîne du geste",
+        "title": "Ce qui trahit Aya Ben Salem",
         "steps": [
           "Le Wi-Fi de la chambre d'Aya reste silencieux tandis que son badge ouvre la salle optique.",
           "La trajectoire conserve exactement l'espacement du rail motorisé utilisé pour les calibrations de laboratoire.",
-          "Ces deux pièces relient matériellement Aya Ben Salem à l'action."
+          "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]
       },
       {
-        "title": "La chaîne de l'intention",
+        "title": "Le mobile et les innocents",
         "steps": [
           "Son dossier de renouvellement non envoyé porte déjà le titre de la découverte et sa date d'annonce.",
           "La visioconférence et les données chiliennes signées placent Chiara à dix mille kilomètres.",
-          "Le mobile devient exclusif une fois les alibis recoupés."
+          "Les pixels sont fixes dans le repère du capteur tandis que le faux objet suit les pas réguliers du rail."
         ]
       }
     ]

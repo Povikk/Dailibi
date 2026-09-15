@@ -4,8 +4,8 @@
     "number": 13,
     "date": "2026-09-13",
     "title": "L'ENCHÈRE SILENCIEUSE",
-    "subtitle": "Le manuscrit vendu est authentique jusque dans ses fautes — sauf celle que personne ne connaissait.",
-    "location": "Maison de ventes Saint-Roch — Paris",
+    "subtitle": "Le manuscrit vendu est authentique jusque dans ses fautes, sauf celle que personne ne connaissait.",
+    "location": "Maison de ventes Saint-Roch, Paris",
     "incident": "Fraude sur un manuscrit littéraire",
     "intro": "Après l'adjudication, une chercheuse remarque une faute présente uniquement dans une transcription jamais publiée. Le papier et l'encre sont pourtant d'époque. Le manuscrit original a été consulté par trois personnes avant la vente.",
     "victim": {
@@ -56,19 +56,19 @@
     "clues": [
       {
         "id": "registre",
-        "title": "L'alibi qui se fissure",
-        "source": "JOURNAL TECHNIQUE",
+        "title": "Le badge de 6 h 42",
+        "source": "JOURNAL D'ACCÈS",
         "summary": "Le registre du coffre montre que Véra a utilisé son badge visiteur à 6h42, avant l'ouverture qu'elle prétend être sa première venue.",
         "evidence": {
-          "kind": "schedule",
-          "title": "JOURNAL TECHNIQUE",
-          "rows": [
+          "kind": "camera",
+          "location": "JOURNAL D'ACCÈS",
+          "frames": [
             {
               "time": "19:39",
-              "label": "Le registre du coffre montre que Véra a utilisé son badge visiteur à 6h42, avant l'ouverture qu'elle prétend être sa première venue."
+              "text": "Le registre du coffre montre que Véra a utilisé son badge visiteur à 6h42, avant l'ouverture qu'elle prétend être sa première venue."
             }
           ],
-          "altText": "JOURNAL TECHNIQUE à 19:39 : Le registre du coffre montre que Véra a utilisé son badge visiteur à 6h42, avant l'ouverture qu'elle prétend être sa première venue."
+          "altText": "Image enregistrée à 19:39. Le registre du coffre montre que Véra a utilisé son badge visiteur à 6h42, avant l'ouverture qu'elle prétend être sa première venue."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -91,24 +91,17 @@
       },
       {
         "id": "trace",
-        "title": "La trace qui ne devait pas rester",
-        "source": "ANALYSE MATÉRIELLE",
+        "title": "La faute de la machine",
+        "source": "CONSTAT PHOTOGRAPHIQUE",
         "summary": "La copie reproduit une erreur OCR invisible dans l'original mais présente dans le fichier reçu par Véra.",
         "evidence": {
-          "kind": "photo",
-          "caption": "La copie reproduit une erreur OCR invisible dans l'original mais présente dans le fichier reçu par Véra.",
-          "meta": [
-            {
-              "label": "HEURE",
-              "value": "19:44"
-            },
-            {
-              "label": "STATUT",
-              "value": "Pièce analysée"
-            }
+          "kind": "document",
+          "title": "La faute de la machine",
+          "subtitle": "CONSTAT PHOTOGRAPHIQUE",
+          "paragraphs": [
+            "La copie reproduit une erreur OCR invisible dans l'original mais présente dans le fichier reçu par Véra."
           ],
-          "altText": "Photographie d'analyse : La copie reproduit une erreur OCR invisible dans l'original mais présente dans le fichier reçu par Véra.",
-          "tone": "cold"
+          "altText": "Document intitulé La faute de la machine. La copie reproduit une erreur OCR invisible dans l'original mais présente dans le fichier reçu par Véra."
         },
         "analysis": {
           "category": "TIMELINE",
@@ -127,17 +120,17 @@
       },
       {
         "id": "mobile",
-        "title": "Ce que la victime allait révéler",
-        "source": "DOCUMENT CONFIDENTIEL",
+        "title": "Le virement suisse",
+        "source": "NOTE PERSONNELLE",
         "summary": "Un virement d'un collectionneur suisse correspond à la moitié du prix convenu pour l'original hors catalogue.",
         "evidence": {
           "kind": "email",
-          "from": "Dossier de la victime",
-          "to": "Archives de l'enquête",
-          "subject": "Ce que la victime allait révéler",
-          "sentAt": "19:13",
+          "from": "NOTE PERSONNELLE",
+          "to": "Dossier d'enquête",
+          "subject": "Le virement suisse",
+          "sentAt": "19:26",
           "body": "Un virement d'un collectionneur suisse correspond à la moitié du prix convenu pour l'original hors catalogue.",
-          "altText": "Document confidentiel : Un virement d'un collectionneur suisse correspond à la moitié du prix convenu pour l'original hors catalogue."
+          "altText": "Courriel intitulé Le virement suisse. Un virement d'un collectionneur suisse correspond à la moitié du prix convenu pour l'original hors catalogue."
         },
         "analysis": {
           "category": "BEHAVIORAL",
@@ -156,19 +149,14 @@
       },
       {
         "id": "alibi_a",
-        "title": "La preuve de Nassim Grégoire",
-        "source": "VÉRIFICATION D'ALIBI",
+        "title": "Nassim loin du coffre",
+        "source": "ALIBI VÉRIFIÉ",
         "summary": "Le lecteur des archives et trois demandes de documents horodatées placent Nassim à distance.",
         "evidence": {
-          "kind": "camera",
-          "location": "VÉRIFICATION D'ALIBI",
-          "frames": [
-            {
-              "time": "19:32",
-              "text": "Le lecteur des archives et trois demandes de documents horodatées placent Nassim à distance."
-            }
-          ],
-          "altText": "Relevé de vérification à 19:32 : Le lecteur des archives et trois demandes de documents horodatées placent Nassim à distance."
+          "kind": "handwriting",
+          "body": "Le lecteur des archives et trois demandes de documents horodatées placent Nassim à distance.",
+          "signature": "Véra Klein",
+          "altText": "Note manuscrite. Le lecteur des archives et trois demandes de documents horodatées placent Nassim à distance."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -185,13 +173,13 @@
       },
       {
         "id": "fausse_piste",
-        "title": "Le détail contre Colombe Masson",
-        "source": "PIÈCE SAISIE",
+        "title": "La minute effacée",
+        "source": "ÉLÉMENT À CHARGE",
         "summary": "Colombe a effacé une séquence de caméra devant le coffre.",
         "evidence": {
           "kind": "note",
           "body": "Colombe a effacé une séquence de caméra devant le coffre.",
-          "altText": "Note saisie constituant une fausse piste : Colombe a effacé une séquence de caméra devant le coffre."
+          "altText": "Note versée au dossier. Colombe a effacé une séquence de caméra devant le coffre."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -210,17 +198,19 @@
       },
       {
         "id": "resolution",
-        "title": "Ce que la fausse piste oublie",
-        "source": "RECOUPEMENT",
-        "summary": "La séquence masquait une dispute familiale la veille; une sauvegarde montre que le manuscrit était encore original après son départ.",
+        "title": "Ce que cachait vraiment la caméra",
+        "source": "ENREGISTREMENT TÉMOIN",
+        "summary": "La séquence masquait une dispute familiale la veille. Une sauvegarde montre que le manuscrit était encore original après son départ.",
         "evidence": {
-          "kind": "document",
-          "title": "RECOUPEMENT",
-          "subtitle": "Pièce enregistrée à 19:47",
-          "paragraphs": [
-            "La séquence masquait une dispute familiale la veille; une sauvegarde montre que le manuscrit était encore original après son départ."
+          "kind": "schedule",
+          "title": "ENREGISTREMENT TÉMOIN",
+          "rows": [
+            {
+              "time": "19:01",
+              "label": "La séquence masquait une dispute familiale la veille. Une sauvegarde montre que le manuscrit était encore original après son départ."
+            }
           ],
-          "altText": "RECOUPEMENT : La séquence masquait une dispute familiale la veille; une sauvegarde montre que le manuscrit était encore original après son départ."
+          "altText": "ENREGISTREMENT TÉMOIN, 19:01. La séquence masquait une dispute familiale la veille. Une sauvegarde montre que le manuscrit était encore original après son départ."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -240,99 +230,99 @@
       {
         "id": "vera_alibi",
         "suspectId": "vera",
-        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "question": "Qui peut confirmer votre emploi du temps, Véra Klein ?",
         "answer": "Elle affirme n'avoir jamais laissé le lot hors de vue. Élégante, précise la provenance avant qu'on la demande.",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
         "id": "vera_relation",
         "suspectId": "vera",
-        "question": "Qu'est-ce que Aurèle Masson risquait de changer pour vous ?",
+        "question": "Qu'est-ce que cette affaire pouvait changer pour vous, Véra Klein ?",
         "answer": "Elle a apporté le manuscrit à la vente. Elle doit racheter sa librairie à son associé.",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "nassim_alibi",
         "suspectId": "nassim",
-        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "question": "Quel est votre dernier souvenir précis avant les faits, Nassim Grégoire ?",
         "answer": "Il travaillait aux archives nationales le soir de l'échange. Réservé, passionné par les ratures.",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "nassim_relation",
         "suspectId": "nassim",
-        "question": "Qu'est-ce que Aurèle Masson risquait de changer pour vous ?",
+        "question": "Pourquoi votre nom apparaît-il dans le dossier d'Aurèle, Nassim Grégoire ?",
         "answer": "Il a établi la transcription confidentielle. La faute inconnue vient de son fichier.",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "colombe_alibi",
         "suspectId": "colombe",
-        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "question": "Votre version comporte-t-elle un moment sans témoin, Colombe Masson ?",
         "answer": "Elle emballait seule les objets invendus. Rapide, organisée, supporte mal le prestige de son père.",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "colombe_relation",
         "suspectId": "colombe",
-        "question": "Qu'est-ce que Aurèle Masson risquait de changer pour vous ?",
+        "question": "Aviez-vous une raison de redouter la décision d'Aurèle, Colombe Masson ?",
         "answer": "Fille d'Aurèle, elle préparait les lots. Elle connaissait le code du coffre et les dettes de la maison.",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "vera_confrontation",
         "suspectId": "vera",
-        "question": "Votre heure ne correspond pas au registre. Pourquoi ?",
-        "answer": "« Le registre se trompe parfois. Cela ne prouve pas que j'ai fait ce qu'on me reproche. »",
+        "question": "Le relevé vous place sur les lieux. Pourquoi l'avoir omis ?",
+        "answer": "« J'ai omis ce passage parce qu'il me mettait dans une mauvaise position. Ce n'est pas un aveu. »",
         "unlockedByClueId": "registre",
-        "beat": "La personne conteste l'outil, sans expliquer sa propre trace."
+        "beat": "La présence devient certaine. Le geste reste à prouver."
       },
       {
         "id": "vera_mobile",
         "suspectId": "vera",
-        "question": "Ce document vous donnait-il une raison d'agir ?",
-        "answer": "« Vous appelez cela un mobile parce que vous connaissez déjà la fin. Sur le moment, je cherchais seulement une issue. »",
+        "question": "Qu'auriez-vous perdu si ce projet avait abouti ?",
+        "answer": "« J'avais beaucoup à perdre. Je cherchais une solution, pas un coupable à fabriquer. »",
         "unlockedByClueId": "mobile",
-        "beat": "La raison d'agir est reconnue à demi-mot."
+        "beat": "Le document donne un poids concret au mobile."
       },
       {
         "id": "colombe_detail",
         "suspectId": "colombe",
-        "question": "Pourquoi cette pièce vous désigne-t-elle ?",
-        "answer": "« Elle est vraie, mais votre conclusion ne l'est pas. Cherchez ce qui s'est passé après. »",
+        "question": "Pourquoi retrouve-t-on cet objet parmi vos affaires ?",
+        "answer": "« Cet objet m'appartient. Il ne se trouvait pourtant pas là au moment que vous imaginez. »",
         "unlockedByClueId": "fausse_piste",
-        "beat": "La pièce cache une chronologie plus complète."
+        "beat": "Une coïncidence forte n'est pas encore une preuve complète."
       }
     ],
     "timeline": [
       {
         "time": "19:01",
-        "text": "Aurèle Masson est vu pour la dernière fois avant l'incident.",
-        "source": "Témoignages concordants",
+        "text": "Dernière apparition confirmée d'Aurèle Masson.",
+        "source": "Recoupement des témoignages",
         "certainty": "CERTAIN"
       },
       {
         "time": "19:13",
-        "text": "Le document révélant le mobile est créé ou consulté.",
-        "source": "Métadonnées",
+        "text": "Un virement d'un collectionneur suisse correspond à la moitié du prix convenu pour l'original hors catalogue.",
+        "source": "NOTE PERSONNELLE",
         "certainty": "CERTAIN"
       },
       {
         "time": "19:26",
-        "text": "Véra Klein affirme ne plus pouvoir intervenir.",
-        "source": "Déclaration",
+        "text": "Véra Klein situe ici la fin de ses déplacements.",
+        "source": "Déposition",
         "certainty": "REPORTED"
       },
       {
         "time": "19:39",
-        "text": "Une activité technique contredit cette version.",
-        "source": "Registre",
+        "text": "Le registre du coffre montre que Véra a utilisé son badge visiteur à 6h42, avant l'ouverture qu'elle prétend être sa première venue.",
+        "source": "JOURNAL D'ACCÈS",
         "certainty": "CERTAIN"
       },
       {
         "time": "19:47",
-        "text": "L'incident devient visible ou produit ses effets.",
-        "source": "Constat",
+        "text": "Les premiers effets de l'incident sont constatés.",
+        "source": "Constat sur place",
         "certainty": "ESTIMATED"
       }
     ],
@@ -435,24 +425,24 @@
     "correctTimeline": [
       {
         "time": "19:01",
-        "place": "Maison de ventes Saint-Roch — Paris",
+        "place": "Maison de ventes Saint-Roch, Paris",
         "personIds": [
           "vera"
         ],
-        "text": "Véra Klein comprend que la situation menace directement ses intérêts."
+        "text": "Véra Klein comprend que la décision d'Aurèle Masson menace directement ses intérêts."
       },
       {
         "time": "19:13",
-        "place": "Maison de ventes Saint-Roch — Paris",
+        "place": "Maison de ventes Saint-Roch, Paris",
         "personIds": [
           "vera"
         ],
-        "text": "Le mobile se cristallise : vendre l'original en privé et faire adjuger une copie indétectable."
+        "text": "Un virement d'un collectionneur suisse correspond à la moitié du prix convenu pour l'original hors catalogue."
       },
       {
         "time": "19:39",
         "endTime": "19:44",
-        "place": "Maison de ventes Saint-Roch — Paris",
+        "place": "Maison de ventes Saint-Roch, Paris",
         "personIds": [
           "vera"
         ],
@@ -460,36 +450,37 @@
       },
       {
         "time": "19:47",
-        "place": "Maison de ventes Saint-Roch — Paris",
+        "place": "Maison de ventes Saint-Roch, Paris",
         "personIds": [
           "vera"
         ],
-        "text": "La personne remet les lieux en ordre et s'appuie sur son alibi préparé."
+        "text": "Après les faits, Véra Klein s'appuie sur l'alibi que le relevé finira par contredire."
       }
     ],
     "reasoning": [
-      "Le registre contredit l'heure donnée par Véra Klein : Le registre du coffre montre que Véra a utilisé son badge visiteur à 6h42, avant l'ouverture qu'elle prétend être sa première venue.",
-      "La trace matérielle ne prouve pas seulement une présence; elle décrit la méthode : La copie reproduit une erreur OCR invisible dans l'original mais présente dans le fichier reçu par Véra.",
-      "Le document confidentiel fournit un mobile précis : Un virement d'un collectionneur suisse correspond à la moitié du prix convenu pour l'original hors catalogue.",
-      "Nassim Grégoire est écarté par une preuve indépendante, tandis que l'élément visant Colombe Masson est expliqué par le recoupement final.",
-      "La seule personne réunissant présence, moyen et mobile est Véra Klein."
+      "Le registre du coffre montre que Véra a utilisé son badge visiteur à 6h42, avant l'ouverture qu'elle prétend être sa première venue. Cette donnée fragilise directement la version de Véra Klein.",
+      "La copie reproduit une erreur OCR invisible dans l'original mais présente dans le fichier reçu par Véra. La trace relie le geste au procédé employé.",
+      "Un virement d'un collectionneur suisse correspond à la moitié du prix convenu pour l'original hors catalogue. Le mobile repose donc sur un fait vérifiable.",
+      "Le lecteur des archives et trois demandes de documents horodatées placent Nassim à distance. De son côté, la principale autre piste ne résiste pas au recoupement.",
+      "Colombe a effacé une séquence de caméra devant le coffre. L'élément paraît accusateur, mais il change de sens avec la dernière pièce : la séquence masquait une dispute familiale la veille. Une sauvegarde montre que le manuscrit était encore original après son départ.",
+      "Présence, moyen et intérêt convergent vers Véra Klein."
     ],
-    "explanation": "Véra a obtenu la transcription sous prétexte de préparer le catalogue, commandé une copie sur un feuillet ancien puis échangé le lot avant l'ouverture. Elle a reproduit la fidélité du texte, y compris une faute qui n'appartenait qu'à la machine. Le mobile était de vendre l'original en privé et faire adjuger une copie indétectable. La méthode consistait à faire fabriquer une copie sur papier ancien à partir de la transcription confidentielle. La fausse piste contre Colombe Masson paraît forte isolément, mais la séquence masquait une dispute familiale la veille; une sauvegarde montre que le manuscrit était encore original après son départ. Ainsi, les preuves convergent sans supposer d'information extérieure au dossier.",
+    "explanation": "Véra a obtenu la transcription sous prétexte de préparer le catalogue, commandé une copie sur un feuillet ancien puis échangé le lot avant l'ouverture. Elle a reproduit la fidélité du texte, y compris une faute qui n'appartenait qu'à la machine. Le mobile n'est pas une simple supposition. Véra Klein cherchait à vendre l'original en privé et faire adjuger une copie indétectable. Le geste décisif consistait à faire fabriquer une copie sur papier ancien à partir de la transcription confidentielle. La séquence masquait une dispute familiale la veille. Une sauvegarde montre que le manuscrit était encore original après son départ. La dernière ambiguïté disparaît avec ce recoupement.",
     "proofChains": [
       {
-        "title": "La chaîne du geste",
+        "title": "Ce qui trahit Véra Klein",
         "steps": [
           "Le registre du coffre montre que Véra a utilisé son badge visiteur à 6h42, avant l'ouverture qu'elle prétend être sa première venue.",
           "La copie reproduit une erreur OCR invisible dans l'original mais présente dans le fichier reçu par Véra.",
-          "Ces deux pièces relient matériellement Véra Klein à l'action."
+          "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]
       },
       {
-        "title": "La chaîne de l'intention",
+        "title": "Le mobile et les innocents",
         "steps": [
           "Un virement d'un collectionneur suisse correspond à la moitié du prix convenu pour l'original hors catalogue.",
           "Le lecteur des archives et trois demandes de documents horodatées placent Nassim à distance.",
-          "Le mobile devient exclusif une fois les alibis recoupés."
+          "La séquence masquait une dispute familiale la veille. Une sauvegarde montre que le manuscrit était encore original après son départ."
         ]
       }
     ]

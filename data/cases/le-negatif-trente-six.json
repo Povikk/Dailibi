@@ -4,8 +4,8 @@
     "number": 6,
     "date": "2026-09-06",
     "title": "LE NÉGATIF 36",
-    "subtitle": "Sur la planche-contact, une image manque; sur toutes les autres, quelqu'un cherche à ne pas être vu.",
-    "location": "Archives photographiques municipales — Arles",
+    "subtitle": "Sur la planche-contact, une image manque. Sur toutes les autres, quelqu'un cherche à ne pas être vu.",
+    "location": "Archives photographiques municipales, Arles",
     "incident": "Vol d'un négatif compromettant",
     "intro": "Une boîte de trente-six négatifs est complète au registre, mais l'emplacement 36 contient une bande transparente. La chambre froide n'a pas été forcée. La photographie manquante devait être numérisée le lendemain.",
     "victim": {
@@ -56,19 +56,19 @@
     "clues": [
       {
         "id": "registre",
-        "title": "L'alibi qui se fissure",
-        "source": "JOURNAL TECHNIQUE",
+        "title": "Une visite avant l'ouverture",
+        "source": "CONTRÔLE TECHNIQUE",
         "summary": "Le scanner a été rallumé à 22h48 avec le profil de Nils malgré la restitution déclarée de la clé.",
         "evidence": {
           "kind": "schedule",
-          "title": "JOURNAL TECHNIQUE",
+          "title": "CONTRÔLE TECHNIQUE",
           "rows": [
             {
               "time": "20:20",
               "label": "Le scanner a été rallumé à 22h48 avec le profil de Nils malgré la restitution déclarée de la clé."
             }
           ],
-          "altText": "JOURNAL TECHNIQUE à 20:20 : Le scanner a été rallumé à 22h48 avec le profil de Nils malgré la restitution déclarée de la clé."
+          "altText": "CONTRÔLE TECHNIQUE, 20:20. Le scanner a été rallumé à 22h48 avec le profil de Nils malgré la restitution déclarée de la clé."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -91,23 +91,23 @@
       },
       {
         "id": "trace",
-        "title": "La trace qui ne devait pas rester",
-        "source": "ANALYSE MATÉRIELLE",
+        "title": "Le numéro d'émulsion",
+        "source": "RAPPORT TECHNIQUE",
         "summary": "L'amorce de remplacement porte le même numéro d'émulsion que les pellicules personnelles saisies chez Nils.",
         "evidence": {
           "kind": "photo",
           "caption": "L'amorce de remplacement porte le même numéro d'émulsion que les pellicules personnelles saisies chez Nils.",
           "meta": [
             {
-              "label": "HEURE",
-              "value": "20:25"
+              "label": "Heure",
+              "value": "19:54"
             },
             {
-              "label": "STATUT",
-              "value": "Pièce analysée"
+              "label": "Pièce",
+              "value": "Le numéro d'émulsion"
             }
           ],
-          "altText": "Photographie d'analyse : L'amorce de remplacement porte le même numéro d'émulsion que les pellicules personnelles saisies chez Nils.",
+          "altText": "Photographie. L'amorce de remplacement porte le même numéro d'émulsion que les pellicules personnelles saisies chez Nils.",
           "tone": "cold"
         },
         "analysis": {
@@ -127,17 +127,17 @@
       },
       {
         "id": "mobile",
-        "title": "Ce que la victime allait révéler",
-        "source": "DOCUMENT CONFIDENTIEL",
+        "title": "L'acheteur sans photographie",
+        "source": "DOCUMENT DE LA VICTIME",
         "summary": "Une conversation de vente décrit « la trente-sixième vue, jamais publiée » et fixe un rendez-vous après la numérisation.",
         "evidence": {
           "kind": "email",
-          "from": "Dossier de la victime",
-          "to": "Archives de l'enquête",
-          "subject": "Ce que la victime allait révéler",
-          "sentAt": "19:54",
+          "from": "DOCUMENT DE LA VICTIME",
+          "to": "Dossier d'enquête",
+          "subject": "L'acheteur sans photographie",
+          "sentAt": "20:07",
           "body": "Une conversation de vente décrit « la trente-sixième vue, jamais publiée » et fixe un rendez-vous après la numérisation.",
-          "altText": "Document confidentiel : Une conversation de vente décrit « la trente-sixième vue, jamais publiée » et fixe un rendez-vous après la numérisation."
+          "altText": "Courriel intitulé L'acheteur sans photographie. Une conversation de vente décrit « la trente-sixième vue, jamais publiée » et fixe un rendez-vous après la numérisation."
         },
         "analysis": {
           "category": "BEHAVIORAL",
@@ -156,19 +156,19 @@
       },
       {
         "id": "alibi_a",
-        "title": "La preuve de Diane Fabre",
-        "source": "VÉRIFICATION D'ALIBI",
+        "title": "Diane aux Archives",
+        "source": "RECOUPEMENT INDÉPENDANT",
         "summary": "Les photographies du dîner montrent Diane tenant un verre dans chaque séquence horodatée de la fenêtre du vol.",
         "evidence": {
           "kind": "camera",
-          "location": "VÉRIFICATION D'ALIBI",
+          "location": "RECOUPEMENT INDÉPENDANT",
           "frames": [
             {
               "time": "20:13",
               "text": "Les photographies du dîner montrent Diane tenant un verre dans chaque séquence horodatée de la fenêtre du vol."
             }
           ],
-          "altText": "Relevé de vérification à 20:13 : Les photographies du dîner montrent Diane tenant un verre dans chaque séquence horodatée de la fenêtre du vol."
+          "altText": "Image enregistrée à 20:13. Les photographies du dîner montrent Diane tenant un verre dans chaque séquence horodatée de la fenêtre du vol."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -185,13 +185,14 @@
       },
       {
         "id": "fausse_piste",
-        "title": "Le détail contre Hélène Jouve",
-        "source": "PIÈCE SAISIE",
+        "title": "La boîte d'Hélène",
+        "source": "OBJET RETROUVÉ",
         "summary": "Hélène a demandé par écrit que la boîte soit temporairement retirée de l'exposition.",
         "evidence": {
-          "kind": "note",
+          "kind": "handwriting",
           "body": "Hélène a demandé par écrit que la boîte soit temporairement retirée de l'exposition.",
-          "altText": "Note saisie constituant une fausse piste : Hélène a demandé par écrit que la boîte soit temporairement retirée de l'exposition."
+          "signature": "Nils Caron",
+          "altText": "Note manuscrite. Hélène a demandé par écrit que la boîte soit temporairement retirée de l'exposition."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -210,17 +211,17 @@
       },
       {
         "id": "resolution",
-        "title": "Ce que la fausse piste oublie",
-        "source": "RECOUPEMENT",
+        "title": "L'amorce de remplacement",
+        "source": "CONTRÔLE DES DÉPLACEMENTS",
         "summary": "Sa demande invoquait la présence non floutée d'un mineur sur le négatif 12, sans mentionner la vue 36.",
         "evidence": {
           "kind": "document",
-          "title": "RECOUPEMENT",
-          "subtitle": "Pièce enregistrée à 20:28",
+          "title": "L'amorce de remplacement",
+          "subtitle": "CONTRÔLE DES DÉPLACEMENTS",
           "paragraphs": [
             "Sa demande invoquait la présence non floutée d'un mineur sur le négatif 12, sans mentionner la vue 36."
           ],
-          "altText": "RECOUPEMENT : Sa demande invoquait la présence non floutée d'un mineur sur le négatif 12, sans mentionner la vue 36."
+          "altText": "Document intitulé L'amorce de remplacement. Sa demande invoquait la présence non floutée d'un mineur sur le négatif 12, sans mentionner la vue 36."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -240,99 +241,99 @@
       {
         "id": "diane_alibi",
         "suspectId": "diane",
-        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "question": "Quand avez-vous quitté Archives photographiques municipales, Diane Fabre ?",
         "answer": "Elle dînait avec des mécènes jusqu'à 23h. Magnétique, répond comme si chaque phrase était destinée à la presse.",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "diane_relation",
         "suspectId": "diane",
-        "question": "Qu'est-ce que Maud Serrat risquait de changer pour vous ?",
+        "question": "Quel désaccord vous opposait à Maud, Diane Fabre ?",
         "answer": "Elle revendique depuis trente ans la série retrouvée. Le négatif pouvait prouver qu'elle n'était pas l'autrice.",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "nils_alibi",
         "suspectId": "nils",
-        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "question": "Qui peut confirmer votre emploi du temps, Nils Caron ?",
         "answer": "Il dit avoir terminé le scan à 20h10 et rendu la clé. Discret, technique, regarde rarement son interlocuteur.",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
         "id": "nils_relation",
         "suspectId": "nils",
-        "question": "Qu'est-ce que Maud Serrat risquait de changer pour vous ?",
+        "question": "Que risquiez-vous si Maud allait au bout de sa décision, Nils Caron ?",
         "answer": "Il manipule chaque boîte avant mise en ligne. Il revend anonymement du matériel photographique.",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "helene_alibi",
         "suspectId": "helene",
-        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "question": "Quel est votre dernier souvenir précis avant les faits, Hélène Jouve ?",
         "answer": "Elle assistait au même dîner que Diane. Très contrôlée, reformule les questions avant d'y répondre.",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "helene_relation",
         "suspectId": "helene",
-        "question": "Qu'est-ce que Maud Serrat risquait de changer pour vous ?",
+        "question": "Qu'est-ce que cette affaire pouvait changer pour vous, Hélène Jouve ?",
         "answer": "Son père apparaît sur la photographie disparue. La publication aurait ravivé un scandale familial.",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "nils_confrontation",
         "suspectId": "nils",
-        "question": "Votre heure ne correspond pas au registre. Pourquoi ?",
-        "answer": "« Le registre se trompe parfois. Cela ne prouve pas que j'ai fait ce qu'on me reproche. »",
+        "question": "Cette heure contredit votre récit. Comment l'expliquez-vous ?",
+        "answer": "« Je n'ai pas d'explication pour ce relevé. Mais une heure incohérente ne prouve pas que j'ai provoqué l'incident. »",
         "unlockedByClueId": "registre",
-        "beat": "La personne conteste l'outil, sans expliquer sa propre trace."
+        "beat": "Le mensonge est admis, mais sa raison reste à établir."
       },
       {
         "id": "nils_mobile",
         "suspectId": "nils",
-        "question": "Ce document vous donnait-il une raison d'agir ?",
-        "answer": "« Vous appelez cela un mobile parce que vous connaissez déjà la fin. Sur le moment, je cherchais seulement une issue. »",
+        "question": "Pourquoi ce document vous concernait-il directement ?",
+        "answer": "« Ce document me concernait, évidemment. Cela ne signifie pas que j'étais prêt à commettre l'irréparable. »",
         "unlockedByClueId": "mobile",
-        "beat": "La raison d'agir est reconnue à demi-mot."
+        "beat": "L'intérêt personnel est reconnu sans que le passage à l'acte le soit."
       },
       {
         "id": "helene_detail",
         "suspectId": "helene",
-        "question": "Pourquoi cette pièce vous désigne-t-elle ?",
-        "answer": "« Elle est vraie, mais votre conclusion ne l'est pas. Cherchez ce qui s'est passé après. »",
+        "question": "Cette pièce semble vous accuser. Que manque-t-il au dossier ?",
+        "answer": "« La pièce est authentique, mais votre interprétation s'arrête trop tôt. Vérifiez la suite des événements. »",
         "unlockedByClueId": "fausse_piste",
-        "beat": "La pièce cache une chronologie plus complète."
+        "beat": "La pièce doit être replacée dans sa chronologie."
       }
     ],
     "timeline": [
       {
         "time": "19:42",
-        "text": "Maud Serrat est vu pour la dernière fois avant l'incident.",
-        "source": "Témoignages concordants",
+        "text": "Dernière apparition confirmée de Maud Serrat.",
+        "source": "Recoupement des témoignages",
         "certainty": "CERTAIN"
       },
       {
         "time": "19:54",
-        "text": "Le document révélant le mobile est créé ou consulté.",
-        "source": "Métadonnées",
+        "text": "Une conversation de vente décrit « la trente-sixième vue, jamais publiée » et fixe un rendez-vous après la numérisation.",
+        "source": "DOCUMENT DE LA VICTIME",
         "certainty": "CERTAIN"
       },
       {
         "time": "20:07",
-        "text": "Nils Caron affirme ne plus pouvoir intervenir.",
-        "source": "Déclaration",
+        "text": "Nils Caron situe ici la fin de ses déplacements.",
+        "source": "Déposition",
         "certainty": "REPORTED"
       },
       {
         "time": "20:20",
-        "text": "Une activité technique contredit cette version.",
-        "source": "Registre",
+        "text": "Le scanner a été rallumé à 22h48 avec le profil de Nils malgré la restitution déclarée de la clé.",
+        "source": "CONTRÔLE TECHNIQUE",
         "certainty": "CERTAIN"
       },
       {
         "time": "20:28",
-        "text": "L'incident devient visible ou produit ses effets.",
-        "source": "Constat",
+        "text": "Les premiers effets de l'incident sont constatés.",
+        "source": "Constat sur place",
         "certainty": "ESTIMATED"
       }
     ],
@@ -435,24 +436,24 @@
     "correctTimeline": [
       {
         "time": "19:42",
-        "place": "Archives photographiques municipales — Arles",
+        "place": "Archives photographiques municipales, Arles",
         "personIds": [
           "nils"
         ],
-        "text": "Nils Caron comprend que la situation menace directement ses intérêts."
+        "text": "Nils Caron comprend que la décision de Maud Serrat menace directement ses intérêts."
       },
       {
         "time": "19:54",
-        "place": "Archives photographiques municipales — Arles",
+        "place": "Archives photographiques municipales, Arles",
         "personIds": [
           "nils"
         ],
-        "text": "Le mobile se cristallise : vendre le négatif à un collectionneur avant sa mise en ligne gratuite."
+        "text": "Une conversation de vente décrit « la trente-sixième vue, jamais publiée » et fixe un rendez-vous après la numérisation."
       },
       {
         "time": "20:20",
         "endTime": "20:25",
-        "place": "Archives photographiques municipales — Arles",
+        "place": "Archives photographiques municipales, Arles",
         "personIds": [
           "nils"
         ],
@@ -460,36 +461,37 @@
       },
       {
         "time": "20:28",
-        "place": "Archives photographiques municipales — Arles",
+        "place": "Archives photographiques municipales, Arles",
         "personIds": [
           "nils"
         ],
-        "text": "La personne remet les lieux en ordre et s'appuie sur son alibi préparé."
+        "text": "Après les faits, Nils Caron s'appuie sur l'alibi que le relevé finira par contredire."
       }
     ],
     "reasoning": [
-      "Le registre contredit l'heure donnée par Nils Caron : Le scanner a été rallumé à 22h48 avec le profil de Nils malgré la restitution déclarée de la clé.",
-      "La trace matérielle ne prouve pas seulement une présence; elle décrit la méthode : L'amorce de remplacement porte le même numéro d'émulsion que les pellicules personnelles saisies chez Nils.",
-      "Le document confidentiel fournit un mobile précis : Une conversation de vente décrit « la trente-sixième vue, jamais publiée » et fixe un rendez-vous après la numérisation.",
-      "Diane Fabre est écarté par une preuve indépendante, tandis que l'élément visant Hélène Jouve est expliqué par le recoupement final.",
-      "La seule personne réunissant présence, moyen et mobile est Nils Caron."
+      "Le scanner a été rallumé à 22h48 avec le profil de Nils malgré la restitution déclarée de la clé. Cette donnée fragilise directement la version de Nils Caron.",
+      "L'amorce de remplacement porte le même numéro d'émulsion que les pellicules personnelles saisies chez Nils. La trace relie le geste au procédé employé.",
+      "Une conversation de vente décrit « la trente-sixième vue, jamais publiée » et fixe un rendez-vous après la numérisation. Le mobile repose donc sur un fait vérifiable.",
+      "Les photographies du dîner montrent Diane tenant un verre dans chaque séquence horodatée de la fenêtre du vol. De son côté, la principale autre piste ne résiste pas au recoupement.",
+      "Hélène a demandé par écrit que la boîte soit temporairement retirée de l'exposition. L'élément paraît accusateur, mais il change de sens avec la dernière pièce : sa demande invoquait la présence non floutée d'un mineur sur le négatif 12, sans mentionner la vue 36.",
+      "Présence, moyen et intérêt convergent vers Nils Caron."
     ],
-    "explanation": "Nils a attendu la fermeture, repris la clé de secours et remplacé le négatif par une amorce chimiquement compatible. Il comptait sur la réputation de Diane et le secret d'Hélène pour disperser les soupçons. Le mobile était de vendre le négatif à un collectionneur avant sa mise en ligne gratuite. La méthode consistait à le remplacer par l'amorce transparente d'une pellicule pendant la numérisation. La fausse piste contre Hélène Jouve paraît forte isolément, mais sa demande invoquait la présence non floutée d'un mineur sur le négatif 12, sans mentionner la vue 36. Ainsi, les preuves convergent sans supposer d'information extérieure au dossier.",
+    "explanation": "Nils a attendu la fermeture, repris la clé de secours et remplacé le négatif par une amorce chimiquement compatible. Il comptait sur la réputation de Diane et le secret d'Hélène pour disperser les soupçons. L'enjeu pour Nils Caron était de taille : vendre le négatif à un collectionneur avant sa mise en ligne gratuite. La méthode reposait sur une idée précise : le remplacer par l'amorce transparente d'une pellicule pendant la numérisation. Sa demande invoquait la présence non floutée d'un mineur sur le négatif 12, sans mentionner la vue 36. L'autre suspect n'est donc plus une explication possible.",
     "proofChains": [
       {
-        "title": "La chaîne du geste",
+        "title": "Ce qui trahit Nils Caron",
         "steps": [
           "Le scanner a été rallumé à 22h48 avec le profil de Nils malgré la restitution déclarée de la clé.",
           "L'amorce de remplacement porte le même numéro d'émulsion que les pellicules personnelles saisies chez Nils.",
-          "Ces deux pièces relient matériellement Nils Caron à l'action."
+          "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]
       },
       {
-        "title": "La chaîne de l'intention",
+        "title": "Le mobile et les innocents",
         "steps": [
           "Une conversation de vente décrit « la trente-sixième vue, jamais publiée » et fixe un rendez-vous après la numérisation.",
           "Les photographies du dîner montrent Diane tenant un verre dans chaque séquence horodatée de la fenêtre du vol.",
-          "Le mobile devient exclusif une fois les alibis recoupés."
+          "Sa demande invoquait la présence non floutée d'un mineur sur le négatif 12, sans mentionner la vue 36."
         ]
       }
     ]

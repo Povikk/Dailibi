@@ -102,10 +102,10 @@ export function HistoryView({ cases }: { cases: CaseSummary[] }) {
                     </div>
                   </div>
                   <Link
-                    href={`/case/${record.date}`}
+                    href={`/case/${record.date}?review=1`}
                     className="block border-t border-ink-800 bg-ink-950/25 px-4 py-2 text-right text-[10px] font-semibold uppercase tracking-[0.15em] text-paper-300/45 transition-colors hover:text-paper-100"
                   >
-                    Revoir le dossier →
+                    Voir les réponses →
                   </Link>
                 </li>
               );

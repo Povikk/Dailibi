@@ -30,6 +30,7 @@ export type StreakState = {
 
 const STATS_KEY = "dailibi.stats.v1";
 const STREAK_KEY = "dailibi.streak.v1";
+const ARCHIVES_KEY = "dailibi.archives.v1";
 
 const emptyStats: DailibiStats = {
   played: 0,
@@ -58,7 +59,14 @@ export function hasPlayed(date: string): boolean {
 }
 
 export function loadDayRecord(date: string): DayRecord | undefined {
-  return loadStats().history.find((entry) => entry.date === date);
+  return (
+    loadStats().history.find((entry) => entry.date === date) ??
+    loadArchiveRecords().find((entry) => entry.date === date)
+  );
+}
+
+export function loadArchiveRecords(): DayRecord[] {
+  return readJson<DayRecord[]>(ARCHIVES_KEY, []);
 }
 
 /**
@@ -89,6 +97,14 @@ export function recordResult(params: {
     seconds,
   };
 
+  if (optional) {
+    const archives = loadArchiveRecords().filter((entry) => entry.date !== date);
+    archives.push(record);
+    archives.sort((a, b) => (a.date < b.date ? 1 : -1));
+    writeJson(ARCHIVES_KEY, archives);
+    return { stats, streak: loadStreak() };
+  }
+
   const next = { ...stats, history: [...stats.history] };
   if (existingIndex >= 0) {
     const prev = next.history[existingIndex];
@@ -111,8 +127,7 @@ export function recordResult(params: {
 
   writeJson(STATS_KEY, next);
 
-  // Archives do not grow the streak.
-  const streak = optional ? loadStreak() : updateStreak(date);
+  const streak = updateStreak(date);
   return { stats: next, streak };
 }
 
@@ -146,7 +161,11 @@ function readJson<T>(key: string, fallback: T): T {
   try {
     const raw = window.localStorage.getItem(key);
     if (!raw) return fallback;
-    return { ...fallback, ...(JSON.parse(raw) as T) };
+    const parsed = JSON.parse(raw) as T;
+    if (Array.isArray(fallback)) {
+      return (Array.isArray(parsed) ? parsed : fallback) as T;
+    }
+    return { ...fallback, ...parsed };
   } catch {
     return fallback;
   }

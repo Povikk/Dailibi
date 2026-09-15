@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 import type { ClientCase, Interview } from "@/types/case";
 import { AccusationPanel } from "@/components/case/AccusationPanel";
@@ -9,6 +9,8 @@ import { CaseHero, OverviewPanel } from "@/components/case/CasePanels";
 import { SuspectsPanel } from "@/components/case/SuspectsPanel";
 import { TimelinePanel } from "@/components/case/TimelinePanel";
 import { DossierPanel } from "@/components/case/DossierPanel";
+import { CaseReview } from "@/components/case/CaseReview";
+import { loadDayRecord } from "@/lib/storage";
 
 type Tab = "apercu" | "suspects" | "indices" | "chronologie" | "dossier";
 
@@ -25,6 +27,11 @@ export function InvestigationView({ caseData }: { caseData: ClientCase }) {
   const [foundClues, setFoundClues] = useState<Set<string>>(new Set());
   const [accusing, setAccusing] = useState(false);
   const [startedAt] = useState(() => Date.now());
+  const [alreadyCompleted, setAlreadyCompleted] = useState<boolean | null>(null);
+
+  useEffect(() => {
+    setAlreadyCompleted(Boolean(loadDayRecord(caseData.date)));
+  }, [caseData.date]);
 
   const availableInterviews = useMemo(() => {
     const bySuspect = new Map<string, Interview[]>();
@@ -50,6 +57,14 @@ export function InvestigationView({ caseData }: { caseData: ClientCase }) {
       next.add(clueId);
       return next;
     });
+  }
+
+  if (alreadyCompleted === null) {
+    return <div className="mx-auto mt-16 h-32 w-full max-w-5xl animate-pulse rounded-lg bg-ink-900/40" />;
+  }
+
+  if (alreadyCompleted) {
+    return <CaseReview caseData={caseData} />;
   }
 
   if (accusing) {

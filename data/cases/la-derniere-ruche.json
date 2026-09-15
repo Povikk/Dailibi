@@ -5,7 +5,7 @@
     "date": "2026-09-21",
     "title": "LA DERNIÈRE RUCHE",
     "subtitle": "Toutes les abeilles reviennent au rucher, puis refusent une seule maison.",
-    "location": "Conservatoire apicole — Dijon",
+    "location": "Conservatoire apicole, Dijon",
     "incident": "Empoisonnement d'une colonie rare",
     "intro": "Au coucher du soleil, les abeilles de la ruche 12 s'agglutinent dehors et meurent sur la planche d'envol. Les onze autres colonies sont intactes. Aucun pesticide n'est détecté dans le pollen rapporté.",
     "victim": {
@@ -56,19 +56,19 @@
     "clues": [
       {
         "id": "registre",
-        "title": "L'alibi qui se fissure",
-        "source": "JOURNAL TECHNIQUE",
+        "title": "Le passage près de la ruche 12",
+        "source": "JOURNAL D'ACCÈS",
         "summary": "La pesée automatique montre que la ruche 12 a été ouverte deux fois pendant la tournée unique d'Éloi.",
         "evidence": {
           "kind": "schedule",
-          "title": "JOURNAL TECHNIQUE",
+          "title": "JOURNAL D'ACCÈS",
           "rows": [
             {
               "time": "20:35",
               "label": "La pesée automatique montre que la ruche 12 a été ouverte deux fois pendant la tournée unique d'Éloi."
             }
           ],
-          "altText": "JOURNAL TECHNIQUE à 20:35 : La pesée automatique montre que la ruche 12 a été ouverte deux fois pendant la tournée unique d'Éloi."
+          "altText": "JOURNAL D'ACCÈS, 20:35. La pesée automatique montre que la ruche 12 a été ouverte deux fois pendant la tournée unique d'Éloi."
         },
         "analysis": {
           "category": "CONTRADICTION",
@@ -91,23 +91,23 @@
       },
       {
         "id": "trace",
-        "title": "La trace qui ne devait pas rester",
-        "source": "ANALYSE MATÉRIELLE",
+        "title": "Le sirop marqué",
+        "source": "CONSTAT PHOTOGRAPHIQUE",
         "summary": "Le répulsif contient l'huile de clou de girofle utilisée dans sa boîte personnelle de marquage des reines.",
         "evidence": {
           "kind": "photo",
           "caption": "Le répulsif contient l'huile de clou de girofle utilisée dans sa boîte personnelle de marquage des reines.",
           "meta": [
             {
-              "label": "HEURE",
-              "value": "20:40"
+              "label": "Heure",
+              "value": "20:09"
             },
             {
-              "label": "STATUT",
-              "value": "Pièce analysée"
+              "label": "Pièce",
+              "value": "Le sirop marqué"
             }
           ],
-          "altText": "Photographie d'analyse : Le répulsif contient l'huile de clou de girofle utilisée dans sa boîte personnelle de marquage des reines.",
+          "altText": "Photographie. Le répulsif contient l'huile de clou de girofle utilisée dans sa boîte personnelle de marquage des reines.",
           "tone": "cold"
         },
         "analysis": {
@@ -127,17 +127,17 @@
       },
       {
         "id": "mobile",
-        "title": "Ce que la victime allait révéler",
-        "source": "DOCUMENT CONFIDENTIEL",
+        "title": "La vente de la reine",
+        "source": "NOTE PERSONNELLE",
         "summary": "Une annonce non publiée propose déjà des descendantes de la lignée 12 sous le nom commercial d'Éloi.",
         "evidence": {
           "kind": "email",
-          "from": "Dossier de la victime",
-          "to": "Archives de l'enquête",
-          "subject": "Ce que la victime allait révéler",
-          "sentAt": "20:09",
+          "from": "NOTE PERSONNELLE",
+          "to": "Dossier d'enquête",
+          "subject": "La vente de la reine",
+          "sentAt": "20:22",
           "body": "Une annonce non publiée propose déjà des descendantes de la lignée 12 sous le nom commercial d'Éloi.",
-          "altText": "Document confidentiel : Une annonce non publiée propose déjà des descendantes de la lignée 12 sous le nom commercial d'Éloi."
+          "altText": "Courriel intitulé La vente de la reine. Une annonce non publiée propose déjà des descendantes de la lignée 12 sous le nom commercial d'Éloi."
         },
         "analysis": {
           "category": "BEHAVIORAL",
@@ -156,19 +156,19 @@
       },
       {
         "id": "alibi_a",
-        "title": "La preuve de Nour Lemaire",
-        "source": "VÉRIFICATION D'ALIBI",
+        "title": "Nour au rucher nord",
+        "source": "ALIBI VÉRIFIÉ",
         "summary": "La caméra du laboratoire place Nour derrière la vitre pendant les deux ouvertures.",
         "evidence": {
           "kind": "camera",
-          "location": "VÉRIFICATION D'ALIBI",
+          "location": "ALIBI VÉRIFIÉ",
           "frames": [
             {
               "time": "20:28",
               "text": "La caméra du laboratoire place Nour derrière la vitre pendant les deux ouvertures."
             }
           ],
-          "altText": "Relevé de vérification à 20:28 : La caméra du laboratoire place Nour derrière la vitre pendant les deux ouvertures."
+          "altText": "Image enregistrée à 20:28. La caméra du laboratoire place Nour derrière la vitre pendant les deux ouvertures."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -185,13 +185,14 @@
       },
       {
         "id": "fausse_piste",
-        "title": "Le détail contre Didier Pons",
-        "source": "PIÈCE SAISIE",
+        "title": "Le pesticide de Didier",
+        "source": "ÉLÉMENT À CHARGE",
         "summary": "Le pesticide pulvérisé par Didier tue les abeilles à une dose compatible.",
         "evidence": {
-          "kind": "note",
+          "kind": "handwriting",
           "body": "Le pesticide pulvérisé par Didier tue les abeilles à une dose compatible.",
-          "altText": "Note saisie constituant une fausse piste : Le pesticide pulvérisé par Didier tue les abeilles à une dose compatible."
+          "signature": "Didier Pons",
+          "altText": "Note manuscrite. Le pesticide pulvérisé par Didier tue les abeilles à une dose compatible."
         },
         "analysis": {
           "category": "RED_HERRING",
@@ -210,17 +211,17 @@
       },
       {
         "id": "resolution",
-        "title": "Ce que la fausse piste oublie",
-        "source": "RECOUPEMENT",
+        "title": "Du poison sans pollen",
+        "source": "ENREGISTREMENT TÉMOIN",
         "summary": "Les analyses de pollen sont négatives et le vent soufflait du rucher vers son champ, direction opposée à une contamination.",
         "evidence": {
           "kind": "document",
-          "title": "RECOUPEMENT",
-          "subtitle": "Pièce enregistrée à 20:43",
+          "title": "Du poison sans pollen",
+          "subtitle": "ENREGISTREMENT TÉMOIN",
           "paragraphs": [
             "Les analyses de pollen sont négatives et le vent soufflait du rucher vers son champ, direction opposée à une contamination."
           ],
-          "altText": "RECOUPEMENT : Les analyses de pollen sont négatives et le vent soufflait du rucher vers son champ, direction opposée à une contamination."
+          "altText": "Document intitulé Du poison sans pollen. Les analyses de pollen sont négatives et le vent soufflait du rucher vers son champ, direction opposée à une contamination."
         },
         "analysis": {
           "category": "EXONERATING",
@@ -240,99 +241,99 @@
       {
         "id": "nour_alibi",
         "suspectId": "nour",
-        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "question": "Votre version comporte-t-elle un moment sans témoin, Nour Lemaire ?",
         "answer": "Elle analysait des larves dans le laboratoire vitré. Réfléchie, attentive aux mots de causalité.",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "nour_relation",
         "suspectId": "nour",
-        "question": "Qu'est-ce que Baptiste Lorrain risquait de changer pour vous ?",
+        "question": "Quel désaccord vous opposait à Baptiste, Nour Lemaire ?",
         "answer": "Elle étudie la lignée de la reine. Ses résultats contredisaient ceux de Baptiste.",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "didier_alibi",
         "suspectId": "didier",
-        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "question": "Quand avez-vous vu Baptiste pour la dernière fois, Didier Pons ?",
         "answer": "Il traitait un champ à trois kilomètres. Défensif, parle fort, connaît mal les protocoles.",
         "beat": "La réponse peut être confrontée aux pièces."
       },
       {
         "id": "didier_relation",
         "suspectId": "didier",
-        "question": "Qu'est-ce que Baptiste Lorrain risquait de changer pour vous ?",
+        "question": "Que risquiez-vous si Baptiste allait au bout de sa décision, Didier Pons ?",
         "answer": "Ses cultures sont accusées d'utiliser trop de pesticides. La mort des abeilles pouvait lui être imputée.",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "eloi_alibi",
         "suspectId": "eloi",
-        "question": "Reprenez votre soirée à partir du dernier moment certain.",
+        "question": "Décrivez vos déplacements sans sauter d'étape, Éloi Vernet.",
         "answer": "Il affirme avoir donné le même sirop aux douze ruches. Doux, minutieux, appelle les reines par leur numéro.",
         "beat": "La version paraît nette, peut-être trop nette."
       },
       {
         "id": "eloi_relation",
         "suspectId": "eloi",
-        "question": "Qu'est-ce que Baptiste Lorrain risquait de changer pour vous ?",
+        "question": "Qu'est-ce que cette affaire pouvait changer pour vous, Éloi Vernet ?",
         "answer": "Il nourrit et ferme les ruches chaque soir. Baptiste refusait de lui céder une reine.",
         "beat": "Le mobile apparent n'est pas encore une preuve."
       },
       {
         "id": "eloi_confrontation",
         "suspectId": "eloi",
-        "question": "Votre heure ne correspond pas au registre. Pourquoi ?",
-        "answer": "« Le registre se trompe parfois. Cela ne prouve pas que j'ai fait ce qu'on me reproche. »",
+        "question": "Cette trace porte jusqu'à vous. Quelle autre explication proposez-vous ?",
+        "answer": "« Cette donnée est exacte. Mon récit, lui, était incomplet. Je ne voulais pas avoir à expliquer ce détour. »",
         "unlockedByClueId": "registre",
-        "beat": "La personne conteste l'outil, sans expliquer sa propre trace."
+        "beat": "Le mensonge est admis, mais sa raison reste à établir."
       },
       {
         "id": "eloi_mobile",
         "suspectId": "eloi",
-        "question": "Ce document vous donnait-il une raison d'agir ?",
-        "answer": "« Vous appelez cela un mobile parce que vous connaissez déjà la fin. Sur le moment, je cherchais seulement une issue. »",
+        "question": "Cette découverte menaçait-elle votre situation ?",
+        "answer": "« Vous appelez cela un mobile parce que vous connaissez la suite. À ce moment-là, rien n'était joué. »",
         "unlockedByClueId": "mobile",
-        "beat": "La raison d'agir est reconnue à demi-mot."
+        "beat": "L'intérêt personnel est reconnu sans que le passage à l'acte le soit."
       },
       {
         "id": "didier_detail",
         "suspectId": "didier",
-        "question": "Pourquoi cette pièce vous désigne-t-elle ?",
-        "answer": "« Elle est vraie, mais votre conclusion ne l'est pas. Cherchez ce qui s'est passé après. »",
+        "question": "Que prouve réellement cette pièce, selon vous ?",
+        "answer": "« Pris seul, ce détail m'accuse. Comparé au reste du dossier, il raconte autre chose. »",
         "unlockedByClueId": "fausse_piste",
-        "beat": "La pièce cache une chronologie plus complète."
+        "beat": "La pièce doit être replacée dans sa chronologie."
       }
     ],
     "timeline": [
       {
         "time": "19:57",
-        "text": "Baptiste Lorrain est vu pour la dernière fois avant l'incident.",
-        "source": "Témoignages concordants",
+        "text": "Dernière apparition confirmée de Baptiste Lorrain.",
+        "source": "Recoupement des témoignages",
         "certainty": "CERTAIN"
       },
       {
         "time": "20:09",
-        "text": "Le document révélant le mobile est créé ou consulté.",
-        "source": "Métadonnées",
+        "text": "Une annonce non publiée propose déjà des descendantes de la lignée 12 sous le nom commercial d'Éloi.",
+        "source": "NOTE PERSONNELLE",
         "certainty": "CERTAIN"
       },
       {
         "time": "20:22",
-        "text": "Éloi Vernet affirme ne plus pouvoir intervenir.",
-        "source": "Déclaration",
+        "text": "Éloi Vernet situe ici la fin de ses déplacements.",
+        "source": "Déposition",
         "certainty": "REPORTED"
       },
       {
         "time": "20:35",
-        "text": "Une activité technique contredit cette version.",
-        "source": "Registre",
+        "text": "La pesée automatique montre que la ruche 12 a été ouverte deux fois pendant la tournée unique d'Éloi.",
+        "source": "JOURNAL D'ACCÈS",
         "certainty": "CERTAIN"
       },
       {
         "time": "20:43",
-        "text": "L'incident devient visible ou produit ses effets.",
-        "source": "Constat",
+        "text": "Les premiers effets de l'incident sont constatés.",
+        "source": "Constat sur place",
         "certainty": "ESTIMATED"
       }
     ],
@@ -435,24 +436,24 @@
     "correctTimeline": [
       {
         "time": "19:57",
-        "place": "Conservatoire apicole — Dijon",
+        "place": "Conservatoire apicole, Dijon",
         "personIds": [
           "eloi"
         ],
-        "text": "Éloi Vernet comprend que la situation menace directement ses intérêts."
+        "text": "Éloi Vernet comprend que la décision de Baptiste Lorrain menace directement ses intérêts."
       },
       {
         "time": "20:09",
-        "place": "Conservatoire apicole — Dijon",
+        "place": "Conservatoire apicole, Dijon",
         "personIds": [
           "eloi"
         ],
-        "text": "Le mobile se cristallise : s'emparer discrètement de la reine résistante pour lancer son propre élevage."
+        "text": "Une annonce non publiée propose déjà des descendantes de la lignée 12 sous le nom commercial d'Éloi."
       },
       {
         "time": "20:35",
         "endTime": "20:40",
-        "place": "Conservatoire apicole — Dijon",
+        "place": "Conservatoire apicole, Dijon",
         "personIds": [
           "eloi"
         ],
@@ -460,36 +461,37 @@
       },
       {
         "time": "20:43",
-        "place": "Conservatoire apicole — Dijon",
+        "place": "Conservatoire apicole, Dijon",
         "personIds": [
           "eloi"
         ],
-        "text": "La personne remet les lieux en ordre et s'appuie sur son alibi préparé."
+        "text": "Après les faits, Éloi Vernet s'appuie sur l'alibi que le relevé finira par contredire."
       }
     ],
     "reasoning": [
-      "Le registre contredit l'heure donnée par Éloi Vernet : La pesée automatique montre que la ruche 12 a été ouverte deux fois pendant la tournée unique d'Éloi.",
-      "La trace matérielle ne prouve pas seulement une présence; elle décrit la méthode : Le répulsif contient l'huile de clou de girofle utilisée dans sa boîte personnelle de marquage des reines.",
-      "Le document confidentiel fournit un mobile précis : Une annonce non publiée propose déjà des descendantes de la lignée 12 sous le nom commercial d'Éloi.",
-      "Nour Lemaire est écarté par une preuve indépendante, tandis que l'élément visant Didier Pons est expliqué par le recoupement final.",
-      "La seule personne réunissant présence, moyen et mobile est Éloi Vernet."
+      "La pesée automatique montre que la ruche 12 a été ouverte deux fois pendant la tournée unique d'Éloi. Cette donnée fragilise directement la version d'Éloi Vernet.",
+      "Le répulsif contient l'huile de clou de girofle utilisée dans sa boîte personnelle de marquage des reines. La trace relie le geste au procédé employé.",
+      "Une annonce non publiée propose déjà des descendantes de la lignée 12 sous le nom commercial d'Éloi. Le mobile repose donc sur un fait vérifiable.",
+      "La caméra du laboratoire place Nour derrière la vitre pendant les deux ouvertures. De son côté, la principale autre piste ne résiste pas au recoupement.",
+      "Le pesticide pulvérisé par Didier tue les abeilles à une dose compatible. L'élément paraît accusateur, mais il change de sens avec la dernière pièce : les analyses de pollen sont négatives et le vent soufflait du rucher vers son champ, direction opposée à une contamination.",
+      "Présence, moyen et intérêt convergent vers Éloi Vernet."
     ],
-    "explanation": "Éloi a pris la reine, l'a placée dans une ruchette cachée puis empoisonné seulement l'entrée de la colonie. Les ouvrières revenues du dehors ont touché le produit et créé le spectacle d'un effondrement sans pollen contaminé. Le mobile était de s'emparer discrètement de la reine résistante pour lancer son propre élevage. La méthode consistait à voler la reine puis badigeonner l'entrée d'un répulsif toxique pour simuler l'effondrement. La fausse piste contre Didier Pons paraît forte isolément, mais les analyses de pollen sont négatives et le vent soufflait du rucher vers son champ, direction opposée à une contamination. Ainsi, les preuves convergent sans supposer d'information extérieure au dossier.",
+    "explanation": "Éloi a pris la reine, l'a placée dans une ruchette cachée puis empoisonné seulement l'entrée de la colonie. Les ouvrières revenues du dehors ont touché le produit et créé le spectacle d'un effondrement sans pollen contaminé. Son but apparaît alors clairement : s'emparer discrètement de la reine résistante pour lancer son propre élevage. La méthode reposait sur une idée précise : voler la reine puis badigeonner l'entrée d'un répulsif toxique pour simuler l'effondrement. Les analyses de pollen sont négatives et le vent soufflait du rucher vers son champ, direction opposée à une contamination. L'autre suspect n'est donc plus une explication possible.",
     "proofChains": [
       {
-        "title": "La chaîne du geste",
+        "title": "Ce qui trahit Éloi Vernet",
         "steps": [
           "La pesée automatique montre que la ruche 12 a été ouverte deux fois pendant la tournée unique d'Éloi.",
           "Le répulsif contient l'huile de clou de girofle utilisée dans sa boîte personnelle de marquage des reines.",
-          "Ces deux pièces relient matériellement Éloi Vernet à l'action."
+          "Les deux pièces décrivent le même geste sans dépendre d'un aveu."
         ]
       },
       {
-        "title": "La chaîne de l'intention",
+        "title": "Le mobile et les innocents",
         "steps": [
           "Une annonce non publiée propose déjà des descendantes de la lignée 12 sous le nom commercial d'Éloi.",
           "La caméra du laboratoire place Nour derrière la vitre pendant les deux ouvertures.",
-          "Le mobile devient exclusif une fois les alibis recoupés."
+          "Les analyses de pollen sont négatives et le vent soufflait du rucher vers son champ, direction opposée à une contamination."
         ]
       }
     ]
